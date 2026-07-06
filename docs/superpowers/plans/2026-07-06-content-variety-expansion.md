@@ -419,7 +419,6 @@ Add to `scripts/generate_captions.py`, after `load_recurring_by_day()`:
 from collections import defaultdict
 
 import classify_photos
-import store as _store  # already imported as `store` above; reuse that import
 
 
 def day_post_counts(rows):
