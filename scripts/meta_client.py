@@ -15,6 +15,7 @@ Credentials come from environment variables (GitHub Secrets in production):
 
 from __future__ import annotations
 
+import json
 import os
 import time
 import urllib.parse
@@ -187,6 +188,53 @@ def post_instagram(image_url: str, caption: str, hashtags: str) -> str:
         except MetaError as exc:
             print(f"[meta_client] IG hashtag comment failed (feed post still live): {exc}")
     return media_id
+
+
+def post_instagram_carousel(image_urls: list[str], caption: str, hashtags: str) -> str:
+    """Publish an IG carousel (2-10 photos). Same location/hashtag behavior
+    as a single post; the caption goes on the parent container, hashtags in
+    the first comment on the published post."""
+    iid = _ig_id()
+    child_ids = [_post(f"{iid}/media", {"image_url": u, "is_carousel_item": "true"})["id"]
+                for u in image_urls]
+    loc = _find_ig_location_id()
+    container = {"media_type": "CAROUSEL", "children": ",".join(child_ids), "caption": caption}
+    if loc:
+        container["location_id"] = loc
+    try:
+        created = _post(f"{iid}/media", container)
+    except MetaError as exc:
+        if loc:
+            print(f"[meta_client] IG carousel with location failed, retrying untagged: {exc}")
+            created = _post(f"{iid}/media", {"media_type": "CAROUSEL",
+                                             "children": ",".join(child_ids), "caption": caption})
+        else:
+            raise
+    creation_id = created["id"]
+    _wait_container_ready(creation_id)
+    published = _post(f"{iid}/media_publish", {"creation_id": creation_id})
+    media_id = published["id"]
+    if hashtags:
+        try:
+            _post(f"{media_id}/comments", {"message": hashtags})
+        except MetaError as exc:
+            print(f"[meta_client] IG carousel hashtag comment failed (post still live): {exc}")
+    return media_id
+
+
+def post_facebook_multi(image_urls: list[str], caption: str) -> str:
+    """Publish a single FB post with several attached photos (album-style)."""
+    pid = _page_id()
+    photo_ids = [_post(f"{pid}/photos", {"url": u, "published": "false"})["id"] for u in image_urls]
+    attached_media = json.dumps([{"media_fbid": pid_} for pid_ in photo_ids])
+    data = {"message": caption, "place": pid, "attached_media": attached_media}
+    try:
+        res = _post(f"{pid}/feed", data)
+    except MetaError as exc:
+        print(f"[meta_client] FB multi-photo post with place failed, retrying untagged: {exc}")
+        data.pop("place")
+        res = _post(f"{pid}/feed", data)
+    return res.get("post_id") or res.get("id", "")
 
 
 def post_instagram_story(image_url: str) -> str:
