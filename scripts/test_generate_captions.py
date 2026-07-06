@@ -50,3 +50,22 @@ def test_build_extra_rows_never_exceeds_one_per_day():
     counts = gc.day_post_counts(existing_rows + rows)
     assert all(c <= 2 for c in counts.values())  # existing (1) + at most 1 extra
     assert len(rows) <= config.MAX_EXTRA_POSTS_PER_WEEK
+
+
+def test_vibe_spotlight_lands_on_genuinely_quietest_day_not_tomorrow():
+    """Vibe/spotlight posts must go on the quietest day of the week, not
+    default to 'tomorrow' just because it happens to have room.
+
+    run_date is a Sunday, so week_dates[0] ("tomorrow") is 2026-06-01 (Monday).
+    We pre-load Monday with 1 existing post (still has room: < 2) but leave
+    Tuesday (2026-06-02) completely empty -- the genuinely quietest day.
+    A single vibe candidate (no event match) must land on Tuesday, not Monday.
+    """
+    run_date = date(2026, 5, 31)  # a Sunday
+    classified = [
+        {"filename": "vibe1.jpg", "match": None, "kind": "vibe", "confidence": "high"},
+    ]
+    existing_rows = [_scheduled_row("2026-06-01 12:00")]  # Monday has 1 post already
+    rows = gc.build_extra_rows(classified, existing_rows, run_date)
+    assert len(rows) == 1
+    assert rows[0]["scheduled_time"].split(" ")[0] == "2026-06-02"

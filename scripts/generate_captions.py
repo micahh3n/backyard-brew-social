@@ -328,7 +328,10 @@ def build_extra_rows(classified, existing_rows, run_date):
         candidates = [d for d in week_dates if counts.get(d, 0) < 2]  # today+teaser already = up to 2
         if not candidates:
             return
-        target = preferred_date if preferred_date in candidates else quietest_day(candidates, counts)
+        if preferred_date is not None and preferred_date in candidates:
+            target = preferred_date
+        else:
+            target = quietest_day(candidates, counts)
         row = store.blank_row()
         row["date"] = target
         row["photos"] = ", ".join(filenames)
@@ -359,7 +362,7 @@ def build_extra_rows(classified, existing_rows, run_date):
         kind = item["kind"]
         event_label = "Behind The Scenes" if kind == "vibe" else "Community Spotlight"
         slot = config.EXTRA_POST_TIME_MORNING if idx % 2 == 0 else config.EXTRA_POST_TIME_EVENING
-        try_schedule(kind, event_label, "", [item["filename"]], week_dates[0], slot)
+        try_schedule(kind, event_label, "", [item["filename"]], None, slot)
 
     return extra_rows
 
