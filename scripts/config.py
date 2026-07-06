@@ -189,6 +189,15 @@ POSTS_COLUMNS = [
 # are estimated to remain so the owner refreshes before it expires.
 TOKEN_WARN_DAYS = 10
 
+# ---------------------------------------------------------------------------
+# Extra post types (carousel / vibe / spotlight) -- opportunistic, capped.
+# ---------------------------------------------------------------------------
+EXTRA_POST_TYPES = ("carousel", "vibe", "spotlight")
+MAX_EXTRA_POSTS_PER_DAY = 1     # per platform, on top of today/teaser -- hard cap
+MAX_EXTRA_POSTS_PER_WEEK = 4    # ceiling, not a quota
+EXTRA_POST_TIME_EVENING = "19:30"
+EXTRA_POST_TIME_MORNING = "11:30"
+
 
 def pick_hashtags(seed: int, count: int = 6) -> str:
     """Return a rotating, deterministic hashtag string for the IG first comment.

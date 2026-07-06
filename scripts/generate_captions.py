@@ -13,8 +13,10 @@ This job NEVER posts anything. Run it with:  python scripts/generate_captions.py
 from __future__ import annotations
 
 import os
+from collections import defaultdict
 from datetime import datetime, timedelta
 
+import classify_photos
 import config
 import store
 from anthropic_client import generate_captions
@@ -251,7 +253,17 @@ def main():
             generated.append(build_row(d, teaser_post_date, event, details,
                                        platforms, "teaser", photo, enhance))
 
-    # --- 4. Save --------------------------------------------------------------
+    # --- 5. Extra post types: carousel / vibe / spotlight --------------------
+    used = store.used_photo_filenames(posts + generated)
+    known_events = list(config.EVENT_ANGLES.keys())
+    classified = classify_photos.classify_new_photos(config.PHOTOS_DIR, known_events, used)
+    extra_rows = build_extra_rows(classified, posts + generated, run_date)
+    generated += extra_rows
+    if extra_rows:
+        store.log(f"generated {len(extra_rows)} extra post(s): "
+                  f"{', '.join(r['post_type'] for r in extra_rows)}")
+
+    # --- 6. Save --------------------------------------------------------------
     all_rows = posts + generated
     store.write_posts(all_rows)
     fell_back = sum(1 for r in generated if r.get("_fallback"))
@@ -266,6 +278,97 @@ def load_recurring_by_day():
     for row in store.load_recurring():
         out[row["day_of_week"].strip()] = row
     return out
+
+
+# ---------------------------------------------------------------------------
+# Extra post types (carousel / vibe / spotlight) -- hard-capped, anti-stacking.
+# ---------------------------------------------------------------------------
+def day_post_counts(rows):
+    """How many posts already land on each date (YYYY-MM-DD), across rows."""
+    counts = {}
+    for r in rows:
+        d = (r.get("scheduled_time") or "").split(" ")[0]
+        if d:
+            counts[d] = counts.get(d, 0) + 1
+    return counts
+
+
+def quietest_day(candidate_dates, counts):
+    """The candidate date with the fewest posts already scheduled."""
+    return min(candidate_dates, key=lambda d: counts.get(d, 0))
+
+
+def group_carousel_candidates(classified):
+    """Group same-event 'event' kind photos into carousel candidates (3+ only)."""
+    by_event = defaultdict(list)
+    for item in classified:
+        if item["kind"] == "event" and item["match"]:
+            by_event[item["match"]].append(item)
+    groups = []
+    for event, items in by_event.items():
+        if len(items) >= 3:
+            groups.append({
+                "event": event,
+                "filenames": [i["filename"] for i in items],
+                "capture_times": [i.get("capture_time") for i in items if i.get("capture_time")],
+            })
+    return groups
+
+
+def build_extra_rows(classified, existing_rows, run_date):
+    """Build carousel/vibe/spotlight rows, respecting the hard daily cap and
+    the weekly ceiling. Never forces a post -- thin material means fewer rows."""
+    counts = dict(day_post_counts(existing_rows))
+    week_dates = [(run_date + timedelta(days=i)).strftime(DATE_FMT) for i in range(1, 8)]
+    extra_rows = []
+
+    def try_schedule(kind, event, key_details, filenames, preferred_date, time_slot):
+        if len(extra_rows) >= config.MAX_EXTRA_POSTS_PER_WEEK:
+            return
+        candidates = [d for d in week_dates if counts.get(d, 0) < 2]  # today+teaser already = up to 2
+        if not candidates:
+            return
+        target = preferred_date if preferred_date in candidates else quietest_day(candidates, counts)
+        row = store.blank_row()
+        row["date"] = target
+        row["photos"] = ", ".join(filenames)
+        row["event"] = event
+        row["key_details"] = key_details
+        row["platforms"] = "both"
+        row["post_type"] = kind
+        row["enhance"] = "none"
+        row["scheduled_time"] = f"{target} {time_slot}"
+        caps = generate_captions_for(event, key_details, dow_name(parse_date(target)), kind)
+        row["fb_caption"] = caps["fb_caption"]
+        row["ig_caption"] = caps["ig_caption"]
+        row["status"] = config.STATUS_NEEDS_REVIEW
+        extra_rows.append(row)
+        counts[target] = counts.get(target, 0) + 1
+
+    # Carousels: scheduled the day after the event, evening slot.
+    for group in group_carousel_candidates(classified):
+        times = [t for t in group["capture_times"] if t]
+        event_day = times[0].date() if times else run_date
+        recap_date = (event_day + timedelta(days=1)).strftime(DATE_FMT)
+        try_schedule("carousel", group["event"], "A look back at last night.",
+                     group["filenames"], recap_date, config.EXTRA_POST_TIME_EVENING)
+
+    # Vibe + spotlight: single photos, quietest day, alternating morning/evening slot.
+    singles = [i for i in classified if i["kind"] in ("vibe", "spotlight") and not i["match"]]
+    for idx, item in enumerate(singles):
+        kind = item["kind"]
+        event_label = "Behind The Scenes" if kind == "vibe" else "Community Spotlight"
+        slot = config.EXTRA_POST_TIME_MORNING if idx % 2 == 0 else config.EXTRA_POST_TIME_EVENING
+        try_schedule(kind, event_label, "", [item["filename"]], week_dates[0], slot)
+
+    return extra_rows
+
+
+def generate_captions_for(event, key_details, day_of_week, post_type):
+    """Thin wrapper so build_extra_rows doesn't need to import anthropic_client
+    directly -- keeps the caption-generation entry point in one place."""
+    from anthropic_client import generate_captions as _gen
+    return _gen(event, key_details, day_of_week, post_type)
 
 
 if __name__ == "__main__":
