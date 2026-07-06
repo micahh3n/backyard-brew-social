@@ -200,6 +200,21 @@ def post_instagram_story(image_url: str) -> str:
 
 
 # ---------------------------------------------------------------------------
+# Real post history (voice anchor for caption generation)
+# ---------------------------------------------------------------------------
+def recent_page_posts(limit=6):
+    """Best-effort pull of the Page's own recent post captions, for voice
+    matching. Returns [] on any failure -- must never block generation."""
+    try:
+        pid = _page_id()
+        res = _get(f"{pid}/posts", {"fields": "message", "limit": limit})
+        return [p["message"] for p in res.get("data", []) if p.get("message")]
+    except Exception as exc:
+        print(f"[meta_client] could not pull recent page posts: {exc}")
+        return []
+
+
+# ---------------------------------------------------------------------------
 # Token expiry (for the 60-day reminder)
 # ---------------------------------------------------------------------------
 def days_until_token_expires():

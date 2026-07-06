@@ -92,7 +92,7 @@ def _framing(post_type: str, days_until: int | None) -> str:
 
 
 def _user_prompt(event, key_details, day_of_week, post_type, days_until,
-                 angle, past_examples):
+                 angle, voice_examples, avoid_examples):
     parts = [
         f"EVENT: {event}",
         f"DAY: {day_of_week}",
@@ -102,10 +102,14 @@ def _user_prompt(event, key_details, day_of_week, post_type, days_until,
     if angle:
         parts.append(f"CONTENT ANGLE for this event: {angle}")
     parts.append(_framing(post_type, days_until))
-    if past_examples:
-        joined = "\n---\n".join(past_examples[:4])
+    if voice_examples:
+        joined = "\n---\n".join(voice_examples[:4])
         parts.append("REFERENCE -- some of the bar's real past captions for voice matching "
                      f"(match the vibe, do not copy):\n{joined}")
+    if avoid_examples:
+        joined = "\n---\n".join(avoid_examples[:4])
+        parts.append("DO NOT REPEAT -- captions already used recently for this exact event. "
+                     f"Write something with a genuinely different hook, phrasing, and structure:\n{joined}")
     parts.append('Write the two captions now. Return ONLY the JSON object.')
     return "\n\n".join(parts)
 
@@ -153,7 +157,7 @@ def fallback_captions(event, key_details, post_type="today", days_until=None) ->
 
 
 def generate_captions(event, key_details, day_of_week, post_type,
-                      days_until=None, past_examples=None):
+                      days_until=None, voice_examples=None, avoid_examples=None):
     """Generate {fb_caption, ig_caption} for one post.
 
     Falls back to a templated caption on any error. Never raises -- the Sunday
@@ -175,7 +179,7 @@ def generate_captions(event, key_details, day_of_week, post_type,
                 "role": "user",
                 "content": _user_prompt(event, key_details, day_of_week,
                                         post_type, days_until, angle,
-                                        past_examples or []),
+                                        voice_examples or [], avoid_examples or []),
             }],
         )
         text = "".join(block.text for block in resp.content

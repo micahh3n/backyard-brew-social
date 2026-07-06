@@ -29,3 +29,10 @@ def test_fallback_captions_handles_spotlight():
 def test_fallback_captions_handles_carousel():
     result = ac.fallback_captions("Bingo Night", "10 rounds", post_type="carousel")
     assert result["fb_caption"] and result["ig_caption"]
+
+
+def test_user_prompt_includes_avoid_examples():
+    text = ac._user_prompt("Bingo Night", "details", "Monday", "today", None, None,
+                           voice_examples=[], avoid_examples=["Old hook line"])
+    assert "Old hook line" in text
+    assert "do not" in text.lower() or "avoid" in text.lower()

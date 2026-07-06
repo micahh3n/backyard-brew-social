@@ -18,6 +18,7 @@ from datetime import datetime, timedelta
 
 import classify_photos
 import config
+import meta_client
 import store
 from anthropic_client import generate_captions
 
@@ -106,20 +107,12 @@ def scheduled_string(post_date, dow_for_time, post_type, owner_time):
     return f"{post_date.strftime(DATE_FMT)} {hhmm}"
 
 
-def past_examples():
-    """Placeholder hook for pulling real past captions as voice references.
-
-    Left empty by default; wired for a future meta_client.recent_captions() pull.
-    Returning [] simply means the prompt relies on the written voice rules.
-    """
-    return []
-
-
 # ---------------------------------------------------------------------------
 # Row builder
 # ---------------------------------------------------------------------------
 def build_row(event_date, post_date, event, key_details, platforms,
-              post_type, photo, enhance, owner_time="", days_until=None):
+              post_type, photo, enhance, owner_time="", days_until=None,
+              voice_examples=None, avoid_examples=None):
     """Assemble one fully-generated posts.csv row (status = needs_review)."""
     dow_event = dow_name(event_date)
     row = store.blank_row()
@@ -133,7 +126,9 @@ def build_row(event_date, post_date, event, key_details, platforms,
     row["scheduled_time"] = scheduled_string(post_date, dow_name(post_date),
                                              post_type, owner_time)
     caps = generate_captions(event, key_details, dow_event, post_type,
-                             days_until=days_until, past_examples=past_examples())
+                             days_until=days_until,
+                             voice_examples=voice_examples,
+                             avoid_examples=avoid_examples)
     row["fb_caption"] = caps["fb_caption"]
     row["ig_caption"] = caps["ig_caption"]
     row["_fallback"] = caps.get("_fallback", False)
@@ -146,6 +141,7 @@ def build_row(event_date, post_date, event, key_details, platforms,
 # ---------------------------------------------------------------------------
 def main():
     run_date = today_local()
+    voice_examples = meta_client.recent_page_posts(limit=6)
     recurring = load_recurring_by_day()
     posts = store.load_posts()
 
@@ -189,7 +185,9 @@ def main():
             generated.append(build_row(
                 event_date, post_date, event, details, platforms,
                 ptype, photo, enhance,
-                days_until=(days_before if days_before >= 2 else None)))
+                days_until=(days_before if days_before >= 2 else None),
+                voice_examples=voice_examples,
+                avoid_examples=store.recent_captions_for_event(posts, event, limit=4)))
         src["status"] = config.STATUS_CAMPAIGN_SOURCE
         campaign_dates.add((src["date"], event))
         store.log(f"expanded campaign for '{event}' on {src['date']} "
@@ -237,7 +235,9 @@ def main():
             photo = find_photo(dstr, slug, want_teaser=False, default_photo=default_photo)
             enhance = suggest_enhance(event, details, is_promo=bool(one))
             row = build_row(d, d, event, details, platforms, "today",
-                            photo, enhance, owner_time=owner_time)
+                            photo, enhance, owner_time=owner_time,
+                            voice_examples=voice_examples,
+                            avoid_examples=store.recent_captions_for_event(posts, event, limit=4))
             if one:
                 # Repurpose the owner's original row into this today post
                 # (no orphan pending row left behind).
@@ -251,13 +251,16 @@ def main():
             photo = find_photo(dstr, slug, want_teaser=True, default_photo=default_photo)
             enhance = suggest_enhance(event, details, is_promo=bool(one))
             generated.append(build_row(d, teaser_post_date, event, details,
-                                       platforms, "teaser", photo, enhance))
+                                       platforms, "teaser", photo, enhance,
+                                       voice_examples=voice_examples,
+                                       avoid_examples=store.recent_captions_for_event(posts, event, limit=4)))
 
     # --- 5. Extra post types: carousel / vibe / spotlight --------------------
     used = store.used_photo_filenames(posts + generated)
     known_events = list(config.EVENT_ANGLES.keys())
     classified = classify_photos.classify_new_photos(config.PHOTOS_DIR, known_events, used)
-    extra_rows = build_extra_rows(classified, posts + generated, run_date)
+    extra_rows = build_extra_rows(classified, posts + generated, run_date,
+                                  voice_examples=voice_examples)
     generated += extra_rows
     if extra_rows:
         store.log(f"generated {len(extra_rows)} extra post(s): "
@@ -315,7 +318,8 @@ def group_carousel_candidates(classified):
     return groups
 
 
-def build_extra_rows(classified, existing_rows, run_date):
+def build_extra_rows(classified, existing_rows, run_date, voice_examples=None,
+                     avoid_examples_by_event=None):
     """Build carousel/vibe/spotlight rows, respecting the hard daily cap and
     the weekly ceiling. Never forces a post -- thin material means fewer rows."""
     counts = dict(day_post_counts(existing_rows))
@@ -341,7 +345,10 @@ def build_extra_rows(classified, existing_rows, run_date):
         row["post_type"] = kind
         row["enhance"] = "none"
         row["scheduled_time"] = f"{target} {time_slot}"
-        caps = generate_captions_for(event, key_details, dow_name(parse_date(target)), kind)
+        avoid_examples = (avoid_examples_by_event or {}).get(event)
+        caps = generate_captions_for(event, key_details, dow_name(parse_date(target)), kind,
+                                     voice_examples=voice_examples,
+                                     avoid_examples=avoid_examples)
         row["fb_caption"] = caps["fb_caption"]
         row["ig_caption"] = caps["ig_caption"]
         row["status"] = config.STATUS_NEEDS_REVIEW
@@ -367,11 +374,13 @@ def build_extra_rows(classified, existing_rows, run_date):
     return extra_rows
 
 
-def generate_captions_for(event, key_details, day_of_week, post_type):
+def generate_captions_for(event, key_details, day_of_week, post_type,
+                          voice_examples=None, avoid_examples=None):
     """Thin wrapper so build_extra_rows doesn't need to import anthropic_client
     directly -- keeps the caption-generation entry point in one place."""
     from anthropic_client import generate_captions as _gen
-    return _gen(event, key_details, day_of_week, post_type)
+    return _gen(event, key_details, day_of_week, post_type,
+               voice_examples=voice_examples, avoid_examples=avoid_examples)
 
 
 if __name__ == "__main__":
