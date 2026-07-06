@@ -134,6 +134,7 @@ def build_row(event_date, post_date, event, key_details, platforms,
                              days_until=days_until, past_examples=past_examples())
     row["fb_caption"] = caps["fb_caption"]
     row["ig_caption"] = caps["ig_caption"]
+    row["_fallback"] = caps.get("_fallback", False)
     row["status"] = config.STATUS_NEEDS_REVIEW
     return row
 
@@ -253,7 +254,7 @@ def main():
     # --- 4. Save --------------------------------------------------------------
     all_rows = posts + generated
     store.write_posts(all_rows)
-    fell_back = sum(1 for r in generated if not r["fb_caption"])
+    fell_back = sum(1 for r in generated if r.get("_fallback"))
     store.log(f"Sunday job done: generated {len(generated)} new post rows "
               f"(needs_review). Timing source: {config.TIMING_SOURCE}.")
     if fell_back:
