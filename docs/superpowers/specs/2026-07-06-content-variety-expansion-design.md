@@ -91,7 +91,46 @@ week might produce only one extra post, or zero — expected behavior, not a
 bug, consistent with the existing system's "skip rather than force" pattern
 (e.g. Sunday's optional teaser, campaign milestones already in the past).
 
+**Hard daily cap, enforced in code — not an emergent side effect.** No matter
+how many unused photos are sitting in `/photos/` (10 or 100), the system will
+never schedule more than the normal today + teaser posts for that day, plus
+at most **one** extra (carousel/vibe/spotlight), per platform, per day. This
+is checked explicitly before anything gets a `scheduled_time` — it is not
+just a hoped-for average from the weekly cap and spreading rules below. A
+large photo backlog builds a longer runway of future candidates; it never
+becomes pressure to post more right now.
+
+## Scheduling for extra post types (no stacking, no spam)
+
+The existing timing table only covers "today" and "teaser" slots. Extra posts
+need their own placement rules so they never cluster:
+
+- **One extra post per day, maximum**, enforced by the hard daily cap above.
+  If three different bingo-themed carousels all qualify for the same week,
+  only one gets scheduled — the others wait in the candidate pool for future
+  weeks rather than piling onto Monday because they all matched "bingo."
+- **Carousels post the day *after* the event they recap** (a "look back at
+  last night" framing), in the evening engagement window — the same
+  reasoning already used for teasers: evening is when people are relaxed and
+  scrolling, not out living their lives.
+- **Vibe and spotlight posts get slotted onto whichever day of the week is
+  otherwise quietest** (i.e. doesn't already have 2 posts scheduled), using
+  the same late-morning/evening windows already validated for today/teaser
+  posts — not an arbitrary new time.
+- These slots are marked with the same `TIMING_SOURCE = "default-fallback"`
+  label as the rest of the schedule, and get folded into the same future
+  Insights-driven optimal-time lookup once real account data exists — extra
+  post types are not a separate scheduling system, just new entries in the
+  same one.
+
 ## Caption voice differences
+
+All post types share the same base brand-voice system prompt already defined
+in `anthropic_client.py` (energetic, community-first, Wisconsin-proud, "friend
+texting you about a cool spot," hook-first-line). Only the framing and CTA
+rules change per type — the underlying voice never forks into a separate
+writing style, so the account keeps sounding like Backyard Brew even as
+content variety goes up:
 
 - **Carousel:** same event-specific brand voice as an ordinary today/teaser
   post, since it's still promoting that night — just framed as a recap across
