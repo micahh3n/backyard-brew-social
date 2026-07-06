@@ -1,7 +1,9 @@
 from datetime import date
 
+import classify_photos
 import config
 import generate_captions as gc
+import meta_client
 import store
 
 
@@ -50,6 +52,57 @@ def test_build_extra_rows_never_exceeds_one_per_day():
     counts = gc.day_post_counts(existing_rows + rows)
     assert all(c <= 2 for c in counts.values())  # existing (1) + at most 1 extra
     assert len(rows) <= config.MAX_EXTRA_POSTS_PER_WEEK
+
+
+def test_main_gives_vibe_spotlight_posts_the_repetition_guard(monkeypatch):
+    """main() must feed build_extra_rows() a populated avoid_examples_by_event
+    for the generic recurring bucket names ("Behind The Scenes",
+    "Community Spotlight") used by vibe/spotlight posts -- these are the
+    posts most at risk of copy-paste drift over unattended weeks, since
+    (unlike a dated event) the same label is reused every run.
+
+    Currently main() calls build_extra_rows(...) with only voice_examples,
+    never avoid_examples_by_event, so the repetition guard never reaches
+    the caption prompt for these post types. This test drives main() itself
+    (with its collaborators stubbed) and asserts the caption call for the
+    new "Behind The Scenes" row actually receives the old caption text.
+    """
+    run_date = date(2026, 5, 31)  # a Sunday
+
+    existing_row = {**store.blank_row(), "date": "2026-05-20",
+                    "event": "Behind The Scenes", "status": config.STATUS_POSTED,
+                    "ig_caption": "Some old caption"}
+
+    monkeypatch.setattr(gc, "today_local", lambda: run_date)
+    monkeypatch.setattr(store, "load_posts", lambda: [dict(existing_row)])
+    monkeypatch.setattr(store, "load_recurring", lambda: [])
+    monkeypatch.setattr(store, "write_posts", lambda rows: None)
+    monkeypatch.setattr(meta_client, "recent_page_posts", lambda limit=6: [])
+    monkeypatch.setattr(
+        classify_photos, "classify_new_photos",
+        lambda photos_dir, known_events, used: [
+            {"filename": "vibe1.jpg", "match": None, "kind": "vibe", "confidence": "high"},
+        ])
+
+    captured = {}
+    real_generate_captions_for = gc.generate_captions_for
+
+    def spy_generate_captions_for(event, key_details, day_of_week, post_type,
+                                   voice_examples=None, avoid_examples=None):
+        if event == "Behind The Scenes":
+            captured["avoid_examples"] = avoid_examples
+        return real_generate_captions_for(event, key_details, day_of_week, post_type,
+                                          voice_examples=voice_examples,
+                                          avoid_examples=avoid_examples)
+
+    monkeypatch.setattr(gc, "generate_captions_for", spy_generate_captions_for)
+
+    gc.main()
+
+    assert captured.get("avoid_examples"), (
+        "expected a non-empty avoid_examples to reach caption generation "
+        "for the 'Behind The Scenes' vibe post")
+    assert "Some old caption" in captured["avoid_examples"]
 
 
 def test_vibe_spotlight_lands_on_genuinely_quietest_day_not_tomorrow():
