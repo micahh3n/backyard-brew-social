@@ -145,6 +145,43 @@ content variety goes up:
   a photo, so a generic version may need a quick name fix before approval —
   same "review before approving" expectation as any other row).
 
+## Caption freshness — closing the past_examples() gap
+
+`generate_captions.py` already contains a hook, `past_examples()`, intended to
+feed the caption prompt real reference captions so the AI writes in Backyard
+Brew's actual established voice. Today it is a stub that always returns an
+empty list — a real gap, and specifically the kind of gap that causes
+"here we go again, same copy-paste post" drift over months of unattended
+weekly runs, because the model currently has no memory of what it already
+wrote for a given event.
+
+This gets fixed as part of this feature, with two distinct jobs feeding into
+one prompt addition:
+
+1. **Voice anchor (positive examples).** A small set of the bar's real past
+   captions (pulled once via the Graph API's post-history read access, per
+   the original spec) shown to the model as "this is what authentic Backyard
+   Brew voice sounds like" — unchanged from the original design, just no
+   longer a stub.
+2. **Repetition guard (negative examples) — the new piece.** Before
+   generating a caption for a given event, `generate_captions.py` looks back
+   through `posts.csv`'s own history (rows already `posted` or `approved` for
+   that same event, most recent first) and pulls the last several real
+   captions the system itself wrote for it. Those go into the prompt as an
+   explicit instruction: *"here is exactly what you said the last few times
+   for this event — do not reuse these hooks, phrases, sentence openings, or
+   structures; write something genuinely different."*
+
+The negative-example guard matters more than the positive one for the
+specific "copy-paste" failure mode — voice-matching alone can still produce
+structurally repetitive posts if the model isn't also told what to actively
+avoid repeating. Both run together: authentic voice, never the same post
+twice.
+
+This requires no new files or schema — `posts.csv` already retains prior
+weeks' rows (they aren't deleted after posting), so the history is already
+sitting there; `generate_captions.py` just needs to actually read it.
+
 ## Posting mechanics: carousels on Meta's API
 
 `meta_client.py` gains two new code paths, since Facebook and Instagram
