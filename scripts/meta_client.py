@@ -194,6 +194,8 @@ def post_instagram_carousel(image_urls: list[str], caption: str, hashtags: str) 
     """Publish an IG carousel (2-10 photos). Same location/hashtag behavior
     as a single post; the caption goes on the parent container, hashtags in
     the first comment on the published post."""
+    if not (2 <= len(image_urls) <= 10):
+        raise MetaError(f"IG carousel requires 2-10 photos, got {len(image_urls)}")
     iid = _ig_id()
     child_ids = [_post(f"{iid}/media", {"image_url": u, "is_carousel_item": "true"})["id"]
                 for u in image_urls]

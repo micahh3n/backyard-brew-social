@@ -53,3 +53,25 @@ def test_post_row_uses_carousel_path_for_multi_photo_ig(tmp_path, monkeypatch):
          patch("post_to_meta.push_images"):
         succeeded = ptm.post_row(row)
     assert succeeded == {"ig"}
+
+
+def test_post_row_holds_back_degraded_multi_photo_row(tmp_path, monkeypatch):
+    """A row that intended a 3-photo carousel but has only 1 file actually on
+    disk must be held back entirely for retry -- NOT silently posted as a
+    single photo."""
+    monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
+    monkeypatch.setattr(config, "GENERATED_DIR", str(tmp_path / "_generated"))
+    monkeypatch.setattr(ptm, "DRY_RUN", True)
+    _write_fake_jpeg(tmp_path / "a.jpg")
+    row = _row("a.jpg, b.jpg, c.jpg", platforms="ig")
+    with patch("post_to_meta.store.log") as mock_log, \
+         patch("post_to_meta.wait_url_live", return_value=True), \
+         patch("post_to_meta.push_images"), \
+         patch("post_to_meta.render_variant") as mock_render:
+        mock_render.return_value = (str(tmp_path / "fake.jpg"), "fake.jpg")
+        succeeded = ptm.post_row(row)
+    assert succeeded == set()
+    assert mock_log.called
+    # render_variant must never even be called -- the row is held back before
+    # any rendering/upload work happens.
+    mock_render.assert_not_called()

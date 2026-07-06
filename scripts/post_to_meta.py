@@ -122,6 +122,14 @@ def post_row(row):
                   f"-> '{row['photos']}' not in /photos/. Left approved for retry.")
         return set()
 
+    intended_names = [n.strip() for n in (row["photos"] or "").split(",") if n.strip()]
+    if len(intended_names) > 1 and len(srcs) < 2:
+        store.log(f"MISSING PHOTO(S) for '{row['event']}' {row['scheduled_time']} "
+                  f"-> carousel intended {len(intended_names)} photo(s) ('{row['photos']}') "
+                  f"but only {len(srcs)} found in /photos/. Held back (not posted partially). "
+                  f"Left approved for retry.")
+        return set()
+
     succeeded = set()
     to_push, jobs = [], []
 

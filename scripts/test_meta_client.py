@@ -44,6 +44,17 @@ def test_post_instagram_carousel_builds_children_then_publishes():
     assert len(child_calls) == 3
 
 
+def test_post_instagram_carousel_rejects_fewer_than_two_photos():
+    with patch("meta_client._post") as mock_post, \
+         patch("meta_client._ig_id", return_value="ig123"):
+        try:
+            meta_client.post_instagram_carousel(["https://x/only-one.jpg"], "caption", "#tags")
+            assert False, "expected MetaError to be raised"
+        except meta_client.MetaError:
+            pass
+    mock_post.assert_not_called()
+
+
 def test_post_facebook_multi_uploads_unpublished_then_posts():
     calls = []
 
