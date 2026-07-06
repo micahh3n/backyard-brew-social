@@ -1,0 +1,10 @@
+Drop your Backyard Brew logo in this folder.
+
+Best format: a PNG with a transparent background, named:
+  logo.png
+
+If you have a light/cream version for dark backgrounds, also add:
+  logo_light.png
+
+The flyer/watermark system looks for logo.png here. Once you drop it in,
+nothing else needs changing.

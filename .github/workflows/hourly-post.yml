@@ -1,0 +1,55 @@
+name: Hourly - Post Approved
+
+# Runs at the top of every hour. It posts any row you've marked `approved` whose
+# scheduled time has passed, then updates posts.csv. Rows that aren't due yet or
+# aren't approved are simply skipped.
+on:
+  schedule:
+    - cron: "0 * * * *"    # every hour, on the hour (UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write          # lets the job push generated images + update posts.csv
+
+# Never let two hourly runs overlap and double-post.
+concurrency:
+  group: hourly-post
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+        # persist-credentials (default true) lets the script git-push images.
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Configure git for the in-script image push
+        run: |
+          git config user.name "Backyard Brew Bot"
+          git config user.email "actions@github.com"
+
+      - name: Post approved & due content
+        env:
+          META_PAGE_ACCESS_TOKEN: ${{ secrets.META_PAGE_ACCESS_TOKEN }}
+          META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+          META_IG_USER_ID: ${{ secrets.META_IG_USER_ID }}
+        run: python scripts/post_to_meta.py
+
+      - name: Commit status + posts updates
+        run: |
+          git add posts.csv status.log photos/_generated assets/fonts || true
+          if ! git diff --cached --quiet; then
+            git commit -m "Hourly job: posting update [skip ci]"
+            git push
+          else
+            echo "No changes to commit."
+          fi

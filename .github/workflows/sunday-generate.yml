@@ -1,0 +1,45 @@
+name: Sunday - Generate Captions
+
+# Runs Sunday afternoon Central time (19:00 UTC = ~1-2pm Central) so the whole
+# week's posts are waiting in posts.csv for your Sunday review. You can also run
+# it any time from the Actions tab with "Run workflow".
+on:
+  schedule:
+    - cron: "0 19 * * 0"   # every Sunday, 19:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write          # lets the job commit posts.csv back to the repo
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate the week's captions
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_MODEL: ${{ secrets.ANTHROPIC_MODEL }}   # optional override
+        run: python scripts/generate_captions.py
+
+      - name: Commit the generated posts
+        run: |
+          git config user.name "Backyard Brew Bot"
+          git config user.email "actions@github.com"
+          git add posts.csv status.log assets/fonts || true
+          if ! git diff --cached --quiet; then
+            git commit -m "Sunday job: generate weekly posts [skip ci]"
+            git push
+          else
+            echo "No changes to commit."
+          fi

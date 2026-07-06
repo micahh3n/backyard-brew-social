@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local secrets -- NEVER commit these. Real tokens live in GitHub Secrets.
+.env
+*.env
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# NOTE: we intentionally DO commit:
+#   photos/            (Instagram needs public image URLs)
+#   photos/_generated/ (the finished images that actually get posted)
+#   assets/fonts/      (so fonts aren't re-downloaded every run)
+#   posts.csv, status.log (the system's state + your visible log)
