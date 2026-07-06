@@ -52,13 +52,11 @@ def wants(platforms, code):
     return p == "both" or code in p
 
 
-def source_photo_path(row):
-    """First filename in the photos column -> absolute path, or None if missing."""
-    first = (row["photos"] or "").split(",")[0].strip()
-    if not first:
-        return None
-    path = os.path.join(config.PHOTOS_DIR, first)
-    return path if os.path.exists(path) else None
+def source_photo_paths(row):
+    """All filenames in the photos column that actually exist -> absolute paths."""
+    names = [n.strip() for n in (row["photos"] or "").split(",") if n.strip()]
+    paths = [os.path.join(config.PHOTOS_DIR, n) for n in names]
+    return [p for p in paths if os.path.exists(p)]
 
 
 def render_variant(src_path, row, platform_key, platform_short):
@@ -116,9 +114,10 @@ def short_caption(caption, limit=180):
 
 
 def post_row(row):
-    """Post one row. Returns the set of platform codes that succeeded."""
-    src = source_photo_path(row)
-    if not src:
+    """Post one row (single photo or multi-photo carousel/album). Returns the
+    set of platform codes that succeeded."""
+    srcs = source_photo_paths(row)
+    if not srcs:
         store.log(f"MISSING PHOTO for '{row['event']}' {row['scheduled_time']} "
                   f"-> '{row['photos']}' not in /photos/. Left approved for retry.")
         return set()
@@ -126,40 +125,56 @@ def post_row(row):
     succeeded = set()
     to_push, jobs = [], []
 
-    # Render everything first so we can push all images in one commit.
     if wants(row["platforms"], "fb"):
-        abs_p, rel_p = render_variant(src, row, "fb_feed", "fb")
-        to_push.append(rel_p)
-        jobs.append(("fb", rel_p))
+        fb_rels = []
+        for i, src in enumerate(srcs):
+            label = f"fb{i}" if len(srcs) > 1 else "fb"
+            _, rel = render_variant(src, row, "fb_feed", label)
+            fb_rels.append(rel)
+        to_push += fb_rels
+        jobs.append(("fb", fb_rels))
+
     if wants(row["platforms"], "ig"):
-        abs_f, rel_f = render_variant(src, row, "ig_feed", "ig-feed")
-        abs_s, rel_s = render_variant(src, row, "ig_story", "ig-story")
-        to_push += [rel_f, rel_s]
-        jobs.append(("ig", (rel_f, rel_s)))
+        ig_feed_rels = []
+        for i, src in enumerate(srcs):
+            label = f"ig-feed{i}" if len(srcs) > 1 else "ig-feed"
+            _, rel = render_variant(src, row, "ig_feed", label)
+            ig_feed_rels.append(rel)
+        _, story_rel = render_variant(srcs[0], row, "ig_story", "ig-story")
+        to_push += ig_feed_rels + [story_rel]
+        jobs.append(("ig", (ig_feed_rels, story_rel)))
 
     push_images(to_push)
 
     for code, payload in jobs:
         try:
             if code == "fb":
-                url = meta_client.public_image_url(payload)
-                if not wait_url_live(url):
-                    raise meta_client.MetaError(f"image URL not live yet: {url}")
+                urls = [meta_client.public_image_url(p) for p in payload]
+                for u in urls:
+                    if not wait_url_live(u):
+                        raise meta_client.MetaError(f"image URL not live yet: {u}")
                 if DRY_RUN:
-                    store.log(f"[DRY RUN] would post FB: {row['event']} -> {url}")
+                    store.log(f"[DRY RUN] would post FB ({len(urls)} photo(s)): {row['event']}")
+                elif len(urls) > 1:
+                    meta_client.post_facebook_multi(urls, row["fb_caption"])
                 else:
-                    meta_client.post_facebook(url, row["fb_caption"])
+                    meta_client.post_facebook(urls[0], row["fb_caption"])
                 succeeded.add("fb")
             else:  # ig
-                feed_rel, story_rel = payload
-                feed_url = meta_client.public_image_url(feed_rel)
+                feed_rels, story_rel = payload
+                feed_urls = [meta_client.public_image_url(p) for p in feed_rels]
                 story_url = meta_client.public_image_url(story_rel)
-                if not wait_url_live(feed_url) or not wait_url_live(story_url):
-                    raise meta_client.MetaError("IG image URL not live yet")
+                for u in feed_urls + [story_url]:
+                    if not wait_url_live(u):
+                        raise meta_client.MetaError("IG image URL not live yet")
                 if DRY_RUN:
-                    store.log(f"[DRY RUN] would post IG feed+story+hashtags: {row['event']}")
+                    store.log(f"[DRY RUN] would post IG ({len(feed_urls)} photo(s)) "
+                             f"feed+story+hashtags: {row['event']}")
                 else:
-                    meta_client.post_instagram(feed_url, row["ig_caption"], hashtags_for(row))
+                    if len(feed_urls) > 1:
+                        meta_client.post_instagram_carousel(feed_urls, row["ig_caption"], hashtags_for(row))
+                    else:
+                        meta_client.post_instagram(feed_urls[0], row["ig_caption"], hashtags_for(row))
                     try:
                         meta_client.post_instagram_story(story_url)
                     except meta_client.MetaError as exc:
