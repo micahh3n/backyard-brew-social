@@ -47,6 +47,30 @@ def blank_row():
     return {col: "" for col in config.POSTS_COLUMNS}
 
 
+def recent_captions_for_event(rows, event, limit=4):
+    """Most-recent-first ig_captions already posted/approved for this event.
+
+    Used as the repetition guard so the caption prompt can be told what it
+    already said recently and told not to repeat it.
+    """
+    matches = [r for r in rows
+               if r["event"] == event and r["status"] in (config.STATUS_APPROVED, config.STATUS_POSTED)
+               and r["ig_caption"]]
+    matches.sort(key=lambda r: r["date"], reverse=True)
+    return [r["ig_caption"] for r in matches[:limit]]
+
+
+def used_photo_filenames(rows):
+    """Every filename that already appears in some row's photos column."""
+    used = set()
+    for r in rows:
+        for name in (r["photos"] or "").split(","):
+            name = name.strip()
+            if name:
+                used.add(name)
+    return used
+
+
 def log(message: str):
     """Append a timestamped line to status.log (owner-visible) and stdout."""
     stamp = datetime.now(config.TIMEZONE).strftime("%Y-%m-%d %H:%M")
