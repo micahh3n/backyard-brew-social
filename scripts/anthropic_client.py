@@ -56,7 +56,7 @@ Return ONLY valid JSON: {{"fb_caption": "...", "ig_caption": "..."}} -- no other
 
 
 def _framing(post_type: str, days_until: int | None) -> str:
-    """Return the timing-specific instruction for this post."""
+    """Return the timing/format-specific instruction for this post."""
     if post_type == "today":
         return ("This is a TODAY post -- urgent, same-day framing. It's happening TONIGHT, "
                 "come now. Same-day energy.")
@@ -64,6 +64,21 @@ def _framing(post_type: str, days_until: int | None) -> str:
         return ("This is a TOMORROW TEASER post -- anticipation/planning framing. Tomorrow's "
                 "the night, tell your people, get ready. Must feel genuinely different from the "
                 "same event's today post, not a copy with the day swapped.")
+    if post_type == "vibe":
+        return ("This is a BEHIND-THE-SCENES / VIBE post. NO CTA, no membership mention, no "
+                "urgency framing -- suspend the usual foot-traffic-CTA rule entirely for this "
+                "one. Just a short, warm, personality-driven line about this specific candid "
+                "moment. Its whole job is likability, not conversion.")
+    if post_type == "spotlight":
+        return ("This is a COMMUNITY SPOTLIGHT post. Credit the person or moment specifically "
+                "and warmly -- a genuine shoutout, not a generic mention. If concrete facts were "
+                "given, use them exactly. If not, write a plausible generic shoutout from what "
+                "the photo shows -- never invent a specific name.")
+    if post_type == "carousel":
+        return ("This is a CAROUSEL recap post, published the day AFTER the event, covering "
+                "several photos from that night. Frame it as looking back at how it went -- "
+                "'here's how last night went down' energy -- not urgency to attend, since it "
+                "already happened.")
     # Campaign reminder
     if days_until is not None and days_until >= 10:
         urgency = "It's a couple weeks out -- 'mark your calendar / save the date' energy, build anticipation."
@@ -106,16 +121,28 @@ def _extract_json(text: str) -> dict:
 def fallback_captions(event, key_details, post_type="today", days_until=None) -> dict:
     """Simple templated captions used when the API is unavailable.
 
-    Framing-aware (today vs teaser vs reminder) so an outage still produces a
-    sensible-sounding post. Not fancy -- just enough for the owner to review and
-    rewrite by hand, and clearly not as good as a generated caption.
+    Framing-aware so an outage still produces a sensible-sounding post. Not
+    fancy -- just enough for the owner to review and rewrite by hand.
     """
-    details = key_details.strip().rstrip(".")
-    first = details.split(",")[0].strip()
+    details = key_details.strip().rstrip(".") if key_details else ""
+    first = details.split(",")[0].strip() if details else event
     if post_type == "today":
         when_fb, when_ig = "Tonight at", f"{event} tonight \U0001F37A"
     elif post_type == "teaser":
         when_fb, when_ig = "Tomorrow at", f"Tomorrow: {event} \U0001F37A"
+    elif post_type == "vibe":
+        fb = f"Just another day at {config.BUSINESS['name']} \U0001F332\U0001F37A."
+        ig = "Living the backyard life \U0001F332"
+        return {"fb_caption": fb, "ig_caption": ig, "_fallback": True}
+    elif post_type == "spotlight":
+        fb = f"Shoutout to our regulars at {config.BUSINESS['name']} -- you make this place \U0001F37A."
+        ig = "Community shoutout \U0001F3AF"
+        return {"fb_caption": fb, "ig_caption": ig, "_fallback": True}
+    elif post_type == "carousel":
+        fb = (f"Last night at {config.BUSINESS['name']} -- {event}! {details or 'Great crowd, great time.'} "
+              "Wisconsin-made drinks, disc golf & hiking out back. Come see for yourself next time!")
+        ig = f"Last night: {event} \U0001F37A recap"
+        return {"fb_caption": fb, "ig_caption": ig, "_fallback": True}
     else:  # reminder
         lead = (f"{days_until} days out" if days_until else "Coming up")
         when_fb, when_ig = f"{lead} at", f"Mark your calendar: {event} \U0001F37A"
