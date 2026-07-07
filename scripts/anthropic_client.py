@@ -44,6 +44,9 @@ chain, or product. Packers/Brewers/Green Bay references are welcome where natura
 engagement bait (comment-bait "tag your ___", share-bait "send this to ___", or save-bait for \
 info-dense posts). Specific CTAs only -- never a vague "come visit".
 - No filler. Every word earns its place. Fragmented sentences over full paragraphs.
+- Casual and warm, but keep spelling and grammar standard. No dropped word endings or \
+slang contractions ("ya" for "you", "gonna", "y'all", etc.) -- friendly doesn't mean informal \
+spelling. Write like a real person texting, not a caricature of one.
 - On-brand emojis only, used naturally never spammed: {' '.join(config.EMOJIS)}
 - Never post anything implying hours outside the real open hours.
 
