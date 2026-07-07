@@ -33,7 +33,7 @@ TIMEZONE = ZoneInfo("America/Chicago")
 # Anthropic model for caption generation. Sonnet is smart, fast, and cheap.
 # Override by setting the ANTHROPIC_MODEL secret/env var.
 # ---------------------------------------------------------------------------
-ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-5")
+ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL") or "claude-sonnet-5"
 
 # ---------------------------------------------------------------------------
 # Business identity (used inside the caption prompt and flyers)
