@@ -1,5 +1,6 @@
 import io
 import os
+from datetime import datetime
 from unittest.mock import patch
 
 from PIL import Image
@@ -75,3 +76,33 @@ def test_post_row_holds_back_degraded_multi_photo_row(tmp_path, monkeypatch):
     # render_variant must never even be called -- the row is held back before
     # any rendering/upload work happens.
     mock_render.assert_not_called()
+
+
+def test_main_continues_after_one_row_raises_unexpectedly(tmp_path, monkeypatch):
+    """One row that raises an unexpected exception (e.g. bad date data from a
+    spreadsheet mishap) must not crash the whole hourly run or block other
+    approved, due rows from posting."""
+    monkeypatch.setattr(config, "POSTS_CSV", str(tmp_path / "posts.csv"))
+    bad_row = _row("a.jpg")
+    bad_row["event"] = "Bad Row"
+    good_row = _row("b.jpg")
+    good_row["event"] = "Good Row"
+    store.write_posts([bad_row, good_row])
+
+    def fake_post_row(row):
+        if row["event"] == "Bad Row":
+            raise ValueError("time data '7/10/2026' does not match format '%Y-%m-%d'")
+        return {"fb", "ig"}
+
+    with patch("post_to_meta.post_row", side_effect=fake_post_row), \
+         patch("post_to_meta.store.log") as mock_log, \
+         patch("post_to_meta.meta_client.days_until_token_expires", return_value=None), \
+         patch("post_to_meta.now_local", return_value=datetime(2026, 6, 2, tzinfo=config.TIMEZONE)):
+        ptm.main()
+
+    saved = store.load_posts()
+    bad_saved = next(r for r in saved if r["event"] == "Bad Row")
+    good_saved = next(r for r in saved if r["event"] == "Good Row")
+    assert bad_saved["status"] == config.STATUS_APPROVED  # left untouched for retry
+    assert good_saved["status"] == config.STATUS_POSTED   # unaffected by the other row's crash
+    assert any("POST FAILED (unexpected error)" in str(c) for c in mock_log.call_args_list)

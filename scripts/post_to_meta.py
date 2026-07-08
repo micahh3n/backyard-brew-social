@@ -213,7 +213,15 @@ def main():
         store.log("hourly job: nothing due.")
     for row in due:
         wanted = {c for c in ("fb", "ig") if wants(row["platforms"], c)}
-        got = post_row(row)
+        try:
+            got = post_row(row)
+        except Exception as exc:
+            # A single malformed row (e.g. bad date data) must never crash the
+            # whole run and block every other approved post. Log and move on;
+            # the row stays approved for retry once the data is fixed.
+            store.log(f"POST FAILED (unexpected error) '{row['event']}' "
+                      f"{row['scheduled_time']}: {exc}")
+            continue
         if got >= wanted:
             row["status"] = config.STATUS_POSTED
             store.log(f"POSTED '{row['event']}' ({row['post_type']}) to {', '.join(sorted(got)) or 'nothing'}")
