@@ -13,6 +13,12 @@ def _scheduled_row(dt_str):
     return row
 
 
+def test_slug_from_default_strips_art_and_teaser_suffixes():
+    assert gc.slug_from_default("bingo_default.jpg") == "bingo"
+    assert gc.slug_from_default("bingo_default_art.png") == "bingo"
+    assert gc.slug_from_default("bingo_default_teaser.jpg") == "bingo"
+
+
 def test_day_post_counts_counts_by_date():
     rows = [_scheduled_row("2026-06-01 12:00"), _scheduled_row("2026-06-01 19:00"),
             _scheduled_row("2026-06-02 12:00")]

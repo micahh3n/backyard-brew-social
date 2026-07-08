@@ -41,9 +41,15 @@ def dow_name(d):
 
 
 def slug_from_default(default_photo):
-    """bingo_default.jpg -> 'bingo' (the keyword the owner puts in filenames)."""
+    """bingo_default_art.png -> 'bingo' (the keyword the owner puts in filenames).
+
+    Strips both "_default" and any "_art"/"_teaser" suffix so a default that's
+    premade art still matches future dated photos dropped for the same event.
+    """
     stem = os.path.splitext(os.path.basename(default_photo or ""))[0]
-    return stem.replace("_default", "").strip().lower() or "event"
+    for token in ("_default", "_art", "_teaser"):
+        stem = stem.replace(token, "")
+    return stem.strip().lower() or "event"
 
 
 def slug_from_event(event):
