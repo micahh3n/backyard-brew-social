@@ -6,3 +6,5 @@
 [2026-07-07 17:51] Sunday job done: generated 12 new post rows (needs_review). Timing source: default-fallback (not yet personalized to Backyard Brew's own data).
 [2026-07-07 17:51] note: 1 rows may need a manual caption pass.
 [2026-07-07 18:47] Sunday job done: generated 0 new post rows (needs_review). Timing source: default-fallback (not yet personalized to Backyard Brew's own data).
+[2026-07-07 21:42] POST FAILED [fb] 'Line Dancing + Karaoke Night' 2026-07-07 18:00: POST 104346599433924/photos failed: {'message': '(#200) The permission(s) publish_actions are not available. It has been deprecated. If you want to provide a way for your app users to share content to Facebook, we encourage you to use our Sharing products instead.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AOJD6yjv_expTug9YUx8Fsx'}
+[2026-07-07 21:43] PARTIAL 'Line Dancing + Karaoke Night': posted ['ig'], will retry ['fb']
