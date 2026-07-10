@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import date, datetime
 
 import build_preview
 import classify_photos
@@ -200,3 +200,67 @@ def test_find_deal_photo_returns_none_when_absent(tmp_path, monkeypatch):
     monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
     (tmp_path / "2026-07-14_pickleball.jpg").write_bytes(b"fake")
     assert gc.find_deal_photo("2026-07-14", "pickleball") is None
+
+
+def test_photo_last_used_returns_most_recent_date_per_filename():
+    rows = [
+        {**store.blank_row(), "date": "2026-06-01", "photos": "a.jpg"},
+        {**store.blank_row(), "date": "2026-06-08", "photos": "a.jpg, b.jpg"},
+    ]
+    last_used = gc._photo_last_used(rows)
+    assert last_used["a.jpg"] == "2026-06-08"
+    assert last_used["b.jpg"] == "2026-06-08"
+
+
+def test_pick_pool_photo_prefers_never_used_photo(monkeypatch, tmp_path):
+    monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
+    (tmp_path / "bingo_old.jpg").write_bytes(b"x")
+    (tmp_path / "bingo_new.jpg").write_bytes(b"x")
+    posts_history = [{**store.blank_row(), "date": "2026-06-01", "photos": "bingo_old.jpg"}]
+    pick = gc._pick_pool_photo(["bingo"], exclude_filenames=set(), posts_history=posts_history)
+    assert pick == "bingo_new.jpg"
+
+
+def test_pick_pool_photo_picks_oldest_last_used_when_all_used_photos(monkeypatch, tmp_path):
+    monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
+    (tmp_path / "bingo_a.jpg").write_bytes(b"x")
+    (tmp_path / "bingo_b.jpg").write_bytes(b"x")
+    posts_history = [
+        {**store.blank_row(), "date": "2026-06-01", "photos": "bingo_a.jpg"},
+        {**store.blank_row(), "date": "2026-06-08", "photos": "bingo_b.jpg"},
+    ]
+    pick = gc._pick_pool_photo(["bingo"], exclude_filenames=set(), posts_history=posts_history)
+    assert pick == "bingo_a.jpg"  # used longest ago wins
+
+
+def test_pick_pool_photo_breaks_never_used_ties_toward_newest_capture_time(monkeypatch, tmp_path):
+    monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
+    (tmp_path / "bingo_a.jpg").write_bytes(b"x")
+    (tmp_path / "bingo_b.jpg").write_bytes(b"x")
+
+    def fake_capture_time(path):
+        return datetime(2026, 1, 1) if path.endswith("bingo_a.jpg") else datetime(2026, 6, 1)
+
+    monkeypatch.setattr(classify_photos, "read_capture_time", fake_capture_time)
+    pick = gc._pick_pool_photo(["bingo"], exclude_filenames=set(), posts_history=[])
+    assert pick == "bingo_b.jpg"
+
+
+def test_pick_pool_photo_excludes_the_events_own_default_photo(monkeypatch, tmp_path):
+    monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
+    (tmp_path / "Bingo_default_art.jpg").write_bytes(b"x")
+    pick = gc._pick_pool_photo(["bingo"], exclude_filenames={"Bingo_default_art.jpg"}, posts_history=[])
+    assert pick is None
+
+
+def test_pick_pool_photo_returns_none_when_no_candidates(monkeypatch, tmp_path):
+    monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
+    pick = gc._pick_pool_photo(["bingo"], exclude_filenames=set(), posts_history=[])
+    assert pick is None
+
+
+def test_pick_pool_photo_excludes_video_files(monkeypatch, tmp_path):
+    monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
+    (tmp_path / "bingo_clip.mp4").write_bytes(b"x")
+    pick = gc._pick_pool_photo(["bingo"], exclude_filenames=set(), posts_history=[])
+    assert pick is None

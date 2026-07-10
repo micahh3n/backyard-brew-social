@@ -105,6 +105,63 @@ def find_deal_photo(post_date_str, slug):
     return None
 
 
+def _photo_last_used(rows):
+    """filename -> most recent 'date' value (YYYY-MM-DD) it appeared in any
+    row's photos column, across all given rows. Absent if never used."""
+    last_used = {}
+    for r in rows:
+        d = r.get("date") or ""
+        if not d:
+            continue
+        for name in (r.get("photos") or "").split(","):
+            name = name.strip()
+            if not name:
+                continue
+            if name not in last_used or d > last_used[name]:
+                last_used[name] = d
+    return last_used
+
+
+def _pool_candidates(keywords, exclude_filenames, posts_history):
+    """Every eligible photo in config.PHOTOS_DIR whose filename contains any
+    of `keywords` (case-insensitive substring), excluding anything in
+    exclude_filenames and any video file, paired with when it was last used
+    (None if never). Returns a list of (filename, last_used_date_or_None)."""
+    last_used = _photo_last_used(posts_history)
+    candidates = []
+    for filename in list_photos():
+        if filename in exclude_filenames:
+            continue
+        if filename.lower().endswith(classify_photos.VIDEO_EXTENSIONS):
+            continue
+        stem = os.path.splitext(filename)[0].lower()
+        if not any(kw.lower() in stem for kw in keywords):
+            continue
+        candidates.append((filename, last_used.get(filename)))
+    return candidates
+
+
+def _pick_pool_photo(keywords, exclude_filenames, posts_history):
+    """None if no eligible candidate. Otherwise the filename to use this
+    run: a never-used candidate always wins (ties toward newest real photo
+    capture time); otherwise whichever was used longest ago wins. No photo
+    is ever permanently excluded -- once everything has had a turn, the
+    LRU rule naturally starts the cycle over."""
+    candidates = _pool_candidates(keywords, exclude_filenames, posts_history)
+    if not candidates:
+        return None
+    never_used = [f for f, last in candidates if last is None]
+    if never_used:
+        never_used.sort(
+            key=lambda f: classify_photos.read_capture_time(
+                os.path.join(config.PHOTOS_DIR, f)) or datetime.min,
+            reverse=True)
+        return never_used[0]
+    used = [(f, last) for f, last in candidates if last is not None]
+    used.sort(key=lambda pair: pair[1])
+    return used[0][0]
+
+
 def render_generated_images(rows):
     """Render each row's flyer/photo to config.GENERATED_DIR and set
     generated_image to its repo-relative path. Never raises -- a render
