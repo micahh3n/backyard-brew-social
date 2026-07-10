@@ -1,4 +1,5 @@
 anthropic>=0.40.0
 requests>=2.31.0
 Pillow>=10.2.0
+playwright>=1.40.0    # renders the premium HTML/CSS flyer templates (see flyer_render.py)
 tzdata>=2024.1        # timezone database (required on Windows; harmless on Linux)
