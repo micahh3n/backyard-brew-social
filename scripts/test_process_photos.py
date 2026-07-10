@@ -79,3 +79,61 @@ def test_resolve_mode_art_suffix_always_wins():
 def test_output_name_format():
     name = pp.output_name("post", "Bingo Night", "2026-07-14")
     assert name == "backyard-brew-post-bingo-night-2026-07-14.png"
+
+
+def test_process_text_overlay_mode_delegates_to_flyer_render(tmp_path, monkeypatch):
+    calls = []
+
+    def fake_render_flyer(photo_path, event, key_details, day_of_week, date_str, out_path,
+                          size=None, deal_photo_path=None, layout=None):
+        calls.append({"photo_path": photo_path, "event": event, "key_details": key_details,
+                      "day_of_week": day_of_week, "date_str": date_str, "out_path": out_path,
+                      "size": size, "deal_photo_path": deal_photo_path})
+        Image.new("RGB", size or (1080, 1080), (10, 20, 30)).save(out_path)
+        return out_path
+
+    monkeypatch.setattr(pp.flyer_render, "render_flyer", fake_render_flyer)
+
+    src = tmp_path / "2026-07-14_bingo.jpg"
+    _dummy_photo().save(src)
+    out = tmp_path / "out.png"
+    pp.process(str(src), str(out), "ig_feed", "text_overlay",
+              event="Bingo Night", key_details="10 rounds",
+              day_of_week="Monday", date_str="2026-07-14")
+
+    assert len(calls) == 1
+    assert calls[0]["event"] == "Bingo Night"
+    assert calls[0]["key_details"] == "10 rounds"
+    assert calls[0]["day_of_week"] == "Monday"
+    assert calls[0]["date_str"] == "2026-07-14"
+    assert calls[0]["photo_path"] == str(src)
+    assert calls[0]["out_path"] == str(out)
+    assert calls[0]["size"] == config.DIMENSIONS["ig_feed"]
+
+
+def test_process_both_mode_delegates_to_flyer_render_then_adds_logo(tmp_path, monkeypatch):
+    render_calls = []
+    logo_calls = []
+
+    def fake_render_flyer(photo_path, event, key_details, day_of_week, date_str, out_path,
+                          size=None, deal_photo_path=None, layout=None):
+        render_calls.append(out_path)
+        Image.new("RGB", size or (1080, 1080), (10, 20, 30)).save(out_path)
+        return out_path
+
+    def fake_add_logo(img):
+        logo_calls.append(True)
+        return img
+
+    monkeypatch.setattr(pp.flyer_render, "render_flyer", fake_render_flyer)
+    monkeypatch.setattr(pp, "_add_logo", fake_add_logo)
+
+    src = tmp_path / "2026-07-14_bingo.jpg"
+    _dummy_photo().save(src)
+    out = tmp_path / "out.png"
+    pp.process(str(src), str(out), "ig_feed", "both",
+              event="Bingo Night", key_details="10 rounds",
+              day_of_week="Monday", date_str="2026-07-14")
+
+    assert len(render_calls) == 1, "flyer_render.render_flyer must be called exactly once for 'both' mode"
+    assert len(logo_calls) == 1, "_add_logo must be called exactly once after the flyer renders, for 'both' mode"
