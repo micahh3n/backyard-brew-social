@@ -28,24 +28,34 @@ def _system_prompt() -> str:
     return f"""You write social captions for {b['name']}, {b['region']}'s most unique bar \
 (bar + disc golf + hiking trails on 35 acres in {b['city']}, WI). Tagline: "{b['tagline']}".
 
-VOICE (follow exactly):
-- Energetic, community-first, outdoorsy, Wisconsin-proud, fun without being try-hard. \
-Feels like a friend texting you about a cool spot -- never corporate.
-- HOOK FIRST LINE, ALWAYS. The opening line must stop the scroll -- lead with the most \
-surprising, specific, or urgency-driving detail. "Bingo's back" not "Hey everyone, don't forget".
-- Wisconsin identity is the superpower -- SAY IT. Every beer, wine, seltzer is 100% \
-Wisconsin-made, zero outside brands. That's rare and worth naming.
+VOICE:
+- Energetic, community-first, outdoorsy, Wisconsin-proud, fun without being try-hard. Feels \
+like a friend texting you about a cool spot -- never corporate, never a copywriting checklist. \
+No two posts should read like they came from the same template.
+- The event info for that day (what, when, key details) must always be accurate and always \
+included -- that's the one thing that never varies.
+- VARY THE OPENING MOVE. Don't default to a rhetorical question every time -- mix in a flat \
+statement, a fragment, an aside, an exclamation. Don't repeat the same opening style two posts \
+in a row.
+- Wisconsin identity is a real asset -- every beer, wine, seltzer is 100% Wisconsin-made, zero \
+outside brands -- but don't recite it as a fixed line every post. Work it in naturally, and \
+skip it entirely sometimes, the way a real person would.
 - WISCONSIN-ONLY IS NON-NEGOTIABLE. Never name-drop or reference any non-Wisconsin brand, \
 chain, or product. Packers/Brewers/Green Bay references are welcome where natural.
 - Promote the uniqueness: bar + disc golf + hiking, unlike anywhere else.
 - Events need FOMO, not generic "join us" energy -- something you'd regret missing.
-- Weave memberships in naturally and often (not a hard sell, just the obvious move): {config.MEMBERSHIPS}
-- ONE clear foot-traffic CTA per post (a specific reason to come in), plus a rotated \
-engagement bait (comment-bait "tag your ___", share-bait "send this to ___", or save-bait for \
-info-dense posts). Specific CTAs only -- never a vague "come visit".
+- Membership plugs ({config.MEMBERSHIPS}) should show up often -- the owner wants them frequent \
+-- but phrase them differently every time, like a person casually mentioning it mid-conversation, \
+never the same sentence twice.
+- DRIVE SHARING AND REACH ON EVERY POST -- this matters more than any single line. Every \
+caption needs something that spreads it beyond people who already follow the page. Rotate the \
+mechanism instead of reusing "tag your ___" every time -- mix across: tag-a-friend, a \
+comment-bait question, a save-worthy specific detail, a genuinely quotable line, a "share this \
+if" line. Pick whichever fits this specific post best, and pick a different one than recent \
+posts used for this event.
 - No filler. Every word earns its place. Fragmented sentences over full paragraphs.
-- Casual and warm, but keep spelling and grammar standard. No dropped word endings or \
-slang contractions ("ya" for "you", "gonna", "y'all", etc.) -- friendly doesn't mean informal \
+- Casual and warm, but keep spelling and grammar standard. No dropped word endings or slang \
+contractions ("ya" for "you", "gonna", "y'all", etc.) -- friendly doesn't mean informal \
 spelling. Write like a real person texting, not a caricature of one.
 - On-brand emojis only, used naturally never spammed: {' '.join(config.EMOJIS)}
 - Never post anything implying hours outside the real open hours.
@@ -95,7 +105,7 @@ def _framing(post_type: str, days_until: int | None) -> str:
 
 
 def _user_prompt(event, key_details, day_of_week, post_type, days_until,
-                 angle, voice_examples, avoid_examples):
+                 angle, avoid_examples):
     parts = [
         f"EVENT: {event}",
         f"DAY: {day_of_week}",
@@ -105,14 +115,11 @@ def _user_prompt(event, key_details, day_of_week, post_type, days_until,
     if angle:
         parts.append(f"CONTENT ANGLE for this event: {angle}")
     parts.append(_framing(post_type, days_until))
-    if voice_examples:
-        joined = "\n---\n".join(voice_examples[:4])
-        parts.append("REFERENCE -- some of the bar's real past captions for voice matching "
-                     f"(match the vibe, do not copy):\n{joined}")
     if avoid_examples:
         joined = "\n---\n".join(avoid_examples[:4])
-        parts.append("DO NOT REPEAT -- captions already used recently for this exact event. "
-                     f"Write something with a genuinely different hook, phrasing, and structure:\n{joined}")
+        parts.append("DO NOT REPEAT -- captions already used recently for this exact event, in "
+                     "wording AND in structure/opening-move/engagement-mechanism. Write "
+                     f"something with a genuinely different hook, phrasing, and structure:\n{joined}")
     parts.append('Write the two captions now. Return ONLY the JSON object.')
     return "\n\n".join(parts)
 
@@ -160,7 +167,7 @@ def fallback_captions(event, key_details, post_type="today", days_until=None) ->
 
 
 def generate_captions(event, key_details, day_of_week, post_type,
-                      days_until=None, voice_examples=None, avoid_examples=None):
+                      days_until=None, avoid_examples=None):
     """Generate {fb_caption, ig_caption} for one post.
 
     Falls back to a templated caption on any error. Never raises -- the Sunday
@@ -182,7 +189,7 @@ def generate_captions(event, key_details, day_of_week, post_type,
                 "role": "user",
                 "content": _user_prompt(event, key_details, day_of_week,
                                         post_type, days_until, angle,
-                                        voice_examples or [], avoid_examples or []),
+                                        avoid_examples or []),
             }],
         )
         text = "".join(block.text for block in resp.content

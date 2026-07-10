@@ -30,15 +30,13 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ANTHROPIC_MODEL: ${{ secrets.ANTHROPIC_MODEL }}   # optional override
-          META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
-          META_PAGE_ACCESS_TOKEN: ${{ secrets.META_PAGE_ACCESS_TOKEN }}
         run: python scripts/generate_captions.py
 
       - name: Commit the generated posts
         run: |
           git config user.name "Backyard Brew Bot"
           git config user.email "actions@github.com"
-          git add posts.csv status.log assets/fonts || true
+          git add posts.csv status.log assets/fonts photos/_generated preview || true
           if ! git diff --cached --quiet; then
             git commit -m "Sunday job: generate weekly posts [skip ci]"
             git push

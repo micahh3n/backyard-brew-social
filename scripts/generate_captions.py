@@ -16,10 +16,13 @@ import os
 from collections import defaultdict
 from datetime import datetime, timedelta
 
+import build_preview
 import classify_photos
 import config
-import meta_client
+import process_photos
+import scheduling
 import store
+import weather
 from anthropic_client import generate_captions
 
 DATE_FMT = "%Y-%m-%d"
@@ -88,6 +91,49 @@ def find_photo(post_date_str, slug, want_teaser, default_photo):
     return dated_base or default_photo
 
 
+def find_deal_photo(post_date_str, slug):
+    """The dated _deal photo for this date/event slug, if the owner dropped
+    one (e.g. 2026-07-14_pickleball_deal.jpg). None if not present -- a
+    missing deal photo just means no deal callout gets added, never blocks
+    the post."""
+    for f in list_photos():
+        stem = os.path.splitext(f)[0].lower()
+        tokens = stem.split("_")
+        if post_date_str in stem and slug in stem and "deal" in tokens:
+            return f
+    return None
+
+
+def render_generated_images(rows):
+    """Render each row's flyer/photo to config.GENERATED_DIR and set
+    generated_image to its repo-relative path. Never raises -- a render
+    failure just leaves generated_image blank so the row still shows up for
+    review with its original photo referenced in the photos column."""
+    for row in rows:
+        try:
+            if row.get("generated_image") or not row.get("photos"):
+                continue
+            first_photo = row["photos"].split(",")[0].strip()
+            src = os.path.join(config.PHOTOS_DIR, first_photo)
+            if not os.path.isfile(src):
+                continue
+            event_date = parse_date(row["date"])
+            slug = slug_from_event(row["event"])
+            deal_photo = find_deal_photo(row["date"], slug)
+            deal_path = os.path.join(config.PHOTOS_DIR, deal_photo) if deal_photo else None
+            name = process_photos.output_name("post", row["event"], row["date"])
+            out_path = os.path.join(config.GENERATED_DIR, name)
+            process_photos.process(
+                src, out_path, "ig_feed", row["enhance"],
+                event=row["event"], key_details=row["key_details"],
+                day_of_week=dow_name(event_date), date_str=row["date"],
+                deal_photo_path=deal_path)
+            row["generated_image"] = os.path.relpath(out_path, config.REPO_ROOT).replace("\\", "/")
+        except Exception as exc:
+            store.log(f"flyer render failed for '{row['event']}' {row['date']}: {exc} "
+                      f"-- row will show its original photo instead.")
+
+
 def suggest_enhance(event, key_details, is_promo):
     """Auto-suggest text_overlay for info-dense pushes, none for vibe content.
 
@@ -118,7 +164,7 @@ def scheduled_string(post_date, dow_for_time, post_type, owner_time):
 # ---------------------------------------------------------------------------
 def build_row(event_date, post_date, event, key_details, platforms,
               post_type, photo, enhance, owner_time="", days_until=None,
-              voice_examples=None, avoid_examples=None):
+              avoid_examples=None):
     """Assemble one fully-generated posts.csv row (status = needs_review)."""
     dow_event = dow_name(event_date)
     row = store.blank_row()
@@ -133,7 +179,6 @@ def build_row(event_date, post_date, event, key_details, platforms,
                                              post_type, owner_time)
     caps = generate_captions(event, key_details, dow_event, post_type,
                              days_until=days_until,
-                             voice_examples=voice_examples,
                              avoid_examples=avoid_examples)
     row["fb_caption"] = caps["fb_caption"]
     row["ig_caption"] = caps["ig_caption"]
@@ -147,7 +192,6 @@ def build_row(event_date, post_date, event, key_details, platforms,
 # ---------------------------------------------------------------------------
 def main():
     run_date = today_local()
-    voice_examples = meta_client.recent_page_posts(limit=6)
     recurring = load_recurring_by_day()
     posts = store.load_posts()
 
@@ -192,7 +236,6 @@ def main():
                 event_date, post_date, event, details, platforms,
                 ptype, photo, enhance,
                 days_until=(days_before if days_before >= 2 else None),
-                voice_examples=voice_examples,
                 avoid_examples=store.recent_captions_for_event(posts, event, limit=4)))
         src["status"] = config.STATUS_CAMPAIGN_SOURCE
         campaign_dates.add((src["date"], event))
@@ -242,7 +285,6 @@ def main():
             enhance = suggest_enhance(event, details, is_promo=bool(one))
             row = build_row(d, d, event, details, platforms, "today",
                             photo, enhance, owner_time=owner_time,
-                            voice_examples=voice_examples,
                             avoid_examples=store.recent_captions_for_event(posts, event, limit=4))
             if one:
                 # Repurpose the owner's original row into this today post
@@ -258,7 +300,6 @@ def main():
             enhance = suggest_enhance(event, details, is_promo=bool(one))
             generated.append(build_row(d, teaser_post_date, event, details,
                                        platforms, "teaser", photo, enhance,
-                                       voice_examples=voice_examples,
                                        avoid_examples=store.recent_captions_for_event(posts, event, limit=4)))
 
     # --- 5. Extra post types: carousel / vibe / spotlight --------------------
@@ -266,24 +307,27 @@ def main():
     known_events = list(config.EVENT_ANGLES.keys())
     classified = classify_photos.classify_new_photos(config.PHOTOS_DIR, known_events, used)
     # Same repetition guard recurring/one-off/campaign posts already get, but
-    # scoped to the two generic bucket names vibe/spotlight posts reuse every
-    # week (unlike a dated event, these are the ones most likely to drift into
-    # copy-paste-feeling repeats over unattended runs).
-    extra_event_labels = ["Behind The Scenes", "Community Spotlight"]
+    # scoped to the generic bucket names vibe/spotlight posts reuse every week
+    # (all four config.EVERGREEN_LABELS, plus "Community Spotlight") -- unlike
+    # a dated event, these are the ones most likely to drift into
+    # copy-paste-feeling repeats over unattended runs.
+    extra_event_labels = list(config.EVERGREEN_LABELS) + ["Community Spotlight"]
     avoid_examples_by_event = {
         label: store.recent_captions_for_event(posts, label, limit=4)
         for label in extra_event_labels
     }
     extra_rows = build_extra_rows(classified, posts + generated, run_date,
-                                  voice_examples=voice_examples,
                                   avoid_examples_by_event=avoid_examples_by_event)
     generated += extra_rows
     if extra_rows:
         store.log(f"generated {len(extra_rows)} extra post(s): "
                   f"{', '.join(r['post_type'] for r in extra_rows)}")
 
-    # --- 6. Save --------------------------------------------------------------
+    # --- 6. Render flyer images, build the preview page, then save -----------
     all_rows = posts + generated
+    render_generated_images(all_rows)
+    week_rows = [r for r in all_rows if r["status"] == config.STATUS_NEEDS_REVIEW]
+    build_preview.write_preview(week_rows)
     store.write_posts(all_rows)
     fell_back = sum(1 for r in generated if r.get("_fallback"))
     store.log(f"Sunday job done: generated {len(generated)} new post rows "
@@ -334,24 +378,42 @@ def group_carousel_candidates(classified):
     return groups
 
 
-def build_extra_rows(classified, existing_rows, run_date, voice_examples=None,
+def _weather_vibes_key_details(target_date_str):
+    blurb = weather.forecast_blurb(parse_date(target_date_str))
+    return f"Weather: {blurb}" if blurb else ""
+
+
+def build_extra_rows(classified, existing_rows, run_date,
                      avoid_examples_by_event=None):
-    """Build carousel/vibe/spotlight rows, respecting the hard daily cap and
-    the weekly ceiling. Never forces a post -- thin material means fewer rows."""
+    """Build carousel/vibe/spotlight/evergreen rows so every day of the
+    upcoming week reaches config.MIN_DAILY_POSTS, with config.BONUS_POSTS_PER_WEEK
+    days occasionally bumped to config.MAX_DAILY_POSTS. Never forces a post
+    past what real/evergreen material actually supports that week -- thin
+    material just means the guarantee isn't fully hit."""
     counts = dict(day_post_counts(existing_rows))
     week_dates = [(run_date + timedelta(days=i)).strftime(DATE_FMT) for i in range(1, 8)]
+    targets = scheduling.compute_fill_targets(counts, week_dates)
+    fills_placed = defaultdict(int)
     extra_rows = []
 
-    def try_schedule(kind, event, key_details, filenames, preferred_date, time_slot):
-        if len(extra_rows) >= config.MAX_EXTRA_POSTS_PER_WEEK:
-            return
-        candidates = [d for d in week_dates if counts.get(d, 0) < 2]  # today+teaser already = up to 2
-        if not candidates:
-            return
-        if preferred_date is not None and preferred_date in candidates:
+    def remaining_target_days():
+        return [d for d in week_dates if targets.get(d, 0) > 0]
+
+    def schedule_row(kind, event, key_details_fn, filenames, preferred_date):
+        eligible = remaining_target_days()
+        if not eligible:
+            return False
+        if preferred_date is not None and preferred_date in eligible:
             target = preferred_date
         else:
-            target = quietest_day(candidates, counts)
+            # Pick by remaining fill need (not raw count): a day's target
+            # already encodes its baseline shortfall + any bonus slot, so
+            # concentrating on the neediest day first actually reaches
+            # MIN_DAILY_POSTS instead of spreading thin across every day.
+            # Ties (equal need) break toward the earliest date.
+            target = max(eligible, key=lambda d: targets[d])
+        key_details = key_details_fn(target) if callable(key_details_fn) else key_details_fn
+        time_slot = scheduling.time_for_fill_slot(fills_placed[target])
         row = store.blank_row()
         row["date"] = target
         row["photos"] = ", ".join(filenames)
@@ -363,40 +425,60 @@ def build_extra_rows(classified, existing_rows, run_date, voice_examples=None,
         row["scheduled_time"] = f"{target} {time_slot}"
         avoid_examples = (avoid_examples_by_event or {}).get(event)
         caps = generate_captions_for(event, key_details, dow_name(parse_date(target)), kind,
-                                     voice_examples=voice_examples,
                                      avoid_examples=avoid_examples)
         row["fb_caption"] = caps["fb_caption"]
         row["ig_caption"] = caps["ig_caption"]
         row["status"] = config.STATUS_NEEDS_REVIEW
         extra_rows.append(row)
         counts[target] = counts.get(target, 0) + 1
+        targets[target] -= 1
+        fills_placed[target] += 1
+        return True
 
-    # Carousels: scheduled the day after the event, evening slot.
+    # Carousels: real-photo event recaps, scheduled the day after the event.
     for group in group_carousel_candidates(classified):
         times = [t for t in group["capture_times"] if t]
         event_day = times[0].date() if times else run_date
         recap_date = (event_day + timedelta(days=1)).strftime(DATE_FMT)
-        try_schedule("carousel", group["event"], "A look back at last night.",
-                     group["filenames"], recap_date, config.EXTRA_POST_TIME_EVENING)
+        schedule_row("carousel", group["event"], "A look back at last night.",
+                     group["filenames"], recap_date)
 
-    # Vibe + spotlight: single photos, quietest day, alternating morning/evening slot.
+    # Vibe/spotlight singles: real classified photos. Spotlight always reads
+    # as a community shoutout; vibe photos rotate through the evergreen
+    # content angles for variety (Weather Vibes needs no dedicated photo
+    # subject of its own -- any vibe shot works as its backdrop).
     singles = [i for i in classified if i["kind"] in ("vibe", "spotlight") and not i["match"]]
-    for idx, item in enumerate(singles):
-        kind = item["kind"]
-        event_label = "Behind The Scenes" if kind == "vibe" else "Community Spotlight"
-        slot = config.EXTRA_POST_TIME_MORNING if idx % 2 == 0 else config.EXTRA_POST_TIME_EVENING
-        try_schedule(kind, event_label, "", [item["filename"]], None, slot)
+    vibe_idx = 0
+    for item in singles:
+        if not remaining_target_days():
+            break
+        if item["kind"] == "spotlight":
+            schedule_row("spotlight", "Community Spotlight", "", [item["filename"]], None)
+            continue
+        label = config.EVERGREEN_LABELS[vibe_idx % len(config.EVERGREEN_LABELS)]
+        vibe_idx += 1
+        if label == "Wisconsin Spotlight":
+            drinks = config.FEATURED_DRINKS
+            key_details = f"Featuring {drinks[run_date.toordinal() % len(drinks)]}"
+        elif label == "Course & Trail Feature":
+            trails = config.TRAIL_HIGHLIGHTS
+            key_details = f"Featuring {trails[run_date.toordinal() % len(trails)]}"
+        elif label == "Weather Vibes":
+            key_details = _weather_vibes_key_details
+        else:
+            key_details = ""
+        schedule_row("vibe", label, key_details, [item["filename"]], None)
 
     return extra_rows
 
 
 def generate_captions_for(event, key_details, day_of_week, post_type,
-                          voice_examples=None, avoid_examples=None):
+                          avoid_examples=None):
     """Thin wrapper so build_extra_rows doesn't need to import anthropic_client
     directly -- keeps the caption-generation entry point in one place."""
     from anthropic_client import generate_captions as _gen
     return _gen(event, key_details, day_of_week, post_type,
-               voice_examples=voice_examples, avoid_examples=avoid_examples)
+               avoid_examples=avoid_examples)
 
 
 if __name__ == "__main__":

@@ -54,7 +54,7 @@ def recent_captions_for_event(rows, event, limit=4):
     already said recently and told not to repeat it.
     """
     matches = [r for r in rows
-               if r["event"] == event and r["status"] in (config.STATUS_APPROVED, config.STATUS_POSTED)
+               if r["event"] == event and r["status"] in (config.STATUS_SCHEDULED, config.STATUS_POSTED)
                and r["ig_caption"]]
     matches.sort(key=lambda r: r["date"], reverse=True)
     return [r["ig_caption"] for r in matches[:limit]]

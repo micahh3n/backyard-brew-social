@@ -21,7 +21,8 @@ FONTS_DIR = os.path.join(ASSETS_DIR, "fonts")
 RECURRING_CSV = os.path.join(REPO_ROOT, "recurring_events.csv")
 POSTS_CSV = os.path.join(REPO_ROOT, "posts.csv")
 STATUS_LOG = os.path.join(REPO_ROOT, "status.log")
-# Where process_photos.py writes finished images that get posted.
+# Where process_photos.py writes finished images for manual review/posting
+# (rendered for the weekly preview page, not auto-posted).
 GENERATED_DIR = os.path.join(REPO_ROOT, "photos", "_generated")
 
 # ---------------------------------------------------------------------------
@@ -48,7 +49,7 @@ BUSINESS = {
     "opened": "August 2024",
     "instagram": "@BackyardBrewGB",
     "facebook": "Backyard Brew",
-    # Latitude/longitude of the bar -- used to auto-find the Meta location tag.
+    # Latitude/longitude of the bar -- used by weather.py for the forecast lookup.
     "latitude": 44.4741,
     "longitude": -88.1013,
 }
@@ -107,6 +108,9 @@ EVENT_ANGLES = {
     "Disc Golf League + Ladies Night": "Calling all ladies + league leaderboard hype -- two angles, alternate or combine.",
     "Line Dancing + Karaoke Night": "'Weekend starts NOW' energy.",
     "Pool Night": "Tournament angle -- beat the bartender, win a flight.",
+    "Wisconsin Spotlight": "Feature the specific drink named in key_details -- pure appreciation, no CTA pressure.",
+    "Course & Trail Feature": "Feature the specific trail/course detail named in key_details -- outdoorsy pride angle.",
+    "Weather Vibes": "Tie the specific weather named in key_details to disc golf/hiking/patio appeal.",
 }
 
 # ---------------------------------------------------------------------------
@@ -116,13 +120,13 @@ EVENT_ANGLES = {
 # reuse the "teaser" evening slot on their own day.
 # ---------------------------------------------------------------------------
 DEFAULT_TIMES = {
-    ("Monday", "today"): "12:00",
-    ("Tuesday", "today"): "12:00",
-    ("Wednesday", "today"): "12:00",
-    ("Thursday", "today"): "12:00",
-    ("Friday", "today"): "12:30",
+    ("Monday", "today"): "11:00",
+    ("Tuesday", "today"): "11:00",
+    ("Wednesday", "today"): "11:00",
+    ("Thursday", "today"): "11:00",
+    ("Friday", "today"): "11:00",
     ("Saturday", "today"): "11:00",
-    ("Sunday", "today"): "12:00",   # only used if a Sunday one-off exists
+    ("Sunday", "today"): "11:00",   # only used if a Sunday one-off exists
     # Teaser / reminder evening slot:
     ("Monday", "teaser"): "19:00",
     ("Tuesday", "teaser"): "19:00",
@@ -165,16 +169,18 @@ DIMENSIONS = {
 # ---------------------------------------------------------------------------
 # Valid values for the status column, documented for the owner.
 # pending      -> owner just added a one-off; Sunday job will process it
-# needs_review -> system generated it; owner should review/approve
-# approved     -> owner OK'd it; hourly job will post when its time passes
+# needs_review -> system generated it; owner should review/edit it
 # skip         -> suppress this post entirely
-# posted       -> already published (set by the system)
+# scheduled    -> owner manually pasted this into FB/IG's native scheduler
+#                 (bookkeeping only -- nothing in the system reads this back)
+# posted       -> legacy value from the old auto-posting job; still
+#                 recognized as "already used" history, nothing sets it now
 # campaign_source -> a promote_from row that was expanded into reminders; ignore
 # ---------------------------------------------------------------------------
 STATUS_PENDING = "pending"
 STATUS_NEEDS_REVIEW = "needs_review"
-STATUS_APPROVED = "approved"
 STATUS_SKIP = "skip"
+STATUS_SCHEDULED = "scheduled"
 STATUS_POSTED = "posted"
 STATUS_CAMPAIGN_SOURCE = "campaign_source"
 
@@ -182,21 +188,50 @@ STATUS_CAMPAIGN_SOURCE = "campaign_source"
 POSTS_COLUMNS = [
     "date", "time", "photos", "event", "key_details", "platforms",
     "promote_from", "post_type", "enhance", "fb_caption", "ig_caption",
-    "scheduled_time", "status",
+    "scheduled_time", "generated_image", "status",
 ]
 
-# Long-lived Meta tokens last ~60 days. Warn when fewer than this many days
-# are estimated to remain so the owner refreshes before it expires.
-TOKEN_WARN_DAYS = 10
-
 # ---------------------------------------------------------------------------
-# Extra post types (carousel / vibe / spotlight) -- opportunistic, capped.
+# Extra post types (carousel / vibe / spotlight / evergreen) -- fill content
+# used to guarantee the daily posting cadence below.
 # ---------------------------------------------------------------------------
 EXTRA_POST_TYPES = ("carousel", "vibe", "spotlight")
-MAX_EXTRA_POSTS_PER_DAY = 1     # per platform, on top of today/teaser -- hard cap
-MAX_EXTRA_POSTS_PER_WEEK = 4    # ceiling, not a quota
-EXTRA_POST_TIME_EVENING = "19:30"
+
+# Guaranteed posting cadence: every day of the week should reach at least
+# MIN_DAILY_POSTS; BONUS_POSTS_PER_WEEK days additionally get bumped up to
+# MAX_DAILY_POSTS for the "occasionally 3" the owner asked for. Never forced
+# past what real/evergreen material actually supports that week.
+MIN_DAILY_POSTS = 2
+MAX_DAILY_POSTS = 3
+BONUS_POSTS_PER_WEEK = 3
+
 EXTRA_POST_TIME_MORNING = "11:30"
+EXTRA_POST_TIME_AFTERNOON = "14:30"   # primary slot for the occasional 3rd post
+EXTRA_POST_TIME_EVENING = "19:30"
+
+# Evergreen content angles rotated through for "vibe"-kind classified photos
+# (no dedicated event tie-in) so the fill content doesn't repeat the same
+# label every week. "Weather Vibes" pulls a live forecast blurb (weather.py);
+# all four reuse whatever real vibe-classified photo is available.
+EVERGREEN_LABELS = ["Behind The Scenes", "Wisconsin Spotlight",
+                    "Course & Trail Feature", "Weather Vibes"]
+
+# Rotated by date so the same drink/trail isn't featured every single week.
+# Edit these to match the bar's actual current menu/trails whenever they change.
+FEATURED_DRINKS = [
+    "our seasonal Wisconsin Marzen lager",
+    "a crisp Wisconsin-brewed IPA",
+    "our local Door County cherry wine",
+    "a Wisconsin craft hard seltzer",
+    "our small-batch Wisconsin cider",
+]
+TRAIL_HIGHLIGHTS = [
+    "the front nine disc golf holes",
+    "the back nine disc golf holes",
+    "the north hiking loop through the woods",
+    "the sunset overlook trail",
+    "the beginner-friendly nature loop",
+]
 
 
 def pick_hashtags(seed: int, count: int = 6) -> str:

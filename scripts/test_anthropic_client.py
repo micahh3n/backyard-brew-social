@@ -33,6 +33,22 @@ def test_fallback_captions_handles_carousel():
 
 def test_user_prompt_includes_avoid_examples():
     text = ac._user_prompt("Bingo Night", "details", "Monday", "today", None, None,
-                           voice_examples=[], avoid_examples=["Old hook line"])
+                           avoid_examples=["Old hook line"])
     assert "Old hook line" in text
     assert "do not" in text.lower() or "avoid" in text.lower()
+
+
+def test_user_prompt_has_no_voice_examples_parameter():
+    import inspect
+    params = inspect.signature(ac._user_prompt).parameters
+    assert "voice_examples" not in params
+
+
+def test_system_prompt_instructs_varying_the_opening_move():
+    text = ac._system_prompt()
+    assert "vary" in text.lower() and "opening" in text.lower()
+
+
+def test_system_prompt_instructs_rotating_share_mechanism():
+    text = ac._system_prompt()
+    assert "tag-a-friend" in text.lower() or "tag a friend" in text.lower()

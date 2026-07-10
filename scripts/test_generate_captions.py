@@ -1,9 +1,9 @@
 from datetime import date
 
+import build_preview
 import classify_photos
 import config
 import generate_captions as gc
-import meta_client
 import store
 
 
@@ -44,7 +44,7 @@ def test_group_carousel_candidates_requires_three_plus_same_event():
     assert sorted(groups[0]["filenames"]) == ["a.jpg", "b.jpg", "c.jpg"]
 
 
-def test_build_extra_rows_never_exceeds_one_per_day():
+def test_build_extra_rows_never_exceeds_max_daily_posts():
     run_date = date(2026, 5, 31)  # a Sunday
     classified = [
         {"filename": "a.jpg", "match": "Bingo Night", "kind": "event", "confidence": "high"},
@@ -56,59 +56,98 @@ def test_build_extra_rows_never_exceeds_one_per_day():
     existing_rows = [_scheduled_row("2026-06-01 12:00")]  # Monday already has 1 post
     rows = gc.build_extra_rows(classified, existing_rows, run_date)
     counts = gc.day_post_counts(existing_rows + rows)
-    assert all(c <= 2 for c in counts.values())  # existing (1) + at most 1 extra
-    assert len(rows) <= config.MAX_EXTRA_POSTS_PER_WEEK
+    assert all(c <= config.MAX_DAILY_POSTS for c in counts.values())
+
+
+def test_build_extra_rows_tops_up_a_zero_post_day_to_the_minimum():
+    run_date = date(2026, 5, 31)  # a Sunday
+    classified = [{"filename": f"vibe{i}.jpg", "match": None, "kind": "vibe", "confidence": "high"}
+                  for i in range(4)]
+    existing_rows = [_scheduled_row("2026-06-01 12:00"), _scheduled_row("2026-06-01 19:00")]
+    rows = gc.build_extra_rows(classified, existing_rows, run_date)
+    counts = gc.day_post_counts(existing_rows + rows)
+    # Tuesday (2026-06-02) starts at 0 -- it must reach at least MIN_DAILY_POSTS
+    # once enough fill material (4 vibe photos) exists.
+    assert counts.get("2026-06-02", 0) >= config.MIN_DAILY_POSTS
+
+
+def test_build_extra_rows_rotates_evergreen_labels_for_vibe_photos():
+    run_date = date(2026, 5, 31)  # a Sunday
+    classified = [{"filename": f"vibe{i}.jpg", "match": None, "kind": "vibe", "confidence": "high"}
+                  for i in range(4)]
+    rows = gc.build_extra_rows(classified, [], run_date)
+    events = {r["event"] for r in rows if r["post_type"] == "vibe"}
+    # With 4 vibe photos and 4 evergreen labels available, expect more than
+    # one distinct label to show up rather than "Behind The Scenes" x4.
+    assert len(events) > 1
+    assert events <= set(config.EVERGREEN_LABELS)
 
 
 def test_main_gives_vibe_spotlight_posts_the_repetition_guard(monkeypatch):
     """main() must feed build_extra_rows() a populated avoid_examples_by_event
-    for the generic recurring bucket names ("Behind The Scenes",
-    "Community Spotlight") used by vibe/spotlight posts -- these are the
-    posts most at risk of copy-paste drift over unattended weeks, since
-    (unlike a dated event) the same label is reused every run.
+    for ALL of the generic recurring bucket names used by vibe/spotlight
+    posts -- the four config.EVERGREEN_LABELS ("Behind The Scenes",
+    "Wisconsin Spotlight", "Course & Trail Feature", "Weather Vibes") plus
+    "Community Spotlight" -- since these are the posts most at risk of
+    copy-paste drift over unattended weeks (unlike a dated event, the same
+    label is reused every run).
 
-    Currently main() calls build_extra_rows(...) with only voice_examples,
-    never avoid_examples_by_event, so the repetition guard never reaches
-    the caption prompt for these post types. This test drives main() itself
-    (with its collaborators stubbed) and asserts the caption call for the
-    new "Behind The Scenes" row actually receives the old caption text.
+    Previously main() built extra_event_labels from a hardcoded two-item
+    list ("Behind The Scenes", "Community Spotlight"), so the repetition
+    guard never reached the caption prompt for "Wisconsin Spotlight",
+    "Course & Trail Feature", or "Weather Vibes". This test drives main()
+    itself (with its collaborators stubbed) and asserts the caption calls
+    for both a "Behind The Scenes" row and a "Wisconsin Spotlight" row
+    actually receive their respective old caption text.
     """
     run_date = date(2026, 5, 31)  # a Sunday
 
-    existing_row = {**store.blank_row(), "date": "2026-05-20",
-                    "event": "Behind The Scenes", "status": config.STATUS_POSTED,
-                    "ig_caption": "Some old caption"}
+    existing_rows = [
+        {**store.blank_row(), "date": "2026-05-20",
+         "event": "Behind The Scenes", "status": config.STATUS_POSTED,
+         "ig_caption": "Some old caption"},
+        {**store.blank_row(), "date": "2026-05-21",
+         "event": "Wisconsin Spotlight", "status": config.STATUS_POSTED,
+         "ig_caption": "Some other old caption"},
+    ]
 
     monkeypatch.setattr(gc, "today_local", lambda: run_date)
-    monkeypatch.setattr(store, "load_posts", lambda: [dict(existing_row)])
+    monkeypatch.setattr(store, "load_posts", lambda: [dict(r) for r in existing_rows])
     monkeypatch.setattr(store, "load_recurring", lambda: [])
     monkeypatch.setattr(store, "write_posts", lambda rows: None)
-    monkeypatch.setattr(meta_client, "recent_page_posts", lambda limit=6: [])
+    monkeypatch.setattr(build_preview, "write_preview", lambda rows: "")
     monkeypatch.setattr(
         classify_photos, "classify_new_photos",
         lambda photos_dir, known_events, used: [
             {"filename": "vibe1.jpg", "match": None, "kind": "vibe", "confidence": "high"},
+            {"filename": "vibe2.jpg", "match": None, "kind": "vibe", "confidence": "high"},
         ])
 
     captured = {}
     real_generate_captions_for = gc.generate_captions_for
 
     def spy_generate_captions_for(event, key_details, day_of_week, post_type,
-                                   voice_examples=None, avoid_examples=None):
-        if event == "Behind The Scenes":
-            captured["avoid_examples"] = avoid_examples
+                                   avoid_examples=None):
+        if event in ("Behind The Scenes", "Wisconsin Spotlight"):
+            captured[event] = avoid_examples
         return real_generate_captions_for(event, key_details, day_of_week, post_type,
-                                          voice_examples=voice_examples,
                                           avoid_examples=avoid_examples)
 
     monkeypatch.setattr(gc, "generate_captions_for", spy_generate_captions_for)
 
     gc.main()
 
-    assert captured.get("avoid_examples"), (
+    assert captured.get("Behind The Scenes"), (
         "expected a non-empty avoid_examples to reach caption generation "
         "for the 'Behind The Scenes' vibe post")
-    assert "Some old caption" in captured["avoid_examples"]
+    assert "Some old caption" in captured["Behind The Scenes"]
+
+    assert captured.get("Wisconsin Spotlight"), (
+        "expected a non-empty avoid_examples to reach caption generation "
+        "for the 'Wisconsin Spotlight' vibe post -- this is the guard for "
+        "one of the three evergreen labels previously left off the "
+        "hardcoded extra_event_labels list")
+    assert "Some other old caption" in captured["Wisconsin Spotlight"]
 
 
 def test_vibe_spotlight_lands_on_genuinely_quietest_day_not_tomorrow():
@@ -128,3 +167,35 @@ def test_vibe_spotlight_lands_on_genuinely_quietest_day_not_tomorrow():
     rows = gc.build_extra_rows(classified, existing_rows, run_date)
     assert len(rows) == 1
     assert rows[0]["scheduled_time"].split(" ")[0] == "2026-06-02"
+
+
+def test_render_generated_images_sets_generated_image_and_skips_missing_photos(tmp_path, monkeypatch):
+    monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
+    monkeypatch.setattr(config, "GENERATED_DIR", str(tmp_path / "_generated"))
+    monkeypatch.setattr(config, "REPO_ROOT", str(tmp_path.parent))
+    from PIL import Image
+    Image.new("RGB", (800, 600), (10, 20, 30)).save(tmp_path / "2026-07-14_bingo.jpg")
+
+    has_photo = {**store.blank_row(), "date": "2026-07-14", "photos": "2026-07-14_bingo.jpg",
+                 "event": "Bingo Night", "key_details": "10 rounds", "enhance": "none"}
+    missing_photo = {**store.blank_row(), "date": "2026-07-15", "photos": "nope.jpg",
+                     "event": "Pool Night", "key_details": ""}
+    rows = [dict(has_photo), dict(missing_photo)]
+
+    gc.render_generated_images(rows)
+
+    assert rows[0]["generated_image"], "expected a generated_image path for the row with a real photo"
+    assert rows[1]["generated_image"] == ""
+
+
+def test_find_deal_photo_matches_date_and_slug_with_deal_suffix(tmp_path, monkeypatch):
+    monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
+    (tmp_path / "2026-07-14_pickleball_deal.jpg").write_bytes(b"fake")
+    (tmp_path / "2026-07-14_pickleball.jpg").write_bytes(b"fake")
+    assert gc.find_deal_photo("2026-07-14", "pickleball") == "2026-07-14_pickleball_deal.jpg"
+
+
+def test_find_deal_photo_returns_none_when_absent(tmp_path, monkeypatch):
+    monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
+    (tmp_path / "2026-07-14_pickleball.jpg").write_bytes(b"fake")
+    assert gc.find_deal_photo("2026-07-14", "pickleball") is None

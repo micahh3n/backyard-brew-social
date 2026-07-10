@@ -16,6 +16,7 @@ fails -> PIL's default font is used so text still renders.
 
 from __future__ import annotations
 
+import hashlib
 import os
 import urllib.request
 
@@ -163,6 +164,22 @@ def _wrap(draw, text, font, max_w):
     return lines
 
 
+def _autosize_headline(draw, event, max_w, start_px, floor_px, step=6):
+    """Shrink the headline font until "event" wraps to <=2 lines within
+    max_w, or floor_px is reached. Returns (font, lines, size_px) so callers
+    can position/draw the result."""
+    size_px = start_px
+    while size_px > floor_px:
+        hf = _headline_font(event, size_px)
+        lines = _wrap(draw, event.upper(), hf, max_w)
+        if len(lines) <= 2:
+            break
+        size_px -= step
+    hf = _headline_font(event, size_px)
+    lines = _wrap(draw, event.upper(), hf, max_w)
+    return hf, lines, size_px
+
+
 def _hex(c):
     c = c.lstrip("#")
     return tuple(int(c[i:i + 2], 16) for i in (0, 2, 4))
@@ -194,15 +211,7 @@ def _build_flyer(photo: Image.Image, event, key_details, day_of_week, size) -> I
 
     # Event headline (auto-shrink to fit two lines).
     max_w = W - 2 * inset - int(W * 0.06)
-    size_px = int(H * 0.12)
-    while size_px > int(H * 0.05):
-        hf = _headline_font(event, size_px)
-        lines = _wrap(draw, event.upper(), hf, max_w)
-        if len(lines) <= 2:
-            break
-        size_px -= 6
-    hf = _headline_font(event, size_px)
-    lines = _wrap(draw, event.upper(), hf, max_w)
+    hf, lines, size_px = _autosize_headline(draw, event, max_w, int(H * 0.12), int(H * 0.05))
     y = int(H * 0.30)
     for line in lines:
         lw = draw.textlength(line, font=hf)
@@ -225,8 +234,118 @@ def _build_flyer(photo: Image.Image, event, key_details, day_of_week, size) -> I
     return base
 
 
+FLYER_TEMPLATES = ["badge", "minimal", "poster"]
+
+
+def choose_template(event: str, date_str: str) -> str:
+    """Deterministic template rotation: the same (event, date) always picks
+    the same template on re-runs, but different dates/events vary visually
+    so consecutive weeks don't look identical."""
+    seed = int(hashlib.md5(f"{event}{date_str}".encode()).hexdigest(), 16)
+    return FLYER_TEMPLATES[seed % len(FLYER_TEMPLATES)]
+
+
+def _build_flyer_minimal(photo: Image.Image, event, key_details, day_of_week, size) -> Image.Image:
+    """Clean minimal layout: full photo, light polish, a solid caption bar
+    across the bottom third instead of a bordered badge."""
+    navy, cream, gold = (_hex(config.COLORS[k]) for k in ("navy", "cream", "gold"))
+    base = _fit_cover(_auto_polish(photo), size).convert("RGBA")
+    W, H = size
+    bar_h = int(H * 0.28)
+    bar = Image.new("RGBA", (W, bar_h), navy + (235,))
+    base.alpha_composite(bar, (0, H - bar_h))
+    draw = ImageDraw.Draw(base)
+
+    max_w = W - int(W * 0.12)
+    hf, lines, size_px = _autosize_headline(draw, event, max_w, int(H * 0.09), int(H * 0.045))
+    y = H - bar_h + int(bar_h * 0.12)
+    for line in lines:
+        draw.text((int(W * 0.06), y), line, font=hf, fill=cream)
+        y += int(size_px * 1.05)
+
+    detail = key_details.split(",")[0].strip() if key_details else ""
+    bf = _font("BarlowCondensed-Medium.ttf", int(H * 0.04))
+    tag_font = _font("BarlowCondensed-Bold.ttf", int(H * 0.035))
+    draw.text((int(W * 0.06), y + int(H * 0.01)), day_of_week.upper(), font=tag_font, fill=gold)
+    if detail:
+        for line in _wrap(draw, detail, bf, max_w)[:1]:
+            draw.text((int(W * 0.06), y + int(H * 0.05)), line, font=bf, fill=gold)
+    return base.convert("RGB")
+
+
+def _build_flyer_poster(photo: Image.Image, event, key_details, day_of_week, size) -> Image.Image:
+    """Bold poster layout: full-bleed darkened photo, giant headline banner
+    across the top third -- a punchier alternative to the retro badge."""
+    navy, gold, cream = (_hex(config.COLORS[k]) for k in ("navy", "gold", "cream"))
+    base = _fit_cover(photo, size).convert("RGB")
+    base = ImageEnhance.Brightness(base).enhance(0.7)
+    base = base.convert("RGBA")
+    W, H = size
+    banner_h = int(H * 0.32)
+    banner = Image.new("RGBA", (W, banner_h), gold + (255,))
+    base.alpha_composite(banner, (0, 0))
+    draw = ImageDraw.Draw(base)
+
+    max_w = W - int(W * 0.1)
+    hf, lines, size_px = _autosize_headline(draw, event, max_w, int(H * 0.11), int(H * 0.05))
+    total_h = sum(int(size_px * 1.05) for _ in lines)
+    y = (banner_h - total_h) // 2
+    for line in lines:
+        lw = draw.textlength(line, font=hf)
+        draw.text(((W - lw) / 2, y), line, font=hf, fill=navy)
+        y += int(size_px * 1.05)
+
+    detail = key_details.split(",")[0].strip() if key_details else ""
+    bf = _font("BarlowCondensed-Medium.ttf", int(H * 0.05))
+    tag = f"{day_of_week.upper()} -- {detail}" if detail else day_of_week.upper()
+    for line in _wrap(draw, tag, bf, max_w)[:2]:
+        lw = draw.textlength(line, font=bf)
+        draw.text(((W - lw) / 2, H - int(H * 0.12)), line, font=bf, fill=cream)
+    return base.convert("RGB")
+
+
+def _add_deal_callout(img: Image.Image, deal_photo_path: str, key_details: str) -> Image.Image:
+    """Stamp a small real-photo badge (bottom-left, opposite the logo corner)
+    advertising today's deal: a cropped thumbnail of deal_photo_path inside a
+    gold-bordered square, with the deal's first detail as a caption
+    underneath. Never raises -- a missing/corrupt deal photo just returns img
+    unchanged so it never blocks the rest of the flyer."""
+    try:
+        deal_img = Image.open(deal_photo_path).convert("RGB")
+    except Exception as exc:
+        print(f"[process_photos] could not open deal photo {deal_photo_path}: {exc}")
+        return img
+
+    navy, gold, cream = (_hex(config.COLORS[k]) for k in ("navy", "gold", "cream"))
+    base = img.convert("RGBA")
+    W, H = base.size
+    badge_size = int(W * 0.30)
+    margin = int(W * 0.05)
+    thumb = _fit_cover(deal_img, (badge_size, badge_size)).convert("RGBA")
+
+    pos = (margin, H - badge_size - margin - int(H * 0.08))
+    border = Image.new("RGBA", (badge_size + 10, badge_size + 10), gold + (255,))
+    base.alpha_composite(border, (pos[0] - 5, pos[1] - 5))
+    base.alpha_composite(thumb, pos)
+
+    draw = ImageDraw.Draw(base)
+    label_font = _font("BarlowCondensed-Bold.ttf", int(H * 0.032))
+    label = "TODAY'S DEAL"
+    detail = key_details.split(",")[0].strip() if key_details else ""
+    lx, ly = pos[0], pos[1] + badge_size + 6
+    pad = int(W * 0.015)
+    draw.rectangle([lx - pad, ly - pad, lx + badge_size + pad, ly + label_font.size * 2 + pad * 3],
+                   fill=navy + (200,))
+    draw.text((lx, ly), label, font=label_font, fill=gold)
+    if detail:
+        for line in _wrap(draw, detail, label_font, badge_size)[:1]:
+            draw.text((lx, ly + label_font.size + 4), line, font=label_font, fill=cream)
+    return base.convert("RGB")
+
+
 def process(input_path, out_path, platform_key, enhance_col,
-            event="", key_details="", day_of_week=""):
+            event="", key_details="", day_of_week="", date_str="",
+            deal_photo_path=None):
     """Process one image for one platform and save it to out_path.
 
     Returns out_path on success. Never raises on cosmetic issues -- worst case it
@@ -238,6 +357,8 @@ def process(input_path, out_path, platform_key, enhance_col,
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
 
     img = Image.open(input_path)
+    builders = {"badge": _build_flyer, "minimal": _build_flyer_minimal,
+                "poster": _build_flyer_poster}
 
     if mode == "premade_art":
         # Post exactly as supplied -- only fit to platform dims, no other edits.
@@ -245,14 +366,18 @@ def process(input_path, out_path, platform_key, enhance_col,
     elif mode == "none":
         result = _fit_cover(_auto_polish(img), size)
     elif mode == "text_overlay":
-        result = _build_flyer(img, event, key_details, day_of_week, size)
+        builder = builders[choose_template(event, date_str or day_of_week)]
+        result = builder(img, event, key_details, day_of_week, size)
     elif mode == "logo":
         result = _add_logo(_fit_cover(_auto_polish(img), size))
     elif mode == "both":
-        flyer = _build_flyer(img, event, key_details, day_of_week, size)
-        result = _add_logo(flyer)
+        builder = builders[choose_template(event, date_str or day_of_week)]
+        result = _add_logo(builder(img, event, key_details, day_of_week, size))
     else:
         result = _fit_cover(_auto_polish(img), size)
+
+    if deal_photo_path and mode in ("text_overlay", "both"):
+        result = _add_deal_callout(result, deal_photo_path, key_details)
 
     result.save(out_path, quality=92)
     return out_path

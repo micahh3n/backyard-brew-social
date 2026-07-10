@@ -13,7 +13,7 @@ def test_recent_captions_for_event_returns_most_recent_first():
     rows = [
         _row(date="2026-05-04", ig_caption="First"),
         _row(date="2026-06-01", ig_caption="Second"),
-        _row(date="2026-06-08", ig_caption="Third", status="approved"),
+        _row(date="2026-06-08", ig_caption="Third", status="scheduled"),
         _row(date="2026-06-08", event="Pool Night", ig_caption="Unrelated"),
     ]
     result = store.recent_captions_for_event(rows, "Bingo Night", limit=2)
