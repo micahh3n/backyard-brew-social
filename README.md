@@ -44,6 +44,6 @@ status.log              Plain-English log of what happened
 4. **You** mark each row `status = scheduled` and push to GitHub (for your own tracking).
 
 ## Notes
-- All drinks referenced are 100% Wisconsin-made; captions never name outside brands.
+- All drinks referenced are 100% Wisconsin-made; captions never name outside brands unless asked.
 - Nothing posts without you manually scheduling it — you are always in control.
 - The Sunday job logs everything in `status.log` — check it if you notice something unexpected.

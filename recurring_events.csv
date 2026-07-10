@@ -1,7 +1,7 @@
 day_of_week,event,key_details,default_photos,platforms
-Monday,Bingo Night,"10 rounds themed bingo, 6:30pm, free with beer purchase, prizes, kids welcome w/ soda purchase",bingo_default.jpg,both
-Tuesday,Pickleball Open Play,"free w/ beer purchase, 6:30pm, random doubles tournament, winner gets free beer, enter by 6:40pm or auto-placed in losers bracket",pickleball_default.jpg,both
-Wednesday,Tacos + Poker Club,"beef tacos, quesadillas, loaded nachos all day; poker starts 6pm",poker_default.jpg,both
-Thursday,Disc Golf League + Ladies Night,"League: $15 buy-in covers beer+course access+competition entry, weekly winner gets free beer (1-wk cooldown), season leaderboard, end-of-season 1st place wins a pitcher. Ladies Night: watch FB for the specific deal that week",discgolf_default.jpg,both
-Friday,Line Dancing + Karaoke Night,"8pm start, bring your friends, fun for all skill levels",friday_default.jpg,both
-Saturday,Pool Night,"open pool tournament, winner plays the bartender for a flight",saturday_default.jpg,both
+Monday,Bingo Night,"10 rounds themed bingo, 6:30pm, free with beer purchase, themed prizes, beer prizes, food prizes, and a chance to win cash, kids welcome w/ soda purchase, name that tune during half time",bingo_default_art.jpg,both
+Tuesday,Pickleball Open Play,"free w/ beer purchase, 6:30pm, random doubles tournament, winner gets free beer, enter by 6:40pm or auto-placed in losers bracket",pickleball_default_art.jpg,both
+Wednesday,Tacos + Poker Club,"beef tacos, quesadillas, loaded nachos all day; poker starts 6pm, free to play with beer purchase",poker_default_art.jpg,both
+Thursday,Ladies Night + Line Dancing,"Ladies Night: Half off first beer if you bring a girl friend, Half off a pitcher with 4+ ladies, specialty deal for ladies changing every week Line Dancing: Starts at 8pm, fun for all skill levels, wide variety of genres, bring all your friends",line dancing_default_artpg,both
+Friday,Karaoke Night,"8pm start, bring your friends, fun for all skill levels, variety of generes",karaoke_default_art.jpg,both
+Saturday,Pool Night,"open pool tournament, winner plays the bartender for a flight",pool_default_art.jpg,both
