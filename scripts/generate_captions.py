@@ -109,13 +109,13 @@ def render_generated_images(rows):
     failure just leaves generated_image blank so the row still shows up for
     review with its original photo referenced in the photos column."""
     for row in rows:
-        if row.get("generated_image") or not row.get("photos"):
-            continue
-        first_photo = row["photos"].split(",")[0].strip()
-        src = os.path.join(config.PHOTOS_DIR, first_photo)
-        if not os.path.isfile(src):
-            continue
         try:
+            if row.get("generated_image") or not row.get("photos"):
+                continue
+            first_photo = row["photos"].split(",")[0].strip()
+            src = os.path.join(config.PHOTOS_DIR, first_photo)
+            if not os.path.isfile(src):
+                continue
             event_date = parse_date(row["date"])
             slug = slug_from_event(row["event"])
             deal_photo = find_deal_photo(row["date"], slug)
