@@ -164,6 +164,22 @@ def _wrap(draw, text, font, max_w):
     return lines
 
 
+def _autosize_headline(draw, event, max_w, start_px, floor_px, step=6):
+    """Shrink the headline font until "event" wraps to <=2 lines within
+    max_w, or floor_px is reached. Returns (font, lines, size_px) so callers
+    can position/draw the result."""
+    size_px = start_px
+    while size_px > floor_px:
+        hf = _headline_font(event, size_px)
+        lines = _wrap(draw, event.upper(), hf, max_w)
+        if len(lines) <= 2:
+            break
+        size_px -= step
+    hf = _headline_font(event, size_px)
+    lines = _wrap(draw, event.upper(), hf, max_w)
+    return hf, lines, size_px
+
+
 def _hex(c):
     c = c.lstrip("#")
     return tuple(int(c[i:i + 2], 16) for i in (0, 2, 4))
@@ -195,15 +211,7 @@ def _build_flyer(photo: Image.Image, event, key_details, day_of_week, size) -> I
 
     # Event headline (auto-shrink to fit two lines).
     max_w = W - 2 * inset - int(W * 0.06)
-    size_px = int(H * 0.12)
-    while size_px > int(H * 0.05):
-        hf = _headline_font(event, size_px)
-        lines = _wrap(draw, event.upper(), hf, max_w)
-        if len(lines) <= 2:
-            break
-        size_px -= 6
-    hf = _headline_font(event, size_px)
-    lines = _wrap(draw, event.upper(), hf, max_w)
+    hf, lines, size_px = _autosize_headline(draw, event, max_w, int(H * 0.12), int(H * 0.05))
     y = int(H * 0.30)
     for line in lines:
         lw = draw.textlength(line, font=hf)
@@ -249,15 +257,7 @@ def _build_flyer_minimal(photo: Image.Image, event, key_details, day_of_week, si
     draw = ImageDraw.Draw(base)
 
     max_w = W - int(W * 0.12)
-    size_px = int(H * 0.09)
-    while size_px > int(H * 0.045):
-        hf = _headline_font(event, size_px)
-        lines = _wrap(draw, event.upper(), hf, max_w)
-        if len(lines) <= 2:
-            break
-        size_px -= 6
-    hf = _headline_font(event, size_px)
-    lines = _wrap(draw, event.upper(), hf, max_w)
+    hf, lines, size_px = _autosize_headline(draw, event, max_w, int(H * 0.09), int(H * 0.045))
     y = H - bar_h + int(bar_h * 0.12)
     for line in lines:
         draw.text((int(W * 0.06), y), line, font=hf, fill=cream)
@@ -287,15 +287,7 @@ def _build_flyer_poster(photo: Image.Image, event, key_details, day_of_week, siz
     draw = ImageDraw.Draw(base)
 
     max_w = W - int(W * 0.1)
-    size_px = int(H * 0.11)
-    while size_px > int(H * 0.05):
-        hf = _headline_font(event, size_px)
-        lines = _wrap(draw, event.upper(), hf, max_w)
-        if len(lines) <= 2:
-            break
-        size_px -= 6
-    hf = _headline_font(event, size_px)
-    lines = _wrap(draw, event.upper(), hf, max_w)
+    hf, lines, size_px = _autosize_headline(draw, event, max_w, int(H * 0.11), int(H * 0.05))
     total_h = sum(int(size_px * 1.05) for _ in lines)
     y = (banner_h - total_h) // 2
     for line in lines:
