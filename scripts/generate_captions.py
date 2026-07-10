@@ -18,7 +18,9 @@ from datetime import datetime, timedelta
 
 import classify_photos
 import config
+import scheduling
 import store
+import weather
 from anthropic_client import generate_captions
 
 DATE_FMT = "%Y-%m-%d"
@@ -327,24 +329,42 @@ def group_carousel_candidates(classified):
     return groups
 
 
+def _weather_vibes_key_details(target_date_str):
+    blurb = weather.forecast_blurb(parse_date(target_date_str))
+    return f"Weather: {blurb}" if blurb else ""
+
+
 def build_extra_rows(classified, existing_rows, run_date,
                      avoid_examples_by_event=None):
-    """Build carousel/vibe/spotlight rows, respecting the hard daily cap and
-    the weekly ceiling. Never forces a post -- thin material means fewer rows."""
+    """Build carousel/vibe/spotlight/evergreen rows so every day of the
+    upcoming week reaches config.MIN_DAILY_POSTS, with config.BONUS_POSTS_PER_WEEK
+    days occasionally bumped to config.MAX_DAILY_POSTS. Never forces a post
+    past what real/evergreen material actually supports that week -- thin
+    material just means the guarantee isn't fully hit."""
     counts = dict(day_post_counts(existing_rows))
     week_dates = [(run_date + timedelta(days=i)).strftime(DATE_FMT) for i in range(1, 8)]
+    targets = scheduling.compute_fill_targets(counts, week_dates)
+    fills_placed = defaultdict(int)
     extra_rows = []
 
-    def try_schedule(kind, event, key_details, filenames, preferred_date, time_slot):
-        if len(extra_rows) >= config.MAX_EXTRA_POSTS_PER_WEEK:
-            return
-        candidates = [d for d in week_dates if counts.get(d, 0) < 2]  # today+teaser already = up to 2
-        if not candidates:
-            return
-        if preferred_date is not None and preferred_date in candidates:
+    def remaining_target_days():
+        return [d for d in week_dates if targets.get(d, 0) > 0]
+
+    def schedule_row(kind, event, key_details_fn, filenames, preferred_date):
+        eligible = remaining_target_days()
+        if not eligible:
+            return False
+        if preferred_date is not None and preferred_date in eligible:
             target = preferred_date
         else:
-            target = quietest_day(candidates, counts)
+            # Pick by remaining fill need (not raw count): a day's target
+            # already encodes its baseline shortfall + any bonus slot, so
+            # concentrating on the neediest day first actually reaches
+            # MIN_DAILY_POSTS instead of spreading thin across every day.
+            # Ties (equal need) break toward the earliest date.
+            target = max(eligible, key=lambda d: targets[d])
+        key_details = key_details_fn(target) if callable(key_details_fn) else key_details_fn
+        time_slot = scheduling.time_for_fill_slot(fills_placed[target])
         row = store.blank_row()
         row["date"] = target
         row["photos"] = ", ".join(filenames)
@@ -362,22 +382,43 @@ def build_extra_rows(classified, existing_rows, run_date,
         row["status"] = config.STATUS_NEEDS_REVIEW
         extra_rows.append(row)
         counts[target] = counts.get(target, 0) + 1
+        targets[target] -= 1
+        fills_placed[target] += 1
+        return True
 
-    # Carousels: scheduled the day after the event, evening slot.
+    # Carousels: real-photo event recaps, scheduled the day after the event.
     for group in group_carousel_candidates(classified):
         times = [t for t in group["capture_times"] if t]
         event_day = times[0].date() if times else run_date
         recap_date = (event_day + timedelta(days=1)).strftime(DATE_FMT)
-        try_schedule("carousel", group["event"], "A look back at last night.",
-                     group["filenames"], recap_date, config.EXTRA_POST_TIME_EVENING)
+        schedule_row("carousel", group["event"], "A look back at last night.",
+                     group["filenames"], recap_date)
 
-    # Vibe + spotlight: single photos, quietest day, alternating morning/evening slot.
+    # Vibe/spotlight singles: real classified photos. Spotlight always reads
+    # as a community shoutout; vibe photos rotate through the evergreen
+    # content angles for variety (Weather Vibes needs no dedicated photo
+    # subject of its own -- any vibe shot works as its backdrop).
     singles = [i for i in classified if i["kind"] in ("vibe", "spotlight") and not i["match"]]
-    for idx, item in enumerate(singles):
-        kind = item["kind"]
-        event_label = "Behind The Scenes" if kind == "vibe" else "Community Spotlight"
-        slot = config.EXTRA_POST_TIME_MORNING if idx % 2 == 0 else config.EXTRA_POST_TIME_EVENING
-        try_schedule(kind, event_label, "", [item["filename"]], None, slot)
+    vibe_idx = 0
+    for item in singles:
+        if not remaining_target_days():
+            break
+        if item["kind"] == "spotlight":
+            schedule_row("spotlight", "Community Spotlight", "", [item["filename"]], None)
+            continue
+        label = config.EVERGREEN_LABELS[vibe_idx % len(config.EVERGREEN_LABELS)]
+        vibe_idx += 1
+        if label == "Wisconsin Spotlight":
+            drinks = config.FEATURED_DRINKS
+            key_details = f"Featuring {drinks[run_date.toordinal() % len(drinks)]}"
+        elif label == "Course & Trail Feature":
+            trails = config.TRAIL_HIGHLIGHTS
+            key_details = f"Featuring {trails[run_date.toordinal() % len(trails)]}"
+        elif label == "Weather Vibes":
+            key_details = _weather_vibes_key_details
+        else:
+            key_details = ""
+        schedule_row("vibe", label, key_details, [item["filename"]], None)
 
     return extra_rows
 

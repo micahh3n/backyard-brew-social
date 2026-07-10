@@ -43,7 +43,7 @@ def test_group_carousel_candidates_requires_three_plus_same_event():
     assert sorted(groups[0]["filenames"]) == ["a.jpg", "b.jpg", "c.jpg"]
 
 
-def test_build_extra_rows_never_exceeds_one_per_day():
+def test_build_extra_rows_never_exceeds_max_daily_posts():
     run_date = date(2026, 5, 31)  # a Sunday
     classified = [
         {"filename": "a.jpg", "match": "Bingo Night", "kind": "event", "confidence": "high"},
@@ -55,8 +55,31 @@ def test_build_extra_rows_never_exceeds_one_per_day():
     existing_rows = [_scheduled_row("2026-06-01 12:00")]  # Monday already has 1 post
     rows = gc.build_extra_rows(classified, existing_rows, run_date)
     counts = gc.day_post_counts(existing_rows + rows)
-    assert all(c <= 2 for c in counts.values())  # existing (1) + at most 1 extra
-    assert len(rows) <= config.MAX_EXTRA_POSTS_PER_WEEK
+    assert all(c <= config.MAX_DAILY_POSTS for c in counts.values())
+
+
+def test_build_extra_rows_tops_up_a_zero_post_day_to_the_minimum():
+    run_date = date(2026, 5, 31)  # a Sunday
+    classified = [{"filename": f"vibe{i}.jpg", "match": None, "kind": "vibe", "confidence": "high"}
+                  for i in range(4)]
+    existing_rows = [_scheduled_row("2026-06-01 12:00"), _scheduled_row("2026-06-01 19:00")]
+    rows = gc.build_extra_rows(classified, existing_rows, run_date)
+    counts = gc.day_post_counts(existing_rows + rows)
+    # Tuesday (2026-06-02) starts at 0 -- it must reach at least MIN_DAILY_POSTS
+    # once enough fill material (4 vibe photos) exists.
+    assert counts.get("2026-06-02", 0) >= config.MIN_DAILY_POSTS
+
+
+def test_build_extra_rows_rotates_evergreen_labels_for_vibe_photos():
+    run_date = date(2026, 5, 31)  # a Sunday
+    classified = [{"filename": f"vibe{i}.jpg", "match": None, "kind": "vibe", "confidence": "high"}
+                  for i in range(4)]
+    rows = gc.build_extra_rows(classified, [], run_date)
+    events = {r["event"] for r in rows if r["post_type"] == "vibe"}
+    # With 4 vibe photos and 4 evergreen labels available, expect more than
+    # one distinct label to show up rather than "Behind The Scenes" x4.
+    assert len(events) > 1
+    assert events <= set(config.EVERGREEN_LABELS)
 
 
 def test_main_gives_vibe_spotlight_posts_the_repetition_guard(monkeypatch):
