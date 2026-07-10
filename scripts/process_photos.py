@@ -185,8 +185,14 @@ def _hex(c):
     return tuple(int(c[i:i + 2], 16) for i in (0, 2, 4))
 
 
-def _build_flyer(photo: Image.Image, event, key_details, day_of_week, size) -> Image.Image:
-    """Retro outdoor-badge flyer: photo, darkened, with a gold-bordered info panel."""
+def _build_flyer(photo: Image.Image, event, key_details, day_of_week, size,
+                 suppress_footer=False) -> Image.Image:
+    """Retro outdoor-badge flyer: photo, darkened, with a gold-bordered info panel.
+
+    suppress_footer drops the purely-decorative script tagline -- used when a
+    deal-photo badge is about to be composited into the same bottom-left
+    corner, so the two never visually collide.
+    """
     navy, gold, cream, yellow = (_hex(config.COLORS[k])
                                  for k in ("navy", "gold", "cream", "yellow"))
     base = _fit_cover(photo, size).convert("RGB")
@@ -226,23 +232,30 @@ def _build_flyer(photo: Image.Image, event, key_details, day_of_week, size) -> I
         draw.text(((W - lw) / 2, y + int(H * 0.02)), line, font=bf, fill=yellow)
         y += int(H * 0.06)
 
-    # Script flourish footer.
-    sf = _font("Pacifico-Regular.ttf", int(H * 0.045))
-    foot = "Craft Brews & Things To Do"
-    fw = draw.textlength(foot, font=sf)
-    draw.text(((W - fw) / 2, H - inset - int(H * 0.09)), foot, font=sf, fill=gold)
+    # Script flourish footer (skipped when a deal badge will occupy this corner).
+    if not suppress_footer:
+        sf = _font("Pacifico-Regular.ttf", int(H * 0.045))
+        foot = "Craft Brews & Things To Do"
+        fw = draw.textlength(foot, font=sf)
+        draw.text(((W - fw) / 2, H - inset - int(H * 0.09)), foot, font=sf, fill=gold)
     return base
 
 
 FLYER_TEMPLATES = ["badge", "minimal", "poster"]
 
 
-def choose_template(event: str, date_str: str) -> str:
+def choose_template(event: str, date_str: str, candidates=None) -> str:
     """Deterministic template rotation: the same (event, date) always picks
     the same template on re-runs, but different dates/events vary visually
-    so consecutive weeks don't look identical."""
+    so consecutive weeks don't look identical.
+
+    `candidates` narrows the pool (e.g. excluding "minimal" when a deal
+    callout will be composited -- its bottom caption bar sits in the same
+    corner the deal badge occupies). Defaults to the full template list.
+    """
+    pool = candidates if candidates else FLYER_TEMPLATES
     seed = int(hashlib.md5(f"{event}{date_str}".encode()).hexdigest(), 16)
-    return FLYER_TEMPLATES[seed % len(FLYER_TEMPLATES)]
+    return pool[seed % len(pool)]
 
 
 def _build_flyer_minimal(photo: Image.Image, event, key_details, day_of_week, size) -> Image.Image:
@@ -273,9 +286,16 @@ def _build_flyer_minimal(photo: Image.Image, event, key_details, day_of_week, si
     return base.convert("RGB")
 
 
-def _build_flyer_poster(photo: Image.Image, event, key_details, day_of_week, size) -> Image.Image:
+def _build_flyer_poster(photo: Image.Image, event, key_details, day_of_week, size,
+                        suppress_footer=False) -> Image.Image:
     """Bold poster layout: full-bleed darkened photo, giant headline banner
-    across the top third -- a punchier alternative to the retro badge."""
+    across the top third -- a punchier alternative to the retro badge.
+
+    suppress_footer drops the bottom day/detail tag -- used when a deal-photo
+    badge is about to be composited into the same bottom-left corner, so the
+    two never visually collide. The detail is not lost: it's already in the
+    deal badge's own caption.
+    """
     navy, gold, cream = (_hex(config.COLORS[k]) for k in ("navy", "gold", "cream"))
     base = _fit_cover(photo, size).convert("RGB")
     base = ImageEnhance.Brightness(base).enhance(0.7)
@@ -295,12 +315,13 @@ def _build_flyer_poster(photo: Image.Image, event, key_details, day_of_week, siz
         draw.text(((W - lw) / 2, y), line, font=hf, fill=navy)
         y += int(size_px * 1.05)
 
-    detail = key_details.split(",")[0].strip() if key_details else ""
-    bf = _font("BarlowCondensed-Medium.ttf", int(H * 0.05))
-    tag = f"{day_of_week.upper()} -- {detail}" if detail else day_of_week.upper()
-    for line in _wrap(draw, tag, bf, max_w)[:2]:
-        lw = draw.textlength(line, font=bf)
-        draw.text(((W - lw) / 2, H - int(H * 0.12)), line, font=bf, fill=cream)
+    if not suppress_footer:
+        detail = key_details.split(",")[0].strip() if key_details else ""
+        bf = _font("BarlowCondensed-Medium.ttf", int(H * 0.05))
+        tag = f"{day_of_week.upper()} -- {detail}" if detail else day_of_week.upper()
+        for line in _wrap(draw, tag, bf, max_w)[:2]:
+            lw = draw.textlength(line, font=bf)
+            draw.text(((W - lw) / 2, H - int(H * 0.12)), line, font=bf, fill=cream)
     return base.convert("RGB")
 
 
@@ -343,6 +364,23 @@ def _add_deal_callout(img: Image.Image, deal_photo_path: str, key_details: str) 
     return base.convert("RGB")
 
 
+def _render_flyer_template(img, event, key_details, day_of_week, size, date_str, deal_photo_path):
+    """Pick a template and render it. When a deal photo will be composited,
+    restrict the pool to templates whose bottom-left corner is otherwise
+    clear ("minimal"'s caption bar lives there) and suppress each template's
+    own decorative bottom-left text so it can't collide with the deal badge."""
+    deal_safe = ["badge", "poster"] if deal_photo_path else None
+    template = choose_template(event, date_str or day_of_week, deal_safe)
+    suppress_footer = bool(deal_photo_path)
+    if template == "minimal":
+        return _build_flyer_minimal(img, event, key_details, day_of_week, size)
+    if template == "poster":
+        return _build_flyer_poster(img, event, key_details, day_of_week, size,
+                                   suppress_footer=suppress_footer)
+    return _build_flyer(img, event, key_details, day_of_week, size,
+                        suppress_footer=suppress_footer)
+
+
 def process(input_path, out_path, platform_key, enhance_col,
             event="", key_details="", day_of_week="", date_str="",
             deal_photo_path=None):
@@ -357,8 +395,6 @@ def process(input_path, out_path, platform_key, enhance_col,
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
 
     img = Image.open(input_path)
-    builders = {"badge": _build_flyer, "minimal": _build_flyer_minimal,
-                "poster": _build_flyer_poster}
 
     if mode == "premade_art":
         # Post exactly as supplied -- only fit to platform dims, no other edits.
@@ -366,13 +402,13 @@ def process(input_path, out_path, platform_key, enhance_col,
     elif mode == "none":
         result = _fit_cover(_auto_polish(img), size)
     elif mode == "text_overlay":
-        builder = builders[choose_template(event, date_str or day_of_week)]
-        result = builder(img, event, key_details, day_of_week, size)
+        result = _render_flyer_template(img, event, key_details, day_of_week, size,
+                                        date_str, deal_photo_path)
     elif mode == "logo":
         result = _add_logo(_fit_cover(_auto_polish(img), size))
     elif mode == "both":
-        builder = builders[choose_template(event, date_str or day_of_week)]
-        result = _add_logo(builder(img, event, key_details, day_of_week, size))
+        result = _add_logo(_render_flyer_template(img, event, key_details, day_of_week, size,
+                                                   date_str, deal_photo_path))
     else:
         result = _fit_cover(_auto_polish(img), size)
 

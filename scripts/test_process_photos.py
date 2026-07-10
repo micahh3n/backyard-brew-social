@@ -20,6 +20,13 @@ def test_choose_template_varies_across_dates():
     assert templates <= set(pp.FLYER_TEMPLATES)
 
 
+def test_choose_template_respects_a_narrowed_candidate_pool():
+    deal_safe = ["badge", "poster"]
+    for d in range(1, 29):
+        result = pp.choose_template("Bingo Night", f"2026-07-{d:02d}", deal_safe)
+        assert result in deal_safe
+
+
 def test_build_flyer_minimal_returns_correct_size():
     result = pp._build_flyer_minimal(_dummy_photo(), "Bingo Night", "10 rounds, free to play",
                                      "Monday", (1080, 1080))
@@ -66,6 +73,26 @@ def test_add_deal_callout_degrades_gracefully_on_missing_photo():
     base = _dummy_photo(size=(1080, 1080))
     result = pp._add_deal_callout(base, "/nonexistent/path.jpg", "$2 off Spotted Cow")
     assert result is base
+
+
+def test_process_never_picks_minimal_template_when_deal_photo_present(tmp_path, monkeypatch):
+    """The minimal template's caption bar sits bottom-left -- the same corner
+    the deal callout badge occupies -- so process() must never route to it
+    when compositing a deal photo (regression: they used to collide)."""
+    calls = []
+    monkeypatch.setattr(pp, "_build_flyer_minimal",
+                        lambda *a, **k: calls.append("minimal") or pp._build_flyer(*a, **k))
+    src = tmp_path / "photo.jpg"
+    _dummy_photo().save(src)
+    deal_photo = tmp_path / "deal.jpg"
+    _dummy_photo(color=(255, 255, 255)).save(deal_photo)
+    for d in range(1, 29):
+        out = tmp_path / f"out-{d}.png"
+        pp.process(str(src), str(out), "ig_feed", "text_overlay",
+                  event="Bingo Night", key_details="10 rounds",
+                  day_of_week="Monday", date_str=f"2026-07-{d:02d}",
+                  deal_photo_path=str(deal_photo))
+    assert calls == [], "minimal template must never be chosen alongside a deal photo"
 
 
 def test_process_composites_deal_photo_when_provided(tmp_path):
