@@ -16,6 +16,7 @@ import os
 from collections import defaultdict
 from datetime import datetime, timedelta
 
+import build_preview
 import classify_photos
 import config
 import process_photos
@@ -321,9 +322,11 @@ def main():
         store.log(f"generated {len(extra_rows)} extra post(s): "
                   f"{', '.join(r['post_type'] for r in extra_rows)}")
 
-    # --- 6. Render flyer images, then save -------------------------------------
+    # --- 6. Render flyer images, build the preview page, then save -----------
     all_rows = posts + generated
     render_generated_images(all_rows)
+    week_rows = [r for r in all_rows if r["status"] == config.STATUS_NEEDS_REVIEW]
+    build_preview.write_preview(week_rows)
     store.write_posts(all_rows)
     fell_back = sum(1 for r in generated if r.get("_fallback"))
     store.log(f"Sunday job done: generated {len(generated)} new post rows "

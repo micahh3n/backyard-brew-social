@@ -1,5 +1,6 @@
 from datetime import date
 
+import build_preview
 import classify_photos
 import config
 import generate_captions as gc
@@ -105,6 +106,7 @@ def test_main_gives_vibe_spotlight_posts_the_repetition_guard(monkeypatch):
     monkeypatch.setattr(store, "load_posts", lambda: [dict(existing_row)])
     monkeypatch.setattr(store, "load_recurring", lambda: [])
     monkeypatch.setattr(store, "write_posts", lambda rows: None)
+    monkeypatch.setattr(build_preview, "write_preview", lambda rows: "")
     monkeypatch.setattr(
         classify_photos, "classify_new_photos",
         lambda photos_dir, known_events, used: [
