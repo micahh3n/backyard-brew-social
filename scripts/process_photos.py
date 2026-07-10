@@ -304,8 +304,48 @@ def _build_flyer_poster(photo: Image.Image, event, key_details, day_of_week, siz
     return base.convert("RGB")
 
 
+def _add_deal_callout(img: Image.Image, deal_photo_path: str, key_details: str) -> Image.Image:
+    """Stamp a small real-photo badge (bottom-left, opposite the logo corner)
+    advertising today's deal: a cropped thumbnail of deal_photo_path inside a
+    gold-bordered square, with the deal's first detail as a caption
+    underneath. Never raises -- a missing/corrupt deal photo just returns img
+    unchanged so it never blocks the rest of the flyer."""
+    try:
+        deal_img = Image.open(deal_photo_path).convert("RGB")
+    except Exception as exc:
+        print(f"[process_photos] could not open deal photo {deal_photo_path}: {exc}")
+        return img
+
+    navy, gold, cream = (_hex(config.COLORS[k]) for k in ("navy", "gold", "cream"))
+    base = img.convert("RGBA")
+    W, H = base.size
+    badge_size = int(W * 0.30)
+    margin = int(W * 0.05)
+    thumb = _fit_cover(deal_img, (badge_size, badge_size)).convert("RGBA")
+
+    pos = (margin, H - badge_size - margin - int(H * 0.08))
+    border = Image.new("RGBA", (badge_size + 10, badge_size + 10), gold + (255,))
+    base.alpha_composite(border, (pos[0] - 5, pos[1] - 5))
+    base.alpha_composite(thumb, pos)
+
+    draw = ImageDraw.Draw(base)
+    label_font = _font("BarlowCondensed-Bold.ttf", int(H * 0.032))
+    label = "TODAY'S DEAL"
+    detail = key_details.split(",")[0].strip() if key_details else ""
+    lx, ly = pos[0], pos[1] + badge_size + 6
+    pad = int(W * 0.015)
+    draw.rectangle([lx - pad, ly - pad, lx + badge_size + pad, ly + label_font.size * 2 + pad * 3],
+                   fill=navy + (200,))
+    draw.text((lx, ly), label, font=label_font, fill=gold)
+    if detail:
+        for line in _wrap(draw, detail, label_font, badge_size)[:1]:
+            draw.text((lx, ly + label_font.size + 4), line, font=label_font, fill=cream)
+    return base.convert("RGB")
+
+
 def process(input_path, out_path, platform_key, enhance_col,
-            event="", key_details="", day_of_week="", date_str=""):
+            event="", key_details="", day_of_week="", date_str="",
+            deal_photo_path=None):
     """Process one image for one platform and save it to out_path.
 
     Returns out_path on success. Never raises on cosmetic issues -- worst case it
@@ -335,6 +375,9 @@ def process(input_path, out_path, platform_key, enhance_col,
         result = _add_logo(builder(img, event, key_details, day_of_week, size))
     else:
         result = _fit_cover(_auto_polish(img), size)
+
+    if deal_photo_path and mode in ("text_overlay", "both"):
+        result = _add_deal_callout(result, deal_photo_path, key_details)
 
     result.save(out_path, quality=92)
     return out_path
