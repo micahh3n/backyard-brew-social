@@ -14,6 +14,7 @@ Low-confidence photos are left alone entirely -- never forced into a post.
 from __future__ import annotations
 
 import base64
+import io
 import os
 from datetime import datetime
 
@@ -29,9 +30,18 @@ except ImportError:
 
 OVERRIDE_SUFFIXES = ("_teaser", "_art", "_vibe", "_spotlight")
 
+# Claude's vision API only accepts still images. Video files (iPhones drop
+# these alongside photos in the same camera roll export) can never be
+# classified as a still image -- skip them before even attempting a call,
+# rather than burning an API call on a guaranteed 400.
+VIDEO_EXTENSIONS = (".mp4", ".mov", ".m4v", ".avi")
+
 
 def needs_classification(filename: str) -> bool:
-    """False if the filename already carries an explicit override signal."""
+    """False if the filename already carries an explicit override signal,
+    or isn't a still-image file at all (see VIDEO_EXTENSIONS)."""
+    if filename.lower().endswith(VIDEO_EXTENSIONS):
+        return False
     stem = os.path.splitext(filename)[0].lower()
     return not any(stem.endswith(s) or f"{s}_" in stem for s in OVERRIDE_SUFFIXES) \
         and "_art" not in stem and "art" not in stem.split("_")
@@ -53,13 +63,32 @@ def read_capture_time(path: str):
         return None
 
 
+def _prep_vision_bytes(path: str) -> str:
+    """Re-encode any PIL-openable image (including HEIC, once pillow_heif is
+    registered by config.py) as JPEG bytes and base64-encode it.
+
+    Trusting the file extension to pick a media_type for Claude's API (the
+    old approach) breaks for HEIC -- the raw bytes aren't actually a JPEG,
+    so the API rejects them. Decoding through PIL and always re-encoding as
+    JPEG ourselves means the declared media_type is always accurate,
+    regardless of the source format."""
+    img = Image.open(path)
+    try:
+        from PIL import ImageOps
+        img = ImageOps.exif_transpose(img)
+    except Exception:
+        pass
+    buf = io.BytesIO()
+    img.convert("RGB").save(buf, format="JPEG", quality=88)
+    return base64.standard_b64encode(buf.getvalue()).decode("utf-8")
+
+
 def _call_vision(path: str, known_events: list[str]) -> str:
     """Send the image to Claude, return the raw text response."""
     if anthropic is None or not os.environ.get("ANTHROPIC_API_KEY"):
         raise RuntimeError("anthropic not available or API key not set")
-    with open(path, "rb") as f:
-        data = base64.standard_b64encode(f.read()).decode("utf-8")
-    media_type = "image/png" if path.lower().endswith(".png") else "image/jpeg"
+    data = _prep_vision_bytes(path)
+    media_type = "image/jpeg"
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
     prompt = (
         "You classify photos for a bar's social media system. Known recurring "

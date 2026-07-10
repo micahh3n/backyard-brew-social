@@ -10,6 +10,16 @@ from __future__ import annotations
 import os
 from zoneinfo import ZoneInfo
 
+try:
+    # Registers .heic/.heif support with PIL's Image.open() globally, for
+    # every script in this repo -- iPhones (the owner's photo source) shoot
+    # HEIC by default. Import config first (every script already does) and
+    # every later `Image.open()` call transparently handles HEIC too.
+    import pillow_heif
+    pillow_heif.register_heif_opener()
+except ImportError:  # library not installed yet (e.g. local dry run)
+    pass
+
 # ---------------------------------------------------------------------------
 # Paths (resolved relative to the repo root, which is the parent of /scripts)
 # ---------------------------------------------------------------------------

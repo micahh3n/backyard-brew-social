@@ -179,11 +179,13 @@ def generate_captions(event, key_details, day_of_week, post_type,
     if anthropic is None or not api_key:
         return fallback_captions(event, key_details, post_type, days_until)
 
+    raw_text = None
+    stop_reason = None
     try:
         client = anthropic.Anthropic(api_key=api_key)
         resp = client.messages.create(
             model=config.ANTHROPIC_MODEL,
-            max_tokens=1024,
+            max_tokens=1536,
             system=_system_prompt(),
             messages=[{
                 "role": "user",
@@ -192,9 +194,10 @@ def generate_captions(event, key_details, day_of_week, post_type,
                                         avoid_examples or []),
             }],
         )
-        text = "".join(block.text for block in resp.content
-                       if getattr(block, "type", None) == "text")
-        data = _extract_json(text)
+        stop_reason = resp.stop_reason
+        raw_text = "".join(block.text for block in resp.content
+                           if getattr(block, "type", None) == "text")
+        data = _extract_json(raw_text)
         fb = str(data.get("fb_caption", "")).strip()
         ig = str(data.get("ig_caption", "")).strip()
         if not fb or not ig:
@@ -204,5 +207,11 @@ def generate_captions(event, key_details, day_of_week, post_type,
         fb = re.sub(r"#\w+", "", fb).strip()
         return {"fb_caption": fb, "ig_caption": ig, "_fallback": False}
     except Exception as exc:  # any API/parse failure -> safe fallback
-        print(f"[anthropic_client] caption generation failed, using fallback: {exc}")
+        # Log stop_reason + a snippet of what the model actually said --
+        # the bare exception message alone ("no JSON object in model
+        # response") gives no way to diagnose *why* on a real run, since
+        # nothing else captures the raw response.
+        snippet = (raw_text or "")[:200].replace("\n", " ")
+        print(f"[anthropic_client] caption generation failed ({exc}), "
+              f"stop_reason={stop_reason!r}, response snippet={snippet!r} -- using fallback")
         return fallback_captions(event, key_details, post_type, days_until)

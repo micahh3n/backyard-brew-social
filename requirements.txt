@@ -1,5 +1,6 @@
 anthropic>=0.40.0
 requests>=2.31.0
 Pillow>=10.2.0
+pillow-heif>=0.15.0   # lets PIL open .heic/.heif photos -- iPhones shoot this by default (see config.py)
 playwright>=1.40.0    # renders the premium HTML/CSS flyer templates (see flyer_render.py)
 tzdata>=2024.1        # timezone database (required on Windows; harmless on Linux)

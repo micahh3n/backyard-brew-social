@@ -1,5 +1,9 @@
+import base64
 from datetime import datetime
+from io import BytesIO
 from unittest.mock import patch
+
+from PIL import Image
 
 import classify_photos
 
@@ -14,6 +18,41 @@ def test_needs_classification_skips_known_suffixes():
 def test_needs_classification_allows_plain_photos():
     assert classify_photos.needs_classification("IMG_4821.jpg") is True
     assert classify_photos.needs_classification("bonfire_night.png") is True
+
+
+def test_needs_classification_skips_video_files():
+    """Video files (iPhones drop these alongside camera-roll photos) can
+    never be classified as a still image -- must be skipped before ever
+    reaching _call_vision, not sent to the API and left to fail with a 400."""
+    assert classify_photos.needs_classification("IMG_8847.MP4") is False
+    assert classify_photos.needs_classification("IMG_8847.mov") is False
+    assert classify_photos.needs_classification("clip.m4v") is False
+    assert classify_photos.needs_classification("clip.avi") is False
+
+
+def test_classify_new_photos_never_calls_classify_photo_for_video(tmp_path):
+    (tmp_path / "IMG_8847.MP4").write_bytes(b"x")
+    with patch("classify_photos.classify_photo") as mock_classify:
+        result = classify_photos.classify_new_photos(
+            str(tmp_path), ["Bingo Night"], used_filenames=set())
+    mock_classify.assert_not_called()
+    assert result == []
+
+
+def test_prep_vision_bytes_always_reencodes_as_real_jpeg(tmp_path):
+    """Regression test for the bug found in the real Sunday run: the old
+    code guessed media_type from the file extension while sending raw file
+    bytes unchanged, so a .heic file's actual (non-JPEG) bytes got declared
+    to the API as image/jpeg and rejected. Re-encoding through PIL guarantees
+    the bytes we send are always genuinely a JPEG, regardless of source
+    filename/format."""
+    src = tmp_path / "photo.png"  # PNG bytes, but exercises the same "trust
+    Image.new("RGB", (20, 20), (10, 20, 30)).save(src, format="PNG")  # the extension" bug class
+
+    b64 = classify_photos._prep_vision_bytes(str(src))
+    decoded = base64.standard_b64decode(b64)
+    reopened = Image.open(BytesIO(decoded))
+    assert reopened.format == "JPEG"
 
 
 def test_classify_photo_parses_model_response():
