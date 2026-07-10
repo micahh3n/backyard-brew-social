@@ -39,13 +39,18 @@ reasoned, industry-benchmark posting times (Sections 7-9).
 
 ## Changes
 
-### 1. Retire Meta API auto-posting entirely
+### 1. Retire Meta API involvement entirely (posting AND voice-anchor)
 
-- Delete `.github/workflows/hourly-post.yml`.
-- Remove the posting call path from `scripts/post_to_meta.py` (or delete the
-  script if nothing else depends on it — confirm during implementation
-  planning). Keep `meta_client.py`'s `recent_page_posts()` read-only call,
-  since it feeds the caption voice-anchor feature.
+- Delete `.github/workflows/hourly-post.yml` and `scripts/post_to_meta.py`.
+- Delete `scripts/meta_client.py` outright, including the read-only
+  `recent_page_posts()` "voice anchor" call. Owner explicitly chose zero Meta
+  developer console involvement of any kind over the authenticity boost of
+  matching literal past posts — captions still follow the detailed
+  brand-voice rules in the system prompt (Section 5), just without live
+  examples of past posts.
+- `SETUP.md` is simplified to drop Meta developer-app/token setup entirely
+  (Parts 2-6 as currently written) — the only remaining requirement is a
+  GitHub account and an Anthropic API key. No `META_*` secrets exist at all.
 - Drop the Meta App Review effort — no longer needed since nothing posts via
   API for either platform (Instagram's existing working auto-post is also
   turned off, for one consistent manual workflow rather than a
@@ -57,7 +62,8 @@ reasoned, industry-benchmark posting times (Sections 7-9).
 
 - `process_photos.process()` is called from within `generate_captions.py`'s
   Sunday run (not from the retired hourly job), once per generated row,
-  writing the finished image to `photos/generated/`.
+  writing the finished image to `photos/_generated/` (the existing
+  `config.GENERATED_DIR`).
 - `posts.csv` gains a column (e.g. `generated_image`) pointing to that output
   file, so the owner can find the exact image to attach when scheduling
   manually.
@@ -109,10 +115,12 @@ Fix, in `anthropic_client.py`'s `_system_prompt()` / `_user_prompt()`:
   post to post — instructed to sound like a person casually working it into
   a different sentence each time, not reciting a fixed line.
 - **Structural variety:** explicit instruction to vary the opening move
-  (not always a question — sometimes a statement, a fragment, an aside) and
-  to treat the real `voice_examples` (recent actual page posts) as the
-  primary voice reference, overriding the rulebook when they conflict.
-- Extend the existing repetition-guard (`avoid_examples`, currently used to
+  (not always a question — sometimes a statement, a fragment, an aside).
+  With the Meta voice-anchor feature removed (Section 1), there are no live
+  "recent actual page posts" to reference — variety instead comes from the
+  rotating-mechanism rules above plus the repetition guard below.
+- Extend the existing repetition-guard (`avoid_examples`, sourced from this
+  repo's own `posts.csv` history — no Meta API involved, currently used to
   avoid repeating exact past captions for the same event) to also cover
   *structure*, not just wording — e.g. pass along which "move" recent posts
   for this event used, and instruct the model to pick a different one.
@@ -198,20 +206,34 @@ pulls real "when your audience is most active" data from native IG/FB
 Insights (a manual, no-API step — just reading the chart in the app), at
 which point the table can be swapped for account-specific times.
 
+### 10. Visual weekly preview page
+
+The owner wants to *see* the week's assembled posts at a glance rather than
+reading a spreadsheet. The Sunday job additionally generates a static HTML
+file, `preview/this-week.html`, listing every generated row as a simple
+visual card in schedule order: the finished flyer image, the scheduled
+date/time, and both captions (fb/ig) as plain text underneath. No server, no
+build step — just a plain HTML file with inline CSS that opens directly in
+any browser (double-click, or `git pull` then open in File Explorer). This
+is a pure read-only convenience view generated from the same `posts.csv`
+data — `posts.csv` remains the actual source of truth the owner edits.
+
 ## Sunday workflow (end state)
 
 1. During the week: owner drops photos into `photos/` as usual, optionally
    including a `_deal` photo when a specific drink is on special that day.
 2. The Sunday GitHub Action runs automatically: generates captions (Section
    5 rules), builds flyer images (Sections 2-4), writes it all to
-   `posts.csv` + `photos/generated/` at `status=needs_review`.
-3. Owner: `git pull`, opens `posts.csv`, reviews/edits each row's caption and
-   generated image, adjusts time if needed.
-4. For each approved row: owner manually pastes the caption + attaches the
-   generated image into Facebook/Instagram's native "Schedule Post" feature,
-   setting the suggested date/time.
-5. Owner marks the row `scheduled` (optional bookkeeping) and commits/pushes
-   once, done for the week (~1 hour total).
+   `posts.csv` + `photos/_generated/` at `status=needs_review`, and builds
+   `preview/this-week.html` (Section 10).
+3. Owner: `git pull`, opens `preview/this-week.html` in a browser for an
+   easy visual scan of the week; opens `posts.csv` alongside it only if they
+   want to edit a caption's text or the scheduled time.
+4. For each post: owner manually pastes the caption + attaches the generated
+   image into Facebook/Instagram's native "Schedule Post" feature, setting
+   the suggested date/time.
+5. Owner marks the row `scheduled` in `posts.csv` (optional bookkeeping) and
+   commits/pushes once, done for the week (~1 hour total).
 
 ## Error handling
 
@@ -239,10 +261,9 @@ generated and shown for review:
   exists, not built now.
 - Any change to Instagram's posting mechanism beyond turning it off (owner
   chose full-manual consistency over partial automation).
-
-## Follow-up implementation note
-
-Confirm during implementation planning whether `post_to_meta.py` should be
-deleted outright or kept as a stub/reference, since `meta_client.py`'s
-read-only `recent_page_posts()` (used for caption voice-anchor) currently
-lives alongside the posting code in the same module family.
+- The Meta voice-anchor feature (`recent_page_posts()`) — explicitly dropped
+  along with all other Meta API involvement (Section 1); owner chose zero
+  developer-console setup over this authenticity boost.
+- Any dynamic/interactive preview (a real web app, live editing in-browser)
+  — the weekly preview (Section 10) is a static, read-only HTML snapshot
+  only; `posts.csv` stays the single place edits happen.
