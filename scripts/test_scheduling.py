@@ -47,3 +47,11 @@ def test_time_for_fill_slot_rotates_afternoon_first():
     assert scheduling.time_for_fill_slot(1) == config.EXTRA_POST_TIME_MORNING
     assert scheduling.time_for_fill_slot(2) == config.EXTRA_POST_TIME_EVENING
     assert scheduling.time_for_fill_slot(3) == config.EXTRA_POST_TIME_AFTERNOON
+
+
+def test_compute_fill_targets_bonus_budget_defaults_to_config_value():
+    week_dates = [f"2026-06-{d:02d}" for d in range(1, 10)]  # 9 days, plenty of headroom
+    counts = {d: 0 for d in week_dates}
+    targets = scheduling.compute_fill_targets(counts, week_dates, min_posts=0,
+                                              max_posts=config.BONUS_POSTS_PER_WEEK + 1)
+    assert sum(targets.values()) == config.BONUS_POSTS_PER_WEEK
