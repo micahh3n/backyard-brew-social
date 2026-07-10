@@ -307,10 +307,11 @@ def main():
     known_events = list(config.EVENT_ANGLES.keys())
     classified = classify_photos.classify_new_photos(config.PHOTOS_DIR, known_events, used)
     # Same repetition guard recurring/one-off/campaign posts already get, but
-    # scoped to the two generic bucket names vibe/spotlight posts reuse every
-    # week (unlike a dated event, these are the ones most likely to drift into
-    # copy-paste-feeling repeats over unattended runs).
-    extra_event_labels = ["Behind The Scenes", "Community Spotlight"]
+    # scoped to the generic bucket names vibe/spotlight posts reuse every week
+    # (all four config.EVERGREEN_LABELS, plus "Community Spotlight") -- unlike
+    # a dated event, these are the ones most likely to drift into
+    # copy-paste-feeling repeats over unattended runs.
+    extra_event_labels = list(config.EVERGREEN_LABELS) + ["Community Spotlight"]
     avoid_examples_by_event = {
         label: store.recent_captions_for_event(posts, label, limit=4)
         for label in extra_event_labels

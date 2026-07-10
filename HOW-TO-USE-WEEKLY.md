@@ -3,6 +3,13 @@
 Once setup is done, your entire weekly involvement is **one Sunday sitting**:
 drop photos during the week, review + manually schedule on Sunday, done.
 
+> **Upgrading from the old auto-posting system?** Open `posts.csv` and check
+> for any leftover rows still marked `status = approved` from before this
+> update -- those won't post automatically anymore (the hourly posting job is
+> gone). For each one, either re-add it as a fresh row so it goes through
+> the new Sunday flow, or manually post it once yourself and then change its
+> status to `scheduled`.
+
 ---
 
 ## During the week

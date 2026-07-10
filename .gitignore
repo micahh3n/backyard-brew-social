@@ -13,7 +13,7 @@ venv/
 Thumbs.db
 
 # NOTE: we intentionally DO commit:
-#   photos/            (Instagram needs public image URLs)
-#   photos/_generated/ (the finished images that actually get posted)
+#   photos/            (source photos the owner drops in each week)
+#   photos/_generated/ (the finished flyer images used for manual posting)
 #   assets/fonts/      (so fonts aren't re-downloaded every run)
 #   posts.csv, status.log (the system's state + your visible log)

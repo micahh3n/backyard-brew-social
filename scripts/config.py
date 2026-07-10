@@ -21,7 +21,8 @@ FONTS_DIR = os.path.join(ASSETS_DIR, "fonts")
 RECURRING_CSV = os.path.join(REPO_ROOT, "recurring_events.csv")
 POSTS_CSV = os.path.join(REPO_ROOT, "posts.csv")
 STATUS_LOG = os.path.join(REPO_ROOT, "status.log")
-# Where process_photos.py writes finished images that get posted.
+# Where process_photos.py writes finished images for manual review/posting
+# (rendered for the weekly preview page, not auto-posted).
 GENERATED_DIR = os.path.join(REPO_ROOT, "photos", "_generated")
 
 # ---------------------------------------------------------------------------
@@ -48,7 +49,7 @@ BUSINESS = {
     "opened": "August 2024",
     "instagram": "@BackyardBrewGB",
     "facebook": "Backyard Brew",
-    # Latitude/longitude of the bar -- used to auto-find the Meta location tag.
+    # Latitude/longitude of the bar -- used by weather.py for the forecast lookup.
     "latitude": 44.4741,
     "longitude": -88.1013,
 }

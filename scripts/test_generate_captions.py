@@ -85,25 +85,34 @@ def test_build_extra_rows_rotates_evergreen_labels_for_vibe_photos():
 
 def test_main_gives_vibe_spotlight_posts_the_repetition_guard(monkeypatch):
     """main() must feed build_extra_rows() a populated avoid_examples_by_event
-    for the generic recurring bucket names ("Behind The Scenes",
-    "Community Spotlight") used by vibe/spotlight posts -- these are the
-    posts most at risk of copy-paste drift over unattended weeks, since
-    (unlike a dated event) the same label is reused every run.
+    for ALL of the generic recurring bucket names used by vibe/spotlight
+    posts -- the four config.EVERGREEN_LABELS ("Behind The Scenes",
+    "Wisconsin Spotlight", "Course & Trail Feature", "Weather Vibes") plus
+    "Community Spotlight" -- since these are the posts most at risk of
+    copy-paste drift over unattended weeks (unlike a dated event, the same
+    label is reused every run).
 
-    Currently main() calls build_extra_rows(...) with only voice_examples,
-    never avoid_examples_by_event, so the repetition guard never reaches
-    the caption prompt for these post types. This test drives main() itself
-    (with its collaborators stubbed) and asserts the caption call for the
-    new "Behind The Scenes" row actually receives the old caption text.
+    Previously main() built extra_event_labels from a hardcoded two-item
+    list ("Behind The Scenes", "Community Spotlight"), so the repetition
+    guard never reached the caption prompt for "Wisconsin Spotlight",
+    "Course & Trail Feature", or "Weather Vibes". This test drives main()
+    itself (with its collaborators stubbed) and asserts the caption calls
+    for both a "Behind The Scenes" row and a "Wisconsin Spotlight" row
+    actually receive their respective old caption text.
     """
     run_date = date(2026, 5, 31)  # a Sunday
 
-    existing_row = {**store.blank_row(), "date": "2026-05-20",
-                    "event": "Behind The Scenes", "status": config.STATUS_POSTED,
-                    "ig_caption": "Some old caption"}
+    existing_rows = [
+        {**store.blank_row(), "date": "2026-05-20",
+         "event": "Behind The Scenes", "status": config.STATUS_POSTED,
+         "ig_caption": "Some old caption"},
+        {**store.blank_row(), "date": "2026-05-21",
+         "event": "Wisconsin Spotlight", "status": config.STATUS_POSTED,
+         "ig_caption": "Some other old caption"},
+    ]
 
     monkeypatch.setattr(gc, "today_local", lambda: run_date)
-    monkeypatch.setattr(store, "load_posts", lambda: [dict(existing_row)])
+    monkeypatch.setattr(store, "load_posts", lambda: [dict(r) for r in existing_rows])
     monkeypatch.setattr(store, "load_recurring", lambda: [])
     monkeypatch.setattr(store, "write_posts", lambda rows: None)
     monkeypatch.setattr(build_preview, "write_preview", lambda rows: "")
@@ -111,6 +120,7 @@ def test_main_gives_vibe_spotlight_posts_the_repetition_guard(monkeypatch):
         classify_photos, "classify_new_photos",
         lambda photos_dir, known_events, used: [
             {"filename": "vibe1.jpg", "match": None, "kind": "vibe", "confidence": "high"},
+            {"filename": "vibe2.jpg", "match": None, "kind": "vibe", "confidence": "high"},
         ])
 
     captured = {}
@@ -118,8 +128,8 @@ def test_main_gives_vibe_spotlight_posts_the_repetition_guard(monkeypatch):
 
     def spy_generate_captions_for(event, key_details, day_of_week, post_type,
                                    avoid_examples=None):
-        if event == "Behind The Scenes":
-            captured["avoid_examples"] = avoid_examples
+        if event in ("Behind The Scenes", "Wisconsin Spotlight"):
+            captured[event] = avoid_examples
         return real_generate_captions_for(event, key_details, day_of_week, post_type,
                                           avoid_examples=avoid_examples)
 
@@ -127,10 +137,17 @@ def test_main_gives_vibe_spotlight_posts_the_repetition_guard(monkeypatch):
 
     gc.main()
 
-    assert captured.get("avoid_examples"), (
+    assert captured.get("Behind The Scenes"), (
         "expected a non-empty avoid_examples to reach caption generation "
         "for the 'Behind The Scenes' vibe post")
-    assert "Some old caption" in captured["avoid_examples"]
+    assert "Some old caption" in captured["Behind The Scenes"]
+
+    assert captured.get("Wisconsin Spotlight"), (
+        "expected a non-empty avoid_examples to reach caption generation "
+        "for the 'Wisconsin Spotlight' vibe post -- this is the guard for "
+        "one of the three evergreen labels previously left off the "
+        "hardcoded extra_event_labels list")
+    assert "Some other old caption" in captured["Wisconsin Spotlight"]
 
 
 def test_vibe_spotlight_lands_on_genuinely_quietest_day_not_tomorrow():
