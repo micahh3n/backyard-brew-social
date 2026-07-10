@@ -1,4 +1,48 @@
+import config
 import store
+
+
+def test_normalize_date_str_leaves_canonical_format_unchanged():
+    assert store._normalize_date_str("2026-07-13") == "2026-07-13"
+
+
+def test_normalize_date_str_fixes_excel_mangled_dates():
+    """Regression test for a real bug: Excel silently rewrites a
+    YYYY-MM-DD cell to M/D/YYYY the moment the owner opens+saves
+    posts.csv, even if he only touched unrelated rows. This broke
+    parse_date() (raised), build_preview's string-sort (mis-ordered
+    since M/D/YYYY isn't zero-padded), and day_post_counts' cadence cap
+    (mis-grouped) all at once."""
+    assert store._normalize_date_str("7/13/2026") == "2026-07-13"
+    assert store._normalize_date_str("07/13/2026") == "2026-07-13"
+
+
+def test_normalize_date_str_passes_through_unknown_formats():
+    assert store._normalize_date_str("not a date") == "not a date"
+    assert store._normalize_date_str("") == ""
+
+
+def test_normalize_scheduled_time_fixes_just_the_date_portion():
+    assert store._normalize_scheduled_time("7/13/2026 11:00") == "2026-07-13 11:00"
+    assert store._normalize_scheduled_time("2026-07-13 11:00") == "2026-07-13 11:00"
+    assert store._normalize_scheduled_time("") == ""
+
+
+def test_load_posts_normalizes_excel_mangled_dates(tmp_path, monkeypatch):
+    csv_path = tmp_path / "posts.csv"
+    csv_path.write_text(
+        "date,time,photos,event,key_details,platforms,promote_from,post_type,"
+        "enhance,fb_caption,ig_caption,scheduled_time,generated_image,status\n"
+        "7/13/2026,,bingo.jpg,Bingo Night,,both,7/1/2026,today,none,,,"
+        "7/13/2026 11:00,,needs_review\n",
+        encoding="utf-8-sig",
+    )
+    monkeypatch.setattr(config, "POSTS_CSV", str(csv_path))
+    rows = store.load_posts()
+    assert len(rows) == 1
+    assert rows[0]["date"] == "2026-07-13"
+    assert rows[0]["scheduled_time"] == "2026-07-13 11:00"
+    assert rows[0]["promote_from"] == "2026-07-01"
 
 
 def _row(event="Bingo Night", date="2026-06-01", status="posted",

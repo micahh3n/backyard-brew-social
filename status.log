@@ -35,3 +35,19 @@
 [2026-07-10 11:39] note: 3 rows may need a manual caption pass.
 [2026-07-10 12:10] generated 3 extra post(s): carousel, vibe, vibe
 [2026-07-10 12:10] Sunday job done: generated 15 new post rows (needs_review). Timing source: default-fallback (not yet personalized to Backyard Brew's own data).
+[2026-07-10 12:35] no image for 'Pool Night' 2026-07-15: 'nope.jpg' not found in C:\Users\micah\AppData\Local\Temp\pytest-of-micah\pytest-84\test_render_generated_images_s0 (check filename spelling/case)
+[2026-07-10 12:36] no image for 'Pool Night' 7/11/2026: 'pool_default_art.jpg' not found in C:\Users\micah\OneDrive\Desktop\backyard-brew-social\photos (check filename spelling/case)
+[2026-07-10 12:36] no image for 'Pool Night' 7/11/2026: 'pool_default_art.jpg' not found in C:\Users\micah\OneDrive\Desktop\backyard-brew-social\photos (check filename spelling/case)
+[2026-07-10 12:36] flyer render failed for 'Bingo Night' 7/13/2026: time data '7/13/2026' does not match format '%Y-%m-%d' -- row will show its original photo instead.
+[2026-07-10 12:36] flyer render failed for 'Bingo Night' 7/13/2026: time data '7/13/2026' does not match format '%Y-%m-%d' -- row will show its original photo instead.
+[2026-07-10 12:36] flyer render failed for 'Pickleball Open Play' 7/14/2026: time data '7/14/2026' does not match format '%Y-%m-%d' -- row will show its original photo instead.
+[2026-07-10 12:36] flyer render failed for 'Pickleball Open Play' 7/14/2026: time data '7/14/2026' does not match format '%Y-%m-%d' -- row will show its original photo instead.
+[2026-07-10 12:36] flyer render failed for 'Tacos + Poker Club' 7/15/2026: time data '7/15/2026' does not match format '%Y-%m-%d' -- row will show its original photo instead.
+[2026-07-10 12:36] flyer render failed for 'Tacos + Poker Club' 7/15/2026: time data '7/15/2026' does not match format '%Y-%m-%d' -- row will show its original photo instead.
+[2026-07-10 12:36] no image for 'Ladies Night + Line Dancing' 7/16/2026: 'line dancing_default_artpg' not found in C:\Users\micah\OneDrive\Desktop\backyard-brew-social\photos (check filename spelling/case)
+[2026-07-10 12:36] no image for 'Ladies Night + Line Dancing' 7/16/2026: 'line dancing_default_artpg' not found in C:\Users\micah\OneDrive\Desktop\backyard-brew-social\photos (check filename spelling/case)
+[2026-07-10 12:41] no image for 'Pool Night' 2026-07-15: 'nope.jpg' not found in C:\Users\micah\AppData\Local\Temp\pytest-of-micah\pytest-86\test_render_generated_images_s0 (check filename spelling/case)
+[2026-07-10 12:41] no image for 'Pool Night' 2026-07-11: 'pool_default_art.jpg' not found in C:\Users\micah\OneDrive\Desktop\backyard-brew-social\photos (check filename spelling/case)
+[2026-07-10 12:41] no image for 'Pool Night' 2026-07-11: 'pool_default_art.jpg' not found in C:\Users\micah\OneDrive\Desktop\backyard-brew-social\photos (check filename spelling/case)
+[2026-07-10 12:41] no image for 'Ladies Night + Line Dancing' 2026-07-16: 'line dancing_default_artpg' not found in C:\Users\micah\OneDrive\Desktop\backyard-brew-social\photos (check filename spelling/case)
+[2026-07-10 12:41] no image for 'Ladies Night + Line Dancing' 2026-07-16: 'line dancing_default_artpg' not found in C:\Users\micah\OneDrive\Desktop\backyard-brew-social\photos (check filename spelling/case)

@@ -116,6 +116,17 @@ def render_generated_images(rows):
             first_photo = row["photos"].split(",")[0].strip()
             src = os.path.join(config.PHOTOS_DIR, first_photo)
             if not os.path.isfile(src):
+                # Not an exception, so the try/except below never sees this --
+                # log explicitly. This exact bug happened for real: a
+                # filename-case mismatch (recurring_events.csv referenced
+                # lowercase, the real file started with a capital letter)
+                # silently produced zero image for three events every week,
+                # invisible because Windows' case-insensitive filesystem
+                # hid it in local testing while GitHub Actions' Linux
+                # runner (case-sensitive) enforced it for real.
+                store.log(f"no image for '{row['event']}' {row['date']}: "
+                          f"'{first_photo}' not found in {config.PHOTOS_DIR} "
+                          "(check filename spelling/case)")
                 continue
             event_date = parse_date(row["date"])
             slug = slug_from_event(row["event"])

@@ -22,6 +22,46 @@ def load_recurring():
         return [dict(row) for row in csv.DictReader(f)]
 
 
+_DATE_FORMATS = ("%Y-%m-%d", "%m/%d/%Y", "%m/%d/%y")
+
+
+def _normalize_date_str(s: str) -> str:
+    """Coerce a date string back to canonical YYYY-MM-DD.
+
+    Excel silently reformats a YYYY-MM-DD cell to the locale's default
+    (e.g. M/D/YYYY) the moment the owner opens and saves posts.csv in it --
+    this happened for real (every row's date/scheduled_time got rewritten
+    from "2026-07-13" to "7/13/2026" just from clearing unrelated rows).
+    Every downstream consumer assumes YYYY-MM-DD: parse_date() raises on
+    anything else, and build_preview's sort + day_post_counts's cadence
+    cap both compare scheduled_time as a plain string, which silently
+    mis-sorts/mis-groups non-zero-padded M/D/YYYY dates. Normalizing once
+    here, at the single place everything reads posts.csv through, closes
+    the whole class of bug instead of hardening every call site.
+    Returns the input unchanged if it matches no known format, so a
+    genuinely malformed value still surfaces as an error downstream rather
+    than being silently swallowed."""
+    s = s.strip()
+    if not s:
+        return s
+    for fmt in _DATE_FORMATS:
+        try:
+            return datetime.strptime(s, fmt).strftime("%Y-%m-%d")
+        except ValueError:
+            continue
+    return s
+
+
+def _normalize_scheduled_time(s: str) -> str:
+    """Same normalization as _normalize_date_str, applied to just the date
+    portion of a "YYYY-MM-DD HH:MM" scheduled_time value."""
+    s = s.strip()
+    if not s or " " not in s:
+        return _normalize_date_str(s)
+    date_part, _, rest = s.partition(" ")
+    return f"{_normalize_date_str(date_part)} {rest}".strip()
+
+
 def load_posts():
     """Return posts.csv as a list of dicts, every column present (blank if empty)."""
     rows = []
@@ -30,6 +70,9 @@ def load_posts():
     with open(config.POSTS_CSV, newline="", encoding="utf-8-sig") as f:
         for raw in csv.DictReader(f):
             row = {col: (raw.get(col) or "").strip() for col in config.POSTS_COLUMNS}
+            row["date"] = _normalize_date_str(row["date"])
+            row["scheduled_time"] = _normalize_scheduled_time(row["scheduled_time"])
+            row["promote_from"] = _normalize_date_str(row["promote_from"])
             rows.append(row)
     return rows
 
