@@ -115,6 +115,7 @@ def test_main_gives_vibe_spotlight_posts_the_repetition_guard(monkeypatch):
     monkeypatch.setattr(store, "load_posts", lambda: [dict(r) for r in existing_rows])
     monkeypatch.setattr(store, "load_recurring", lambda: [])
     monkeypatch.setattr(store, "write_posts", lambda rows: None)
+    monkeypatch.setattr(store, "log", lambda message: None)
     monkeypatch.setattr(build_preview, "write_preview", lambda rows: "")
     monkeypatch.setattr(
         classify_photos, "classify_new_photos",

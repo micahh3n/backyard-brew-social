@@ -37,15 +37,17 @@ photo accent that restores personality without returning to the old clip-art loo
   `generate_captions.py` calls `process_photos.process(..., platform_key="ig_feed")` as the only
   real call site in production.
 - `recurring_events.csv` already has the corrected Thursday/Friday event names (`Ladies Night +
-  Line Dancing`, `Karaoke Night`) — that data is current. However `config.EVENT_ANGLES` (used only
-  for picking a caption angle, a separate lookup from the flyer path) still has the old combined
-  names (`Disc Golf League + Ladies Night`, `Line Dancing + Karaoke Night`) and needs updating to
-  match, since the decoration keyword-matching added here reads the same `event` string.
+  Line Dancing`, `Karaoke Night`) — that data is current. `config.EVENT_ANGLES` (used only for
+  picking a caption angle, a separate lookup from the flyer path) had the old combined names
+  (`Disc Golf League + Ladies Night`, `Line Dancing + Karaoke Night`) — **fixed during this
+  session**, keys now match `recurring_events.csv` exactly; all 67 tests still pass.
 - **Separately discovered, not part of this design:** `recurring_events.csv`'s Thursday row
-  points to `default_photos=line dancing_default_artpg` (missing a `.` and not matching any
-  actual file in `photos/` — the real file is `Backyard Thursdays_default_art.jpg`). This is a
-  broken reference the owner should fix in the CSV; flagging it here since it was found during
-  this work, but the fix itself is out of scope for this spec.
+  points to `default_photos=line dancing_default_artpg`. Confirmed with the owner: the intended
+  filename is `line dancing_default_art.png` (missing the `.` in the CSV is a real typo), but he
+  doesn't have that photo yet — there's no real Thursday Line Dancing photo in `photos/` to
+  reference. `Backyard Thursdays_default_art.jpg` (the file that exists today) is unrelated old
+  art, not a correctly-named stand-in. Once he has a real photo, it should be saved as
+  `line dancing_default_art.png` and the CSV typo fixed to match. Out of scope for this spec.
 - No background-removal capability is available in this environment: the connected Higgsfield
   MCP is at 0 credits (image generation and background removal both run on that balance), and the
   two free local alternatives (`rembg`, OpenCV) fail to install because this Python is Windows
