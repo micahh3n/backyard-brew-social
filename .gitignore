@@ -12,6 +12,9 @@ venv/
 .DS_Store
 Thumbs.db
 
+# Local git worktrees used for isolated feature work
+.worktrees/
+
 # NOTE: we intentionally DO commit:
 #   photos/            (source photos the owner drops in each week)
 #   photos/_generated/ (the finished flyer images used for manual posting)
