@@ -1,11 +1,12 @@
 import base64
 from datetime import datetime
 from io import BytesIO
-from unittest.mock import patch
+from unittest.mock import MagicMock, patch
 
 from PIL import Image
 
 import classify_photos
+import config
 
 
 def test_needs_classification_skips_known_suffixes():
@@ -53,6 +54,47 @@ def test_prep_vision_bytes_always_reencodes_as_real_jpeg(tmp_path):
     decoded = base64.standard_b64decode(b64)
     reopened = Image.open(BytesIO(decoded))
     assert reopened.format == "JPEG"
+
+
+def test_prep_vision_bytes_downscales_large_images(tmp_path):
+    """Full-res iPhone photos (often 3000px+) should be shrunk before being
+    sent for classification -- classification only needs a coarse read, and
+    downscaling caps the image-token cost per photo."""
+    src = tmp_path / "big.jpg"
+    Image.new("RGB", (3000, 2000), (5, 5, 5)).save(src, format="JPEG")
+
+    b64 = classify_photos._prep_vision_bytes(str(src))
+    decoded = base64.standard_b64decode(b64)
+    reopened = Image.open(BytesIO(decoded))
+    assert max(reopened.size) <= classify_photos.CLASSIFY_MAX_DIMENSION
+
+
+def test_call_vision_uses_classification_model_not_caption_model(tmp_path, monkeypatch):
+    """Classification should use config.CLASSIFICATION_MODEL (Haiku), a
+    cheaper/faster model than the Sonnet model captions use -- classification
+    is a much simpler task and runs far more often."""
+    src = tmp_path / "photo.jpg"
+    Image.new("RGB", (20, 20), (1, 2, 3)).save(src, format="JPEG")
+
+    fake_client = MagicMock()
+    fake_response = MagicMock()
+    fake_block = MagicMock()
+    fake_block.type = "text"
+    fake_block.text = '{"match": null, "kind": "vibe", "confidence": "low"}'
+    fake_response.content = [fake_block]
+    fake_client.messages.create.return_value = fake_response
+
+    fake_anthropic = MagicMock()
+    fake_anthropic.Anthropic.return_value = fake_client
+
+    monkeypatch.setattr(classify_photos, "anthropic", fake_anthropic)
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "fake-key")
+
+    classify_photos._call_vision(str(src), ["Bingo Night"])
+
+    _, kwargs = fake_client.messages.create.call_args
+    assert kwargs["model"] == config.CLASSIFICATION_MODEL
+    assert kwargs["model"] != config.ANTHROPIC_MODEL
 
 
 def test_classify_photo_parses_model_response():

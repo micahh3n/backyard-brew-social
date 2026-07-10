@@ -186,7 +186,14 @@ def generate_captions(event, key_details, day_of_week, post_type,
         resp = client.messages.create(
             model=config.ANTHROPIC_MODEL,
             max_tokens=1536,
-            system=_system_prompt(),
+            # The system prompt is identical on every caption call (many per
+            # Sunday run) -- cache it so only the first call in a run pays
+            # full input-token price for it.
+            system=[{
+                "type": "text",
+                "text": _system_prompt(),
+                "cache_control": {"type": "ephemeral"},
+            }],
             messages=[{
                 "role": "user",
                 "content": _user_prompt(event, key_details, day_of_week,

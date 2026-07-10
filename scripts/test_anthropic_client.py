@@ -1,3 +1,5 @@
+from unittest.mock import MagicMock
+
 import anthropic_client as ac
 
 
@@ -52,3 +54,32 @@ def test_system_prompt_instructs_varying_the_opening_move():
 def test_system_prompt_instructs_rotating_share_mechanism():
     text = ac._system_prompt()
     assert "tag-a-friend" in text.lower() or "tag a friend" in text.lower()
+
+
+def test_generate_captions_caches_the_system_prompt(monkeypatch):
+    """The system prompt is identical on every caption call within a run --
+    it should be sent with cache_control so only the first call pays full
+    input-token price for it, cutting repeated-run API cost."""
+    fake_client = MagicMock()
+    fake_response = MagicMock()
+    fake_block = MagicMock()
+    fake_block.type = "text"
+    fake_block.text = '{"fb_caption": "fb text", "ig_caption": "ig text"}'
+    fake_response.content = [fake_block]
+    fake_response.stop_reason = "end_turn"
+    fake_client.messages.create.return_value = fake_response
+
+    fake_anthropic = MagicMock()
+    fake_anthropic.Anthropic.return_value = fake_client
+
+    monkeypatch.setattr(ac, "anthropic", fake_anthropic)
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "fake-key")
+
+    result = ac.generate_captions("Bingo Night", "details", "Monday", "today")
+
+    assert result["_fallback"] is False
+    _, kwargs = fake_client.messages.create.call_args
+    system = kwargs["system"]
+    assert isinstance(system, list)
+    assert system[0]["cache_control"] == {"type": "ephemeral"}
+    assert "Backyard Brew" in system[0]["text"]

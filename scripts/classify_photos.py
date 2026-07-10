@@ -36,6 +36,13 @@ OVERRIDE_SUFFIXES = ("_teaser", "_art", "_vibe", "_spotlight")
 # rather than burning an API call on a guaranteed 400.
 VIDEO_EXTENSIONS = (".mp4", ".mov", ".m4v", ".avi")
 
+# Classification only needs to answer "which known event/vibe is this" --
+# full-res iPhone photos (often 3000px+ on a side) burn far more image
+# tokens than that coarse a judgment call requires. Downscaling before
+# sending caps the token cost per photo without hurting classification
+# accuracy.
+CLASSIFY_MAX_DIMENSION = 768
+
 
 def needs_classification(filename: str) -> bool:
     """False if the filename already carries an explicit override signal,
@@ -78,8 +85,10 @@ def _prep_vision_bytes(path: str) -> str:
         img = ImageOps.exif_transpose(img)
     except Exception:
         pass
+    img = img.convert("RGB")
+    img.thumbnail((CLASSIFY_MAX_DIMENSION, CLASSIFY_MAX_DIMENSION), Image.LANCZOS)
     buf = io.BytesIO()
-    img.convert("RGB").save(buf, format="JPEG", quality=88)
+    img.save(buf, format="JPEG", quality=88)
     return base64.standard_b64encode(buf.getvalue()).decode("utf-8")
 
 
@@ -102,7 +111,7 @@ def _call_vision(path: str, known_events: list[str]) -> str:
         "reasonably sure -- do not guess."
     )
     resp = client.messages.create(
-        model=config.ANTHROPIC_MODEL,
+        model=config.CLASSIFICATION_MODEL,
         max_tokens=256,
         messages=[{
             "role": "user",

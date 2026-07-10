@@ -45,6 +45,13 @@ TIMEZONE = ZoneInfo("America/Chicago")
 # ---------------------------------------------------------------------------
 ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL") or "claude-sonnet-5"
 
+# Photo classification is a much simpler task than caption writing and runs
+# more often (once per new photo dropped in) -- Haiku is plenty accurate for
+# "which known event does this photo match" and costs a fraction of Sonnet.
+# Override by setting the ANTHROPIC_CLASSIFICATION_MODEL secret/env var.
+CLASSIFICATION_MODEL = (os.environ.get("ANTHROPIC_CLASSIFICATION_MODEL")
+                         or "claude-haiku-4-5-20251001")
+
 # ---------------------------------------------------------------------------
 # Business identity (used inside the caption prompt and flyers)
 # ---------------------------------------------------------------------------
