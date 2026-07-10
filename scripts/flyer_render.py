@@ -27,6 +27,15 @@ import config
 LAYOUTS = ["full_bleed", "editorial_split"]
 
 
+def _rgba(hex_color: str, alpha: float) -> str:
+    """Convert a '#RRGGBB' hex string + alpha (0-1) into a CSS rgba() string,
+    so gradient/overlay colors stay derived from config.COLORS instead of
+    being hand-computed and risking silent drift if the brand palette changes."""
+    hex_color = hex_color.lstrip("#")
+    r, g, b = (int(hex_color[i:i + 2], 16) for i in (0, 2, 4))
+    return f"rgba({r}, {g}, {b}, {alpha})"
+
+
 def choose_layout(event: str, date_str: str) -> str:
     """Deterministic layout rotation: the same (event, date) always picks the
     same layout on re-runs, but different dates/events vary."""
@@ -92,11 +101,11 @@ def _full_bleed_html(photo_uri, event, key_details, day_of_week, deal_photo_uri=
 body{{width:1080px;height:1080px;}}
 .canvas{{width:1080px;height:1080px;position:relative;overflow:hidden;background:{c['navy']};font-family:'Barlow Condensed',sans-serif;}}
 .photo{{position:absolute;inset:0;background-image:url('{photo_uri}');background-size:cover;background-position:center;filter:contrast(1.08) saturate(1.12) brightness(0.98);}}
-.grade{{position:absolute;inset:0;background:linear-gradient(160deg, rgba(11,28,45,0.28) 0%, rgba(11,28,45,0) 40%, rgba(200,146,42,0.10) 100%);mix-blend-mode:overlay;}}
+.grade{{position:absolute;inset:0;background:linear-gradient(160deg, {_rgba(c['navy'], 0.28)} 0%, {_rgba(c['navy'], 0)} 40%, {_rgba(c['gold'], 0.10)} 100%);mix-blend-mode:overlay;}}
 .grain{{position:absolute;inset:0;opacity:0.06;mix-blend-mode:overlay;pointer-events:none;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}}
 .scrim{{position:absolute;left:0;right:0;bottom:0;height:60%;
-  background:linear-gradient(to top, rgba(6,15,24,0.97) 0%, rgba(6,15,24,0.88) 30%, rgba(6,15,24,0.4) 68%, rgba(6,15,24,0) 100%);}}
+  background:linear-gradient(to top, {_rgba(c['navy'], 0.97)} 0%, {_rgba(c['navy'], 0.88)} 30%, {_rgba(c['navy'], 0.4)} 68%, {_rgba(c['navy'], 0)} 100%);}}
 .eyebrow{{position:absolute;top:56px;left:56px;display:flex;align-items:center;gap:12px;}}
 .eyebrow .dot{{width:7px;height:7px;border-radius:50%;background:{c['yellow']};}}
 .eyebrow span{{color:{c['yellow']};font-weight:700;font-size:22px;letter-spacing:6px;text-transform:uppercase;text-shadow:0 2px 8px rgba(0,0,0,0.5);}}
@@ -108,7 +117,7 @@ body{{width:1080px;height:1080px;}}
 .detail{{color:{c['gold']};font-weight:600;font-size:28px;letter-spacing:1px;line-height:1.4;}}
 .footer{{position:absolute;bottom:56px;right:56px;text-align:right;}}
 .footer .mark{{color:{c['cream']};font-weight:700;font-size:18px;letter-spacing:5px;text-transform:uppercase;opacity:0.9;}}
-.footer .tag{{color:rgba(245,239,216,0.55);font-weight:500;font-size:13px;letter-spacing:3px;text-transform:uppercase;margin-top:4px;}}
+.footer .tag{{color:{_rgba(c['cream'], 0.55)};font-weight:500;font-size:13px;letter-spacing:3px;text-transform:uppercase;margin-top:4px;}}
 </style></head>
 <body>
 <div class="canvas">
@@ -141,7 +150,7 @@ def _editorial_split_html(photo_uri, event, key_details, day_of_week, deal_photo
 body{{width:1080px;height:1080px;}}
 .canvas{{width:1080px;height:1080px;position:relative;overflow:hidden;background:{c['navy']};font-family:'Barlow Condensed',sans-serif;}}
 .photo{{position:absolute;top:0;bottom:0;right:0;width:66%;background-image:url('{photo_uri}');background-size:cover;background-position:65% center;filter:contrast(1.06) saturate(1.1);}}
-.photo-fade{{position:absolute;top:0;bottom:0;right:0;width:66%;background:linear-gradient(90deg, rgba(11,28,45,0.9) 0%, rgba(11,28,45,0) 12%);}}
+.photo-fade{{position:absolute;top:0;bottom:0;right:0;width:66%;background:linear-gradient(90deg, {_rgba(c['navy'], 0.9)} 0%, {_rgba(c['navy'], 0)} 12%);}}
 .grain{{position:absolute;inset:0;opacity:0.05;mix-blend-mode:overlay;pointer-events:none;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}}
 .panel{{position:absolute;top:0;bottom:0;left:0;width:38%;padding:64px 0 56px 56px;display:flex;flex-direction:column;justify-content:flex-end;}}
@@ -152,7 +161,7 @@ body{{width:1080px;height:1080px;}}
 .headline{{font-family:'Anton';color:{c['cream']};font-size:86px;line-height:0.9;letter-spacing:1px;text-transform:uppercase;}}
 .detail{{margin-top:26px;color:{c['cream']};font-weight:500;font-size:23px;line-height:1.5;opacity:0.92;max-width:290px;}}
 .footer{{position:absolute;bottom:56px;left:56px;}}
-.footer .mark{{color:rgba(245,239,216,0.55);font-weight:600;font-size:13px;letter-spacing:4px;text-transform:uppercase;}}
+.footer .mark{{color:{_rgba(c['cream'], 0.55)};font-weight:600;font-size:13px;letter-spacing:4px;text-transform:uppercase;}}
 </style></head>
 <body>
 <div class="canvas">
