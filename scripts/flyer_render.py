@@ -160,7 +160,7 @@ body{{width:1080px;height:1080px;}}
 .eyebrow span{{color:{c['gold']};font-weight:700;font-size:19px;letter-spacing:5px;text-transform:uppercase;}}
 .headline{{font-family:'Anton';color:{c['cream']};font-size:86px;line-height:0.9;letter-spacing:1px;text-transform:uppercase;}}
 .detail{{margin-top:26px;color:{c['cream']};font-weight:500;font-size:23px;line-height:1.5;opacity:0.92;max-width:290px;}}
-.footer{{position:absolute;bottom:56px;left:56px;}}
+.footer{{margin-top:32px;}}
 .footer .mark{{color:{_rgba(c['cream'], 0.55)};font-weight:600;font-size:13px;letter-spacing:4px;text-transform:uppercase;}}
 </style></head>
 <body>
@@ -172,8 +172,8 @@ body{{width:1080px;height:1080px;}}
     <div class="eyebrow"><div class="bar"></div><span>{day_esc}</span></div>
     <div class="headline">{event_esc}</div>
     <div class="detail">{detail_esc}</div>
+    <div class="footer"><div class="mark">Backyard Brew</div></div>
   </div>
-  <div class="footer"><div class="mark">Backyard Brew</div></div>
 </div>
 </body></html>"""
 
