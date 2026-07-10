@@ -185,7 +185,12 @@ def render_flyer(photo_path, event, key_details, day_of_week, date_str, out_path
                  size=(1080, 1080), deal_photo_path=None, layout=None) -> str:
     """Render one flyer: prep the photo(s), pick a layout (or use the given
     override -- mainly for tests), build the HTML, screenshot it via
-    Playwright, save to out_path. Returns out_path."""
+    Playwright, save to out_path. Returns out_path.
+
+    Note: `size` only drives photo-prep dimensions and the Playwright viewport --
+    both HTML layout templates hardcode .canvas to 1080x1080, so passing a
+    non-square size (e.g. an ig_story 1080x1920) will NOT produce a taller
+    canvas; it will just add blank space around a still-1080x1080 layout."""
     with tempfile.TemporaryDirectory() as tmp:
         prepped_photo = os.path.join(tmp, "photo.jpg")
         prep_photo(photo_path, prepped_photo, size=size)
@@ -211,6 +216,12 @@ def render_flyer(photo_path, event, key_details, day_of_week, date_str, out_path
             browser = p.chromium.launch()
             page = browser.new_page(viewport={"width": size[0], "height": size[1]})
             page.goto(_file_uri(html_path))
+            # page.goto()'s default waitUntil="load" does not reliably wait for
+            # @import'd web fonts (Anton, Barlow Condensed) to finish downloading
+            # and applying -- without this, the screenshot can race the font load
+            # and silently fall back to a system serif/sans font.
+            page.wait_for_load_state("networkidle")
+            page.evaluate("document.fonts.ready")
             page.screenshot(path=out_path)
             browser.close()
 
