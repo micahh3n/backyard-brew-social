@@ -45,5 +45,5 @@ status.log              Plain-English log of what happened
 
 ## Notes
 - All drinks referenced are 100% Wisconsin-made; captions never name outside brands.
-- Nothing posts without your manual approval and scheduling — you are always in control.
+- Nothing posts without you manually scheduling it — you are always in control.
 - The Sunday job logs everything in `status.log` — check it if you notice something unexpected.
