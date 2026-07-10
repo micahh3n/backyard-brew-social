@@ -148,3 +148,35 @@ def test_vibe_spotlight_lands_on_genuinely_quietest_day_not_tomorrow():
     rows = gc.build_extra_rows(classified, existing_rows, run_date)
     assert len(rows) == 1
     assert rows[0]["scheduled_time"].split(" ")[0] == "2026-06-02"
+
+
+def test_render_generated_images_sets_generated_image_and_skips_missing_photos(tmp_path, monkeypatch):
+    monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
+    monkeypatch.setattr(config, "GENERATED_DIR", str(tmp_path / "_generated"))
+    monkeypatch.setattr(config, "REPO_ROOT", str(tmp_path.parent))
+    from PIL import Image
+    Image.new("RGB", (800, 600), (10, 20, 30)).save(tmp_path / "2026-07-14_bingo.jpg")
+
+    has_photo = {**store.blank_row(), "date": "2026-07-14", "photos": "2026-07-14_bingo.jpg",
+                 "event": "Bingo Night", "key_details": "10 rounds", "enhance": "none"}
+    missing_photo = {**store.blank_row(), "date": "2026-07-15", "photos": "nope.jpg",
+                     "event": "Pool Night", "key_details": ""}
+    rows = [dict(has_photo), dict(missing_photo)]
+
+    gc.render_generated_images(rows)
+
+    assert rows[0]["generated_image"], "expected a generated_image path for the row with a real photo"
+    assert rows[1]["generated_image"] == ""
+
+
+def test_find_deal_photo_matches_date_and_slug_with_deal_suffix(tmp_path, monkeypatch):
+    monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
+    (tmp_path / "2026-07-14_pickleball_deal.jpg").write_bytes(b"fake")
+    (tmp_path / "2026-07-14_pickleball.jpg").write_bytes(b"fake")
+    assert gc.find_deal_photo("2026-07-14", "pickleball") == "2026-07-14_pickleball_deal.jpg"
+
+
+def test_find_deal_photo_returns_none_when_absent(tmp_path, monkeypatch):
+    monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
+    (tmp_path / "2026-07-14_pickleball.jpg").write_bytes(b"fake")
+    assert gc.find_deal_photo("2026-07-14", "pickleball") is None

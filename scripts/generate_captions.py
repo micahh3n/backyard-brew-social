@@ -18,6 +18,7 @@ from datetime import datetime, timedelta
 
 import classify_photos
 import config
+import process_photos
 import scheduling
 import store
 import weather
@@ -87,6 +88,49 @@ def find_photo(post_date_str, slug, want_teaser, default_photo):
     if want_teaser:
         return dated_teaser or dated_base or default_photo
     return dated_base or default_photo
+
+
+def find_deal_photo(post_date_str, slug):
+    """The dated _deal photo for this date/event slug, if the owner dropped
+    one (e.g. 2026-07-14_pickleball_deal.jpg). None if not present -- a
+    missing deal photo just means no deal callout gets added, never blocks
+    the post."""
+    for f in list_photos():
+        stem = os.path.splitext(f)[0].lower()
+        tokens = stem.split("_")
+        if post_date_str in stem and slug in stem and "deal" in tokens:
+            return f
+    return None
+
+
+def render_generated_images(rows):
+    """Render each row's flyer/photo to config.GENERATED_DIR and set
+    generated_image to its repo-relative path. Never raises -- a render
+    failure just leaves generated_image blank so the row still shows up for
+    review with its original photo referenced in the photos column."""
+    for row in rows:
+        if row.get("generated_image") or not row.get("photos"):
+            continue
+        first_photo = row["photos"].split(",")[0].strip()
+        src = os.path.join(config.PHOTOS_DIR, first_photo)
+        if not os.path.isfile(src):
+            continue
+        try:
+            event_date = parse_date(row["date"])
+            slug = slug_from_event(row["event"])
+            deal_photo = find_deal_photo(row["date"], slug)
+            deal_path = os.path.join(config.PHOTOS_DIR, deal_photo) if deal_photo else None
+            name = process_photos.output_name("post", row["event"], row["date"])
+            out_path = os.path.join(config.GENERATED_DIR, name)
+            process_photos.process(
+                src, out_path, "ig_feed", row["enhance"],
+                event=row["event"], key_details=row["key_details"],
+                day_of_week=dow_name(event_date), date_str=row["date"],
+                deal_photo_path=deal_path)
+            row["generated_image"] = os.path.relpath(out_path, config.REPO_ROOT).replace("\\", "/")
+        except Exception as exc:
+            store.log(f"flyer render failed for '{row['event']}' {row['date']}: {exc} "
+                      f"-- row will show its original photo instead.")
 
 
 def suggest_enhance(event, key_details, is_promo):
@@ -277,8 +321,9 @@ def main():
         store.log(f"generated {len(extra_rows)} extra post(s): "
                   f"{', '.join(r['post_type'] for r in extra_rows)}")
 
-    # --- 6. Save --------------------------------------------------------------
+    # --- 6. Render flyer images, then save -------------------------------------
     all_rows = posts + generated
+    render_generated_images(all_rows)
     store.write_posts(all_rows)
     fell_back = sum(1 for r in generated if r.get("_fallback"))
     store.log(f"Sunday job done: generated {len(generated)} new post rows "
