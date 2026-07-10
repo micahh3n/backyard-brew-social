@@ -68,13 +68,17 @@ def list_photos():
             and not f.lower().endswith((".txt", ".md"))]
 
 
-def find_photo(post_date_str, slug, want_teaser, default_photo):
+def find_photo(post_date_str, slug, want_teaser, default_photo, event=None, posts_history=None):
     """Pick the right photo filename for a post.
 
     Preference order:
-      today post:   {date}_{slug}[_art]  ->  else default_photo
-      teaser/remind {date}_{slug}_teaser[_art]  ->  {date}_{slug}[_art]  ->  default
+      today post:   {date}_{slug}[_art]  ->  pool photo (event keyword, LRU)  ->  default_photo
+      teaser/remind {date}_{slug}_teaser[_art]  ->  {date}_{slug}[_art]  ->  pool  ->  default
     Returns a filename (not a full path). Never returns empty if a default exists.
+
+    `event`/`posts_history` are optional -- one-off/campaign callers that
+    don't pass them get the exact pre-pool behavior (dated match or
+    default), since this feature is scoped to the six recurring events.
     """
     files = list_photos()
     dated_base, dated_teaser = None, None
@@ -87,9 +91,18 @@ def find_photo(post_date_str, slug, want_teaser, default_photo):
             dated_teaser = dated_teaser or f
         else:
             dated_base = dated_base or f
-    if want_teaser:
-        return dated_teaser or dated_base or default_photo
-    return dated_base or default_photo
+    if want_teaser and dated_teaser:
+        return dated_teaser
+    if dated_base:
+        return dated_base
+    if event and posts_history is not None:
+        keywords = config.EVENT_PHOTO_KEYWORDS.get(event)
+        if keywords:
+            pool_pick = _pick_pool_photo(keywords, exclude_filenames={default_photo},
+                                         posts_history=posts_history)
+            if pool_pick:
+                return pool_pick
+    return default_photo
 
 
 def find_deal_photo(post_date_str, slug):
@@ -350,7 +363,8 @@ def main():
 
         # today post (event day)
         if (dstr, event, "today") not in existing:
-            photo = find_photo(dstr, slug, want_teaser=False, default_photo=default_photo)
+            photo = find_photo(dstr, slug, want_teaser=False, default_photo=default_photo,
+                               event=event, posts_history=posts + generated)
             enhance = suggest_enhance(event, details, is_promo=bool(one))
             row = build_row(d, d, event, details, platforms, "today",
                             photo, enhance, owner_time=owner_time,
@@ -365,7 +379,8 @@ def main():
         # teaser post (posts the evening before, about this event)
         teaser_post_date = d - timedelta(days=1)
         if teaser_post_date >= run_date and (dstr, event, "teaser") not in existing:
-            photo = find_photo(dstr, slug, want_teaser=True, default_photo=default_photo)
+            photo = find_photo(dstr, slug, want_teaser=True, default_photo=default_photo,
+                               event=event, posts_history=posts + generated)
             enhance = suggest_enhance(event, details, is_promo=bool(one))
             generated.append(build_row(d, teaser_post_date, event, details,
                                        platforms, "teaser", photo, enhance,

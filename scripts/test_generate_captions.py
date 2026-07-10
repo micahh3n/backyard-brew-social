@@ -264,3 +264,67 @@ def test_pick_pool_photo_excludes_video_files(monkeypatch, tmp_path):
     (tmp_path / "bingo_clip.mp4").write_bytes(b"x")
     pick = gc._pick_pool_photo(["bingo"], exclude_filenames=set(), posts_history=[])
     assert pick is None
+
+
+def test_find_photo_dated_match_still_wins_over_pool(monkeypatch, tmp_path):
+    monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
+    (tmp_path / "2026-07-13_bingo.jpg").write_bytes(b"x")
+    (tmp_path / "party_bingo.jpg").write_bytes(b"x")
+    photo = gc.find_photo("2026-07-13", "bingo", want_teaser=False,
+                          default_photo="Bingo_default_art.jpg",
+                          event="Bingo Night", posts_history=[])
+    assert photo == "2026-07-13_bingo.jpg"
+
+
+def test_find_photo_falls_through_to_pool_when_no_dated_match(monkeypatch, tmp_path):
+    monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
+    (tmp_path / "party_bingo.jpg").write_bytes(b"x")
+    photo = gc.find_photo("2026-07-13", "bingo", want_teaser=False,
+                          default_photo="Bingo_default_art.jpg",
+                          event="Bingo Night", posts_history=[])
+    assert photo == "party_bingo.jpg"
+
+
+def test_find_photo_falls_back_to_default_when_pool_empty(monkeypatch, tmp_path):
+    monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
+    photo = gc.find_photo("2026-07-13", "bingo", want_teaser=False,
+                          default_photo="Bingo_default_art.jpg",
+                          event="Bingo Night", posts_history=[])
+    assert photo == "Bingo_default_art.jpg"
+
+
+def test_find_photo_without_event_keeps_old_behavior(monkeypatch, tmp_path):
+    """One-off/campaign callers don't pass event/posts_history -- must
+    behave exactly as before (no pool tier attempted)."""
+    monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
+    (tmp_path / "party_bingo.jpg").write_bytes(b"x")
+    photo = gc.find_photo("2026-07-13", "bingo", want_teaser=False,
+                          default_photo="Bingo_default_art.jpg")
+    assert photo == "Bingo_default_art.jpg"
+
+
+def test_main_uses_pool_photo_for_recurring_event_when_no_dated_photo(tmp_path, monkeypatch):
+    run_date = date(2026, 5, 31)  # a Sunday; Monday 2026-06-01 is Bingo Night
+    monkeypatch.setattr(gc, "today_local", lambda: run_date)
+    monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
+    (tmp_path / "party_bingo.jpg").write_bytes(b"x")
+
+    monkeypatch.setattr(store, "load_posts", lambda: [])
+    monkeypatch.setattr(store, "load_recurring", lambda: [
+        {"day_of_week": "Monday", "event": "Bingo Night",
+         "key_details": "details", "default_photos": "Bingo_default_art.jpg",
+         "platforms": "both"},
+    ])
+    written = []
+    monkeypatch.setattr(store, "write_posts", lambda rows: written.extend(rows))
+    monkeypatch.setattr(store, "log", lambda message: None)
+    monkeypatch.setattr(build_preview, "write_preview", lambda rows: "")
+    monkeypatch.setattr(classify_photos, "classify_new_photos", lambda *a, **k: [])
+    monkeypatch.setattr(gc, "render_generated_images", lambda rows: None)
+
+    gc.main()
+
+    bingo_today = [r for r in written
+                  if r["event"] == "Bingo Night" and r["post_type"] == "today"]
+    assert len(bingo_today) == 1
+    assert bingo_today[0]["photos"] == "party_bingo.jpg"
