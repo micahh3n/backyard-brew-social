@@ -3,7 +3,6 @@ from datetime import date
 import classify_photos
 import config
 import generate_captions as gc
-import meta_client
 import store
 
 
@@ -83,7 +82,6 @@ def test_main_gives_vibe_spotlight_posts_the_repetition_guard(monkeypatch):
     monkeypatch.setattr(store, "load_posts", lambda: [dict(existing_row)])
     monkeypatch.setattr(store, "load_recurring", lambda: [])
     monkeypatch.setattr(store, "write_posts", lambda rows: None)
-    monkeypatch.setattr(meta_client, "recent_page_posts", lambda limit=6: [])
     monkeypatch.setattr(
         classify_photos, "classify_new_photos",
         lambda photos_dir, known_events, used: [
@@ -94,11 +92,10 @@ def test_main_gives_vibe_spotlight_posts_the_repetition_guard(monkeypatch):
     real_generate_captions_for = gc.generate_captions_for
 
     def spy_generate_captions_for(event, key_details, day_of_week, post_type,
-                                   voice_examples=None, avoid_examples=None):
+                                   avoid_examples=None):
         if event == "Behind The Scenes":
             captured["avoid_examples"] = avoid_examples
         return real_generate_captions_for(event, key_details, day_of_week, post_type,
-                                          voice_examples=voice_examples,
                                           avoid_examples=avoid_examples)
 
     monkeypatch.setattr(gc, "generate_captions_for", spy_generate_captions_for)
