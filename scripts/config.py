@@ -255,6 +255,39 @@ TRAIL_HIGHLIGHTS = [
     "the beginner-friendly nature loop",
 ]
 
+# ---------------------------------------------------------------------------
+# Undated event/food photo pools. A photo whose filename contains one of
+# these keywords (case-insensitive substring, anywhere) automatically enters
+# that event's rotation instead of the system always falling back to the
+# same static default poster. See generate_captions._pick_pool_photo().
+# ---------------------------------------------------------------------------
+EVENT_PHOTO_KEYWORDS = {
+    "Bingo Night": ["bingo"],
+    "Pickleball Open Play": ["pickleball"],
+    "Tacos + Poker Club": ["poker"],
+    "Ladies Night + Line Dancing": ["linedancing", "ladiesnight", "ladies"],
+    "Karaoke Night": ["karaoke"],
+    "Pool Night": ["pool"],
+}
+
+# Food photos attach as a SECOND photo on the mapped event's "today" post
+# (never replacing the main event photo, never on teasers). "pizza" is
+# served every day at the bar, so unlike the others it maps to every event
+# but only actually attaches on one rotating day per week -- see
+# OCCASIONAL_FOOD_KEYWORDS and generate_captions.find_food_photo().
+RECURRING_DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+FOOD_PHOTO_KEYWORDS = {
+    "hotdog": ["Bingo Night", "Pickleball Open Play"],
+    "taco": ["Tacos + Poker Club"],
+    "nachos": ["Tacos + Poker Club"],
+    "quesadilla": ["Tacos + Poker Club"],
+    "breakfastburrito": ["Pool Night"],
+    "pizza": list(EVENT_PHOTO_KEYWORDS.keys()),
+}
+
+OCCASIONAL_FOOD_KEYWORDS = {"pizza"}
+
 
 def pick_hashtags(seed: int, count: int = 6) -> str:
     """Return a rotating, deterministic hashtag string for the IG first comment.

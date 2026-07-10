@@ -118,6 +118,35 @@ def test_manual_kind_reads_vibe_and_spotlight_suffixes():
     assert classify_photos.manual_kind("IMG_4821.jpg") is None
 
 
+def test_pool_claimed_matches_event_keyword():
+    assert classify_photos.pool_claimed("party_bingo.jpg") is True
+    assert classify_photos.pool_claimed("randomname.jpg") is False
+
+
+def test_pool_claimed_matches_food_keyword():
+    assert classify_photos.pool_claimed("wednesday_taco_special.jpg") is True
+    assert classify_photos.pool_claimed("fresh_pizza_pie.jpg") is True
+
+
+def test_pool_claimed_recognizes_an_events_own_default_art_filename():
+    # Already excluded from classification by the existing "_art" check in
+    # needs_classification() -- pool_claimed() should also recognize it as
+    # claimed, never mistakenly report False.
+    assert classify_photos.pool_claimed("Bingo_default_art.jpg") is True
+
+
+def test_classify_new_photos_skips_pool_claimed_filenames(tmp_path, monkeypatch):
+    monkeypatch.setattr(config, "CLASSIFICATION_CACHE", str(tmp_path / "cache.json"))
+    photo_dir = tmp_path / "photos"
+    photo_dir.mkdir()
+    (photo_dir / "party_bingo.jpg").write_bytes(b"x")
+    with patch("classify_photos.classify_photo") as mock_classify:
+        result = classify_photos.classify_new_photos(
+            str(photo_dir), ["Bingo Night"], used_filenames=set())
+    mock_classify.assert_not_called()
+    assert result == []
+
+
 def test_classify_new_photos_honors_vibe_suffix_without_calling_the_api(tmp_path, monkeypatch):
     """A _vibe/_spotlight-suffixed filename is the owner directly telling us
     its kind -- it must become a post without ever touching the vision API

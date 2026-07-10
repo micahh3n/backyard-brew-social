@@ -47,6 +47,22 @@ def manual_kind(filename: str) -> str | None:
             return kind
     return None
 
+
+def pool_claimed(filename: str) -> bool:
+    """True if this filename's stem contains a keyword from
+    config.EVENT_PHOTO_KEYWORDS or config.FOOD_PHOTO_KEYWORDS -- these
+    photos are handled by the event/food photo pool (generate_captions.py),
+    not by vision classification, so they must never also become a
+    vibe/spotlight/carousel candidate (one job per photo, no wasted call)."""
+    stem = os.path.splitext(filename)[0].lower()
+    for keywords in config.EVENT_PHOTO_KEYWORDS.values():
+        if any(kw.lower() in stem for kw in keywords):
+            return True
+    for keyword in config.FOOD_PHOTO_KEYWORDS:
+        if keyword.lower() in stem:
+            return True
+    return False
+
 # Claude's vision API only accepts still images. Video files (iPhones drop
 # these alongside photos in the same camera roll export) can never be
 # classified as a still image -- skip them before even attempting a call,
@@ -199,6 +215,8 @@ def classify_new_photos(photo_dir: str, known_events: list[str], used_filenames:
         if kind:
             out.append({"filename": filename, "capture_time": read_capture_time(path),
                        "match": None, "kind": kind, "confidence": "high"})
+            continue
+        if pool_claimed(filename):
             continue
         if not needs_classification(filename):
             continue
