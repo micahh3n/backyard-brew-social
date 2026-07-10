@@ -15,8 +15,9 @@ as-is, using platform-native scheduling.
 
 This spec does not attempt to guarantee engagement outcomes (no automation
 can) — it defines the concrete levers available: shareability baked into
-caption structure, real-photo-based eye-catching visuals, and unbroken weekly
-consistency.
+caption structure, real-photo-based eye-catching visuals, unbroken weekly
+consistency, and a guaranteed 2-posts/day minimum (3 occasionally) at
+reasoned, industry-benchmark posting times (Sections 7-9).
 
 ## Current state (context)
 
@@ -126,6 +127,76 @@ dependencies. Low risk, easy to iterate on after a few real weeks of output.
   from the old `posted`, which was only ever set by the now-retired API
   posting job). Optional for the system to function — purely for the owner's
   own tracking.
+
+### 7. Guaranteed posting cadence: 2/day minimum, 3 occasionally
+
+Today the system only reliably produces posts on days with a recurring event
+(a same-day "today" post + a "teaser" post the evening before tomorrow's
+event), and the extra content types (vibe/spotlight/carousel) are capped at
+4 total per week — nowhere near daily. Since recurring events already cover
+6 of 7 days, most days already get 2 baseline posts; the gap is (a) the one
+day with no recurring event, and (b) hitting an occasional 3rd post on other
+days.
+
+- Raise `MAX_EXTRA_POSTS_PER_WEEK` to a per-day allowance (effectively: every
+  day gets at least one extra/fill post if its baseline is under 2, and some
+  days get a bonus 3rd) rather than a flat weekly ceiling of 4.
+- Fill posts draw from a **mix of existing and new content types** (owner's
+  explicit choice): existing vibe/behind-the-scenes, community spotlight, and
+  carousel recaps, **plus** new evergreen buckets (Section 8) for more
+  variety than cycling the same few types on repeat.
+- The existing anti-stacking logic (`quietest_day`, daily/weekly caps) is
+  kept as the mechanism — just retuned so "quietest day" still gets a post
+  instead of zero.
+
+### 8. New evergreen content types
+
+To support 2-3 posts/day without the fill content feeling repetitive, add a
+small set of new recurring buckets alongside the existing vibe/spotlight/
+carousel types:
+
+- **Wisconsin spotlight** — features a specific Wisconsin-made beer/wine/
+  seltzer the bar carries (ties into the existing "100% Wisconsin-made"
+  brand pillar, gives evergreen material with no photo dependency beyond
+  what's already on hand).
+- **Course/trail feature** — highlights the disc golf course or hiking
+  trails (a hole, a trail view, a tip), reinforcing the "bar + disc golf +
+  hiking, nowhere else like it" positioning.
+- **Weather-tied post** — "perfect day for disc golf/hiking" framing tied to
+  actual local weather. Uses Open-Meteo (free, no API key, no signup) for the
+  forecast lookup; degrades gracefully to a generic outdoor-vibes post (no
+  weather-specific claim) if the call fails, same fallback philosophy as
+  everything else in this pipeline.
+
+These reuse the same caption-generation pipeline (Section 5's voice rules
+still apply) and the same flyer-compositing pipeline (Sections 2-4) — they
+are new *content angles*, not new infrastructure.
+
+### 9. Optimal posting times
+
+Formalizes the "default-fallback (not yet personalized)" schedule in
+`config.py` into a documented, intentional 2-3-slot daily schedule, grounded
+in general hospitality/local-business social media benchmarks (not yet
+personalized to this account's own Insights data — see below):
+
+- **Late-morning slot (~11:00 AM):** the primary event-day announcement.
+  Catches the lunch-break scrolling window where people commonly decide
+  same-day evening plans.
+- **Afternoon slot (~2:30-3:00 PM):** secondary touchpoint used for the
+  occasional 3rd post / fill content (evergreen posts, spotlights) — a
+  well-documented secondary engagement window that avoids bunching two posts
+  too close to the morning slot.
+- **Evening slot (~7:00-7:30 PM, 9:00 PM Saturdays):** the teaser/
+  anticipation post for tomorrow's event, or the day's closing touchpoint —
+  catches the evening scroll window when people plan next-day/weekend
+  activities.
+
+This replaces vague per-day defaults with an explicit, reasoned table (kept
+in `config.py`'s `DEFAULT_TIMES`, updated to include the new afternoon slot).
+`TIMING_SOURCE` stays flagged as industry-default until the owner optionally
+pulls real "when your audience is most active" data from native IG/FB
+Insights (a manual, no-API step — just reading the chart in the app), at
+which point the table can be swapped for account-specific times.
 
 ## Sunday workflow (end state)
 
