@@ -1,0 +1,43 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&display=swap");
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:1080px;height:1350px;}
+.canvas{width:1080px;height:1350px;position:relative;overflow:hidden;background:#0B1C2D;font-family:"Barlow Condensed",sans-serif;}
+.photo{position:absolute;inset:0;background-image:url("file:///C:/Users/micah/OneDrive/Desktop/backyard-brew-social/_preview_test/bg_poker.jpg");background-size:cover;background-position:center;filter:contrast(1.08) saturate(1.12) brightness(0.98);}
+.grade{position:absolute;inset:0;background:linear-gradient(160deg, rgba(11,28,45,0.28) 0%, rgba(11,28,45,0) 40%, rgba(200,146,42,0.1) 100%);mix-blend-mode:overlay;}
+.scrim{position:absolute;left:0;right:0;bottom:0;height:52%;
+  background:linear-gradient(to top, rgba(11,28,45,0.97) 0%, rgba(11,28,45,0.88) 26%, rgba(11,28,45,0.4) 60%, rgba(11,28,45,0) 100%);}
+.eyebrow{position:absolute;top:64px;left:56px;display:flex;align-items:center;gap:12px;}
+.eyebrow .dot{width:7px;height:7px;border-radius:50%;background:#F5C842;}
+.eyebrow span{color:#F5C842;font-weight:700;font-size:22px;letter-spacing:6px;text-transform:uppercase;text-shadow:0 2px 8px rgba(0,0,0,0.5);}
+.deco{position:absolute;top:80px;right:64px;width:300px;height:300px;border-radius:50%;overflow:hidden;
+  border:6px solid #C8922A;box-shadow:0 24px 48px rgba(0,0,0,0.5), 0 0 0 3px rgba(11,28,45,0.5);
+  transform:rotate(-7deg);}
+.deco img{width:100%;height:100%;object-fit:cover;transform:scale(1.05);}
+.content{position:absolute;left:56px;right:56px;bottom:76px;display:flex;flex-direction:column;}
+.headline{font-family:"Anton";color:#F5EFD8;font-size:96px;line-height:0.9;letter-spacing:1px;text-transform:uppercase;
+  text-shadow:0 4px 24px rgba(0,0,0,0.55);}
+.rule{width:64px;height:4px;background:#C8922A;margin-top:24px;margin-bottom:18px;}
+.detail{color:#C8922A;font-weight:600;font-size:27px;letter-spacing:1px;line-height:1.4;}
+.footer{position:absolute;bottom:64px;right:56px;text-align:right;}
+.footer .mark{color:#F5EFD8;font-weight:700;font-size:18px;letter-spacing:5px;text-transform:uppercase;opacity:0.9;}
+.footer .tag{color:rgba(245,239,216,0.55);font-weight:500;font-size:13px;letter-spacing:3px;text-transform:uppercase;margin-top:4px;}
+</style></head>
+<body>
+<div class="canvas">
+  <div class="photo"></div>
+  <div class="grade"></div>
+  <div class="scrim"></div>
+  <div class="eyebrow"><div class="dot"></div><span>WEDNESDAY</span></div>
+  <div class="deco"><img src="file:///C:/Users/micah/OneDrive/Desktop/backyard-brew-social/_preview_test/taco_deco.jpg"></div>
+  <div class="content">
+    <div class="headline">TACOS + POKER CLUB</div>
+    <div class="rule"></div>
+    <div class="detail">Poker starts 6:00 PM &middot; Beef tacos, quesadillas, loaded nachos</div>
+  </div>
+  <div class="footer">
+    <div class="mark">Backyard Brew</div>
+    <div class="tag">Craft Brews &amp; Things To Do</div>
+  </div>
+</div>
+</body></html>
