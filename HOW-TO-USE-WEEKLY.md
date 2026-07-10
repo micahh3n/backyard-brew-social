@@ -15,7 +15,12 @@ drop photos during the week, review + manually schedule on Sunday, done.
 ## During the week
 
 **Drop in this week's photos** (optional but recommended)
-Drag photos into the `photos` folder in GitHub Desktop. Name them by date + event:
+Drag photos into the `photos` folder in GitHub Desktop. **Naming them well
+also saves API cost** — a photo the system can match by filename never has
+to be sent to Claude to be looked at, which is both free and more reliable
+than a guess.
+
+*Tied to a specific night's event:* name it `{date}_{event keyword}[.jpg/.png]`:
 
 | You drop this | What it does |
 |---|---|
@@ -25,9 +30,38 @@ Drag photos into the `photos` folder in GitHub Desktop. Name them by date + even
 | `2026-07-13_bingo_art.png` | A finished graphic you made — posted exactly as-is, no editing |
 | *(nothing)* | Falls back to the default photo — still works |
 
-The event keyword to use in the filename is the first word the system knows:
-`bingo`, `pickleball`, `poker`, `discgolf`, `friday`, `saturday`. For a special
-event, just match whatever you named the photo in the `posts.csv` row.
+The exact event keywords the system knows today:
+
+| Day | Event | Keyword |
+|---|---|---|
+| Monday | Bingo Night | `bingo` |
+| Tuesday | Pickleball Open Play | `pickleball` |
+| Wednesday | Tacos + Poker Club | `poker` |
+| Thursday | Ladies Night + Line Dancing | `linedancing` |
+| Friday | Karaoke Night | `karaoke` |
+| Saturday | Pool Night | `pool` |
+
+For a special one-off event, use whatever keyword you put in that event's
+`posts.csv` row.
+
+*Not tied to a specific dated event* (a candid shot, a vibe/atmosphere photo,
+a shoutout-worthy moment): drop it with any name and the system will look at
+it and decide — but if you already know what it is, tag it and skip the
+guess entirely, for free:
+
+| You drop this | What it does |
+|---|---|
+| `campfire_vibe.jpg` | A "behind the scenes"-style candid post — no AI look required |
+| `regular_winning_spotlight.jpg` | A community shoutout post |
+| *(no tag, just a normal name)* | The system looks at it once and decides — see below on how that's kept cheap |
+
+**Why this doesn't run up a bill even if you drop photos constantly:** every
+photo the system has to actually *look at* (no matching filename, no
+`_vibe`/`_spotlight` tag) is sent to Claude exactly **once, ever** — the
+result is cached by filename (`photo_classifications.json`, committed back
+to the repo automatically), so a photo that doesn't turn into a post never
+gets re-checked on a future Sunday. You can keep dumping photos in
+year-round without that cost compounding.
 
 **Add any special events** (only if you have one)
 Open `posts.csv` and add ONE row for a party/guest/holiday. Fill in: `date`, `photos`,
@@ -94,7 +128,9 @@ own tracking — nothing reads this back). Once you're through the list,
 
 - **`status.log`** in the repo is a plain-English diary: "Sunday job done:
   generated N new post rows" means success; a "flyer render failed" line
-  tells you exactly which row fell back to its plain photo and why.
+  tells you exactly which row fell back to its plain photo and why. A
+  "caption API usage" line shows real token/cache numbers for that run, if
+  you ever want to sanity-check cost.
 - **GitHub → Actions tab** shows a green check for the Sunday run.
 - If `preview/this-week.html` looks thin some week (only 1-2 posts on a
   quiet day), that's the "never forces a post" safety net — drop a couple

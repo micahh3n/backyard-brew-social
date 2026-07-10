@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import base64
 import io
+import json
 import os
 from datetime import datetime
 
@@ -29,6 +30,22 @@ except ImportError:
     anthropic = None
 
 OVERRIDE_SUFFIXES = ("_teaser", "_art", "_vibe", "_spotlight")
+
+# A photo tagged _vibe or _spotlight is the owner telling us its kind
+# directly -- honor that as a free, deterministic result instead of
+# guessing via vision. (needs_classification() already excludes these from
+# ever reaching the vision API; this is what actually turns that signal
+# into a post instead of the photo just going nowhere.)
+MANUAL_KIND_SUFFIXES = {"_vibe": "vibe", "_spotlight": "spotlight"}
+
+
+def manual_kind(filename: str) -> str | None:
+    """'vibe'/'spotlight' if the filename carries that override suffix, else None."""
+    stem = os.path.splitext(filename)[0].lower()
+    for suffix, kind in MANUAL_KIND_SUFFIXES.items():
+        if stem.endswith(suffix) or f"{suffix}_" in stem:
+            return kind
+    return None
 
 # Claude's vision API only accepts still images. Video files (iPhones drop
 # these alongside photos in the same camera roll export) can never be
@@ -124,6 +141,24 @@ def _call_vision(path: str, known_events: list[str]) -> str:
     return "".join(b.text for b in resp.content if getattr(b, "type", None) == "text")
 
 
+def load_classification_cache() -> dict:
+    """Filename -> {"match", "kind", "confidence"} for every photo already
+    sent to the vision API in a past run. Missing/corrupt file -> empty
+    cache (worst case, a bit of redundant reclassification, never a crash)."""
+    if not os.path.isfile(config.CLASSIFICATION_CACHE):
+        return {}
+    try:
+        with open(config.CLASSIFICATION_CACHE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
+def save_classification_cache(cache: dict) -> None:
+    with open(config.CLASSIFICATION_CACHE, "w", encoding="utf-8") as f:
+        json.dump(cache, f, indent=2, sort_keys=True)
+
+
 def classify_photo(path: str, known_events: list[str]) -> dict:
     """Return {"match", "kind", "confidence"}. Never raises -- low confidence on any failure."""
     try:
@@ -142,18 +177,40 @@ def classify_photo(path: str, known_events: list[str]) -> dict:
 
 def classify_new_photos(photo_dir: str, known_events: list[str], used_filenames: set) -> list[dict]:
     """Classify every eligible, unused photo in photo_dir. Returns a list of
-    {"filename", "capture_time", "match", "kind", "confidence"} dicts."""
+    {"filename", "capture_time", "match", "kind", "confidence"} dicts.
+
+    Each filename is only ever sent to the vision API once, ever -- the
+    result (including a low-confidence "not usable" one) is cached by
+    filename so a photo that never becomes a post doesn't get reclassified,
+    and re-billed, on every future run. A _vibe/_spotlight-suffixed filename
+    skips the vision API entirely -- the owner already told us its kind."""
     if not os.path.isdir(photo_dir):
         return []
+    cache = load_classification_cache()
+    cache_dirty = False
     out = []
     for filename in sorted(os.listdir(photo_dir)):
         path = os.path.join(photo_dir, filename)
         if not os.path.isfile(path) or filename in used_filenames:
             continue
-        if filename.lower().endswith((".txt", ".md")) or not needs_classification(filename):
+        if filename.lower().endswith((".txt", ".md")):
             continue
-        result = classify_photo(path, known_events)
+        kind = manual_kind(filename)
+        if kind:
+            out.append({"filename": filename, "capture_time": read_capture_time(path),
+                       "match": None, "kind": kind, "confidence": "high"})
+            continue
+        if not needs_classification(filename):
+            continue
+        if filename in cache:
+            result = cache[filename]
+        else:
+            result = classify_photo(path, known_events)
+            cache[filename] = result
+            cache_dirty = True
         if result["confidence"] != "high" or (not result["match"] and not result["kind"]):
             continue
         out.append({**result, "filename": filename, "capture_time": read_capture_time(path)})
+    if cache_dirty:
+        save_classification_cache(cache)
     return out

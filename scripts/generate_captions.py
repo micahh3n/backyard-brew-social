@@ -16,6 +16,7 @@ import os
 from collections import defaultdict
 from datetime import datetime, timedelta
 
+import anthropic_client
 import build_preview
 import classify_photos
 import config
@@ -345,6 +346,18 @@ def main():
               f"(needs_review). Timing source: {config.TIMING_SOURCE}.")
     if fell_back:
         store.log(f"note: {fell_back} rows may need a manual caption pass.")
+    usage = anthropic_client.usage_summary()
+    if usage["calls"]:
+        # Real evidence the system-prompt cache_control is doing something
+        # (or isn't -- Anthropic silently no-ops caching below its minimum
+        # cacheable prompt length, so this is the only way to know for sure).
+        store.log(
+            f"caption API usage: {usage['calls']} calls, "
+            f"{usage['cache_read_input_tokens']} cache-read input tokens, "
+            f"{usage['cache_creation_input_tokens']} cache-write input tokens, "
+            f"{usage['input_tokens']} uncached input tokens, "
+            f"{usage['output_tokens']} output tokens."
+        )
 
 
 def load_recurring_by_day():

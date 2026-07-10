@@ -40,7 +40,7 @@ jobs:
         run: |
           git config user.name "Backyard Brew Bot"
           git config user.email "actions@github.com"
-          git add posts.csv status.log assets/fonts photos/_generated preview || true
+          git add posts.csv status.log assets/fonts photos/_generated preview photo_classifications.json || true
           if ! git diff --cached --quiet; then
             git commit -m "Sunday job: generate weekly posts [skip ci]"
             git push

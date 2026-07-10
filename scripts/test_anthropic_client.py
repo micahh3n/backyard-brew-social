@@ -56,18 +56,23 @@ def test_system_prompt_instructs_rotating_share_mechanism():
     assert "tag-a-friend" in text.lower() or "tag a friend" in text.lower()
 
 
+def _fake_caption_response(fb="fb text", ig="ig text", usage=None):
+    fake_response = MagicMock()
+    fake_block = MagicMock()
+    fake_block.type = "text"
+    fake_block.text = f'{{"fb_caption": "{fb}", "ig_caption": "{ig}"}}'
+    fake_response.content = [fake_block]
+    fake_response.stop_reason = "end_turn"
+    fake_response.usage = usage
+    return fake_response
+
+
 def test_generate_captions_caches_the_system_prompt(monkeypatch):
     """The system prompt is identical on every caption call within a run --
     it should be sent with cache_control so only the first call pays full
     input-token price for it, cutting repeated-run API cost."""
     fake_client = MagicMock()
-    fake_response = MagicMock()
-    fake_block = MagicMock()
-    fake_block.type = "text"
-    fake_block.text = '{"fb_caption": "fb text", "ig_caption": "ig text"}'
-    fake_response.content = [fake_block]
-    fake_response.stop_reason = "end_turn"
-    fake_client.messages.create.return_value = fake_response
+    fake_client.messages.create.return_value = _fake_caption_response()
 
     fake_anthropic = MagicMock()
     fake_anthropic.Anthropic.return_value = fake_client
@@ -83,3 +88,30 @@ def test_generate_captions_caches_the_system_prompt(monkeypatch):
     assert isinstance(system, list)
     assert system[0]["cache_control"] == {"type": "ephemeral"}
     assert "Backyard Brew" in system[0]["text"]
+
+
+def test_generate_captions_records_real_cache_usage_stats(monkeypatch):
+    """Whether cache_control actually saved anything is only knowable from
+    the API's real usage numbers (Anthropic silently no-ops caching below
+    its minimum cacheable prompt length) -- generate_captions() must record
+    them so a Sunday run can log real evidence, not an assumption."""
+    ac.reset_usage_summary()
+    usage = MagicMock(input_tokens=50, output_tokens=120,
+                      cache_creation_input_tokens=0, cache_read_input_tokens=780)
+    fake_client = MagicMock()
+    fake_client.messages.create.return_value = _fake_caption_response(usage=usage)
+
+    fake_anthropic = MagicMock()
+    fake_anthropic.Anthropic.return_value = fake_client
+
+    monkeypatch.setattr(ac, "anthropic", fake_anthropic)
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "fake-key")
+
+    ac.generate_captions("Bingo Night", "details", "Monday", "today")
+    ac.generate_captions("Pool Night", "details", "Saturday", "today")
+
+    totals = ac.usage_summary()
+    assert totals["calls"] == 2
+    assert totals["cache_read_input_tokens"] == 1560
+    assert totals["input_tokens"] == 100
+    assert totals["output_tokens"] == 240

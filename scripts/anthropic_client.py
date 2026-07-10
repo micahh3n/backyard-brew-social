@@ -21,6 +21,42 @@ except ImportError:  # library not installed yet (e.g. local dry run)
 
 
 # ---------------------------------------------------------------------------
+# Running usage totals for this process, so a Sunday run can log real
+# cache-hit numbers at the end instead of just assuming the system-prompt
+# cache_control (see generate_captions()) is actually saving anything --
+# below Anthropic's minimum cacheable prompt length, cache_control silently
+# no-ops with no error, so this is the only way to know for sure.
+# ---------------------------------------------------------------------------
+_usage_totals = {
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+}
+
+
+def _record_usage(usage) -> None:
+    if usage is None:
+        return
+    _usage_totals["calls"] += 1
+    for key in ("input_tokens", "output_tokens",
+               "cache_creation_input_tokens", "cache_read_input_tokens"):
+        _usage_totals[key] += getattr(usage, key, 0) or 0
+
+
+def usage_summary() -> dict:
+    """Accumulated token/cache usage across every real API call made so far
+    in this process. Callers use this to log real cache-hit evidence."""
+    return dict(_usage_totals)
+
+
+def reset_usage_summary() -> None:
+    for key in _usage_totals:
+        _usage_totals[key] = 0
+
+
+# ---------------------------------------------------------------------------
 # The system prompt: Backyard Brew's brand voice, verbatim from the spec.
 # ---------------------------------------------------------------------------
 def _system_prompt() -> str:
@@ -202,6 +238,7 @@ def generate_captions(event, key_details, day_of_week, post_type,
             }],
         )
         stop_reason = resp.stop_reason
+        _record_usage(getattr(resp, "usage", None))
         raw_text = "".join(block.text for block in resp.content
                            if getattr(block, "type", None) == "text")
         data = _extract_json(raw_text)

@@ -31,7 +31,8 @@ def test_needs_classification_skips_video_files():
     assert classify_photos.needs_classification("clip.avi") is False
 
 
-def test_classify_new_photos_never_calls_classify_photo_for_video(tmp_path):
+def test_classify_new_photos_never_calls_classify_photo_for_video(tmp_path, monkeypatch):
+    monkeypatch.setattr(config, "CLASSIFICATION_CACHE", str(tmp_path / "cache.json"))
     (tmp_path / "IMG_8847.MP4").write_bytes(b"x")
     with patch("classify_photos.classify_photo") as mock_classify:
         result = classify_photos.classify_new_photos(
@@ -110,7 +111,76 @@ def test_classify_photo_falls_back_to_low_confidence_on_bad_response():
     assert result == {"match": None, "kind": None, "confidence": "low"}
 
 
-def test_classify_new_photos_skips_used_and_suffixed_files(tmp_path):
+def test_manual_kind_reads_vibe_and_spotlight_suffixes():
+    assert classify_photos.manual_kind("2026-07-16_sunset_vibe.jpg") == "vibe"
+    assert classify_photos.manual_kind("regular_vibe.png") == "vibe"
+    assert classify_photos.manual_kind("winner_spotlight.jpg") == "spotlight"
+    assert classify_photos.manual_kind("IMG_4821.jpg") is None
+
+
+def test_classify_new_photos_honors_vibe_suffix_without_calling_the_api(tmp_path, monkeypatch):
+    """A _vibe/_spotlight-suffixed filename is the owner directly telling us
+    its kind -- it must become a post without ever touching the vision API
+    (previously this suffix was excluded from classification and then went
+    nowhere, silently dropping the photo)."""
+    monkeypatch.setattr(config, "CLASSIFICATION_CACHE", str(tmp_path / "cache.json"))
+    photo_dir = tmp_path / "photos"
+    photo_dir.mkdir()
+    (photo_dir / "sunset_vibe.jpg").write_bytes(b"x")
+
+    with patch("classify_photos.classify_photo") as mock_classify, \
+         patch("classify_photos.read_capture_time", return_value=None):
+        result = classify_photos.classify_new_photos(
+            str(photo_dir), ["Bingo Night"], used_filenames=set())
+
+    mock_classify.assert_not_called()
+    assert len(result) == 1
+    assert result[0]["filename"] == "sunset_vibe.jpg"
+    assert result[0]["kind"] == "vibe"
+    assert result[0]["confidence"] == "high"
+
+
+def test_classify_new_photos_only_calls_the_api_once_per_filename_ever(tmp_path, monkeypatch):
+    """A photo that never becomes a post (e.g. low confidence) must not be
+    re-sent to the vision API on a later run -- the owner drops photos in
+    continuously, so this cost would otherwise compound every week."""
+    monkeypatch.setattr(config, "CLASSIFICATION_CACHE", str(tmp_path / "cache.json"))
+    photo_dir = tmp_path / "photos"
+    photo_dir.mkdir()
+    (photo_dir / "blurry.jpg").write_bytes(b"x")
+
+    with patch("classify_photos.classify_photo",
+               return_value={"match": None, "kind": None, "confidence": "low"}) as mock_classify:
+        classify_photos.classify_new_photos(str(photo_dir), ["Bingo Night"], used_filenames=set())
+        classify_photos.classify_new_photos(str(photo_dir), ["Bingo Night"], used_filenames=set())
+
+    assert mock_classify.call_count == 1, (
+        "second run should have reused the cached result instead of calling "
+        "the vision API again for the same filename")
+
+
+def test_classify_new_photos_caches_and_still_returns_high_confidence_matches(tmp_path, monkeypatch):
+    """A high-confidence match that isn't placed into a post this week (e.g.
+    daily quota already full) must still come back from cache on a later
+    run -- caching must not silently drop good candidates."""
+    monkeypatch.setattr(config, "CLASSIFICATION_CACHE", str(tmp_path / "cache.json"))
+    photo_dir = tmp_path / "photos"
+    photo_dir.mkdir()
+    (photo_dir / "vibe.jpg").write_bytes(b"x")
+
+    with patch("classify_photos.classify_photo",
+               return_value={"match": None, "kind": "vibe", "confidence": "high"}) as mock_classify, \
+         patch("classify_photos.read_capture_time", return_value=None):
+        first = classify_photos.classify_new_photos(str(photo_dir), ["Bingo Night"], used_filenames=set())
+        second = classify_photos.classify_new_photos(str(photo_dir), ["Bingo Night"], used_filenames=set())
+
+    assert mock_classify.call_count == 1
+    assert len(first) == 1 and len(second) == 1
+    assert first[0]["filename"] == second[0]["filename"] == "vibe.jpg"
+
+
+def test_classify_new_photos_skips_used_and_suffixed_files(tmp_path, monkeypatch):
+    monkeypatch.setattr(config, "CLASSIFICATION_CACHE", str(tmp_path / "cache.json"))
     (tmp_path / "2026-06-01_bingo_teaser.jpg").write_bytes(b"x")
     (tmp_path / "already_used.jpg").write_bytes(b"x")
     (tmp_path / "fresh_one.jpg").write_bytes(b"x")

@@ -30,6 +30,12 @@ LOGO_DIR = os.path.join(ASSETS_DIR, "logo")
 RECURRING_CSV = os.path.join(REPO_ROOT, "recurring_events.csv")
 POSTS_CSV = os.path.join(REPO_ROOT, "posts.csv")
 STATUS_LOG = os.path.join(REPO_ROOT, "status.log")
+# Persists every photo's vision-classification result (by filename) so a
+# photo already sent to the API once -- even a low-confidence "not usable"
+# one -- is never re-sent on a later Sunday run. Without this, any photo
+# that never becomes a post gets reclassified forever, and the owner drops
+# photos continuously so this cost would otherwise compound every week.
+CLASSIFICATION_CACHE = os.path.join(REPO_ROOT, "photo_classifications.json")
 # Where process_photos.py writes finished images for manual review/posting
 # (rendered for the weekly preview page, not auto-posted).
 GENERATED_DIR = os.path.join(REPO_ROOT, "photos", "_generated")
