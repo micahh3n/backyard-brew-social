@@ -20,8 +20,11 @@ body { font-family: Arial, sans-serif; background: #0B1C2D; color: #F5EFD8; marg
 h1 { color: #C8922A; }
 .card { background: #14273b; border: 2px solid #C8922A; border-radius: 12px;
         padding: 16px; margin-bottom: 20px; display: flex; gap: 20px; align-items: flex-start; }
+.photos { display: flex; flex-direction: column; gap: 8px; }
 .card img { width: 260px; height: 260px; object-fit: cover; border-radius: 8px; }
 .placeholder { width: 260px; height: 260px; background: #1c3450; border-radius: 8px; }
+.extra-photos { display: flex; gap: 8px; }
+.extra-photos img { width: 120px; height: 120px; }
 .meta { font-size: 14px; color: #F5C842; margin-bottom: 8px; }
 .caption-label { font-weight: bold; color: #C8922A; margin-top: 10px; }
 .caption-text { white-space: pre-wrap; }
@@ -32,9 +35,18 @@ def _card_html(row: dict) -> str:
     img_rel = (row.get("generated_image") or "").replace("\\", "/")
     img_tag = (f'<img src="../{html.escape(img_rel)}" alt="post image">'
                if img_rel else '<div class="placeholder"></div>')
+    extra_photos = [p.strip() for p in (row.get("photos") or "").split(",")[1:] if p.strip()]
+    extra_html = ""
+    if extra_photos:
+        imgs = "".join(f'<img src="../photos/{html.escape(p)}" alt="additional photo">'
+                       for p in extra_photos)
+        extra_html = f'<div class="extra-photos">{imgs}</div>'
     return f"""
 <div class="card">
-  {img_tag}
+  <div class="photos">
+    {img_tag}
+    {extra_html}
+  </div>
   <div>
     <div class="meta">{html.escape(row.get('scheduled_time', ''))} &mdash;
         {html.escape(row.get('event', ''))} ({html.escape(row.get('post_type', ''))})</div>

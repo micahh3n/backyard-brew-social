@@ -34,6 +34,25 @@ def test_build_preview_orders_by_scheduled_time():
     assert html_out.index("First") < html_out.index("Second")
 
 
+def test_build_preview_renders_additional_photos_beyond_the_first():
+    row = _row(event="Tacos + Poker Club", fb_caption="x", ig_caption="y",
+              scheduled_time="2026-07-15 11:00",
+              generated_image="photos/_generated/main.png",
+              photos="2026-07-15_poker.jpg, weds_taco.jpg")
+    html_out = build_preview.build_preview([row])
+    assert "../photos/_generated/main.png" in html_out
+    assert "../photos/weds_taco.jpg" in html_out
+
+
+def test_build_preview_one_photo_row_unchanged():
+    row = _row(event="Bingo Night", fb_caption="x", ig_caption="y",
+              scheduled_time="2026-07-13 11:00",
+              generated_image="photos/_generated/main.png",
+              photos="2026-07-13_bingo.jpg")
+    html_out = build_preview.build_preview([row])
+    assert html_out.count("<img") == 1
+
+
 def test_write_preview_creates_the_file(tmp_path, monkeypatch):
     monkeypatch.setattr(build_preview, "PREVIEW_DIR", str(tmp_path / "preview"))
     monkeypatch.setattr(build_preview, "PREVIEW_FILE", str(tmp_path / "preview" / "this-week.html"))
