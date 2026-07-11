@@ -1,4 +1,4 @@
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 
 import build_preview
 import classify_photos
@@ -425,3 +425,34 @@ def test_main_never_attaches_food_photo_to_teaser(tmp_path, monkeypatch):
                   if r["event"] == "Tacos + Poker Club" and r["post_type"] == "teaser"]
     assert len(taco_teaser) == 1
     assert "," not in taco_teaser[0]["photos"]
+
+
+def test_find_food_photo_excludes_already_chosen_main_photo(monkeypatch, tmp_path):
+    """A filename that contains BOTH an event keyword and a food keyword
+    (e.g. poker_pizza.jpg matches "poker" for Tacos + Poker Club AND "pizza",
+    which maps to every event) must never be picked as the food photo once
+    it has already been chosen as the main photo -- otherwise the post ends
+    up with the same filename listed twice in `photos`."""
+    monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
+    (tmp_path / "poker_pizza.jpg").write_bytes(b"x")
+    run_date = date(2026, 5, 31)  # Sunday
+
+    # Find a date whose weekday matches this run's pizza-rotation day, so
+    # "pizza" (an OCCASIONAL_FOOD_KEYWORDS entry) is actually eligible to
+    # attach for "Tacos + Poker Club" today -- otherwise the day-gate alone
+    # would already return None and the test wouldn't prove anything.
+    chosen_day = config.RECURRING_DAYS[run_date.isocalendar()[1] % len(config.RECURRING_DAYS)]
+    week_dates = [date(2026, 6, 1) + timedelta(days=i) for i in range(6)]  # Mon-Sat
+    event_date = next(d for d in week_dates if gc.dow_name(d) == chosen_day)
+
+    # Sanity check: without exclusion, the dual-keyword file is indeed a
+    # valid (and only) food-photo candidate for this event/day.
+    unfiltered = gc.find_food_photo("Tacos + Poker Club", event_date, run_date,
+                                    posts_history=[])
+    assert unfiltered == "poker_pizza.jpg"
+
+    # With the main photo's filename excluded (as main() now does), the
+    # same file must not be re-picked as the food photo.
+    pick = gc.find_food_photo("Tacos + Poker Club", event_date, run_date,
+                              posts_history=[], exclude_filenames={"poker_pizza.jpg"})
+    assert pick is None

@@ -105,7 +105,7 @@ def find_photo(post_date_str, slug, want_teaser, default_photo, event=None, post
     return default_photo
 
 
-def find_food_photo(event, event_date, run_date, posts_history):
+def find_food_photo(event, event_date, run_date, posts_history, exclude_filenames=None):
     """Return a filename to attach as a second photo on this recurring
     event's 'today' post, or None. Independent LRU rotation from the event
     photo pool -- never blocks or delays the main post.
@@ -115,7 +115,14 @@ def find_food_photo(event, event_date, run_date, posts_history):
     rotating day per week (based on the run's ISO week number), so they
     don't show up on every single post just because they're always
     technically available.
+
+    `exclude_filenames` should include the main photo filename already
+    chosen for this row (via find_photo) -- a single filename can contain
+    both an event keyword and a food keyword (e.g. "poker_pizza.jpg"), so
+    without this the food LRU could re-pick the exact same file the main
+    photo already used, duplicating it in the post's `photos` list.
     """
+    exclude_filenames = exclude_filenames or set()
     for keyword, events in config.FOOD_PHOTO_KEYWORDS.items():
         if event not in events:
             continue
@@ -123,7 +130,8 @@ def find_food_photo(event, event_date, run_date, posts_history):
             chosen_day = config.RECURRING_DAYS[run_date.isocalendar()[1] % len(config.RECURRING_DAYS)]
             if dow_name(event_date) != chosen_day:
                 continue
-        pick = _pick_pool_photo([keyword], exclude_filenames=set(), posts_history=posts_history)
+        pick = _pick_pool_photo([keyword], exclude_filenames=exclude_filenames,
+                                posts_history=posts_history)
         if pick:
             return pick
     return None
@@ -394,7 +402,8 @@ def main():
                             photo, enhance, owner_time=owner_time,
                             avoid_examples=store.recent_captions_for_event(posts, event, limit=4))
             if not one:
-                food_photo = find_food_photo(event, d, run_date, posts + generated)
+                food_photo = find_food_photo(event, d, run_date, posts + generated,
+                                             exclude_filenames={photo})
                 if food_photo:
                     row["photos"] = f"{row['photos']}, {food_photo}"
             if one:
