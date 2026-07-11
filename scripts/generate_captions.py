@@ -105,6 +105,30 @@ def find_photo(post_date_str, slug, want_teaser, default_photo, event=None, post
     return default_photo
 
 
+def find_food_photo(event, event_date, run_date, posts_history):
+    """Return a filename to attach as a second photo on this recurring
+    event's 'today' post, or None. Independent LRU rotation from the event
+    photo pool -- never blocks or delays the main post.
+
+    'Occasional' keywords (config.OCCASIONAL_FOOD_KEYWORDS, e.g. pizza --
+    served every day at the bar) only attach on one deterministically
+    rotating day per week (based on the run's ISO week number), so they
+    don't show up on every single post just because they're always
+    technically available.
+    """
+    for keyword, events in config.FOOD_PHOTO_KEYWORDS.items():
+        if event not in events:
+            continue
+        if keyword in config.OCCASIONAL_FOOD_KEYWORDS:
+            chosen_day = config.RECURRING_DAYS[run_date.isocalendar()[1] % len(config.RECURRING_DAYS)]
+            if dow_name(event_date) != chosen_day:
+                continue
+        pick = _pick_pool_photo([keyword], exclude_filenames=set(), posts_history=posts_history)
+        if pick:
+            return pick
+    return None
+
+
 def find_deal_photo(post_date_str, slug):
     """The dated _deal photo for this date/event slug, if the owner dropped
     one (e.g. 2026-07-14_pickleball_deal.jpg). None if not present -- a
@@ -369,6 +393,10 @@ def main():
             row = build_row(d, d, event, details, platforms, "today",
                             photo, enhance, owner_time=owner_time,
                             avoid_examples=store.recent_captions_for_event(posts, event, limit=4))
+            if not one:
+                food_photo = find_food_photo(event, d, run_date, posts + generated)
+                if food_photo:
+                    row["photos"] = f"{row['photos']}, {food_photo}"
             if one:
                 # Repurpose the owner's original row into this today post
                 # (no orphan pending row left behind).

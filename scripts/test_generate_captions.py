@@ -328,3 +328,100 @@ def test_main_uses_pool_photo_for_recurring_event_when_no_dated_photo(tmp_path, 
                   if r["event"] == "Bingo Night" and r["post_type"] == "today"]
     assert len(bingo_today) == 1
     assert bingo_today[0]["photos"] == "party_bingo.jpg"
+
+
+def test_find_food_photo_attaches_mapped_food_photo(monkeypatch, tmp_path):
+    monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
+    (tmp_path / "weds_taco.jpg").write_bytes(b"x")
+    run_date = date(2026, 5, 31)  # Sunday
+    event_date = date(2026, 6, 3)  # Wednesday
+    pick = gc.find_food_photo("Tacos + Poker Club", event_date, run_date, posts_history=[])
+    assert pick == "weds_taco.jpg"
+
+
+def test_find_food_photo_returns_none_when_event_has_no_mapped_food(monkeypatch, tmp_path):
+    monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
+    run_date = date(2026, 5, 31)
+    pick = gc.find_food_photo("Karaoke Night", date(2026, 6, 5), run_date, posts_history=[])
+    assert pick is None
+
+
+def test_find_food_photo_gates_occasional_keyword_to_one_day_per_week(monkeypatch, tmp_path):
+    """pizza is served every day, so it must not attach on every event's
+    'today' post -- only on the one day per week the rotation lands on."""
+    monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
+    (tmp_path / "fresh_pizza.jpg").write_bytes(b"x")
+    run_date = date(2026, 5, 31)  # Sunday
+    chosen_day = config.RECURRING_DAYS[run_date.isocalendar()[1] % len(config.RECURRING_DAYS)]
+    other_day = next(d for d in config.RECURRING_DAYS if d != chosen_day)
+    day_dates = {
+        "Monday": date(2026, 6, 1), "Tuesday": date(2026, 6, 2),
+        "Wednesday": date(2026, 6, 3), "Thursday": date(2026, 6, 4),
+        "Friday": date(2026, 6, 5), "Saturday": date(2026, 6, 6),
+    }
+    event_by_day = {
+        "Monday": "Bingo Night", "Tuesday": "Pickleball Open Play",
+        "Wednesday": "Tacos + Poker Club", "Thursday": "Ladies Night + Line Dancing",
+        "Friday": "Karaoke Night", "Saturday": "Pool Night",
+    }
+    chosen_pick = gc.find_food_photo(event_by_day[chosen_day], day_dates[chosen_day],
+                                     run_date, posts_history=[])
+    other_pick = gc.find_food_photo(event_by_day[other_day], day_dates[other_day],
+                                    run_date, posts_history=[])
+    assert chosen_pick == "fresh_pizza.jpg"
+    assert other_pick is None
+
+
+def test_main_attaches_food_photo_as_second_slide_for_recurring_event(tmp_path, monkeypatch):
+    run_date = date(2026, 5, 31)  # Sunday; Wednesday 2026-06-03 is Tacos + Poker Club
+    monkeypatch.setattr(gc, "today_local", lambda: run_date)
+    monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
+    (tmp_path / "2026-06-03_poker.jpg").write_bytes(b"x")  # exact dated match, main photo
+    (tmp_path / "weds_taco.jpg").write_bytes(b"x")          # food second slide
+
+    monkeypatch.setattr(store, "load_posts", lambda: [])
+    monkeypatch.setattr(store, "load_recurring", lambda: [
+        {"day_of_week": "Wednesday", "event": "Tacos + Poker Club",
+         "key_details": "details", "default_photos": "Poker_default_art.jpg",
+         "platforms": "both"},
+    ])
+    written = []
+    monkeypatch.setattr(store, "write_posts", lambda rows: written.extend(rows))
+    monkeypatch.setattr(store, "log", lambda message: None)
+    monkeypatch.setattr(build_preview, "write_preview", lambda rows: "")
+    monkeypatch.setattr(classify_photos, "classify_new_photos", lambda *a, **k: [])
+    monkeypatch.setattr(gc, "render_generated_images", lambda rows: None)
+
+    gc.main()
+
+    taco_today = [r for r in written
+                 if r["event"] == "Tacos + Poker Club" and r["post_type"] == "today"]
+    assert len(taco_today) == 1
+    assert taco_today[0]["photos"] == "2026-06-03_poker.jpg, weds_taco.jpg"
+
+
+def test_main_never_attaches_food_photo_to_teaser(tmp_path, monkeypatch):
+    run_date = date(2026, 5, 31)  # Sunday; Wednesday 2026-06-03 is Tacos + Poker Club
+    monkeypatch.setattr(gc, "today_local", lambda: run_date)
+    monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
+    (tmp_path / "weds_taco.jpg").write_bytes(b"x")
+
+    monkeypatch.setattr(store, "load_posts", lambda: [])
+    monkeypatch.setattr(store, "load_recurring", lambda: [
+        {"day_of_week": "Wednesday", "event": "Tacos + Poker Club",
+         "key_details": "details", "default_photos": "Poker_default_art.jpg",
+         "platforms": "both"},
+    ])
+    written = []
+    monkeypatch.setattr(store, "write_posts", lambda rows: written.extend(rows))
+    monkeypatch.setattr(store, "log", lambda message: None)
+    monkeypatch.setattr(build_preview, "write_preview", lambda rows: "")
+    monkeypatch.setattr(classify_photos, "classify_new_photos", lambda *a, **k: [])
+    monkeypatch.setattr(gc, "render_generated_images", lambda rows: None)
+
+    gc.main()
+
+    taco_teaser = [r for r in written
+                  if r["event"] == "Tacos + Poker Club" and r["post_type"] == "teaser"]
+    assert len(taco_teaser) == 1
+    assert "," not in taco_teaser[0]["photos"]
