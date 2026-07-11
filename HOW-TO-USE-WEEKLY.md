@@ -44,6 +44,26 @@ The exact event keywords the system knows today:
 For a special one-off event, use whatever keyword you put in that event's
 `posts.csv` row.
 
+*Have a photo but don't know (or don't care) which specific date it'll get
+used on?* Just include the event keyword in the filename with **no date at
+all** (e.g. `party_bingo.jpg`, `saturday_pool_game.jpg`). It automatically
+enters that event's rotation pool and gets used on some future week whenever
+there's no exact dated match to prefer -- no need to plan ahead. A photo is
+never permanently used up: the system just avoids repeating the same one
+back-to-back, picking whichever eligible photo hasn't been used in the
+longest time.
+
+**Food photos** (no date needed, same rotation logic) ride along as a
+second photo on the day that food is actually served, without replacing the
+event's own photo:
+
+| Keyword | Attaches to |
+|---|---|
+| `hotdog` | Monday (Bingo) and Tuesday (Pickleball) |
+| `taco`, `nachos`, `quesadilla` | Wednesday (Tacos + Poker Club) |
+| `breakfastburrito` | Saturday (Pool Night) |
+| `pizza` | Any day -- pizza's on the menu every day, so it only actually shows up on one rotating day per week rather than every single post |
+
 *Not tied to a specific dated event* (a candid shot, a vibe/atmosphere photo,
 a shoutout-worthy moment): drop it with any name and the system will look at
 it and decide — but if you already know what it is, tag it and skip the
