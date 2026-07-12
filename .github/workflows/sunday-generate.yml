@@ -1,11 +1,13 @@
 name: Sunday - Generate Captions
 
-# Runs Sunday afternoon Central time (19:00 UTC = ~1-2pm Central) so the whole
-# week's posts are waiting in posts.csv for your Sunday review. You can also run
-# it any time from the Actions tab with "Run workflow".
+# Runs Sunday at 12pm Central (17:00 UTC, CDT) so the whole week's posts are
+# waiting in posts.csv for your Sunday review. You can also run it any time
+# from the Actions tab with "Run workflow".
+# NOTE: cron is fixed UTC, no DST awareness -- shifts to 11am Central once
+# clocks fall back to CST. Bump to "0 18 * * 0" then if you want it pinned.
 on:
   schedule:
-    - cron: "0 19 * * 0"   # every Sunday, 19:00 UTC
+    - cron: "0 17 * * 0"   # every Sunday, 17:00 UTC
   workflow_dispatch:
 
 permissions:
