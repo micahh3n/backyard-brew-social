@@ -1,0 +1,232 @@
+{
+  "IMG_0298.HEIC": {
+    "confidence": "high",
+    "kind": "vibe",
+    "match": null
+  },
+  "IMG_0299.HEIC": {
+    "confidence": "low",
+    "kind": "vibe",
+    "match": null
+  },
+  "IMG_0550.heic": {
+    "confidence": "low",
+    "kind": "vibe",
+    "match": "Course & Trail Feature"
+  },
+  "IMG_0551.heic": {
+    "confidence": "high",
+    "kind": "vibe",
+    "match": null
+  },
+  "IMG_0552.HEIC": {
+    "confidence": "low",
+    "kind": "vibe",
+    "match": null
+  },
+  "IMG_0553.heic": {
+    "confidence": "high",
+    "kind": "vibe",
+    "match": null
+  },
+  "IMG_5991.JPG": {
+    "confidence": "high",
+    "kind": "event",
+    "match": "Karaoke Night"
+  },
+  "IMG_5992.JPG": {
+    "confidence": "high",
+    "kind": "event",
+    "match": "Karaoke Night"
+  },
+  "IMG_6233.JPG": {
+    "confidence": "high",
+    "kind": "event",
+    "match": "Bingo Night"
+  },
+  "IMG_7156.JPG": {
+    "confidence": "high",
+    "kind": "event",
+    "match": "Bingo Night"
+  },
+  "IMG_7522.JPG": {
+    "confidence": "high",
+    "kind": "event",
+    "match": "Tacos + Poker Club"
+  },
+  "IMG_7607.JPG": {
+    "confidence": "high",
+    "kind": "event",
+    "match": "Tacos + Poker Club"
+  },
+  "IMG_7608.JPG": {
+    "confidence": "high",
+    "kind": "event",
+    "match": "Tacos + Poker Club"
+  },
+  "IMG_7609.JPG": {
+    "confidence": "high",
+    "kind": "event",
+    "match": "Tacos + Poker Club"
+  },
+  "IMG_7610.JPG": {
+    "confidence": "high",
+    "kind": "event",
+    "match": "Tacos + Poker Club"
+  },
+  "IMG_7611.JPG": {
+    "confidence": "high",
+    "kind": "event",
+    "match": "Tacos + Poker Club"
+  },
+  "IMG_7747.HEIC": {
+    "confidence": "low",
+    "kind": "spotlight",
+    "match": null
+  },
+  "IMG_7748.HEIC": {
+    "confidence": "low",
+    "kind": "vibe",
+    "match": null
+  },
+  "IMG_7758.JPG": {
+    "confidence": "high",
+    "kind": "event",
+    "match": "Tacos + Poker Club"
+  },
+  "IMG_8045.JPG": {
+    "confidence": "high",
+    "kind": "event",
+    "match": "Pool Night"
+  },
+  "IMG_8221.JPG": {
+    "confidence": "high",
+    "kind": "event",
+    "match": "Pickleball Open Play"
+  },
+  "IMG_8298.JPG": {
+    "confidence": "high",
+    "kind": "event",
+    "match": "Pickleball Open Play"
+  },
+  "IMG_8304.JPG": {
+    "confidence": "high",
+    "kind": null,
+    "match": null
+  },
+  "IMG_8305.JPG": {
+    "confidence": "high",
+    "kind": "event",
+    "match": "Pickleball Open Play"
+  },
+  "IMG_8306.JPG": {
+    "confidence": "high",
+    "kind": "event",
+    "match": "Pickleball Open Play"
+  },
+  "IMG_8309.JPG": {
+    "confidence": "high",
+    "kind": null,
+    "match": null
+  },
+  "IMG_8310.JPG": {
+    "confidence": "high",
+    "kind": null,
+    "match": null
+  },
+  "IMG_8311.JPG": {
+    "confidence": "high",
+    "kind": null,
+    "match": null
+  },
+  "IMG_8335.JPG": {
+    "confidence": "high",
+    "kind": "event",
+    "match": "Tacos + Poker Club"
+  },
+  "IMG_8485.JPG": {
+    "confidence": "high",
+    "kind": "event",
+    "match": "Pickleball Open Play"
+  },
+  "IMG_8489.JPG": {
+    "confidence": "high",
+    "kind": "event",
+    "match": "Pickleball Open Play"
+  },
+  "IMG_8775.PNG": {
+    "confidence": "high",
+    "kind": "event",
+    "match": null
+  },
+  "IMG_8780.PNG": {
+    "confidence": "low",
+    "kind": "event",
+    "match": null
+  },
+  "IMG_8783.JPG": {
+    "confidence": "high",
+    "kind": "event",
+    "match": "Bingo Night"
+  },
+  "IMG_8799.JPG": {
+    "confidence": "high",
+    "kind": "event",
+    "match": "Pickleball Open Play"
+  },
+  "IMG_8805.JPG": {
+    "confidence": "high",
+    "kind": null,
+    "match": null
+  },
+  "IMG_8810.JPG": {
+    "confidence": "high",
+    "kind": null,
+    "match": null
+  },
+  "IMG_8815.JPG": {
+    "confidence": "high",
+    "kind": "event",
+    "match": "Pickleball Open Play"
+  },
+  "IMG_8816.JPG": {
+    "confidence": "high",
+    "kind": "vibe",
+    "match": "Weather Vibes"
+  },
+  "IMG_8819.JPG": {
+    "confidence": "high",
+    "kind": "event",
+    "match": "Pickleball Open Play"
+  },
+  "IMG_8835.HEIC": {
+    "confidence": "low",
+    "kind": "vibe",
+    "match": "Course & Trail Feature"
+  },
+  "IMG_8837.HEIC": {
+    "confidence": "high",
+    "kind": "vibe",
+    "match": "Weather Vibes"
+  },
+  "IMG_9077.HEIC": {
+    "confidence": "high",
+    "kind": "event",
+    "match": "Karaoke Night"
+  },
+  "IMG_9078.HEIC": {
+    "confidence": "high",
+    "kind": "event",
+    "match": "Karaoke Night"
+  },
+  "discgolf_1.HEIC": {
+    "confidence": "high",
+    "kind": "spotlight",
+    "match": "Course & Trail Feature"
+  },
+  "vendorwanted.PNG": {
+    "confidence": "high",
+    "kind": "event",
+    "match": null
+  }
+}
