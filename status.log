@@ -60,3 +60,12 @@
 [2026-07-12 12:49] no image for 'Pool Night' 2026-07-18: 'pool_default_art.jpg' not found in /home/runner/work/backyard-brew-social/backyard-brew-social/photos (check filename spelling/case)
 [2026-07-12 12:49] Sunday job done: generated 8 new post rows (needs_review). Timing source: default-fallback (not yet personalized to Backyard Brew's own data).
 [2026-07-12 12:49] caption API usage: 8 calls, 8358 cache-read input tokens, 1194 cache-write input tokens, 1745 uncached input tokens, 5000 output tokens.
+[2026-07-12 13:02] generated 3 extra post(s): vibe, vibe, vibe
+[2026-07-12 13:02] no image for 'Pool Night' 2026-07-11: 'pool_default_art.jpg' not found in /home/runner/work/backyard-brew-social/backyard-brew-social/photos (check filename spelling/case)
+[2026-07-12 13:02] no image for 'Pool Night' 2026-07-11: 'pool_default_art.jpg' not found in /home/runner/work/backyard-brew-social/backyard-brew-social/photos (check filename spelling/case)
+[2026-07-12 13:02] no image for 'Ladies Night + Line Dancing' 2026-07-16: 'line dancing_default_artpg' not found in /home/runner/work/backyard-brew-social/backyard-brew-social/photos (check filename spelling/case)
+[2026-07-12 13:02] no image for 'Ladies Night + Line Dancing' 2026-07-16: 'line dancing_default_artpg' not found in /home/runner/work/backyard-brew-social/backyard-brew-social/photos (check filename spelling/case)
+[2026-07-12 13:02] no image for 'Pool Night' 2026-07-18: 'pool_default_art.jpg' not found in /home/runner/work/backyard-brew-social/backyard-brew-social/photos (check filename spelling/case)
+[2026-07-12 13:02] no image for 'Pool Night' 2026-07-18: 'pool_default_art.jpg' not found in /home/runner/work/backyard-brew-social/backyard-brew-social/photos (check filename spelling/case)
+[2026-07-12 13:03] Sunday job done: generated 3 new post rows (needs_review). Timing source: default-fallback (not yet personalized to Backyard Brew's own data).
+[2026-07-12 13:03] caption API usage: 3 calls, 2388 cache-read input tokens, 1194 cache-write input tokens, 724 uncached input tokens, 1704 output tokens.
