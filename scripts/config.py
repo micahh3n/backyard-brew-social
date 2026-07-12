@@ -2,7 +2,9 @@
 config.py - Single source of truth for Backyard Brew's brand, timing, and rules.
 
 Everything brand-specific lives here so the logic files stay clean. If the bar's
-schedule, colors, hashtags, or voice change, this is usually the only file to edit.
+schedule or colors change, this is usually the only file to edit -- voice/hashtag
+rules live in the backyard-brew-brand skill, since Claude Code writes captions
+directly now rather than through an API call.
 """
 
 from __future__ import annotations
@@ -30,12 +32,6 @@ LOGO_DIR = os.path.join(ASSETS_DIR, "logo")
 RECURRING_CSV = os.path.join(REPO_ROOT, "recurring_events.csv")
 POSTS_CSV = os.path.join(REPO_ROOT, "posts.csv")
 STATUS_LOG = os.path.join(REPO_ROOT, "status.log")
-# Persists every photo's vision-classification result (by filename) so a
-# photo already sent to the API once -- even a low-confidence "not usable"
-# one -- is never re-sent on a later Sunday run. Without this, any photo
-# that never becomes a post gets reclassified forever, and the owner drops
-# photos continuously so this cost would otherwise compound every week.
-CLASSIFICATION_CACHE = os.path.join(REPO_ROOT, "photo_classifications.json")
 # Where process_photos.py writes finished images for manual review/posting
 # (rendered for the weekly preview page, not auto-posted).
 GENERATED_DIR = os.path.join(REPO_ROOT, "photos", "_generated")
@@ -44,19 +40,6 @@ GENERATED_DIR = os.path.join(REPO_ROOT, "photos", "_generated")
 # Timezone -- everything schedules in Central time (Wisconsin).
 # ---------------------------------------------------------------------------
 TIMEZONE = ZoneInfo("America/Chicago")
-
-# ---------------------------------------------------------------------------
-# Anthropic model for caption generation. Sonnet is smart, fast, and cheap.
-# Override by setting the ANTHROPIC_MODEL secret/env var.
-# ---------------------------------------------------------------------------
-ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL") or "claude-sonnet-5"
-
-# Photo classification is a much simpler task than caption writing and runs
-# more often (once per new photo dropped in) -- Haiku is plenty accurate for
-# "which known event does this photo match" and costs a fraction of Sonnet.
-# Override by setting the ANTHROPIC_CLASSIFICATION_MODEL secret/env var.
-CLASSIFICATION_MODEL = (os.environ.get("ANTHROPIC_CLASSIFICATION_MODEL")
-                         or "claude-haiku-4-5-20251001")
 
 # ---------------------------------------------------------------------------
 # Business identity (used inside the caption prompt and flyers)
@@ -71,9 +54,6 @@ BUSINESS = {
     "opened": "August 2024",
     "instagram": "@BackyardBrewGB",
     "facebook": "Backyard Brew",
-    # Latitude/longitude of the bar -- used by weather.py for the forecast lookup.
-    "latitude": 44.4741,
-    "longitude": -88.1013,
 }
 
 HOURS = {
@@ -106,18 +86,6 @@ COLORS = {
 
 # On-brand emoji set. Used sparingly, never spammed.
 EMOJIS = ["\U0001F37A", "\U0001F3AF", "\U0001F332", "\U0001F3D2", "⛰️", "\U0001F37B"]
-
-# ---------------------------------------------------------------------------
-# Instagram hashtag pool. The caption stays clean; these go in the FIRST
-# COMMENT. pick_hashtags() rotates a mix so the same set never repeats.
-# ---------------------------------------------------------------------------
-HASHTAG_POOL = [
-    "#BackyardBrew", "#DiscGolf", "#GreenBay", "#Ashwaubenon",
-    "#WisconsinBeer", "#CraftBeer", "#Wisconsin", "#DrinkWisconsinbly",
-    "#GreenBayWI", "#WIbeer", "#DiscGolfLife", "#SupportLocal",
-]
-# #BackyardBrew is always included; the rest are mixed niche/local/broad.
-HASHTAG_ALWAYS = "#BackyardBrew"
 
 # ---------------------------------------------------------------------------
 # Per-day content angle -- baked into the caption prompt per event so each
@@ -160,9 +128,6 @@ DEFAULT_TIMES = {
 }
 # If a (day, type) pair is missing, fall back to these.
 DEFAULT_TIME_FALLBACK = {"today": "12:00", "teaser": "19:00", "reminder": "18:30"}
-
-# Marks the timing source in code so we know when it becomes personalized.
-TIMING_SOURCE = "default-fallback (not yet personalized to Backyard Brew's own data)"
 
 # ---------------------------------------------------------------------------
 # Campaign / reminder rhythms for one-off events with a promote_from date.
@@ -214,48 +179,6 @@ POSTS_COLUMNS = [
 ]
 
 # ---------------------------------------------------------------------------
-# Extra post types (carousel / vibe / spotlight / evergreen) -- fill content
-# used to guarantee the daily posting cadence below.
-# ---------------------------------------------------------------------------
-EXTRA_POST_TYPES = ("carousel", "vibe", "spotlight")
-
-# Guaranteed posting cadence: every day of the week should reach at least
-# MIN_DAILY_POSTS; BONUS_POSTS_PER_WEEK days additionally get bumped up to
-# MAX_DAILY_POSTS for the "occasionally 3" the owner asked for. Never forced
-# past what real/evergreen material actually supports that week.
-MIN_DAILY_POSTS = 2
-MAX_DAILY_POSTS = 3
-BONUS_POSTS_PER_WEEK = 3
-
-EXTRA_POST_TIME_MORNING = "11:30"
-EXTRA_POST_TIME_AFTERNOON = "14:30"   # primary slot for the occasional 3rd post
-EXTRA_POST_TIME_EVENING = "19:30"
-
-# Evergreen content angles rotated through for "vibe"-kind classified photos
-# (no dedicated event tie-in) so the fill content doesn't repeat the same
-# label every week. "Weather Vibes" pulls a live forecast blurb (weather.py);
-# all four reuse whatever real vibe-classified photo is available.
-EVERGREEN_LABELS = ["Behind The Scenes", "Wisconsin Spotlight",
-                    "Course & Trail Feature", "Weather Vibes"]
-
-# Rotated by date so the same drink/trail isn't featured every single week.
-# Edit these to match the bar's actual current menu/trails whenever they change.
-FEATURED_DRINKS = [
-    "our seasonal Wisconsin Marzen lager",
-    "a crisp Wisconsin-brewed IPA",
-    "our local Door County cherry wine",
-    "a Wisconsin craft hard seltzer",
-    "our small-batch Wisconsin cider",
-]
-TRAIL_HIGHLIGHTS = [
-    "the front nine disc golf holes",
-    "the back nine disc golf holes",
-    "the north hiking loop through the woods",
-    "the sunset overlook trail",
-    "the beginner-friendly nature loop",
-]
-
-# ---------------------------------------------------------------------------
 # Undated event/food photo pools. A photo whose filename contains one of
 # these keywords (case-insensitive substring, anywhere) automatically enters
 # that event's rotation instead of the system always falling back to the
@@ -287,19 +210,3 @@ FOOD_PHOTO_KEYWORDS = {
 }
 
 OCCASIONAL_FOOD_KEYWORDS = {"pizza"}
-
-
-def pick_hashtags(seed: int, count: int = 6) -> str:
-    """Return a rotating, deterministic hashtag string for the IG first comment.
-
-    Always includes #BackyardBrew, then rotates through the rest of the pool so
-    the same exact set never repeats week to week. `seed` should be something
-    stable per-post (e.g. a hash of the date+event) so re-runs are consistent.
-    """
-    rest = [h for h in HASHTAG_POOL if h != HASHTAG_ALWAYS]
-    if count < 1:
-        count = 1
-    n = min(count - 1, len(rest))
-    start = seed % len(rest)
-    rotated = [rest[(start + i) % len(rest)] for i in range(n)]
-    return " ".join([HASHTAG_ALWAYS] + rotated)

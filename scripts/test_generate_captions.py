@@ -1,173 +1,15 @@
 from datetime import date, datetime, timedelta
 
-import build_preview
 import classify_photos
 import config
 import generate_captions as gc
 import store
 
 
-def _scheduled_row(dt_str):
-    row = store.blank_row()
-    row["scheduled_time"] = dt_str
-    return row
-
-
 def test_slug_from_default_strips_art_and_teaser_suffixes():
     assert gc.slug_from_default("bingo_default.jpg") == "bingo"
     assert gc.slug_from_default("bingo_default_art.png") == "bingo"
     assert gc.slug_from_default("bingo_default_teaser.jpg") == "bingo"
-
-
-def test_day_post_counts_counts_by_date():
-    rows = [_scheduled_row("2026-06-01 12:00"), _scheduled_row("2026-06-01 19:00"),
-            _scheduled_row("2026-06-02 12:00")]
-    counts = gc.day_post_counts(rows)
-    assert counts == {"2026-06-01": 2, "2026-06-02": 1}
-
-
-def test_quietest_day_picks_lowest_count():
-    counts = {"2026-06-01": 2, "2026-06-02": 0, "2026-06-03": 1}
-    assert gc.quietest_day(["2026-06-01", "2026-06-02", "2026-06-03"], counts) == "2026-06-02"
-
-
-def test_group_carousel_candidates_requires_three_plus_same_event():
-    classified = [
-        {"filename": "a.jpg", "match": "Bingo Night", "kind": "event", "confidence": "high"},
-        {"filename": "b.jpg", "match": "Bingo Night", "kind": "event", "confidence": "high"},
-        {"filename": "c.jpg", "match": "Bingo Night", "kind": "event", "confidence": "high"},
-        {"filename": "d.jpg", "match": "Pool Night", "kind": "event", "confidence": "high"},
-    ]
-    groups = gc.group_carousel_candidates(classified)
-    assert len(groups) == 1
-    assert groups[0]["event"] == "Bingo Night"
-    assert sorted(groups[0]["filenames"]) == ["a.jpg", "b.jpg", "c.jpg"]
-
-
-def test_build_extra_rows_never_exceeds_max_daily_posts():
-    run_date = date(2026, 5, 31)  # a Sunday
-    classified = [
-        {"filename": "a.jpg", "match": "Bingo Night", "kind": "event", "confidence": "high"},
-        {"filename": "b.jpg", "match": "Bingo Night", "kind": "event", "confidence": "high"},
-        {"filename": "c.jpg", "match": "Bingo Night", "kind": "event", "confidence": "high"},
-        {"filename": "vibe1.jpg", "match": None, "kind": "vibe", "confidence": "high"},
-        {"filename": "vibe2.jpg", "match": None, "kind": "vibe", "confidence": "high"},
-    ]
-    existing_rows = [_scheduled_row("2026-06-01 12:00")]  # Monday already has 1 post
-    rows = gc.build_extra_rows(classified, existing_rows, run_date)
-    counts = gc.day_post_counts(existing_rows + rows)
-    assert all(c <= config.MAX_DAILY_POSTS for c in counts.values())
-
-
-def test_build_extra_rows_tops_up_a_zero_post_day_to_the_minimum():
-    run_date = date(2026, 5, 31)  # a Sunday
-    classified = [{"filename": f"vibe{i}.jpg", "match": None, "kind": "vibe", "confidence": "high"}
-                  for i in range(4)]
-    existing_rows = [_scheduled_row("2026-06-01 12:00"), _scheduled_row("2026-06-01 19:00")]
-    rows = gc.build_extra_rows(classified, existing_rows, run_date)
-    counts = gc.day_post_counts(existing_rows + rows)
-    # Tuesday (2026-06-02) starts at 0 -- it must reach at least MIN_DAILY_POSTS
-    # once enough fill material (4 vibe photos) exists.
-    assert counts.get("2026-06-02", 0) >= config.MIN_DAILY_POSTS
-
-
-def test_build_extra_rows_rotates_evergreen_labels_for_vibe_photos():
-    run_date = date(2026, 5, 31)  # a Sunday
-    classified = [{"filename": f"vibe{i}.jpg", "match": None, "kind": "vibe", "confidence": "high"}
-                  for i in range(4)]
-    rows = gc.build_extra_rows(classified, [], run_date)
-    events = {r["event"] for r in rows if r["post_type"] == "vibe"}
-    # With 4 vibe photos and 4 evergreen labels available, expect more than
-    # one distinct label to show up rather than "Behind The Scenes" x4.
-    assert len(events) > 1
-    assert events <= set(config.EVERGREEN_LABELS)
-
-
-def test_main_gives_vibe_spotlight_posts_the_repetition_guard(monkeypatch):
-    """main() must feed build_extra_rows() a populated avoid_examples_by_event
-    for ALL of the generic recurring bucket names used by vibe/spotlight
-    posts -- the four config.EVERGREEN_LABELS ("Behind The Scenes",
-    "Wisconsin Spotlight", "Course & Trail Feature", "Weather Vibes") plus
-    "Community Spotlight" -- since these are the posts most at risk of
-    copy-paste drift over unattended weeks (unlike a dated event, the same
-    label is reused every run).
-
-    Previously main() built extra_event_labels from a hardcoded two-item
-    list ("Behind The Scenes", "Community Spotlight"), so the repetition
-    guard never reached the caption prompt for "Wisconsin Spotlight",
-    "Course & Trail Feature", or "Weather Vibes". This test drives main()
-    itself (with its collaborators stubbed) and asserts the caption calls
-    for both a "Behind The Scenes" row and a "Wisconsin Spotlight" row
-    actually receive their respective old caption text.
-    """
-    run_date = date(2026, 5, 31)  # a Sunday
-
-    existing_rows = [
-        {**store.blank_row(), "date": "2026-05-20",
-         "event": "Behind The Scenes", "status": config.STATUS_POSTED,
-         "ig_caption": "Some old caption"},
-        {**store.blank_row(), "date": "2026-05-21",
-         "event": "Wisconsin Spotlight", "status": config.STATUS_POSTED,
-         "ig_caption": "Some other old caption"},
-    ]
-
-    monkeypatch.setattr(gc, "today_local", lambda: run_date)
-    monkeypatch.setattr(store, "load_posts", lambda: [dict(r) for r in existing_rows])
-    monkeypatch.setattr(store, "load_recurring", lambda: [])
-    monkeypatch.setattr(store, "write_posts", lambda rows: None)
-    monkeypatch.setattr(store, "log", lambda message: None)
-    monkeypatch.setattr(build_preview, "write_preview", lambda rows: "")
-    monkeypatch.setattr(
-        classify_photos, "classify_new_photos",
-        lambda photos_dir, known_events, used: [
-            {"filename": "vibe1.jpg", "match": None, "kind": "vibe", "confidence": "high"},
-            {"filename": "vibe2.jpg", "match": None, "kind": "vibe", "confidence": "high"},
-        ])
-
-    captured = {}
-    real_generate_captions_for = gc.generate_captions_for
-
-    def spy_generate_captions_for(event, key_details, day_of_week, post_type,
-                                   avoid_examples=None):
-        if event in ("Behind The Scenes", "Wisconsin Spotlight"):
-            captured[event] = avoid_examples
-        return real_generate_captions_for(event, key_details, day_of_week, post_type,
-                                          avoid_examples=avoid_examples)
-
-    monkeypatch.setattr(gc, "generate_captions_for", spy_generate_captions_for)
-
-    gc.main()
-
-    assert captured.get("Behind The Scenes"), (
-        "expected a non-empty avoid_examples to reach caption generation "
-        "for the 'Behind The Scenes' vibe post")
-    assert "Some old caption" in captured["Behind The Scenes"]
-
-    assert captured.get("Wisconsin Spotlight"), (
-        "expected a non-empty avoid_examples to reach caption generation "
-        "for the 'Wisconsin Spotlight' vibe post -- this is the guard for "
-        "one of the three evergreen labels previously left off the "
-        "hardcoded extra_event_labels list")
-    assert "Some other old caption" in captured["Wisconsin Spotlight"]
-
-
-def test_vibe_spotlight_lands_on_genuinely_quietest_day_not_tomorrow():
-    """Vibe/spotlight posts must go on the quietest day of the week, not
-    default to 'tomorrow' just because it happens to have room.
-
-    run_date is a Sunday, so week_dates[0] ("tomorrow") is 2026-06-01 (Monday).
-    We pre-load Monday with 1 existing post (still has room: < 2) but leave
-    Tuesday (2026-06-02) completely empty -- the genuinely quietest day.
-    A single vibe candidate (no event match) must land on Tuesday, not Monday.
-    """
-    run_date = date(2026, 5, 31)  # a Sunday
-    classified = [
-        {"filename": "vibe1.jpg", "match": None, "kind": "vibe", "confidence": "high"},
-    ]
-    existing_rows = [_scheduled_row("2026-06-01 12:00")]  # Monday has 1 post already
-    rows = gc.build_extra_rows(classified, existing_rows, run_date)
-    assert len(rows) == 1
-    assert rows[0]["scheduled_time"].split(" ")[0] == "2026-06-02"
 
 
 def test_render_generated_images_sets_generated_image_and_skips_missing_photos(tmp_path, monkeypatch):
@@ -294,40 +136,13 @@ def test_find_photo_falls_back_to_default_when_pool_empty(monkeypatch, tmp_path)
 
 
 def test_find_photo_without_event_keeps_old_behavior(monkeypatch, tmp_path):
-    """One-off/campaign callers don't pass event/posts_history -- must
+    """One-off/special-event callers don't pass event/posts_history -- must
     behave exactly as before (no pool tier attempted)."""
     monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
     (tmp_path / "party_bingo.jpg").write_bytes(b"x")
     photo = gc.find_photo("2026-07-13", "bingo", want_teaser=False,
                           default_photo="Bingo_default_art.jpg")
     assert photo == "Bingo_default_art.jpg"
-
-
-def test_main_uses_pool_photo_for_recurring_event_when_no_dated_photo(tmp_path, monkeypatch):
-    run_date = date(2026, 5, 31)  # a Sunday; Monday 2026-06-01 is Bingo Night
-    monkeypatch.setattr(gc, "today_local", lambda: run_date)
-    monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
-    (tmp_path / "party_bingo.jpg").write_bytes(b"x")
-
-    monkeypatch.setattr(store, "load_posts", lambda: [])
-    monkeypatch.setattr(store, "load_recurring", lambda: [
-        {"day_of_week": "Monday", "event": "Bingo Night",
-         "key_details": "details", "default_photos": "Bingo_default_art.jpg",
-         "platforms": "both"},
-    ])
-    written = []
-    monkeypatch.setattr(store, "write_posts", lambda rows: written.extend(rows))
-    monkeypatch.setattr(store, "log", lambda message: None)
-    monkeypatch.setattr(build_preview, "write_preview", lambda rows: "")
-    monkeypatch.setattr(classify_photos, "classify_new_photos", lambda *a, **k: [])
-    monkeypatch.setattr(gc, "render_generated_images", lambda rows: None)
-
-    gc.main()
-
-    bingo_today = [r for r in written
-                  if r["event"] == "Bingo Night" and r["post_type"] == "today"]
-    assert len(bingo_today) == 1
-    assert bingo_today[0]["photos"] == "party_bingo.jpg"
 
 
 def test_find_food_photo_attaches_mapped_food_photo(monkeypatch, tmp_path):
@@ -372,61 +187,6 @@ def test_find_food_photo_gates_occasional_keyword_to_one_day_per_week(monkeypatc
     assert other_pick is None
 
 
-def test_main_attaches_food_photo_as_second_slide_for_recurring_event(tmp_path, monkeypatch):
-    run_date = date(2026, 5, 31)  # Sunday; Wednesday 2026-06-03 is Tacos + Poker Club
-    monkeypatch.setattr(gc, "today_local", lambda: run_date)
-    monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
-    (tmp_path / "2026-06-03_poker.jpg").write_bytes(b"x")  # exact dated match, main photo
-    (tmp_path / "weds_taco.jpg").write_bytes(b"x")          # food second slide
-
-    monkeypatch.setattr(store, "load_posts", lambda: [])
-    monkeypatch.setattr(store, "load_recurring", lambda: [
-        {"day_of_week": "Wednesday", "event": "Tacos + Poker Club",
-         "key_details": "details", "default_photos": "Poker_default_art.jpg",
-         "platforms": "both"},
-    ])
-    written = []
-    monkeypatch.setattr(store, "write_posts", lambda rows: written.extend(rows))
-    monkeypatch.setattr(store, "log", lambda message: None)
-    monkeypatch.setattr(build_preview, "write_preview", lambda rows: "")
-    monkeypatch.setattr(classify_photos, "classify_new_photos", lambda *a, **k: [])
-    monkeypatch.setattr(gc, "render_generated_images", lambda rows: None)
-
-    gc.main()
-
-    taco_today = [r for r in written
-                 if r["event"] == "Tacos + Poker Club" and r["post_type"] == "today"]
-    assert len(taco_today) == 1
-    assert taco_today[0]["photos"] == "2026-06-03_poker.jpg, weds_taco.jpg"
-
-
-def test_main_never_attaches_food_photo_to_teaser(tmp_path, monkeypatch):
-    run_date = date(2026, 5, 31)  # Sunday; Wednesday 2026-06-03 is Tacos + Poker Club
-    monkeypatch.setattr(gc, "today_local", lambda: run_date)
-    monkeypatch.setattr(config, "PHOTOS_DIR", str(tmp_path))
-    (tmp_path / "weds_taco.jpg").write_bytes(b"x")
-
-    monkeypatch.setattr(store, "load_posts", lambda: [])
-    monkeypatch.setattr(store, "load_recurring", lambda: [
-        {"day_of_week": "Wednesday", "event": "Tacos + Poker Club",
-         "key_details": "details", "default_photos": "Poker_default_art.jpg",
-         "platforms": "both"},
-    ])
-    written = []
-    monkeypatch.setattr(store, "write_posts", lambda rows: written.extend(rows))
-    monkeypatch.setattr(store, "log", lambda message: None)
-    monkeypatch.setattr(build_preview, "write_preview", lambda rows: "")
-    monkeypatch.setattr(classify_photos, "classify_new_photos", lambda *a, **k: [])
-    monkeypatch.setattr(gc, "render_generated_images", lambda rows: None)
-
-    gc.main()
-
-    taco_teaser = [r for r in written
-                  if r["event"] == "Tacos + Poker Club" and r["post_type"] == "teaser"]
-    assert len(taco_teaser) == 1
-    assert "," not in taco_teaser[0]["photos"]
-
-
 def test_find_food_photo_excludes_already_chosen_main_photo(monkeypatch, tmp_path):
     """A filename that contains BOTH an event keyword and a food keyword
     (e.g. poker_pizza.jpg matches "poker" for Tacos + Poker Club AND "pizza",
@@ -451,8 +211,9 @@ def test_find_food_photo_excludes_already_chosen_main_photo(monkeypatch, tmp_pat
                                     posts_history=[])
     assert unfiltered == "poker_pizza.jpg"
 
-    # With the main photo's filename excluded (as main() now does), the
-    # same file must not be re-picked as the food photo.
+    # With the main photo's filename excluded (as the owner/Claude would do
+    # after picking the main photo), the same file must not be re-picked as
+    # the food photo.
     pick = gc.find_food_photo("Tacos + Poker Club", event_date, run_date,
                               posts_history=[], exclude_filenames={"poker_pizza.jpg"})
     assert pick is None

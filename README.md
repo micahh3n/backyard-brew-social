@@ -1,49 +1,41 @@
 # Backyard Brew — Weekly Social Content Workflow
 
-Weekly Instagram + Facebook content generation for **Backyard Brew** (Ashwaubenon, WI).
-Drop photos in a folder, let the system write captions and render flyers every Sunday,
-then manually schedule each post to Facebook and Instagram yourself — complete control,
-zero code, ~1 hour per week.
+Weekly Instagram + Facebook content for **Backyard Brew** (Ashwaubenon, WI).
+No GitHub Actions, no API key -- ask Claude Code directly ("run sunday
+social media") and get the week's captions + posting schedule in chat, plus
+help editing photos on-brand.
 
 ## Start here
-- **Setting it up the first time?** → **[SETUP.md](SETUP.md)**
 - **Using it week to week?** → **[HOW-TO-USE-WEEKLY.md](HOW-TO-USE-WEEKLY.md)**
 
 ## What's in here
 ```
-photos/                 Your event photos (dropped during the week)
-  _generated/           Finished flyer images the system renders on Sunday
+photos/                 Your event photos (dropped anytime)
+  _generated/           Finished flyer images (rendered on request)
 assets/logo/            Your logo.png for watermarks/flyers
-assets/fonts/           Brand fonts (auto-downloaded)
-recurring_events.csv    Your standing weekly schedule — edit anytime
-posts.csv               Special events + the system's weekly output (you mark as scheduled)
-preview/                Generated HTML preview of the week's posts
-  this-week.html        Visual card review of every post (double-click to open)
-scripts/                The Python that does the work
-  config.py             Brand voice, colors, timing, hashtags, campaign rhythms
-  generate_captions.py  Sunday job: builds the week's posts + images + preview
-  process_photos.py     Crop/resize/enhance + flyer builder (template variety + deal compositing)
-  scheduling.py         Computes guaranteed 2-3 posts/day cadence across the week
-  weather.py            Optional: pulls weather data for weather-tied posts
-  build_preview.py      Renders the HTML preview page (preview/this-week.html)
-  anthropic_client.py   Anthropic API wrapper for caption generation (with safe fallback)
-  classify_photos.py    Photo classification helper for template selection
+assets/fonts/           Brand fonts
+recurring_events.csv    Your standing weekly schedule -- edit anytime
+posts.csv               Special events + a saved record of past posts (optional)
+scripts/                Reusable helpers Claude Code calls while doing this by hand
+  config.py             Brand colors, timing, campaign rhythms
+  generate_captions.py  Photo-picking + scheduling helpers (no CLI entry point)
+  process_photos.py     Crop/resize/enhance + flyer builder
+  classify_photos.py    Filename-convention helpers (_vibe/_spotlight tags, photo pool)
+  build_preview.py      Optional HTML preview renderer
   store.py              CSV read/write helpers
-.github/workflows/      Sunday job only (generates captions + images + preview)
-status.log              Plain-English log of what happened
+status.log              Plain-English log, if you want a paper trail
+CLAUDE.md               The instructions Claude Code follows for "run sunday social media"
 ```
 
 ## How it flows
-1. **Sunday job** reads your schedule + photos → generates captions, flyer images,
-   computes posting times (2-3 posts/day), and creates a visual preview → writes rows
-   to `posts.csv` at `needs_review` status.
-2. **You** review the preview page (`preview/this-week.html`), optionally edit captions/times
-   in `posts.csv`.
-3. **You** manually schedule each post to Facebook or Instagram's own native scheduler
-   (paste caption + attach image + set the suggested date/time).
-4. **You** mark each row `status = scheduled` and push to GitHub (for your own tracking).
+1. **You ask** Claude Code: "run sunday social media" (or similar).
+2. **Claude Code writes** the Mon-Sun captions + posting times directly in
+   chat, using `recurring_events.csv`, `photos/`, and the brand voice rules
+   (see `CLAUDE.md`).
+3. **You** copy/paste each caption into Facebook or Instagram's own native
+   scheduler yourself.
+4. **Anytime**, hand Claude Code a photo and ask for an on-brand edit/flyer.
 
 ## Notes
 - All drinks referenced are 100% Wisconsin-made; captions never name outside brands unless asked.
-- Nothing posts without you manually scheduling it — you are always in control.
-- The Sunday job logs everything in `status.log` — check it if you notice something unexpected.
+- Nothing posts automatically anywhere -- you paste every post yourself.
