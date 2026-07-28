@@ -43,16 +43,34 @@ echo "Dependencies installed."
 echo
 mkdir -p "$SKILL_DEST_DIR"
 
+# Marks a copy this script made, so re-running can replace it instead of
+# stacking up backups. Backups go OUTSIDE the skills folder -- anything left
+# inside it gets loaded by Claude as a second, stale copy of the skill.
+MARKER=".installed-by-backyard-brew-setup"
+BACKUP_DIR="$HOME/.claude/skill-backups"
+
 if [ -L "$SKILL_DEST" ]; then
   rm "$SKILL_DEST"
-  echo "Replaced the old brand skill link."
+elif [ -f "$SKILL_DEST/$MARKER" ]; then
+  rm -rf "$SKILL_DEST"          # our own copy from a previous run
 elif [ -e "$SKILL_DEST" ]; then
-  # A real folder is already there. Never delete it silently.
-  BACKUP="$SKILL_DEST.backup.$(date +%Y%m%d%H%M%S)"
+  # Someone else's folder. Never delete it silently, and never leave it in
+  # the skills directory where Claude would load it as a duplicate.
+  mkdir -p "$BACKUP_DIR"
+  BACKUP="$BACKUP_DIR/backyard-brew-brand.$(date +%Y%m%d%H%M%S)"
   mv "$SKILL_DEST" "$BACKUP"
-  echo "Found an existing brand skill folder. Moved it to:"
+  echo "Moved a pre-existing brand skill folder out of the way:"
   echo "  $BACKUP"
 fi
+
+# Clean up backups an older version of this script wrongly left in the skills
+# folder, where they load as duplicate skills.
+for stray in "$SKILL_DEST".backup.*; do
+  [ -e "$stray" ] || continue
+  mkdir -p "$BACKUP_DIR"
+  mv "$stray" "$BACKUP_DIR/$(basename "$stray")"
+  echo "Moved a stray duplicate out of the skills folder: $(basename "$stray")"
+done
 
 ln -s "$SKILL_SRC" "$SKILL_DEST" 2>/dev/null || true
 
@@ -63,6 +81,7 @@ if [ -L "$SKILL_DEST" ]; then
   echo "It updates automatically whenever you git pull."
 else
   [ -e "$SKILL_DEST" ] || cp -r "$SKILL_SRC" "$SKILL_DEST"
+  touch "$SKILL_DEST/$MARKER"
   echo "Copied the brand skill into ~/.claude/skills/"
   echo "This system does not support links, so it is a copy."
   echo "Re-run 'bash setup.sh' after a git pull to refresh it."
@@ -80,8 +99,10 @@ for f in \
   "$SKILL_DEST/references/growth-playbook.md" \
   "$SKILL_DEST/references/caption-voice-rules.md" \
   "$REPO/.claude/commands/sunday.md" \
+  "$REPO/.claude/commands/photos.md" \
   "$REPO/.claude/commands/graphic.md" \
   "$REPO/.claude/commands/reply.md" \
+  "$REPO/.claude/commands/sync.md" \
   "$REPO/.claude/commands/growth-week.md" \
 ; do
   if [ ! -r "$f" ]; then
@@ -99,27 +120,24 @@ if [ "$FAILED" -ne 0 ]; then
 fi
 
 echo "  brand skill ok"
-echo "  4 commands ok"
+echo "  6 commands ok"
 
 cat <<'DONE'
 
 Setup complete.
 
-Start Claude Code:
-
-    cd ~/backyard-brew-social
-    claude
-
-Then type / to see the commands:
+Open the Claude app, click the Code tab, choose Local, and select this
+folder. Then type / to see the commands:
 
     /sunday        the week's posts
+    /photos        name new photos for you
+    /sync          share with the other computer
     /graphic       a promo image prompt
     /reply         a response to a review or comment
     /growth-week   what to work on this week
 
-Printed sheets are in playbook/. To rebuild the PDFs after editing one:
+Printed sheets are in playbook/pdf/. Editable Word versions, which open in
+Pages, are in playbook/editable/.
 
-    python3 playbook/make-pdfs.py
-
-Start with playbook/1-START-HERE.md
+Start by reading playbook/pdf/1-START-HERE.pdf
 DONE

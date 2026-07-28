@@ -46,16 +46,20 @@ to *"rebuild the playbook PDFs"* (or run `python3 playbook/make-pdfs.py`).
 
 ---
 
-## The four commands
+## The six commands
 
-Start Claude with `claude` inside this folder, then type `/`:
+Open this folder in the Claude app (Code tab), then type `/`:
 
 | Command | Does |
 |---|---|
-| `/sunday` | Writes the week's 21 posts, ready for Meta Business Suite |
+| `/sunday` | The week's 21 static posts plus a Google Business Profile post |
+| `/photos` | Looks at your unnamed photos and names them for you |
 | `/graphic` | Writes a Gemini Image prompt, then the captions |
 | `/reply` | Turns a review or comment into a professional response |
+| `/sync` | Gets the other computer's changes and sends yours |
 | `/growth-week` | Reviews the week, hands back a ranked action list |
+
+Handing this over to someone? See **[HANDOFF.md](HANDOFF.md)**.
 
 Plain English works too. Claude already knows the hours, events, prices,
 voice, which nights are slow, and what the goals are.
@@ -67,7 +71,7 @@ voice, which nights are slow, and what the goals are.
 ```
 playbook/               The four printable sheets, plus the PDF builder
 .claude/skills/         The brand brain: voice, facts, operations, growth, replies
-.claude/commands/       The four commands above
+.claude/commands/       The six commands above
 photos/                 Photos for posts. Drop them in anytime
   _generated/           Finished flyers rendered locally
 assets/logo/            The real logo

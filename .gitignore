@@ -20,3 +20,6 @@ Thumbs.db
 #   photos/_generated/ (the finished flyer images used for manual posting)
 #   assets/fonts/      (so fonts aren't re-downloaded every run)
 #   posts.csv, status.log (the system's state + your visible log)
+
+# Marker file setup.sh drops in a copied skill install
+.installed-by-backyard-brew-setup

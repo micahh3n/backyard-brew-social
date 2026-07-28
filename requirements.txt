@@ -2,4 +2,5 @@ Pillow>=10.2.0
 pillow-heif>=0.15.0   # lets PIL open .heic/.heif photos -- iPhones shoot this by default (see config.py)
 playwright>=1.40.0    # renders the premium HTML/CSS flyer templates (see flyer_render.py)
 markdown>=3.5         # converts the playbook/*.md sheets to printable PDFs (see playbook/make-pdfs.py)
+python-docx>=1.1.0    # writes the editable Word versions of the playbook sheets (open in Pages)
 tzdata>=2024.1        # timezone database (required on Windows; harmless on Linux)

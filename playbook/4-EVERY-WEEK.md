@@ -6,15 +6,14 @@ Sunday, about an hour. Do it in this order and the week runs itself.
 
 ## 1. Drop in this week's photos (5 min)
 
-Move anything from your phone into the `photos/` folder first, so Claude can
-use it.
+Dump everything from your phone straight into the `photos/` folder. Do not
+rename anything.
 
-Name them with the date and the event: `2026-09-14_bingo.jpg`.
+Then type `/photos`. Claude looks at each one and names them all for you. It
+shows the list first and waits for you to approve.
 
-Candid shots with no event attached get `_vibe` or `_spotlight`, like
-`campfire_vibe.jpg`.
-
-Nothing new? It still works. It falls back to older photos automatically.
+Nothing new this week? It still works. It falls back to older photos
+automatically.
 
 ---
 
@@ -25,8 +24,22 @@ Open the Claude app, click the **Code** tab, and click the
 
 Then type `/sunday`.
 
-You get 21 posts. Three a day, seven days, Facebook and Instagram for each,
-with the time and the photo to use.
+You get:
+
+- **21 posts.** Three a day, seven days, Facebook and Instagram for each, with
+  the time, the photo, and anyone to tag
+- **1 Google Business Profile post** for step 4 below
+
+Every event gets hit three times before it starts, and the three posts are
+written together as one build:
+
+| When | What it does |
+|---|---|
+| **7pm the night before** | Plants it while people are making plans |
+| **11am the day of** | It's today. Gives them the details to act on |
+| **2:30pm the day of** | A highlight, recap, or food post that still points at tonight |
+
+Reels are not part of this. We film those ourselves.
 
 **Read them before scheduling.** Change anything that does not sound like us.
 It is faster to fix a line now than to notice it live on Wednesday.
@@ -49,9 +62,9 @@ The three times, every day:
 
 | Time | What it is |
 |---|---|
-| **11:00am** | The day's main post |
-| **2:30pm** | A second, different post. Food, a candid, a shoutout |
-| **7:00pm** | A teaser for tomorrow |
+| **11:00am** | The day's main post. Tonight's event |
+| **2:30pm** | Highlight, recap, or food. Different photo, still ties to tonight |
+| **7:00pm** | Teaser for tomorrow |
 
 For each one:
 
@@ -65,6 +78,23 @@ For each one:
 
 **Instagram hashtags go in the first comment**, not the caption. Meta Business
 Suite has a first comment field. Paste them there.
+
+**Thursday's 11am post is the important one.** Claude names a vendor or that
+week's musician as a Collab partner. A Collab post shows up on their page too,
+in front of all of their followers. It is the cheapest new reach we have.
+
+When creating that post, look for **Tags and collaborator** (you may have to
+click "Show more"), and invite the account Claude named.
+
+If Business Suite will not let you add a collaborator to a scheduled post,
+skip scheduling that one and **post it from the Instagram app on Thursday
+morning instead.** One manual post a week is worth it. Two things to know: the
+partner has to accept the invite before it appears on their page, and their
+account has to allow tags from people they do not follow.
+
+**Tag the location on every post.** Instagram and Facebook both have an Add
+Location field. This is how people nearby find us. Do it every time, even when
+it feels repetitive.
 
 Once it is all scheduled, the week is done.
 
@@ -133,11 +163,21 @@ It knows the bar, so the answers are specific instead of generic.
 
 ---
 
+## 7. Send it to Micah (1 min)
+
+Type `/sync`. That sends this week's photos and any changes up, and pulls down
+anything he changed on his end.
+
+---
+
 ## The Sunday checklist
 
-- [ ] Photos moved into `photos/`
+- [ ] Photos dumped into `photos/`, then ran `/photos` to name them
 - [ ] Ran `/sunday` and read all 21 posts
 - [ ] All 21 scheduled in Meta Business Suite
 - [ ] Instagram hashtags in first comments
+- [ ] Location tagged on every post
+- [ ] Thursday 11am has a Collab partner invited
 - [ ] Google Business Profile: photos added, one Post added
 - [ ] Every new review answered
+- [ ] Ran `/sync`

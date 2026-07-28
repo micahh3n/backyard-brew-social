@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
 """
-make-pdfs.py - Turn the playbook markdown sheets into printable PDFs.
+make-pdfs.py - Turn the playbook markdown sheets into printable PDFs and
+editable Word documents.
 
-Edit any playbook/*.md, run this, get updated PDFs in playbook/pdf/.
-The markdown stays the source of truth so the sheets remain editable by
-anyone with a text editor.
+Edit any playbook/*.md, run this, and get:
+  playbook/pdf/       print these and tape them up
+  playbook/editable/  .docx, opens in Pages or Word, type straight into it
+
+The markdown stays the source of truth. Edits made in Pages live only in that
+.docx, so anything meant to stick should go back into the .md (easiest: ask
+Claude to make the change, then re-run this).
 
 Usage:
     python3 playbook/make-pdfs.py
@@ -21,6 +26,7 @@ from pathlib import Path
 
 PLAYBOOK_DIR = Path(__file__).resolve().parent
 OUT_DIR = PLAYBOOK_DIR / "pdf"
+EDITABLE_DIR = PLAYBOOK_DIR / "editable"
 
 # Brand colors. Light background on purpose -- these get printed, and a navy
 # page would eat a cartridge per sheet.
@@ -130,6 +136,135 @@ def lint(md_text: str) -> list[str]:
     return warnings
 
 
+INLINE_RE = re.compile(r"(\*\*.+?\*\*|`.+?`)")
+
+
+def _add_runs(paragraph, text: str) -> None:
+    """Write text into a docx paragraph, honouring **bold** and `code`."""
+    for chunk in INLINE_RE.split(text):
+        if not chunk:
+            continue
+        if chunk.startswith("**") and chunk.endswith("**"):
+            paragraph.add_run(chunk[2:-2]).bold = True
+        elif chunk.startswith("`") and chunk.endswith("`"):
+            run = paragraph.add_run(chunk[1:-1])
+            run.font.name = "Menlo"
+        else:
+            paragraph.add_run(chunk)
+
+
+def md_to_docx(md_text: str, out_path: Path) -> None:
+    """Write an editable Word document he can open in Pages and print.
+
+    Deliberately a line walker over the constructs these sheets actually use
+    (headings, paragraphs, bullets, numbers, checkboxes, tables, quotes,
+    fenced code) rather than a general markdown-to-docx converter.
+    """
+    from docx import Document
+    from docx.shared import Pt, RGBColor
+
+    doc = Document()
+    doc.styles["Normal"].font.name = "Helvetica Neue"
+    doc.styles["Normal"].font.size = Pt(11)
+    navy = RGBColor(0x0B, 0x1C, 0x2D)
+
+    lines = md_text.splitlines()
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        stripped = line.strip()
+
+        if not stripped or stripped == "---":
+            i += 1
+            continue
+
+        # Fenced code
+        if stripped.startswith("```"):
+            block = []
+            i += 1
+            while i < len(lines) and not lines[i].strip().startswith("```"):
+                block.append(lines[i])
+                i += 1
+            para = doc.add_paragraph()
+            run = para.add_run("\n".join(block))
+            run.font.name = "Menlo"
+            run.font.size = Pt(10)
+            i += 1
+            continue
+
+        # Table: a header row followed by a |---| separator
+        if stripped.startswith("|") and i + 1 < len(lines) and set(
+            lines[i + 1].strip().replace("|", "").replace(" ", "")
+        ) <= {"-", ":"} and "-" in lines[i + 1]:
+            rows = []
+            while i < len(lines) and lines[i].strip().startswith("|"):
+                cells = [c.strip() for c in lines[i].strip().strip("|").split("|")]
+                if not (set("".join(cells).replace(" ", "")) <= {"-", ":"} and cells):
+                    rows.append(cells)
+                i += 1
+            width = max(len(r) for r in rows)
+            table = doc.add_table(rows=0, cols=width)
+            table.style = "Light Grid Accent 1"
+            for r_i, cells in enumerate(rows):
+                cells += [""] * (width - len(cells))
+                row = table.add_row()
+                for c_i, text in enumerate(cells):
+                    cell_para = row.cells[c_i].paragraphs[0]
+                    _add_runs(cell_para, text)
+                    if r_i == 0:
+                        for run in cell_para.runs:
+                            run.bold = True
+            doc.add_paragraph()
+            continue
+
+        # Headings
+        if stripped.startswith("#"):
+            level = len(stripped) - len(stripped.lstrip("#"))
+            head = doc.add_heading(level=min(level, 4))
+            _add_runs(head, stripped.lstrip("#").strip())
+            for run in head.runs:
+                run.font.color.rgb = navy
+            i += 1
+            continue
+
+        # Quote
+        if stripped.startswith(">"):
+            para = doc.add_paragraph(style="Intense Quote")
+            _add_runs(para, stripped.lstrip("> ").strip())
+            i += 1
+            continue
+
+        # Checkbox, bullet, numbered
+        checkbox = re.match(r"[-*+]\s+\[([ xX])\]\s+(.*)", stripped)
+        if checkbox:
+            para = doc.add_paragraph(style="List Bullet")
+            _add_runs(para, "☐  " + checkbox.group(2))
+            i += 1
+            continue
+        if re.match(r"[-*+]\s+", stripped):
+            para = doc.add_paragraph(style="List Bullet")
+            _add_runs(para, re.sub(r"^[-*+]\s+", "", stripped))
+            i += 1
+            continue
+        if re.match(r"\d+\.\s+", stripped):
+            para = doc.add_paragraph(style="List Number")
+            _add_runs(para, re.sub(r"^\d+\.\s+", "", stripped))
+            i += 1
+            continue
+
+        # Paragraph, joining wrapped lines
+        buf = [stripped]
+        i += 1
+        while i < len(lines) and lines[i].strip() and not re.match(
+            r"^(#|>|\||```|[-*+]\s|\d+\.\s|---)", lines[i].strip()
+        ):
+            buf.append(lines[i].strip())
+            i += 1
+        _add_runs(doc.add_paragraph(), " ".join(buf))
+
+    doc.save(str(out_path))
+
+
 def _selfcheck() -> None:
     """Smallest thing that fails if the conversion breaks."""
     html = md_to_html(
@@ -142,6 +277,28 @@ def _selfcheck() -> None:
     assert lint("Do this:\n- a\n"), "lint should catch a glued list"
     assert not lint("Do this:\n\n- a\n- b\n"), "lint should pass a spaced list"
     assert not lint("- a\n  wrapped\n- b\n"), "lint should allow continuations"
+
+    import tempfile
+
+    sample = (
+        "# Title\n\n## Section\n\nSome **bold** and `code` text that\n"
+        "wraps across lines.\n\n- a bullet\n- [ ] a checkbox\n\n"
+        "1. numbered\n\n> a quote\n\n| a | b |\n|---|---|\n| 1 | 2 |\n\n"
+        "```\nfenced\n```\n"
+    )
+    with tempfile.TemporaryDirectory() as tmp:
+        out = Path(tmp) / "t.docx"
+        md_to_docx(sample, out)
+        assert out.stat().st_size > 5000, "docx looks empty"
+        from docx import Document
+
+        doc = Document(str(out))
+        text = "\n".join(p.text for p in doc.paragraphs)
+        assert "Title" in text and "Section" in text, "docx headings"
+        assert "bold" in text and "wraps across lines" in text, "docx paragraph"
+        assert "☐" in text, "docx checkbox"
+        assert len(doc.tables) == 1, "docx table"
+        assert doc.tables[0].rows[0].cells[0].text == "a", "docx table header"
     print("selfcheck ok")
 
 
@@ -164,6 +321,7 @@ def main() -> int:
         return 1
 
     OUT_DIR.mkdir(exist_ok=True)
+    EDITABLE_DIR.mkdir(exist_ok=True)
 
     with sync_playwright() as p:
         browser = p.chromium.launch()
@@ -174,12 +332,16 @@ def main() -> int:
                 print(f"  ! {sheet.name}{warning}")
             html = md_to_html(text, sheet.stem)
             page.set_content(html, wait_until="load")
-            out = OUT_DIR / f"{sheet.stem}.pdf"
-            page.pdf(path=str(out), format="Letter", print_background=True)
-            print(f"  {sheet.name}  ->  pdf/{out.name}")
+            page.pdf(
+                path=str(OUT_DIR / f"{sheet.stem}.pdf"),
+                format="Letter",
+                print_background=True,
+            )
+            md_to_docx(text, EDITABLE_DIR / f"{sheet.stem}.docx")
+            print(f"  {sheet.name}  ->  pdf/ + editable/")
         browser.close()
 
-    print(f"\nDone. {len(sheets)} sheets in {OUT_DIR}")
+    print(f"\nDone. {len(sheets)} sheets. Print from pdf/, edit in editable/")
     return 0
 
 

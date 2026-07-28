@@ -81,7 +81,10 @@ Fill in your groups in the right column as you find them.
 Stories are where people see that the place is alive right now. Posts are
 planned. Stories are real.
 
-**Aim for 3 to 5 a day. Never fewer than 2. Event nights, go to 5 or 6.**
+**Never fewer than 2 a day. Past that, more is always better.** There is no
+upper limit and no such thing as too many. On a big event night, a packed
+Thursday market, live music, a tournament, shoot everything and post it all.
+Those are the nights that pull new people in.
 
 Do not watch the clock. Post at these moments instead, because they happen on
 their own:
@@ -94,7 +97,8 @@ their own:
 | **4. It's going** | The crowd, a winner, the music, people on the course |
 | **5. Closing out** | Last call, the sunset, the fire |
 
-Hit 3 of those 5 and you have had a good day.
+Hit 2 of those and the day counts. Hit all 5 and it was a good day. On a busy
+night, keep going past 5.
 
 **Two easy ones people forget:**
 
@@ -145,6 +149,6 @@ Worth grabbing:
 ## The daily checklist
 
 - [ ] Shared the 11am post to at least 2 groups from a personal account
-- [ ] Posted at least 3 stories
+- [ ] Posted at least 2 stories, and more if anything was happening
 - [ ] Replied to every comment
 - [ ] Took at least 2 photos for next week

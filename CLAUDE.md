@@ -25,13 +25,15 @@ Two that matter most and get skipped most:
 - `references/reply-rules.md` — required before replying to any review,
   comment, or message.
 
-## The four commands
+## The six commands
 
 | Command | Does |
 |---|---|
-| `/sunday` | Writes the week's 21 posts for Meta Business Suite |
+| `/sunday` | The week's 21 static posts plus a Google Business Profile post |
+| `/photos` | Looks at unnamed photos and renames them to the convention |
 | `/graphic` | Writes a Gemini Image prompt, then the captions |
 | `/reply` | Turns a review or comment into a professional response |
+| `/sync` | Pulls and pushes so both computers match |
 | `/growth-week` | Reviews the week, returns a ranked action list |
 
 Plain English works too. The commands just make it repeatable.

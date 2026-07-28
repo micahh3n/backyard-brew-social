@@ -52,15 +52,17 @@ Everything happens in the **Claude app**. No Terminal, ever.
 That is it. After the first time, the folder is already in the sidebar, so
 you just click it.
 
-### The four commands
+### The six commands
 
-Type `/` and a menu appears. Four commands do the work:
+Type `/` and a menu appears. Six commands do the work:
 
 | Type this | What happens |
 |---|---|
-| `/sunday` | Writes all 21 posts for the week. Facebook and Instagram, with times and which photo to use |
-| `/graphic` | Writes the Gemini prompt for a poster, then the captions to go with it |
+| `/sunday` | Writes all 21 posts for the week, plus a Google Business post |
+| `/photos` | Looks at your new photos and names them for you |
+| `/graphic` | Writes the Gemini prompt for a poster, then the captions |
 | `/reply` | Turns a review or comment into a professional response |
+| `/sync` | Gets Micah's latest changes and sends yours to him |
 | `/growth-week` | Asks how last week went, then gives you a short list of what to do next |
 
 You do not have to use the commands. Plain English works too. "Write me a post
@@ -104,14 +106,22 @@ whenever something changes.
 
 ### Dropping in photos
 
-Name the file with the date and the event, like `2026-09-14_bingo.jpg`, and
-Claude picks it up automatically.
+**Dump them straight off your phone into `photos/`. Do not rename anything.**
 
-Event keywords: `bingo`, `pickleball`, `poker`, `market`, `karaoke`, `pool`.
+Then type `/photos`. Claude opens each one, sees what is actually in it, and
+names them all properly. It shows you the list first and waits for you to say
+yes. It also skips blurry shots and near-duplicates.
 
-No date and just the keyword, like `crowd_bingo.jpg`, puts it in the rotation
-for future weeks. Add `_vibe` or `_spotlight` for candid shots that are not
-tied to an event.
+That is the whole job. If you ever want to name one yourself, the pattern is
+`2026-09-14_bingo.jpg`, and the event keywords are `bingo`, `pickleball`,
+`poker`, `market`, `karaoke`, `pool`.
+
+### Sharing with Micah
+
+Both computers use the same folder through GitHub. Type `/sync` to send your
+photos and changes to him and pull down anything he sent you.
+
+Worth doing after adding photos, and any time something feels out of date.
 
 ---
 
@@ -153,13 +163,32 @@ added. Use the session already sitting in the sidebar.
 
 ---
 
-## Printing these
+## Reading, printing, and editing these sheets
 
-Edit any sheet in `playbook/` with TextEdit, then ask Claude:
+Every sheet comes in three forms, all in the `playbook` folder:
 
-> Rebuild the playbook PDFs
+| Folder | What it is | Open it with |
+|---|---|---|
+| `pdf/` | For printing and taping up | Preview. Just double-click |
+| `editable/` | Word documents you can type into | **Pages**, already on the Mac |
+| the `.md` files | What Claude reads | Nothing. Leave these alone |
 
-Fresh PDFs land in `playbook/pdf/`. Print those.
+**To change something, the easy way is to just ask Claude:**
+
+> Add these Facebook groups to the daily sheet: [names]
+
+> Change the story minimum from 2 to 3
+
+It updates the sheet and rebuilds the PDF and the Word version together, so
+all three stay matched.
+
+**To type into it yourself**, open the file in `editable/` with Pages. Fill in
+the Facebook groups table, cross things out, add notes. Print from Pages when
+you are done.
+
+One catch: edits made in Pages live only in that Word file. Claude will not
+know about them. Anything that should stick permanently is better done by
+asking Claude.
 
 ---
 
