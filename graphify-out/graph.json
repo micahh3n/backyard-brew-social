@@ -14,14 +14,864 @@
       "norm_label": "claude.md"
     },
     {
-      "label": "graphify",
+      "label": "Sunday Social Media",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "claude_sunday_social_media",
+      "community": 0,
+      "norm_label": "sunday social media"
+    },
+    {
+      "label": "graphify",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L35",
+      "_origin": "ast",
       "id": "claude_graphify",
       "community": 0,
       "norm_label": "graphify"
+    },
+    {
+      "label": "HOW-TO-USE-WEEKLY.md",
+      "file_type": "document",
+      "source_file": "HOW-TO-USE-WEEKLY.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "how_to_use_weekly",
+      "community": 3,
+      "norm_label": "how-to-use-weekly.md"
+    },
+    {
+      "label": "How To Use This Every Week",
+      "file_type": "document",
+      "source_file": "HOW-TO-USE-WEEKLY.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "how_to_use_weekly_how_to_use_this_every_week",
+      "community": 3,
+      "norm_label": "how to use this every week"
+    },
+    {
+      "label": "During the week",
+      "file_type": "document",
+      "source_file": "HOW-TO-USE-WEEKLY.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "how_to_use_weekly_during_the_week",
+      "community": 3,
+      "norm_label": "during the week"
+    },
+    {
+      "label": "Sunday (or whenever): ask for it",
+      "file_type": "document",
+      "source_file": "HOW-TO-USE-WEEKLY.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "how_to_use_weekly_sunday_or_whenever_ask_for_it",
+      "community": 3,
+      "norm_label": "sunday (or whenever): ask for it"
+    },
+    {
+      "label": "The golden rules",
+      "file_type": "document",
+      "source_file": "HOW-TO-USE-WEEKLY.md",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "how_to_use_weekly_the_golden_rules",
+      "community": 3,
+      "norm_label": "the golden rules"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme",
+      "community": 3,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Backyard Brew \u2014 Weekly Social Content Workflow",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme_backyard_brew_weekly_social_content_workflow",
+      "community": 3,
+      "norm_label": "backyard brew \u2014 weekly social content workflow"
+    },
+    {
+      "label": "Start here",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "readme_start_here",
+      "community": 3,
+      "norm_label": "start here"
+    },
+    {
+      "label": "What's in here",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "readme_what_s_in_here",
+      "community": 3,
+      "norm_label": "what's in here"
+    },
+    {
+      "label": "How it flows",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "readme_how_it_flows",
+      "community": 3,
+      "norm_label": "how it flows"
+    },
+    {
+      "label": "Notes",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "readme_notes",
+      "community": 3,
+      "norm_label": "notes"
+    },
+    {
+      "label": "classify_photos.py",
+      "file_type": "code",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_classify_photos",
+      "community": 2,
+      "norm_label": "classify_photos.py"
+    },
+    {
+      "label": "manual_kind()",
+      "file_type": "code",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "scripts_classify_photos_manual_kind",
+      "community": 2,
+      "norm_label": "manual_kind()"
+    },
+    {
+      "label": "pool_claimed()",
+      "file_type": "code",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "scripts_classify_photos_pool_claimed",
+      "community": 2,
+      "norm_label": "pool_claimed()"
+    },
+    {
+      "label": "needs_classification()",
+      "file_type": "code",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "scripts_classify_photos_needs_classification",
+      "community": 2,
+      "norm_label": "needs_classification()"
+    },
+    {
+      "label": "read_capture_time()",
+      "file_type": "code",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L68",
+      "_origin": "ast",
+      "id": "scripts_classify_photos_read_capture_time",
+      "community": 2,
+      "norm_label": "read_capture_time()"
+    },
+    {
+      "label": "classify_photos.py - Filename-convention helpers for photo handling.  No vision",
+      "file_type": "rationale",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_classify_photos_rationale_1",
+      "community": 2,
+      "norm_label": "classify_photos.py - filename-convention helpers for photo handling.  no vision"
+    },
+    {
+      "label": "vibe'/'spotlight' if the filename carries that override suffix, else None.",
+      "file_type": "rationale",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "scripts_classify_photos_rationale_30",
+      "community": 2,
+      "norm_label": "vibe'/'spotlight' if the filename carries that override suffix, else none."
+    },
+    {
+      "label": "True if this filename's stem contains a keyword from     config.EVENT_PHOTO_KEYW",
+      "file_type": "rationale",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "scripts_classify_photos_rationale_39",
+      "community": 2,
+      "norm_label": "true if this filename's stem contains a keyword from     config.event_photo_keyw"
+    },
+    {
+      "label": "False if the filename already carries an explicit override signal,     or isn't",
+      "file_type": "rationale",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "scripts_classify_photos_rationale_59",
+      "community": 2,
+      "norm_label": "false if the filename already carries an explicit override signal,     or isn't"
+    },
+    {
+      "label": "EXIF DateTimeOriginal if present, else the file's mtime. None on error.",
+      "file_type": "rationale",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "scripts_classify_photos_rationale_69",
+      "community": 2,
+      "norm_label": "exif datetimeoriginal if present, else the file's mtime. none on error."
+    },
+    {
+      "label": "config.py",
+      "file_type": "code",
+      "source_file": "scripts/config.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_config",
+      "community": 2,
+      "norm_label": "config.py"
+    },
+    {
+      "label": "config.py - Single source of truth for Backyard Brew's brand, timing, and rules.",
+      "file_type": "rationale",
+      "source_file": "scripts/config.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_config_rationale_1",
+      "community": 2,
+      "norm_label": "config.py - single source of truth for backyard brew's brand, timing, and rules."
+    },
+    {
+      "label": "generate_captions.py",
+      "file_type": "code",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_generate_captions",
+      "community": 5,
+      "norm_label": "generate_captions.py"
+    },
+    {
+      "label": "today_local()",
+      "file_type": "code",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "scripts_generate_captions_today_local",
+      "community": 5,
+      "norm_label": "today_local()"
+    },
+    {
+      "label": "parse_date()",
+      "file_type": "code",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "scripts_generate_captions_parse_date",
+      "community": 7,
+      "norm_label": "parse_date()"
+    },
+    {
+      "label": "dow_name()",
+      "file_type": "code",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "scripts_generate_captions_dow_name",
+      "community": 9,
+      "norm_label": "dow_name()"
+    },
+    {
+      "label": "slug_from_default()",
+      "file_type": "code",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "scripts_generate_captions_slug_from_default",
+      "community": 11,
+      "norm_label": "slug_from_default()"
+    },
+    {
+      "label": "slug_from_event()",
+      "file_type": "code",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "scripts_generate_captions_slug_from_event",
+      "community": 7,
+      "norm_label": "slug_from_event()"
+    },
+    {
+      "label": "list_photos()",
+      "file_type": "code",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "scripts_generate_captions_list_photos",
+      "community": 10,
+      "norm_label": "list_photos()"
+    },
+    {
+      "label": "find_photo()",
+      "file_type": "code",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "scripts_generate_captions_find_photo",
+      "community": 6,
+      "norm_label": "find_photo()"
+    },
+    {
+      "label": "find_food_photo()",
+      "file_type": "code",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L104",
+      "_origin": "ast",
+      "id": "scripts_generate_captions_find_food_photo",
+      "community": 9,
+      "norm_label": "find_food_photo()"
+    },
+    {
+      "label": "find_deal_photo()",
+      "file_type": "code",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L136",
+      "_origin": "ast",
+      "id": "scripts_generate_captions_find_deal_photo",
+      "community": 10,
+      "norm_label": "find_deal_photo()"
+    },
+    {
+      "label": "_photo_last_used()",
+      "file_type": "code",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L149",
+      "_origin": "ast",
+      "id": "scripts_generate_captions_photo_last_used",
+      "community": 8,
+      "norm_label": "_photo_last_used()"
+    },
+    {
+      "label": "_pool_candidates()",
+      "file_type": "code",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L166",
+      "_origin": "ast",
+      "id": "scripts_generate_captions_pool_candidates",
+      "community": 8,
+      "norm_label": "_pool_candidates()"
+    },
+    {
+      "label": "_pick_pool_photo()",
+      "file_type": "code",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L185",
+      "_origin": "ast",
+      "id": "scripts_generate_captions_pick_pool_photo",
+      "community": 6,
+      "norm_label": "_pick_pool_photo()"
+    },
+    {
+      "label": "render_generated_images()",
+      "file_type": "code",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L206",
+      "_origin": "ast",
+      "id": "scripts_generate_captions_render_generated_images",
+      "community": 7,
+      "norm_label": "render_generated_images()"
+    },
+    {
+      "label": "suggest_enhance()",
+      "file_type": "code",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L239",
+      "_origin": "ast",
+      "id": "scripts_generate_captions_suggest_enhance",
+      "community": 5,
+      "norm_label": "suggest_enhance()"
+    },
+    {
+      "label": "scheduled_string()",
+      "file_type": "code",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L248",
+      "_origin": "ast",
+      "id": "scripts_generate_captions_scheduled_string",
+      "community": 5,
+      "norm_label": "scheduled_string()"
+    },
+    {
+      "label": "load_recurring_by_day()",
+      "file_type": "code",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L260",
+      "_origin": "ast",
+      "id": "scripts_generate_captions_load_recurring_by_day",
+      "community": 5,
+      "norm_label": "load_recurring_by_day()"
+    },
+    {
+      "label": "generate_captions.py - Reusable photo/schedule helpers for the Sunday social med",
+      "file_type": "rationale",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_generate_captions_rationale_1",
+      "community": 5,
+      "norm_label": "generate_captions.py - reusable photo/schedule helpers for the sunday social med"
+    },
+    {
+      "label": "bingo_default_art.png -> 'bingo' (the keyword the owner puts in filenames).",
+      "file_type": "rationale",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "scripts_generate_captions_rationale_43",
+      "community": 11,
+      "norm_label": "bingo_default_art.png -> 'bingo' (the keyword the owner puts in filenames)."
+    },
+    {
+      "label": "Pick the right photo filename for a post.      Preference order:       today pos",
+      "file_type": "rationale",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "scripts_generate_captions_rationale_67",
+      "community": 6,
+      "norm_label": "pick the right photo filename for a post.      preference order:       today pos"
+    },
+    {
+      "label": "Return a filename to attach as a second photo on this recurring     event's 'tod",
+      "file_type": "rationale",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L105",
+      "_origin": "ast",
+      "id": "scripts_generate_captions_rationale_105",
+      "community": 9,
+      "norm_label": "return a filename to attach as a second photo on this recurring     event's 'tod"
+    },
+    {
+      "label": "The dated _deal photo for this date/event slug, if the owner dropped     one (e.",
+      "file_type": "rationale",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L137",
+      "_origin": "ast",
+      "id": "scripts_generate_captions_rationale_137",
+      "community": 10,
+      "norm_label": "the dated _deal photo for this date/event slug, if the owner dropped     one (e."
+    },
+    {
+      "label": "filename -> most recent 'date' value (YYYY-MM-DD) it appeared in any     row's p",
+      "file_type": "rationale",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L150",
+      "_origin": "ast",
+      "id": "scripts_generate_captions_rationale_150",
+      "community": 8,
+      "norm_label": "filename -> most recent 'date' value (yyyy-mm-dd) it appeared in any     row's p"
+    },
+    {
+      "label": "Every eligible photo in config.PHOTOS_DIR whose filename contains any     of `ke",
+      "file_type": "rationale",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L167",
+      "_origin": "ast",
+      "id": "scripts_generate_captions_rationale_167",
+      "community": 8,
+      "norm_label": "every eligible photo in config.photos_dir whose filename contains any     of `ke"
+    },
+    {
+      "label": "None if no eligible candidate. Otherwise the filename to use this     run: a nev",
+      "file_type": "rationale",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L186",
+      "_origin": "ast",
+      "id": "scripts_generate_captions_rationale_186",
+      "community": 6,
+      "norm_label": "none if no eligible candidate. otherwise the filename to use this     run: a nev"
+    },
+    {
+      "label": "Render each row's flyer/photo to config.GENERATED_DIR and set     generated_imag",
+      "file_type": "rationale",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L207",
+      "_origin": "ast",
+      "id": "scripts_generate_captions_rationale_207",
+      "community": 7,
+      "norm_label": "render each row's flyer/photo to config.generated_dir and set     generated_imag"
+    },
+    {
+      "label": "Auto-suggest text_overlay for info-dense pushes, none for vibe content.",
+      "file_type": "rationale",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L240",
+      "_origin": "ast",
+      "id": "scripts_generate_captions_rationale_240",
+      "community": 5,
+      "norm_label": "auto-suggest text_overlay for info-dense pushes, none for vibe content."
+    },
+    {
+      "label": "Return 'YYYY-MM-DD HH:MM' local. owner_time (HH:MM) overrides the default.",
+      "file_type": "rationale",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L249",
+      "_origin": "ast",
+      "id": "scripts_generate_captions_rationale_249",
+      "community": 5,
+      "norm_label": "return 'yyyy-mm-dd hh:mm' local. owner_time (hh:mm) overrides the default."
+    },
+    {
+      "label": "test_classify_photos.py",
+      "file_type": "code",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_test_classify_photos",
+      "community": 4,
+      "norm_label": "test_classify_photos.py"
+    },
+    {
+      "label": "test_needs_classification_skips_known_suffixes()",
+      "file_type": "code",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "scripts_test_classify_photos_test_needs_classification_skips_known_suffixes",
+      "community": 4,
+      "norm_label": "test_needs_classification_skips_known_suffixes()"
+    },
+    {
+      "label": "test_needs_classification_allows_plain_photos()",
+      "file_type": "code",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "scripts_test_classify_photos_test_needs_classification_allows_plain_photos",
+      "community": 4,
+      "norm_label": "test_needs_classification_allows_plain_photos()"
+    },
+    {
+      "label": "test_needs_classification_skips_video_files()",
+      "file_type": "code",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "scripts_test_classify_photos_test_needs_classification_skips_video_files",
+      "community": 4,
+      "norm_label": "test_needs_classification_skips_video_files()"
+    },
+    {
+      "label": "test_manual_kind_reads_vibe_and_spotlight_suffixes()",
+      "file_type": "code",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "scripts_test_classify_photos_test_manual_kind_reads_vibe_and_spotlight_suffixes",
+      "community": 4,
+      "norm_label": "test_manual_kind_reads_vibe_and_spotlight_suffixes()"
+    },
+    {
+      "label": "test_pool_claimed_matches_event_keyword()",
+      "file_type": "code",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "scripts_test_classify_photos_test_pool_claimed_matches_event_keyword",
+      "community": 4,
+      "norm_label": "test_pool_claimed_matches_event_keyword()"
+    },
+    {
+      "label": "test_pool_claimed_matches_food_keyword()",
+      "file_type": "code",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "scripts_test_classify_photos_test_pool_claimed_matches_food_keyword",
+      "community": 4,
+      "norm_label": "test_pool_claimed_matches_food_keyword()"
+    },
+    {
+      "label": "test_pool_claimed_recognizes_an_events_own_default_art_filename()",
+      "file_type": "code",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "scripts_test_classify_photos_test_pool_claimed_recognizes_an_events_own_default_art_filename",
+      "community": 4,
+      "norm_label": "test_pool_claimed_recognizes_an_events_own_default_art_filename()"
+    },
+    {
+      "label": "test_read_capture_time_falls_back_to_mtime()",
+      "file_type": "code",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "scripts_test_classify_photos_test_read_capture_time_falls_back_to_mtime",
+      "community": 4,
+      "norm_label": "test_read_capture_time_falls_back_to_mtime()"
+    },
+    {
+      "label": "Video files (iPhones drop these alongside camera-roll photos) are     never a st",
+      "file_type": "rationale",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "scripts_test_classify_photos_rationale_17",
+      "community": 4,
+      "norm_label": "video files (iphones drop these alongside camera-roll photos) are     never a st"
+    },
+    {
+      "label": "test_generate_captions.py",
+      "file_type": "code",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_test_generate_captions",
+      "community": 1,
+      "norm_label": "test_generate_captions.py"
+    },
+    {
+      "label": "test_slug_from_default_strips_art_and_teaser_suffixes()",
+      "file_type": "code",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "scripts_test_generate_captions_test_slug_from_default_strips_art_and_teaser_suffixes",
+      "community": 1,
+      "norm_label": "test_slug_from_default_strips_art_and_teaser_suffixes()"
+    },
+    {
+      "label": "test_render_generated_images_sets_generated_image_and_skips_missing_photos()",
+      "file_type": "code",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "scripts_test_generate_captions_test_render_generated_images_sets_generated_image_and_skips_missing_photos",
+      "community": 1,
+      "norm_label": "test_render_generated_images_sets_generated_image_and_skips_missing_photos()"
+    },
+    {
+      "label": "test_find_deal_photo_matches_date_and_slug_with_deal_suffix()",
+      "file_type": "code",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "scripts_test_generate_captions_test_find_deal_photo_matches_date_and_slug_with_deal_suffix",
+      "community": 1,
+      "norm_label": "test_find_deal_photo_matches_date_and_slug_with_deal_suffix()"
+    },
+    {
+      "label": "test_find_deal_photo_returns_none_when_absent()",
+      "file_type": "code",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "scripts_test_generate_captions_test_find_deal_photo_returns_none_when_absent",
+      "community": 1,
+      "norm_label": "test_find_deal_photo_returns_none_when_absent()"
+    },
+    {
+      "label": "test_photo_last_used_returns_most_recent_date_per_filename()",
+      "file_type": "code",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L47",
+      "_origin": "ast",
+      "id": "scripts_test_generate_captions_test_photo_last_used_returns_most_recent_date_per_filename",
+      "community": 1,
+      "norm_label": "test_photo_last_used_returns_most_recent_date_per_filename()"
+    },
+    {
+      "label": "test_pick_pool_photo_prefers_never_used_photo()",
+      "file_type": "code",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "scripts_test_generate_captions_test_pick_pool_photo_prefers_never_used_photo",
+      "community": 1,
+      "norm_label": "test_pick_pool_photo_prefers_never_used_photo()"
+    },
+    {
+      "label": "test_pick_pool_photo_picks_oldest_last_used_when_all_used_photos()",
+      "file_type": "code",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "scripts_test_generate_captions_test_pick_pool_photo_picks_oldest_last_used_when_all_used_photos",
+      "community": 1,
+      "norm_label": "test_pick_pool_photo_picks_oldest_last_used_when_all_used_photos()"
+    },
+    {
+      "label": "test_pick_pool_photo_breaks_never_used_ties_toward_newest_capture_time()",
+      "file_type": "code",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "scripts_test_generate_captions_test_pick_pool_photo_breaks_never_used_ties_toward_newest_capture_time",
+      "community": 1,
+      "norm_label": "test_pick_pool_photo_breaks_never_used_ties_toward_newest_capture_time()"
+    },
+    {
+      "label": "test_pick_pool_photo_excludes_the_events_own_default_photo()",
+      "file_type": "code",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L91",
+      "_origin": "ast",
+      "id": "scripts_test_generate_captions_test_pick_pool_photo_excludes_the_events_own_default_photo",
+      "community": 1,
+      "norm_label": "test_pick_pool_photo_excludes_the_events_own_default_photo()"
+    },
+    {
+      "label": "test_pick_pool_photo_returns_none_when_no_candidates()",
+      "file_type": "code",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "scripts_test_generate_captions_test_pick_pool_photo_returns_none_when_no_candidates",
+      "community": 1,
+      "norm_label": "test_pick_pool_photo_returns_none_when_no_candidates()"
+    },
+    {
+      "label": "test_pick_pool_photo_excludes_video_files()",
+      "file_type": "code",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L104",
+      "_origin": "ast",
+      "id": "scripts_test_generate_captions_test_pick_pool_photo_excludes_video_files",
+      "community": 1,
+      "norm_label": "test_pick_pool_photo_excludes_video_files()"
+    },
+    {
+      "label": "test_find_photo_dated_match_still_wins_over_pool()",
+      "file_type": "code",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L111",
+      "_origin": "ast",
+      "id": "scripts_test_generate_captions_test_find_photo_dated_match_still_wins_over_pool",
+      "community": 1,
+      "norm_label": "test_find_photo_dated_match_still_wins_over_pool()"
+    },
+    {
+      "label": "test_find_photo_falls_through_to_pool_when_no_dated_match()",
+      "file_type": "code",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L121",
+      "_origin": "ast",
+      "id": "scripts_test_generate_captions_test_find_photo_falls_through_to_pool_when_no_dated_match",
+      "community": 1,
+      "norm_label": "test_find_photo_falls_through_to_pool_when_no_dated_match()"
+    },
+    {
+      "label": "test_find_photo_falls_back_to_default_when_pool_empty()",
+      "file_type": "code",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L130",
+      "_origin": "ast",
+      "id": "scripts_test_generate_captions_test_find_photo_falls_back_to_default_when_pool_empty",
+      "community": 1,
+      "norm_label": "test_find_photo_falls_back_to_default_when_pool_empty()"
+    },
+    {
+      "label": "test_find_photo_without_event_keeps_old_behavior()",
+      "file_type": "code",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L138",
+      "_origin": "ast",
+      "id": "scripts_test_generate_captions_test_find_photo_without_event_keeps_old_behavior",
+      "community": 12,
+      "norm_label": "test_find_photo_without_event_keeps_old_behavior()"
+    },
+    {
+      "label": "test_find_food_photo_attaches_mapped_food_photo()",
+      "file_type": "code",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L148",
+      "_origin": "ast",
+      "id": "scripts_test_generate_captions_test_find_food_photo_attaches_mapped_food_photo",
+      "community": 1,
+      "norm_label": "test_find_food_photo_attaches_mapped_food_photo()"
+    },
+    {
+      "label": "test_find_food_photo_returns_none_when_event_has_no_mapped_food()",
+      "file_type": "code",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L157",
+      "_origin": "ast",
+      "id": "scripts_test_generate_captions_test_find_food_photo_returns_none_when_event_has_no_mapped_food",
+      "community": 1,
+      "norm_label": "test_find_food_photo_returns_none_when_event_has_no_mapped_food()"
+    },
+    {
+      "label": "test_find_food_photo_gates_occasional_keyword_to_one_day_per_week()",
+      "file_type": "code",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L164",
+      "_origin": "ast",
+      "id": "scripts_test_generate_captions_test_find_food_photo_gates_occasional_keyword_to_one_day_per_week",
+      "community": 13,
+      "norm_label": "test_find_food_photo_gates_occasional_keyword_to_one_day_per_week()"
+    },
+    {
+      "label": "test_find_food_photo_excludes_already_chosen_main_photo()",
+      "file_type": "code",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L190",
+      "_origin": "ast",
+      "id": "scripts_test_generate_captions_test_find_food_photo_excludes_already_chosen_main_photo",
+      "community": 14,
+      "norm_label": "test_find_food_photo_excludes_already_chosen_main_photo()"
+    },
+    {
+      "label": "One-off/special-event callers don't pass event/posts_history -- must     behave",
+      "file_type": "rationale",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L139",
+      "_origin": "ast",
+      "id": "scripts_test_generate_captions_rationale_139",
+      "community": 12,
+      "norm_label": "one-off/special-event callers don't pass event/posts_history -- must     behave"
+    },
+    {
+      "label": "pizza is served every day, so it must not attach on every event's     'today' po",
+      "file_type": "rationale",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L165",
+      "_origin": "ast",
+      "id": "scripts_test_generate_captions_rationale_165",
+      "community": 13,
+      "norm_label": "pizza is served every day, so it must not attach on every event's     'today' po"
+    },
+    {
+      "label": "A filename that contains BOTH an event keyword and a food keyword     (e.g. poke",
+      "file_type": "rationale",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L191",
+      "_origin": "ast",
+      "id": "scripts_test_generate_captions_rationale_191",
+      "community": 14,
+      "norm_label": "a filename that contains both an event keyword and a food keyword     (e.g. poke"
     }
   ],
   "links": [
@@ -29,13 +879,1012 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CLAUDE.md",
-      "source_location": "L1",
+      "source_location": "L35",
       "weight": 1.0,
       "source": "claude",
       "target": "claude_graphify",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude",
+      "target": "claude_sunday_social_media",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "HOW-TO-USE-WEEKLY.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "how_to_use_weekly",
+      "target": "how_to_use_weekly_how_to_use_this_every_week",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "readme",
+      "target": "how_to_use_weekly",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "HOW-TO-USE-WEEKLY.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "how_to_use_weekly_how_to_use_this_every_week",
+      "target": "how_to_use_weekly_during_the_week",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "HOW-TO-USE-WEEKLY.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "how_to_use_weekly_how_to_use_this_every_week",
+      "target": "how_to_use_weekly_sunday_or_whenever_ask_for_it",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "HOW-TO-USE-WEEKLY.md",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "how_to_use_weekly_how_to_use_this_every_week",
+      "target": "how_to_use_weekly_the_golden_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme",
+      "target": "readme_backyard_brew_weekly_social_content_workflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "readme_backyard_brew_weekly_social_content_workflow",
+      "target": "readme_how_it_flows",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "readme_backyard_brew_weekly_social_content_workflow",
+      "target": "readme_notes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "readme_backyard_brew_weekly_social_content_workflow",
+      "target": "readme_start_here",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "readme_backyard_brew_weekly_social_content_workflow",
+      "target": "readme_what_s_in_here",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "scripts_classify_photos",
+      "target": "scripts_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "scripts_classify_photos",
+      "target": "scripts_classify_photos_manual_kind",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "scripts_classify_photos",
+      "target": "scripts_classify_photos_needs_classification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "scripts_classify_photos",
+      "target": "scripts_classify_photos_pool_claimed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "scripts_classify_photos",
+      "target": "scripts_classify_photos_read_capture_time",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_classify_photos_rationale_1",
+      "target": "scripts_classify_photos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "scripts_generate_captions",
+      "target": "scripts_classify_photos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_test_classify_photos",
+      "target": "scripts_classify_photos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "scripts_test_generate_captions",
+      "target": "scripts_classify_photos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "scripts_classify_photos_rationale_30",
+      "target": "scripts_classify_photos_manual_kind",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "scripts_classify_photos_rationale_39",
+      "target": "scripts_classify_photos_pool_claimed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "scripts_classify_photos_rationale_59",
+      "target": "scripts_classify_photos_needs_classification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "scripts_classify_photos_rationale_69",
+      "target": "scripts_classify_photos_read_capture_time",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/config.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_config_rationale_1",
+      "target": "scripts_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "scripts_generate_captions",
+      "target": "scripts_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scripts_test_generate_captions",
+      "target": "scripts_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "scripts_generate_captions",
+      "target": "scripts_generate_captions_dow_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L136",
+      "weight": 1.0,
+      "source": "scripts_generate_captions",
+      "target": "scripts_generate_captions_find_deal_photo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "scripts_generate_captions",
+      "target": "scripts_generate_captions_find_food_photo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "scripts_generate_captions",
+      "target": "scripts_generate_captions_find_photo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "scripts_generate_captions",
+      "target": "scripts_generate_captions_list_photos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L260",
+      "weight": 1.0,
+      "source": "scripts_generate_captions",
+      "target": "scripts_generate_captions_load_recurring_by_day",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "scripts_generate_captions",
+      "target": "scripts_generate_captions_parse_date",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L149",
+      "weight": 1.0,
+      "source": "scripts_generate_captions",
+      "target": "scripts_generate_captions_photo_last_used",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L185",
+      "weight": 1.0,
+      "source": "scripts_generate_captions",
+      "target": "scripts_generate_captions_pick_pool_photo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "scripts_generate_captions",
+      "target": "scripts_generate_captions_pool_candidates",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L206",
+      "weight": 1.0,
+      "source": "scripts_generate_captions",
+      "target": "scripts_generate_captions_render_generated_images",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L248",
+      "weight": 1.0,
+      "source": "scripts_generate_captions",
+      "target": "scripts_generate_captions_scheduled_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "scripts_generate_captions",
+      "target": "scripts_generate_captions_slug_from_default",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "scripts_generate_captions",
+      "target": "scripts_generate_captions_slug_from_event",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L239",
+      "weight": 1.0,
+      "source": "scripts_generate_captions",
+      "target": "scripts_generate_captions_suggest_enhance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "scripts_generate_captions",
+      "target": "scripts_generate_captions_today_local",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_generate_captions_rationale_1",
+      "target": "scripts_generate_captions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "scripts_test_generate_captions",
+      "target": "scripts_generate_captions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L222",
+      "weight": 1.0,
+      "source": "scripts_generate_captions_render_generated_images",
+      "target": "scripts_generate_captions_parse_date",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L127",
+      "weight": 1.0,
+      "source": "scripts_generate_captions_find_food_photo",
+      "target": "scripts_generate_captions_dow_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L231",
+      "weight": 1.0,
+      "source": "scripts_generate_captions_render_generated_images",
+      "target": "scripts_generate_captions_dow_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "scripts_generate_captions_rationale_43",
+      "target": "scripts_generate_captions_slug_from_default",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L223",
+      "weight": 1.0,
+      "source": "scripts_generate_captions_render_generated_images",
+      "target": "scripts_generate_captions_slug_from_event",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L141",
+      "weight": 1.0,
+      "source": "scripts_generate_captions_find_deal_photo",
+      "target": "scripts_generate_captions_list_photos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "scripts_generate_captions_find_photo",
+      "target": "scripts_generate_captions_list_photos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L173",
+      "weight": 1.0,
+      "source": "scripts_generate_captions_pool_candidates",
+      "target": "scripts_generate_captions_list_photos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L97",
+      "weight": 1.0,
+      "source": "scripts_generate_captions_find_photo",
+      "target": "scripts_generate_captions_pick_pool_photo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "scripts_generate_captions_rationale_67",
+      "target": "scripts_generate_captions_find_photo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "scripts_generate_captions_find_food_photo",
+      "target": "scripts_generate_captions_pick_pool_photo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "scripts_generate_captions_rationale_105",
+      "target": "scripts_generate_captions_find_food_photo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "scripts_generate_captions_rationale_137",
+      "target": "scripts_generate_captions_find_deal_photo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L224",
+      "weight": 1.0,
+      "source": "scripts_generate_captions_render_generated_images",
+      "target": "scripts_generate_captions_find_deal_photo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L171",
+      "weight": 1.0,
+      "source": "scripts_generate_captions_pool_candidates",
+      "target": "scripts_generate_captions_photo_last_used",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L150",
+      "weight": 1.0,
+      "source": "scripts_generate_captions_rationale_150",
+      "target": "scripts_generate_captions_photo_last_used",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L191",
+      "weight": 1.0,
+      "source": "scripts_generate_captions_pick_pool_photo",
+      "target": "scripts_generate_captions_pool_candidates",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L167",
+      "weight": 1.0,
+      "source": "scripts_generate_captions_rationale_167",
+      "target": "scripts_generate_captions_pool_candidates",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L186",
+      "weight": 1.0,
+      "source": "scripts_generate_captions_rationale_186",
+      "target": "scripts_generate_captions_pick_pool_photo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L207",
+      "weight": 1.0,
+      "source": "scripts_generate_captions_rationale_207",
+      "target": "scripts_generate_captions_render_generated_images",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L240",
+      "weight": 1.0,
+      "source": "scripts_generate_captions_rationale_240",
+      "target": "scripts_generate_captions_suggest_enhance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L249",
+      "weight": 1.0,
+      "source": "scripts_generate_captions_rationale_249",
+      "target": "scripts_generate_captions_scheduled_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "scripts_test_classify_photos",
+      "target": "scripts_test_classify_photos_test_manual_kind_reads_vibe_and_spotlight_suffixes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "scripts_test_classify_photos",
+      "target": "scripts_test_classify_photos_test_needs_classification_allows_plain_photos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scripts_test_classify_photos",
+      "target": "scripts_test_classify_photos_test_needs_classification_skips_known_suffixes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "scripts_test_classify_photos",
+      "target": "scripts_test_classify_photos_test_needs_classification_skips_video_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "scripts_test_classify_photos",
+      "target": "scripts_test_classify_photos_test_pool_claimed_matches_event_keyword",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "scripts_test_classify_photos",
+      "target": "scripts_test_classify_photos_test_pool_claimed_matches_food_keyword",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "scripts_test_classify_photos",
+      "target": "scripts_test_classify_photos_test_pool_claimed_recognizes_an_events_own_default_art_filename",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "scripts_test_classify_photos",
+      "target": "scripts_test_classify_photos_test_read_capture_time_falls_back_to_mtime",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "scripts_test_classify_photos_rationale_17",
+      "target": "scripts_test_classify_photos_test_needs_classification_skips_video_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "scripts_test_generate_captions",
+      "target": "scripts_test_generate_captions_test_find_deal_photo_matches_date_and_slug_with_deal_suffix",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "scripts_test_generate_captions",
+      "target": "scripts_test_generate_captions_test_find_deal_photo_returns_none_when_absent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L148",
+      "weight": 1.0,
+      "source": "scripts_test_generate_captions",
+      "target": "scripts_test_generate_captions_test_find_food_photo_attaches_mapped_food_photo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L190",
+      "weight": 1.0,
+      "source": "scripts_test_generate_captions",
+      "target": "scripts_test_generate_captions_test_find_food_photo_excludes_already_chosen_main_photo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L164",
+      "weight": 1.0,
+      "source": "scripts_test_generate_captions",
+      "target": "scripts_test_generate_captions_test_find_food_photo_gates_occasional_keyword_to_one_day_per_week",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L157",
+      "weight": 1.0,
+      "source": "scripts_test_generate_captions",
+      "target": "scripts_test_generate_captions_test_find_food_photo_returns_none_when_event_has_no_mapped_food",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "scripts_test_generate_captions",
+      "target": "scripts_test_generate_captions_test_find_photo_dated_match_still_wins_over_pool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L130",
+      "weight": 1.0,
+      "source": "scripts_test_generate_captions",
+      "target": "scripts_test_generate_captions_test_find_photo_falls_back_to_default_when_pool_empty",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L121",
+      "weight": 1.0,
+      "source": "scripts_test_generate_captions",
+      "target": "scripts_test_generate_captions_test_find_photo_falls_through_to_pool_when_no_dated_match",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "scripts_test_generate_captions",
+      "target": "scripts_test_generate_captions_test_find_photo_without_event_keeps_old_behavior",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "scripts_test_generate_captions",
+      "target": "scripts_test_generate_captions_test_photo_last_used_returns_most_recent_date_per_filename",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "scripts_test_generate_captions",
+      "target": "scripts_test_generate_captions_test_pick_pool_photo_breaks_never_used_ties_toward_newest_capture_time",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "scripts_test_generate_captions",
+      "target": "scripts_test_generate_captions_test_pick_pool_photo_excludes_the_events_own_default_photo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "scripts_test_generate_captions",
+      "target": "scripts_test_generate_captions_test_pick_pool_photo_excludes_video_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "scripts_test_generate_captions",
+      "target": "scripts_test_generate_captions_test_pick_pool_photo_picks_oldest_last_used_when_all_used_photos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "scripts_test_generate_captions",
+      "target": "scripts_test_generate_captions_test_pick_pool_photo_prefers_never_used_photo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "scripts_test_generate_captions",
+      "target": "scripts_test_generate_captions_test_pick_pool_photo_returns_none_when_no_candidates",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "scripts_test_generate_captions",
+      "target": "scripts_test_generate_captions_test_render_generated_images_sets_generated_image_and_skips_missing_photos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "scripts_test_generate_captions",
+      "target": "scripts_test_generate_captions_test_slug_from_default_strips_art_and_teaser_suffixes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L139",
+      "weight": 1.0,
+      "source": "scripts_test_generate_captions_rationale_139",
+      "target": "scripts_test_generate_captions_test_find_photo_without_event_keeps_old_behavior",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L165",
+      "weight": 1.0,
+      "source": "scripts_test_generate_captions_rationale_165",
+      "target": "scripts_test_generate_captions_test_find_food_photo_gates_occasional_keyword_to_one_day_per_week",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L191",
+      "weight": 1.0,
+      "source": "scripts_test_generate_captions_rationale_191",
+      "target": "scripts_test_generate_captions_test_find_food_photo_excludes_already_chosen_main_photo",
+      "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "02d6a511be8e2187124a8047d6bc16eecf8f49c8"
+  "built_at_commit": "c10e10bd2fcfa87199a521e8b823aa14b5f4e38d"
 }

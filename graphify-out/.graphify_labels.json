@@ -1,3 +1,17 @@
 {
-  "0": "CLAUDE.md"
+  "0": "CLAUDE.md",
+  "1": "test_generate_captions.py",
+  "2": "classify_photos.py",
+  "3": "Backyard Brew — Weekly Social Content Workflow",
+  "4": "test_classify_photos.py",
+  "5": "generate_captions.py",
+  "6": "_pick_pool_photo",
+  "7": "render_generated_images",
+  "8": "_pool_candidates",
+  "9": "find_food_photo",
+  "10": "find_deal_photo",
+  "11": "slug_from_default",
+  "12": "test_find_photo_without_event_keeps_old_behavior",
+  "13": "test_find_food_photo_gates_occasional_keyword_to_one_day_per_week",
+  "14": "test_find_food_photo_excludes_already_chosen_main_photo"
 }

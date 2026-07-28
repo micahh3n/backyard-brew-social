@@ -4,24 +4,19 @@
     "ast_hash": "1cfe068865df8f43a39f0cb65bbc9170",
     "semantic_hash": ""
   },
-  "scripts/anthropic_client.py": {
-    "mtime": 1783709726.6589043,
-    "ast_hash": "bb57e89717bd0ce8503e510a27b81d41",
-    "semantic_hash": ""
-  },
   "scripts/build_preview.py": {
     "mtime": 1783730388.3680918,
     "ast_hash": "9bc348cdccb875dbedcbca0069215560",
     "semantic_hash": ""
   },
   "scripts/classify_photos.py": {
-    "mtime": 1783730388.372121,
-    "ast_hash": "4b720a195d0c94669167a511e052db2a",
+    "mtime": 1783879868.0131063,
+    "ast_hash": "4481c975c02fb17afdd22e4875de96f6",
     "semantic_hash": ""
   },
   "scripts/config.py": {
-    "mtime": 1783730388.3754282,
-    "ast_hash": "c632a4de064b9e2c72869ec037474fcc",
+    "mtime": 1783880195.5891557,
+    "ast_hash": "df810c592c24aa03add18da945b84760",
     "semantic_hash": ""
   },
   "scripts/flyer_render.py": {
@@ -30,8 +25,8 @@
     "semantic_hash": ""
   },
   "scripts/generate_captions.py": {
-    "mtime": 1783730388.3774402,
-    "ast_hash": "b85a95136e40621f665e99da54bd09e1",
+    "mtime": 1783879834.5653474,
+    "ast_hash": "836336bc2c57d77d44784a66f8006d88",
     "semantic_hash": ""
   },
   "scripts/process_photos.py": {
@@ -39,19 +34,9 @@
     "ast_hash": "181d3ae108fe900f910dad1564bbf1aa",
     "semantic_hash": ""
   },
-  "scripts/scheduling.py": {
-    "mtime": 1783661657.9582083,
-    "ast_hash": "89c3b1e61f00215ef886c42b69cb3938",
-    "semantic_hash": ""
-  },
   "scripts/store.py": {
     "mtime": 1783705176.845179,
     "ast_hash": "5a0ec6c766d2e0d8d25a4ce47ec86925",
-    "semantic_hash": ""
-  },
-  "scripts/test_anthropic_client.py": {
-    "mtime": 1783709768.5265205,
-    "ast_hash": "2e6a4ef3e4fded58cee12f181a9c6e12",
     "semantic_hash": ""
   },
   "scripts/test_build_preview.py": {
@@ -60,8 +45,8 @@
     "semantic_hash": ""
   },
   "scripts/test_classify_photos.py": {
-    "mtime": 1783730388.3805735,
-    "ast_hash": "a96a1790945afdf3e81b2e0e7ce7861a",
+    "mtime": 1783880244.5597763,
+    "ast_hash": "093ac9ebe8c46dcf0e1e3bd668d41e48",
     "semantic_hash": ""
   },
   "scripts/test_flyer_render.py": {
@@ -70,8 +55,8 @@
     "semantic_hash": ""
   },
   "scripts/test_generate_captions.py": {
-    "mtime": 1783730388.3805735,
-    "ast_hash": "ac6012763147fbcdb27ab77d7a3a0e1d",
+    "mtime": 1783880319.9352446,
+    "ast_hash": "909f73283e2861d9b569fafa9cd7f772",
     "semantic_hash": ""
   },
   "scripts/test_process_photos.py": {
@@ -79,29 +64,9 @@
     "ast_hash": "41291c8b72b544966907cd70f30d66b6",
     "semantic_hash": ""
   },
-  "scripts/test_scheduling.py": {
-    "mtime": 1783661657.964258,
-    "ast_hash": "954f22148e6930a6445839fa4f78d888",
-    "semantic_hash": ""
-  },
   "scripts/test_store.py": {
     "mtime": 1783705216.860439,
     "ast_hash": "6a14433f8fb3b09837373dd3ff892cf4",
-    "semantic_hash": ""
-  },
-  "scripts/test_weather.py": {
-    "mtime": 1783661657.9647696,
-    "ast_hash": "9ae753abf577f222ef6879ae4e36333b",
-    "semantic_hash": ""
-  },
-  "scripts/weather.py": {
-    "mtime": 1783661657.9647696,
-    "ast_hash": "96300878a8e136954a032bded6796e9b",
-    "semantic_hash": ""
-  },
-  ".github/workflows/sunday-generate.yml": {
-    "mtime": 1783871922.6463568,
-    "ast_hash": "fc0e3d70f4be9d517c8180ed27d2dd41",
     "semantic_hash": ""
   },
   ".superpowers/sdd/final-review-fix-report.md": {
@@ -235,23 +200,18 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1783772109.860979,
-    "ast_hash": "8a6643a420fdad6bfb583523bc6cef16",
+    "mtime": 1783880414.4897935,
+    "ast_hash": "c131fb08e963b17b417f62a044842ba2",
     "semantic_hash": ""
   },
   "HOW-TO-USE-WEEKLY.md": {
-    "mtime": 1783730388.3680918,
-    "ast_hash": "0b4cf7bc02e99ece03a771ec24d54653",
+    "mtime": 1783880493.5029655,
+    "ast_hash": "42d33295f2c759cf75367960a9963f66",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1783662730.2427256,
-    "ast_hash": "ef5548356b05dec3321a37a8d77be777",
-    "semantic_hash": ""
-  },
-  "SETUP.md": {
-    "mtime": 1783661657.9535563,
-    "ast_hash": "8b8288e48d9435dc3529a093310616cd",
+    "mtime": 1783880439.540894,
+    "ast_hash": "2207894c4df3cc16f130247230698cd5",
     "semantic_hash": ""
   },
   "_preview_test/poker_example.html": {
@@ -315,13 +275,13 @@
     "semantic_hash": ""
   },
   "preview/this-week.html": {
-    "mtime": 1783705299.7762756,
-    "ast_hash": "ed72af4025b5459edfc441e046f64029",
+    "mtime": 1783880772.6340446,
+    "ast_hash": "8ed1c20617dbf0377428cb7917a8884f",
     "semantic_hash": ""
   },
   "requirements.txt": {
-    "mtime": 1783702094.5503838,
-    "ast_hash": "439836f3da3e50411509e5fe57ab4b1b",
+    "mtime": 1783880568.0255086,
+    "ast_hash": "90fd2bc3f0466187e4297188af1f227e",
     "semantic_hash": ""
   },
   "_preview_test/bg_poker.jpg": {
@@ -1165,8 +1125,8 @@
     "semantic_hash": ""
   },
   "photos/_generated/backyard-brew-post-bingo-night-2026-07-13.png": {
-    "mtime": 1783705298.7438362,
-    "ast_hash": "d7450b8bf4ec03f3515d17f63001def7",
+    "mtime": 1783878959.907608,
+    "ast_hash": "e8d89eacbe184cd3006be4453d4cf62a",
     "semantic_hash": ""
   },
   "photos/_generated/backyard-brew-post-karaoke-night-2026-07-17.png": {
@@ -1267,6 +1227,46 @@
   "photos/IMG_8847.MP4": {
     "mtime": 1783539333.6420612,
     "ast_hash": "9ae304823e7bea223433bbf8547ae65a",
+    "semantic_hash": ""
+  },
+  "photos/_generated/backyard-brew-post-behind-the-scenes-2026-07-18.png": {
+    "mtime": 1783878959.8888657,
+    "ast_hash": "41228125b7a2cabd287a8687b9e06fa7",
+    "semantic_hash": ""
+  },
+  "photos/_generated/backyard-brew-post-karaoke-night-2026-07-19.png": {
+    "mtime": 1783878959.9234223,
+    "ast_hash": "dca85b7b664ca4c480ed62df127509fd",
+    "semantic_hash": ""
+  },
+  "photos/_generated/backyard-brew-post-pickleball-open-play-2026-07-15.png": {
+    "mtime": 1783878959.9308665,
+    "ast_hash": "2d87d6ab5d55c4e6a388dd50196b9d89",
+    "semantic_hash": ""
+  },
+  "photos/_generated/backyard-brew-post-tacos-poker-club-2026-07-14.png": {
+    "mtime": 1783878959.9525058,
+    "ast_hash": "a16c412254e47f7237d3bcdd6e42fbe5",
+    "semantic_hash": ""
+  },
+  "photos/_generated/backyard-brew-post-wisconsin-spotlight-2026-07-19.png": {
+    "mtime": 1783878959.972059,
+    "ast_hash": "467a05b3c2a08578d26ae8b4fd5683f7",
+    "semantic_hash": ""
+  },
+  "photos/_generated/backyard-brew-post-behind-the-scenes-2026-07-16.png": {
+    "mtime": 1783880734.4396813,
+    "ast_hash": "4debdb70e795f48404a6a7cf44a9f1f6",
+    "semantic_hash": ""
+  },
+  "photos/_generated/backyard-brew-post-course-trail-feature-2026-07-18.png": {
+    "mtime": 1783880734.4574811,
+    "ast_hash": "325dcbdc44a386d13eea038d9ab23b32",
+    "semantic_hash": ""
+  },
+  "photos/_generated/backyard-brew-post-wisconsin-spotlight-2026-07-17.png": {
+    "mtime": 1783880734.4716458,
+    "ast_hash": "36c13ce29595420870490f3f58121d40",
     "semantic_hash": ""
   }
 }

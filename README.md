@@ -1,41 +1,109 @@
-# Backyard Brew — Weekly Social Content Workflow
+# Backyard Brew — Social Media & Online Presence
 
-Weekly Instagram + Facebook content for **Backyard Brew** (Ashwaubenon, WI).
-No GitHub Actions, no API key -- ask Claude Code directly ("run sunday
-social media") and get the week's captions + posting schedule in chat, plus
-help editing photos on-brand.
+Everything for the bar's Instagram, Facebook, Google Business Profile, and
+growth. Ashwaubenon, WI.
 
-## Start here
-- **Using it week to week?** → **[HOW-TO-USE-WEEKLY.md](HOW-TO-USE-WEEKLY.md)**
+Claude Code does the writing. A person does the posting. Nothing goes out
+automatically.
+
+---
+
+## Using it (no terminal needed)
+
+Open the **Claude app** → **Code** tab → **Local** → **Select folder** → pick
+this folder. Type `/` and the commands appear.
+
+The brand skill in `.claude/skills/` and the commands in `.claude/commands/`
+load automatically when this folder is open. Nothing to install for that.
+
+### Optional setup
+
+```bash
+bash setup.sh
+```
+
+Only needed for two extras: the PDF builder (`playbook/make-pdfs.py`) and the
+local flyer renderer. It also links the brand skill into `~/.claude/skills/`
+so it works outside this folder. Re-run it after a `git pull`.
+
+You can also just ask Claude in the app: *"run bash setup.sh"*.
+
+## Then read this
+
+**[playbook/1-START-HERE.md](playbook/1-START-HERE.md)**
+
+Four printable sheets, written for someone who has never used Claude Code:
+
+| Sheet | For |
+|---|---|
+| [1-START-HERE](playbook/1-START-HERE.md) | What everything is and how to open it |
+| [2-MAKE-A-GRAPHIC](playbook/2-MAKE-A-GRAPHIC.md) | Making a poster or promo image |
+| [3-EVERY-DAY](playbook/3-EVERY-DAY.md) | Stories, Facebook groups, comments |
+| [4-EVERY-WEEK](playbook/4-EVERY-WEEK.md) | Sunday. The whole week's posts |
+
+Print them from `playbook/pdf/`. Edit the `.md` files anytime, then ask Claude
+to *"rebuild the playbook PDFs"* (or run `python3 playbook/make-pdfs.py`).
+
+---
+
+## The four commands
+
+Start Claude with `claude` inside this folder, then type `/`:
+
+| Command | Does |
+|---|---|
+| `/sunday` | Writes the week's 21 posts, ready for Meta Business Suite |
+| `/graphic` | Writes a Gemini Image prompt, then the captions |
+| `/reply` | Turns a review or comment into a professional response |
+| `/growth-week` | Reviews the week, hands back a ranked action list |
+
+Plain English works too. Claude already knows the hours, events, prices,
+voice, which nights are slow, and what the goals are.
+
+---
 
 ## What's in here
+
 ```
-photos/                 Your event photos (dropped anytime)
-  _generated/           Finished flyer images (rendered on request)
-assets/logo/            Your logo.png for watermarks/flyers
+playbook/               The four printable sheets, plus the PDF builder
+.claude/skills/         The brand brain: voice, facts, operations, growth, replies
+.claude/commands/       The four commands above
+photos/                 Photos for posts. Drop them in anytime
+  _generated/           Finished flyers rendered locally
+assets/logo/            The real logo
 assets/fonts/           Brand fonts
-recurring_events.csv    Your standing weekly schedule -- edit anytime
-posts.csv               Special events + a saved record of past posts (optional)
-scripts/                Reusable helpers Claude Code calls while doing this by hand
-  config.py             Brand colors, timing, campaign rhythms
-  generate_captions.py  Photo-picking + scheduling helpers (no CLI entry point)
-  process_photos.py     Crop/resize/enhance + flyer builder
-  classify_photos.py    Filename-convention helpers (_vibe/_spotlight tags, photo pool)
-  build_preview.py      Optional HTML preview renderer
-  store.py              CSV read/write helpers
-status.log              Plain-English log, if you want a paper trail
-CLAUDE.md               The instructions Claude Code follows for "run sunday social media"
+recurring_events.csv    The weekly schedule. Edit when events change
+posts.csv               One-off and special events
+scripts/                Photo, scheduling, and flyer-rendering helpers
+  config.py             Brand facts in code. Update alongside the skill
+  flyer_render.py       Brand-exact flyers via HTML/CSS, the no-AI fallback
+CLAUDE.md               How Claude works in this repo
 ```
 
-## How it flows
-1. **You ask** Claude Code: "run sunday social media" (or similar).
-2. **Claude Code writes** the Mon-Sun captions + posting times directly in
-   chat, using `recurring_events.csv`, `photos/`, and the brand voice rules
-   (see `CLAUDE.md`).
-3. **You** copy/paste each caption into Facebook or Instagram's own native
-   scheduler yourself.
-4. **Anytime**, hand Claude Code a photo and ask for an on-brand edit/flyer.
+### Naming photos
 
-## Notes
-- All drinks referenced are 100% Wisconsin-made; captions never name outside brands unless asked.
-- Nothing posts automatically anywhere -- you paste every post yourself.
+| Name it | What happens |
+|---|---|
+| `2026-09-14_bingo.jpg` | Used for that date's Bingo post |
+| `2026-09-14_bingo_teaser.jpg` | Used for the night-before teaser |
+| `2026-09-14_bingo_art.png` | A finished graphic. Posted exactly as-is |
+| `crowd_bingo.jpg` | Joins the Bingo rotation for future weeks |
+| `campfire_vibe.jpg` | A candid, used for filler posts |
+| `regular_winning_spotlight.jpg` | A community shoutout post |
+
+Keywords: `bingo`, `pickleball`, `poker`, `market`, `karaoke`, `pool`. Food
+photos ride along as a second photo: `hotdog`, `taco`, `nachos`,
+`quesadilla`, `pizza`.
+
+The full mapping lives in `scripts/config.py`.
+
+---
+
+## The rules
+
+1. **Nothing posts automatically.** No API keys, no scheduled jobs, no Meta
+   integration. Claude writes, you post.
+2. **Wisconsin only.** Never mention a beer, brand, or product not made in
+   Wisconsin.
+3. **Look at it before you post it.** Spelling, distortion, whether it sounds
+   like us.

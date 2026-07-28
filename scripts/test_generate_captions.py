@@ -176,7 +176,7 @@ def test_find_food_photo_gates_occasional_keyword_to_one_day_per_week(monkeypatc
     }
     event_by_day = {
         "Monday": "Bingo Night", "Tuesday": "Pickleball Open Play",
-        "Wednesday": "Tacos + Poker Club", "Thursday": "Ladies Night + Line Dancing",
+        "Wednesday": "Tacos + Poker Club", "Thursday": "Backyard Market & Brews",
         "Friday": "Karaoke Night", "Saturday": "Pool Night",
     }
     chosen_pick = gc.find_food_photo(event_by_day[chosen_day], day_dates[chosen_day],

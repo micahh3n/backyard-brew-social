@@ -69,3 +69,6 @@
 [2026-07-12 13:02] no image for 'Pool Night' 2026-07-18: 'pool_default_art.jpg' not found in /home/runner/work/backyard-brew-social/backyard-brew-social/photos (check filename spelling/case)
 [2026-07-12 13:03] Sunday job done: generated 3 new post rows (needs_review). Timing source: default-fallback (not yet personalized to Backyard Brew's own data).
 [2026-07-12 13:03] caption API usage: 3 calls, 2388 cache-read input tokens, 1194 cache-write input tokens, 724 uncached input tokens, 1704 output tokens.
+[2026-07-12 13:27] no image for 'Pool Night' 2026-07-15: 'nope.jpg' not found in C:\Users\micah\AppData\Local\Temp\pytest-of-micah\pytest-117\test_render_generated_images_s0 (check filename spelling/case)
+[2026-07-26 19:55] no image for 'Pool Night' 2026-07-15: 'nope.jpg' not found in C:\Users\micah\AppData\Local\Temp\pytest-of-micah\pytest-118\test_render_generated_images_s0 (check filename spelling/case)
+[2026-07-27 23:40] no image for 'Pool Night' 2026-07-15: 'nope.jpg' not found in C:\Users\micah\AppData\Local\Temp\pytest-of-micah\pytest-119\test_render_generated_images_s0 (check filename spelling/case)

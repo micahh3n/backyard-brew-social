@@ -62,8 +62,8 @@ HOURS = {
     "Wednesday": "4pm-9pm",
     "Thursday": "4pm-9pm",
     "Friday": "4pm-12am",
-    "Saturday": "11am-12am (breakfast 6:30am-1pm)",
-    "Sunday": "11am-7pm-ish (breakfast 11am-1pm)",
+    "Saturday": "11am-12am",
+    "Sunday": "11am-7pm-ish",
 }
 
 MEMBERSHIPS = (
@@ -95,7 +95,14 @@ EVENT_ANGLES = {
     "Bingo Night": "Prize-reveal angle -- what are we playing for this week?",
     "Pickleball Open Play": "Challenge/competitive angle -- think you can beat the regulars?",
     "Tacos + Poker Club": "Food first, then the game -- the tacos are the hook.",
-    "Ladies Night + Line Dancing": "Calling all ladies + boot-scootin' hype -- two angles, alternate or combine.",
+    "Backyard Market & Brews": "Community and local-business-first angle, above everything else -- this is a "
+        "small-business showcase, not a party night. Center the vendors and musician as real people/local "
+        "businesses worth supporting, not just 'stuff to look at.' FOMO on the weekly-rotating vendor + musician "
+        "lineup -- 'you never know who'll be out,' never 'gone forever' (vendors do repeat). Never plug disc "
+        "golf/hiking/pickleball as part of THIS event's core pitch -- those are separate draws. Don't tie in "
+        "taco night (not reconfirmed as running alongside). CTAs: vendor/musician signup (DM or "
+        "crew@backyard-brew.com), 'bring cash, bring friends, bring the leashed pup.' Avoid 'Thursdays are for "
+        "the backyard' / 'See you in the backyard' and overly polished ad language.",
     "Karaoke Night": "'Weekend starts NOW' energy.",
     "Pool Night": "Tournament angle -- beat the bartender, win a flight.",
     "Wisconsin Spotlight": "Feature the specific drink named in key_details -- pure appreciation, no CTA pressure.",
@@ -188,7 +195,7 @@ EVENT_PHOTO_KEYWORDS = {
     "Bingo Night": ["bingo"],
     "Pickleball Open Play": ["pickleball"],
     "Tacos + Poker Club": ["poker"],
-    "Ladies Night + Line Dancing": ["linedancing", "ladiesnight", "ladies"],
+    "Backyard Market & Brews": ["market", "vendor", "marketbrews"],
     "Karaoke Night": ["karaoke"],
     "Pool Night": ["pool"],
 }
@@ -205,7 +212,6 @@ FOOD_PHOTO_KEYWORDS = {
     "taco": ["Tacos + Poker Club"],
     "nachos": ["Tacos + Poker Club"],
     "quesadilla": ["Tacos + Poker Club"],
-    "breakfastburrito": ["Pool Night"],
     "pizza": list(EVENT_PHOTO_KEYWORDS.keys()),
 }
 
