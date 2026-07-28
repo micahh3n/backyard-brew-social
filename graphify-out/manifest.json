@@ -1330,8 +1330,8 @@
     "semantic_hash": ""
   },
   "playbook/1-START-HERE.md": {
-    "mtime": 1785216738.6554954,
-    "ast_hash": "d63c9975b19a10dfffd9e621b3ba20a9",
+    "mtime": 1785272333.5678325,
+    "ast_hash": "cca4b972809b1501458e72fa8fae9909",
     "semantic_hash": ""
   },
   "playbook/2-MAKE-A-GRAPHIC.md": {
@@ -1350,23 +1350,23 @@
     "semantic_hash": ""
   },
   "playbook/pdf/1-START-HERE.pdf": {
-    "mtime": 1785217470.7882912,
-    "ast_hash": "3209ed0b250bf0a59e750e7b923e6609",
+    "mtime": 1785272351.040535,
+    "ast_hash": "2a799bafabc428d12e47b39ac4bf00b6",
     "semantic_hash": ""
   },
   "playbook/pdf/2-MAKE-A-GRAPHIC.pdf": {
-    "mtime": 1785217470.9779446,
-    "ast_hash": "4b196fa7d1784728053387c5f0047894",
+    "mtime": 1785272351.3590982,
+    "ast_hash": "b4e83a11178039fccc165b124caf8bc7",
     "semantic_hash": ""
   },
   "playbook/pdf/3-EVERY-DAY.pdf": {
-    "mtime": 1785217471.1485214,
-    "ast_hash": "e52228f9cc74204fd69b2e4947ace66b",
+    "mtime": 1785272351.5658758,
+    "ast_hash": "01f713e7f163d2e519de288146e716ab",
     "semantic_hash": ""
   },
   "playbook/pdf/4-EVERY-WEEK.pdf": {
-    "mtime": 1785217471.2564788,
-    "ast_hash": "b3fa5daf31d52e33c5ad32815cd799e8",
+    "mtime": 1785272351.6814914,
+    "ast_hash": "7287b9edad721aec42d191c257fdc7ad",
     "semantic_hash": ""
   },
   "vendor-market/vendor_sign_in_sheet.pdf": {
@@ -1700,22 +1700,22 @@
     "semantic_hash": ""
   },
   "graphify-out/converted/1-START-HERE_06273d7e.md": {
-    "mtime": 1785217567.2978272,
-    "ast_hash": "60f580022bc9283da738ca9976055a5b",
+    "mtime": 1785272437.5820825,
+    "ast_hash": "0ac7921352d3e3a219be3240866facc6",
     "semantic_hash": ""
   },
   "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md": {
-    "mtime": 1785217567.400365,
+    "mtime": 1785272437.6705856,
     "ast_hash": "331d042cce2d85b3b815fad1ce1ba384",
     "semantic_hash": ""
   },
   "graphify-out/converted/3-EVERY-DAY_5e2281ba.md": {
-    "mtime": 1785217567.5102081,
+    "mtime": 1785272437.753593,
     "ast_hash": "b1f71f37daf680475724e6e0f7b93031",
     "semantic_hash": ""
   },
   "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md": {
-    "mtime": 1785217567.605724,
+    "mtime": 1785272437.8506455,
     "ast_hash": "948f6d6b0f004bb6c6bfe21a50474d3f",
     "semantic_hash": ""
   },
