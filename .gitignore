@@ -23,3 +23,6 @@ Thumbs.db
 
 # Marker file setup.sh drops in a copied skill install
 .installed-by-backyard-brew-setup
+
+# Backups of .docx files replaced when a sheet changed
+playbook/editable/_previous/

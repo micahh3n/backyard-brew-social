@@ -20,13 +20,16 @@ Needs: pip install -r requirements.txt && playwright install chromium
 
 from __future__ import annotations
 
+import hashlib
 import re
+import shutil
 import sys
 from pathlib import Path
 
 PLAYBOOK_DIR = Path(__file__).resolve().parent
 OUT_DIR = PLAYBOOK_DIR / "pdf"
 EDITABLE_DIR = PLAYBOOK_DIR / "editable"
+BACKUP_DIR = EDITABLE_DIR / "_previous"
 
 # Brand colors. Light background on purpose -- these get printed, and a navy
 # page would eat a cartridge per sheet.
@@ -153,7 +156,19 @@ def _add_runs(paragraph, text: str) -> None:
             paragraph.add_run(chunk)
 
 
-def md_to_docx(md_text: str, out_path: Path) -> None:
+def _docx_source_hash(path: Path) -> str | None:
+    """The markdown hash stamped into a .docx when we generated it."""
+    if not path.exists():
+        return None
+    try:
+        from docx import Document
+
+        return Document(str(path)).core_properties.comments or None
+    except Exception:
+        return None
+
+
+def md_to_docx(md_text: str, out_path: Path, source_hash: str = '') -> None:
     """Write an editable Word document he can open in Pages and print.
 
     Deliberately a line walker over the constructs these sheets actually use
@@ -262,6 +277,7 @@ def md_to_docx(md_text: str, out_path: Path) -> None:
             i += 1
         _add_runs(doc.add_paragraph(), " ".join(buf))
 
+    doc.core_properties.comments = source_hash
     doc.save(str(out_path))
 
 
@@ -322,6 +338,7 @@ def main() -> int:
 
     OUT_DIR.mkdir(exist_ok=True)
     EDITABLE_DIR.mkdir(exist_ok=True)
+    replaced: list[str] = []
 
     with sync_playwright() as p:
         browser = p.chromium.launch()
@@ -337,9 +354,33 @@ def main() -> int:
                 format="Letter",
                 print_background=True,
             )
-            md_to_docx(text, EDITABLE_DIR / f"{sheet.stem}.docx")
-            print(f"  {sheet.name}  ->  pdf/ + editable/")
+            # Only rewrite a .docx when its source markdown actually changed.
+            # Someone may have typed into it in Pages (the Facebook groups
+            # table is designed to be filled in by hand), and silently
+            # overwriting that is real lost work.
+            docx_path = EDITABLE_DIR / f"{sheet.stem}.docx"
+            source_hash = hashlib.sha256(text.encode("utf-8")).hexdigest()[:16]
+
+            if "--force" not in sys.argv and _docx_source_hash(docx_path) == source_hash:
+                print(f"  {sheet.name}  ->  pdf/  (.docx already current)")
+            else:
+                if docx_path.exists():
+                    # The markdown moved on. Keep the old copy in case it held
+                    # hand edits, rather than assuming it did not.
+                    BACKUP_DIR.mkdir(exist_ok=True)
+                    shutil.copy2(docx_path, BACKUP_DIR / docx_path.name)
+                    replaced.append(sheet.stem)
+                md_to_docx(text, docx_path, source_hash)
+                print(f"  {sheet.name}  ->  pdf/ + editable/")
         browser.close()
+
+    if replaced:
+        print(
+            f"\nRewrote {len(replaced)} .docx file(s) because the sheet changed:"
+            f"\n  {', '.join(replaced)}"
+            f"\nThe previous versions are in {BACKUP_DIR.name}/ if anything was"
+            "\ntyped into them by hand."
+        )
 
     print(f"\nDone. {len(sheets)} sheets. Print from pdf/, edit in editable/")
     return 0
