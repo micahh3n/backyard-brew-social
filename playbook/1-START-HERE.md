@@ -101,8 +101,16 @@ Everything is in the `backyard-brew-social` folder.
 | `recurring_events.csv` | The weekly schedule. Edit when events change |
 | `posts.csv` | One-off events. Add a row for a party or holiday |
 
-Open any of these in TextEdit. They are plain text files, so edit them
-whenever something changes.
+**Do not open the playbook sheets in TextEdit.** They will look like a wall of
+plain text with symbols everywhere, because that version is written for Claude
+to read, not for you.
+
+To read one, open the PDF in `playbook/pdf/`. To type into one, open the Word
+version in `playbook/editable/` with **Pages**. See the section at the bottom
+of this sheet.
+
+The `.csv` files are the exception. Those are spreadsheets, so open them in
+**Numbers**, which is also already on the Mac.
 
 ### Dropping in photos
 
@@ -169,9 +177,17 @@ Every sheet comes in three forms, all in the `playbook` folder:
 
 | Folder | What it is | Open it with |
 |---|---|---|
-| `pdf/` | For printing and taping up | Preview. Just double-click |
+| `pdf/` | For reading and printing | Preview. Just double-click |
 | `editable/` | Word documents you can type into | **Pages**, already on the Mac |
 | the `.md` files | What Claude reads | Nothing. Leave these alone |
+
+**First time opening one from `editable/`:** double-click it. If it opens in
+TextEdit and looks wrong, right-click the file → **Open With** → **Pages**,
+then check **Always Open With** so it remembers.
+
+You do not need Microsoft Word. Pages is free, already installed, and opens
+these fine. If you happen to have Word already, that works too. Either way,
+print straight from the app when you are done.
 
 **To change something, the easy way is to just ask Claude:**
 
