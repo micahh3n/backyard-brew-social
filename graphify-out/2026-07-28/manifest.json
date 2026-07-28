@@ -200,13 +200,13 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1785216738.7458146,
-    "ast_hash": "ca8c5deea5c78d7763c3fdc99b26e890",
+    "mtime": 1785214138.0898142,
+    "ast_hash": "eb75843b6b29f410d680ea910c5d1c8d",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1785216747.8370247,
-    "ast_hash": "978b99580a0fae4c21267845971f52b5",
+    "mtime": 1785214124.0936909,
+    "ast_hash": "969949515380ed95bae5a261bbfe9f18",
     "semantic_hash": ""
   },
   "_preview_test/poker_example.html": {
@@ -275,8 +275,8 @@
     "semantic_hash": ""
   },
   "requirements.txt": {
-    "mtime": 1785215506.440333,
-    "ast_hash": "9ef24febbffef268cc3bdcd1de0432fa",
+    "mtime": 1785213060.4357133,
+    "ast_hash": "3e8036627b3db88fdc1a586f1dd7ec92",
     "semantic_hash": ""
   },
   "_preview_test/bg_poker.jpg": {
@@ -1265,13 +1265,13 @@
     "semantic_hash": ""
   },
   "playbook/make-pdfs.py": {
-    "mtime": 1785215518.067155,
-    "ast_hash": "ca260a0840035916ded91432529e892e",
+    "mtime": 1785213294.761575,
+    "ast_hash": "4869c73a6175e264b4751099b822a184",
     "semantic_hash": ""
   },
   "setup.sh": {
-    "mtime": 1785215890.3260744,
-    "ast_hash": "7753723b08f3ca1d156c78ed09615e78",
+    "mtime": 1785213448.3928628,
+    "ast_hash": "09c29a90adb6703c90b28773c495c67d",
     "semantic_hash": ""
   },
   ".claude/commands/graphic.md": {
@@ -1290,8 +1290,8 @@
     "semantic_hash": ""
   },
   ".claude/commands/sunday.md": {
-    "mtime": 1785217448.2333663,
-    "ast_hash": "6b98c775199ac2bd7a121dcffcb9ad5b",
+    "mtime": 1785213679.0624857,
+    "ast_hash": "6977aafc43ce07089287b71f9952c5bc",
     "semantic_hash": ""
   },
   ".claude/skills/backyard-brew-brand/SKILL.md": {
@@ -1330,8 +1330,8 @@
     "semantic_hash": ""
   },
   "playbook/1-START-HERE.md": {
-    "mtime": 1785216738.6554954,
-    "ast_hash": "d63c9975b19a10dfffd9e621b3ba20a9",
+    "mtime": 1785214088.5475206,
+    "ast_hash": "3d15f6a95f16097a9d671a98436fa22b",
     "semantic_hash": ""
   },
   "playbook/2-MAKE-A-GRAPHIC.md": {
@@ -1340,33 +1340,33 @@
     "semantic_hash": ""
   },
   "playbook/3-EVERY-DAY.md": {
-    "mtime": 1785215546.9817722,
-    "ast_hash": "b4d2e265b47d9d7a3420ded3a28d13fd",
+    "mtime": 1785214101.54793,
+    "ast_hash": "7818768f0f60898d82f009ea10b92d0a",
     "semantic_hash": ""
   },
   "playbook/4-EVERY-WEEK.md": {
-    "mtime": 1785217468.9711244,
-    "ast_hash": "471bcf27ba2adc6da50f075939dd2c25",
+    "mtime": 1785214088.5835507,
+    "ast_hash": "81f3a4b4896582f37493d5269c51ade7",
     "semantic_hash": ""
   },
   "playbook/pdf/1-START-HERE.pdf": {
-    "mtime": 1785217470.7882912,
-    "ast_hash": "3209ed0b250bf0a59e750e7b923e6609",
+    "mtime": 1785214181.2315888,
+    "ast_hash": "ff7e755f42b417e640558a880ae6d9e8",
     "semantic_hash": ""
   },
   "playbook/pdf/2-MAKE-A-GRAPHIC.pdf": {
-    "mtime": 1785217470.9779446,
-    "ast_hash": "4b196fa7d1784728053387c5f0047894",
+    "mtime": 1785214181.2925549,
+    "ast_hash": "c3c7c85e723cd4df591b0e06414421a8",
     "semantic_hash": ""
   },
   "playbook/pdf/3-EVERY-DAY.pdf": {
-    "mtime": 1785217471.1485214,
-    "ast_hash": "e52228f9cc74204fd69b2e4947ace66b",
+    "mtime": 1785214181.4302585,
+    "ast_hash": "e72b5f5a51dabfd853b12f238848f9b3",
     "semantic_hash": ""
   },
   "playbook/pdf/4-EVERY-WEEK.pdf": {
-    "mtime": 1785217471.2564788,
-    "ast_hash": "b3fa5daf31d52e33c5ad32815cd799e8",
+    "mtime": 1785214181.4900804,
+    "ast_hash": "e334e38ae9a729ccd910d6289d91541c",
     "semantic_hash": ""
   },
   "vendor-market/vendor_sign_in_sheet.pdf": {
@@ -1682,51 +1682,6 @@
   "photos/IMG_8929.MOV": {
     "mtime": 1783990958.0,
     "ast_hash": "8af6ec4884eee4a4ff09226508c0719d",
-    "semantic_hash": ""
-  },
-  ".claude/commands/photos.md": {
-    "mtime": 1785215321.902256,
-    "ast_hash": "72f43c4fb4694486b1d174d2affa63d3",
-    "semantic_hash": ""
-  },
-  ".claude/commands/sync.md": {
-    "mtime": 1785215347.1041281,
-    "ast_hash": "67ec64f89a88089b3c185216b0c378d1",
-    "semantic_hash": ""
-  },
-  "HANDOFF.md": {
-    "mtime": 1785215730.1882365,
-    "ast_hash": "2da0d45f8ce5397fabaee7967bbee8a5",
-    "semantic_hash": ""
-  },
-  "graphify-out/converted/1-START-HERE_06273d7e.md": {
-    "mtime": 1785217567.2978272,
-    "ast_hash": "60f580022bc9283da738ca9976055a5b",
-    "semantic_hash": ""
-  },
-  "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md": {
-    "mtime": 1785217567.400365,
-    "ast_hash": "331d042cce2d85b3b815fad1ce1ba384",
-    "semantic_hash": ""
-  },
-  "graphify-out/converted/3-EVERY-DAY_5e2281ba.md": {
-    "mtime": 1785217567.5102081,
-    "ast_hash": "b1f71f37daf680475724e6e0f7b93031",
-    "semantic_hash": ""
-  },
-  "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md": {
-    "mtime": 1785217567.605724,
-    "ast_hash": "948f6d6b0f004bb6c6bfe21a50474d3f",
-    "semantic_hash": ""
-  },
-  "graphify-out/converted/Vendor_Communication_Templates_63fdc6dc.md": {
-    "mtime": 1785217568.263152,
-    "ast_hash": "eeb18fc9c7379e8d2ddabe209d68606d",
-    "semantic_hash": ""
-  },
-  "graphify-out/converted/vendor_sign_in_sheet_7e46fbee.md": {
-    "mtime": 1785217568.3026698,
-    "ast_hash": "8e8c0a64dec9b4603be7f678d3d91fd6",
     "semantic_hash": ""
   }
 }
