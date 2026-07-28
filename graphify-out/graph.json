@@ -4,14 +4,524 @@
   "graph": {},
   "nodes": [
     {
+      "label": "1-START-HERE_06273d7e.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "graphify_out_converted_1_start_here_06273d7e",
+      "community": 13,
+      "norm_label": "1-start-here_06273d7e.md"
+    },
+    {
+      "label": "Backyard Brew: Start Here",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
+      "community": 13,
+      "norm_label": "backyard brew: start here"
+    },
+    {
+      "label": "First time on this Mac only",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "graphify_out_converted_1_start_here_06273d7e_first_time_on_this_mac_only",
+      "community": 13,
+      "norm_label": "first time on this mac only"
+    },
+    {
+      "label": "Opening it",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "graphify_out_converted_1_start_here_06273d7e_opening_it",
+      "community": 13,
+      "norm_label": "opening it"
+    },
+    {
+      "label": "The six commands",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "graphify_out_converted_1_start_here_06273d7e_the_six_commands",
+      "community": 13,
+      "norm_label": "the six commands"
+    },
+    {
+      "label": "It already knows the bar",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "graphify_out_converted_1_start_here_06273d7e_it_already_knows_the_bar",
+      "community": 13,
+      "norm_label": "it already knows the bar"
+    },
+    {
+      "label": "Where things live",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "graphify_out_converted_1_start_here_06273d7e_where_things_live",
+      "community": 13,
+      "norm_label": "where things live"
+    },
+    {
+      "label": "Dropping in photos",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "graphify_out_converted_1_start_here_06273d7e_dropping_in_photos",
+      "community": 13,
+      "norm_label": "dropping in photos"
+    },
+    {
+      "label": "Sharing with Micah",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "graphify_out_converted_1_start_here_06273d7e_sharing_with_micah",
+      "community": 13,
+      "norm_label": "sharing with micah"
+    },
+    {
+      "label": "The weekly rhythm",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "graphify_out_converted_1_start_here_06273d7e_the_weekly_rhythm",
+      "community": 13,
+      "norm_label": "the weekly rhythm"
+    },
+    {
+      "label": "Three rules",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "graphify_out_converted_1_start_here_06273d7e_three_rules",
+      "community": 13,
+      "norm_label": "three rules"
+    },
+    {
+      "label": "Two things about the app",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "graphify_out_converted_1_start_here_06273d7e_two_things_about_the_app",
+      "community": 13,
+      "norm_label": "two things about the app"
+    },
+    {
+      "label": "Reading, printing, and editing these sheets",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "graphify_out_converted_1_start_here_06273d7e_reading_printing_and_editing_these_sheets",
+      "community": 13,
+      "norm_label": "reading, printing, and editing these sheets"
+    },
+    {
+      "label": "If something is not working",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L76",
+      "_origin": "ast",
+      "id": "graphify_out_converted_1_start_here_06273d7e_if_something_is_not_working",
+      "community": 13,
+      "norm_label": "if something is not working"
+    },
+    {
+      "label": "2-MAKE-A-GRAPHIC_c5f8af17.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17",
+      "community": 24,
+      "norm_label": "2-make-a-graphic_c5f8af17.md"
+    },
+    {
+      "label": "Making a Graphic",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_making_a_graphic",
+      "community": 24,
+      "norm_label": "making a graphic"
+    },
+    {
+      "label": "Step 1. Pick your photo first",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_1_pick_your_photo_first",
+      "community": 24,
+      "norm_label": "step 1. pick your photo first"
+    },
+    {
+      "label": "Step 2. Ask Claude for the prompt",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_2_ask_claude_for_the_prompt",
+      "community": 24,
+      "norm_label": "step 2. ask claude for the prompt"
+    },
+    {
+      "label": "Step 3. Run it through Gemini",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_3_run_it_through_gemini",
+      "community": 24,
+      "norm_label": "step 3. run it through gemini"
+    },
+    {
+      "label": "Step 4. Remove the watermark",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_4_remove_the_watermark",
+      "community": 24,
+      "norm_label": "step 4. remove the watermark"
+    },
+    {
+      "label": "Step 5. Put the real logo on in Canva",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_5_put_the_real_logo_on_in_canva",
+      "community": 24,
+      "norm_label": "step 5. put the real logo on in canva"
+    },
+    {
+      "label": "Step 6. Name it and check it",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_6_name_it_and_check_it",
+      "community": 24,
+      "norm_label": "step 6. name it and check it"
+    },
+    {
+      "label": "Step 7. Post it",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
+      "source_location": "L47",
+      "_origin": "ast",
+      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_7_post_it",
+      "community": 24,
+      "norm_label": "step 7. post it"
+    },
+    {
+      "label": "Backup: when Gemini will not cooperate",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_backup_when_gemini_will_not_cooperate",
+      "community": 24,
+      "norm_label": "backup: when gemini will not cooperate"
+    },
+    {
+      "label": "What good looks like",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_what_good_looks_like",
+      "community": 24,
+      "norm_label": "what good looks like"
+    },
+    {
+      "label": "3-EVERY-DAY_5e2281ba.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "graphify_out_converted_3_every_day_5e2281ba",
+      "community": 25,
+      "norm_label": "3-every-day_5e2281ba.md"
+    },
+    {
+      "label": "Every Day",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "graphify_out_converted_3_every_day_5e2281ba_every_day",
+      "community": 25,
+      "norm_label": "every day"
+    },
+    {
+      "label": "Morning: share the 11am post to Facebook groups",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "graphify_out_converted_3_every_day_5e2281ba_morning_share_the_11am_post_to_facebook_groups",
+      "community": 25,
+      "norm_label": "morning: share the 11am post to facebook groups"
+    },
+    {
+      "label": "How to do it right",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "graphify_out_converted_3_every_day_5e2281ba_how_to_do_it_right",
+      "community": 25,
+      "norm_label": "how to do it right"
+    },
+    {
+      "label": "The line you write above it matters most",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "graphify_out_converted_3_every_day_5e2281ba_the_line_you_write_above_it_matters_most",
+      "community": 25,
+      "norm_label": "the line you write above it matters most"
+    },
+    {
+      "label": "Which groups for which post",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "graphify_out_converted_3_every_day_5e2281ba_which_groups_for_which_post",
+      "community": 25,
+      "norm_label": "which groups for which post"
+    },
+    {
+      "label": "All day: stories",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "graphify_out_converted_3_every_day_5e2281ba_all_day_stories",
+      "community": 25,
+      "norm_label": "all day: stories"
+    },
+    {
+      "label": "First hour after each post: reply to comments",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "graphify_out_converted_3_every_day_5e2281ba_first_hour_after_each_post_reply_to_comments",
+      "community": 25,
+      "norm_label": "first hour after each post: reply to comments"
+    },
+    {
+      "label": "While you are there: take photos",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "graphify_out_converted_3_every_day_5e2281ba_while_you_are_there_take_photos",
+      "community": 25,
+      "norm_label": "while you are there: take photos"
+    },
+    {
+      "label": "The daily checklist",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "graphify_out_converted_3_every_day_5e2281ba_the_daily_checklist",
+      "community": 25,
+      "norm_label": "the daily checklist"
+    },
+    {
+      "label": "4-EVERY-WEEK_dacbef1b.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "graphify_out_converted_4_every_week_dacbef1b",
+      "community": 26,
+      "norm_label": "4-every-week_dacbef1b.md"
+    },
+    {
+      "label": "Every Week",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "graphify_out_converted_4_every_week_dacbef1b_every_week",
+      "community": 26,
+      "norm_label": "every week"
+    },
+    {
+      "label": "1. Drop in this week's photos (5 min)",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "graphify_out_converted_4_every_week_dacbef1b_1_drop_in_this_week_s_photos_5_min",
+      "community": 26,
+      "norm_label": "1. drop in this week's photos (5 min)"
+    },
+    {
+      "label": "2. Write the week's posts (10 min)",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "graphify_out_converted_4_every_week_dacbef1b_2_write_the_week_s_posts_10_min",
+      "community": 26,
+      "norm_label": "2. write the week's posts (10 min)"
+    },
+    {
+      "label": "3. Schedule everything in Meta Business Suite (30 min)",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "graphify_out_converted_4_every_week_dacbef1b_3_schedule_everything_in_meta_business_suite_30_min",
+      "community": 26,
+      "norm_label": "3. schedule everything in meta business suite (30 min)"
+    },
+    {
+      "label": "4. Google Business Profile (10 min)",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "graphify_out_converted_4_every_week_dacbef1b_4_google_business_profile_10_min",
+      "community": 26,
+      "norm_label": "4. google business profile (10 min)"
+    },
+    {
+      "label": "5. Reviews (5 min)",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "graphify_out_converted_4_every_week_dacbef1b_5_reviews_5_min",
+      "community": 26,
+      "norm_label": "5. reviews (5 min)"
+    },
+    {
+      "label": "6. Ask what to work on (5 min, optional)",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "graphify_out_converted_4_every_week_dacbef1b_6_ask_what_to_work_on_5_min_optional",
+      "community": 26,
+      "norm_label": "6. ask what to work on (5 min, optional)"
+    },
+    {
+      "label": "7. Send it to Micah (1 min)",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "graphify_out_converted_4_every_week_dacbef1b_7_send_it_to_micah_1_min",
+      "community": 26,
+      "norm_label": "7. send it to micah (1 min)"
+    },
+    {
+      "label": "The Sunday checklist",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "graphify_out_converted_4_every_week_dacbef1b_the_sunday_checklist",
+      "community": 26,
+      "norm_label": "the sunday checklist"
+    },
+    {
+      "label": "Vendor_Communication_Templates_63fdc6dc.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Vendor_Communication_Templates_63fdc6dc.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "graphify_out_converted_vendor_communication_templates_63fdc6dc",
+      "community": 28,
+      "norm_label": "vendor_communication_templates_63fdc6dc.md"
+    },
+    {
+      "label": "1. The Rundown \u2014 send when someone asks for more info or to be in the market",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Vendor_Communication_Templates_63fdc6dc.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "graphify_out_converted_vendor_communication_templates_63fdc6dc_1_the_rundown_send_when_someone_asks_for_more_info_or_to_be_in_the_market",
+      "community": 28,
+      "norm_label": "1. the rundown \u2014 send when someone asks for more info or to be in the market"
+    },
+    {
+      "label": "2. Polite Decline \u2014 similar vendor already booked for this event",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Vendor_Communication_Templates_63fdc6dc.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "graphify_out_converted_vendor_communication_templates_63fdc6dc_2_polite_decline_similar_vendor_already_booked_for_this_event",
+      "community": 28,
+      "norm_label": "2. polite decline \u2014 similar vendor already booked for this event"
+    },
+    {
+      "label": "3. Vendor Spots Full \u2014 waitlist reply",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Vendor_Communication_Templates_63fdc6dc.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "graphify_out_converted_vendor_communication_templates_63fdc6dc_3_vendor_spots_full_waitlist_reply",
+      "community": 28,
+      "norm_label": "3. vendor spots full \u2014 waitlist reply"
+    },
+    {
+      "label": "4. Confirmed Vendor Info Sheet \u2014 send a few days before the event",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Vendor_Communication_Templates_63fdc6dc.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "graphify_out_converted_vendor_communication_templates_63fdc6dc_4_confirmed_vendor_info_sheet_send_a_few_days_before_the_event",
+      "community": 28,
+      "norm_label": "4. confirmed vendor info sheet \u2014 send a few days before the event"
+    },
+    {
+      "label": "vendor_sign_in_sheet_7e46fbee.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/vendor_sign_in_sheet_7e46fbee.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "graphify_out_converted_vendor_sign_in_sheet_7e46fbee",
+      "community": 29,
+      "norm_label": "vendor_sign_in_sheet_7e46fbee.md"
+    },
+    {
       "label": "photos.md",
       "file_type": "document",
       "source_file": ".claude/commands/photos.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "claude_commands_photos",
       "community": 22,
-      "norm_label": "photos.md"
+      "norm_label": "photos.md",
+      "id": "claude_commands_photos"
     },
     {
       "label": "Find what needs naming",
@@ -19,9 +529,9 @@
       "source_file": ".claude/commands/photos.md",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "claude_commands_photos_find_what_needs_naming",
       "community": 22,
-      "norm_label": "find what needs naming"
+      "norm_label": "find what needs naming",
+      "id": "claude_commands_photos_find_what_needs_naming"
     },
     {
       "label": "Look at each one",
@@ -29,9 +539,9 @@
       "source_file": ".claude/commands/photos.md",
       "source_location": "L31",
       "_origin": "ast",
-      "id": "claude_commands_photos_look_at_each_one",
       "community": 22,
-      "norm_label": "look at each one"
+      "norm_label": "look at each one",
+      "id": "claude_commands_photos_look_at_each_one"
     },
     {
       "label": "Decide the name",
@@ -39,9 +549,9 @@
       "source_file": ".claude/commands/photos.md",
       "source_location": "L46",
       "_origin": "ast",
-      "id": "claude_commands_photos_decide_the_name",
       "community": 22,
-      "norm_label": "decide the name"
+      "norm_label": "decide the name",
+      "id": "claude_commands_photos_decide_the_name"
     },
     {
       "label": "Judgment calls",
@@ -49,9 +559,9 @@
       "source_file": ".claude/commands/photos.md",
       "source_location": "L71",
       "_origin": "ast",
-      "id": "claude_commands_photos_judgment_calls",
       "community": 22,
-      "norm_label": "judgment calls"
+      "norm_label": "judgment calls",
+      "id": "claude_commands_photos_judgment_calls"
     },
     {
       "label": "Show the plan before touching anything",
@@ -59,9 +569,9 @@
       "source_file": ".claude/commands/photos.md",
       "source_location": "L82",
       "_origin": "ast",
-      "id": "claude_commands_photos_show_the_plan_before_touching_anything",
       "community": 22,
-      "norm_label": "show the plan before touching anything"
+      "norm_label": "show the plan before touching anything",
+      "id": "claude_commands_photos_show_the_plan_before_touching_anything"
     },
     {
       "label": "Then rename",
@@ -69,9 +579,9 @@
       "source_file": ".claude/commands/photos.md",
       "source_location": "L89",
       "_origin": "ast",
-      "id": "claude_commands_photos_then_rename",
       "community": 22,
-      "norm_label": "then rename"
+      "norm_label": "then rename",
+      "id": "claude_commands_photos_then_rename"
     },
     {
       "label": "Finish",
@@ -79,9 +589,9 @@
       "source_file": ".claude/commands/photos.md",
       "source_location": "L102",
       "_origin": "ast",
-      "id": "claude_commands_photos_finish",
       "community": 22,
-      "norm_label": "finish"
+      "norm_label": "finish",
+      "id": "claude_commands_photos_finish"
     },
     {
       "label": "sunday.md",
@@ -89,9 +599,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "claude_commands_sunday",
       "community": 14,
-      "norm_label": "sunday.md"
+      "norm_label": "sunday.md",
+      "id": "claude_commands_sunday"
     },
     {
       "label": "Before writing anything",
@@ -99,9 +609,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "claude_commands_sunday_before_writing_anything",
       "community": 14,
-      "norm_label": "before writing anything"
+      "norm_label": "before writing anything",
+      "id": "claude_commands_sunday_before_writing_anything"
     },
     {
       "label": "The schedule: 3 posts a day, every day, all seven days",
@@ -109,9 +619,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L23",
       "_origin": "ast",
-      "id": "claude_commands_sunday_the_schedule_3_posts_a_day_every_day_all_seven_days",
       "community": 14,
-      "norm_label": "the schedule: 3 posts a day, every day, all seven days"
+      "norm_label": "the schedule: 3 posts a day, every day, all seven days",
+      "id": "claude_commands_sunday_the_schedule_3_posts_a_day_every_day_all_seven_days"
     },
     {
       "label": "11:00am: the day's main post",
@@ -119,9 +629,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L28",
       "_origin": "ast",
-      "id": "claude_commands_sunday_11_00am_the_day_s_main_post",
       "community": 14,
-      "norm_label": "11:00am: the day's main post"
+      "norm_label": "11:00am: the day's main post",
+      "id": "claude_commands_sunday_11_00am_the_day_s_main_post"
     },
     {
       "label": "2:30pm: highlight, recap, or filler that ties in",
@@ -129,9 +639,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L37",
       "_origin": "ast",
-      "id": "claude_commands_sunday_2_30pm_highlight_recap_or_filler_that_ties_in",
       "community": 14,
-      "norm_label": "2:30pm: highlight, recap, or filler that ties in"
+      "norm_label": "2:30pm: highlight, recap, or filler that ties in",
+      "id": "claude_commands_sunday_2_30pm_highlight_recap_or_filler_that_ties_in"
     },
     {
       "label": "7:00pm: teaser for tomorrow",
@@ -139,9 +649,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L55",
       "_origin": "ast",
-      "id": "claude_commands_sunday_7_00pm_teaser_for_tomorrow",
       "community": 14,
-      "norm_label": "7:00pm: teaser for tomorrow"
+      "norm_label": "7:00pm: teaser for tomorrow",
+      "id": "claude_commands_sunday_7_00pm_teaser_for_tomorrow"
     },
     {
       "label": "The build: every event gets three touches",
@@ -149,9 +659,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L64",
       "_origin": "ast",
-      "id": "claude_commands_sunday_the_build_every_event_gets_three_touches",
       "community": 14,
-      "norm_label": "the build: every event gets three touches"
+      "norm_label": "the build: every event gets three touches",
+      "id": "claude_commands_sunday_the_build_every_event_gets_three_touches"
     },
     {
       "label": "7pm the night before: make them want it",
@@ -159,9 +669,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L83",
       "_origin": "ast",
-      "id": "claude_commands_sunday_7pm_the_night_before_make_them_want_it",
       "community": 14,
-      "norm_label": "7pm the night before: make them want it"
+      "norm_label": "7pm the night before: make them want it",
+      "id": "claude_commands_sunday_7pm_the_night_before_make_them_want_it"
     },
     {
       "label": "11am the day of: turn it into a decision",
@@ -169,9 +679,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L95",
       "_origin": "ast",
-      "id": "claude_commands_sunday_11am_the_day_of_turn_it_into_a_decision",
       "community": 14,
-      "norm_label": "11am the day of: turn it into a decision"
+      "norm_label": "11am the day of: turn it into a decision",
+      "id": "claude_commands_sunday_11am_the_day_of_turn_it_into_a_decision"
     },
     {
       "label": "2:30pm the day of: last call before doors",
@@ -179,9 +689,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L106",
       "_origin": "ast",
-      "id": "claude_commands_sunday_2_30pm_the_day_of_last_call_before_doors",
       "community": 14,
-      "norm_label": "2:30pm the day of: last call before doors"
+      "norm_label": "2:30pm the day of: last call before doors",
+      "id": "claude_commands_sunday_2_30pm_the_day_of_last_call_before_doors"
     },
     {
       "label": "The three must not repeat each other",
@@ -189,9 +699,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L136",
       "_origin": "ast",
-      "id": "claude_commands_sunday_the_three_must_not_repeat_each_other",
       "community": 14,
-      "norm_label": "the three must not repeat each other"
+      "norm_label": "the three must not repeat each other",
+      "id": "claude_commands_sunday_the_three_must_not_repeat_each_other"
     },
     {
       "label": "What every post has to earn",
@@ -199,9 +709,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L151",
       "_origin": "ast",
-      "id": "claude_commands_sunday_what_every_post_has_to_earn",
       "community": 14,
-      "norm_label": "what every post has to earn"
+      "norm_label": "what every post has to earn",
+      "id": "claude_commands_sunday_what_every_post_has_to_earn"
     },
     {
       "label": "Picking photos",
@@ -209,9 +719,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L165",
       "_origin": "ast",
-      "id": "claude_commands_sunday_picking_photos",
       "community": 14,
-      "norm_label": "picking photos"
+      "norm_label": "picking photos",
+      "id": "claude_commands_sunday_picking_photos"
     },
     {
       "label": "Reach: the part that grows the page",
@@ -219,9 +729,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L187",
       "_origin": "ast",
-      "id": "claude_commands_sunday_reach_the_part_that_grows_the_page",
       "community": 14,
-      "norm_label": "reach: the part that grows the page"
+      "norm_label": "reach: the part that grows the page",
+      "id": "claude_commands_sunday_reach_the_part_that_grows_the_page"
     },
     {
       "label": "Write each day for its actual audience",
@@ -229,9 +739,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L193",
       "_origin": "ast",
-      "id": "claude_commands_sunday_write_each_day_for_its_actual_audience",
       "community": 14,
-      "norm_label": "write each day for its actual audience"
+      "norm_label": "write each day for its actual audience",
+      "id": "claude_commands_sunday_write_each_day_for_its_actual_audience"
     },
     {
       "label": "The Thursday 11am post is a Collab, every week",
@@ -239,9 +749,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L208",
       "_origin": "ast",
-      "id": "claude_commands_sunday_the_thursday_11am_post_is_a_collab_every_week",
       "community": 14,
-      "norm_label": "the thursday 11am post is a collab, every week"
+      "norm_label": "the thursday 11am post is a collab, every week",
+      "id": "claude_commands_sunday_the_thursday_11am_post_is_a_collab_every_week"
     },
     {
       "label": "Tag and geotag everything",
@@ -249,9 +759,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L228",
       "_origin": "ast",
-      "id": "claude_commands_sunday_tag_and_geotag_everything",
       "community": 14,
-      "norm_label": "tag and geotag everything"
+      "norm_label": "tag and geotag everything",
+      "id": "claude_commands_sunday_tag_and_geotag_everything"
     },
     {
       "label": "Static posts only",
@@ -259,9 +769,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L237",
       "_origin": "ast",
-      "id": "claude_commands_sunday_static_posts_only",
       "community": 14,
-      "norm_label": "static posts only"
+      "norm_label": "static posts only",
+      "id": "claude_commands_sunday_static_posts_only"
     },
     {
       "label": "One Google Business Profile post",
@@ -269,9 +779,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L243",
       "_origin": "ast",
-      "id": "claude_commands_sunday_one_google_business_profile_post",
       "community": 14,
-      "norm_label": "one google business profile post"
+      "norm_label": "one google business profile post",
+      "id": "claude_commands_sunday_one_google_business_profile_post"
     },
     {
       "label": "Before delivering: run the tally",
@@ -279,9 +789,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L250",
       "_origin": "ast",
-      "id": "claude_commands_sunday_before_delivering_run_the_tally",
       "community": 14,
-      "norm_label": "before delivering: run the tally"
+      "norm_label": "before delivering: run the tally",
+      "id": "claude_commands_sunday_before_delivering_run_the_tally"
     },
     {
       "label": "Deliver",
@@ -289,9 +799,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L265",
       "_origin": "ast",
-      "id": "claude_commands_sunday_deliver",
       "community": 14,
-      "norm_label": "deliver"
+      "norm_label": "deliver",
+      "id": "claude_commands_sunday_deliver"
     },
     {
       "label": "sync.md",
@@ -299,9 +809,9 @@
       "source_file": ".claude/commands/sync.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "claude_commands_sync",
       "community": 23,
-      "norm_label": "sync.md"
+      "norm_label": "sync.md",
+      "id": "claude_commands_sync"
     },
     {
       "label": "Do it in this order",
@@ -309,9 +819,9 @@
       "source_file": ".claude/commands/sync.md",
       "source_location": "L13",
       "_origin": "ast",
-      "id": "claude_commands_sync_do_it_in_this_order",
       "community": 23,
-      "norm_label": "do it in this order"
+      "norm_label": "do it in this order",
+      "id": "claude_commands_sync_do_it_in_this_order"
     },
     {
       "label": "1. See what is here",
@@ -319,9 +829,9 @@
       "source_file": ".claude/commands/sync.md",
       "source_location": "L15",
       "_origin": "ast",
-      "id": "claude_commands_sync_1_see_what_is_here",
       "community": 23,
-      "norm_label": "1. see what is here"
+      "norm_label": "1. see what is here",
+      "id": "claude_commands_sync_1_see_what_is_here"
     },
     {
       "label": "2. Get their changes first",
@@ -329,9 +839,9 @@
       "source_file": ".claude/commands/sync.md",
       "source_location": "L21",
       "_origin": "ast",
-      "id": "claude_commands_sync_2_get_their_changes_first",
       "community": 23,
-      "norm_label": "2. get their changes first"
+      "norm_label": "2. get their changes first",
+      "id": "claude_commands_sync_2_get_their_changes_first"
     },
     {
       "label": "3. Put local changes back",
@@ -339,9 +849,9 @@
       "source_file": ".claude/commands/sync.md",
       "source_location": "L30",
       "_origin": "ast",
-      "id": "claude_commands_sync_3_put_local_changes_back",
       "community": 23,
-      "norm_label": "3. put local changes back"
+      "norm_label": "3. put local changes back",
+      "id": "claude_commands_sync_3_put_local_changes_back"
     },
     {
       "label": "4. Save and share",
@@ -349,9 +859,9 @@
       "source_file": ".claude/commands/sync.md",
       "source_location": "L36",
       "_origin": "ast",
-      "id": "claude_commands_sync_4_save_and_share",
       "community": 23,
-      "norm_label": "4. save and share"
+      "norm_label": "4. save and share",
+      "id": "claude_commands_sync_4_save_and_share"
     },
     {
       "label": "When something goes wrong",
@@ -359,9 +869,9 @@
       "source_file": ".claude/commands/sync.md",
       "source_location": "L50",
       "_origin": "ast",
-      "id": "claude_commands_sync_when_something_goes_wrong",
       "community": 23,
-      "norm_label": "when something goes wrong"
+      "norm_label": "when something goes wrong",
+      "id": "claude_commands_sync_when_something_goes_wrong"
     },
     {
       "label": "Finish",
@@ -369,9 +879,9 @@
       "source_file": ".claude/commands/sync.md",
       "source_location": "L74",
       "_origin": "ast",
-      "id": "claude_commands_sync_finish",
       "community": 23,
-      "norm_label": "finish"
+      "norm_label": "finish",
+      "id": "claude_commands_sync_finish"
     },
     {
       "label": "CLAUDE.md",
@@ -379,9 +889,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "claude",
       "community": 0,
-      "norm_label": "claude.md"
+      "norm_label": "claude.md",
+      "id": "claude"
     },
     {
       "label": "Backyard Brew",
@@ -389,9 +899,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "claude_backyard_brew",
       "community": 0,
-      "norm_label": "backyard brew"
+      "norm_label": "backyard brew",
+      "id": "claude_backyard_brew"
     },
     {
       "label": "Read the brand skill first",
@@ -399,9 +909,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L10",
       "_origin": "ast",
-      "id": "claude_read_the_brand_skill_first",
       "community": 0,
-      "norm_label": "read the brand skill first"
+      "norm_label": "read the brand skill first",
+      "id": "claude_read_the_brand_skill_first"
     },
     {
       "label": "The six commands",
@@ -409,9 +919,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L28",
       "_origin": "ast",
-      "id": "claude_the_six_commands",
       "community": 0,
-      "norm_label": "the six commands"
+      "norm_label": "the six commands",
+      "id": "claude_the_six_commands"
     },
     {
       "label": "The printed sheets",
@@ -419,9 +929,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L41",
       "_origin": "ast",
-      "id": "claude_the_printed_sheets",
       "community": 0,
-      "norm_label": "the printed sheets"
+      "norm_label": "the printed sheets",
+      "id": "claude_the_printed_sheets"
     },
     {
       "label": "Data files",
@@ -429,9 +939,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L50",
       "_origin": "ast",
-      "id": "claude_data_files",
       "community": 0,
-      "norm_label": "data files"
+      "norm_label": "data files",
+      "id": "claude_data_files"
     },
     {
       "label": "Scripts",
@@ -439,9 +949,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L61",
       "_origin": "ast",
-      "id": "claude_scripts",
       "community": 0,
-      "norm_label": "scripts"
+      "norm_label": "scripts",
+      "id": "claude_scripts"
     },
     {
       "label": "Nothing posts automatically",
@@ -449,9 +959,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L70",
       "_origin": "ast",
-      "id": "claude_nothing_posts_automatically",
       "community": 0,
-      "norm_label": "nothing posts automatically"
+      "norm_label": "nothing posts automatically",
+      "id": "claude_nothing_posts_automatically"
     },
     {
       "label": "graphify",
@@ -459,9 +969,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L75",
       "_origin": "ast",
-      "id": "claude_graphify",
       "community": 0,
-      "norm_label": "graphify"
+      "norm_label": "graphify",
+      "id": "claude_graphify"
     },
     {
       "label": "HANDOFF.md",
@@ -469,9 +979,9 @@
       "source_file": "HANDOFF.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "handoff",
       "community": 16,
-      "norm_label": "handoff.md"
+      "norm_label": "handoff.md",
+      "id": "handoff"
     },
     {
       "label": "Handoff Checklist",
@@ -479,9 +989,9 @@
       "source_file": "HANDOFF.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "handoff_handoff_checklist",
       "community": 16,
-      "norm_label": "handoff checklist"
+      "norm_label": "handoff checklist",
+      "id": "handoff_handoff_checklist"
     },
     {
       "label": "1. Access your dad needs (do this first, it blocks everything else)",
@@ -489,9 +999,9 @@
       "source_file": "HANDOFF.md",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "handoff_1_access_your_dad_needs_do_this_first_it_blocks_everything_else",
       "community": 16,
-      "norm_label": "1. access your dad needs (do this first, it blocks everything else)"
+      "norm_label": "1. access your dad needs (do this first, it blocks everything else)",
+      "id": "handoff_1_access_your_dad_needs_do_this_first_it_blocks_everything_else"
     },
     {
       "label": "2. Things only you can fill in",
@@ -499,9 +1009,9 @@
       "source_file": "HANDOFF.md",
       "source_location": "L28",
       "_origin": "ast",
-      "id": "handoff_2_things_only_you_can_fill_in",
       "community": 16,
-      "norm_label": "2. things only you can fill in"
+      "norm_label": "2. things only you can fill in",
+      "id": "handoff_2_things_only_you_can_fill_in"
     },
     {
       "label": "3. Get it onto his Mac",
@@ -509,9 +1019,9 @@
       "source_file": "HANDOFF.md",
       "source_location": "L45",
       "_origin": "ast",
-      "id": "handoff_3_get_it_onto_his_mac",
       "community": 16,
-      "norm_label": "3. get it onto his mac"
+      "norm_label": "3. get it onto his mac",
+      "id": "handoff_3_get_it_onto_his_mac"
     },
     {
       "label": "4. Do one real week together",
@@ -519,9 +1029,9 @@
       "source_file": "HANDOFF.md",
       "source_location": "L60",
       "_origin": "ast",
-      "id": "handoff_4_do_one_real_week_together",
       "community": 16,
-      "norm_label": "4. do one real week together"
+      "norm_label": "4. do one real week together",
+      "id": "handoff_4_do_one_real_week_together"
     },
     {
       "label": "5. Print and leave these by the computer",
@@ -529,9 +1039,9 @@
       "source_file": "HANDOFF.md",
       "source_location": "L80",
       "_origin": "ast",
-      "id": "handoff_5_print_and_leave_these_by_the_computer",
       "community": 16,
-      "norm_label": "5. print and leave these by the computer"
+      "norm_label": "5. print and leave these by the computer",
+      "id": "handoff_5_print_and_leave_these_by_the_computer"
     },
     {
       "label": "6. Tell him the three things that matter most",
@@ -539,9 +1049,9 @@
       "source_file": "HANDOFF.md",
       "source_location": "L94",
       "_origin": "ast",
-      "id": "handoff_6_tell_him_the_three_things_that_matter_most",
       "community": 16,
-      "norm_label": "6. tell him the three things that matter most"
+      "norm_label": "6. tell him the three things that matter most",
+      "id": "handoff_6_tell_him_the_three_things_that_matter_most"
     },
     {
       "label": "7. First month",
@@ -549,9 +1059,9 @@
       "source_file": "HANDOFF.md",
       "source_location": "L106",
       "_origin": "ast",
-      "id": "handoff_7_first_month",
       "community": 16,
-      "norm_label": "7. first month"
+      "norm_label": "7. first month",
+      "id": "handoff_7_first_month"
     },
     {
       "label": "What is already done",
@@ -559,9 +1069,9 @@
       "source_file": "HANDOFF.md",
       "source_location": "L119",
       "_origin": "ast",
-      "id": "handoff_what_is_already_done",
       "community": 16,
-      "norm_label": "what is already done"
+      "norm_label": "what is already done",
+      "id": "handoff_what_is_already_done"
     },
     {
       "label": "README.md",
@@ -569,9 +1079,9 @@
       "source_file": "README.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "readme",
       "community": 16,
-      "norm_label": "readme.md"
+      "norm_label": "readme.md",
+      "id": "readme"
     },
     {
       "label": "Backyard Brew \u2014 Social Media & Online Presence",
@@ -579,9 +1089,9 @@
       "source_file": "README.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "readme_backyard_brew_social_media_online_presence",
-      "community": 16,
-      "norm_label": "backyard brew \u2014 social media & online presence"
+      "community": 27,
+      "norm_label": "backyard brew \u2014 social media & online presence",
+      "id": "readme_backyard_brew_social_media_online_presence"
     },
     {
       "label": "Using it (no terminal needed)",
@@ -589,9 +1099,9 @@
       "source_file": "README.md",
       "source_location": "L11",
       "_origin": "ast",
-      "id": "readme_using_it_no_terminal_needed",
-      "community": 16,
-      "norm_label": "using it (no terminal needed)"
+      "community": 27,
+      "norm_label": "using it (no terminal needed)",
+      "id": "readme_using_it_no_terminal_needed"
     },
     {
       "label": "Optional setup",
@@ -599,9 +1109,9 @@
       "source_file": "README.md",
       "source_location": "L19",
       "_origin": "ast",
-      "id": "readme_optional_setup",
-      "community": 16,
-      "norm_label": "optional setup"
+      "community": 27,
+      "norm_label": "optional setup",
+      "id": "readme_optional_setup"
     },
     {
       "label": "Then read this",
@@ -609,9 +1119,9 @@
       "source_file": "README.md",
       "source_location": "L31",
       "_origin": "ast",
-      "id": "readme_then_read_this",
-      "community": 16,
-      "norm_label": "then read this"
+      "community": 27,
+      "norm_label": "then read this",
+      "id": "readme_then_read_this"
     },
     {
       "label": "The six commands",
@@ -619,9 +1129,9 @@
       "source_file": "README.md",
       "source_location": "L49",
       "_origin": "ast",
-      "id": "readme_the_six_commands",
-      "community": 16,
-      "norm_label": "the six commands"
+      "community": 27,
+      "norm_label": "the six commands",
+      "id": "readme_the_six_commands"
     },
     {
       "label": "What's in here",
@@ -629,9 +1139,9 @@
       "source_file": "README.md",
       "source_location": "L69",
       "_origin": "ast",
-      "id": "readme_what_s_in_here",
-      "community": 16,
-      "norm_label": "what's in here"
+      "community": 27,
+      "norm_label": "what's in here",
+      "id": "readme_what_s_in_here"
     },
     {
       "label": "Naming photos",
@@ -639,9 +1149,9 @@
       "source_file": "README.md",
       "source_location": "L87",
       "_origin": "ast",
-      "id": "readme_naming_photos",
-      "community": 16,
-      "norm_label": "naming photos"
+      "community": 27,
+      "norm_label": "naming photos",
+      "id": "readme_naming_photos"
     },
     {
       "label": "The rules",
@@ -649,9 +1159,9 @@
       "source_file": "README.md",
       "source_location": "L106",
       "_origin": "ast",
-      "id": "readme_the_rules",
-      "community": 16,
-      "norm_label": "the rules"
+      "community": 27,
+      "norm_label": "the rules",
+      "id": "readme_the_rules"
     },
     {
       "label": "1-START-HERE.md",
@@ -659,9 +1169,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "playbook_1_start_here",
       "community": 16,
-      "norm_label": "1-start-here.md"
+      "norm_label": "1-start-here.md",
+      "id": "playbook_1_start_here"
     },
     {
       "label": "Backyard Brew: Start Here",
@@ -669,9 +1179,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "playbook_1_start_here_backyard_brew_start_here",
       "community": 9,
-      "norm_label": "backyard brew: start here"
+      "norm_label": "backyard brew: start here",
+      "id": "playbook_1_start_here_backyard_brew_start_here"
     },
     {
       "label": "First time on this Mac only",
@@ -679,9 +1189,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L17",
       "_origin": "ast",
-      "id": "playbook_1_start_here_first_time_on_this_mac_only",
       "community": 9,
-      "norm_label": "first time on this mac only"
+      "norm_label": "first time on this mac only",
+      "id": "playbook_1_start_here_first_time_on_this_mac_only"
     },
     {
       "label": "Opening it",
@@ -689,9 +1199,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L42",
       "_origin": "ast",
-      "id": "playbook_1_start_here_opening_it",
       "community": 9,
-      "norm_label": "opening it"
+      "norm_label": "opening it",
+      "id": "playbook_1_start_here_opening_it"
     },
     {
       "label": "The six commands",
@@ -699,9 +1209,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L55",
       "_origin": "ast",
-      "id": "playbook_1_start_here_the_six_commands",
       "community": 9,
-      "norm_label": "the six commands"
+      "norm_label": "the six commands",
+      "id": "playbook_1_start_here_the_six_commands"
     },
     {
       "label": "It already knows the bar",
@@ -709,9 +1219,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L71",
       "_origin": "ast",
-      "id": "playbook_1_start_here_it_already_knows_the_bar",
       "community": 9,
-      "norm_label": "it already knows the bar"
+      "norm_label": "it already knows the bar",
+      "id": "playbook_1_start_here_it_already_knows_the_bar"
     },
     {
       "label": "Where things live",
@@ -719,9 +1229,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L92",
       "_origin": "ast",
-      "id": "playbook_1_start_here_where_things_live",
       "community": 9,
-      "norm_label": "where things live"
+      "norm_label": "where things live",
+      "id": "playbook_1_start_here_where_things_live"
     },
     {
       "label": "Dropping in photos",
@@ -729,9 +1239,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L107",
       "_origin": "ast",
-      "id": "playbook_1_start_here_dropping_in_photos",
       "community": 9,
-      "norm_label": "dropping in photos"
+      "norm_label": "dropping in photos",
+      "id": "playbook_1_start_here_dropping_in_photos"
     },
     {
       "label": "Sharing with Micah",
@@ -739,9 +1249,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L119",
       "_origin": "ast",
-      "id": "playbook_1_start_here_sharing_with_micah",
       "community": 9,
-      "norm_label": "sharing with micah"
+      "norm_label": "sharing with micah",
+      "id": "playbook_1_start_here_sharing_with_micah"
     },
     {
       "label": "The weekly rhythm",
@@ -749,9 +1259,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L128",
       "_origin": "ast",
-      "id": "playbook_1_start_here_the_weekly_rhythm",
       "community": 9,
-      "norm_label": "the weekly rhythm"
+      "norm_label": "the weekly rhythm",
+      "id": "playbook_1_start_here_the_weekly_rhythm"
     },
     {
       "label": "Three rules",
@@ -759,9 +1269,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L142",
       "_origin": "ast",
-      "id": "playbook_1_start_here_three_rules",
       "community": 9,
-      "norm_label": "three rules"
+      "norm_label": "three rules",
+      "id": "playbook_1_start_here_three_rules"
     },
     {
       "label": "Two things about the app",
@@ -769,9 +1279,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L153",
       "_origin": "ast",
-      "id": "playbook_1_start_here_two_things_about_the_app",
       "community": 9,
-      "norm_label": "two things about the app"
+      "norm_label": "two things about the app",
+      "id": "playbook_1_start_here_two_things_about_the_app"
     },
     {
       "label": "Reading, printing, and editing these sheets",
@@ -779,9 +1289,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L166",
       "_origin": "ast",
-      "id": "playbook_1_start_here_reading_printing_and_editing_these_sheets",
       "community": 9,
-      "norm_label": "reading, printing, and editing these sheets"
+      "norm_label": "reading, printing, and editing these sheets",
+      "id": "playbook_1_start_here_reading_printing_and_editing_these_sheets"
     },
     {
       "label": "If something is not working",
@@ -789,9 +1299,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L195",
       "_origin": "ast",
-      "id": "playbook_1_start_here_if_something_is_not_working",
       "community": 9,
-      "norm_label": "if something is not working"
+      "norm_label": "if something is not working",
+      "id": "playbook_1_start_here_if_something_is_not_working"
     },
     {
       "label": "3-EVERY-DAY.md",
@@ -799,9 +1309,9 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "playbook_3_every_day",
-      "community": 13,
-      "norm_label": "3-every-day.md"
+      "community": 16,
+      "norm_label": "3-every-day.md",
+      "id": "playbook_3_every_day"
     },
     {
       "label": "Every Day",
@@ -809,9 +1319,9 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "playbook_3_every_day_every_day",
-      "community": 13,
-      "norm_label": "every day"
+      "community": 16,
+      "norm_label": "every day",
+      "id": "playbook_3_every_day_every_day"
     },
     {
       "label": "Morning: share the 11am post to Facebook groups",
@@ -819,9 +1329,9 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L13",
       "_origin": "ast",
-      "id": "playbook_3_every_day_morning_share_the_11am_post_to_facebook_groups",
-      "community": 13,
-      "norm_label": "morning: share the 11am post to facebook groups"
+      "community": 16,
+      "norm_label": "morning: share the 11am post to facebook groups",
+      "id": "playbook_3_every_day_morning_share_the_11am_post_to_facebook_groups"
     },
     {
       "label": "How to do it right",
@@ -829,9 +1339,9 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L26",
       "_origin": "ast",
-      "id": "playbook_3_every_day_how_to_do_it_right",
-      "community": 13,
-      "norm_label": "how to do it right"
+      "community": 16,
+      "norm_label": "how to do it right",
+      "id": "playbook_3_every_day_how_to_do_it_right"
     },
     {
       "label": "The line you write above it matters most",
@@ -839,9 +1349,9 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L35",
       "_origin": "ast",
-      "id": "playbook_3_every_day_the_line_you_write_above_it_matters_most",
-      "community": 13,
-      "norm_label": "the line you write above it matters most"
+      "community": 16,
+      "norm_label": "the line you write above it matters most",
+      "id": "playbook_3_every_day_the_line_you_write_above_it_matters_most"
     },
     {
       "label": "Which groups for which post",
@@ -849,9 +1359,9 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L50",
       "_origin": "ast",
-      "id": "playbook_3_every_day_which_groups_for_which_post",
-      "community": 13,
-      "norm_label": "which groups for which post"
+      "community": 16,
+      "norm_label": "which groups for which post",
+      "id": "playbook_3_every_day_which_groups_for_which_post"
     },
     {
       "label": "All day: stories",
@@ -859,9 +1369,9 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L79",
       "_origin": "ast",
-      "id": "playbook_3_every_day_all_day_stories",
-      "community": 13,
-      "norm_label": "all day: stories"
+      "community": 16,
+      "norm_label": "all day: stories",
+      "id": "playbook_3_every_day_all_day_stories"
     },
     {
       "label": "First hour after each post: reply to comments",
@@ -869,9 +1379,9 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L115",
       "_origin": "ast",
-      "id": "playbook_3_every_day_first_hour_after_each_post_reply_to_comments",
-      "community": 13,
-      "norm_label": "first hour after each post: reply to comments"
+      "community": 16,
+      "norm_label": "first hour after each post: reply to comments",
+      "id": "playbook_3_every_day_first_hour_after_each_post_reply_to_comments"
     },
     {
       "label": "While you are there: take photos",
@@ -879,9 +1389,9 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L131",
       "_origin": "ast",
-      "id": "playbook_3_every_day_while_you_are_there_take_photos",
-      "community": 13,
-      "norm_label": "while you are there: take photos"
+      "community": 16,
+      "norm_label": "while you are there: take photos",
+      "id": "playbook_3_every_day_while_you_are_there_take_photos"
     },
     {
       "label": "The daily checklist",
@@ -889,9 +1399,9 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L149",
       "_origin": "ast",
-      "id": "playbook_3_every_day_the_daily_checklist",
-      "community": 13,
-      "norm_label": "the daily checklist"
+      "community": 16,
+      "norm_label": "the daily checklist",
+      "id": "playbook_3_every_day_the_daily_checklist"
     },
     {
       "label": "4-EVERY-WEEK.md",
@@ -899,9 +1409,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "playbook_4_every_week",
       "community": 16,
-      "norm_label": "4-every-week.md"
+      "norm_label": "4-every-week.md",
+      "id": "playbook_4_every_week"
     },
     {
       "label": "Every Week",
@@ -909,9 +1419,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "playbook_4_every_week_every_week",
       "community": 4,
-      "norm_label": "every week"
+      "norm_label": "every week",
+      "id": "playbook_4_every_week_every_week"
     },
     {
       "label": "1. Drop in this week's photos (5 min)",
@@ -919,9 +1429,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L7",
       "_origin": "ast",
-      "id": "playbook_4_every_week_1_drop_in_this_week_s_photos_5_min",
       "community": 4,
-      "norm_label": "1. drop in this week's photos (5 min)"
+      "norm_label": "1. drop in this week's photos (5 min)",
+      "id": "playbook_4_every_week_1_drop_in_this_week_s_photos_5_min"
     },
     {
       "label": "2. Write the week's posts (10 min)",
@@ -929,9 +1439,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L20",
       "_origin": "ast",
-      "id": "playbook_4_every_week_2_write_the_week_s_posts_10_min",
       "community": 4,
-      "norm_label": "2. write the week's posts (10 min)"
+      "norm_label": "2. write the week's posts (10 min)",
+      "id": "playbook_4_every_week_2_write_the_week_s_posts_10_min"
     },
     {
       "label": "3. Schedule everything in Meta Business Suite (30 min)",
@@ -939,9 +1449,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L57",
       "_origin": "ast",
-      "id": "playbook_4_every_week_3_schedule_everything_in_meta_business_suite_30_min",
       "community": 4,
-      "norm_label": "3. schedule everything in meta business suite (30 min)"
+      "norm_label": "3. schedule everything in meta business suite (30 min)",
+      "id": "playbook_4_every_week_3_schedule_everything_in_meta_business_suite_30_min"
     },
     {
       "label": "4. Google Business Profile (10 min)",
@@ -949,9 +1459,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L103",
       "_origin": "ast",
-      "id": "playbook_4_every_week_4_google_business_profile_10_min",
       "community": 4,
-      "norm_label": "4. google business profile (10 min)"
+      "norm_label": "4. google business profile (10 min)",
+      "id": "playbook_4_every_week_4_google_business_profile_10_min"
     },
     {
       "label": "5. Reviews (5 min)",
@@ -959,9 +1469,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L127",
       "_origin": "ast",
-      "id": "playbook_4_every_week_5_reviews_5_min",
       "community": 4,
-      "norm_label": "5. reviews (5 min)"
+      "norm_label": "5. reviews (5 min)",
+      "id": "playbook_4_every_week_5_reviews_5_min"
     },
     {
       "label": "6. Ask what to work on (5 min, optional)",
@@ -969,9 +1479,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L147",
       "_origin": "ast",
-      "id": "playbook_4_every_week_6_ask_what_to_work_on_5_min_optional",
       "community": 4,
-      "norm_label": "6. ask what to work on (5 min, optional)"
+      "norm_label": "6. ask what to work on (5 min, optional)",
+      "id": "playbook_4_every_week_6_ask_what_to_work_on_5_min_optional"
     },
     {
       "label": "7. Send it to Micah (1 min)",
@@ -979,9 +1489,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L166",
       "_origin": "ast",
-      "id": "playbook_4_every_week_7_send_it_to_micah_1_min",
       "community": 4,
-      "norm_label": "7. send it to micah (1 min)"
+      "norm_label": "7. send it to micah (1 min)",
+      "id": "playbook_4_every_week_7_send_it_to_micah_1_min"
     },
     {
       "label": "The Sunday checklist",
@@ -989,9 +1499,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L173",
       "_origin": "ast",
-      "id": "playbook_4_every_week_the_sunday_checklist",
       "community": 4,
-      "norm_label": "the sunday checklist"
+      "norm_label": "the sunday checklist",
+      "id": "playbook_4_every_week_the_sunday_checklist"
     },
     {
       "label": "make-pdfs.py",
@@ -999,9 +1509,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "playbook_make_pdfs",
       "community": 15,
-      "norm_label": "make-pdfs.py"
+      "norm_label": "make-pdfs.py",
+      "id": "playbook_make_pdfs"
     },
     {
       "label": "md_to_html()",
@@ -1009,9 +1519,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L101",
       "_origin": "ast",
-      "id": "playbook_make_pdfs_md_to_html",
       "community": 15,
-      "norm_label": "md_to_html()"
+      "norm_label": "md_to_html()",
+      "id": "playbook_make_pdfs_md_to_html"
     },
     {
       "label": "lint()",
@@ -1019,9 +1529,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L120",
       "_origin": "ast",
-      "id": "playbook_make_pdfs_lint",
       "community": 15,
-      "norm_label": "lint()"
+      "norm_label": "lint()",
+      "id": "playbook_make_pdfs_lint"
     },
     {
       "label": "_add_runs()",
@@ -1029,9 +1539,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L142",
       "_origin": "ast",
-      "id": "playbook_make_pdfs_add_runs",
       "community": 15,
-      "norm_label": "_add_runs()"
+      "norm_label": "_add_runs()",
+      "id": "playbook_make_pdfs_add_runs"
     },
     {
       "label": "md_to_docx()",
@@ -1039,9 +1549,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L156",
       "_origin": "ast",
-      "id": "playbook_make_pdfs_md_to_docx",
       "community": 15,
-      "norm_label": "md_to_docx()"
+      "norm_label": "md_to_docx()",
+      "id": "playbook_make_pdfs_md_to_docx"
     },
     {
       "label": "Path",
@@ -1049,9 +1559,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "path",
       "community": 15,
-      "norm_label": "path"
+      "norm_label": "path",
+      "id": "path"
     },
     {
       "label": "_selfcheck()",
@@ -1059,9 +1569,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L268",
       "_origin": "ast",
-      "id": "playbook_make_pdfs_selfcheck",
       "community": 15,
-      "norm_label": "_selfcheck()"
+      "norm_label": "_selfcheck()",
+      "id": "playbook_make_pdfs_selfcheck"
     },
     {
       "label": "main()",
@@ -1069,9 +1579,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L305",
       "_origin": "ast",
-      "id": "playbook_make_pdfs_main",
       "community": 15,
-      "norm_label": "main()"
+      "norm_label": "main()",
+      "id": "playbook_make_pdfs_main"
     },
     {
       "label": "Convert one markdown sheet into a standalone printable HTML page.",
@@ -1079,9 +1589,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L102",
       "_origin": "ast",
-      "id": "playbook_make_pdfs_rationale_102",
       "community": 15,
-      "norm_label": "convert one markdown sheet into a standalone printable html page."
+      "norm_label": "convert one markdown sheet into a standalone printable html page.",
+      "id": "playbook_make_pdfs_rationale_102"
     },
     {
       "label": "Warn about a list glued to the line above it.      Markdown silently swallows",
@@ -1089,9 +1599,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L121",
       "_origin": "ast",
-      "id": "playbook_make_pdfs_rationale_121",
       "community": 15,
-      "norm_label": "warn about a list glued to the line above it.      markdown silently swallows"
+      "norm_label": "warn about a list glued to the line above it.      markdown silently swallows",
+      "id": "playbook_make_pdfs_rationale_121"
     },
     {
       "label": "Write text into a docx paragraph, honouring **bold** and `code`.",
@@ -1099,9 +1609,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L143",
       "_origin": "ast",
-      "id": "playbook_make_pdfs_rationale_143",
       "community": 15,
-      "norm_label": "write text into a docx paragraph, honouring **bold** and `code`."
+      "norm_label": "write text into a docx paragraph, honouring **bold** and `code`.",
+      "id": "playbook_make_pdfs_rationale_143"
     },
     {
       "label": "Write an editable Word document he can open in Pages and print.      Deliberat",
@@ -1109,9 +1619,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L157",
       "_origin": "ast",
-      "id": "playbook_make_pdfs_rationale_157",
       "community": 15,
-      "norm_label": "write an editable word document he can open in pages and print.      deliberat"
+      "norm_label": "write an editable word document he can open in pages and print.      deliberat",
+      "id": "playbook_make_pdfs_rationale_157"
     },
     {
       "label": "Smallest thing that fails if the conversion breaks.",
@@ -1119,9 +1629,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L269",
       "_origin": "ast",
-      "id": "playbook_make_pdfs_rationale_269",
       "community": 15,
-      "norm_label": "smallest thing that fails if the conversion breaks."
+      "norm_label": "smallest thing that fails if the conversion breaks.",
+      "id": "playbook_make_pdfs_rationale_269"
     },
     {
       "label": "setup.sh",
@@ -1133,9 +1643,9 @@
         "kind": "file"
       },
       "_origin": "ast",
-      "id": "setup",
       "community": 21,
-      "norm_label": "setup.sh"
+      "norm_label": "setup.sh",
+      "id": "setup"
     },
     {
       "label": "setup.sh script",
@@ -1147,9 +1657,9 @@
         "kind": "bash_entrypoint"
       },
       "_origin": "ast",
-      "id": "setup_sh__entry",
       "community": 21,
-      "norm_label": "setup.sh script"
+      "norm_label": "setup.sh script",
+      "id": "setup_sh__entry"
     },
     {
       "label": "graphic.md",
@@ -2916,12 +3426,462 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "graphify_out_converted_1_start_here_06273d7e",
+      "target": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
+      "target": "graphify_out_converted_1_start_here_06273d7e_first_time_on_this_mac_only",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
+      "target": "graphify_out_converted_1_start_here_06273d7e_if_something_is_not_working",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
+      "target": "graphify_out_converted_1_start_here_06273d7e_opening_it",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
+      "target": "graphify_out_converted_1_start_here_06273d7e_reading_printing_and_editing_these_sheets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
+      "target": "graphify_out_converted_1_start_here_06273d7e_the_weekly_rhythm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
+      "target": "graphify_out_converted_1_start_here_06273d7e_three_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
+      "target": "graphify_out_converted_1_start_here_06273d7e_two_things_about_the_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
+      "target": "graphify_out_converted_1_start_here_06273d7e_where_things_live",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "graphify_out_converted_1_start_here_06273d7e_opening_it",
+      "target": "graphify_out_converted_1_start_here_06273d7e_it_already_knows_the_bar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "graphify_out_converted_1_start_here_06273d7e_opening_it",
+      "target": "graphify_out_converted_1_start_here_06273d7e_the_six_commands",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "graphify_out_converted_1_start_here_06273d7e_where_things_live",
+      "target": "graphify_out_converted_1_start_here_06273d7e_dropping_in_photos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "graphify_out_converted_1_start_here_06273d7e_where_things_live",
+      "target": "graphify_out_converted_1_start_here_06273d7e_sharing_with_micah",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "graphify_out_converted_2_make_a_graphic_c5f8af17",
+      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_making_a_graphic",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "graphify_out_converted_2_make_a_graphic_c5f8af17_making_a_graphic",
+      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_backup_when_gemini_will_not_cooperate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "graphify_out_converted_2_make_a_graphic_c5f8af17_making_a_graphic",
+      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_1_pick_your_photo_first",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "graphify_out_converted_2_make_a_graphic_c5f8af17_making_a_graphic",
+      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_2_ask_claude_for_the_prompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "graphify_out_converted_2_make_a_graphic_c5f8af17_making_a_graphic",
+      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_3_run_it_through_gemini",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "graphify_out_converted_2_make_a_graphic_c5f8af17_making_a_graphic",
+      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_4_remove_the_watermark",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "graphify_out_converted_2_make_a_graphic_c5f8af17_making_a_graphic",
+      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_5_put_the_real_logo_on_in_canva",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "graphify_out_converted_2_make_a_graphic_c5f8af17_making_a_graphic",
+      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_6_name_it_and_check_it",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "graphify_out_converted_2_make_a_graphic_c5f8af17_making_a_graphic",
+      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_7_post_it",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "graphify_out_converted_2_make_a_graphic_c5f8af17_making_a_graphic",
+      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_what_good_looks_like",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "graphify_out_converted_3_every_day_5e2281ba",
+      "target": "graphify_out_converted_3_every_day_5e2281ba_every_day",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "graphify_out_converted_3_every_day_5e2281ba_every_day",
+      "target": "graphify_out_converted_3_every_day_5e2281ba_all_day_stories",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "graphify_out_converted_3_every_day_5e2281ba_every_day",
+      "target": "graphify_out_converted_3_every_day_5e2281ba_first_hour_after_each_post_reply_to_comments",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "graphify_out_converted_3_every_day_5e2281ba_every_day",
+      "target": "graphify_out_converted_3_every_day_5e2281ba_morning_share_the_11am_post_to_facebook_groups",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "graphify_out_converted_3_every_day_5e2281ba_every_day",
+      "target": "graphify_out_converted_3_every_day_5e2281ba_the_daily_checklist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "graphify_out_converted_3_every_day_5e2281ba_every_day",
+      "target": "graphify_out_converted_3_every_day_5e2281ba_while_you_are_there_take_photos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "graphify_out_converted_3_every_day_5e2281ba_morning_share_the_11am_post_to_facebook_groups",
+      "target": "graphify_out_converted_3_every_day_5e2281ba_how_to_do_it_right",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "graphify_out_converted_3_every_day_5e2281ba_morning_share_the_11am_post_to_facebook_groups",
+      "target": "graphify_out_converted_3_every_day_5e2281ba_the_line_you_write_above_it_matters_most",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "graphify_out_converted_3_every_day_5e2281ba_morning_share_the_11am_post_to_facebook_groups",
+      "target": "graphify_out_converted_3_every_day_5e2281ba_which_groups_for_which_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "graphify_out_converted_4_every_week_dacbef1b",
+      "target": "graphify_out_converted_4_every_week_dacbef1b_every_week",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "graphify_out_converted_4_every_week_dacbef1b_every_week",
+      "target": "graphify_out_converted_4_every_week_dacbef1b_1_drop_in_this_week_s_photos_5_min",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "graphify_out_converted_4_every_week_dacbef1b_every_week",
+      "target": "graphify_out_converted_4_every_week_dacbef1b_2_write_the_week_s_posts_10_min",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "graphify_out_converted_4_every_week_dacbef1b_every_week",
+      "target": "graphify_out_converted_4_every_week_dacbef1b_3_schedule_everything_in_meta_business_suite_30_min",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "graphify_out_converted_4_every_week_dacbef1b_every_week",
+      "target": "graphify_out_converted_4_every_week_dacbef1b_4_google_business_profile_10_min",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "graphify_out_converted_4_every_week_dacbef1b_every_week",
+      "target": "graphify_out_converted_4_every_week_dacbef1b_5_reviews_5_min",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "graphify_out_converted_4_every_week_dacbef1b_every_week",
+      "target": "graphify_out_converted_4_every_week_dacbef1b_6_ask_what_to_work_on_5_min_optional",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "graphify_out_converted_4_every_week_dacbef1b_every_week",
+      "target": "graphify_out_converted_4_every_week_dacbef1b_7_send_it_to_micah_1_min",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "graphify_out_converted_4_every_week_dacbef1b_every_week",
+      "target": "graphify_out_converted_4_every_week_dacbef1b_the_sunday_checklist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Vendor_Communication_Templates_63fdc6dc.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "graphify_out_converted_vendor_communication_templates_63fdc6dc",
+      "target": "graphify_out_converted_vendor_communication_templates_63fdc6dc_1_the_rundown_send_when_someone_asks_for_more_info_or_to_be_in_the_market",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Vendor_Communication_Templates_63fdc6dc.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "graphify_out_converted_vendor_communication_templates_63fdc6dc",
+      "target": "graphify_out_converted_vendor_communication_templates_63fdc6dc_2_polite_decline_similar_vendor_already_booked_for_this_event",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Vendor_Communication_Templates_63fdc6dc.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "graphify_out_converted_vendor_communication_templates_63fdc6dc",
+      "target": "graphify_out_converted_vendor_communication_templates_63fdc6dc_3_vendor_spots_full_waitlist_reply",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Vendor_Communication_Templates_63fdc6dc.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "graphify_out_converted_vendor_communication_templates_63fdc6dc",
+      "target": "graphify_out_converted_vendor_communication_templates_63fdc6dc_4_confirmed_vendor_info_sheet_send_a_few_days_before_the_event",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": ".claude/commands/photos.md",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_photos",
-      "target": "claude_commands_photos_decide_the_name",
-      "confidence_score": 1.0
+      "target": "claude_commands_photos_decide_the_name"
     },
     {
       "relation": "contains",
@@ -2929,9 +3889,9 @@
       "source_file": ".claude/commands/photos.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_photos",
-      "target": "claude_commands_photos_find_what_needs_naming",
-      "confidence_score": 1.0
+      "target": "claude_commands_photos_find_what_needs_naming"
     },
     {
       "relation": "contains",
@@ -2939,9 +3899,9 @@
       "source_file": ".claude/commands/photos.md",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_photos",
-      "target": "claude_commands_photos_finish",
-      "confidence_score": 1.0
+      "target": "claude_commands_photos_finish"
     },
     {
       "relation": "contains",
@@ -2949,9 +3909,9 @@
       "source_file": ".claude/commands/photos.md",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_photos",
-      "target": "claude_commands_photos_look_at_each_one",
-      "confidence_score": 1.0
+      "target": "claude_commands_photos_look_at_each_one"
     },
     {
       "relation": "contains",
@@ -2959,9 +3919,9 @@
       "source_file": ".claude/commands/photos.md",
       "source_location": "L82",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_photos",
-      "target": "claude_commands_photos_show_the_plan_before_touching_anything",
-      "confidence_score": 1.0
+      "target": "claude_commands_photos_show_the_plan_before_touching_anything"
     },
     {
       "relation": "contains",
@@ -2969,9 +3929,9 @@
       "source_file": ".claude/commands/photos.md",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_photos",
-      "target": "claude_commands_photos_then_rename",
-      "confidence_score": 1.0
+      "target": "claude_commands_photos_then_rename"
     },
     {
       "relation": "contains",
@@ -2979,9 +3939,9 @@
       "source_file": ".claude/commands/photos.md",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_photos_decide_the_name",
-      "target": "claude_commands_photos_judgment_calls",
-      "confidence_score": 1.0
+      "target": "claude_commands_photos_judgment_calls"
     },
     {
       "relation": "contains",
@@ -2989,9 +3949,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L250",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_sunday",
-      "target": "claude_commands_sunday_before_delivering_run_the_tally",
-      "confidence_score": 1.0
+      "target": "claude_commands_sunday_before_delivering_run_the_tally"
     },
     {
       "relation": "contains",
@@ -2999,9 +3959,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_sunday",
-      "target": "claude_commands_sunday_before_writing_anything",
-      "confidence_score": 1.0
+      "target": "claude_commands_sunday_before_writing_anything"
     },
     {
       "relation": "contains",
@@ -3009,9 +3969,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L265",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_sunday",
-      "target": "claude_commands_sunday_deliver",
-      "confidence_score": 1.0
+      "target": "claude_commands_sunday_deliver"
     },
     {
       "relation": "contains",
@@ -3019,9 +3979,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L165",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_sunday",
-      "target": "claude_commands_sunday_picking_photos",
-      "confidence_score": 1.0
+      "target": "claude_commands_sunday_picking_photos"
     },
     {
       "relation": "contains",
@@ -3029,9 +3989,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L187",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_sunday",
-      "target": "claude_commands_sunday_reach_the_part_that_grows_the_page",
-      "confidence_score": 1.0
+      "target": "claude_commands_sunday_reach_the_part_that_grows_the_page"
     },
     {
       "relation": "contains",
@@ -3039,9 +3999,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L64",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_sunday",
-      "target": "claude_commands_sunday_the_build_every_event_gets_three_touches",
-      "confidence_score": 1.0
+      "target": "claude_commands_sunday_the_build_every_event_gets_three_touches"
     },
     {
       "relation": "contains",
@@ -3049,9 +4009,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_sunday",
-      "target": "claude_commands_sunday_the_schedule_3_posts_a_day_every_day_all_seven_days",
-      "confidence_score": 1.0
+      "target": "claude_commands_sunday_the_schedule_3_posts_a_day_every_day_all_seven_days"
     },
     {
       "relation": "contains",
@@ -3059,9 +4019,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_sunday_the_schedule_3_posts_a_day_every_day_all_seven_days",
-      "target": "claude_commands_sunday_11_00am_the_day_s_main_post",
-      "confidence_score": 1.0
+      "target": "claude_commands_sunday_11_00am_the_day_s_main_post"
     },
     {
       "relation": "contains",
@@ -3069,9 +4029,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_sunday_the_schedule_3_posts_a_day_every_day_all_seven_days",
-      "target": "claude_commands_sunday_2_30pm_highlight_recap_or_filler_that_ties_in",
-      "confidence_score": 1.0
+      "target": "claude_commands_sunday_2_30pm_highlight_recap_or_filler_that_ties_in"
     },
     {
       "relation": "contains",
@@ -3079,9 +4039,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_sunday_the_schedule_3_posts_a_day_every_day_all_seven_days",
-      "target": "claude_commands_sunday_7_00pm_teaser_for_tomorrow",
-      "confidence_score": 1.0
+      "target": "claude_commands_sunday_7_00pm_teaser_for_tomorrow"
     },
     {
       "relation": "contains",
@@ -3089,9 +4049,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L95",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_sunday_the_build_every_event_gets_three_touches",
-      "target": "claude_commands_sunday_11am_the_day_of_turn_it_into_a_decision",
-      "confidence_score": 1.0
+      "target": "claude_commands_sunday_11am_the_day_of_turn_it_into_a_decision"
     },
     {
       "relation": "contains",
@@ -3099,9 +4059,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L106",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_sunday_the_build_every_event_gets_three_touches",
-      "target": "claude_commands_sunday_2_30pm_the_day_of_last_call_before_doors",
-      "confidence_score": 1.0
+      "target": "claude_commands_sunday_2_30pm_the_day_of_last_call_before_doors"
     },
     {
       "relation": "contains",
@@ -3109,9 +4069,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_sunday_the_build_every_event_gets_three_touches",
-      "target": "claude_commands_sunday_7pm_the_night_before_make_them_want_it",
-      "confidence_score": 1.0
+      "target": "claude_commands_sunday_7pm_the_night_before_make_them_want_it"
     },
     {
       "relation": "contains",
@@ -3119,9 +4079,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L136",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_sunday_the_build_every_event_gets_three_touches",
-      "target": "claude_commands_sunday_the_three_must_not_repeat_each_other",
-      "confidence_score": 1.0
+      "target": "claude_commands_sunday_the_three_must_not_repeat_each_other"
     },
     {
       "relation": "contains",
@@ -3129,9 +4089,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L151",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_sunday_the_build_every_event_gets_three_touches",
-      "target": "claude_commands_sunday_what_every_post_has_to_earn",
-      "confidence_score": 1.0
+      "target": "claude_commands_sunday_what_every_post_has_to_earn"
     },
     {
       "relation": "contains",
@@ -3139,9 +4099,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L243",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_sunday_reach_the_part_that_grows_the_page",
-      "target": "claude_commands_sunday_one_google_business_profile_post",
-      "confidence_score": 1.0
+      "target": "claude_commands_sunday_one_google_business_profile_post"
     },
     {
       "relation": "contains",
@@ -3149,9 +4109,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L237",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_sunday_reach_the_part_that_grows_the_page",
-      "target": "claude_commands_sunday_static_posts_only",
-      "confidence_score": 1.0
+      "target": "claude_commands_sunday_static_posts_only"
     },
     {
       "relation": "contains",
@@ -3159,9 +4119,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L228",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_sunday_reach_the_part_that_grows_the_page",
-      "target": "claude_commands_sunday_tag_and_geotag_everything",
-      "confidence_score": 1.0
+      "target": "claude_commands_sunday_tag_and_geotag_everything"
     },
     {
       "relation": "contains",
@@ -3169,9 +4129,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L208",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_sunday_reach_the_part_that_grows_the_page",
-      "target": "claude_commands_sunday_the_thursday_11am_post_is_a_collab_every_week",
-      "confidence_score": 1.0
+      "target": "claude_commands_sunday_the_thursday_11am_post_is_a_collab_every_week"
     },
     {
       "relation": "contains",
@@ -3179,9 +4139,9 @@
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L193",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_sunday_reach_the_part_that_grows_the_page",
-      "target": "claude_commands_sunday_write_each_day_for_its_actual_audience",
-      "confidence_score": 1.0
+      "target": "claude_commands_sunday_write_each_day_for_its_actual_audience"
     },
     {
       "relation": "contains",
@@ -3189,9 +4149,9 @@
       "source_file": ".claude/commands/sync.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_sync",
-      "target": "claude_commands_sync_do_it_in_this_order",
-      "confidence_score": 1.0
+      "target": "claude_commands_sync_do_it_in_this_order"
     },
     {
       "relation": "contains",
@@ -3199,9 +4159,9 @@
       "source_file": ".claude/commands/sync.md",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_sync",
-      "target": "claude_commands_sync_finish",
-      "confidence_score": 1.0
+      "target": "claude_commands_sync_finish"
     },
     {
       "relation": "contains",
@@ -3209,9 +4169,9 @@
       "source_file": ".claude/commands/sync.md",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_sync",
-      "target": "claude_commands_sync_when_something_goes_wrong",
-      "confidence_score": 1.0
+      "target": "claude_commands_sync_when_something_goes_wrong"
     },
     {
       "relation": "contains",
@@ -3219,9 +4179,9 @@
       "source_file": ".claude/commands/sync.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_sync_do_it_in_this_order",
-      "target": "claude_commands_sync_1_see_what_is_here",
-      "confidence_score": 1.0
+      "target": "claude_commands_sync_1_see_what_is_here"
     },
     {
       "relation": "contains",
@@ -3229,9 +4189,9 @@
       "source_file": ".claude/commands/sync.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_sync_do_it_in_this_order",
-      "target": "claude_commands_sync_2_get_their_changes_first",
-      "confidence_score": 1.0
+      "target": "claude_commands_sync_2_get_their_changes_first"
     },
     {
       "relation": "contains",
@@ -3239,9 +4199,9 @@
       "source_file": ".claude/commands/sync.md",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_sync_do_it_in_this_order",
-      "target": "claude_commands_sync_3_put_local_changes_back",
-      "confidence_score": 1.0
+      "target": "claude_commands_sync_3_put_local_changes_back"
     },
     {
       "relation": "contains",
@@ -3249,9 +4209,9 @@
       "source_file": ".claude/commands/sync.md",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_sync_do_it_in_this_order",
-      "target": "claude_commands_sync_4_save_and_share",
-      "confidence_score": 1.0
+      "target": "claude_commands_sync_4_save_and_share"
     },
     {
       "relation": "contains",
@@ -3259,9 +4219,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude",
-      "target": "claude_backyard_brew",
-      "confidence_score": 1.0
+      "target": "claude_backyard_brew"
     },
     {
       "relation": "contains",
@@ -3269,9 +4229,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_backyard_brew",
-      "target": "claude_data_files",
-      "confidence_score": 1.0
+      "target": "claude_data_files"
     },
     {
       "relation": "contains",
@@ -3279,9 +4239,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_backyard_brew",
-      "target": "claude_graphify",
-      "confidence_score": 1.0
+      "target": "claude_graphify"
     },
     {
       "relation": "contains",
@@ -3289,9 +4249,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_backyard_brew",
-      "target": "claude_nothing_posts_automatically",
-      "confidence_score": 1.0
+      "target": "claude_nothing_posts_automatically"
     },
     {
       "relation": "contains",
@@ -3299,9 +4259,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_backyard_brew",
-      "target": "claude_read_the_brand_skill_first",
-      "confidence_score": 1.0
+      "target": "claude_read_the_brand_skill_first"
     },
     {
       "relation": "contains",
@@ -3309,9 +4269,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_backyard_brew",
-      "target": "claude_scripts",
-      "confidence_score": 1.0
+      "target": "claude_scripts"
     },
     {
       "relation": "contains",
@@ -3319,9 +4279,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_backyard_brew",
-      "target": "claude_the_printed_sheets",
-      "confidence_score": 1.0
+      "target": "claude_the_printed_sheets"
     },
     {
       "relation": "contains",
@@ -3329,9 +4289,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_backyard_brew",
-      "target": "claude_the_six_commands",
-      "confidence_score": 1.0
+      "target": "claude_the_six_commands"
     },
     {
       "relation": "contains",
@@ -3339,9 +4299,9 @@
       "source_file": "HANDOFF.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff",
-      "target": "handoff_handoff_checklist",
-      "confidence_score": 1.0
+      "target": "handoff_handoff_checklist"
     },
     {
       "relation": "references",
@@ -3349,9 +4309,9 @@
       "source_file": "README.md",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme",
-      "target": "handoff",
-      "confidence_score": 1.0
+      "target": "handoff"
     },
     {
       "relation": "contains",
@@ -3359,9 +4319,9 @@
       "source_file": "HANDOFF.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff_handoff_checklist",
-      "target": "handoff_1_access_your_dad_needs_do_this_first_it_blocks_everything_else",
-      "confidence_score": 1.0
+      "target": "handoff_1_access_your_dad_needs_do_this_first_it_blocks_everything_else"
     },
     {
       "relation": "contains",
@@ -3369,9 +4329,9 @@
       "source_file": "HANDOFF.md",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff_handoff_checklist",
-      "target": "handoff_2_things_only_you_can_fill_in",
-      "confidence_score": 1.0
+      "target": "handoff_2_things_only_you_can_fill_in"
     },
     {
       "relation": "contains",
@@ -3379,9 +4339,9 @@
       "source_file": "HANDOFF.md",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff_handoff_checklist",
-      "target": "handoff_3_get_it_onto_his_mac",
-      "confidence_score": 1.0
+      "target": "handoff_3_get_it_onto_his_mac"
     },
     {
       "relation": "contains",
@@ -3389,9 +4349,9 @@
       "source_file": "HANDOFF.md",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff_handoff_checklist",
-      "target": "handoff_4_do_one_real_week_together",
-      "confidence_score": 1.0
+      "target": "handoff_4_do_one_real_week_together"
     },
     {
       "relation": "contains",
@@ -3399,9 +4359,9 @@
       "source_file": "HANDOFF.md",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff_handoff_checklist",
-      "target": "handoff_5_print_and_leave_these_by_the_computer",
-      "confidence_score": 1.0
+      "target": "handoff_5_print_and_leave_these_by_the_computer"
     },
     {
       "relation": "contains",
@@ -3409,9 +4369,9 @@
       "source_file": "HANDOFF.md",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff_handoff_checklist",
-      "target": "handoff_6_tell_him_the_three_things_that_matter_most",
-      "confidence_score": 1.0
+      "target": "handoff_6_tell_him_the_three_things_that_matter_most"
     },
     {
       "relation": "contains",
@@ -3419,9 +4379,9 @@
       "source_file": "HANDOFF.md",
       "source_location": "L106",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff_handoff_checklist",
-      "target": "handoff_7_first_month",
-      "confidence_score": 1.0
+      "target": "handoff_7_first_month"
     },
     {
       "relation": "contains",
@@ -3429,9 +4389,9 @@
       "source_file": "HANDOFF.md",
       "source_location": "L119",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff_handoff_checklist",
-      "target": "handoff_what_is_already_done",
-      "confidence_score": 1.0
+      "target": "handoff_what_is_already_done"
     },
     {
       "relation": "references",
@@ -3439,9 +4399,9 @@
       "source_file": "README.md",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme",
-      "target": "playbook_1_start_here",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here"
     },
     {
       "relation": "references",
@@ -3449,9 +4409,9 @@
       "source_file": "README.md",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme",
-      "target": "playbook_3_every_day",
-      "confidence_score": 1.0
+      "target": "playbook_3_every_day"
     },
     {
       "relation": "references",
@@ -3459,9 +4419,9 @@
       "source_file": "README.md",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme",
-      "target": "playbook_4_every_week",
-      "confidence_score": 1.0
+      "target": "playbook_4_every_week"
     },
     {
       "relation": "contains",
@@ -3469,9 +4429,9 @@
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme",
-      "target": "readme_backyard_brew_social_media_online_presence",
-      "confidence_score": 1.0
+      "target": "readme_backyard_brew_social_media_online_presence"
     },
     {
       "relation": "contains",
@@ -3479,9 +4439,9 @@
       "source_file": "README.md",
       "source_location": "L106",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_backyard_brew_social_media_online_presence",
-      "target": "readme_the_rules",
-      "confidence_score": 1.0
+      "target": "readme_the_rules"
     },
     {
       "relation": "contains",
@@ -3489,9 +4449,9 @@
       "source_file": "README.md",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_backyard_brew_social_media_online_presence",
-      "target": "readme_the_six_commands",
-      "confidence_score": 1.0
+      "target": "readme_the_six_commands"
     },
     {
       "relation": "contains",
@@ -3499,9 +4459,9 @@
       "source_file": "README.md",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_backyard_brew_social_media_online_presence",
-      "target": "readme_then_read_this",
-      "confidence_score": 1.0
+      "target": "readme_then_read_this"
     },
     {
       "relation": "contains",
@@ -3509,9 +4469,9 @@
       "source_file": "README.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_backyard_brew_social_media_online_presence",
-      "target": "readme_using_it_no_terminal_needed",
-      "confidence_score": 1.0
+      "target": "readme_using_it_no_terminal_needed"
     },
     {
       "relation": "contains",
@@ -3519,9 +4479,9 @@
       "source_file": "README.md",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_backyard_brew_social_media_online_presence",
-      "target": "readme_what_s_in_here",
-      "confidence_score": 1.0
+      "target": "readme_what_s_in_here"
     },
     {
       "relation": "contains",
@@ -3529,9 +4489,9 @@
       "source_file": "README.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_using_it_no_terminal_needed",
-      "target": "readme_optional_setup",
-      "confidence_score": 1.0
+      "target": "readme_optional_setup"
     },
     {
       "relation": "contains",
@@ -3539,9 +4499,9 @@
       "source_file": "README.md",
       "source_location": "L87",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_what_s_in_here",
-      "target": "readme_naming_photos",
-      "confidence_score": 1.0
+      "target": "readme_naming_photos"
     },
     {
       "relation": "contains",
@@ -3549,9 +4509,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_1_start_here",
-      "target": "playbook_1_start_here_backyard_brew_start_here",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here_backyard_brew_start_here"
     },
     {
       "relation": "contains",
@@ -3559,9 +4519,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_first_time_on_this_mac_only",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here_first_time_on_this_mac_only"
     },
     {
       "relation": "contains",
@@ -3569,9 +4529,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L195",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_if_something_is_not_working",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here_if_something_is_not_working"
     },
     {
       "relation": "contains",
@@ -3579,9 +4539,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_opening_it",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here_opening_it"
     },
     {
       "relation": "contains",
@@ -3589,9 +4549,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L166",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_reading_printing_and_editing_these_sheets",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here_reading_printing_and_editing_these_sheets"
     },
     {
       "relation": "contains",
@@ -3599,9 +4559,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L128",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_the_weekly_rhythm",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here_the_weekly_rhythm"
     },
     {
       "relation": "contains",
@@ -3609,9 +4569,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L142",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_three_rules",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here_three_rules"
     },
     {
       "relation": "contains",
@@ -3619,9 +4579,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L153",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_two_things_about_the_app",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here_two_things_about_the_app"
     },
     {
       "relation": "contains",
@@ -3629,9 +4589,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L92",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_where_things_live",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here_where_things_live"
     },
     {
       "relation": "contains",
@@ -3639,9 +4599,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_1_start_here_opening_it",
-      "target": "playbook_1_start_here_it_already_knows_the_bar",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here_it_already_knows_the_bar"
     },
     {
       "relation": "contains",
@@ -3649,9 +4609,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_1_start_here_opening_it",
-      "target": "playbook_1_start_here_the_six_commands",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here_the_six_commands"
     },
     {
       "relation": "contains",
@@ -3659,9 +4619,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L107",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_1_start_here_where_things_live",
-      "target": "playbook_1_start_here_dropping_in_photos",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here_dropping_in_photos"
     },
     {
       "relation": "contains",
@@ -3669,9 +4629,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L119",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_1_start_here_where_things_live",
-      "target": "playbook_1_start_here_sharing_with_micah",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here_sharing_with_micah"
     },
     {
       "relation": "contains",
@@ -3679,9 +4639,9 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_3_every_day",
-      "target": "playbook_3_every_day_every_day",
-      "confidence_score": 1.0
+      "target": "playbook_3_every_day_every_day"
     },
     {
       "relation": "contains",
@@ -3689,9 +4649,9 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L79",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_3_every_day_every_day",
-      "target": "playbook_3_every_day_all_day_stories",
-      "confidence_score": 1.0
+      "target": "playbook_3_every_day_all_day_stories"
     },
     {
       "relation": "contains",
@@ -3699,9 +4659,9 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L115",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_3_every_day_every_day",
-      "target": "playbook_3_every_day_first_hour_after_each_post_reply_to_comments",
-      "confidence_score": 1.0
+      "target": "playbook_3_every_day_first_hour_after_each_post_reply_to_comments"
     },
     {
       "relation": "contains",
@@ -3709,9 +4669,9 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_3_every_day_every_day",
-      "target": "playbook_3_every_day_morning_share_the_11am_post_to_facebook_groups",
-      "confidence_score": 1.0
+      "target": "playbook_3_every_day_morning_share_the_11am_post_to_facebook_groups"
     },
     {
       "relation": "contains",
@@ -3719,9 +4679,9 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L149",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_3_every_day_every_day",
-      "target": "playbook_3_every_day_the_daily_checklist",
-      "confidence_score": 1.0
+      "target": "playbook_3_every_day_the_daily_checklist"
     },
     {
       "relation": "contains",
@@ -3729,9 +4689,9 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L131",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_3_every_day_every_day",
-      "target": "playbook_3_every_day_while_you_are_there_take_photos",
-      "confidence_score": 1.0
+      "target": "playbook_3_every_day_while_you_are_there_take_photos"
     },
     {
       "relation": "contains",
@@ -3739,9 +4699,9 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_3_every_day_morning_share_the_11am_post_to_facebook_groups",
-      "target": "playbook_3_every_day_how_to_do_it_right",
-      "confidence_score": 1.0
+      "target": "playbook_3_every_day_how_to_do_it_right"
     },
     {
       "relation": "contains",
@@ -3749,9 +4709,9 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_3_every_day_morning_share_the_11am_post_to_facebook_groups",
-      "target": "playbook_3_every_day_the_line_you_write_above_it_matters_most",
-      "confidence_score": 1.0
+      "target": "playbook_3_every_day_the_line_you_write_above_it_matters_most"
     },
     {
       "relation": "contains",
@@ -3759,9 +4719,9 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_3_every_day_morning_share_the_11am_post_to_facebook_groups",
-      "target": "playbook_3_every_day_which_groups_for_which_post",
-      "confidence_score": 1.0
+      "target": "playbook_3_every_day_which_groups_for_which_post"
     },
     {
       "relation": "contains",
@@ -3769,9 +4729,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_4_every_week",
-      "target": "playbook_4_every_week_every_week",
-      "confidence_score": 1.0
+      "target": "playbook_4_every_week_every_week"
     },
     {
       "relation": "contains",
@@ -3779,9 +4739,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_4_every_week_every_week",
-      "target": "playbook_4_every_week_1_drop_in_this_week_s_photos_5_min",
-      "confidence_score": 1.0
+      "target": "playbook_4_every_week_1_drop_in_this_week_s_photos_5_min"
     },
     {
       "relation": "contains",
@@ -3789,9 +4749,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_4_every_week_every_week",
-      "target": "playbook_4_every_week_2_write_the_week_s_posts_10_min",
-      "confidence_score": 1.0
+      "target": "playbook_4_every_week_2_write_the_week_s_posts_10_min"
     },
     {
       "relation": "contains",
@@ -3799,9 +4759,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_4_every_week_every_week",
-      "target": "playbook_4_every_week_3_schedule_everything_in_meta_business_suite_30_min",
-      "confidence_score": 1.0
+      "target": "playbook_4_every_week_3_schedule_everything_in_meta_business_suite_30_min"
     },
     {
       "relation": "contains",
@@ -3809,9 +4769,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L103",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_4_every_week_every_week",
-      "target": "playbook_4_every_week_4_google_business_profile_10_min",
-      "confidence_score": 1.0
+      "target": "playbook_4_every_week_4_google_business_profile_10_min"
     },
     {
       "relation": "contains",
@@ -3819,9 +4779,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L127",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_4_every_week_every_week",
-      "target": "playbook_4_every_week_5_reviews_5_min",
-      "confidence_score": 1.0
+      "target": "playbook_4_every_week_5_reviews_5_min"
     },
     {
       "relation": "contains",
@@ -3829,9 +4789,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L147",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_4_every_week_every_week",
-      "target": "playbook_4_every_week_6_ask_what_to_work_on_5_min_optional",
-      "confidence_score": 1.0
+      "target": "playbook_4_every_week_6_ask_what_to_work_on_5_min_optional"
     },
     {
       "relation": "contains",
@@ -3839,9 +4799,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L166",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_4_every_week_every_week",
-      "target": "playbook_4_every_week_7_send_it_to_micah_1_min",
-      "confidence_score": 1.0
+      "target": "playbook_4_every_week_7_send_it_to_micah_1_min"
     },
     {
       "relation": "contains",
@@ -3849,9 +4809,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L173",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_4_every_week_every_week",
-      "target": "playbook_4_every_week_the_sunday_checklist",
-      "confidence_score": 1.0
+      "target": "playbook_4_every_week_the_sunday_checklist"
     },
     {
       "relation": "contains",
@@ -3859,9 +4819,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L142",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs",
-      "target": "playbook_make_pdfs_add_runs",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_add_runs"
     },
     {
       "relation": "contains",
@@ -3869,9 +4829,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L120",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs",
-      "target": "playbook_make_pdfs_lint",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_lint"
     },
     {
       "relation": "contains",
@@ -3879,9 +4839,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L305",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs",
-      "target": "playbook_make_pdfs_main",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_main"
     },
     {
       "relation": "contains",
@@ -3889,9 +4849,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L156",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs",
-      "target": "playbook_make_pdfs_md_to_docx",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_md_to_docx"
     },
     {
       "relation": "contains",
@@ -3899,9 +4859,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L101",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs",
-      "target": "playbook_make_pdfs_md_to_html",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_md_to_html"
     },
     {
       "relation": "contains",
@@ -3909,9 +4869,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L268",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs",
-      "target": "playbook_make_pdfs_selfcheck",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_selfcheck"
     },
     {
       "relation": "calls",
@@ -3920,9 +4880,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L333",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_main",
-      "target": "playbook_make_pdfs_md_to_html",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_md_to_html"
     },
     {
       "relation": "rationale_for",
@@ -3930,9 +4890,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_rationale_102",
-      "target": "playbook_make_pdfs_md_to_html",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_md_to_html"
     },
     {
       "relation": "calls",
@@ -3941,9 +4901,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L270",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_selfcheck",
-      "target": "playbook_make_pdfs_md_to_html",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_md_to_html"
     },
     {
       "relation": "calls",
@@ -3952,9 +4912,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L331",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_main",
-      "target": "playbook_make_pdfs_lint",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_lint"
     },
     {
       "relation": "rationale_for",
@@ -3962,9 +4922,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L121",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_rationale_121",
-      "target": "playbook_make_pdfs_lint",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_lint"
     },
     {
       "relation": "calls",
@@ -3973,9 +4933,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L277",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_selfcheck",
-      "target": "playbook_make_pdfs_lint",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_lint"
     },
     {
       "relation": "calls",
@@ -3984,9 +4944,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L213",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_md_to_docx",
-      "target": "playbook_make_pdfs_add_runs",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_add_runs"
     },
     {
       "relation": "rationale_for",
@@ -3994,9 +4954,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L143",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_rationale_143",
-      "target": "playbook_make_pdfs_add_runs",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_add_runs"
     },
     {
       "relation": "calls",
@@ -4005,9 +4965,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L340",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_main",
-      "target": "playbook_make_pdfs_md_to_docx",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_md_to_docx"
     },
     {
       "relation": "references",
@@ -4016,9 +4976,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L156",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_md_to_docx",
-      "target": "path",
-      "confidence_score": 1.0
+      "target": "path"
     },
     {
       "relation": "rationale_for",
@@ -4026,9 +4986,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L157",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_rationale_157",
-      "target": "playbook_make_pdfs_md_to_docx",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_md_to_docx"
     },
     {
       "relation": "calls",
@@ -4037,9 +4997,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L291",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_selfcheck",
-      "target": "playbook_make_pdfs_md_to_docx",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_md_to_docx"
     },
     {
       "relation": "calls",
@@ -4048,9 +5008,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L290",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_selfcheck",
-      "target": "path",
-      "confidence_score": 1.0
+      "target": "path"
     },
     {
       "relation": "calls",
@@ -4059,9 +5019,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L307",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_main",
-      "target": "playbook_make_pdfs_selfcheck",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_selfcheck"
     },
     {
       "relation": "rationale_for",
@@ -4069,9 +5029,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L269",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_rationale_269",
-      "target": "playbook_make_pdfs_selfcheck",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_selfcheck"
     },
     {
       "relation": "contains",
@@ -4079,9 +5039,9 @@
       "source_file": "setup.sh",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "setup",
-      "target": "setup_sh__entry",
-      "confidence_score": 1.0
+      "target": "setup_sh__entry"
     },
     {
       "relation": "contains",
@@ -5894,5 +6854,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "fff36291a3d8964fd9d0a3a67df3d2ded822d79a"
+  "built_at_commit": "da5379a7297db81f0fa5347bb2443d3fb40f8308"
 }
