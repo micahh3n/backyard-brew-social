@@ -1265,8 +1265,8 @@
     "semantic_hash": ""
   },
   "playbook/make-pdfs.py": {
-    "mtime": 1785215518.067155,
-    "ast_hash": "ca260a0840035916ded91432529e892e",
+    "mtime": 1785275441.1008837,
+    "ast_hash": "ee932ce17a309901a2f769a3337501f7",
     "semantic_hash": ""
   },
   "setup.sh": {
@@ -1340,8 +1340,8 @@
     "semantic_hash": ""
   },
   "playbook/3-EVERY-DAY.md": {
-    "mtime": 1785215546.9817722,
-    "ast_hash": "b4d2e265b47d9d7a3420ded3a28d13fd",
+    "mtime": 1785275478.1022935,
+    "ast_hash": "8b14aeec0bc666034ffa6425a758b9b0",
     "semantic_hash": ""
   },
   "playbook/4-EVERY-WEEK.md": {
@@ -1350,23 +1350,23 @@
     "semantic_hash": ""
   },
   "playbook/pdf/1-START-HERE.pdf": {
-    "mtime": 1785272351.040535,
-    "ast_hash": "2a799bafabc428d12e47b39ac4bf00b6",
+    "mtime": 1785275480.1078176,
+    "ast_hash": "94f7a56fa066688f5111a7eb0ee72f2f",
     "semantic_hash": ""
   },
   "playbook/pdf/2-MAKE-A-GRAPHIC.pdf": {
-    "mtime": 1785272351.3590982,
-    "ast_hash": "b4e83a11178039fccc165b124caf8bc7",
+    "mtime": 1785275480.3129344,
+    "ast_hash": "cc6e27213e52104e65bc479fb7ff35ca",
     "semantic_hash": ""
   },
   "playbook/pdf/3-EVERY-DAY.pdf": {
-    "mtime": 1785272351.5658758,
-    "ast_hash": "01f713e7f163d2e519de288146e716ab",
+    "mtime": 1785275480.504374,
+    "ast_hash": "a1e1806aab018981d6614002db31eba8",
     "semantic_hash": ""
   },
   "playbook/pdf/4-EVERY-WEEK.pdf": {
-    "mtime": 1785272351.6814914,
-    "ast_hash": "7287b9edad721aec42d191c257fdc7ad",
+    "mtime": 1785275480.6072464,
+    "ast_hash": "f02610c338852dcf53f10f2d759edeb6",
     "semantic_hash": ""
   },
   "vendor-market/vendor_sign_in_sheet.pdf": {
@@ -1700,22 +1700,22 @@
     "semantic_hash": ""
   },
   "graphify-out/converted/1-START-HERE_06273d7e.md": {
-    "mtime": 1785272437.5820825,
+    "mtime": 1785275514.2121427,
     "ast_hash": "0ac7921352d3e3a219be3240866facc6",
     "semantic_hash": ""
   },
   "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md": {
-    "mtime": 1785272437.6705856,
+    "mtime": 1785275514.286542,
     "ast_hash": "331d042cce2d85b3b815fad1ce1ba384",
     "semantic_hash": ""
   },
   "graphify-out/converted/3-EVERY-DAY_5e2281ba.md": {
-    "mtime": 1785272437.753593,
+    "mtime": 1785275514.3561032,
     "ast_hash": "b1f71f37daf680475724e6e0f7b93031",
     "semantic_hash": ""
   },
   "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md": {
-    "mtime": 1785272437.8506455,
+    "mtime": 1785275514.4244115,
     "ast_hash": "948f6d6b0f004bb6c6bfe21a50474d3f",
     "semantic_hash": ""
   },

@@ -1,7 +1,7 @@
 # Graph Report - backyard-brew-social  (2026-07-28)
 
 ## Corpus Check
-- 77 files · ~26,872,356 words
+- 77 files · ~26,872,754 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `da5379a7`
+- Built from commit: `9b619330`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -51,9 +51,9 @@
 3. `Writing the Gemini prompt` - 10 edges
 4. `Making a Graphic` - 10 edges
 5. `Backyard Brew: Start Here` - 9 edges
-6. `Every Week` - 9 edges
-7. `Handoff Checklist` - 9 edges
-8. `Backyard Brew: Start Here` - 9 edges
+6. `Backyard Brew: Start Here` - 9 edges
+7. `Every Week` - 9 edges
+8. `Handoff Checklist` - 9 edges
 9. `Every Week` - 9 edges
 10. `Backyard Market & Brews (Thursday)` - 9 edges
 

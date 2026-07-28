@@ -1,16 +1,16 @@
 # Graph Report - backyard-brew-social  (2026-07-28)
 
 ## Corpus Check
-- 77 files · ~26,872,754 words
+- 77 files · ~26,872,935 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 341 nodes · 340 edges · 30 communities (28 shown, 2 thin omitted)
+- 343 nodes · 344 edges · 30 communities (28 shown, 2 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `9b619330`
+- Built from commit: `f35408bb`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -126,8 +126,8 @@ Cohesion: 0.10
 Nodes (20): 11:00am: the day's main post, 11am the day of: turn it into a decision, 2:30pm: highlight, recap, or filler that ties in, 2:30pm the day of: last call before doors, 7:00pm: teaser for tomorrow, 7pm the night before: make them want it, Before delivering: run the tally, Before writing anything (+12 more)
 
 ### Community 15 - "_selfcheck"
-Cohesion: 0.27
-Nodes (12): Path, _add_runs(), lint(), main(), md_to_docx(), md_to_html(), Convert one markdown sheet into a standalone printable HTML page., Warn about a list glued to the line above it.      Markdown silently swallows (+4 more)
+Cohesion: 0.24
+Nodes (14): Path, _add_runs(), _docx_source_hash(), lint(), main(), md_to_docx(), md_to_html(), Convert one markdown sheet into a standalone printable HTML page. (+6 more)
 
 ### Community 16 - "Backyard Brew — Social Media & Online Presence"
 Cohesion: 0.09
@@ -185,8 +185,8 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.009) - this node is a cross-community bridge._
 - **Why does `Every Week` connect `test_classify_photos.py` to `Backyard Brew — Social Media & Online Presence`?**
   _High betweenness centrality (0.007) - this node is a cross-community bridge._
-- **What connects `First time on this Mac only`, `The six commands`, `It already knows the bar` to the rest of the system?**
-  _217 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `Convert one markdown sheet into a standalone printable HTML page.`, `Warn about a list glued to the line above it.      Markdown silently swallows`, `Write text into a docx paragraph, honouring **bold** and `code`.` to the rest of the system?**
+  _218 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `test_generate_captions.py` be split into smaller, more focused modules?**
   _Cohesion score 0.08695652173913043 - nodes in this community are weakly interconnected._
 - **Should `classify_photos.py` be split into smaller, more focused modules?**

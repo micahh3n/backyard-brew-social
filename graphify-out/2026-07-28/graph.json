@@ -4,14 +4,154 @@
   "graph": {},
   "nodes": [
     {
+      "label": "1-START-HERE.md",
+      "file_type": "document",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "playbook_1_start_here",
+      "community": 16,
+      "norm_label": "1-start-here.md"
+    },
+    {
+      "label": "Backyard Brew: Start Here",
+      "file_type": "document",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "playbook_1_start_here_backyard_brew_start_here",
+      "community": 9,
+      "norm_label": "backyard brew: start here"
+    },
+    {
+      "label": "First time on this Mac only",
+      "file_type": "document",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "playbook_1_start_here_first_time_on_this_mac_only",
+      "community": 9,
+      "norm_label": "first time on this mac only"
+    },
+    {
+      "label": "Opening it",
+      "file_type": "document",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "playbook_1_start_here_opening_it",
+      "community": 9,
+      "norm_label": "opening it"
+    },
+    {
+      "label": "The six commands",
+      "file_type": "document",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "playbook_1_start_here_the_six_commands",
+      "community": 9,
+      "norm_label": "the six commands"
+    },
+    {
+      "label": "It already knows the bar",
+      "file_type": "document",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "playbook_1_start_here_it_already_knows_the_bar",
+      "community": 9,
+      "norm_label": "it already knows the bar"
+    },
+    {
+      "label": "Where things live",
+      "file_type": "document",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L92",
+      "_origin": "ast",
+      "id": "playbook_1_start_here_where_things_live",
+      "community": 9,
+      "norm_label": "where things live"
+    },
+    {
+      "label": "Dropping in photos",
+      "file_type": "document",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L115",
+      "_origin": "ast",
+      "id": "playbook_1_start_here_dropping_in_photos",
+      "community": 9,
+      "norm_label": "dropping in photos"
+    },
+    {
+      "label": "Sharing with Micah",
+      "file_type": "document",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L127",
+      "_origin": "ast",
+      "id": "playbook_1_start_here_sharing_with_micah",
+      "community": 9,
+      "norm_label": "sharing with micah"
+    },
+    {
+      "label": "The weekly rhythm",
+      "file_type": "document",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L136",
+      "_origin": "ast",
+      "id": "playbook_1_start_here_the_weekly_rhythm",
+      "community": 9,
+      "norm_label": "the weekly rhythm"
+    },
+    {
+      "label": "Three rules",
+      "file_type": "document",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L150",
+      "_origin": "ast",
+      "id": "playbook_1_start_here_three_rules",
+      "community": 9,
+      "norm_label": "three rules"
+    },
+    {
+      "label": "Two things about the app",
+      "file_type": "document",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L161",
+      "_origin": "ast",
+      "id": "playbook_1_start_here_two_things_about_the_app",
+      "community": 9,
+      "norm_label": "two things about the app"
+    },
+    {
+      "label": "Reading, printing, and editing these sheets",
+      "file_type": "document",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L174",
+      "_origin": "ast",
+      "id": "playbook_1_start_here_reading_printing_and_editing_these_sheets",
+      "community": 9,
+      "norm_label": "reading, printing, and editing these sheets"
+    },
+    {
+      "label": "If something is not working",
+      "file_type": "document",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L211",
+      "_origin": "ast",
+      "id": "playbook_1_start_here_if_something_is_not_working",
+      "community": 9,
+      "norm_label": "if something is not working"
+    },
+    {
       "label": "1-START-HERE_06273d7e.md",
       "file_type": "document",
       "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "graphify_out_converted_1_start_here_06273d7e",
       "community": 13,
-      "norm_label": "1-start-here_06273d7e.md"
+      "norm_label": "1-start-here_06273d7e.md",
+      "id": "graphify_out_converted_1_start_here_06273d7e"
     },
     {
       "label": "Backyard Brew: Start Here",
@@ -19,9 +159,9 @@
       "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
       "community": 13,
-      "norm_label": "backyard brew: start here"
+      "norm_label": "backyard brew: start here",
+      "id": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here"
     },
     {
       "label": "First time on this Mac only",
@@ -29,9 +169,9 @@
       "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
       "source_location": "L7",
       "_origin": "ast",
-      "id": "graphify_out_converted_1_start_here_06273d7e_first_time_on_this_mac_only",
       "community": 13,
-      "norm_label": "first time on this mac only"
+      "norm_label": "first time on this mac only",
+      "id": "graphify_out_converted_1_start_here_06273d7e_first_time_on_this_mac_only"
     },
     {
       "label": "Opening it",
@@ -39,9 +179,9 @@
       "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
       "source_location": "L21",
       "_origin": "ast",
-      "id": "graphify_out_converted_1_start_here_06273d7e_opening_it",
       "community": 13,
-      "norm_label": "opening it"
+      "norm_label": "opening it",
+      "id": "graphify_out_converted_1_start_here_06273d7e_opening_it"
     },
     {
       "label": "The six commands",
@@ -49,9 +189,9 @@
       "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
       "source_location": "L29",
       "_origin": "ast",
-      "id": "graphify_out_converted_1_start_here_06273d7e_the_six_commands",
       "community": 13,
-      "norm_label": "the six commands"
+      "norm_label": "the six commands",
+      "id": "graphify_out_converted_1_start_here_06273d7e_the_six_commands"
     },
     {
       "label": "It already knows the bar",
@@ -59,9 +199,9 @@
       "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
       "source_location": "L33",
       "_origin": "ast",
-      "id": "graphify_out_converted_1_start_here_06273d7e_it_already_knows_the_bar",
       "community": 13,
-      "norm_label": "it already knows the bar"
+      "norm_label": "it already knows the bar",
+      "id": "graphify_out_converted_1_start_here_06273d7e_it_already_knows_the_bar"
     },
     {
       "label": "Where things live",
@@ -69,9 +209,9 @@
       "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
       "source_location": "L41",
       "_origin": "ast",
-      "id": "graphify_out_converted_1_start_here_06273d7e_where_things_live",
       "community": 13,
-      "norm_label": "where things live"
+      "norm_label": "where things live",
+      "id": "graphify_out_converted_1_start_here_06273d7e_where_things_live"
     },
     {
       "label": "Dropping in photos",
@@ -79,9 +219,9 @@
       "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
       "source_location": "L45",
       "_origin": "ast",
-      "id": "graphify_out_converted_1_start_here_06273d7e_dropping_in_photos",
       "community": 13,
-      "norm_label": "dropping in photos"
+      "norm_label": "dropping in photos",
+      "id": "graphify_out_converted_1_start_here_06273d7e_dropping_in_photos"
     },
     {
       "label": "Sharing with Micah",
@@ -89,9 +229,9 @@
       "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
       "source_location": "L49",
       "_origin": "ast",
-      "id": "graphify_out_converted_1_start_here_06273d7e_sharing_with_micah",
       "community": 13,
-      "norm_label": "sharing with micah"
+      "norm_label": "sharing with micah",
+      "id": "graphify_out_converted_1_start_here_06273d7e_sharing_with_micah"
     },
     {
       "label": "The weekly rhythm",
@@ -99,9 +239,9 @@
       "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
       "source_location": "L52",
       "_origin": "ast",
-      "id": "graphify_out_converted_1_start_here_06273d7e_the_weekly_rhythm",
       "community": 13,
-      "norm_label": "the weekly rhythm"
+      "norm_label": "the weekly rhythm",
+      "id": "graphify_out_converted_1_start_here_06273d7e_the_weekly_rhythm"
     },
     {
       "label": "Three rules",
@@ -109,9 +249,9 @@
       "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
       "source_location": "L57",
       "_origin": "ast",
-      "id": "graphify_out_converted_1_start_here_06273d7e_three_rules",
       "community": 13,
-      "norm_label": "three rules"
+      "norm_label": "three rules",
+      "id": "graphify_out_converted_1_start_here_06273d7e_three_rules"
     },
     {
       "label": "Two things about the app",
@@ -119,9 +259,9 @@
       "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
       "source_location": "L64",
       "_origin": "ast",
-      "id": "graphify_out_converted_1_start_here_06273d7e_two_things_about_the_app",
       "community": 13,
-      "norm_label": "two things about the app"
+      "norm_label": "two things about the app",
+      "id": "graphify_out_converted_1_start_here_06273d7e_two_things_about_the_app"
     },
     {
       "label": "Reading, printing, and editing these sheets",
@@ -129,9 +269,9 @@
       "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
       "source_location": "L67",
       "_origin": "ast",
-      "id": "graphify_out_converted_1_start_here_06273d7e_reading_printing_and_editing_these_sheets",
       "community": 13,
-      "norm_label": "reading, printing, and editing these sheets"
+      "norm_label": "reading, printing, and editing these sheets",
+      "id": "graphify_out_converted_1_start_here_06273d7e_reading_printing_and_editing_these_sheets"
     },
     {
       "label": "If something is not working",
@@ -139,9 +279,9 @@
       "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
       "source_location": "L76",
       "_origin": "ast",
-      "id": "graphify_out_converted_1_start_here_06273d7e_if_something_is_not_working",
       "community": 13,
-      "norm_label": "if something is not working"
+      "norm_label": "if something is not working",
+      "id": "graphify_out_converted_1_start_here_06273d7e_if_something_is_not_working"
     },
     {
       "label": "2-MAKE-A-GRAPHIC_c5f8af17.md",
@@ -149,9 +289,9 @@
       "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17",
       "community": 24,
-      "norm_label": "2-make-a-graphic_c5f8af17.md"
+      "norm_label": "2-make-a-graphic_c5f8af17.md",
+      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17"
     },
     {
       "label": "Making a Graphic",
@@ -159,9 +299,9 @@
       "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_making_a_graphic",
       "community": 24,
-      "norm_label": "making a graphic"
+      "norm_label": "making a graphic",
+      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_making_a_graphic"
     },
     {
       "label": "Step 1. Pick your photo first",
@@ -169,9 +309,9 @@
       "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
       "source_location": "L6",
       "_origin": "ast",
-      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_1_pick_your_photo_first",
       "community": 24,
-      "norm_label": "step 1. pick your photo first"
+      "norm_label": "step 1. pick your photo first",
+      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_1_pick_your_photo_first"
     },
     {
       "label": "Step 2. Ask Claude for the prompt",
@@ -179,9 +319,9 @@
       "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
       "source_location": "L9",
       "_origin": "ast",
-      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_2_ask_claude_for_the_prompt",
       "community": 24,
-      "norm_label": "step 2. ask claude for the prompt"
+      "norm_label": "step 2. ask claude for the prompt",
+      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_2_ask_claude_for_the_prompt"
     },
     {
       "label": "Step 3. Run it through Gemini",
@@ -189,9 +329,9 @@
       "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
       "source_location": "L15",
       "_origin": "ast",
-      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_3_run_it_through_gemini",
       "community": 24,
-      "norm_label": "step 3. run it through gemini"
+      "norm_label": "step 3. run it through gemini",
+      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_3_run_it_through_gemini"
     },
     {
       "label": "Step 4. Remove the watermark",
@@ -199,9 +339,9 @@
       "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
       "source_location": "L24",
       "_origin": "ast",
-      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_4_remove_the_watermark",
       "community": 24,
-      "norm_label": "step 4. remove the watermark"
+      "norm_label": "step 4. remove the watermark",
+      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_4_remove_the_watermark"
     },
     {
       "label": "Step 5. Put the real logo on in Canva",
@@ -209,9 +349,9 @@
       "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
       "source_location": "L28",
       "_origin": "ast",
-      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_5_put_the_real_logo_on_in_canva",
       "community": 24,
-      "norm_label": "step 5. put the real logo on in canva"
+      "norm_label": "step 5. put the real logo on in canva",
+      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_5_put_the_real_logo_on_in_canva"
     },
     {
       "label": "Step 6. Name it and check it",
@@ -219,9 +359,9 @@
       "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
       "source_location": "L36",
       "_origin": "ast",
-      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_6_name_it_and_check_it",
       "community": 24,
-      "norm_label": "step 6. name it and check it"
+      "norm_label": "step 6. name it and check it",
+      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_6_name_it_and_check_it"
     },
     {
       "label": "Step 7. Post it",
@@ -229,9 +369,9 @@
       "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
       "source_location": "L47",
       "_origin": "ast",
-      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_7_post_it",
       "community": 24,
-      "norm_label": "step 7. post it"
+      "norm_label": "step 7. post it",
+      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_7_post_it"
     },
     {
       "label": "Backup: when Gemini will not cooperate",
@@ -239,9 +379,9 @@
       "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
       "source_location": "L50",
       "_origin": "ast",
-      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_backup_when_gemini_will_not_cooperate",
       "community": 24,
-      "norm_label": "backup: when gemini will not cooperate"
+      "norm_label": "backup: when gemini will not cooperate",
+      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_backup_when_gemini_will_not_cooperate"
     },
     {
       "label": "What good looks like",
@@ -249,9 +389,9 @@
       "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
       "source_location": "L58",
       "_origin": "ast",
-      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_what_good_looks_like",
       "community": 24,
-      "norm_label": "what good looks like"
+      "norm_label": "what good looks like",
+      "id": "graphify_out_converted_2_make_a_graphic_c5f8af17_what_good_looks_like"
     },
     {
       "label": "3-EVERY-DAY_5e2281ba.md",
@@ -259,9 +399,9 @@
       "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "graphify_out_converted_3_every_day_5e2281ba",
       "community": 25,
-      "norm_label": "3-every-day_5e2281ba.md"
+      "norm_label": "3-every-day_5e2281ba.md",
+      "id": "graphify_out_converted_3_every_day_5e2281ba"
     },
     {
       "label": "Every Day",
@@ -269,9 +409,9 @@
       "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "graphify_out_converted_3_every_day_5e2281ba_every_day",
       "community": 25,
-      "norm_label": "every day"
+      "norm_label": "every day",
+      "id": "graphify_out_converted_3_every_day_5e2281ba_every_day"
     },
     {
       "label": "Morning: share the 11am post to Facebook groups",
@@ -279,9 +419,9 @@
       "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
       "source_location": "L7",
       "_origin": "ast",
-      "id": "graphify_out_converted_3_every_day_5e2281ba_morning_share_the_11am_post_to_facebook_groups",
       "community": 25,
-      "norm_label": "morning: share the 11am post to facebook groups"
+      "norm_label": "morning: share the 11am post to facebook groups",
+      "id": "graphify_out_converted_3_every_day_5e2281ba_morning_share_the_11am_post_to_facebook_groups"
     },
     {
       "label": "How to do it right",
@@ -289,9 +429,9 @@
       "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
       "source_location": "L11",
       "_origin": "ast",
-      "id": "graphify_out_converted_3_every_day_5e2281ba_how_to_do_it_right",
       "community": 25,
-      "norm_label": "how to do it right"
+      "norm_label": "how to do it right",
+      "id": "graphify_out_converted_3_every_day_5e2281ba_how_to_do_it_right"
     },
     {
       "label": "The line you write above it matters most",
@@ -299,9 +439,9 @@
       "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
       "source_location": "L18",
       "_origin": "ast",
-      "id": "graphify_out_converted_3_every_day_5e2281ba_the_line_you_write_above_it_matters_most",
       "community": 25,
-      "norm_label": "the line you write above it matters most"
+      "norm_label": "the line you write above it matters most",
+      "id": "graphify_out_converted_3_every_day_5e2281ba_the_line_you_write_above_it_matters_most"
     },
     {
       "label": "Which groups for which post",
@@ -309,9 +449,9 @@
       "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
       "source_location": "L27",
       "_origin": "ast",
-      "id": "graphify_out_converted_3_every_day_5e2281ba_which_groups_for_which_post",
       "community": 25,
-      "norm_label": "which groups for which post"
+      "norm_label": "which groups for which post",
+      "id": "graphify_out_converted_3_every_day_5e2281ba_which_groups_for_which_post"
     },
     {
       "label": "All day: stories",
@@ -319,9 +459,9 @@
       "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
       "source_location": "L35",
       "_origin": "ast",
-      "id": "graphify_out_converted_3_every_day_5e2281ba_all_day_stories",
       "community": 25,
-      "norm_label": "all day: stories"
+      "norm_label": "all day: stories",
+      "id": "graphify_out_converted_3_every_day_5e2281ba_all_day_stories"
     },
     {
       "label": "First hour after each post: reply to comments",
@@ -329,9 +469,9 @@
       "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
       "source_location": "L46",
       "_origin": "ast",
-      "id": "graphify_out_converted_3_every_day_5e2281ba_first_hour_after_each_post_reply_to_comments",
       "community": 25,
-      "norm_label": "first hour after each post: reply to comments"
+      "norm_label": "first hour after each post: reply to comments",
+      "id": "graphify_out_converted_3_every_day_5e2281ba_first_hour_after_each_post_reply_to_comments"
     },
     {
       "label": "While you are there: take photos",
@@ -339,9 +479,9 @@
       "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
       "source_location": "L53",
       "_origin": "ast",
-      "id": "graphify_out_converted_3_every_day_5e2281ba_while_you_are_there_take_photos",
       "community": 25,
-      "norm_label": "while you are there: take photos"
+      "norm_label": "while you are there: take photos",
+      "id": "graphify_out_converted_3_every_day_5e2281ba_while_you_are_there_take_photos"
     },
     {
       "label": "The daily checklist",
@@ -349,9 +489,9 @@
       "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
       "source_location": "L62",
       "_origin": "ast",
-      "id": "graphify_out_converted_3_every_day_5e2281ba_the_daily_checklist",
       "community": 25,
-      "norm_label": "the daily checklist"
+      "norm_label": "the daily checklist",
+      "id": "graphify_out_converted_3_every_day_5e2281ba_the_daily_checklist"
     },
     {
       "label": "4-EVERY-WEEK_dacbef1b.md",
@@ -359,9 +499,9 @@
       "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "graphify_out_converted_4_every_week_dacbef1b",
       "community": 26,
-      "norm_label": "4-every-week_dacbef1b.md"
+      "norm_label": "4-every-week_dacbef1b.md",
+      "id": "graphify_out_converted_4_every_week_dacbef1b"
     },
     {
       "label": "Every Week",
@@ -369,9 +509,9 @@
       "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "graphify_out_converted_4_every_week_dacbef1b_every_week",
       "community": 26,
-      "norm_label": "every week"
+      "norm_label": "every week",
+      "id": "graphify_out_converted_4_every_week_dacbef1b_every_week"
     },
     {
       "label": "1. Drop in this week's photos (5 min)",
@@ -379,9 +519,9 @@
       "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "graphify_out_converted_4_every_week_dacbef1b_1_drop_in_this_week_s_photos_5_min",
       "community": 26,
-      "norm_label": "1. drop in this week's photos (5 min)"
+      "norm_label": "1. drop in this week's photos (5 min)",
+      "id": "graphify_out_converted_4_every_week_dacbef1b_1_drop_in_this_week_s_photos_5_min"
     },
     {
       "label": "2. Write the week's posts (10 min)",
@@ -389,9 +529,9 @@
       "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
       "source_location": "L9",
       "_origin": "ast",
-      "id": "graphify_out_converted_4_every_week_dacbef1b_2_write_the_week_s_posts_10_min",
       "community": 26,
-      "norm_label": "2. write the week's posts (10 min)"
+      "norm_label": "2. write the week's posts (10 min)",
+      "id": "graphify_out_converted_4_every_week_dacbef1b_2_write_the_week_s_posts_10_min"
     },
     {
       "label": "3. Schedule everything in Meta Business Suite (30 min)",
@@ -399,9 +539,9 @@
       "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
       "source_location": "L24",
       "_origin": "ast",
-      "id": "graphify_out_converted_4_every_week_dacbef1b_3_schedule_everything_in_meta_business_suite_30_min",
       "community": 26,
-      "norm_label": "3. schedule everything in meta business suite (30 min)"
+      "norm_label": "3. schedule everything in meta business suite (30 min)",
+      "id": "graphify_out_converted_4_every_week_dacbef1b_3_schedule_everything_in_meta_business_suite_30_min"
     },
     {
       "label": "4. Google Business Profile (10 min)",
@@ -409,9 +549,9 @@
       "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
       "source_location": "L42",
       "_origin": "ast",
-      "id": "graphify_out_converted_4_every_week_dacbef1b_4_google_business_profile_10_min",
       "community": 26,
-      "norm_label": "4. google business profile (10 min)"
+      "norm_label": "4. google business profile (10 min)",
+      "id": "graphify_out_converted_4_every_week_dacbef1b_4_google_business_profile_10_min"
     },
     {
       "label": "5. Reviews (5 min)",
@@ -419,9 +559,9 @@
       "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
       "source_location": "L56",
       "_origin": "ast",
-      "id": "graphify_out_converted_4_every_week_dacbef1b_5_reviews_5_min",
       "community": 26,
-      "norm_label": "5. reviews (5 min)"
+      "norm_label": "5. reviews (5 min)",
+      "id": "graphify_out_converted_4_every_week_dacbef1b_5_reviews_5_min"
     },
     {
       "label": "6. Ask what to work on (5 min, optional)",
@@ -429,9 +569,9 @@
       "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
       "source_location": "L62",
       "_origin": "ast",
-      "id": "graphify_out_converted_4_every_week_dacbef1b_6_ask_what_to_work_on_5_min_optional",
       "community": 26,
-      "norm_label": "6. ask what to work on (5 min, optional)"
+      "norm_label": "6. ask what to work on (5 min, optional)",
+      "id": "graphify_out_converted_4_every_week_dacbef1b_6_ask_what_to_work_on_5_min_optional"
     },
     {
       "label": "7. Send it to Micah (1 min)",
@@ -439,9 +579,9 @@
       "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
       "source_location": "L70",
       "_origin": "ast",
-      "id": "graphify_out_converted_4_every_week_dacbef1b_7_send_it_to_micah_1_min",
       "community": 26,
-      "norm_label": "7. send it to micah (1 min)"
+      "norm_label": "7. send it to micah (1 min)",
+      "id": "graphify_out_converted_4_every_week_dacbef1b_7_send_it_to_micah_1_min"
     },
     {
       "label": "The Sunday checklist",
@@ -449,9 +589,9 @@
       "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
       "source_location": "L72",
       "_origin": "ast",
-      "id": "graphify_out_converted_4_every_week_dacbef1b_the_sunday_checklist",
       "community": 26,
-      "norm_label": "the sunday checklist"
+      "norm_label": "the sunday checklist",
+      "id": "graphify_out_converted_4_every_week_dacbef1b_the_sunday_checklist"
     },
     {
       "label": "Vendor_Communication_Templates_63fdc6dc.md",
@@ -459,9 +599,9 @@
       "source_file": "graphify-out/converted/Vendor_Communication_Templates_63fdc6dc.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "graphify_out_converted_vendor_communication_templates_63fdc6dc",
       "community": 28,
-      "norm_label": "vendor_communication_templates_63fdc6dc.md"
+      "norm_label": "vendor_communication_templates_63fdc6dc.md",
+      "id": "graphify_out_converted_vendor_communication_templates_63fdc6dc"
     },
     {
       "label": "1. The Rundown \u2014 send when someone asks for more info or to be in the market",
@@ -469,9 +609,9 @@
       "source_file": "graphify-out/converted/Vendor_Communication_Templates_63fdc6dc.md",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "graphify_out_converted_vendor_communication_templates_63fdc6dc_1_the_rundown_send_when_someone_asks_for_more_info_or_to_be_in_the_market",
       "community": 28,
-      "norm_label": "1. the rundown \u2014 send when someone asks for more info or to be in the market"
+      "norm_label": "1. the rundown \u2014 send when someone asks for more info or to be in the market",
+      "id": "graphify_out_converted_vendor_communication_templates_63fdc6dc_1_the_rundown_send_when_someone_asks_for_more_info_or_to_be_in_the_market"
     },
     {
       "label": "2. Polite Decline \u2014 similar vendor already booked for this event",
@@ -479,9 +619,9 @@
       "source_file": "graphify-out/converted/Vendor_Communication_Templates_63fdc6dc.md",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "graphify_out_converted_vendor_communication_templates_63fdc6dc_2_polite_decline_similar_vendor_already_booked_for_this_event",
       "community": 28,
-      "norm_label": "2. polite decline \u2014 similar vendor already booked for this event"
+      "norm_label": "2. polite decline \u2014 similar vendor already booked for this event",
+      "id": "graphify_out_converted_vendor_communication_templates_63fdc6dc_2_polite_decline_similar_vendor_already_booked_for_this_event"
     },
     {
       "label": "3. Vendor Spots Full \u2014 waitlist reply",
@@ -489,9 +629,9 @@
       "source_file": "graphify-out/converted/Vendor_Communication_Templates_63fdc6dc.md",
       "source_location": "L16",
       "_origin": "ast",
-      "id": "graphify_out_converted_vendor_communication_templates_63fdc6dc_3_vendor_spots_full_waitlist_reply",
       "community": 28,
-      "norm_label": "3. vendor spots full \u2014 waitlist reply"
+      "norm_label": "3. vendor spots full \u2014 waitlist reply",
+      "id": "graphify_out_converted_vendor_communication_templates_63fdc6dc_3_vendor_spots_full_waitlist_reply"
     },
     {
       "label": "4. Confirmed Vendor Info Sheet \u2014 send a few days before the event",
@@ -499,9 +639,9 @@
       "source_file": "graphify-out/converted/Vendor_Communication_Templates_63fdc6dc.md",
       "source_location": "L23",
       "_origin": "ast",
-      "id": "graphify_out_converted_vendor_communication_templates_63fdc6dc_4_confirmed_vendor_info_sheet_send_a_few_days_before_the_event",
       "community": 28,
-      "norm_label": "4. confirmed vendor info sheet \u2014 send a few days before the event"
+      "norm_label": "4. confirmed vendor info sheet \u2014 send a few days before the event",
+      "id": "graphify_out_converted_vendor_communication_templates_63fdc6dc_4_confirmed_vendor_info_sheet_send_a_few_days_before_the_event"
     },
     {
       "label": "vendor_sign_in_sheet_7e46fbee.md",
@@ -509,9 +649,9 @@
       "source_file": "graphify-out/converted/vendor_sign_in_sheet_7e46fbee.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "graphify_out_converted_vendor_sign_in_sheet_7e46fbee",
       "community": 29,
-      "norm_label": "vendor_sign_in_sheet_7e46fbee.md"
+      "norm_label": "vendor_sign_in_sheet_7e46fbee.md",
+      "id": "graphify_out_converted_vendor_sign_in_sheet_7e46fbee"
     },
     {
       "label": "photos.md",
@@ -1162,146 +1302,6 @@
       "community": 27,
       "norm_label": "the rules",
       "id": "readme_the_rules"
-    },
-    {
-      "label": "1-START-HERE.md",
-      "file_type": "document",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 16,
-      "norm_label": "1-start-here.md",
-      "id": "playbook_1_start_here"
-    },
-    {
-      "label": "Backyard Brew: Start Here",
-      "file_type": "document",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 9,
-      "norm_label": "backyard brew: start here",
-      "id": "playbook_1_start_here_backyard_brew_start_here"
-    },
-    {
-      "label": "First time on this Mac only",
-      "file_type": "document",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L17",
-      "_origin": "ast",
-      "community": 9,
-      "norm_label": "first time on this mac only",
-      "id": "playbook_1_start_here_first_time_on_this_mac_only"
-    },
-    {
-      "label": "Opening it",
-      "file_type": "document",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L42",
-      "_origin": "ast",
-      "community": 9,
-      "norm_label": "opening it",
-      "id": "playbook_1_start_here_opening_it"
-    },
-    {
-      "label": "The six commands",
-      "file_type": "document",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L55",
-      "_origin": "ast",
-      "community": 9,
-      "norm_label": "the six commands",
-      "id": "playbook_1_start_here_the_six_commands"
-    },
-    {
-      "label": "It already knows the bar",
-      "file_type": "document",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L71",
-      "_origin": "ast",
-      "community": 9,
-      "norm_label": "it already knows the bar",
-      "id": "playbook_1_start_here_it_already_knows_the_bar"
-    },
-    {
-      "label": "Where things live",
-      "file_type": "document",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L92",
-      "_origin": "ast",
-      "community": 9,
-      "norm_label": "where things live",
-      "id": "playbook_1_start_here_where_things_live"
-    },
-    {
-      "label": "Dropping in photos",
-      "file_type": "document",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L107",
-      "_origin": "ast",
-      "community": 9,
-      "norm_label": "dropping in photos",
-      "id": "playbook_1_start_here_dropping_in_photos"
-    },
-    {
-      "label": "Sharing with Micah",
-      "file_type": "document",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L119",
-      "_origin": "ast",
-      "community": 9,
-      "norm_label": "sharing with micah",
-      "id": "playbook_1_start_here_sharing_with_micah"
-    },
-    {
-      "label": "The weekly rhythm",
-      "file_type": "document",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L128",
-      "_origin": "ast",
-      "community": 9,
-      "norm_label": "the weekly rhythm",
-      "id": "playbook_1_start_here_the_weekly_rhythm"
-    },
-    {
-      "label": "Three rules",
-      "file_type": "document",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L142",
-      "_origin": "ast",
-      "community": 9,
-      "norm_label": "three rules",
-      "id": "playbook_1_start_here_three_rules"
-    },
-    {
-      "label": "Two things about the app",
-      "file_type": "document",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L153",
-      "_origin": "ast",
-      "community": 9,
-      "norm_label": "two things about the app",
-      "id": "playbook_1_start_here_two_things_about_the_app"
-    },
-    {
-      "label": "Reading, printing, and editing these sheets",
-      "file_type": "document",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L166",
-      "_origin": "ast",
-      "community": 9,
-      "norm_label": "reading, printing, and editing these sheets",
-      "id": "playbook_1_start_here_reading_printing_and_editing_these_sheets"
-    },
-    {
-      "label": "If something is not working",
-      "file_type": "document",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L195",
-      "_origin": "ast",
-      "community": 9,
-      "norm_label": "if something is not working",
-      "id": "playbook_1_start_here_if_something_is_not_working"
     },
     {
       "label": "3-EVERY-DAY.md",
@@ -3426,12 +3426,152 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "playbook_1_start_here",
+      "target": "playbook_1_start_here_backyard_brew_start_here",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme",
+      "target": "playbook_1_start_here"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "playbook_1_start_here_backyard_brew_start_here",
+      "target": "playbook_1_start_here_first_time_on_this_mac_only",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L211",
+      "weight": 1.0,
+      "source": "playbook_1_start_here_backyard_brew_start_here",
+      "target": "playbook_1_start_here_if_something_is_not_working",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "playbook_1_start_here_backyard_brew_start_here",
+      "target": "playbook_1_start_here_opening_it",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L174",
+      "weight": 1.0,
+      "source": "playbook_1_start_here_backyard_brew_start_here",
+      "target": "playbook_1_start_here_reading_printing_and_editing_these_sheets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L136",
+      "weight": 1.0,
+      "source": "playbook_1_start_here_backyard_brew_start_here",
+      "target": "playbook_1_start_here_the_weekly_rhythm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L150",
+      "weight": 1.0,
+      "source": "playbook_1_start_here_backyard_brew_start_here",
+      "target": "playbook_1_start_here_three_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L161",
+      "weight": 1.0,
+      "source": "playbook_1_start_here_backyard_brew_start_here",
+      "target": "playbook_1_start_here_two_things_about_the_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "playbook_1_start_here_backyard_brew_start_here",
+      "target": "playbook_1_start_here_where_things_live",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "playbook_1_start_here_opening_it",
+      "target": "playbook_1_start_here_it_already_knows_the_bar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "playbook_1_start_here_opening_it",
+      "target": "playbook_1_start_here_the_six_commands",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "playbook_1_start_here_where_things_live",
+      "target": "playbook_1_start_here_dropping_in_photos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L127",
+      "weight": 1.0,
+      "source": "playbook_1_start_here_where_things_live",
+      "target": "playbook_1_start_here_sharing_with_micah",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_1_start_here_06273d7e",
-      "target": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here"
     },
     {
       "relation": "contains",
@@ -3439,9 +3579,9 @@
       "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
-      "target": "graphify_out_converted_1_start_here_06273d7e_first_time_on_this_mac_only",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_1_start_here_06273d7e_first_time_on_this_mac_only"
     },
     {
       "relation": "contains",
@@ -3449,9 +3589,9 @@
       "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
       "source_location": "L76",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
-      "target": "graphify_out_converted_1_start_here_06273d7e_if_something_is_not_working",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_1_start_here_06273d7e_if_something_is_not_working"
     },
     {
       "relation": "contains",
@@ -3459,9 +3599,9 @@
       "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
-      "target": "graphify_out_converted_1_start_here_06273d7e_opening_it",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_1_start_here_06273d7e_opening_it"
     },
     {
       "relation": "contains",
@@ -3469,9 +3609,9 @@
       "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
-      "target": "graphify_out_converted_1_start_here_06273d7e_reading_printing_and_editing_these_sheets",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_1_start_here_06273d7e_reading_printing_and_editing_these_sheets"
     },
     {
       "relation": "contains",
@@ -3479,9 +3619,9 @@
       "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
-      "target": "graphify_out_converted_1_start_here_06273d7e_the_weekly_rhythm",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_1_start_here_06273d7e_the_weekly_rhythm"
     },
     {
       "relation": "contains",
@@ -3489,9 +3629,9 @@
       "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
-      "target": "graphify_out_converted_1_start_here_06273d7e_three_rules",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_1_start_here_06273d7e_three_rules"
     },
     {
       "relation": "contains",
@@ -3499,9 +3639,9 @@
       "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
       "source_location": "L64",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
-      "target": "graphify_out_converted_1_start_here_06273d7e_two_things_about_the_app",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_1_start_here_06273d7e_two_things_about_the_app"
     },
     {
       "relation": "contains",
@@ -3509,9 +3649,9 @@
       "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
-      "target": "graphify_out_converted_1_start_here_06273d7e_where_things_live",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_1_start_here_06273d7e_where_things_live"
     },
     {
       "relation": "contains",
@@ -3519,9 +3659,9 @@
       "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_1_start_here_06273d7e_opening_it",
-      "target": "graphify_out_converted_1_start_here_06273d7e_it_already_knows_the_bar",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_1_start_here_06273d7e_it_already_knows_the_bar"
     },
     {
       "relation": "contains",
@@ -3529,9 +3669,9 @@
       "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_1_start_here_06273d7e_opening_it",
-      "target": "graphify_out_converted_1_start_here_06273d7e_the_six_commands",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_1_start_here_06273d7e_the_six_commands"
     },
     {
       "relation": "contains",
@@ -3539,9 +3679,9 @@
       "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_1_start_here_06273d7e_where_things_live",
-      "target": "graphify_out_converted_1_start_here_06273d7e_dropping_in_photos",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_1_start_here_06273d7e_dropping_in_photos"
     },
     {
       "relation": "contains",
@@ -3549,9 +3689,9 @@
       "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_1_start_here_06273d7e_where_things_live",
-      "target": "graphify_out_converted_1_start_here_06273d7e_sharing_with_micah",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_1_start_here_06273d7e_sharing_with_micah"
     },
     {
       "relation": "contains",
@@ -3559,9 +3699,9 @@
       "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_2_make_a_graphic_c5f8af17",
-      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_making_a_graphic",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_making_a_graphic"
     },
     {
       "relation": "contains",
@@ -3569,9 +3709,9 @@
       "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_2_make_a_graphic_c5f8af17_making_a_graphic",
-      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_backup_when_gemini_will_not_cooperate",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_backup_when_gemini_will_not_cooperate"
     },
     {
       "relation": "contains",
@@ -3579,9 +3719,9 @@
       "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_2_make_a_graphic_c5f8af17_making_a_graphic",
-      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_1_pick_your_photo_first",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_1_pick_your_photo_first"
     },
     {
       "relation": "contains",
@@ -3589,9 +3729,9 @@
       "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_2_make_a_graphic_c5f8af17_making_a_graphic",
-      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_2_ask_claude_for_the_prompt",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_2_ask_claude_for_the_prompt"
     },
     {
       "relation": "contains",
@@ -3599,9 +3739,9 @@
       "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_2_make_a_graphic_c5f8af17_making_a_graphic",
-      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_3_run_it_through_gemini",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_3_run_it_through_gemini"
     },
     {
       "relation": "contains",
@@ -3609,9 +3749,9 @@
       "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_2_make_a_graphic_c5f8af17_making_a_graphic",
-      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_4_remove_the_watermark",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_4_remove_the_watermark"
     },
     {
       "relation": "contains",
@@ -3619,9 +3759,9 @@
       "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_2_make_a_graphic_c5f8af17_making_a_graphic",
-      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_5_put_the_real_logo_on_in_canva",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_5_put_the_real_logo_on_in_canva"
     },
     {
       "relation": "contains",
@@ -3629,9 +3769,9 @@
       "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_2_make_a_graphic_c5f8af17_making_a_graphic",
-      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_6_name_it_and_check_it",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_6_name_it_and_check_it"
     },
     {
       "relation": "contains",
@@ -3639,9 +3779,9 @@
       "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_2_make_a_graphic_c5f8af17_making_a_graphic",
-      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_7_post_it",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_step_7_post_it"
     },
     {
       "relation": "contains",
@@ -3649,9 +3789,9 @@
       "source_file": "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_2_make_a_graphic_c5f8af17_making_a_graphic",
-      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_what_good_looks_like",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_2_make_a_graphic_c5f8af17_what_good_looks_like"
     },
     {
       "relation": "contains",
@@ -3659,9 +3799,9 @@
       "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_3_every_day_5e2281ba",
-      "target": "graphify_out_converted_3_every_day_5e2281ba_every_day",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_3_every_day_5e2281ba_every_day"
     },
     {
       "relation": "contains",
@@ -3669,9 +3809,9 @@
       "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_3_every_day_5e2281ba_every_day",
-      "target": "graphify_out_converted_3_every_day_5e2281ba_all_day_stories",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_3_every_day_5e2281ba_all_day_stories"
     },
     {
       "relation": "contains",
@@ -3679,9 +3819,9 @@
       "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_3_every_day_5e2281ba_every_day",
-      "target": "graphify_out_converted_3_every_day_5e2281ba_first_hour_after_each_post_reply_to_comments",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_3_every_day_5e2281ba_first_hour_after_each_post_reply_to_comments"
     },
     {
       "relation": "contains",
@@ -3689,9 +3829,9 @@
       "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_3_every_day_5e2281ba_every_day",
-      "target": "graphify_out_converted_3_every_day_5e2281ba_morning_share_the_11am_post_to_facebook_groups",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_3_every_day_5e2281ba_morning_share_the_11am_post_to_facebook_groups"
     },
     {
       "relation": "contains",
@@ -3699,9 +3839,9 @@
       "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_3_every_day_5e2281ba_every_day",
-      "target": "graphify_out_converted_3_every_day_5e2281ba_the_daily_checklist",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_3_every_day_5e2281ba_the_daily_checklist"
     },
     {
       "relation": "contains",
@@ -3709,9 +3849,9 @@
       "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_3_every_day_5e2281ba_every_day",
-      "target": "graphify_out_converted_3_every_day_5e2281ba_while_you_are_there_take_photos",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_3_every_day_5e2281ba_while_you_are_there_take_photos"
     },
     {
       "relation": "contains",
@@ -3719,9 +3859,9 @@
       "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_3_every_day_5e2281ba_morning_share_the_11am_post_to_facebook_groups",
-      "target": "graphify_out_converted_3_every_day_5e2281ba_how_to_do_it_right",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_3_every_day_5e2281ba_how_to_do_it_right"
     },
     {
       "relation": "contains",
@@ -3729,9 +3869,9 @@
       "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_3_every_day_5e2281ba_morning_share_the_11am_post_to_facebook_groups",
-      "target": "graphify_out_converted_3_every_day_5e2281ba_the_line_you_write_above_it_matters_most",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_3_every_day_5e2281ba_the_line_you_write_above_it_matters_most"
     },
     {
       "relation": "contains",
@@ -3739,9 +3879,9 @@
       "source_file": "graphify-out/converted/3-EVERY-DAY_5e2281ba.md",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_3_every_day_5e2281ba_morning_share_the_11am_post_to_facebook_groups",
-      "target": "graphify_out_converted_3_every_day_5e2281ba_which_groups_for_which_post",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_3_every_day_5e2281ba_which_groups_for_which_post"
     },
     {
       "relation": "contains",
@@ -3749,9 +3889,9 @@
       "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_4_every_week_dacbef1b",
-      "target": "graphify_out_converted_4_every_week_dacbef1b_every_week",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_4_every_week_dacbef1b_every_week"
     },
     {
       "relation": "contains",
@@ -3759,9 +3899,9 @@
       "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_4_every_week_dacbef1b_every_week",
-      "target": "graphify_out_converted_4_every_week_dacbef1b_1_drop_in_this_week_s_photos_5_min",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_4_every_week_dacbef1b_1_drop_in_this_week_s_photos_5_min"
     },
     {
       "relation": "contains",
@@ -3769,9 +3909,9 @@
       "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_4_every_week_dacbef1b_every_week",
-      "target": "graphify_out_converted_4_every_week_dacbef1b_2_write_the_week_s_posts_10_min",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_4_every_week_dacbef1b_2_write_the_week_s_posts_10_min"
     },
     {
       "relation": "contains",
@@ -3779,9 +3919,9 @@
       "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_4_every_week_dacbef1b_every_week",
-      "target": "graphify_out_converted_4_every_week_dacbef1b_3_schedule_everything_in_meta_business_suite_30_min",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_4_every_week_dacbef1b_3_schedule_everything_in_meta_business_suite_30_min"
     },
     {
       "relation": "contains",
@@ -3789,9 +3929,9 @@
       "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_4_every_week_dacbef1b_every_week",
-      "target": "graphify_out_converted_4_every_week_dacbef1b_4_google_business_profile_10_min",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_4_every_week_dacbef1b_4_google_business_profile_10_min"
     },
     {
       "relation": "contains",
@@ -3799,9 +3939,9 @@
       "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_4_every_week_dacbef1b_every_week",
-      "target": "graphify_out_converted_4_every_week_dacbef1b_5_reviews_5_min",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_4_every_week_dacbef1b_5_reviews_5_min"
     },
     {
       "relation": "contains",
@@ -3809,9 +3949,9 @@
       "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_4_every_week_dacbef1b_every_week",
-      "target": "graphify_out_converted_4_every_week_dacbef1b_6_ask_what_to_work_on_5_min_optional",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_4_every_week_dacbef1b_6_ask_what_to_work_on_5_min_optional"
     },
     {
       "relation": "contains",
@@ -3819,9 +3959,9 @@
       "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_4_every_week_dacbef1b_every_week",
-      "target": "graphify_out_converted_4_every_week_dacbef1b_7_send_it_to_micah_1_min",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_4_every_week_dacbef1b_7_send_it_to_micah_1_min"
     },
     {
       "relation": "contains",
@@ -3829,9 +3969,9 @@
       "source_file": "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_4_every_week_dacbef1b_every_week",
-      "target": "graphify_out_converted_4_every_week_dacbef1b_the_sunday_checklist",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_4_every_week_dacbef1b_the_sunday_checklist"
     },
     {
       "relation": "contains",
@@ -3839,9 +3979,9 @@
       "source_file": "graphify-out/converted/Vendor_Communication_Templates_63fdc6dc.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_vendor_communication_templates_63fdc6dc",
-      "target": "graphify_out_converted_vendor_communication_templates_63fdc6dc_1_the_rundown_send_when_someone_asks_for_more_info_or_to_be_in_the_market",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_vendor_communication_templates_63fdc6dc_1_the_rundown_send_when_someone_asks_for_more_info_or_to_be_in_the_market"
     },
     {
       "relation": "contains",
@@ -3849,9 +3989,9 @@
       "source_file": "graphify-out/converted/Vendor_Communication_Templates_63fdc6dc.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_vendor_communication_templates_63fdc6dc",
-      "target": "graphify_out_converted_vendor_communication_templates_63fdc6dc_2_polite_decline_similar_vendor_already_booked_for_this_event",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_vendor_communication_templates_63fdc6dc_2_polite_decline_similar_vendor_already_booked_for_this_event"
     },
     {
       "relation": "contains",
@@ -3859,9 +3999,9 @@
       "source_file": "graphify-out/converted/Vendor_Communication_Templates_63fdc6dc.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_vendor_communication_templates_63fdc6dc",
-      "target": "graphify_out_converted_vendor_communication_templates_63fdc6dc_3_vendor_spots_full_waitlist_reply",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_vendor_communication_templates_63fdc6dc_3_vendor_spots_full_waitlist_reply"
     },
     {
       "relation": "contains",
@@ -3869,9 +4009,9 @@
       "source_file": "graphify-out/converted/Vendor_Communication_Templates_63fdc6dc.md",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_vendor_communication_templates_63fdc6dc",
-      "target": "graphify_out_converted_vendor_communication_templates_63fdc6dc_4_confirmed_vendor_info_sheet_send_a_few_days_before_the_event",
-      "confidence_score": 1.0
+      "target": "graphify_out_converted_vendor_communication_templates_63fdc6dc_4_confirmed_vendor_info_sheet_send_a_few_days_before_the_event"
     },
     {
       "relation": "contains",
@@ -4397,16 +4537,6 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L33",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "readme",
-      "target": "playbook_1_start_here"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
       "source_location": "L41",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4502,136 +4632,6 @@
       "confidence_score": 1.0,
       "source": "readme_what_s_in_here",
       "target": "readme_naming_photos"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "playbook_1_start_here",
-      "target": "playbook_1_start_here_backyard_brew_start_here"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_first_time_on_this_mac_only"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L195",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_if_something_is_not_working"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L42",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_opening_it"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L166",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_reading_printing_and_editing_these_sheets"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L128",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_the_weekly_rhythm"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L142",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_three_rules"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L153",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_two_things_about_the_app"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L92",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_where_things_live"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L71",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "playbook_1_start_here_opening_it",
-      "target": "playbook_1_start_here_it_already_knows_the_bar"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L55",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "playbook_1_start_here_opening_it",
-      "target": "playbook_1_start_here_the_six_commands"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L107",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "playbook_1_start_here_where_things_live",
-      "target": "playbook_1_start_here_dropping_in_photos"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L119",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "playbook_1_start_here_where_things_live",
-      "target": "playbook_1_start_here_sharing_with_micah"
     },
     {
       "relation": "contains",
@@ -6854,5 +6854,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "da5379a7297db81f0fa5347bb2443d3fb40f8308"
+  "built_at_commit": "9b61933001bf0419262eaacdcc1220c69735d50c"
 }
