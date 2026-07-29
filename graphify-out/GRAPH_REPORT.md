@@ -1,16 +1,16 @@
 # Graph Report - backyard-brew-social  (2026-07-28)
 
 ## Corpus Check
-- 77 files · ~26,873,530 words
+- 77 files · ~26,874,592 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 348 nodes · 346 edges · 31 communities (29 shown, 2 thin omitted)
+- 352 nodes · 350 edges · 31 communities (30 shown, 1 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `59d912b1`
+- Built from commit: `618c8d9d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -47,8 +47,8 @@
 - Every Day
 
 ## God Nodes (most connected - your core abstractions)
-1. `Making a Graphic` - 10 edges
-2. `Backyard Brew Brand Identity` - 10 edges
+1. `Backyard Brew Brand Identity` - 10 edges
+2. `Making a Graphic` - 10 edges
 3. `Writing the Gemini prompt` - 10 edges
 4. `Making a Graphic` - 10 edges
 5. `Backyard Brew: Start Here` - 9 edges
@@ -64,7 +64,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (31 total, 2 thin omitted)
+## Communities (31 total, 1 thin omitted)
 
 ### Community 0 - "CLAUDE.md"
 Cohesion: 0.22
@@ -146,13 +146,17 @@ Nodes (4): Deliver, Do this, If he included what he actually wants to say, Remem
 Cohesion: 0.50
 Nodes (3): Deliver, in this order, Do this, If Gemini keeps failing
 
+### Community 20 - "Caption Voice Rules"
+Cohesion: 0.40
+Nodes (4): Caption Voice Rules, Facebook vs Instagram must be genuinely different posts, not repurposed copies, Give real information, not just hype, Money language: win big yes, gambling no
+
 ### Community 22 - "photos.md"
-Cohesion: 0.22
-Nodes (8): Decide the name, Find what needs naming, Finish, HEIC photos need a preview first, Judgment calls, Look at each one, Show the plan before touching anything, Then rename
+Cohesion: 0.20
+Nodes (9): Check posts.csv before renaming anything, Decide the name, Find what needs naming, Finish, HEIC photos need a preview first, Judgment calls, Look at each one, Show the plan before touching anything (+1 more)
 
 ### Community 23 - "Do it in this order"
-Cohesion: 0.25
-Nodes (7): 1. See what is here, 2. Get their changes first, 3. Put local changes back, 4. Save and share, Do it in this order, Finish, When something goes wrong
+Cohesion: 0.22
+Nodes (8): 1. See what is here, 2. Commit their work, if there is any, 3. Get their changes, 4. Send yours, 5. Confirm it actually landed, Do it in this order, Finish, When something goes wrong
 
 ### Community 24 - "Making a Graphic"
 Cohesion: 0.18
@@ -179,15 +183,15 @@ Cohesion: 0.20
 Nodes (9): All day: stories, Every Day, First hour after each post: reply to comments, How to do it right, Morning: share the 11am post to Facebook groups, The daily checklist, The line you write above it matters most, Which groups for which post (+1 more)
 
 ## Knowledge Gaps
-- **191 isolated node(s):** `Find what needs naming`, `HEIC photos need a preview first`, `Judgment calls`, `Show the plan before touching anything`, `Then rename` (+186 more)
+- **195 isolated node(s):** `Start here: which file answers your question`, `What this business is`, `Facts (verified — use these exact values)`, `Colors (extracted from the logo — use these exact hex values)`, `Fonts already established in this brand's content pipeline` (+190 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **What connects `Find what needs naming`, `HEIC photos need a preview first`, `Judgment calls` to the rest of the system?**
-  _220 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `Start here: which file answers your question`, `What this business is`, `Facts (verified — use these exact values)` to the rest of the system?**
+  _224 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `test_generate_captions.py` be split into smaller, more focused modules?**
   _Cohesion score 0.08695652173913043 - nodes in this community are weakly interconnected._
 - **Should `classify_photos.py` be split into smaller, more focused modules?**

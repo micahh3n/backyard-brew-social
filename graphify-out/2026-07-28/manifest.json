@@ -10,8 +10,8 @@
     "semantic_hash": ""
   },
   "scripts/classify_photos.py": {
-    "mtime": 1783879868.0131063,
-    "ast_hash": "4481c975c02fb17afdd22e4875de96f6",
+    "mtime": 1785285872.6647239,
+    "ast_hash": "42a165a66a7fbb561f00938fb9d84d98",
     "semantic_hash": ""
   },
   "scripts/config.py": {
@@ -45,8 +45,8 @@
     "semantic_hash": ""
   },
   "scripts/test_classify_photos.py": {
-    "mtime": 1783880244.5597763,
-    "ast_hash": "093ac9ebe8c46dcf0e1e3bd668d41e48",
+    "mtime": 1785285908.740083,
+    "ast_hash": "ea82788e63ec7bc3461d232945415244",
     "semantic_hash": ""
   },
   "scripts/test_flyer_render.py": {
@@ -205,8 +205,8 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1785216747.8370247,
-    "ast_hash": "978b99580a0fae4c21267845971f52b5",
+    "mtime": 1785286034.4561238,
+    "ast_hash": "ee3233d92c272898d6dbed81b09b8b67",
     "semantic_hash": ""
   },
   "_preview_test/poker_example.html": {
@@ -329,16 +329,6 @@
     "ast_hash": "e5f86871f40cad46c0c1708b17182935",
     "semantic_hash": ""
   },
-  "photos/IMG_5991.JPG": {
-    "mtime": 1745970258.0,
-    "ast_hash": "5f1cb4f8d045f5fbf292b294111a2bf6",
-    "semantic_hash": ""
-  },
-  "photos/IMG_5992.JPG": {
-    "mtime": 1745970262.0,
-    "ast_hash": "9d80437c2bc54ec86d4322a476be1477",
-    "semantic_hash": ""
-  },
   "photos/IMG_6054_vibe.JPG": {
     "mtime": 1747488103.0,
     "ast_hash": "89d251f4fe4489796f1a50f8f197ec32",
@@ -387,11 +377,6 @@
   "photos/IMG_6216_vibe.JPG": {
     "mtime": 1749924686.0,
     "ast_hash": "25d069fcabf3246d5833dc597cea8403",
-    "semantic_hash": ""
-  },
-  "photos/IMG_6233.JPG": {
-    "mtime": 1750106216.0,
-    "ast_hash": "9a613e7ad900570da1706ad903a1edef",
     "semantic_hash": ""
   },
   "photos/IMG_6239_vibe.JPG": {
@@ -499,16 +484,6 @@
     "ast_hash": "4bfa842bb1c92e5665f1c8514a6bba2e",
     "semantic_hash": ""
   },
-  "photos/IMG_7156.JPG": {
-    "mtime": 1759189089.0,
-    "ast_hash": "2a2fe9c33a62a4d65830ea319dd1660b",
-    "semantic_hash": ""
-  },
-  "photos/IMG_7522.JPG": {
-    "mtime": 1767131094.0,
-    "ast_hash": "dee9d9d815967690f080e0c80afb3023",
-    "semantic_hash": ""
-  },
   "photos/IMG_7570_vibe.JPG": {
     "mtime": 1767468027.0,
     "ast_hash": "136fb5bdb248b88b21e30089d6b69793",
@@ -524,19 +499,9 @@
     "ast_hash": "f99521a5243cead2f6a101c861884044",
     "semantic_hash": ""
   },
-  "photos/IMG_7607.JPG": {
-    "mtime": 1767740450.0,
-    "ast_hash": "5a738087d779e8541d7fc8ff796d9e7a",
-    "semantic_hash": ""
-  },
   "photos/IMG_7608.JPG": {
     "mtime": 1767740451.0,
     "ast_hash": "e9b94ee61461cf252beff74999f7e8a0",
-    "semantic_hash": ""
-  },
-  "photos/IMG_7609.JPG": {
-    "mtime": 1767740457.0,
-    "ast_hash": "5f7be6165b20e94b312c7866b924289b",
     "semantic_hash": ""
   },
   "photos/IMG_7610.JPG": {
@@ -579,11 +544,6 @@
     "ast_hash": "4b39919a913604fa9d33a995860818f1",
     "semantic_hash": ""
   },
-  "photos/IMG_7758.JPG": {
-    "mtime": 1770159314.0,
-    "ast_hash": "cbc20ffccc48f41df6bbaa849088805e",
-    "semantic_hash": ""
-  },
   "photos/IMG_7947_vibe.JPG": {
     "mtime": 1775169220.0,
     "ast_hash": "113800ffef13849c0e6beca416f34b05",
@@ -617,11 +577,6 @@
   "photos/IMG_8018_vibe.JPG": {
     "mtime": 1776625881.0,
     "ast_hash": "2226c3b44e383241e18e0ab50e895d60",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8045.JPG": {
-    "mtime": 1777131135.0,
-    "ast_hash": "7057e78d361c15a120436a2cca80e9db",
     "semantic_hash": ""
   },
   "photos/IMG_8050_vibe.JPG": {
@@ -704,44 +659,9 @@
     "ast_hash": "5349992068f4769608152e9d19fe37dc",
     "semantic_hash": ""
   },
-  "photos/IMG_8221.JPG": {
-    "mtime": 1779840279.0,
-    "ast_hash": "cb5575a14530244969e26a24bdc030b7",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8298.JPG": {
-    "mtime": 1781052164.0,
-    "ast_hash": "9a75aec61d29491a98c6b85498d6c150",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8304.JPG": {
-    "mtime": 1781053839.0,
-    "ast_hash": "72d9fcb61b781a2583a6f1fbd2890382",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8305.JPG": {
-    "mtime": 1781053840.0,
-    "ast_hash": "d10914db8696deb928473b04cf186899",
-    "semantic_hash": ""
-  },
   "photos/IMG_8306.JPG": {
     "mtime": 1781053844.0,
     "ast_hash": "62add54b5cbb6b3938afee629cfc7bfa",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8309.JPG": {
-    "mtime": 1781053851.0,
-    "ast_hash": "394fcc8961316e1e11e829585bc397ec",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8310.JPG": {
-    "mtime": 1781053852.0,
-    "ast_hash": "a11c652e2491c192301496dc5b5a9ef7",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8311.JPG": {
-    "mtime": 1781053852.0,
-    "ast_hash": "0c95be23975f4a3f0e4b0464e6e08226",
     "semantic_hash": ""
   },
   "photos/IMG_8323_vibe.JPG": {
@@ -757,16 +677,6 @@
   "photos/IMG_8332_vibe.JPG": {
     "mtime": 1781562505.0,
     "ast_hash": "ebaa22a2425806e51df02afcc8fc37b5",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8335.JPG": {
-    "mtime": 1781736637.0,
-    "ast_hash": "8e829b3da65c2dfcd5763abae2c9a751",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8485.JPG": {
-    "mtime": 1782261921.0,
-    "ast_hash": "2d897f6fc01d05ed746375a5be61cbda",
     "semantic_hash": ""
   },
   "photos/IMG_8489.JPG": {
@@ -834,11 +744,6 @@
     "ast_hash": "b0899c930e200e4190fecd28dbe46256",
     "semantic_hash": ""
   },
-  "photos/IMG_8614.JPG": {
-    "mtime": 1782666237.0,
-    "ast_hash": "34c8f2aaabee4aba04803591e7b2c1de",
-    "semantic_hash": ""
-  },
   "photos/IMG_8615_vibe.JPG": {
     "mtime": 1782666288.0,
     "ast_hash": "d0dea307a5237a17e34441e1c0a45348",
@@ -862,11 +767,6 @@
   "photos/IMG_8634_vibe.JPG": {
     "mtime": 1782666412.0,
     "ast_hash": "50ccb5915d14ccbc0cf3f26cc1420d95",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8640.JPG": {
-    "mtime": 1783539332.4686687,
-    "ast_hash": "6b7d3074fbcfb5466dec93e6602c7ef2",
     "semantic_hash": ""
   },
   "photos/IMG_8641_vibe.JPG": {
@@ -974,16 +874,6 @@
     "ast_hash": "1988e30458fdf82e30cddec99aaabcd2",
     "semantic_hash": ""
   },
-  "photos/IMG_8775.PNG": {
-    "mtime": 1783374354.0,
-    "ast_hash": "b111da91308773e58eecedcd33eb280b",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8780.PNG": {
-    "mtime": 1783378564.0,
-    "ast_hash": "80f1a1a681690bb7f15a0c92e6005c6a",
-    "semantic_hash": ""
-  },
   "photos/IMG_8781_vibe.JPG": {
     "mtime": 1783381646.0,
     "ast_hash": "fe0cef43e518722c532a278e1b2e1c24",
@@ -992,21 +882,6 @@
   "photos/IMG_8782_vibe.JPG": {
     "mtime": 1783539333.0,
     "ast_hash": "0ddae5be30c5615e6370f6934d9e3dbe",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8783.JPG": {
-    "mtime": 1783382811.0,
-    "ast_hash": "a5158f09523388e21d7a6d869e2f1063",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8799.JPG": {
-    "mtime": 1783473472.0,
-    "ast_hash": "5a4f815e4154cfd9b0c0d5941a1c21ef",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8804.JPG": {
-    "mtime": 1783473475.0,
-    "ast_hash": "7a42ab533d5ec42388108691c2ceeb50",
     "semantic_hash": ""
   },
   "photos/IMG_8805.JPG": {
@@ -1034,24 +909,9 @@
     "ast_hash": "b20cfb4bbc0f331b0c7be51c87b55373",
     "semantic_hash": ""
   },
-  "photos/IMG_8816.JPG": {
-    "mtime": 1783473532.0,
-    "ast_hash": "d3b8039692c33583a155350039757963",
-    "semantic_hash": ""
-  },
   "photos/IMG_8817.JPG": {
     "mtime": 1783473533.0,
     "ast_hash": "e1011615b9e369f76e44bd0a0e60b351",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8818.JPG": {
-    "mtime": 1783473554.0,
-    "ast_hash": "dd95931771a79218c26ad8a5461c4e0a",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8819.JPG": {
-    "mtime": 1783473554.0,
-    "ast_hash": "d3ec46ad8f1f2e17ebbc21c4bf36f0af",
     "semantic_hash": ""
   },
   "photos/IMG_8824_vibe.JPG": {
@@ -1194,11 +1054,6 @@
     "ast_hash": "76ed1315c11a97137f8cfdc1199867e6",
     "semantic_hash": ""
   },
-  "photos/vendorwanted.PNG": {
-    "mtime": 1783533581.5406077,
-    "ast_hash": "80f1a1a681690bb7f15a0c92e6005c6a",
-    "semantic_hash": ""
-  },
   "photos/IMG_8733.MOV": {
     "mtime": 1783207692.0,
     "ast_hash": "544126007789149efc784ebf4832e3d3",
@@ -1290,13 +1145,13 @@
     "semantic_hash": ""
   },
   ".claude/commands/sunday.md": {
-    "mtime": 1785217448.2333663,
-    "ast_hash": "6b98c775199ac2bd7a121dcffcb9ad5b",
+    "mtime": 1785290019.842106,
+    "ast_hash": "27fd48d400e9c0f822d53cf6ee48eff7",
     "semantic_hash": ""
   },
   ".claude/skills/backyard-brew-brand/SKILL.md": {
-    "mtime": 1785214146.5480704,
-    "ast_hash": "bb072f4780347b8297ef70bae9509281",
+    "mtime": 1785290019.842626,
+    "ast_hash": "0d325af25fcc6bc1a11395635d4323b8",
     "semantic_hash": ""
   },
   ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md": {
@@ -1305,8 +1160,8 @@
     "semantic_hash": ""
   },
   ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md": {
-    "mtime": 1785212478.277121,
-    "ast_hash": "e36072c6f5cf4c28c7700c4403a578ba",
+    "mtime": 1785290019.8413565,
+    "ast_hash": "caaf64d880cb412572afa9541c32b13f",
     "semantic_hash": ""
   },
   ".claude/skills/backyard-brew-brand/references/graphics-workflow.md": {
@@ -1330,8 +1185,8 @@
     "semantic_hash": ""
   },
   "playbook/1-START-HERE.md": {
-    "mtime": 1785272333.5678325,
-    "ast_hash": "cca4b972809b1501458e72fa8fae9909",
+    "mtime": 1785286017.9733748,
+    "ast_hash": "37b97824caee8ad3b10c715745d73ad8",
     "semantic_hash": ""
   },
   "playbook/2-MAKE-A-GRAPHIC.md": {
@@ -1350,23 +1205,23 @@
     "semantic_hash": ""
   },
   "playbook/pdf/1-START-HERE.pdf": {
-    "mtime": 1785275480.1078176,
-    "ast_hash": "94f7a56fa066688f5111a7eb0ee72f2f",
+    "mtime": 1785286036.0891416,
+    "ast_hash": "9ca3e7cac3db0be31695f5b041c4b923",
     "semantic_hash": ""
   },
   "playbook/pdf/2-MAKE-A-GRAPHIC.pdf": {
-    "mtime": 1785275480.3129344,
-    "ast_hash": "cc6e27213e52104e65bc479fb7ff35ca",
+    "mtime": 1785286036.3255305,
+    "ast_hash": "d77c952339e6e6af099567b9a6a6041f",
     "semantic_hash": ""
   },
   "playbook/pdf/3-EVERY-DAY.pdf": {
-    "mtime": 1785275480.504374,
-    "ast_hash": "a1e1806aab018981d6614002db31eba8",
+    "mtime": 1785286036.46188,
+    "ast_hash": "b9e2111abfbdb39b2cb5dede5a19d473",
     "semantic_hash": ""
   },
   "playbook/pdf/4-EVERY-WEEK.pdf": {
-    "mtime": 1785275480.6072464,
-    "ast_hash": "f02610c338852dcf53f10f2d759edeb6",
+    "mtime": 1785286036.523077,
+    "ast_hash": "6d91eef0ebb3e4f83b53ed000a58834e",
     "semantic_hash": ""
   },
   "vendor-market/vendor_sign_in_sheet.pdf": {
@@ -1379,84 +1234,9 @@
     "ast_hash": "1bf45a0b909d2192655fd9b5756514b2",
     "semantic_hash": ""
   },
-  "photos/8O8A7137.jpg": {
-    "mtime": 1785086645.8869865,
-    "ast_hash": "278ae86eb26749f527d8c2b15f14ca18",
-    "semantic_hash": ""
-  },
-  "photos/8O8A7142.jpg": {
-    "mtime": 1785086645.9194448,
-    "ast_hash": "4e488d380f1a8ca9b062c05009b27d20",
-    "semantic_hash": ""
-  },
-  "photos/8O8A7148.jpg": {
-    "mtime": 1785086645.9436116,
-    "ast_hash": "de4a1b031fcbae8208ef8db2ecf9a8c3",
-    "semantic_hash": ""
-  },
-  "photos/8O8A7150.jpg": {
-    "mtime": 1785086645.971816,
-    "ast_hash": "2f1fb4b7ae5d0f4fff82f73f4b42bcf1",
-    "semantic_hash": ""
-  },
-  "photos/8O8A7153.jpg": {
-    "mtime": 1785086645.9977229,
-    "ast_hash": "72f60faca80f031d1198fe8558b40a05",
-    "semantic_hash": ""
-  },
-  "photos/8O8A7158.jpg": {
-    "mtime": 1785086646.035344,
-    "ast_hash": "6a0f1f2d3357b104d4c116b877cbce70",
-    "semantic_hash": ""
-  },
-  "photos/8O8A7159.jpg": {
-    "mtime": 1785086646.0649445,
-    "ast_hash": "584eeb16913e8efab9bd3bad53a9f559",
-    "semantic_hash": ""
-  },
-  "photos/8O8A7162.jpg": {
-    "mtime": 1785086646.087042,
-    "ast_hash": "13a68f6df1f200f4aebada4f63bedfd7",
-    "semantic_hash": ""
-  },
-  "photos/8O8A7166.jpg": {
-    "mtime": 1785086646.1196873,
-    "ast_hash": "4d4907bafc63f67ef086b503c9687d8f",
-    "semantic_hash": ""
-  },
-  "photos/8O8A7167.jpg": {
-    "mtime": 1785086646.1400957,
-    "ast_hash": "362fa77acd6046e42efc94f975401b8f",
-    "semantic_hash": ""
-  },
-  "photos/Backyard Market & Brews PROMO.png": {
-    "mtime": 1784140670.0713966,
-    "ast_hash": "e13472b5d990d15c013c023896c2ab37",
-    "semantic_hash": ""
-  },
-  "photos/Barks_burritos_brews.jpg": {
-    "mtime": 1783887661.1410651,
-    "ast_hash": "447d1539a22cc7208abd809fad088495",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8857.JPG": {
-    "mtime": 1783734775.0,
-    "ast_hash": "83e1e516c1c75d3afd5f5d1a2415f8d5",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8859.JPG": {
-    "mtime": 1783734776.0,
-    "ast_hash": "eb0be11726da38bb6137f996f5778794",
-    "semantic_hash": ""
-  },
   "photos/IMG_8860.JPG": {
     "mtime": 1783734776.0,
     "ast_hash": "5fea414c357991a9b46c416a0ffa6248",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8862.JPG": {
-    "mtime": 1783734857.0,
-    "ast_hash": "7b32f73fc15c8a384a2b62543ce01e48",
     "semantic_hash": ""
   },
   "photos/IMG_8863.JPG": {
@@ -1484,24 +1264,9 @@
     "ast_hash": "a1fc2d37e1e397be65a4faed65f292bd",
     "semantic_hash": ""
   },
-  "photos/IMG_8868.JPG": {
-    "mtime": 1783736488.0,
-    "ast_hash": "ad6f5c436e7dfd1ff97baec8e191ca31",
-    "semantic_hash": ""
-  },
   "photos/IMG_8869.JPG": {
     "mtime": 1783736488.0,
     "ast_hash": "eaa5b4c603979755a90b8f3bf884e928",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8871.JPG": {
-    "mtime": 1783736508.0,
-    "ast_hash": "c0d68147d24fedac7f52cc1252d33293",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8874.JPG": {
-    "mtime": 1783736510.0,
-    "ast_hash": "bf3f969725453d3628b70009ea6a3b3b",
     "semantic_hash": ""
   },
   "photos/IMG_8875.JPG": {
@@ -1519,19 +1284,9 @@
     "ast_hash": "bced69bb03a0c719fceb5dbebb72cfa6",
     "semantic_hash": ""
   },
-  "photos/IMG_8904.JPG": {
-    "mtime": 1783988716.0,
-    "ast_hash": "86cacba91cf51bfb85433a80bf4e5355",
-    "semantic_hash": ""
-  },
   "photos/IMG_8905.JPG": {
     "mtime": 1783988719.0,
     "ast_hash": "f530ecf641bec76a9a56e34b185efe9f",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8906.JPG": {
-    "mtime": 1783988733.0,
-    "ast_hash": "cbea7fe3f7eb3826c59c74f455a2364c",
     "semantic_hash": ""
   },
   "photos/IMG_8908.JPG": {
@@ -1549,19 +1304,9 @@
     "ast_hash": "ede8c26ab244e78d7de99ed5afd9bc1a",
     "semantic_hash": ""
   },
-  "photos/IMG_8913.JPG": {
-    "mtime": 1783988843.0,
-    "ast_hash": "e176a9e3750e21c868c3d765437a7c76",
-    "semantic_hash": ""
-  },
   "photos/IMG_8914.JPG": {
     "mtime": 1783988844.0,
     "ast_hash": "5a73dfbb14c5469dca10831df5deabef",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8915.JPG": {
-    "mtime": 1783988868.0,
-    "ast_hash": "f0470419d2cf95d16aec5f7c5af4af7e",
     "semantic_hash": ""
   },
   "photos/IMG_8918.JPG": {
@@ -1584,29 +1329,9 @@
     "ast_hash": "371cf63ca4e77851d5fbd232f0f18617",
     "semantic_hash": ""
   },
-  "photos/IMG_8926.JPG": {
-    "mtime": 1783990925.0,
-    "ast_hash": "a018e2de935e5d1bae82a9a923d7bed0",
-    "semantic_hash": ""
-  },
   "photos/IMG_8927.JPG": {
     "mtime": 1783990928.0,
     "ast_hash": "1ad884569f55de59bbebb870097cde1c",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8934.JPG": {
-    "mtime": 1783991768.0,
-    "ast_hash": "3283204e31ec433e20164b0e5db34b37",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8960.JPG": {
-    "mtime": 1784167557.0,
-    "ast_hash": "1a6123cfd35f994badfdb4506e4deedc",
-    "semantic_hash": ""
-  },
-  "photos/Review us.png": {
-    "mtime": 1784060834.305828,
-    "ast_hash": "b6b45d0f39c977736ce2578c9e0dfceb",
     "semantic_hash": ""
   },
   "photos/_generated/email-2year-anniversary-reminder.png": {
@@ -1634,34 +1359,9 @@
     "ast_hash": "bd27d77a0f6c787359bec2cd7fd5040e",
     "semantic_hash": ""
   },
-  "photos/image-1013175628161393.png": {
-    "mtime": 1783998867.8561893,
-    "ast_hash": "b1711aca55223c5b401ff573a356139b",
-    "semantic_hash": ""
-  },
-  "photos/image-1297121302502410.png": {
-    "mtime": 1783998865.5226107,
-    "ast_hash": "8d7817a7387c9c978df7ef2782de904d",
-    "semantic_hash": ""
-  },
   "photos/image-1386622273329522.png": {
     "mtime": 1783998867.793228,
     "ast_hash": "cd05f421b506916eaf8f368803bc2c30",
-    "semantic_hash": ""
-  },
-  "photos/image-1389608226372273.png": {
-    "mtime": 1783998872.5880065,
-    "ast_hash": "6ac398a462272e74f8ad35f07ba98d94",
-    "semantic_hash": ""
-  },
-  "photos/image-1555912716257754.png": {
-    "mtime": 1783998867.825673,
-    "ast_hash": "d86950c4eafbe5f8f3cfa7242538011d",
-    "semantic_hash": ""
-  },
-  "photos/image-3078946532310630.png": {
-    "mtime": 1783998867.8678446,
-    "ast_hash": "06f4333718867c3c34650d52adfacc72",
     "semantic_hash": ""
   },
   "photos/pool night.jpg": {
@@ -1685,23 +1385,23 @@
     "semantic_hash": ""
   },
   ".claude/commands/photos.md": {
-    "mtime": 1785215321.902256,
-    "ast_hash": "72f43c4fb4694486b1d174d2affa63d3",
+    "mtime": 1785288046.809663,
+    "ast_hash": "16abff6e6e897bd00a1ef884096553dd",
     "semantic_hash": ""
   },
   ".claude/commands/sync.md": {
-    "mtime": 1785215347.1041281,
-    "ast_hash": "67ec64f89a88089b3c185216b0c378d1",
+    "mtime": 1785286182.187014,
+    "ast_hash": "b5c99cfdb731862fb298ce801b930c5c",
     "semantic_hash": ""
   },
   "HANDOFF.md": {
-    "mtime": 1785215730.1882365,
+    "mtime": 1785286034.5550895,
     "ast_hash": "2da0d45f8ce5397fabaee7967bbee8a5",
     "semantic_hash": ""
   },
   "graphify-out/converted/1-START-HERE_06273d7e.md": {
-    "mtime": 1785275514.2121427,
-    "ast_hash": "0ac7921352d3e3a219be3240866facc6",
+    "mtime": 1785286107.562462,
+    "ast_hash": "f108b28861bdeae229a22e615ac2ec56",
     "semantic_hash": ""
   },
   "graphify-out/converted/2-MAKE-A-GRAPHIC_c5f8af17.md": {
@@ -1727,6 +1427,306 @@
   "graphify-out/converted/vendor_sign_in_sheet_7e46fbee.md": {
     "mtime": 1785217568.3026698,
     "ast_hash": "8e8c0a64dec9b4603be7f678d3d91fd6",
+    "semantic_hash": ""
+  },
+  "photos/_retired/2026-07-23_market_art.png": {
+    "mtime": 1784140670.0713966,
+    "ast_hash": "e13472b5d990d15c013c023896c2ab37",
+    "semantic_hash": ""
+  },
+  "photos/_retired/2026-07-23_market_flyer_art.PNG": {
+    "mtime": 1783374354.0,
+    "ast_hash": "b111da91308773e58eecedcd33eb280b",
+    "semantic_hash": ""
+  },
+  "photos/_retired/2026-07-23_vendorswanted_art.PNG": {
+    "mtime": 1783378564.0,
+    "ast_hash": "80f1a1a681690bb7f15a0c92e6005c6a",
+    "semantic_hash": ""
+  },
+  "photos/_retired/2026-07-23_vendorwanted_art.PNG": {
+    "mtime": 1783533581.5406077,
+    "ast_hash": "80f1a1a681690bb7f15a0c92e6005c6a",
+    "semantic_hash": ""
+  },
+  "photos/_retired/Barks_burritos_brews.jpg": {
+    "mtime": 1783887661.1410651,
+    "ast_hash": "447d1539a22cc7208abd809fad088495",
+    "semantic_hash": ""
+  },
+  "photos/_retired/DO-NOT-POST_cash_on_poker_table.JPG": {
+    "mtime": 1783991768.0,
+    "ast_hash": "3283204e31ec433e20164b0e5db34b37",
+    "semantic_hash": ""
+  },
+  "photos/barcrowd_vibe.JPG": {
+    "mtime": 1783734857.0,
+    "ast_hash": "7b32f73fc15c8a384a2b62543ce01e48",
+    "semantic_hash": ""
+  },
+  "photos/barinterior_vibe.JPG": {
+    "mtime": 1783736488.0,
+    "ast_hash": "ad6f5c436e7dfd1ff97baec8e191ca31",
+    "semantic_hash": ""
+  },
+  "photos/barroom_vibe.JPG": {
+    "mtime": 1745970258.0,
+    "ast_hash": "5f1cb4f8d045f5fbf292b294111a2bf6",
+    "semantic_hash": ""
+  },
+  "photos/bartender_spotlight.JPG": {
+    "mtime": 1784167557.0,
+    "ast_hash": "1a6123cfd35f994badfdb4506e4deedc",
+    "semantic_hash": ""
+  },
+  "photos/booth_market.jpg": {
+    "mtime": 1785086645.9194448,
+    "ast_hash": "4e488d380f1a8ca9b062c05009b27d20",
+    "semantic_hash": ""
+  },
+  "photos/browsing_market.jpg": {
+    "mtime": 1785086645.9436116,
+    "ast_hash": "de4a1b031fcbae8208ef8db2ecf9a8c3",
+    "semantic_hash": ""
+  },
+  "photos/busybar_vibe.JPG": {
+    "mtime": 1783988733.0,
+    "ast_hash": "cbea7fe3f7eb3826c59c74f455a2364c",
+    "semantic_hash": ""
+  },
+  "photos/cards_bingo.JPG": {
+    "mtime": 1750106216.0,
+    "ast_hash": "9a613e7ad900570da1706ad903a1edef",
+    "semantic_hash": ""
+  },
+  "photos/courts_pickleball.JPG": {
+    "mtime": 1781052164.0,
+    "ast_hash": "9a75aec61d29491a98c6b85498d6c150",
+    "semantic_hash": ""
+  },
+  "photos/crowd_karaoke.JPG": {
+    "mtime": 1783988868.0,
+    "ast_hash": "f0470419d2cf95d16aec5f7c5af4af7e",
+    "semantic_hash": ""
+  },
+  "photos/crowd_market.jpg": {
+    "mtime": 1785086645.971816,
+    "ast_hash": "2f1fb4b7ae5d0f4fff82f73f4b42bcf1",
+    "semantic_hash": ""
+  },
+  "photos/crowd_pickleball.JPG": {
+    "mtime": 1783473554.0,
+    "ast_hash": "dd95931771a79218c26ad8a5461c4e0a",
+    "semantic_hash": ""
+  },
+  "photos/daytime_pickleball.JPG": {
+    "mtime": 1783473554.0,
+    "ast_hash": "d3ec46ad8f1f2e17ebbc21c4bf36f0af",
+    "semantic_hash": ""
+  },
+  "photos/dogstroller_vibe.JPG": {
+    "mtime": 1782666237.0,
+    "ast_hash": "34c8f2aaabee4aba04803591e7b2c1de",
+    "semantic_hash": ""
+  },
+  "photos/doubles_pickleball.JPG": {
+    "mtime": 1781053839.0,
+    "ast_hash": "72d9fcb61b781a2583a6f1fbd2890382",
+    "semantic_hash": ""
+  },
+  "photos/duet_karaoke.JPG": {
+    "mtime": 1783736508.0,
+    "ast_hash": "c0d68147d24fedac7f52cc1252d33293",
+    "semantic_hash": ""
+  },
+  "photos/dusk_market.JPG": {
+    "mtime": 1783539332.4686687,
+    "ast_hash": "6b7d3074fbcfb5466dec93e6602c7ef2",
+    "semantic_hash": ""
+  },
+  "photos/dusk_pickleball.JPG": {
+    "mtime": 1782261921.0,
+    "ast_hash": "2d897f6fc01d05ed746375a5be61cbda",
+    "semantic_hash": ""
+  },
+  "photos/evening_pickleball.JPG": {
+    "mtime": 1781053851.0,
+    "ast_hash": "394fcc8961316e1e11e829585bc397ec",
+    "semantic_hash": ""
+  },
+  "photos/firepit_vibe.jpg": {
+    "mtime": 1785086646.035344,
+    "ast_hash": "6a0f1f2d3357b104d4c116b877cbce70",
+    "semantic_hash": ""
+  },
+  "photos/fullbar_vibe.JPG": {
+    "mtime": 1783988843.0,
+    "ast_hash": "e176a9e3750e21c868c3d765437a7c76",
+    "semantic_hash": ""
+  },
+  "photos/goldenhour_pickleball.JPG": {
+    "mtime": 1783473475.0,
+    "ast_hash": "7a42ab533d5ec42388108691c2ceeb50",
+    "semantic_hash": ""
+  },
+  "photos/grounds_vibe.jpg": {
+    "mtime": 1785086646.087042,
+    "ast_hash": "13a68f6df1f200f4aebada4f63bedfd7",
+    "semantic_hash": ""
+  },
+  "photos/group_spotlight.JPG": {
+    "mtime": 1779840279.0,
+    "ast_hash": "cb5575a14530244969e26a24bdc030b7",
+    "semantic_hash": ""
+  },
+  "photos/joshberton_1_art.png": {
+    "mtime": 1783998867.8561893,
+    "ast_hash": "b1711aca55223c5b401ff573a356139b",
+    "semantic_hash": ""
+  },
+  "photos/joshberton_2_art.png": {
+    "mtime": 1783998872.5880065,
+    "ast_hash": "6ac398a462272e74f8ad35f07ba98d94",
+    "semantic_hash": ""
+  },
+  "photos/joshberton_3_art.png": {
+    "mtime": 1783998867.825673,
+    "ast_hash": "d86950c4eafbe5f8f3cfa7242538011d",
+    "semantic_hash": ""
+  },
+  "photos/joshberton_logo_art.png": {
+    "mtime": 1783998865.5226107,
+    "ast_hash": "8d7817a7387c9c978df7ef2782de904d",
+    "semantic_hash": ""
+  },
+  "photos/lawn_market.jpg": {
+    "mtime": 1785086646.1196873,
+    "ast_hash": "4d4907bafc63f67ef086b503c9687d8f",
+    "semantic_hash": ""
+  },
+  "photos/lights_karaoke.JPG": {
+    "mtime": 1783736510.0,
+    "ast_hash": "bf3f969725453d3628b70009ea6a3b3b",
+    "semantic_hash": ""
+  },
+  "photos/musician_4_art.png": {
+    "mtime": 1783998867.8678446,
+    "ast_hash": "06f4333718867c3c34650d52adfacc72",
+    "semantic_hash": ""
+  },
+  "photos/net_pickleball.JPG": {
+    "mtime": 1781053852.0,
+    "ast_hash": "a11c652e2491c192301496dc5b5a9ef7",
+    "semantic_hash": ""
+  },
+  "photos/patio_pickleball.JPG": {
+    "mtime": 1783473532.0,
+    "ast_hash": "d3b8039692c33583a155350039757963",
+    "semantic_hash": ""
+  },
+  "photos/players_pickleball.JPG": {
+    "mtime": 1781053852.0,
+    "ast_hash": "0c95be23975f4a3f0e4b0464e6e08226",
+    "semantic_hash": ""
+  },
+  "photos/quesadilla_plate.JPG": {
+    "mtime": 1767131094.0,
+    "ast_hash": "dee9d9d815967690f080e0c80afb3023",
+    "semantic_hash": ""
+  },
+  "photos/rally_pickleball.JPG": {
+    "mtime": 1781053840.0,
+    "ast_hash": "d10914db8696deb928473b04cf186899",
+    "semantic_hash": ""
+  },
+  "photos/regulars_spotlight.JPG": {
+    "mtime": 1783382811.0,
+    "ast_hash": "a5158f09523388e21d7a6d869e2f1063",
+    "semantic_hash": ""
+  },
+  "photos/regulars_vibe.JPG": {
+    "mtime": 1759189089.0,
+    "ast_hash": "2a2fe9c33a62a4d65830ea319dd1660b",
+    "semantic_hash": ""
+  },
+  "photos/reviewqr_art.png": {
+    "mtime": 1784060834.305828,
+    "ast_hash": "b6b45d0f39c977736ce2578c9e0dfceb",
+    "semantic_hash": ""
+  },
+  "photos/singer_karaoke.JPG": {
+    "mtime": 1783734775.0,
+    "ast_hash": "83e1e516c1c75d3afd5f5d1a2415f8d5",
+    "semantic_hash": ""
+  },
+  "photos/singing_karaoke.JPG": {
+    "mtime": 1783990925.0,
+    "ast_hash": "a018e2de935e5d1bae82a9a923d7bed0",
+    "semantic_hash": ""
+  },
+  "photos/stage_karaoke.JPG": {
+    "mtime": 1783734776.0,
+    "ast_hash": "eb0be11726da38bb6137f996f5778794",
+    "semantic_hash": ""
+  },
+  "photos/stage_vibe.JPG": {
+    "mtime": 1745970262.0,
+    "ast_hash": "9d80437c2bc54ec86d4322a476be1477",
+    "semantic_hash": ""
+  },
+  "photos/sunset_pickleball.JPG": {
+    "mtime": 1783473472.0,
+    "ast_hash": "5a4f815e4154cfd9b0c0d5941a1c21ef",
+    "semantic_hash": ""
+  },
+  "photos/table_pool.JPG": {
+    "mtime": 1777131135.0,
+    "ast_hash": "7057e78d361c15a120436a2cca80e9db",
+    "semantic_hash": ""
+  },
+  "photos/taco_closeup.JPG": {
+    "mtime": 1767740457.0,
+    "ast_hash": "5f7be6165b20e94b312c7866b924289b",
+    "semantic_hash": ""
+  },
+  "photos/taco_fresh.JPG": {
+    "mtime": 1781736637.0,
+    "ast_hash": "8e829b3da65c2dfcd5763abae2c9a751",
+    "semantic_hash": ""
+  },
+  "photos/tacos_bar.JPG": {
+    "mtime": 1770159314.0,
+    "ast_hash": "cbc20ffccc48f41df6bbaa849088805e",
+    "semantic_hash": ""
+  },
+  "photos/tacos_basket.JPG": {
+    "mtime": 1767740450.0,
+    "ast_hash": "5a738087d779e8541d7fc8ff796d9e7a",
+    "semantic_hash": ""
+  },
+  "photos/tapwall_vibe.JPG": {
+    "mtime": 1783988716.0,
+    "ast_hash": "86cacba91cf51bfb85433a80bf4e5355",
+    "semantic_hash": ""
+  },
+  "photos/tents_market.jpg": {
+    "mtime": 1785086645.8869865,
+    "ast_hash": "278ae86eb26749f527d8c2b15f14ca18",
+    "semantic_hash": ""
+  },
+  "photos/tree_market.jpg": {
+    "mtime": 1785086646.0649445,
+    "ast_hash": "584eeb16913e8efab9bd3bad53a9f559",
+    "semantic_hash": ""
+  },
+  "photos/vendorbooth_market.jpg": {
+    "mtime": 1785086646.0,
+    "ast_hash": "362fa77acd6046e42efc94f975401b8f",
+    "semantic_hash": ""
+  },
+  "photos/wide_market.jpg": {
+    "mtime": 1785086645.0,
+    "ast_hash": "72f60faca80f031d1198fe8558b40a05",
     "semantic_hash": ""
   }
 }

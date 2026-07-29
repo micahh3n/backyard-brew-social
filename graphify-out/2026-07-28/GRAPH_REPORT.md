@@ -1,16 +1,16 @@
 # Graph Report - backyard-brew-social  (2026-07-28)
 
 ## Corpus Check
-- 77 files · ~26,872,935 words
+- 77 files · ~26,874,513 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 343 nodes · 344 edges · 30 communities (28 shown, 2 thin omitted)
+- 352 nodes · 350 edges · 31 communities (30 shown, 1 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `f35408bb`
+- Built from commit: `7aabf89e`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -44,10 +44,11 @@
 - Every Week
 - Backyard Brew — Social Media & Online Presence
 - Vendor_Communication_Templates_63fdc6dc.md
+- Every Day
 
 ## God Nodes (most connected - your core abstractions)
-1. `Making a Graphic` - 10 edges
-2. `Backyard Brew Brand Identity` - 10 edges
+1. `Backyard Brew Brand Identity` - 10 edges
+2. `Making a Graphic` - 10 edges
 3. `Writing the Gemini prompt` - 10 edges
 4. `Making a Graphic` - 10 edges
 5. `Backyard Brew: Start Here` - 9 edges
@@ -63,7 +64,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (30 total, 2 thin omitted)
+## Communities (31 total, 1 thin omitted)
 
 ### Community 0 - "CLAUDE.md"
 Cohesion: 0.22
@@ -74,15 +75,15 @@ Cohesion: 0.09
 Nodes (6): One-off/special-event callers don't pass event/posts_history -- must     behave, pizza is served every day, so it must not attach on every event's     'today' po, A filename that contains BOTH an event keyword and a food keyword     (e.g. poke, test_find_food_photo_excludes_already_chosen_main_photo(), test_find_food_photo_gates_occasional_keyword_to_one_day_per_week(), test_find_photo_without_event_keeps_old_behavior()
 
 ### Community 2 - "classify_photos.py"
-Cohesion: 0.09
-Nodes (12): manual_kind(), needs_classification(), pool_claimed(), classify_photos.py - Filename-convention helpers for photo handling.  No vision, vibe'/'spotlight' if the filename carries that override suffix, else None., True if this filename's stem contains a keyword from     config.EVENT_PHOTO_KEYW, False if the filename already carries an explicit override signal,     or isn't, EXIF DateTimeOriginal if present, else the file's mtime. None on error. (+4 more)
+Cohesion: 0.14
+Nodes (12): manual_kind(), needs_classification(), pool_claimed(), classify_photos.py - Filename-convention helpers for photo handling.  No vision, vibe'/'spotlight' if the filename carries that override suffix, else None., True if this filename's stem contains a keyword from     config.EVENT_PHOTO_KEYW, False if the filename already carries an explicit override signal,     or isn't, The photo's real capture time, or None. Never falls back to mtime.      Use this (+4 more)
 
 ### Community 3 - "Backyard Brew — Weekly Social Content Workflow"
 Cohesion: 0.18
 Nodes (10): Backup: when Gemini will not cooperate, Making a Graphic, Step 1. Pick your photo first, Step 2. Ask Claude for the prompt, Step 3. Run it through Gemini, Step 4. Remove the watermark, Step 5. Put the real logo on in Canva, Step 6. Name it and check it (+2 more)
 
 ### Community 4 - "test_classify_photos.py"
-Cohesion: 0.22
+Cohesion: 0.20
 Nodes (9): 1. Drop in this week's photos (5 min), 2. Write the week's posts (10 min), 3. Schedule everything in Meta Business Suite (30 min), 4. Google Business Profile (10 min), 5. Reviews (5 min), 6. Ask what to work on (5 min, optional), 7. Send it to Micah (1 min), Every Week (+1 more)
 
 ### Community 5 - "generate_captions.py"
@@ -102,8 +103,8 @@ Cohesion: 0.15
 Nodes (12): 1. Google Business Profile, 2. Reviews, 3. Tuesday and Wednesday, 4. Facebook groups, 5. Website and AI search, 6. Event concepts for the two dead windows, Before recommending any of these, Growth Playbook (+4 more)
 
 ### Community 9 - "find_food_photo"
-Cohesion: 0.15
-Nodes (13): Backyard Brew: Start Here, Dropping in photos, First time on this Mac only, If something is not working, It already knows the bar, Opening it, Reading, printing, and editing these sheets, Sharing with Micah (+5 more)
+Cohesion: 0.09
+Nodes (21): Backyard Brew: Start Here, Dropping in photos, First time on this Mac only, If something is not working, It already knows the bar, Opening it, Reading, printing, and editing these sheets, Sharing with Micah (+13 more)
 
 ### Community 10 - "find_deal_photo"
 Cohesion: 0.18
@@ -130,8 +131,8 @@ Cohesion: 0.24
 Nodes (14): Path, _add_runs(), _docx_source_hash(), lint(), main(), md_to_docx(), md_to_html(), Convert one markdown sheet into a standalone printable HTML page. (+6 more)
 
 ### Community 16 - "Backyard Brew — Social Media & Online Presence"
-Cohesion: 0.09
-Nodes (18): 1. Access your dad needs (do this first, it blocks everything else), 2. Things only you can fill in, 3. Get it onto his Mac, 4. Do one real week together, 5. Print and leave these by the computer, 6. Tell him the three things that matter most, 7. First month, Handoff Checklist (+10 more)
+Cohesion: 0.20
+Nodes (9): 1. Access your dad needs (do this first, it blocks everything else), 2. Things only you can fill in, 3. Get it onto his Mac, 4. Do one real week together, 5. Print and leave these by the computer, 6. Tell him the three things that matter most, 7. First month, Handoff Checklist (+1 more)
 
 ### Community 17 - "growth-week.md"
 Cohesion: 0.40
@@ -145,13 +146,17 @@ Nodes (4): Deliver, Do this, If he included what he actually wants to say, Remem
 Cohesion: 0.50
 Nodes (3): Deliver, in this order, Do this, If Gemini keeps failing
 
+### Community 20 - "Caption Voice Rules"
+Cohesion: 0.40
+Nodes (4): Caption Voice Rules, Facebook vs Instagram must be genuinely different posts, not repurposed copies, Give real information, not just hype, Money language: win big yes, gambling no
+
 ### Community 22 - "photos.md"
-Cohesion: 0.25
-Nodes (7): Decide the name, Find what needs naming, Finish, Judgment calls, Look at each one, Show the plan before touching anything, Then rename
+Cohesion: 0.20
+Nodes (9): Check posts.csv before renaming anything, Decide the name, Find what needs naming, Finish, HEIC photos need a preview first, Judgment calls, Look at each one, Show the plan before touching anything (+1 more)
 
 ### Community 23 - "Do it in this order"
-Cohesion: 0.25
-Nodes (7): 1. See what is here, 2. Get their changes first, 3. Put local changes back, 4. Save and share, Do it in this order, Finish, When something goes wrong
+Cohesion: 0.22
+Nodes (8): 1. See what is here, 2. Commit their work, if there is any, 3. Get their changes, 4. Send yours, 5. Confirm it actually landed, Do it in this order, Finish, When something goes wrong
 
 ### Community 24 - "Making a Graphic"
 Cohesion: 0.18
@@ -166,32 +171,36 @@ Cohesion: 0.20
 Nodes (9): 1. Drop in this week's photos (5 min), 2. Write the week's posts (10 min), 3. Schedule everything in Meta Business Suite (30 min), 4. Google Business Profile (10 min), 5. Reviews (5 min), 6. Ask what to work on (5 min, optional), 7. Send it to Micah (1 min), Every Week (+1 more)
 
 ### Community 27 - "Backyard Brew — Social Media & Online Presence"
-Cohesion: 0.25
-Nodes (8): Backyard Brew — Social Media & Online Presence, Naming photos, Optional setup, The rules, The six commands, Then read this, Using it (no terminal needed), What's in here
+Cohesion: 0.17
+Nodes (4): Video files (iPhones drop these alongside camera-roll photos) are     never a st, Must not fall back to mtime: a fresh clone would date the whole     backlog as ', test_needs_classification_skips_video_files(), test_read_exif_time_returns_none_without_exif()
 
 ### Community 28 - "Vendor_Communication_Templates_63fdc6dc.md"
 Cohesion: 0.40
 Nodes (4): 1. The Rundown — send when someone asks for more info or to be in the market, 2. Polite Decline — similar vendor already booked for this event, 3. Vendor Spots Full — waitlist reply, 4. Confirmed Vendor Info Sheet — send a few days before the event
 
+### Community 30 - "Every Day"
+Cohesion: 0.20
+Nodes (9): All day: stories, Every Day, First hour after each post: reply to comments, How to do it right, Morning: share the 11am post to Facebook groups, The daily checklist, The line you write above it matters most, Which groups for which post (+1 more)
+
 ## Knowledge Gaps
-- **191 isolated node(s):** `First time on this Mac only`, `The six commands`, `It already knows the bar`, `Dropping in photos`, `Sharing with Micah` (+186 more)
+- **195 isolated node(s):** `Before writing anything`, `11:00am: the day's main post`, `2:30pm: highlight, recap, or filler that ties in`, `7:00pm: teaser for tomorrow`, `7pm the night before: make them want it` (+190 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Backyard Brew: Start Here` connect `find_food_photo` to `Backyard Brew — Social Media & Online Presence`?**
-  _High betweenness centrality (0.009) - this node is a cross-community bridge._
-- **Why does `Every Week` connect `test_classify_photos.py` to `Backyard Brew — Social Media & Online Presence`?**
-  _High betweenness centrality (0.007) - this node is a cross-community bridge._
-- **What connects `Convert one markdown sheet into a standalone printable HTML page.`, `Warn about a list glued to the line above it.      Markdown silently swallows`, `Write text into a docx paragraph, honouring **bold** and `code`.` to the rest of the system?**
-  _218 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `Before writing anything`, `11:00am: the day's main post`, `2:30pm: highlight, recap, or filler that ties in` to the rest of the system?**
+  _224 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `test_generate_captions.py` be split into smaller, more focused modules?**
   _Cohesion score 0.08695652173913043 - nodes in this community are weakly interconnected._
 - **Should `classify_photos.py` be split into smaller, more focused modules?**
-  _Cohesion score 0.09090909090909091 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.14285714285714285 - nodes in this community are weakly interconnected._
 - **Should `generate_captions.py` be split into smaller, more focused modules?**
   _Cohesion score 0.10317460317460317 - nodes in this community are weakly interconnected._
 - **Should `_pick_pool_photo` be split into smaller, more focused modules?**
   _Cohesion score 0.125 - nodes in this community are weakly interconnected._
+- **Should `render_generated_images` be split into smaller, more focused modules?**
+  _Cohesion score 0.14285714285714285 - nodes in this community are weakly interconnected._
+- **Should `find_food_photo` be split into smaller, more focused modules?**
+  _Cohesion score 0.08695652173913043 - nodes in this community are weakly interconnected._

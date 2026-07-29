@@ -4,14 +4,384 @@
   "graph": {},
   "nodes": [
     {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_skill",
+      "community": 11,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Backyard Brew Brand Identity",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "community": 11,
+      "norm_label": "backyard brew brand identity"
+    },
+    {
+      "label": "Start here: which file answers your question",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_skill_start_here_which_file_answers_your_question",
+      "community": 11,
+      "norm_label": "start here: which file answers your question"
+    },
+    {
+      "label": "What this business is",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_skill_what_this_business_is",
+      "community": 11,
+      "norm_label": "what this business is"
+    },
+    {
+      "label": "Facts (verified \u2014 use these exact values)",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_skill_facts_verified_use_these_exact_values",
+      "community": 11,
+      "norm_label": "facts (verified \u2014 use these exact values)"
+    },
+    {
+      "label": "Colors (extracted from the logo \u2014 use these exact hex values)",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_skill_colors_extracted_from_the_logo_use_these_exact_hex_values",
+      "community": 11,
+      "norm_label": "colors (extracted from the logo \u2014 use these exact hex values)"
+    },
+    {
+      "label": "Fonts already established in this brand's content pipeline",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_skill_fonts_already_established_in_this_brand_s_content_pipeline",
+      "community": 11,
+      "norm_label": "fonts already established in this brand's content pipeline"
+    },
+    {
+      "label": "Voice",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_skill_voice",
+      "community": 11,
+      "norm_label": "voice"
+    },
+    {
+      "label": "Recurring weekly events (the heartbeat of the content calendar)",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L108",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_skill_recurring_weekly_events_the_heartbeat_of_the_content_calendar",
+      "community": 11,
+      "norm_label": "recurring weekly events (the heartbeat of the content calendar)"
+    },
+    {
+      "label": "Where this feeds into the actual automation",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L121",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_skill_where_this_feeds_into_the_actual_automation",
+      "community": 11,
+      "norm_label": "where this feeds into the actual automation"
+    },
+    {
+      "label": "Pre-flight for any Backyard Brew deliverable",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L125",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_skill_pre_flight_for_any_backyard_brew_deliverable",
+      "community": 11,
+      "norm_label": "pre-flight for any backyard brew deliverable"
+    },
+    {
+      "label": "caption-voice-rules.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_caption_voice_rules",
+      "community": 20,
+      "norm_label": "caption-voice-rules.md"
+    },
+    {
+      "label": "Caption Voice Rules",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_caption_voice_rules_caption_voice_rules",
+      "community": 20,
+      "norm_label": "caption voice rules"
+    },
+    {
+      "label": "Money language: win big yes, gambling no",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_caption_voice_rules_money_language_win_big_yes_gambling_no",
+      "community": 20,
+      "norm_label": "money language: win big yes, gambling no"
+    },
+    {
+      "label": "Give real information, not just hype",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
+      "source_location": "L148",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_caption_voice_rules_give_real_information_not_just_hype",
+      "community": 20,
+      "norm_label": "give real information, not just hype"
+    },
+    {
+      "label": "Facebook vs Instagram must be genuinely different posts, not repurposed copies",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
+      "source_location": "L164",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_caption_voice_rules_facebook_vs_instagram_must_be_genuinely_different_posts_not_repurposed_copies",
+      "community": 20,
+      "norm_label": "facebook vs instagram must be genuinely different posts, not repurposed copies"
+    },
+    {
+      "label": "sunday.md",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 14,
+      "norm_label": "sunday.md",
+      "id": "claude_commands_sunday"
+    },
+    {
+      "label": "Before writing anything",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "community": 14,
+      "norm_label": "before writing anything",
+      "id": "claude_commands_sunday_before_writing_anything"
+    },
+    {
+      "label": "The schedule: 3 posts a day, every day, all seven days",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "community": 14,
+      "norm_label": "the schedule: 3 posts a day, every day, all seven days",
+      "id": "claude_commands_sunday_the_schedule_3_posts_a_day_every_day_all_seven_days"
+    },
+    {
+      "label": "11:00am: the day's main post",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "community": 14,
+      "norm_label": "11:00am: the day's main post",
+      "id": "claude_commands_sunday_11_00am_the_day_s_main_post"
+    },
+    {
+      "label": "2:30pm: highlight, recap, or filler that ties in",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L37",
+      "_origin": "ast",
+      "community": 14,
+      "norm_label": "2:30pm: highlight, recap, or filler that ties in",
+      "id": "claude_commands_sunday_2_30pm_highlight_recap_or_filler_that_ties_in"
+    },
+    {
+      "label": "7:00pm: teaser for tomorrow",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L55",
+      "_origin": "ast",
+      "community": 14,
+      "norm_label": "7:00pm: teaser for tomorrow",
+      "id": "claude_commands_sunday_7_00pm_teaser_for_tomorrow"
+    },
+    {
+      "label": "The build: every event gets three touches",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L64",
+      "_origin": "ast",
+      "community": 14,
+      "norm_label": "the build: every event gets three touches",
+      "id": "claude_commands_sunday_the_build_every_event_gets_three_touches"
+    },
+    {
+      "label": "7pm the night before: make them want it",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L83",
+      "_origin": "ast",
+      "community": 14,
+      "norm_label": "7pm the night before: make them want it",
+      "id": "claude_commands_sunday_7pm_the_night_before_make_them_want_it"
+    },
+    {
+      "label": "11am the day of: turn it into a decision",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L95",
+      "_origin": "ast",
+      "community": 14,
+      "norm_label": "11am the day of: turn it into a decision",
+      "id": "claude_commands_sunday_11am_the_day_of_turn_it_into_a_decision"
+    },
+    {
+      "label": "2:30pm the day of: last call before doors",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L106",
+      "_origin": "ast",
+      "community": 14,
+      "norm_label": "2:30pm the day of: last call before doors",
+      "id": "claude_commands_sunday_2_30pm_the_day_of_last_call_before_doors"
+    },
+    {
+      "label": "The three must not repeat each other",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L136",
+      "_origin": "ast",
+      "community": 14,
+      "norm_label": "the three must not repeat each other",
+      "id": "claude_commands_sunday_the_three_must_not_repeat_each_other"
+    },
+    {
+      "label": "What every post has to earn",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L151",
+      "_origin": "ast",
+      "community": 14,
+      "norm_label": "what every post has to earn",
+      "id": "claude_commands_sunday_what_every_post_has_to_earn"
+    },
+    {
+      "label": "Picking photos",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L165",
+      "_origin": "ast",
+      "community": 14,
+      "norm_label": "picking photos",
+      "id": "claude_commands_sunday_picking_photos"
+    },
+    {
+      "label": "Reach: the part that grows the page",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L187",
+      "_origin": "ast",
+      "community": 14,
+      "norm_label": "reach: the part that grows the page",
+      "id": "claude_commands_sunday_reach_the_part_that_grows_the_page"
+    },
+    {
+      "label": "Write each day for its actual audience",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L193",
+      "_origin": "ast",
+      "community": 14,
+      "norm_label": "write each day for its actual audience",
+      "id": "claude_commands_sunday_write_each_day_for_its_actual_audience"
+    },
+    {
+      "label": "The Thursday 11am post is a Collab, every week",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L208",
+      "_origin": "ast",
+      "community": 14,
+      "norm_label": "the thursday 11am post is a collab, every week",
+      "id": "claude_commands_sunday_the_thursday_11am_post_is_a_collab_every_week"
+    },
+    {
+      "label": "Tag and geotag everything",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L228",
+      "_origin": "ast",
+      "community": 14,
+      "norm_label": "tag and geotag everything",
+      "id": "claude_commands_sunday_tag_and_geotag_everything"
+    },
+    {
+      "label": "Static posts only",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L237",
+      "_origin": "ast",
+      "community": 14,
+      "norm_label": "static posts only",
+      "id": "claude_commands_sunday_static_posts_only"
+    },
+    {
+      "label": "One Google Business Profile post",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L243",
+      "_origin": "ast",
+      "community": 14,
+      "norm_label": "one google business profile post",
+      "id": "claude_commands_sunday_one_google_business_profile_post"
+    },
+    {
+      "label": "Before delivering: run the tally",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L250",
+      "_origin": "ast",
+      "community": 14,
+      "norm_label": "before delivering: run the tally",
+      "id": "claude_commands_sunday_before_delivering_run_the_tally"
+    },
+    {
+      "label": "Deliver",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L277",
+      "_origin": "ast",
+      "community": 14,
+      "norm_label": "deliver",
+      "id": "claude_commands_sunday_deliver"
+    },
+    {
       "label": "photos.md",
       "file_type": "document",
       "source_file": ".claude/commands/photos.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "claude_commands_photos",
       "community": 22,
-      "norm_label": "photos.md"
+      "norm_label": "photos.md",
+      "id": "claude_commands_photos"
     },
     {
       "label": "Find what needs naming",
@@ -19,9 +389,9 @@
       "source_file": ".claude/commands/photos.md",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "claude_commands_photos_find_what_needs_naming",
       "community": 22,
-      "norm_label": "find what needs naming"
+      "norm_label": "find what needs naming",
+      "id": "claude_commands_photos_find_what_needs_naming"
     },
     {
       "label": "Look at each one",
@@ -29,9 +399,9 @@
       "source_file": ".claude/commands/photos.md",
       "source_location": "L31",
       "_origin": "ast",
-      "id": "claude_commands_photos_look_at_each_one",
       "community": 22,
-      "norm_label": "look at each one"
+      "norm_label": "look at each one",
+      "id": "claude_commands_photos_look_at_each_one"
     },
     {
       "label": "HEIC photos need a preview first",
@@ -39,9 +409,9 @@
       "source_file": ".claude/commands/photos.md",
       "source_location": "L36",
       "_origin": "ast",
-      "id": "claude_commands_photos_heic_photos_need_a_preview_first",
       "community": 22,
-      "norm_label": "heic photos need a preview first"
+      "norm_label": "heic photos need a preview first",
+      "id": "claude_commands_photos_heic_photos_need_a_preview_first"
     },
     {
       "label": "Decide the name",
@@ -49,9 +419,9 @@
       "source_file": ".claude/commands/photos.md",
       "source_location": "L91",
       "_origin": "ast",
-      "id": "claude_commands_photos_decide_the_name",
       "community": 22,
-      "norm_label": "decide the name"
+      "norm_label": "decide the name",
+      "id": "claude_commands_photos_decide_the_name"
     },
     {
       "label": "Judgment calls",
@@ -59,9 +429,9 @@
       "source_file": ".claude/commands/photos.md",
       "source_location": "L124",
       "_origin": "ast",
-      "id": "claude_commands_photos_judgment_calls",
       "community": 22,
-      "norm_label": "judgment calls"
+      "norm_label": "judgment calls",
+      "id": "claude_commands_photos_judgment_calls"
     },
     {
       "label": "Show the plan before touching anything",
@@ -69,29 +439,269 @@
       "source_file": ".claude/commands/photos.md",
       "source_location": "L135",
       "_origin": "ast",
-      "id": "claude_commands_photos_show_the_plan_before_touching_anything",
       "community": 22,
-      "norm_label": "show the plan before touching anything"
+      "norm_label": "show the plan before touching anything",
+      "id": "claude_commands_photos_show_the_plan_before_touching_anything"
+    },
+    {
+      "label": "Check posts.csv before renaming anything",
+      "file_type": "document",
+      "source_file": ".claude/commands/photos.md",
+      "source_location": "L142",
+      "_origin": "ast",
+      "community": 22,
+      "norm_label": "check posts.csv before renaming anything",
+      "id": "claude_commands_photos_check_posts_csv_before_renaming_anything"
     },
     {
       "label": "Then rename",
       "file_type": "document",
       "source_file": ".claude/commands/photos.md",
-      "source_location": "L142",
+      "source_location": "L157",
       "_origin": "ast",
-      "id": "claude_commands_photos_then_rename",
       "community": 22,
-      "norm_label": "then rename"
+      "norm_label": "then rename",
+      "id": "claude_commands_photos_then_rename"
     },
     {
       "label": "Finish",
       "file_type": "document",
       "source_file": ".claude/commands/photos.md",
-      "source_location": "L155",
+      "source_location": "L170",
       "_origin": "ast",
-      "id": "claude_commands_photos_finish",
       "community": 22,
-      "norm_label": "finish"
+      "norm_label": "finish",
+      "id": "claude_commands_photos_finish"
+    },
+    {
+      "label": "sync.md",
+      "file_type": "document",
+      "source_file": ".claude/commands/sync.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 23,
+      "norm_label": "sync.md",
+      "id": "claude_commands_sync"
+    },
+    {
+      "label": "Do it in this order",
+      "file_type": "document",
+      "source_file": ".claude/commands/sync.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "community": 23,
+      "norm_label": "do it in this order",
+      "id": "claude_commands_sync_do_it_in_this_order"
+    },
+    {
+      "label": "1. See what is here",
+      "file_type": "document",
+      "source_file": ".claude/commands/sync.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "community": 23,
+      "norm_label": "1. see what is here",
+      "id": "claude_commands_sync_1_see_what_is_here"
+    },
+    {
+      "label": "2. Commit their work, if there is any",
+      "file_type": "document",
+      "source_file": ".claude/commands/sync.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "community": 23,
+      "norm_label": "2. commit their work, if there is any",
+      "id": "claude_commands_sync_2_commit_their_work_if_there_is_any"
+    },
+    {
+      "label": "3. Get their changes",
+      "file_type": "document",
+      "source_file": ".claude/commands/sync.md",
+      "source_location": "L40",
+      "_origin": "ast",
+      "community": 23,
+      "norm_label": "3. get their changes",
+      "id": "claude_commands_sync_3_get_their_changes"
+    },
+    {
+      "label": "4. Send yours",
+      "file_type": "document",
+      "source_file": ".claude/commands/sync.md",
+      "source_location": "L46",
+      "_origin": "ast",
+      "community": 23,
+      "norm_label": "4. send yours",
+      "id": "claude_commands_sync_4_send_yours"
+    },
+    {
+      "label": "5. Confirm it actually landed",
+      "file_type": "document",
+      "source_file": ".claude/commands/sync.md",
+      "source_location": "L52",
+      "_origin": "ast",
+      "community": 23,
+      "norm_label": "5. confirm it actually landed",
+      "id": "claude_commands_sync_5_confirm_it_actually_landed"
+    },
+    {
+      "label": "When something goes wrong",
+      "file_type": "document",
+      "source_file": ".claude/commands/sync.md",
+      "source_location": "L61",
+      "_origin": "ast",
+      "community": 23,
+      "norm_label": "when something goes wrong",
+      "id": "claude_commands_sync_when_something_goes_wrong"
+    },
+    {
+      "label": "Finish",
+      "file_type": "document",
+      "source_file": ".claude/commands/sync.md",
+      "source_location": "L96",
+      "_origin": "ast",
+      "community": 23,
+      "norm_label": "finish",
+      "id": "claude_commands_sync_finish"
+    },
+    {
+      "label": "1-START-HERE_06273d7e.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 13,
+      "norm_label": "1-start-here_06273d7e.md",
+      "id": "graphify_out_converted_1_start_here_06273d7e"
+    },
+    {
+      "label": "Backyard Brew: Start Here",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "community": 13,
+      "norm_label": "backyard brew: start here",
+      "id": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here"
+    },
+    {
+      "label": "First time on this Mac only",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "community": 13,
+      "norm_label": "first time on this mac only",
+      "id": "graphify_out_converted_1_start_here_06273d7e_first_time_on_this_mac_only"
+    },
+    {
+      "label": "Opening it",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "community": 13,
+      "norm_label": "opening it",
+      "id": "graphify_out_converted_1_start_here_06273d7e_opening_it"
+    },
+    {
+      "label": "The six commands",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "community": 13,
+      "norm_label": "the six commands",
+      "id": "graphify_out_converted_1_start_here_06273d7e_the_six_commands"
+    },
+    {
+      "label": "It already knows the bar",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "community": 13,
+      "norm_label": "it already knows the bar",
+      "id": "graphify_out_converted_1_start_here_06273d7e_it_already_knows_the_bar"
+    },
+    {
+      "label": "Where things live",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L41",
+      "_origin": "ast",
+      "community": 13,
+      "norm_label": "where things live",
+      "id": "graphify_out_converted_1_start_here_06273d7e_where_things_live"
+    },
+    {
+      "label": "Dropping in photos",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L47",
+      "_origin": "ast",
+      "community": 13,
+      "norm_label": "dropping in photos",
+      "id": "graphify_out_converted_1_start_here_06273d7e_dropping_in_photos"
+    },
+    {
+      "label": "Sharing with Micah",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L51",
+      "_origin": "ast",
+      "community": 13,
+      "norm_label": "sharing with micah",
+      "id": "graphify_out_converted_1_start_here_06273d7e_sharing_with_micah"
+    },
+    {
+      "label": "The weekly rhythm",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "community": 13,
+      "norm_label": "the weekly rhythm",
+      "id": "graphify_out_converted_1_start_here_06273d7e_the_weekly_rhythm"
+    },
+    {
+      "label": "Three rules",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L59",
+      "_origin": "ast",
+      "community": 13,
+      "norm_label": "three rules",
+      "id": "graphify_out_converted_1_start_here_06273d7e_three_rules"
+    },
+    {
+      "label": "Two things about the app",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L66",
+      "_origin": "ast",
+      "community": 13,
+      "norm_label": "two things about the app",
+      "id": "graphify_out_converted_1_start_here_06273d7e_two_things_about_the_app"
+    },
+    {
+      "label": "Reading, printing, and editing these sheets",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L69",
+      "_origin": "ast",
+      "community": 13,
+      "norm_label": "reading, printing, and editing these sheets",
+      "id": "graphify_out_converted_1_start_here_06273d7e_reading_printing_and_editing_these_sheets"
+    },
+    {
+      "label": "If something is not working",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L80",
+      "_origin": "ast",
+      "community": 13,
+      "norm_label": "if something is not working",
+      "id": "graphify_out_converted_1_start_here_06273d7e_if_something_is_not_working"
     },
     {
       "label": "README.md",
@@ -99,9 +709,9 @@
       "source_file": "README.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "readme",
       "community": 9,
-      "norm_label": "readme.md"
+      "norm_label": "readme.md",
+      "id": "readme"
     },
     {
       "label": "Backyard Brew \u2014 Social Media & Online Presence",
@@ -109,9 +719,9 @@
       "source_file": "README.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "readme_backyard_brew_social_media_online_presence",
       "community": 9,
-      "norm_label": "backyard brew \u2014 social media & online presence"
+      "norm_label": "backyard brew \u2014 social media & online presence",
+      "id": "readme_backyard_brew_social_media_online_presence"
     },
     {
       "label": "Using it (no terminal needed)",
@@ -119,9 +729,9 @@
       "source_file": "README.md",
       "source_location": "L11",
       "_origin": "ast",
-      "id": "readme_using_it_no_terminal_needed",
       "community": 9,
-      "norm_label": "using it (no terminal needed)"
+      "norm_label": "using it (no terminal needed)",
+      "id": "readme_using_it_no_terminal_needed"
     },
     {
       "label": "Setup (run this)",
@@ -129,9 +739,9 @@
       "source_file": "README.md",
       "source_location": "L19",
       "_origin": "ast",
-      "id": "readme_setup_run_this",
       "community": 9,
-      "norm_label": "setup (run this)"
+      "norm_label": "setup (run this)",
+      "id": "readme_setup_run_this"
     },
     {
       "label": "Then read this",
@@ -139,9 +749,9 @@
       "source_file": "README.md",
       "source_location": "L31",
       "_origin": "ast",
-      "id": "readme_then_read_this",
       "community": 9,
-      "norm_label": "then read this"
+      "norm_label": "then read this",
+      "id": "readme_then_read_this"
     },
     {
       "label": "The six commands",
@@ -149,9 +759,9 @@
       "source_file": "README.md",
       "source_location": "L49",
       "_origin": "ast",
-      "id": "readme_the_six_commands",
       "community": 9,
-      "norm_label": "the six commands"
+      "norm_label": "the six commands",
+      "id": "readme_the_six_commands"
     },
     {
       "label": "What's in here",
@@ -159,9 +769,9 @@
       "source_file": "README.md",
       "source_location": "L69",
       "_origin": "ast",
-      "id": "readme_what_s_in_here",
       "community": 9,
-      "norm_label": "what's in here"
+      "norm_label": "what's in here",
+      "id": "readme_what_s_in_here"
     },
     {
       "label": "Naming photos",
@@ -169,9 +779,9 @@
       "source_file": "README.md",
       "source_location": "L87",
       "_origin": "ast",
-      "id": "readme_naming_photos",
       "community": 9,
-      "norm_label": "naming photos"
+      "norm_label": "naming photos",
+      "id": "readme_naming_photos"
     },
     {
       "label": "The rules",
@@ -179,9 +789,9 @@
       "source_file": "README.md",
       "source_location": "L106",
       "_origin": "ast",
-      "id": "readme_the_rules",
       "community": 9,
-      "norm_label": "the rules"
+      "norm_label": "the rules",
+      "id": "readme_the_rules"
     },
     {
       "label": "1-START-HERE.md",
@@ -189,9 +799,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "playbook_1_start_here",
       "community": 9,
-      "norm_label": "1-start-here.md"
+      "norm_label": "1-start-here.md",
+      "id": "playbook_1_start_here"
     },
     {
       "label": "Backyard Brew: Start Here",
@@ -199,9 +809,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "playbook_1_start_here_backyard_brew_start_here",
       "community": 9,
-      "norm_label": "backyard brew: start here"
+      "norm_label": "backyard brew: start here",
+      "id": "playbook_1_start_here_backyard_brew_start_here"
     },
     {
       "label": "First time on this Mac only",
@@ -209,9 +819,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L17",
       "_origin": "ast",
-      "id": "playbook_1_start_here_first_time_on_this_mac_only",
       "community": 9,
-      "norm_label": "first time on this mac only"
+      "norm_label": "first time on this mac only",
+      "id": "playbook_1_start_here_first_time_on_this_mac_only"
     },
     {
       "label": "Opening it",
@@ -219,9 +829,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L44",
       "_origin": "ast",
-      "id": "playbook_1_start_here_opening_it",
       "community": 9,
-      "norm_label": "opening it"
+      "norm_label": "opening it",
+      "id": "playbook_1_start_here_opening_it"
     },
     {
       "label": "The six commands",
@@ -229,9 +839,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L57",
       "_origin": "ast",
-      "id": "playbook_1_start_here_the_six_commands",
       "community": 9,
-      "norm_label": "the six commands"
+      "norm_label": "the six commands",
+      "id": "playbook_1_start_here_the_six_commands"
     },
     {
       "label": "It already knows the bar",
@@ -239,9 +849,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L73",
       "_origin": "ast",
-      "id": "playbook_1_start_here_it_already_knows_the_bar",
       "community": 9,
-      "norm_label": "it already knows the bar"
+      "norm_label": "it already knows the bar",
+      "id": "playbook_1_start_here_it_already_knows_the_bar"
     },
     {
       "label": "Where things live",
@@ -249,9 +859,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L94",
       "_origin": "ast",
-      "id": "playbook_1_start_here_where_things_live",
       "community": 9,
-      "norm_label": "where things live"
+      "norm_label": "where things live",
+      "id": "playbook_1_start_here_where_things_live"
     },
     {
       "label": "Dropping in photos",
@@ -259,9 +869,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L117",
       "_origin": "ast",
-      "id": "playbook_1_start_here_dropping_in_photos",
       "community": 9,
-      "norm_label": "dropping in photos"
+      "norm_label": "dropping in photos",
+      "id": "playbook_1_start_here_dropping_in_photos"
     },
     {
       "label": "Sharing with Micah",
@@ -269,9 +879,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L129",
       "_origin": "ast",
-      "id": "playbook_1_start_here_sharing_with_micah",
       "community": 9,
-      "norm_label": "sharing with micah"
+      "norm_label": "sharing with micah",
+      "id": "playbook_1_start_here_sharing_with_micah"
     },
     {
       "label": "The weekly rhythm",
@@ -279,9 +889,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L138",
       "_origin": "ast",
-      "id": "playbook_1_start_here_the_weekly_rhythm",
       "community": 9,
-      "norm_label": "the weekly rhythm"
+      "norm_label": "the weekly rhythm",
+      "id": "playbook_1_start_here_the_weekly_rhythm"
     },
     {
       "label": "Three rules",
@@ -289,9 +899,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L152",
       "_origin": "ast",
-      "id": "playbook_1_start_here_three_rules",
       "community": 9,
-      "norm_label": "three rules"
+      "norm_label": "three rules",
+      "id": "playbook_1_start_here_three_rules"
     },
     {
       "label": "Two things about the app",
@@ -299,9 +909,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L163",
       "_origin": "ast",
-      "id": "playbook_1_start_here_two_things_about_the_app",
       "community": 9,
-      "norm_label": "two things about the app"
+      "norm_label": "two things about the app",
+      "id": "playbook_1_start_here_two_things_about_the_app"
     },
     {
       "label": "Reading, printing, and editing these sheets",
@@ -309,9 +919,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L176",
       "_origin": "ast",
-      "id": "playbook_1_start_here_reading_printing_and_editing_these_sheets",
       "community": 9,
-      "norm_label": "reading, printing, and editing these sheets"
+      "norm_label": "reading, printing, and editing these sheets",
+      "id": "playbook_1_start_here_reading_printing_and_editing_these_sheets"
     },
     {
       "label": "If something is not working",
@@ -319,9 +929,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L213",
       "_origin": "ast",
-      "id": "playbook_1_start_here_if_something_is_not_working",
       "community": 9,
-      "norm_label": "if something is not working"
+      "norm_label": "if something is not working",
+      "id": "playbook_1_start_here_if_something_is_not_working"
     },
     {
       "label": "classify_photos.py",
@@ -329,9 +939,9 @@
       "source_file": "scripts/classify_photos.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "scripts_classify_photos",
       "community": 2,
-      "norm_label": "classify_photos.py"
+      "norm_label": "classify_photos.py",
+      "id": "scripts_classify_photos"
     },
     {
       "label": "manual_kind()",
@@ -339,9 +949,9 @@
       "source_file": "scripts/classify_photos.py",
       "source_location": "L29",
       "_origin": "ast",
-      "id": "scripts_classify_photos_manual_kind",
       "community": 2,
-      "norm_label": "manual_kind()"
+      "norm_label": "manual_kind()",
+      "id": "scripts_classify_photos_manual_kind"
     },
     {
       "label": "pool_claimed()",
@@ -349,9 +959,9 @@
       "source_file": "scripts/classify_photos.py",
       "source_location": "L38",
       "_origin": "ast",
-      "id": "scripts_classify_photos_pool_claimed",
       "community": 2,
-      "norm_label": "pool_claimed()"
+      "norm_label": "pool_claimed()",
+      "id": "scripts_classify_photos_pool_claimed"
     },
     {
       "label": "needs_classification()",
@@ -359,9 +969,9 @@
       "source_file": "scripts/classify_photos.py",
       "source_location": "L58",
       "_origin": "ast",
-      "id": "scripts_classify_photos_needs_classification",
       "community": 2,
-      "norm_label": "needs_classification()"
+      "norm_label": "needs_classification()",
+      "id": "scripts_classify_photos_needs_classification"
     },
     {
       "label": "read_exif_time()",
@@ -369,9 +979,9 @@
       "source_file": "scripts/classify_photos.py",
       "source_location": "L68",
       "_origin": "ast",
-      "id": "scripts_classify_photos_read_exif_time",
       "community": 2,
-      "norm_label": "read_exif_time()"
+      "norm_label": "read_exif_time()",
+      "id": "scripts_classify_photos_read_exif_time"
     },
     {
       "label": "read_capture_time()",
@@ -379,9 +989,9 @@
       "source_file": "scripts/classify_photos.py",
       "source_location": "L89",
       "_origin": "ast",
-      "id": "scripts_classify_photos_read_capture_time",
       "community": 2,
-      "norm_label": "read_capture_time()"
+      "norm_label": "read_capture_time()",
+      "id": "scripts_classify_photos_read_capture_time"
     },
     {
       "label": "classify_photos.py - Filename-convention helpers for photo handling.  No vision",
@@ -389,9 +999,9 @@
       "source_file": "scripts/classify_photos.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "scripts_classify_photos_rationale_1",
       "community": 2,
-      "norm_label": "classify_photos.py - filename-convention helpers for photo handling.  no vision"
+      "norm_label": "classify_photos.py - filename-convention helpers for photo handling.  no vision",
+      "id": "scripts_classify_photos_rationale_1"
     },
     {
       "label": "vibe'/'spotlight' if the filename carries that override suffix, else None.",
@@ -399,9 +1009,9 @@
       "source_file": "scripts/classify_photos.py",
       "source_location": "L30",
       "_origin": "ast",
-      "id": "scripts_classify_photos_rationale_30",
       "community": 2,
-      "norm_label": "vibe'/'spotlight' if the filename carries that override suffix, else none."
+      "norm_label": "vibe'/'spotlight' if the filename carries that override suffix, else none.",
+      "id": "scripts_classify_photos_rationale_30"
     },
     {
       "label": "True if this filename's stem contains a keyword from     config.EVENT_PHOTO_KEYW",
@@ -409,9 +1019,9 @@
       "source_file": "scripts/classify_photos.py",
       "source_location": "L39",
       "_origin": "ast",
-      "id": "scripts_classify_photos_rationale_39",
       "community": 2,
-      "norm_label": "true if this filename's stem contains a keyword from     config.event_photo_keyw"
+      "norm_label": "true if this filename's stem contains a keyword from     config.event_photo_keyw",
+      "id": "scripts_classify_photos_rationale_39"
     },
     {
       "label": "False if the filename already carries an explicit override signal,     or isn't",
@@ -419,9 +1029,9 @@
       "source_file": "scripts/classify_photos.py",
       "source_location": "L59",
       "_origin": "ast",
-      "id": "scripts_classify_photos_rationale_59",
       "community": 2,
-      "norm_label": "false if the filename already carries an explicit override signal,     or isn't"
+      "norm_label": "false if the filename already carries an explicit override signal,     or isn't",
+      "id": "scripts_classify_photos_rationale_59"
     },
     {
       "label": "The photo's real capture time, or None. Never falls back to mtime.      Use this",
@@ -429,9 +1039,9 @@
       "source_file": "scripts/classify_photos.py",
       "source_location": "L69",
       "_origin": "ast",
-      "id": "scripts_classify_photos_rationale_69",
       "community": 2,
-      "norm_label": "the photo's real capture time, or none. never falls back to mtime.      use this"
+      "norm_label": "the photo's real capture time, or none. never falls back to mtime.      use this",
+      "id": "scripts_classify_photos_rationale_69"
     },
     {
       "label": "EXIF DateTimeOriginal if present, else the file's mtime. None on error.      The",
@@ -439,9 +1049,9 @@
       "source_file": "scripts/classify_photos.py",
       "source_location": "L90",
       "_origin": "ast",
-      "id": "scripts_classify_photos_rationale_90",
       "community": 2,
-      "norm_label": "exif datetimeoriginal if present, else the file's mtime. none on error.      the"
+      "norm_label": "exif datetimeoriginal if present, else the file's mtime. none on error.      the",
+      "id": "scripts_classify_photos_rationale_90"
     },
     {
       "label": "test_classify_photos.py",
@@ -449,9 +1059,9 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "scripts_test_classify_photos",
       "community": 27,
-      "norm_label": "test_classify_photos.py"
+      "norm_label": "test_classify_photos.py",
+      "id": "scripts_test_classify_photos"
     },
     {
       "label": "test_needs_classification_skips_known_suffixes()",
@@ -459,9 +1069,9 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L4",
       "_origin": "ast",
-      "id": "scripts_test_classify_photos_test_needs_classification_skips_known_suffixes",
       "community": 27,
-      "norm_label": "test_needs_classification_skips_known_suffixes()"
+      "norm_label": "test_needs_classification_skips_known_suffixes()",
+      "id": "scripts_test_classify_photos_test_needs_classification_skips_known_suffixes"
     },
     {
       "label": "test_needs_classification_allows_plain_photos()",
@@ -469,9 +1079,9 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L11",
       "_origin": "ast",
-      "id": "scripts_test_classify_photos_test_needs_classification_allows_plain_photos",
       "community": 27,
-      "norm_label": "test_needs_classification_allows_plain_photos()"
+      "norm_label": "test_needs_classification_allows_plain_photos()",
+      "id": "scripts_test_classify_photos_test_needs_classification_allows_plain_photos"
     },
     {
       "label": "test_needs_classification_skips_video_files()",
@@ -479,9 +1089,9 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L16",
       "_origin": "ast",
-      "id": "scripts_test_classify_photos_test_needs_classification_skips_video_files",
       "community": 27,
-      "norm_label": "test_needs_classification_skips_video_files()"
+      "norm_label": "test_needs_classification_skips_video_files()",
+      "id": "scripts_test_classify_photos_test_needs_classification_skips_video_files"
     },
     {
       "label": "test_manual_kind_reads_vibe_and_spotlight_suffixes()",
@@ -489,9 +1099,9 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L25",
       "_origin": "ast",
-      "id": "scripts_test_classify_photos_test_manual_kind_reads_vibe_and_spotlight_suffixes",
       "community": 27,
-      "norm_label": "test_manual_kind_reads_vibe_and_spotlight_suffixes()"
+      "norm_label": "test_manual_kind_reads_vibe_and_spotlight_suffixes()",
+      "id": "scripts_test_classify_photos_test_manual_kind_reads_vibe_and_spotlight_suffixes"
     },
     {
       "label": "test_pool_claimed_matches_event_keyword()",
@@ -499,9 +1109,9 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L32",
       "_origin": "ast",
-      "id": "scripts_test_classify_photos_test_pool_claimed_matches_event_keyword",
       "community": 27,
-      "norm_label": "test_pool_claimed_matches_event_keyword()"
+      "norm_label": "test_pool_claimed_matches_event_keyword()",
+      "id": "scripts_test_classify_photos_test_pool_claimed_matches_event_keyword"
     },
     {
       "label": "test_pool_claimed_matches_food_keyword()",
@@ -509,9 +1119,9 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L37",
       "_origin": "ast",
-      "id": "scripts_test_classify_photos_test_pool_claimed_matches_food_keyword",
       "community": 27,
-      "norm_label": "test_pool_claimed_matches_food_keyword()"
+      "norm_label": "test_pool_claimed_matches_food_keyword()",
+      "id": "scripts_test_classify_photos_test_pool_claimed_matches_food_keyword"
     },
     {
       "label": "test_pool_claimed_recognizes_an_events_own_default_art_filename()",
@@ -519,9 +1129,9 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L42",
       "_origin": "ast",
-      "id": "scripts_test_classify_photos_test_pool_claimed_recognizes_an_events_own_default_art_filename",
       "community": 27,
-      "norm_label": "test_pool_claimed_recognizes_an_events_own_default_art_filename()"
+      "norm_label": "test_pool_claimed_recognizes_an_events_own_default_art_filename()",
+      "id": "scripts_test_classify_photos_test_pool_claimed_recognizes_an_events_own_default_art_filename"
     },
     {
       "label": "test_read_capture_time_falls_back_to_mtime()",
@@ -529,9 +1139,9 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L49",
       "_origin": "ast",
-      "id": "scripts_test_classify_photos_test_read_capture_time_falls_back_to_mtime",
       "community": 27,
-      "norm_label": "test_read_capture_time_falls_back_to_mtime()"
+      "norm_label": "test_read_capture_time_falls_back_to_mtime()",
+      "id": "scripts_test_classify_photos_test_read_capture_time_falls_back_to_mtime"
     },
     {
       "label": "test_read_exif_time_returns_none_without_exif()",
@@ -539,9 +1149,9 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L56",
       "_origin": "ast",
-      "id": "scripts_test_classify_photos_test_read_exif_time_returns_none_without_exif",
       "community": 27,
-      "norm_label": "test_read_exif_time_returns_none_without_exif()"
+      "norm_label": "test_read_exif_time_returns_none_without_exif()",
+      "id": "scripts_test_classify_photos_test_read_exif_time_returns_none_without_exif"
     },
     {
       "label": "Video files (iPhones drop these alongside camera-roll photos) are     never a st",
@@ -549,9 +1159,9 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L17",
       "_origin": "ast",
-      "id": "scripts_test_classify_photos_rationale_17",
       "community": 27,
-      "norm_label": "video files (iphones drop these alongside camera-roll photos) are     never a st"
+      "norm_label": "video files (iphones drop these alongside camera-roll photos) are     never a st",
+      "id": "scripts_test_classify_photos_rationale_17"
     },
     {
       "label": "Must not fall back to mtime: a fresh clone would date the whole     backlog as '",
@@ -559,9 +1169,9 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L57",
       "_origin": "ast",
-      "id": "scripts_test_classify_photos_rationale_57",
       "community": 27,
-      "norm_label": "must not fall back to mtime: a fresh clone would date the whole     backlog as '"
+      "norm_label": "must not fall back to mtime: a fresh clone would date the whole     backlog as '",
+      "id": "scripts_test_classify_photos_rationale_57"
     },
     {
       "label": "make-pdfs.py",
@@ -712,146 +1322,6 @@
       "community": 15,
       "norm_label": "smallest thing that fails if the conversion breaks.",
       "id": "playbook_make_pdfs_rationale_285"
-    },
-    {
-      "label": "1-START-HERE_06273d7e.md",
-      "file_type": "document",
-      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 13,
-      "norm_label": "1-start-here_06273d7e.md",
-      "id": "graphify_out_converted_1_start_here_06273d7e"
-    },
-    {
-      "label": "Backyard Brew: Start Here",
-      "file_type": "document",
-      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
-      "source_location": "L3",
-      "_origin": "ast",
-      "community": 13,
-      "norm_label": "backyard brew: start here",
-      "id": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here"
-    },
-    {
-      "label": "First time on this Mac only",
-      "file_type": "document",
-      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
-      "source_location": "L7",
-      "_origin": "ast",
-      "community": 13,
-      "norm_label": "first time on this mac only",
-      "id": "graphify_out_converted_1_start_here_06273d7e_first_time_on_this_mac_only"
-    },
-    {
-      "label": "Opening it",
-      "file_type": "document",
-      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
-      "source_location": "L21",
-      "_origin": "ast",
-      "community": 13,
-      "norm_label": "opening it",
-      "id": "graphify_out_converted_1_start_here_06273d7e_opening_it"
-    },
-    {
-      "label": "The six commands",
-      "file_type": "document",
-      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
-      "source_location": "L29",
-      "_origin": "ast",
-      "community": 13,
-      "norm_label": "the six commands",
-      "id": "graphify_out_converted_1_start_here_06273d7e_the_six_commands"
-    },
-    {
-      "label": "It already knows the bar",
-      "file_type": "document",
-      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
-      "source_location": "L33",
-      "_origin": "ast",
-      "community": 13,
-      "norm_label": "it already knows the bar",
-      "id": "graphify_out_converted_1_start_here_06273d7e_it_already_knows_the_bar"
-    },
-    {
-      "label": "Where things live",
-      "file_type": "document",
-      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
-      "source_location": "L41",
-      "_origin": "ast",
-      "community": 13,
-      "norm_label": "where things live",
-      "id": "graphify_out_converted_1_start_here_06273d7e_where_things_live"
-    },
-    {
-      "label": "Dropping in photos",
-      "file_type": "document",
-      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
-      "source_location": "L45",
-      "_origin": "ast",
-      "community": 13,
-      "norm_label": "dropping in photos",
-      "id": "graphify_out_converted_1_start_here_06273d7e_dropping_in_photos"
-    },
-    {
-      "label": "Sharing with Micah",
-      "file_type": "document",
-      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
-      "source_location": "L49",
-      "_origin": "ast",
-      "community": 13,
-      "norm_label": "sharing with micah",
-      "id": "graphify_out_converted_1_start_here_06273d7e_sharing_with_micah"
-    },
-    {
-      "label": "The weekly rhythm",
-      "file_type": "document",
-      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
-      "source_location": "L52",
-      "_origin": "ast",
-      "community": 13,
-      "norm_label": "the weekly rhythm",
-      "id": "graphify_out_converted_1_start_here_06273d7e_the_weekly_rhythm"
-    },
-    {
-      "label": "Three rules",
-      "file_type": "document",
-      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
-      "source_location": "L57",
-      "_origin": "ast",
-      "community": 13,
-      "norm_label": "three rules",
-      "id": "graphify_out_converted_1_start_here_06273d7e_three_rules"
-    },
-    {
-      "label": "Two things about the app",
-      "file_type": "document",
-      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
-      "source_location": "L64",
-      "_origin": "ast",
-      "community": 13,
-      "norm_label": "two things about the app",
-      "id": "graphify_out_converted_1_start_here_06273d7e_two_things_about_the_app"
-    },
-    {
-      "label": "Reading, printing, and editing these sheets",
-      "file_type": "document",
-      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
-      "source_location": "L67",
-      "_origin": "ast",
-      "community": 13,
-      "norm_label": "reading, printing, and editing these sheets",
-      "id": "graphify_out_converted_1_start_here_06273d7e_reading_printing_and_editing_these_sheets"
-    },
-    {
-      "label": "If something is not working",
-      "file_type": "document",
-      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
-      "source_location": "L76",
-      "_origin": "ast",
-      "community": 13,
-      "norm_label": "if something is not working",
-      "id": "graphify_out_converted_1_start_here_06273d7e_if_something_is_not_working"
     },
     {
       "label": "2-MAKE-A-GRAPHIC_c5f8af17.md",
@@ -1222,296 +1692,6 @@
       "community": 29,
       "norm_label": "vendor_sign_in_sheet_7e46fbee.md",
       "id": "graphify_out_converted_vendor_sign_in_sheet_7e46fbee"
-    },
-    {
-      "label": "sunday.md",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "sunday.md",
-      "id": "claude_commands_sunday"
-    },
-    {
-      "label": "Before writing anything",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L8",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "before writing anything",
-      "id": "claude_commands_sunday_before_writing_anything"
-    },
-    {
-      "label": "The schedule: 3 posts a day, every day, all seven days",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L23",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "the schedule: 3 posts a day, every day, all seven days",
-      "id": "claude_commands_sunday_the_schedule_3_posts_a_day_every_day_all_seven_days"
-    },
-    {
-      "label": "11:00am: the day's main post",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L28",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "11:00am: the day's main post",
-      "id": "claude_commands_sunday_11_00am_the_day_s_main_post"
-    },
-    {
-      "label": "2:30pm: highlight, recap, or filler that ties in",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L37",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "2:30pm: highlight, recap, or filler that ties in",
-      "id": "claude_commands_sunday_2_30pm_highlight_recap_or_filler_that_ties_in"
-    },
-    {
-      "label": "7:00pm: teaser for tomorrow",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L55",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "7:00pm: teaser for tomorrow",
-      "id": "claude_commands_sunday_7_00pm_teaser_for_tomorrow"
-    },
-    {
-      "label": "The build: every event gets three touches",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L64",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "the build: every event gets three touches",
-      "id": "claude_commands_sunday_the_build_every_event_gets_three_touches"
-    },
-    {
-      "label": "7pm the night before: make them want it",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L83",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "7pm the night before: make them want it",
-      "id": "claude_commands_sunday_7pm_the_night_before_make_them_want_it"
-    },
-    {
-      "label": "11am the day of: turn it into a decision",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L95",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "11am the day of: turn it into a decision",
-      "id": "claude_commands_sunday_11am_the_day_of_turn_it_into_a_decision"
-    },
-    {
-      "label": "2:30pm the day of: last call before doors",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L106",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "2:30pm the day of: last call before doors",
-      "id": "claude_commands_sunday_2_30pm_the_day_of_last_call_before_doors"
-    },
-    {
-      "label": "The three must not repeat each other",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L136",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "the three must not repeat each other",
-      "id": "claude_commands_sunday_the_three_must_not_repeat_each_other"
-    },
-    {
-      "label": "What every post has to earn",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L151",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "what every post has to earn",
-      "id": "claude_commands_sunday_what_every_post_has_to_earn"
-    },
-    {
-      "label": "Picking photos",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L165",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "picking photos",
-      "id": "claude_commands_sunday_picking_photos"
-    },
-    {
-      "label": "Reach: the part that grows the page",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L187",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "reach: the part that grows the page",
-      "id": "claude_commands_sunday_reach_the_part_that_grows_the_page"
-    },
-    {
-      "label": "Write each day for its actual audience",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L193",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "write each day for its actual audience",
-      "id": "claude_commands_sunday_write_each_day_for_its_actual_audience"
-    },
-    {
-      "label": "The Thursday 11am post is a Collab, every week",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L208",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "the thursday 11am post is a collab, every week",
-      "id": "claude_commands_sunday_the_thursday_11am_post_is_a_collab_every_week"
-    },
-    {
-      "label": "Tag and geotag everything",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L228",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "tag and geotag everything",
-      "id": "claude_commands_sunday_tag_and_geotag_everything"
-    },
-    {
-      "label": "Static posts only",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L237",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "static posts only",
-      "id": "claude_commands_sunday_static_posts_only"
-    },
-    {
-      "label": "One Google Business Profile post",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L243",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "one google business profile post",
-      "id": "claude_commands_sunday_one_google_business_profile_post"
-    },
-    {
-      "label": "Before delivering: run the tally",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L250",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "before delivering: run the tally",
-      "id": "claude_commands_sunday_before_delivering_run_the_tally"
-    },
-    {
-      "label": "Deliver",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L265",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "deliver",
-      "id": "claude_commands_sunday_deliver"
-    },
-    {
-      "label": "sync.md",
-      "file_type": "document",
-      "source_file": ".claude/commands/sync.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 23,
-      "norm_label": "sync.md",
-      "id": "claude_commands_sync"
-    },
-    {
-      "label": "Do it in this order",
-      "file_type": "document",
-      "source_file": ".claude/commands/sync.md",
-      "source_location": "L13",
-      "_origin": "ast",
-      "community": 23,
-      "norm_label": "do it in this order",
-      "id": "claude_commands_sync_do_it_in_this_order"
-    },
-    {
-      "label": "1. See what is here",
-      "file_type": "document",
-      "source_file": ".claude/commands/sync.md",
-      "source_location": "L15",
-      "_origin": "ast",
-      "community": 23,
-      "norm_label": "1. see what is here",
-      "id": "claude_commands_sync_1_see_what_is_here"
-    },
-    {
-      "label": "2. Get their changes first",
-      "file_type": "document",
-      "source_file": ".claude/commands/sync.md",
-      "source_location": "L21",
-      "_origin": "ast",
-      "community": 23,
-      "norm_label": "2. get their changes first",
-      "id": "claude_commands_sync_2_get_their_changes_first"
-    },
-    {
-      "label": "3. Put local changes back",
-      "file_type": "document",
-      "source_file": ".claude/commands/sync.md",
-      "source_location": "L30",
-      "_origin": "ast",
-      "community": 23,
-      "norm_label": "3. put local changes back",
-      "id": "claude_commands_sync_3_put_local_changes_back"
-    },
-    {
-      "label": "4. Save and share",
-      "file_type": "document",
-      "source_file": ".claude/commands/sync.md",
-      "source_location": "L36",
-      "_origin": "ast",
-      "community": 23,
-      "norm_label": "4. save and share",
-      "id": "claude_commands_sync_4_save_and_share"
-    },
-    {
-      "label": "When something goes wrong",
-      "file_type": "document",
-      "source_file": ".claude/commands/sync.md",
-      "source_location": "L50",
-      "_origin": "ast",
-      "community": 23,
-      "norm_label": "when something goes wrong",
-      "id": "claude_commands_sync_when_something_goes_wrong"
-    },
-    {
-      "label": "Finish",
-      "file_type": "document",
-      "source_file": ".claude/commands/sync.md",
-      "source_location": "L74",
-      "_origin": "ast",
-      "community": 23,
-      "norm_label": "finish",
-      "id": "claude_commands_sync_finish"
     },
     {
       "label": "CLAUDE.md",
@@ -2072,116 +2252,6 @@
       "id": "claude_commands_reply_remember"
     },
     {
-      "label": "SKILL.md",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "skill.md",
-      "id": "claude_skills_backyard_brew_brand_skill"
-    },
-    {
-      "label": "Backyard Brew Brand Identity",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L6",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "backyard brew brand identity",
-      "id": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity"
-    },
-    {
-      "label": "Start here: which file answers your question",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L8",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "start here: which file answers your question",
-      "id": "claude_skills_backyard_brew_brand_skill_start_here_which_file_answers_your_question"
-    },
-    {
-      "label": "What this business is",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L39",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "what this business is",
-      "id": "claude_skills_backyard_brew_brand_skill_what_this_business_is"
-    },
-    {
-      "label": "Facts (verified \u2014 use these exact values)",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L45",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "facts (verified \u2014 use these exact values)",
-      "id": "claude_skills_backyard_brew_brand_skill_facts_verified_use_these_exact_values"
-    },
-    {
-      "label": "Colors (extracted from the logo \u2014 use these exact hex values)",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L70",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "colors (extracted from the logo \u2014 use these exact hex values)",
-      "id": "claude_skills_backyard_brew_brand_skill_colors_extracted_from_the_logo_use_these_exact_hex_values"
-    },
-    {
-      "label": "Fonts already established in this brand's content pipeline",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L80",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "fonts already established in this brand's content pipeline",
-      "id": "claude_skills_backyard_brew_brand_skill_fonts_already_established_in_this_brand_s_content_pipeline"
-    },
-    {
-      "label": "Voice",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L89",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "voice",
-      "id": "claude_skills_backyard_brew_brand_skill_voice"
-    },
-    {
-      "label": "Recurring weekly events (the heartbeat of the content calendar)",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L108",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "recurring weekly events (the heartbeat of the content calendar)",
-      "id": "claude_skills_backyard_brew_brand_skill_recurring_weekly_events_the_heartbeat_of_the_content_calendar"
-    },
-    {
-      "label": "Where this feeds into the actual automation",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L121",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "where this feeds into the actual automation",
-      "id": "claude_skills_backyard_brew_brand_skill_where_this_feeds_into_the_actual_automation"
-    },
-    {
-      "label": "Pre-flight for any Backyard Brew deliverable",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L125",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "pre-flight for any backyard brew deliverable",
-      "id": "claude_skills_backyard_brew_brand_skill_pre_flight_for_any_backyard_brew_deliverable"
-    },
-    {
       "label": "backyard-market-brews.md",
       "file_type": "document",
       "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
@@ -2280,36 +2350,6 @@
       "community": 12,
       "norm_label": "photo situation (open gap as of 2026-07-26)",
       "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_photo_situation_open_gap_as_of_2026_07_26"
-    },
-    {
-      "label": "caption-voice-rules.md",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 20,
-      "norm_label": "caption-voice-rules.md",
-      "id": "claude_skills_backyard_brew_brand_references_caption_voice_rules"
-    },
-    {
-      "label": "Caption Voice Rules",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 20,
-      "norm_label": "caption voice rules",
-      "id": "claude_skills_backyard_brew_brand_references_caption_voice_rules_caption_voice_rules"
-    },
-    {
-      "label": "Facebook vs Instagram must be genuinely different posts, not repurposed copies",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
-      "source_location": "L96",
-      "_origin": "ast",
-      "community": 20,
-      "norm_label": "facebook vs instagram must be genuinely different posts, not repurposed copies",
-      "id": "claude_skills_backyard_brew_brand_references_caption_voice_rules_facebook_vs_instagram_must_be_genuinely_different_posts_not_repurposed_copies"
     },
     {
       "label": "graphics-workflow.md",
@@ -3496,52 +3536,342 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/photos.md",
-      "source_location": "L91",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L6",
       "weight": 1.0,
-      "source": "claude_commands_photos",
-      "target": "claude_commands_photos_decide_the_name",
+      "source": "claude_skills_backyard_brew_brand_skill",
+      "target": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/photos.md",
-      "source_location": "L12",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L70",
       "weight": 1.0,
-      "source": "claude_commands_photos",
-      "target": "claude_commands_photos_find_what_needs_naming",
+      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "target": "claude_skills_backyard_brew_brand_skill_colors_extracted_from_the_logo_use_these_exact_hex_values",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/photos.md",
-      "source_location": "L155",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L45",
       "weight": 1.0,
-      "source": "claude_commands_photos",
-      "target": "claude_commands_photos_finish",
+      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "target": "claude_skills_backyard_brew_brand_skill_facts_verified_use_these_exact_values",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/photos.md",
-      "source_location": "L31",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L80",
       "weight": 1.0,
-      "source": "claude_commands_photos",
-      "target": "claude_commands_photos_look_at_each_one",
+      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "target": "claude_skills_backyard_brew_brand_skill_fonts_already_established_in_this_brand_s_content_pipeline",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/photos.md",
-      "source_location": "L135",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L125",
       "weight": 1.0,
-      "source": "claude_commands_photos",
-      "target": "claude_commands_photos_show_the_plan_before_touching_anything",
+      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "target": "claude_skills_backyard_brew_brand_skill_pre_flight_for_any_backyard_brew_deliverable",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "target": "claude_skills_backyard_brew_brand_skill_recurring_weekly_events_the_heartbeat_of_the_content_calendar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "target": "claude_skills_backyard_brew_brand_skill_start_here_which_file_answers_your_question",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "target": "claude_skills_backyard_brew_brand_skill_voice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "target": "claude_skills_backyard_brew_brand_skill_what_this_business_is",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L121",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "target": "claude_skills_backyard_brew_brand_skill_where_this_feeds_into_the_actual_automation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_caption_voice_rules",
+      "target": "claude_skills_backyard_brew_brand_references_caption_voice_rules_caption_voice_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
+      "source_location": "L164",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_caption_voice_rules_caption_voice_rules",
+      "target": "claude_skills_backyard_brew_brand_references_caption_voice_rules_facebook_vs_instagram_must_be_genuinely_different_posts_not_repurposed_copies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
+      "source_location": "L148",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_caption_voice_rules_caption_voice_rules",
+      "target": "claude_skills_backyard_brew_brand_references_caption_voice_rules_give_real_information_not_just_hype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_caption_voice_rules_caption_voice_rules",
+      "target": "claude_skills_backyard_brew_brand_references_caption_voice_rules_money_language_win_big_yes_gambling_no",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L250",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sunday",
+      "target": "claude_commands_sunday_before_delivering_run_the_tally"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sunday",
+      "target": "claude_commands_sunday_before_writing_anything"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L277",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sunday",
+      "target": "claude_commands_sunday_deliver"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L165",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sunday",
+      "target": "claude_commands_sunday_picking_photos"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L187",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sunday",
+      "target": "claude_commands_sunday_reach_the_part_that_grows_the_page"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sunday",
+      "target": "claude_commands_sunday_the_build_every_event_gets_three_touches"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sunday",
+      "target": "claude_commands_sunday_the_schedule_3_posts_a_day_every_day_all_seven_days"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sunday_the_schedule_3_posts_a_day_every_day_all_seven_days",
+      "target": "claude_commands_sunday_11_00am_the_day_s_main_post"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sunday_the_schedule_3_posts_a_day_every_day_all_seven_days",
+      "target": "claude_commands_sunday_2_30pm_highlight_recap_or_filler_that_ties_in"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sunday_the_schedule_3_posts_a_day_every_day_all_seven_days",
+      "target": "claude_commands_sunday_7_00pm_teaser_for_tomorrow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L95",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sunday_the_build_every_event_gets_three_touches",
+      "target": "claude_commands_sunday_11am_the_day_of_turn_it_into_a_decision"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L106",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sunday_the_build_every_event_gets_three_touches",
+      "target": "claude_commands_sunday_2_30pm_the_day_of_last_call_before_doors"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sunday_the_build_every_event_gets_three_touches",
+      "target": "claude_commands_sunday_7pm_the_night_before_make_them_want_it"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L136",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sunday_the_build_every_event_gets_three_touches",
+      "target": "claude_commands_sunday_the_three_must_not_repeat_each_other"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L151",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sunday_the_build_every_event_gets_three_touches",
+      "target": "claude_commands_sunday_what_every_post_has_to_earn"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L243",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sunday_reach_the_part_that_grows_the_page",
+      "target": "claude_commands_sunday_one_google_business_profile_post"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L237",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sunday_reach_the_part_that_grows_the_page",
+      "target": "claude_commands_sunday_static_posts_only"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L228",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sunday_reach_the_part_that_grows_the_page",
+      "target": "claude_commands_sunday_tag_and_geotag_everything"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L208",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sunday_reach_the_part_that_grows_the_page",
+      "target": "claude_commands_sunday_the_thursday_11am_post_is_a_collab_every_week"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L193",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sunday_reach_the_part_that_grows_the_page",
+      "target": "claude_commands_sunday_write_each_day_for_its_actual_audience"
     },
     {
       "relation": "contains",
@@ -3549,9 +3879,69 @@
       "source_file": ".claude/commands/photos.md",
       "source_location": "L142",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_photos",
-      "target": "claude_commands_photos_then_rename",
-      "confidence_score": 1.0
+      "target": "claude_commands_photos_check_posts_csv_before_renaming_anything"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/photos.md",
+      "source_location": "L91",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_photos",
+      "target": "claude_commands_photos_decide_the_name"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/photos.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_photos",
+      "target": "claude_commands_photos_find_what_needs_naming"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/photos.md",
+      "source_location": "L170",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_photos",
+      "target": "claude_commands_photos_finish"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/photos.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_photos",
+      "target": "claude_commands_photos_look_at_each_one"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/photos.md",
+      "source_location": "L135",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_photos",
+      "target": "claude_commands_photos_show_the_plan_before_touching_anything"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/photos.md",
+      "source_location": "L157",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_photos",
+      "target": "claude_commands_photos_then_rename"
     },
     {
       "relation": "contains",
@@ -3559,9 +3949,9 @@
       "source_file": ".claude/commands/photos.md",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_photos_look_at_each_one",
-      "target": "claude_commands_photos_heic_photos_need_a_preview_first",
-      "confidence_score": 1.0
+      "target": "claude_commands_photos_heic_photos_need_a_preview_first"
     },
     {
       "relation": "contains",
@@ -3569,9 +3959,219 @@
       "source_file": ".claude/commands/photos.md",
       "source_location": "L124",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_commands_photos_decide_the_name",
-      "target": "claude_commands_photos_judgment_calls",
-      "confidence_score": 1.0
+      "target": "claude_commands_photos_judgment_calls"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sync.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sync",
+      "target": "claude_commands_sync_do_it_in_this_order"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sync.md",
+      "source_location": "L96",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sync",
+      "target": "claude_commands_sync_finish"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sync.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sync",
+      "target": "claude_commands_sync_when_something_goes_wrong"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sync.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sync_do_it_in_this_order",
+      "target": "claude_commands_sync_1_see_what_is_here"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sync.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sync_do_it_in_this_order",
+      "target": "claude_commands_sync_2_commit_their_work_if_there_is_any"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sync.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sync_do_it_in_this_order",
+      "target": "claude_commands_sync_3_get_their_changes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sync.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sync_do_it_in_this_order",
+      "target": "claude_commands_sync_4_send_yours"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sync.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_commands_sync_do_it_in_this_order",
+      "target": "claude_commands_sync_5_confirm_it_actually_landed"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_out_converted_1_start_here_06273d7e",
+      "target": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
+      "target": "graphify_out_converted_1_start_here_06273d7e_first_time_on_this_mac_only"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
+      "target": "graphify_out_converted_1_start_here_06273d7e_if_something_is_not_working"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
+      "target": "graphify_out_converted_1_start_here_06273d7e_opening_it"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L69",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
+      "target": "graphify_out_converted_1_start_here_06273d7e_reading_printing_and_editing_these_sheets"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
+      "target": "graphify_out_converted_1_start_here_06273d7e_the_weekly_rhythm"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L59",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
+      "target": "graphify_out_converted_1_start_here_06273d7e_three_rules"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
+      "target": "graphify_out_converted_1_start_here_06273d7e_two_things_about_the_app"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
+      "target": "graphify_out_converted_1_start_here_06273d7e_where_things_live"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_out_converted_1_start_here_06273d7e_opening_it",
+      "target": "graphify_out_converted_1_start_here_06273d7e_it_already_knows_the_bar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_out_converted_1_start_here_06273d7e_opening_it",
+      "target": "graphify_out_converted_1_start_here_06273d7e_the_six_commands"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_out_converted_1_start_here_06273d7e_where_things_live",
+      "target": "graphify_out_converted_1_start_here_06273d7e_dropping_in_photos"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_out_converted_1_start_here_06273d7e_where_things_live",
+      "target": "graphify_out_converted_1_start_here_06273d7e_sharing_with_micah"
     },
     {
       "relation": "references",
@@ -3579,9 +4179,9 @@
       "source_file": "README.md",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme",
-      "target": "playbook_1_start_here",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here"
     },
     {
       "relation": "contains",
@@ -3589,9 +4189,9 @@
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme",
-      "target": "readme_backyard_brew_social_media_online_presence",
-      "confidence_score": 1.0
+      "target": "readme_backyard_brew_social_media_online_presence"
     },
     {
       "relation": "contains",
@@ -3599,9 +4199,9 @@
       "source_file": "README.md",
       "source_location": "L106",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_backyard_brew_social_media_online_presence",
-      "target": "readme_the_rules",
-      "confidence_score": 1.0
+      "target": "readme_the_rules"
     },
     {
       "relation": "contains",
@@ -3609,9 +4209,9 @@
       "source_file": "README.md",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_backyard_brew_social_media_online_presence",
-      "target": "readme_the_six_commands",
-      "confidence_score": 1.0
+      "target": "readme_the_six_commands"
     },
     {
       "relation": "contains",
@@ -3619,9 +4219,9 @@
       "source_file": "README.md",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_backyard_brew_social_media_online_presence",
-      "target": "readme_then_read_this",
-      "confidence_score": 1.0
+      "target": "readme_then_read_this"
     },
     {
       "relation": "contains",
@@ -3629,9 +4229,9 @@
       "source_file": "README.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_backyard_brew_social_media_online_presence",
-      "target": "readme_using_it_no_terminal_needed",
-      "confidence_score": 1.0
+      "target": "readme_using_it_no_terminal_needed"
     },
     {
       "relation": "contains",
@@ -3639,9 +4239,9 @@
       "source_file": "README.md",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_backyard_brew_social_media_online_presence",
-      "target": "readme_what_s_in_here",
-      "confidence_score": 1.0
+      "target": "readme_what_s_in_here"
     },
     {
       "relation": "contains",
@@ -3649,9 +4249,9 @@
       "source_file": "README.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_using_it_no_terminal_needed",
-      "target": "readme_setup_run_this",
-      "confidence_score": 1.0
+      "target": "readme_setup_run_this"
     },
     {
       "relation": "contains",
@@ -3659,9 +4259,9 @@
       "source_file": "README.md",
       "source_location": "L87",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_what_s_in_here",
-      "target": "readme_naming_photos",
-      "confidence_score": 1.0
+      "target": "readme_naming_photos"
     },
     {
       "relation": "contains",
@@ -3669,9 +4269,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_1_start_here",
-      "target": "playbook_1_start_here_backyard_brew_start_here",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here_backyard_brew_start_here"
     },
     {
       "relation": "contains",
@@ -3679,9 +4279,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_first_time_on_this_mac_only",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here_first_time_on_this_mac_only"
     },
     {
       "relation": "contains",
@@ -3689,9 +4289,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L213",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_if_something_is_not_working",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here_if_something_is_not_working"
     },
     {
       "relation": "contains",
@@ -3699,9 +4299,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_opening_it",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here_opening_it"
     },
     {
       "relation": "contains",
@@ -3709,9 +4309,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L176",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_reading_printing_and_editing_these_sheets",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here_reading_printing_and_editing_these_sheets"
     },
     {
       "relation": "contains",
@@ -3719,9 +4319,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L138",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_the_weekly_rhythm",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here_the_weekly_rhythm"
     },
     {
       "relation": "contains",
@@ -3729,9 +4329,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L152",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_three_rules",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here_three_rules"
     },
     {
       "relation": "contains",
@@ -3739,9 +4339,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L163",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_two_things_about_the_app",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here_two_things_about_the_app"
     },
     {
       "relation": "contains",
@@ -3749,9 +4349,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_where_things_live",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here_where_things_live"
     },
     {
       "relation": "contains",
@@ -3759,9 +4359,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L73",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_1_start_here_opening_it",
-      "target": "playbook_1_start_here_it_already_knows_the_bar",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here_it_already_knows_the_bar"
     },
     {
       "relation": "contains",
@@ -3769,9 +4369,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_1_start_here_opening_it",
-      "target": "playbook_1_start_here_the_six_commands",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here_the_six_commands"
     },
     {
       "relation": "contains",
@@ -3779,9 +4379,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L117",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_1_start_here_where_things_live",
-      "target": "playbook_1_start_here_dropping_in_photos",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here_dropping_in_photos"
     },
     {
       "relation": "contains",
@@ -3789,9 +4389,59 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L129",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_1_start_here_where_things_live",
-      "target": "playbook_1_start_here_sharing_with_micah",
-      "confidence_score": 1.0
+      "target": "playbook_1_start_here_sharing_with_micah"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_classify_photos",
+      "target": "scripts_classify_photos_manual_kind"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_classify_photos",
+      "target": "scripts_classify_photos_needs_classification"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_classify_photos",
+      "target": "scripts_classify_photos_pool_claimed"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L89",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_classify_photos",
+      "target": "scripts_classify_photos_read_capture_time"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_classify_photos",
+      "target": "scripts_classify_photos_read_exif_time"
     },
     {
       "relation": "imports",
@@ -3800,59 +4450,9 @@
       "source_file": "scripts/classify_photos.py",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_classify_photos",
-      "target": "scripts_config",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/classify_photos.py",
-      "source_location": "L29",
-      "weight": 1.0,
-      "source": "scripts_classify_photos",
-      "target": "scripts_classify_photos_manual_kind",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/classify_photos.py",
-      "source_location": "L58",
-      "weight": 1.0,
-      "source": "scripts_classify_photos",
-      "target": "scripts_classify_photos_needs_classification",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/classify_photos.py",
-      "source_location": "L38",
-      "weight": 1.0,
-      "source": "scripts_classify_photos",
-      "target": "scripts_classify_photos_pool_claimed",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/classify_photos.py",
-      "source_location": "L89",
-      "weight": 1.0,
-      "source": "scripts_classify_photos",
-      "target": "scripts_classify_photos_read_capture_time",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/classify_photos.py",
-      "source_location": "L68",
-      "weight": 1.0,
-      "source": "scripts_classify_photos",
-      "target": "scripts_classify_photos_read_exif_time",
-      "confidence_score": 1.0
+      "target": "scripts_config"
     },
     {
       "relation": "rationale_for",
@@ -3860,9 +4460,9 @@
       "source_file": "scripts/classify_photos.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_classify_photos_rationale_1",
-      "target": "scripts_classify_photos",
-      "confidence_score": 1.0
+      "target": "scripts_classify_photos"
     },
     {
       "relation": "imports",
@@ -3882,9 +4482,9 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_test_classify_photos",
-      "target": "scripts_classify_photos",
-      "confidence_score": 1.0
+      "target": "scripts_classify_photos"
     },
     {
       "relation": "imports",
@@ -3903,9 +4503,9 @@
       "source_file": "scripts/classify_photos.py",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_classify_photos_rationale_30",
-      "target": "scripts_classify_photos_manual_kind",
-      "confidence_score": 1.0
+      "target": "scripts_classify_photos_manual_kind"
     },
     {
       "relation": "rationale_for",
@@ -3913,9 +4513,9 @@
       "source_file": "scripts/classify_photos.py",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_classify_photos_rationale_39",
-      "target": "scripts_classify_photos_pool_claimed",
-      "confidence_score": 1.0
+      "target": "scripts_classify_photos_pool_claimed"
     },
     {
       "relation": "rationale_for",
@@ -3923,9 +4523,9 @@
       "source_file": "scripts/classify_photos.py",
       "source_location": "L59",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_classify_photos_rationale_59",
-      "target": "scripts_classify_photos_needs_classification",
-      "confidence_score": 1.0
+      "target": "scripts_classify_photos_needs_classification"
     },
     {
       "relation": "rationale_for",
@@ -3933,9 +4533,9 @@
       "source_file": "scripts/classify_photos.py",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_classify_photos_rationale_69",
-      "target": "scripts_classify_photos_read_exif_time",
-      "confidence_score": 1.0
+      "target": "scripts_classify_photos_read_exif_time"
     },
     {
       "relation": "rationale_for",
@@ -3943,9 +4543,9 @@
       "source_file": "scripts/classify_photos.py",
       "source_location": "L90",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_classify_photos_rationale_90",
-      "target": "scripts_classify_photos_read_capture_time",
-      "confidence_score": 1.0
+      "target": "scripts_classify_photos_read_capture_time"
     },
     {
       "relation": "contains",
@@ -3953,9 +4553,9 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_test_classify_photos",
-      "target": "scripts_test_classify_photos_test_manual_kind_reads_vibe_and_spotlight_suffixes",
-      "confidence_score": 1.0
+      "target": "scripts_test_classify_photos_test_manual_kind_reads_vibe_and_spotlight_suffixes"
     },
     {
       "relation": "contains",
@@ -3963,9 +4563,9 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_test_classify_photos",
-      "target": "scripts_test_classify_photos_test_needs_classification_allows_plain_photos",
-      "confidence_score": 1.0
+      "target": "scripts_test_classify_photos_test_needs_classification_allows_plain_photos"
     },
     {
       "relation": "contains",
@@ -3973,9 +4573,9 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_test_classify_photos",
-      "target": "scripts_test_classify_photos_test_needs_classification_skips_known_suffixes",
-      "confidence_score": 1.0
+      "target": "scripts_test_classify_photos_test_needs_classification_skips_known_suffixes"
     },
     {
       "relation": "contains",
@@ -3983,9 +4583,9 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_test_classify_photos",
-      "target": "scripts_test_classify_photos_test_needs_classification_skips_video_files",
-      "confidence_score": 1.0
+      "target": "scripts_test_classify_photos_test_needs_classification_skips_video_files"
     },
     {
       "relation": "contains",
@@ -3993,9 +4593,9 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_test_classify_photos",
-      "target": "scripts_test_classify_photos_test_pool_claimed_matches_event_keyword",
-      "confidence_score": 1.0
+      "target": "scripts_test_classify_photos_test_pool_claimed_matches_event_keyword"
     },
     {
       "relation": "contains",
@@ -4003,9 +4603,9 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_test_classify_photos",
-      "target": "scripts_test_classify_photos_test_pool_claimed_matches_food_keyword",
-      "confidence_score": 1.0
+      "target": "scripts_test_classify_photos_test_pool_claimed_matches_food_keyword"
     },
     {
       "relation": "contains",
@@ -4013,9 +4613,9 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_test_classify_photos",
-      "target": "scripts_test_classify_photos_test_pool_claimed_recognizes_an_events_own_default_art_filename",
-      "confidence_score": 1.0
+      "target": "scripts_test_classify_photos_test_pool_claimed_recognizes_an_events_own_default_art_filename"
     },
     {
       "relation": "contains",
@@ -4023,9 +4623,9 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_test_classify_photos",
-      "target": "scripts_test_classify_photos_test_read_capture_time_falls_back_to_mtime",
-      "confidence_score": 1.0
+      "target": "scripts_test_classify_photos_test_read_capture_time_falls_back_to_mtime"
     },
     {
       "relation": "contains",
@@ -4033,9 +4633,9 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_test_classify_photos",
-      "target": "scripts_test_classify_photos_test_read_exif_time_returns_none_without_exif",
-      "confidence_score": 1.0
+      "target": "scripts_test_classify_photos_test_read_exif_time_returns_none_without_exif"
     },
     {
       "relation": "rationale_for",
@@ -4043,9 +4643,9 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_test_classify_photos_rationale_17",
-      "target": "scripts_test_classify_photos_test_needs_classification_skips_video_files",
-      "confidence_score": 1.0
+      "target": "scripts_test_classify_photos_test_needs_classification_skips_video_files"
     },
     {
       "relation": "rationale_for",
@@ -4053,9 +4653,9 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_test_classify_photos_rationale_57",
-      "target": "scripts_test_classify_photos_test_read_exif_time_returns_none_without_exif",
-      "confidence_score": 1.0
+      "target": "scripts_test_classify_photos_test_read_exif_time_returns_none_without_exif"
     },
     {
       "relation": "contains",
@@ -4318,136 +4918,6 @@
       "confidence_score": 1.0,
       "source": "playbook_make_pdfs_rationale_285",
       "target": "playbook_make_pdfs_selfcheck"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graphify_out_converted_1_start_here_06273d7e",
-      "target": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
-      "target": "graphify_out_converted_1_start_here_06273d7e_first_time_on_this_mac_only"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
-      "source_location": "L76",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
-      "target": "graphify_out_converted_1_start_here_06273d7e_if_something_is_not_working"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
-      "source_location": "L21",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
-      "target": "graphify_out_converted_1_start_here_06273d7e_opening_it"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
-      "source_location": "L67",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
-      "target": "graphify_out_converted_1_start_here_06273d7e_reading_printing_and_editing_these_sheets"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
-      "source_location": "L52",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
-      "target": "graphify_out_converted_1_start_here_06273d7e_the_weekly_rhythm"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
-      "source_location": "L57",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
-      "target": "graphify_out_converted_1_start_here_06273d7e_three_rules"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
-      "source_location": "L64",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
-      "target": "graphify_out_converted_1_start_here_06273d7e_two_things_about_the_app"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
-      "source_location": "L41",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graphify_out_converted_1_start_here_06273d7e_backyard_brew_start_here",
-      "target": "graphify_out_converted_1_start_here_06273d7e_where_things_live"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
-      "source_location": "L33",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graphify_out_converted_1_start_here_06273d7e_opening_it",
-      "target": "graphify_out_converted_1_start_here_06273d7e_it_already_knows_the_bar"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
-      "source_location": "L29",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graphify_out_converted_1_start_here_06273d7e_opening_it",
-      "target": "graphify_out_converted_1_start_here_06273d7e_the_six_commands"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
-      "source_location": "L45",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graphify_out_converted_1_start_here_06273d7e_where_things_live",
-      "target": "graphify_out_converted_1_start_here_06273d7e_dropping_in_photos"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/converted/1-START-HERE_06273d7e.md",
-      "source_location": "L49",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graphify_out_converted_1_start_here_06273d7e_where_things_live",
-      "target": "graphify_out_converted_1_start_here_06273d7e_sharing_with_micah"
     },
     {
       "relation": "contains",
@@ -4768,276 +5238,6 @@
       "confidence_score": 1.0,
       "source": "graphify_out_converted_vendor_communication_templates_63fdc6dc",
       "target": "graphify_out_converted_vendor_communication_templates_63fdc6dc_4_confirmed_vendor_info_sheet_send_a_few_days_before_the_event"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L250",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday",
-      "target": "claude_commands_sunday_before_delivering_run_the_tally"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday",
-      "target": "claude_commands_sunday_before_writing_anything"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L265",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday",
-      "target": "claude_commands_sunday_deliver"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L165",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday",
-      "target": "claude_commands_sunday_picking_photos"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L187",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday",
-      "target": "claude_commands_sunday_reach_the_part_that_grows_the_page"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L64",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday",
-      "target": "claude_commands_sunday_the_build_every_event_gets_three_touches"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L23",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday",
-      "target": "claude_commands_sunday_the_schedule_3_posts_a_day_every_day_all_seven_days"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L28",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_the_schedule_3_posts_a_day_every_day_all_seven_days",
-      "target": "claude_commands_sunday_11_00am_the_day_s_main_post"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L37",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_the_schedule_3_posts_a_day_every_day_all_seven_days",
-      "target": "claude_commands_sunday_2_30pm_highlight_recap_or_filler_that_ties_in"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L55",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_the_schedule_3_posts_a_day_every_day_all_seven_days",
-      "target": "claude_commands_sunday_7_00pm_teaser_for_tomorrow"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L95",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_the_build_every_event_gets_three_touches",
-      "target": "claude_commands_sunday_11am_the_day_of_turn_it_into_a_decision"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L106",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_the_build_every_event_gets_three_touches",
-      "target": "claude_commands_sunday_2_30pm_the_day_of_last_call_before_doors"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L83",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_the_build_every_event_gets_three_touches",
-      "target": "claude_commands_sunday_7pm_the_night_before_make_them_want_it"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L136",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_the_build_every_event_gets_three_touches",
-      "target": "claude_commands_sunday_the_three_must_not_repeat_each_other"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L151",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_the_build_every_event_gets_three_touches",
-      "target": "claude_commands_sunday_what_every_post_has_to_earn"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L243",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_reach_the_part_that_grows_the_page",
-      "target": "claude_commands_sunday_one_google_business_profile_post"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L237",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_reach_the_part_that_grows_the_page",
-      "target": "claude_commands_sunday_static_posts_only"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L228",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_reach_the_part_that_grows_the_page",
-      "target": "claude_commands_sunday_tag_and_geotag_everything"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L208",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_reach_the_part_that_grows_the_page",
-      "target": "claude_commands_sunday_the_thursday_11am_post_is_a_collab_every_week"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L193",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_reach_the_part_that_grows_the_page",
-      "target": "claude_commands_sunday_write_each_day_for_its_actual_audience"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sync.md",
-      "source_location": "L13",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sync",
-      "target": "claude_commands_sync_do_it_in_this_order"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sync.md",
-      "source_location": "L74",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sync",
-      "target": "claude_commands_sync_finish"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sync.md",
-      "source_location": "L50",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sync",
-      "target": "claude_commands_sync_when_something_goes_wrong"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sync.md",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sync_do_it_in_this_order",
-      "target": "claude_commands_sync_1_see_what_is_here"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sync.md",
-      "source_location": "L21",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sync_do_it_in_this_order",
-      "target": "claude_commands_sync_2_get_their_changes_first"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sync.md",
-      "source_location": "L30",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sync_do_it_in_this_order",
-      "target": "claude_commands_sync_3_put_local_changes_back"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sync.md",
-      "source_location": "L36",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sync_do_it_in_this_order",
-      "target": "claude_commands_sync_4_save_and_share"
     },
     {
       "relation": "contains",
@@ -5512,106 +5712,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill",
-      "target": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L70",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "target": "claude_skills_backyard_brew_brand_skill_colors_extracted_from_the_logo_use_these_exact_hex_values"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L45",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "target": "claude_skills_backyard_brew_brand_skill_facts_verified_use_these_exact_values"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L80",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "target": "claude_skills_backyard_brew_brand_skill_fonts_already_established_in_this_brand_s_content_pipeline"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L125",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "target": "claude_skills_backyard_brew_brand_skill_pre_flight_for_any_backyard_brew_deliverable"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L108",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "target": "claude_skills_backyard_brew_brand_skill_recurring_weekly_events_the_heartbeat_of_the_content_calendar"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "target": "claude_skills_backyard_brew_brand_skill_start_here_which_file_answers_your_question"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L89",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "target": "claude_skills_backyard_brew_brand_skill_voice"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L39",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "target": "claude_skills_backyard_brew_brand_skill_what_this_business_is"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L121",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "target": "claude_skills_backyard_brew_brand_skill_where_this_feeds_into_the_actual_automation"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -5698,26 +5798,6 @@
       "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_thursday",
       "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_what_it_is"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_caption_voice_rules",
-      "target": "claude_skills_backyard_brew_brand_references_caption_voice_rules_caption_voice_rules"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
-      "source_location": "L96",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_caption_voice_rules_caption_voice_rules",
-      "target": "claude_skills_backyard_brew_brand_references_caption_voice_rules_facebook_vs_instagram_must_be_genuinely_different_posts_not_repurposed_copies"
     },
     {
       "relation": "contains",
@@ -6986,5 +7066,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "59d912b177737dc7836b5491c251bb5e508609c6"
+  "built_at_commit": "618c8d9d9cce8123e02880f7cab35c252261de1a"
 }
