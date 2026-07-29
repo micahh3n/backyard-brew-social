@@ -12,40 +12,51 @@ English.
 
 ## Do it in this order
 
+**Commit first, then pull, then push. Never stash.** Stashing looks tidy and
+is the wrong tool here: if the stash succeeds but the pull fails, their work
+sits in a stash they do not know exists and the tree looks empty. Committing
+first means their work is safe in git before anything else happens, and the
+rebase in step 3 sorts out the ordering.
+
 ### 1. See what is here
 
 ```bash
 git status --short
 ```
 
-### 2. Get their changes first
-
-```bash
-git stash push -u -m "sync-temp" 2>/dev/null; git pull --rebase origin main
-```
-
-Pulling before pushing avoids the most common failure. If nothing was stashed,
-the stash command does nothing and that is fine.
-
-### 3. Put local changes back
-
-```bash
-git stash pop 2>/dev/null || true
-```
-
-### 4. Save and share
+### 2. Commit their work, if there is any
 
 ```bash
 git add -A
 git commit -m "<plain description of what actually changed>"
+```
+
+Write a real message describing what changed: `"Add 14 photos from Market &
+Brews, name this week's photos"`. Never `"update"`.
+
+**If there is nothing to commit, skip this step.** Do not create an empty
+commit. Carry on to the pull, since there may still be changes to receive.
+
+### 3. Get their changes
+
+```bash
+git pull --rebase origin main
+```
+
+### 4. Send yours
+
+```bash
 git push origin main
 ```
 
-Write a real commit message describing what changed: `"Add 14 photos from
-Market & Brews, name this week's photos"`. Never `"update"`.
+### 5. Confirm it actually landed
 
-**If there is nothing to commit, say so and stop.** Do not create an empty
-commit.
+```bash
+git status --short --branch | head -1
+```
+
+Do not report success off the back of the push command alone. Confirm the
+branch is not ahead of `origin/main`, and say plainly if it still is.
 
 ## When something goes wrong
 
@@ -67,6 +78,17 @@ a ZIP instead of cloned. Say that plainly and offer to reconnect it to
 
 **Push rejected.** Pull again and retry once. If it still fails, explain in one
 sentence and stop.
+
+**"Permission denied" while pulling, on a file nobody touched.** A syncing
+folder (OneDrive, Dropbox, iCloud) or another program is holding the file
+open. The pull usually still succeeds. Re-run `git status --short` and check
+the real state rather than trusting the warning, and only raise it if
+something actually failed to update.
+
+**A leftover stash.** Older versions of this command used `git stash`. If
+`git stash list` shows anything, their work may be stranded there. Compare it
+against the working tree with `git stash show --name-only`, restore anything
+missing, and only then drop it. Never drop a stash you have not looked at.
 
 **Authentication failure.** He needs to sign in to GitHub. Do not try to work
 around it, and never ask him to paste a token or password into the chat.

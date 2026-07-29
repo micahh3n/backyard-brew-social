@@ -17,7 +17,7 @@ then run bash setup.sh inside it.
 - When it finishes, click Select folder again and choose the new
 backyard-brew-social folder
 Done once, never again.
-The setup.sh part is optional. Skip it and everything below still works. It only adds the PDF builder and the backup poster maker.
+Do not skip the `setup.sh` part. iPhone photos are HEIC files, and without that step nothing on the computer can read them, so /photos will not be able to see what your pictures are. It also adds the PDF builder and the backup poster maker.
 ## Opening it
 Everything happens in the Claude app. No Terminal, ever.
 - Open the Claude app

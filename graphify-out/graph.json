@@ -4,154 +4,184 @@
   "graph": {},
   "nodes": [
     {
-      "label": "make-pdfs.py",
-      "file_type": "code",
-      "source_file": "playbook/make-pdfs.py",
+      "label": "photos.md",
+      "file_type": "document",
+      "source_file": ".claude/commands/photos.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "playbook_make_pdfs",
-      "community": 15,
-      "norm_label": "make-pdfs.py"
+      "id": "claude_commands_photos",
+      "community": 22,
+      "norm_label": "photos.md"
     },
     {
-      "label": "md_to_html()",
-      "file_type": "code",
-      "source_file": "playbook/make-pdfs.py",
-      "source_location": "L104",
+      "label": "Find what needs naming",
+      "file_type": "document",
+      "source_file": ".claude/commands/photos.md",
+      "source_location": "L12",
       "_origin": "ast",
-      "id": "playbook_make_pdfs_md_to_html",
-      "community": 15,
-      "norm_label": "md_to_html()"
+      "id": "claude_commands_photos_find_what_needs_naming",
+      "community": 22,
+      "norm_label": "find what needs naming"
     },
     {
-      "label": "lint()",
-      "file_type": "code",
-      "source_file": "playbook/make-pdfs.py",
-      "source_location": "L123",
+      "label": "Look at each one",
+      "file_type": "document",
+      "source_file": ".claude/commands/photos.md",
+      "source_location": "L31",
       "_origin": "ast",
-      "id": "playbook_make_pdfs_lint",
-      "community": 15,
-      "norm_label": "lint()"
+      "id": "claude_commands_photos_look_at_each_one",
+      "community": 22,
+      "norm_label": "look at each one"
     },
     {
-      "label": "_add_runs()",
-      "file_type": "code",
-      "source_file": "playbook/make-pdfs.py",
-      "source_location": "L145",
+      "label": "HEIC photos need a preview first",
+      "file_type": "document",
+      "source_file": ".claude/commands/photos.md",
+      "source_location": "L36",
       "_origin": "ast",
-      "id": "playbook_make_pdfs_add_runs",
-      "community": 15,
-      "norm_label": "_add_runs()"
+      "id": "claude_commands_photos_heic_photos_need_a_preview_first",
+      "community": 22,
+      "norm_label": "heic photos need a preview first"
     },
     {
-      "label": "_docx_source_hash()",
-      "file_type": "code",
-      "source_file": "playbook/make-pdfs.py",
-      "source_location": "L159",
+      "label": "Decide the name",
+      "file_type": "document",
+      "source_file": ".claude/commands/photos.md",
+      "source_location": "L91",
       "_origin": "ast",
-      "id": "playbook_make_pdfs_docx_source_hash",
-      "community": 15,
-      "norm_label": "_docx_source_hash()"
+      "id": "claude_commands_photos_decide_the_name",
+      "community": 22,
+      "norm_label": "decide the name"
     },
     {
-      "label": "Path",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "path",
-      "community": 15,
-      "norm_label": "path"
-    },
-    {
-      "label": "md_to_docx()",
-      "file_type": "code",
-      "source_file": "playbook/make-pdfs.py",
-      "source_location": "L171",
-      "_origin": "ast",
-      "id": "playbook_make_pdfs_md_to_docx",
-      "community": 15,
-      "norm_label": "md_to_docx()"
-    },
-    {
-      "label": "_selfcheck()",
-      "file_type": "code",
-      "source_file": "playbook/make-pdfs.py",
-      "source_location": "L284",
-      "_origin": "ast",
-      "id": "playbook_make_pdfs_selfcheck",
-      "community": 15,
-      "norm_label": "_selfcheck()"
-    },
-    {
-      "label": "main()",
-      "file_type": "code",
-      "source_file": "playbook/make-pdfs.py",
-      "source_location": "L321",
-      "_origin": "ast",
-      "id": "playbook_make_pdfs_main",
-      "community": 15,
-      "norm_label": "main()"
-    },
-    {
-      "label": "Convert one markdown sheet into a standalone printable HTML page.",
-      "file_type": "rationale",
-      "source_file": "playbook/make-pdfs.py",
-      "source_location": "L105",
-      "_origin": "ast",
-      "id": "playbook_make_pdfs_rationale_105",
-      "community": 15,
-      "norm_label": "convert one markdown sheet into a standalone printable html page."
-    },
-    {
-      "label": "Warn about a list glued to the line above it.      Markdown silently swallows",
-      "file_type": "rationale",
-      "source_file": "playbook/make-pdfs.py",
+      "label": "Judgment calls",
+      "file_type": "document",
+      "source_file": ".claude/commands/photos.md",
       "source_location": "L124",
       "_origin": "ast",
-      "id": "playbook_make_pdfs_rationale_124",
-      "community": 15,
-      "norm_label": "warn about a list glued to the line above it.      markdown silently swallows"
+      "id": "claude_commands_photos_judgment_calls",
+      "community": 22,
+      "norm_label": "judgment calls"
     },
     {
-      "label": "Write text into a docx paragraph, honouring **bold** and `code`.",
-      "file_type": "rationale",
-      "source_file": "playbook/make-pdfs.py",
-      "source_location": "L146",
+      "label": "Show the plan before touching anything",
+      "file_type": "document",
+      "source_file": ".claude/commands/photos.md",
+      "source_location": "L135",
       "_origin": "ast",
-      "id": "playbook_make_pdfs_rationale_146",
-      "community": 15,
-      "norm_label": "write text into a docx paragraph, honouring **bold** and `code`."
+      "id": "claude_commands_photos_show_the_plan_before_touching_anything",
+      "community": 22,
+      "norm_label": "show the plan before touching anything"
     },
     {
-      "label": "The markdown hash stamped into a .docx when we generated it.",
-      "file_type": "rationale",
-      "source_file": "playbook/make-pdfs.py",
-      "source_location": "L160",
+      "label": "Then rename",
+      "file_type": "document",
+      "source_file": ".claude/commands/photos.md",
+      "source_location": "L142",
       "_origin": "ast",
-      "id": "playbook_make_pdfs_rationale_160",
-      "community": 15,
-      "norm_label": "the markdown hash stamped into a .docx when we generated it."
+      "id": "claude_commands_photos_then_rename",
+      "community": 22,
+      "norm_label": "then rename"
     },
     {
-      "label": "Write an editable Word document he can open in Pages and print.      Deliberat",
-      "file_type": "rationale",
-      "source_file": "playbook/make-pdfs.py",
-      "source_location": "L172",
+      "label": "Finish",
+      "file_type": "document",
+      "source_file": ".claude/commands/photos.md",
+      "source_location": "L155",
       "_origin": "ast",
-      "id": "playbook_make_pdfs_rationale_172",
-      "community": 15,
-      "norm_label": "write an editable word document he can open in pages and print.      deliberat"
+      "id": "claude_commands_photos_finish",
+      "community": 22,
+      "norm_label": "finish"
     },
     {
-      "label": "Smallest thing that fails if the conversion breaks.",
-      "file_type": "rationale",
-      "source_file": "playbook/make-pdfs.py",
-      "source_location": "L285",
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
       "_origin": "ast",
-      "id": "playbook_make_pdfs_rationale_285",
-      "community": 15,
-      "norm_label": "smallest thing that fails if the conversion breaks."
+      "id": "readme",
+      "community": 9,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Backyard Brew \u2014 Social Media & Online Presence",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme_backyard_brew_social_media_online_presence",
+      "community": 9,
+      "norm_label": "backyard brew \u2014 social media & online presence"
+    },
+    {
+      "label": "Using it (no terminal needed)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "readme_using_it_no_terminal_needed",
+      "community": 9,
+      "norm_label": "using it (no terminal needed)"
+    },
+    {
+      "label": "Setup (run this)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "readme_setup_run_this",
+      "community": 9,
+      "norm_label": "setup (run this)"
+    },
+    {
+      "label": "Then read this",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "readme_then_read_this",
+      "community": 9,
+      "norm_label": "then read this"
+    },
+    {
+      "label": "The six commands",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "readme_the_six_commands",
+      "community": 9,
+      "norm_label": "the six commands"
+    },
+    {
+      "label": "What's in here",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "readme_what_s_in_here",
+      "community": 9,
+      "norm_label": "what's in here"
+    },
+    {
+      "label": "Naming photos",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "readme_naming_photos",
+      "community": 9,
+      "norm_label": "naming photos"
+    },
+    {
+      "label": "The rules",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L106",
+      "_origin": "ast",
+      "id": "readme_the_rules",
+      "community": 9,
+      "norm_label": "the rules"
     },
     {
       "label": "1-START-HERE.md",
@@ -159,9 +189,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 16,
-      "norm_label": "1-start-here.md",
-      "id": "playbook_1_start_here"
+      "id": "playbook_1_start_here",
+      "community": 9,
+      "norm_label": "1-start-here.md"
     },
     {
       "label": "Backyard Brew: Start Here",
@@ -169,9 +199,9 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "playbook_1_start_here_backyard_brew_start_here",
       "community": 9,
-      "norm_label": "backyard brew: start here",
-      "id": "playbook_1_start_here_backyard_brew_start_here"
+      "norm_label": "backyard brew: start here"
     },
     {
       "label": "First time on this Mac only",
@@ -179,119 +209,509 @@
       "source_file": "playbook/1-START-HERE.md",
       "source_location": "L17",
       "_origin": "ast",
+      "id": "playbook_1_start_here_first_time_on_this_mac_only",
       "community": 9,
-      "norm_label": "first time on this mac only",
-      "id": "playbook_1_start_here_first_time_on_this_mac_only"
+      "norm_label": "first time on this mac only"
     },
     {
       "label": "Opening it",
       "file_type": "document",
       "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L42",
+      "source_location": "L44",
       "_origin": "ast",
+      "id": "playbook_1_start_here_opening_it",
       "community": 9,
-      "norm_label": "opening it",
-      "id": "playbook_1_start_here_opening_it"
+      "norm_label": "opening it"
     },
     {
       "label": "The six commands",
       "file_type": "document",
       "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L55",
+      "source_location": "L57",
       "_origin": "ast",
+      "id": "playbook_1_start_here_the_six_commands",
       "community": 9,
-      "norm_label": "the six commands",
-      "id": "playbook_1_start_here_the_six_commands"
+      "norm_label": "the six commands"
     },
     {
       "label": "It already knows the bar",
       "file_type": "document",
       "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L71",
+      "source_location": "L73",
       "_origin": "ast",
+      "id": "playbook_1_start_here_it_already_knows_the_bar",
       "community": 9,
-      "norm_label": "it already knows the bar",
-      "id": "playbook_1_start_here_it_already_knows_the_bar"
+      "norm_label": "it already knows the bar"
     },
     {
       "label": "Where things live",
       "file_type": "document",
       "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L92",
+      "source_location": "L94",
       "_origin": "ast",
+      "id": "playbook_1_start_here_where_things_live",
       "community": 9,
-      "norm_label": "where things live",
-      "id": "playbook_1_start_here_where_things_live"
+      "norm_label": "where things live"
     },
     {
       "label": "Dropping in photos",
       "file_type": "document",
       "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L115",
+      "source_location": "L117",
       "_origin": "ast",
+      "id": "playbook_1_start_here_dropping_in_photos",
       "community": 9,
-      "norm_label": "dropping in photos",
-      "id": "playbook_1_start_here_dropping_in_photos"
+      "norm_label": "dropping in photos"
     },
     {
       "label": "Sharing with Micah",
       "file_type": "document",
       "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L127",
+      "source_location": "L129",
       "_origin": "ast",
+      "id": "playbook_1_start_here_sharing_with_micah",
       "community": 9,
-      "norm_label": "sharing with micah",
-      "id": "playbook_1_start_here_sharing_with_micah"
+      "norm_label": "sharing with micah"
     },
     {
       "label": "The weekly rhythm",
       "file_type": "document",
       "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L136",
+      "source_location": "L138",
       "_origin": "ast",
+      "id": "playbook_1_start_here_the_weekly_rhythm",
       "community": 9,
-      "norm_label": "the weekly rhythm",
-      "id": "playbook_1_start_here_the_weekly_rhythm"
+      "norm_label": "the weekly rhythm"
     },
     {
       "label": "Three rules",
       "file_type": "document",
       "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L150",
+      "source_location": "L152",
       "_origin": "ast",
+      "id": "playbook_1_start_here_three_rules",
       "community": 9,
-      "norm_label": "three rules",
-      "id": "playbook_1_start_here_three_rules"
+      "norm_label": "three rules"
     },
     {
       "label": "Two things about the app",
       "file_type": "document",
       "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L161",
+      "source_location": "L163",
       "_origin": "ast",
+      "id": "playbook_1_start_here_two_things_about_the_app",
       "community": 9,
-      "norm_label": "two things about the app",
-      "id": "playbook_1_start_here_two_things_about_the_app"
+      "norm_label": "two things about the app"
     },
     {
       "label": "Reading, printing, and editing these sheets",
       "file_type": "document",
       "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L174",
+      "source_location": "L176",
       "_origin": "ast",
+      "id": "playbook_1_start_here_reading_printing_and_editing_these_sheets",
       "community": 9,
-      "norm_label": "reading, printing, and editing these sheets",
-      "id": "playbook_1_start_here_reading_printing_and_editing_these_sheets"
+      "norm_label": "reading, printing, and editing these sheets"
     },
     {
       "label": "If something is not working",
       "file_type": "document",
       "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L211",
+      "source_location": "L213",
       "_origin": "ast",
+      "id": "playbook_1_start_here_if_something_is_not_working",
       "community": 9,
-      "norm_label": "if something is not working",
-      "id": "playbook_1_start_here_if_something_is_not_working"
+      "norm_label": "if something is not working"
+    },
+    {
+      "label": "classify_photos.py",
+      "file_type": "code",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_classify_photos",
+      "community": 2,
+      "norm_label": "classify_photos.py"
+    },
+    {
+      "label": "manual_kind()",
+      "file_type": "code",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "scripts_classify_photos_manual_kind",
+      "community": 2,
+      "norm_label": "manual_kind()"
+    },
+    {
+      "label": "pool_claimed()",
+      "file_type": "code",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "scripts_classify_photos_pool_claimed",
+      "community": 2,
+      "norm_label": "pool_claimed()"
+    },
+    {
+      "label": "needs_classification()",
+      "file_type": "code",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "scripts_classify_photos_needs_classification",
+      "community": 2,
+      "norm_label": "needs_classification()"
+    },
+    {
+      "label": "read_exif_time()",
+      "file_type": "code",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L68",
+      "_origin": "ast",
+      "id": "scripts_classify_photos_read_exif_time",
+      "community": 2,
+      "norm_label": "read_exif_time()"
+    },
+    {
+      "label": "read_capture_time()",
+      "file_type": "code",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "scripts_classify_photos_read_capture_time",
+      "community": 2,
+      "norm_label": "read_capture_time()"
+    },
+    {
+      "label": "classify_photos.py - Filename-convention helpers for photo handling.  No vision",
+      "file_type": "rationale",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_classify_photos_rationale_1",
+      "community": 2,
+      "norm_label": "classify_photos.py - filename-convention helpers for photo handling.  no vision"
+    },
+    {
+      "label": "vibe'/'spotlight' if the filename carries that override suffix, else None.",
+      "file_type": "rationale",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "scripts_classify_photos_rationale_30",
+      "community": 2,
+      "norm_label": "vibe'/'spotlight' if the filename carries that override suffix, else none."
+    },
+    {
+      "label": "True if this filename's stem contains a keyword from     config.EVENT_PHOTO_KEYW",
+      "file_type": "rationale",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "scripts_classify_photos_rationale_39",
+      "community": 2,
+      "norm_label": "true if this filename's stem contains a keyword from     config.event_photo_keyw"
+    },
+    {
+      "label": "False if the filename already carries an explicit override signal,     or isn't",
+      "file_type": "rationale",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "scripts_classify_photos_rationale_59",
+      "community": 2,
+      "norm_label": "false if the filename already carries an explicit override signal,     or isn't"
+    },
+    {
+      "label": "The photo's real capture time, or None. Never falls back to mtime.      Use this",
+      "file_type": "rationale",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "scripts_classify_photos_rationale_69",
+      "community": 2,
+      "norm_label": "the photo's real capture time, or none. never falls back to mtime.      use this"
+    },
+    {
+      "label": "EXIF DateTimeOriginal if present, else the file's mtime. None on error.      The",
+      "file_type": "rationale",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L90",
+      "_origin": "ast",
+      "id": "scripts_classify_photos_rationale_90",
+      "community": 2,
+      "norm_label": "exif datetimeoriginal if present, else the file's mtime. none on error.      the"
+    },
+    {
+      "label": "test_classify_photos.py",
+      "file_type": "code",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_test_classify_photos",
+      "community": 27,
+      "norm_label": "test_classify_photos.py"
+    },
+    {
+      "label": "test_needs_classification_skips_known_suffixes()",
+      "file_type": "code",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "scripts_test_classify_photos_test_needs_classification_skips_known_suffixes",
+      "community": 27,
+      "norm_label": "test_needs_classification_skips_known_suffixes()"
+    },
+    {
+      "label": "test_needs_classification_allows_plain_photos()",
+      "file_type": "code",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "scripts_test_classify_photos_test_needs_classification_allows_plain_photos",
+      "community": 27,
+      "norm_label": "test_needs_classification_allows_plain_photos()"
+    },
+    {
+      "label": "test_needs_classification_skips_video_files()",
+      "file_type": "code",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "scripts_test_classify_photos_test_needs_classification_skips_video_files",
+      "community": 27,
+      "norm_label": "test_needs_classification_skips_video_files()"
+    },
+    {
+      "label": "test_manual_kind_reads_vibe_and_spotlight_suffixes()",
+      "file_type": "code",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "scripts_test_classify_photos_test_manual_kind_reads_vibe_and_spotlight_suffixes",
+      "community": 27,
+      "norm_label": "test_manual_kind_reads_vibe_and_spotlight_suffixes()"
+    },
+    {
+      "label": "test_pool_claimed_matches_event_keyword()",
+      "file_type": "code",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "scripts_test_classify_photos_test_pool_claimed_matches_event_keyword",
+      "community": 27,
+      "norm_label": "test_pool_claimed_matches_event_keyword()"
+    },
+    {
+      "label": "test_pool_claimed_matches_food_keyword()",
+      "file_type": "code",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "scripts_test_classify_photos_test_pool_claimed_matches_food_keyword",
+      "community": 27,
+      "norm_label": "test_pool_claimed_matches_food_keyword()"
+    },
+    {
+      "label": "test_pool_claimed_recognizes_an_events_own_default_art_filename()",
+      "file_type": "code",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "scripts_test_classify_photos_test_pool_claimed_recognizes_an_events_own_default_art_filename",
+      "community": 27,
+      "norm_label": "test_pool_claimed_recognizes_an_events_own_default_art_filename()"
+    },
+    {
+      "label": "test_read_capture_time_falls_back_to_mtime()",
+      "file_type": "code",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "scripts_test_classify_photos_test_read_capture_time_falls_back_to_mtime",
+      "community": 27,
+      "norm_label": "test_read_capture_time_falls_back_to_mtime()"
+    },
+    {
+      "label": "test_read_exif_time_returns_none_without_exif()",
+      "file_type": "code",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "scripts_test_classify_photos_test_read_exif_time_returns_none_without_exif",
+      "community": 27,
+      "norm_label": "test_read_exif_time_returns_none_without_exif()"
+    },
+    {
+      "label": "Video files (iPhones drop these alongside camera-roll photos) are     never a st",
+      "file_type": "rationale",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "scripts_test_classify_photos_rationale_17",
+      "community": 27,
+      "norm_label": "video files (iphones drop these alongside camera-roll photos) are     never a st"
+    },
+    {
+      "label": "Must not fall back to mtime: a fresh clone would date the whole     backlog as '",
+      "file_type": "rationale",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "scripts_test_classify_photos_rationale_57",
+      "community": 27,
+      "norm_label": "must not fall back to mtime: a fresh clone would date the whole     backlog as '"
+    },
+    {
+      "label": "make-pdfs.py",
+      "file_type": "code",
+      "source_file": "playbook/make-pdfs.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 15,
+      "norm_label": "make-pdfs.py",
+      "id": "playbook_make_pdfs"
+    },
+    {
+      "label": "md_to_html()",
+      "file_type": "code",
+      "source_file": "playbook/make-pdfs.py",
+      "source_location": "L104",
+      "_origin": "ast",
+      "community": 15,
+      "norm_label": "md_to_html()",
+      "id": "playbook_make_pdfs_md_to_html"
+    },
+    {
+      "label": "lint()",
+      "file_type": "code",
+      "source_file": "playbook/make-pdfs.py",
+      "source_location": "L123",
+      "_origin": "ast",
+      "community": 15,
+      "norm_label": "lint()",
+      "id": "playbook_make_pdfs_lint"
+    },
+    {
+      "label": "_add_runs()",
+      "file_type": "code",
+      "source_file": "playbook/make-pdfs.py",
+      "source_location": "L145",
+      "_origin": "ast",
+      "community": 15,
+      "norm_label": "_add_runs()",
+      "id": "playbook_make_pdfs_add_runs"
+    },
+    {
+      "label": "_docx_source_hash()",
+      "file_type": "code",
+      "source_file": "playbook/make-pdfs.py",
+      "source_location": "L159",
+      "_origin": "ast",
+      "community": 15,
+      "norm_label": "_docx_source_hash()",
+      "id": "playbook_make_pdfs_docx_source_hash"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 15,
+      "norm_label": "path",
+      "id": "path"
+    },
+    {
+      "label": "md_to_docx()",
+      "file_type": "code",
+      "source_file": "playbook/make-pdfs.py",
+      "source_location": "L171",
+      "_origin": "ast",
+      "community": 15,
+      "norm_label": "md_to_docx()",
+      "id": "playbook_make_pdfs_md_to_docx"
+    },
+    {
+      "label": "_selfcheck()",
+      "file_type": "code",
+      "source_file": "playbook/make-pdfs.py",
+      "source_location": "L284",
+      "_origin": "ast",
+      "community": 15,
+      "norm_label": "_selfcheck()",
+      "id": "playbook_make_pdfs_selfcheck"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "playbook/make-pdfs.py",
+      "source_location": "L321",
+      "_origin": "ast",
+      "community": 15,
+      "norm_label": "main()",
+      "id": "playbook_make_pdfs_main"
+    },
+    {
+      "label": "Convert one markdown sheet into a standalone printable HTML page.",
+      "file_type": "rationale",
+      "source_file": "playbook/make-pdfs.py",
+      "source_location": "L105",
+      "_origin": "ast",
+      "community": 15,
+      "norm_label": "convert one markdown sheet into a standalone printable html page.",
+      "id": "playbook_make_pdfs_rationale_105"
+    },
+    {
+      "label": "Warn about a list glued to the line above it.      Markdown silently swallows",
+      "file_type": "rationale",
+      "source_file": "playbook/make-pdfs.py",
+      "source_location": "L124",
+      "_origin": "ast",
+      "community": 15,
+      "norm_label": "warn about a list glued to the line above it.      markdown silently swallows",
+      "id": "playbook_make_pdfs_rationale_124"
+    },
+    {
+      "label": "Write text into a docx paragraph, honouring **bold** and `code`.",
+      "file_type": "rationale",
+      "source_file": "playbook/make-pdfs.py",
+      "source_location": "L146",
+      "_origin": "ast",
+      "community": 15,
+      "norm_label": "write text into a docx paragraph, honouring **bold** and `code`.",
+      "id": "playbook_make_pdfs_rationale_146"
+    },
+    {
+      "label": "The markdown hash stamped into a .docx when we generated it.",
+      "file_type": "rationale",
+      "source_file": "playbook/make-pdfs.py",
+      "source_location": "L160",
+      "_origin": "ast",
+      "community": 15,
+      "norm_label": "the markdown hash stamped into a .docx when we generated it.",
+      "id": "playbook_make_pdfs_rationale_160"
+    },
+    {
+      "label": "Write an editable Word document he can open in Pages and print.      Deliberat",
+      "file_type": "rationale",
+      "source_file": "playbook/make-pdfs.py",
+      "source_location": "L172",
+      "_origin": "ast",
+      "community": 15,
+      "norm_label": "write an editable word document he can open in pages and print.      deliberat",
+      "id": "playbook_make_pdfs_rationale_172"
+    },
+    {
+      "label": "Smallest thing that fails if the conversion breaks.",
+      "file_type": "rationale",
+      "source_file": "playbook/make-pdfs.py",
+      "source_location": "L285",
+      "_origin": "ast",
+      "community": 15,
+      "norm_label": "smallest thing that fails if the conversion breaks.",
+      "id": "playbook_make_pdfs_rationale_285"
     },
     {
       "label": "1-START-HERE_06273d7e.md",
@@ -804,86 +1224,6 @@
       "id": "graphify_out_converted_vendor_sign_in_sheet_7e46fbee"
     },
     {
-      "label": "photos.md",
-      "file_type": "document",
-      "source_file": ".claude/commands/photos.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 22,
-      "norm_label": "photos.md",
-      "id": "claude_commands_photos"
-    },
-    {
-      "label": "Find what needs naming",
-      "file_type": "document",
-      "source_file": ".claude/commands/photos.md",
-      "source_location": "L12",
-      "_origin": "ast",
-      "community": 22,
-      "norm_label": "find what needs naming",
-      "id": "claude_commands_photos_find_what_needs_naming"
-    },
-    {
-      "label": "Look at each one",
-      "file_type": "document",
-      "source_file": ".claude/commands/photos.md",
-      "source_location": "L31",
-      "_origin": "ast",
-      "community": 22,
-      "norm_label": "look at each one",
-      "id": "claude_commands_photos_look_at_each_one"
-    },
-    {
-      "label": "Decide the name",
-      "file_type": "document",
-      "source_file": ".claude/commands/photos.md",
-      "source_location": "L46",
-      "_origin": "ast",
-      "community": 22,
-      "norm_label": "decide the name",
-      "id": "claude_commands_photos_decide_the_name"
-    },
-    {
-      "label": "Judgment calls",
-      "file_type": "document",
-      "source_file": ".claude/commands/photos.md",
-      "source_location": "L71",
-      "_origin": "ast",
-      "community": 22,
-      "norm_label": "judgment calls",
-      "id": "claude_commands_photos_judgment_calls"
-    },
-    {
-      "label": "Show the plan before touching anything",
-      "file_type": "document",
-      "source_file": ".claude/commands/photos.md",
-      "source_location": "L82",
-      "_origin": "ast",
-      "community": 22,
-      "norm_label": "show the plan before touching anything",
-      "id": "claude_commands_photos_show_the_plan_before_touching_anything"
-    },
-    {
-      "label": "Then rename",
-      "file_type": "document",
-      "source_file": ".claude/commands/photos.md",
-      "source_location": "L89",
-      "_origin": "ast",
-      "community": 22,
-      "norm_label": "then rename",
-      "id": "claude_commands_photos_then_rename"
-    },
-    {
-      "label": "Finish",
-      "file_type": "document",
-      "source_file": ".claude/commands/photos.md",
-      "source_location": "L102",
-      "_origin": "ast",
-      "community": 22,
-      "norm_label": "finish",
-      "id": "claude_commands_photos_finish"
-    },
-    {
       "label": "sunday.md",
       "file_type": "document",
       "source_file": ".claude/commands/sunday.md",
@@ -1364,102 +1704,12 @@
       "id": "handoff_what_is_already_done"
     },
     {
-      "label": "README.md",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 16,
-      "norm_label": "readme.md",
-      "id": "readme"
-    },
-    {
-      "label": "Backyard Brew \u2014 Social Media & Online Presence",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 27,
-      "norm_label": "backyard brew \u2014 social media & online presence",
-      "id": "readme_backyard_brew_social_media_online_presence"
-    },
-    {
-      "label": "Using it (no terminal needed)",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L11",
-      "_origin": "ast",
-      "community": 27,
-      "norm_label": "using it (no terminal needed)",
-      "id": "readme_using_it_no_terminal_needed"
-    },
-    {
-      "label": "Optional setup",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L19",
-      "_origin": "ast",
-      "community": 27,
-      "norm_label": "optional setup",
-      "id": "readme_optional_setup"
-    },
-    {
-      "label": "Then read this",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L31",
-      "_origin": "ast",
-      "community": 27,
-      "norm_label": "then read this",
-      "id": "readme_then_read_this"
-    },
-    {
-      "label": "The six commands",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L49",
-      "_origin": "ast",
-      "community": 27,
-      "norm_label": "the six commands",
-      "id": "readme_the_six_commands"
-    },
-    {
-      "label": "What's in here",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L69",
-      "_origin": "ast",
-      "community": 27,
-      "norm_label": "what's in here",
-      "id": "readme_what_s_in_here"
-    },
-    {
-      "label": "Naming photos",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L87",
-      "_origin": "ast",
-      "community": 27,
-      "norm_label": "naming photos",
-      "id": "readme_naming_photos"
-    },
-    {
-      "label": "The rules",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L106",
-      "_origin": "ast",
-      "community": 27,
-      "norm_label": "the rules",
-      "id": "readme_the_rules"
-    },
-    {
       "label": "3-EVERY-DAY.md",
       "file_type": "document",
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 16,
+      "community": 30,
       "norm_label": "3-every-day.md",
       "id": "playbook_3_every_day"
     },
@@ -1469,7 +1719,7 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 16,
+      "community": 30,
       "norm_label": "every day",
       "id": "playbook_3_every_day_every_day"
     },
@@ -1479,7 +1729,7 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 16,
+      "community": 30,
       "norm_label": "morning: share the 11am post to facebook groups",
       "id": "playbook_3_every_day_morning_share_the_11am_post_to_facebook_groups"
     },
@@ -1489,7 +1739,7 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 16,
+      "community": 30,
       "norm_label": "how to do it right",
       "id": "playbook_3_every_day_how_to_do_it_right"
     },
@@ -1499,7 +1749,7 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L35",
       "_origin": "ast",
-      "community": 16,
+      "community": 30,
       "norm_label": "the line you write above it matters most",
       "id": "playbook_3_every_day_the_line_you_write_above_it_matters_most"
     },
@@ -1509,7 +1759,7 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L50",
       "_origin": "ast",
-      "community": 16,
+      "community": 30,
       "norm_label": "which groups for which post",
       "id": "playbook_3_every_day_which_groups_for_which_post"
     },
@@ -1519,7 +1769,7 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L79",
       "_origin": "ast",
-      "community": 16,
+      "community": 30,
       "norm_label": "all day: stories",
       "id": "playbook_3_every_day_all_day_stories"
     },
@@ -1529,7 +1779,7 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L115",
       "_origin": "ast",
-      "community": 16,
+      "community": 30,
       "norm_label": "first hour after each post: reply to comments",
       "id": "playbook_3_every_day_first_hour_after_each_post_reply_to_comments"
     },
@@ -1539,7 +1789,7 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L131",
       "_origin": "ast",
-      "community": 16,
+      "community": 30,
       "norm_label": "while you are there: take photos",
       "id": "playbook_3_every_day_while_you_are_there_take_photos"
     },
@@ -1549,7 +1799,7 @@
       "source_file": "playbook/3-EVERY-DAY.md",
       "source_location": "L149",
       "_origin": "ast",
-      "community": 16,
+      "community": 30,
       "norm_label": "the daily checklist",
       "id": "playbook_3_every_day_the_daily_checklist"
     },
@@ -1559,7 +1809,7 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 16,
+      "community": 4,
       "norm_label": "4-every-week.md",
       "id": "playbook_4_every_week"
     },
@@ -2962,106 +3212,6 @@
       "id": "scripts_test_generate_captions_rationale_191"
     },
     {
-      "label": "classify_photos.py",
-      "file_type": "code",
-      "source_file": "scripts/classify_photos.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "classify_photos.py",
-      "id": "scripts_classify_photos"
-    },
-    {
-      "label": "manual_kind()",
-      "file_type": "code",
-      "source_file": "scripts/classify_photos.py",
-      "source_location": "L29",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "manual_kind()",
-      "id": "scripts_classify_photos_manual_kind"
-    },
-    {
-      "label": "pool_claimed()",
-      "file_type": "code",
-      "source_file": "scripts/classify_photos.py",
-      "source_location": "L38",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "pool_claimed()",
-      "id": "scripts_classify_photos_pool_claimed"
-    },
-    {
-      "label": "needs_classification()",
-      "file_type": "code",
-      "source_file": "scripts/classify_photos.py",
-      "source_location": "L58",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "needs_classification()",
-      "id": "scripts_classify_photos_needs_classification"
-    },
-    {
-      "label": "read_capture_time()",
-      "file_type": "code",
-      "source_file": "scripts/classify_photos.py",
-      "source_location": "L68",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "read_capture_time()",
-      "id": "scripts_classify_photos_read_capture_time"
-    },
-    {
-      "label": "classify_photos.py - Filename-convention helpers for photo handling.  No vision",
-      "file_type": "rationale",
-      "source_file": "scripts/classify_photos.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "classify_photos.py - filename-convention helpers for photo handling.  no vision",
-      "id": "scripts_classify_photos_rationale_1"
-    },
-    {
-      "label": "vibe'/'spotlight' if the filename carries that override suffix, else None.",
-      "file_type": "rationale",
-      "source_file": "scripts/classify_photos.py",
-      "source_location": "L30",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "vibe'/'spotlight' if the filename carries that override suffix, else none.",
-      "id": "scripts_classify_photos_rationale_30"
-    },
-    {
-      "label": "True if this filename's stem contains a keyword from     config.EVENT_PHOTO_KEYW",
-      "file_type": "rationale",
-      "source_file": "scripts/classify_photos.py",
-      "source_location": "L39",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "true if this filename's stem contains a keyword from     config.event_photo_keyw",
-      "id": "scripts_classify_photos_rationale_39"
-    },
-    {
-      "label": "False if the filename already carries an explicit override signal,     or isn't",
-      "file_type": "rationale",
-      "source_file": "scripts/classify_photos.py",
-      "source_location": "L59",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "false if the filename already carries an explicit override signal,     or isn't",
-      "id": "scripts_classify_photos_rationale_59"
-    },
-    {
-      "label": "EXIF DateTimeOriginal if present, else the file's mtime. None on error.",
-      "file_type": "rationale",
-      "source_file": "scripts/classify_photos.py",
-      "source_location": "L69",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "exif datetimeoriginal if present, else the file's mtime. none on error.",
-      "id": "scripts_classify_photos_rationale_69"
-    },
-    {
       "label": "generate_captions.py",
       "file_type": "code",
       "source_file": "scripts/generate_captions.py",
@@ -3340,118 +3490,582 @@
       "community": 5,
       "norm_label": "return 'yyyy-mm-dd hh:mm' local. owner_time (hh:mm) overrides the default.",
       "id": "scripts_generate_captions_rationale_249"
-    },
-    {
-      "label": "test_classify_photos.py",
-      "file_type": "code",
-      "source_file": "scripts/test_classify_photos.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "test_classify_photos.py",
-      "id": "scripts_test_classify_photos"
-    },
-    {
-      "label": "test_needs_classification_skips_known_suffixes()",
-      "file_type": "code",
-      "source_file": "scripts/test_classify_photos.py",
-      "source_location": "L4",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "test_needs_classification_skips_known_suffixes()",
-      "id": "scripts_test_classify_photos_test_needs_classification_skips_known_suffixes"
-    },
-    {
-      "label": "test_needs_classification_allows_plain_photos()",
-      "file_type": "code",
-      "source_file": "scripts/test_classify_photos.py",
-      "source_location": "L11",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "test_needs_classification_allows_plain_photos()",
-      "id": "scripts_test_classify_photos_test_needs_classification_allows_plain_photos"
-    },
-    {
-      "label": "test_needs_classification_skips_video_files()",
-      "file_type": "code",
-      "source_file": "scripts/test_classify_photos.py",
-      "source_location": "L16",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "test_needs_classification_skips_video_files()",
-      "id": "scripts_test_classify_photos_test_needs_classification_skips_video_files"
-    },
-    {
-      "label": "test_manual_kind_reads_vibe_and_spotlight_suffixes()",
-      "file_type": "code",
-      "source_file": "scripts/test_classify_photos.py",
-      "source_location": "L25",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "test_manual_kind_reads_vibe_and_spotlight_suffixes()",
-      "id": "scripts_test_classify_photos_test_manual_kind_reads_vibe_and_spotlight_suffixes"
-    },
-    {
-      "label": "test_pool_claimed_matches_event_keyword()",
-      "file_type": "code",
-      "source_file": "scripts/test_classify_photos.py",
-      "source_location": "L32",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "test_pool_claimed_matches_event_keyword()",
-      "id": "scripts_test_classify_photos_test_pool_claimed_matches_event_keyword"
-    },
-    {
-      "label": "test_pool_claimed_matches_food_keyword()",
-      "file_type": "code",
-      "source_file": "scripts/test_classify_photos.py",
-      "source_location": "L37",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "test_pool_claimed_matches_food_keyword()",
-      "id": "scripts_test_classify_photos_test_pool_claimed_matches_food_keyword"
-    },
-    {
-      "label": "test_pool_claimed_recognizes_an_events_own_default_art_filename()",
-      "file_type": "code",
-      "source_file": "scripts/test_classify_photos.py",
-      "source_location": "L42",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "test_pool_claimed_recognizes_an_events_own_default_art_filename()",
-      "id": "scripts_test_classify_photos_test_pool_claimed_recognizes_an_events_own_default_art_filename"
-    },
-    {
-      "label": "test_read_capture_time_falls_back_to_mtime()",
-      "file_type": "code",
-      "source_file": "scripts/test_classify_photos.py",
-      "source_location": "L49",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "test_read_capture_time_falls_back_to_mtime()",
-      "id": "scripts_test_classify_photos_test_read_capture_time_falls_back_to_mtime"
-    },
-    {
-      "label": "Video files (iPhones drop these alongside camera-roll photos) are     never a st",
-      "file_type": "rationale",
-      "source_file": "scripts/test_classify_photos.py",
-      "source_location": "L17",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "video files (iphones drop these alongside camera-roll photos) are     never a st",
-      "id": "scripts_test_classify_photos_rationale_17"
     }
   ],
   "links": [
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/photos.md",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "claude_commands_photos",
+      "target": "claude_commands_photos_decide_the_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/photos.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "claude_commands_photos",
+      "target": "claude_commands_photos_find_what_needs_naming",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/photos.md",
+      "source_location": "L155",
+      "weight": 1.0,
+      "source": "claude_commands_photos",
+      "target": "claude_commands_photos_finish",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/photos.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "claude_commands_photos",
+      "target": "claude_commands_photos_look_at_each_one",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/photos.md",
+      "source_location": "L135",
+      "weight": 1.0,
+      "source": "claude_commands_photos",
+      "target": "claude_commands_photos_show_the_plan_before_touching_anything",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/photos.md",
+      "source_location": "L142",
+      "weight": 1.0,
+      "source": "claude_commands_photos",
+      "target": "claude_commands_photos_then_rename",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/photos.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "claude_commands_photos_look_at_each_one",
+      "target": "claude_commands_photos_heic_photos_need_a_preview_first",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/photos.md",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "claude_commands_photos_decide_the_name",
+      "target": "claude_commands_photos_judgment_calls",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "readme",
+      "target": "playbook_1_start_here",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme",
+      "target": "readme_backyard_brew_social_media_online_presence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "readme_backyard_brew_social_media_online_presence",
+      "target": "readme_the_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "readme_backyard_brew_social_media_online_presence",
+      "target": "readme_the_six_commands",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "readme_backyard_brew_social_media_online_presence",
+      "target": "readme_then_read_this",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "readme_backyard_brew_social_media_online_presence",
+      "target": "readme_using_it_no_terminal_needed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "readme_backyard_brew_social_media_online_presence",
+      "target": "readme_what_s_in_here",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "readme_using_it_no_terminal_needed",
+      "target": "readme_setup_run_this",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "readme_what_s_in_here",
+      "target": "readme_naming_photos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "playbook_1_start_here",
+      "target": "playbook_1_start_here_backyard_brew_start_here",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "playbook_1_start_here_backyard_brew_start_here",
+      "target": "playbook_1_start_here_first_time_on_this_mac_only",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L213",
+      "weight": 1.0,
+      "source": "playbook_1_start_here_backyard_brew_start_here",
+      "target": "playbook_1_start_here_if_something_is_not_working",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "playbook_1_start_here_backyard_brew_start_here",
+      "target": "playbook_1_start_here_opening_it",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L176",
+      "weight": 1.0,
+      "source": "playbook_1_start_here_backyard_brew_start_here",
+      "target": "playbook_1_start_here_reading_printing_and_editing_these_sheets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "playbook_1_start_here_backyard_brew_start_here",
+      "target": "playbook_1_start_here_the_weekly_rhythm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L152",
+      "weight": 1.0,
+      "source": "playbook_1_start_here_backyard_brew_start_here",
+      "target": "playbook_1_start_here_three_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L163",
+      "weight": 1.0,
+      "source": "playbook_1_start_here_backyard_brew_start_here",
+      "target": "playbook_1_start_here_two_things_about_the_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "playbook_1_start_here_backyard_brew_start_here",
+      "target": "playbook_1_start_here_where_things_live",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "playbook_1_start_here_opening_it",
+      "target": "playbook_1_start_here_it_already_knows_the_bar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "playbook_1_start_here_opening_it",
+      "target": "playbook_1_start_here_the_six_commands",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L117",
+      "weight": 1.0,
+      "source": "playbook_1_start_here_where_things_live",
+      "target": "playbook_1_start_here_dropping_in_photos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "playbook/1-START-HERE.md",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "playbook_1_start_here_where_things_live",
+      "target": "playbook_1_start_here_sharing_with_micah",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "scripts_classify_photos",
+      "target": "scripts_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "scripts_classify_photos",
+      "target": "scripts_classify_photos_manual_kind",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "scripts_classify_photos",
+      "target": "scripts_classify_photos_needs_classification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "scripts_classify_photos",
+      "target": "scripts_classify_photos_pool_claimed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "scripts_classify_photos",
+      "target": "scripts_classify_photos_read_capture_time",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "scripts_classify_photos",
+      "target": "scripts_classify_photos_read_exif_time",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_classify_photos_rationale_1",
+      "target": "scripts_classify_photos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate_captions.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_generate_captions",
+      "target": "scripts_classify_photos"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_test_classify_photos",
+      "target": "scripts_classify_photos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_generate_captions.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_test_generate_captions",
+      "target": "scripts_classify_photos"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "scripts_classify_photos_rationale_30",
+      "target": "scripts_classify_photos_manual_kind",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "scripts_classify_photos_rationale_39",
+      "target": "scripts_classify_photos_pool_claimed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "scripts_classify_photos_rationale_59",
+      "target": "scripts_classify_photos_needs_classification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "scripts_classify_photos_rationale_69",
+      "target": "scripts_classify_photos_read_exif_time",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/classify_photos.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "scripts_classify_photos_rationale_90",
+      "target": "scripts_classify_photos_read_capture_time",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "scripts_test_classify_photos",
+      "target": "scripts_test_classify_photos_test_manual_kind_reads_vibe_and_spotlight_suffixes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "scripts_test_classify_photos",
+      "target": "scripts_test_classify_photos_test_needs_classification_allows_plain_photos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scripts_test_classify_photos",
+      "target": "scripts_test_classify_photos_test_needs_classification_skips_known_suffixes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "scripts_test_classify_photos",
+      "target": "scripts_test_classify_photos_test_needs_classification_skips_video_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "scripts_test_classify_photos",
+      "target": "scripts_test_classify_photos_test_pool_claimed_matches_event_keyword",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "scripts_test_classify_photos",
+      "target": "scripts_test_classify_photos_test_pool_claimed_matches_food_keyword",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "scripts_test_classify_photos",
+      "target": "scripts_test_classify_photos_test_pool_claimed_recognizes_an_events_own_default_art_filename",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "scripts_test_classify_photos",
+      "target": "scripts_test_classify_photos_test_read_capture_time_falls_back_to_mtime",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "scripts_test_classify_photos",
+      "target": "scripts_test_classify_photos_test_read_exif_time_returns_none_without_exif",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "scripts_test_classify_photos_rationale_17",
+      "target": "scripts_test_classify_photos_test_needs_classification_skips_video_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/test_classify_photos.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "scripts_test_classify_photos_rationale_57",
+      "target": "scripts_test_classify_photos_test_read_exif_time_returns_none_without_exif",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L145",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs",
-      "target": "playbook_make_pdfs_add_runs",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_add_runs"
     },
     {
       "relation": "contains",
@@ -3459,9 +4073,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L159",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs",
-      "target": "playbook_make_pdfs_docx_source_hash",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_docx_source_hash"
     },
     {
       "relation": "contains",
@@ -3469,9 +4083,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L123",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs",
-      "target": "playbook_make_pdfs_lint",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_lint"
     },
     {
       "relation": "contains",
@@ -3479,9 +4093,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L321",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs",
-      "target": "playbook_make_pdfs_main",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_main"
     },
     {
       "relation": "contains",
@@ -3489,9 +4103,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L171",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs",
-      "target": "playbook_make_pdfs_md_to_docx",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_md_to_docx"
     },
     {
       "relation": "contains",
@@ -3499,9 +4113,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L104",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs",
-      "target": "playbook_make_pdfs_md_to_html",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_md_to_html"
     },
     {
       "relation": "contains",
@@ -3509,9 +4123,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L284",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs",
-      "target": "playbook_make_pdfs_selfcheck",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_selfcheck"
     },
     {
       "relation": "calls",
@@ -3520,9 +4134,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L350",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_main",
-      "target": "playbook_make_pdfs_md_to_html",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_md_to_html"
     },
     {
       "relation": "rationale_for",
@@ -3530,9 +4144,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L105",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_rationale_105",
-      "target": "playbook_make_pdfs_md_to_html",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_md_to_html"
     },
     {
       "relation": "calls",
@@ -3541,9 +4155,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L286",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_selfcheck",
-      "target": "playbook_make_pdfs_md_to_html",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_md_to_html"
     },
     {
       "relation": "calls",
@@ -3552,9 +4166,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L348",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_main",
-      "target": "playbook_make_pdfs_lint",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_lint"
     },
     {
       "relation": "rationale_for",
@@ -3562,9 +4176,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L124",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_rationale_124",
-      "target": "playbook_make_pdfs_lint",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_lint"
     },
     {
       "relation": "calls",
@@ -3573,9 +4187,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L293",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_selfcheck",
-      "target": "playbook_make_pdfs_lint",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_lint"
     },
     {
       "relation": "calls",
@@ -3584,9 +4198,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L228",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_md_to_docx",
-      "target": "playbook_make_pdfs_add_runs",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_add_runs"
     },
     {
       "relation": "rationale_for",
@@ -3594,9 +4208,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L146",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_rationale_146",
-      "target": "playbook_make_pdfs_add_runs",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_add_runs"
     },
     {
       "relation": "references",
@@ -3605,9 +4219,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L159",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_docx_source_hash",
-      "target": "path",
-      "confidence_score": 1.0
+      "target": "path"
     },
     {
       "relation": "calls",
@@ -3616,9 +4230,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L364",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_main",
-      "target": "playbook_make_pdfs_docx_source_hash",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_docx_source_hash"
     },
     {
       "relation": "rationale_for",
@@ -3626,9 +4240,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L160",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_rationale_160",
-      "target": "playbook_make_pdfs_docx_source_hash",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_docx_source_hash"
     },
     {
       "relation": "references",
@@ -3637,9 +4251,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L171",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_md_to_docx",
-      "target": "path",
-      "confidence_score": 1.0
+      "target": "path"
     },
     {
       "relation": "calls",
@@ -3648,9 +4262,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L306",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_selfcheck",
-      "target": "path",
-      "confidence_score": 1.0
+      "target": "path"
     },
     {
       "relation": "calls",
@@ -3659,9 +4273,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L373",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_main",
-      "target": "playbook_make_pdfs_md_to_docx",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_md_to_docx"
     },
     {
       "relation": "rationale_for",
@@ -3669,9 +4283,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L172",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_rationale_172",
-      "target": "playbook_make_pdfs_md_to_docx",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_md_to_docx"
     },
     {
       "relation": "calls",
@@ -3680,9 +4294,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L307",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_selfcheck",
-      "target": "playbook_make_pdfs_md_to_docx",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_md_to_docx"
     },
     {
       "relation": "calls",
@@ -3691,9 +4305,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L323",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_main",
-      "target": "playbook_make_pdfs_selfcheck",
-      "confidence_score": 1.0
+      "target": "playbook_make_pdfs_selfcheck"
     },
     {
       "relation": "rationale_for",
@@ -3701,149 +4315,9 @@
       "source_file": "playbook/make-pdfs.py",
       "source_location": "L285",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playbook_make_pdfs_rationale_285",
-      "target": "playbook_make_pdfs_selfcheck",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "playbook_1_start_here",
-      "target": "playbook_1_start_here_backyard_brew_start_here"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L33",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "readme",
-      "target": "playbook_1_start_here"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_first_time_on_this_mac_only"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L211",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_if_something_is_not_working"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L42",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_opening_it"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L174",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_reading_printing_and_editing_these_sheets"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L136",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_the_weekly_rhythm"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L150",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_three_rules"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L161",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_two_things_about_the_app"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L92",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "playbook_1_start_here_backyard_brew_start_here",
-      "target": "playbook_1_start_here_where_things_live"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L71",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "playbook_1_start_here_opening_it",
-      "target": "playbook_1_start_here_it_already_knows_the_bar"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L55",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "playbook_1_start_here_opening_it",
-      "target": "playbook_1_start_here_the_six_commands"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L115",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "playbook_1_start_here_where_things_live",
-      "target": "playbook_1_start_here_dropping_in_photos"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "playbook/1-START-HERE.md",
-      "source_location": "L127",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "playbook_1_start_here_where_things_live",
-      "target": "playbook_1_start_here_sharing_with_micah"
+      "target": "playbook_make_pdfs_selfcheck"
     },
     {
       "relation": "contains",
@@ -4298,76 +4772,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/photos.md",
-      "source_location": "L46",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_photos",
-      "target": "claude_commands_photos_decide_the_name"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/photos.md",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_photos",
-      "target": "claude_commands_photos_find_what_needs_naming"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/photos.md",
-      "source_location": "L102",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_photos",
-      "target": "claude_commands_photos_finish"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/photos.md",
-      "source_location": "L31",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_photos",
-      "target": "claude_commands_photos_look_at_each_one"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/photos.md",
-      "source_location": "L82",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_photos",
-      "target": "claude_commands_photos_show_the_plan_before_touching_anything"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/photos.md",
-      "source_location": "L89",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_photos",
-      "target": "claude_commands_photos_then_rename"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/photos.md",
-      "source_location": "L71",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_photos_decide_the_name",
-      "target": "claude_commands_photos_judgment_calls"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": ".claude/commands/sunday.md",
       "source_location": "L250",
       "weight": 1.0,
@@ -4726,16 +5130,6 @@
       "target": "handoff_handoff_checklist"
     },
     {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L62",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "readme",
-      "target": "handoff"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "HANDOFF.md",
@@ -4814,106 +5208,6 @@
       "confidence_score": 1.0,
       "source": "handoff_handoff_checklist",
       "target": "handoff_what_is_already_done"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L41",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "readme",
-      "target": "playbook_3_every_day"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L42",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "readme",
-      "target": "playbook_4_every_week"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "readme",
-      "target": "readme_backyard_brew_social_media_online_presence"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L106",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "readme_backyard_brew_social_media_online_presence",
-      "target": "readme_the_rules"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L49",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "readme_backyard_brew_social_media_online_presence",
-      "target": "readme_the_six_commands"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L31",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "readme_backyard_brew_social_media_online_presence",
-      "target": "readme_then_read_this"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "readme_backyard_brew_social_media_online_presence",
-      "target": "readme_using_it_no_terminal_needed"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L69",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "readme_backyard_brew_social_media_online_presence",
-      "target": "readme_what_s_in_here"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "readme_using_it_no_terminal_needed",
-      "target": "readme_optional_setup"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L87",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "readme_what_s_in_here",
-      "target": "readme_naming_photos"
     },
     {
       "relation": "contains",
@@ -6026,17 +6320,6 @@
       "target": "playbook_2_make_a_graphic_what_good_looks_like"
     },
     {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/classify_photos.py",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_classify_photos",
-      "target": "scripts_config"
-    },
-    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "scripts/config.py",
@@ -6067,17 +6350,6 @@
       "confidence_score": 1.0,
       "source": "scripts_test_generate_captions",
       "target": "scripts_config"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/test_generate_captions.py",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_test_generate_captions",
-      "target": "scripts_classify_photos"
     },
     {
       "relation": "imports",
@@ -6309,118 +6581,6 @@
       "confidence_score": 1.0,
       "source": "scripts_test_generate_captions_rationale_191",
       "target": "scripts_test_generate_captions_test_find_food_photo_excludes_already_chosen_main_photo"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/classify_photos.py",
-      "source_location": "L29",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_classify_photos",
-      "target": "scripts_classify_photos_manual_kind"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/classify_photos.py",
-      "source_location": "L58",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_classify_photos",
-      "target": "scripts_classify_photos_needs_classification"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/classify_photos.py",
-      "source_location": "L38",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_classify_photos",
-      "target": "scripts_classify_photos_pool_claimed"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/classify_photos.py",
-      "source_location": "L68",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_classify_photos",
-      "target": "scripts_classify_photos_read_capture_time"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/classify_photos.py",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_classify_photos_rationale_1",
-      "target": "scripts_classify_photos"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/generate_captions.py",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_generate_captions",
-      "target": "scripts_classify_photos"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/test_classify_photos.py",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_test_classify_photos",
-      "target": "scripts_classify_photos"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/classify_photos.py",
-      "source_location": "L30",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_classify_photos_rationale_30",
-      "target": "scripts_classify_photos_manual_kind"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/classify_photos.py",
-      "source_location": "L39",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_classify_photos_rationale_39",
-      "target": "scripts_classify_photos_pool_claimed"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/classify_photos.py",
-      "source_location": "L59",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_classify_photos_rationale_59",
-      "target": "scripts_classify_photos_needs_classification"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/classify_photos.py",
-      "source_location": "L69",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_classify_photos_rationale_69",
-      "target": "scripts_classify_photos_read_capture_time"
     },
     {
       "relation": "contains",
@@ -6823,98 +6983,8 @@
       "confidence_score": 1.0,
       "source": "scripts_generate_captions_rationale_249",
       "target": "scripts_generate_captions_scheduled_string"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/test_classify_photos.py",
-      "source_location": "L25",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_test_classify_photos",
-      "target": "scripts_test_classify_photos_test_manual_kind_reads_vibe_and_spotlight_suffixes"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/test_classify_photos.py",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_test_classify_photos",
-      "target": "scripts_test_classify_photos_test_needs_classification_allows_plain_photos"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/test_classify_photos.py",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_test_classify_photos",
-      "target": "scripts_test_classify_photos_test_needs_classification_skips_known_suffixes"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/test_classify_photos.py",
-      "source_location": "L16",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_test_classify_photos",
-      "target": "scripts_test_classify_photos_test_needs_classification_skips_video_files"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/test_classify_photos.py",
-      "source_location": "L32",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_test_classify_photos",
-      "target": "scripts_test_classify_photos_test_pool_claimed_matches_event_keyword"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/test_classify_photos.py",
-      "source_location": "L37",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_test_classify_photos",
-      "target": "scripts_test_classify_photos_test_pool_claimed_matches_food_keyword"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/test_classify_photos.py",
-      "source_location": "L42",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_test_classify_photos",
-      "target": "scripts_test_classify_photos_test_pool_claimed_recognizes_an_events_own_default_art_filename"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/test_classify_photos.py",
-      "source_location": "L49",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_test_classify_photos",
-      "target": "scripts_test_classify_photos_test_read_capture_time_falls_back_to_mtime"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/test_classify_photos.py",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_test_classify_photos_rationale_17",
-      "target": "scripts_test_classify_photos_test_needs_classification_skips_video_files"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "f35408bbb996996b23057edc0b7a24f6933f534e"
+  "built_at_commit": "59d912b177737dc7836b5491c251bb5e508609c6"
 }
