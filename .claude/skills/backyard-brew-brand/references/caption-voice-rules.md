@@ -102,20 +102,27 @@ post can cost reach or the page itself. That is a far bigger loss than any singl
 attendance. Applies to captions, graphics, Google Business Profile posts, and comment
 replies alike.
 
-**LRC is a separate game played after Bingo Night finishes.** Not a round of bingo, not a
-bingo prize. Getting that wrong is both factually wrong and, worded badly, a compliance
-problem.
+**LRC, confirmed with Micah 2026-07-28:**
 
-**UNVERIFIED, ask before writing about it in any detail.** What is confirmed: it is called
-LRC, it runs after bingo ends, and there is big money to win. Everything else is unknown,
-including what the game actually is, whether it costs anything to enter, what time it starts,
-whether it runs every Monday, and whether there is an age limit. Do not fill these in from
-general knowledge. Write around them ("LRC after bingo") and ask the owner rather than
-guessing, because a wrong detail here is either a false promise or a compliance problem.
+- Stands for **Left Right Center**. It is a dice game
+- Played **every Monday**, starting **after Bingo Night finishes**. It is a separate game, not
+  a round of bingo and not a bingo prize
+- **Anyone can join**
+- **There is big money to win.** A large pot builds each week
+- Someone wins every week, so **nothing carries over.** Never write "rolls over," "carries
+  over," or "has been building for weeks." The pot builds within the night, not across weeks
 
-**The line is prize framing versus gambling framing (Micah's rule, 2026-07-28).** Promoting
-that there is big money to win is fine. Promoting that people gamble here is not. Same night,
-same game, and the wording decides which one Meta sees.
+**Two things are true but deliberately not advertised:**
+
+- **It costs money to enter.** Micah's call: promote that you can win big money, let people
+  find out about the entry when they come in. So **never state the cost, and never state or
+  imply it is free.** "Free to play" is correct for bingo and poker and must never be attached
+  to LRC. Omitting the cost is fine. Saying it is free is a false claim that will show up in
+  the comments the first time somebody arrives and finds out otherwise
+- **LRC is 21+.** No need to say so in a caption. **But never put the kids line and LRC in the
+  same post.** Bingo captions often carry "kids play too with a soda," and pairing that with
+  LRC in one caption implies children can play a 21+ game. Mention one or the other, or put a
+  clear break between the bingo details and the LRC line
 
 **Fine to say. Use these, they are the draw:**
 - Big money on the line, a real chance to win big
