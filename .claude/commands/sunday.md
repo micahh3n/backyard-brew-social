@@ -262,6 +262,17 @@ Then run the anti-slop pass from that same file. No em dashes anywhere. No
 phrase reused across the batch, not just across adjacent posts. Facebook and
 Instagram taking genuinely different angles rather than being reworded copies.
 
+**Two hard checks before anything ships:**
+
+1. **Gambling language.** Money to win is fine and is the draw. Describing
+   the bar as somewhere people gamble is not, and a flagged post can cost
+   the page reach or worse. Scan all 21 for "gamble," "bet," "wager,"
+   "buy-in," "odds," "stakes," "casino." Full list in
+   `caption-voice-rules.md`. Lead poker and LRC with "free to play."
+2. **Every event post has the time.** A caption that hooks perfectly and omits
+   the start time has failed at its actual job. Check each one carries what it
+   is, what day, what time, and what it costs.
+
 ## Deliver
 
 Give all 21 posts in chat, grouped by day, each with:

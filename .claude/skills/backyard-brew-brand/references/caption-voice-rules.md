@@ -85,13 +85,66 @@ work outside that automated pipeline too, so tone stays consistent.
 - Casual and warm, but keep spelling and grammar standard. No dropped word endings or slang
   contractions ("ya" for "you", "gonna", "y'all", etc.) — friendly doesn't mean informal
   spelling. Write like a real person texting, not a caricature of one.
-- **Emoji (revised 2026-07-26, fixed 5-emoji set retired):** not restricted to a small approved
-  list anymore — pick whichever emoji actually matches the specific thing being described and the
-  feeling it should carry (🎤 karaoke, 🎱 pool, 🏓 pickleball, 🃏 poker, 🌭/🍕/🌮 the actual food,
-  🐕 the leashed-pup line, 🎸/🎶 live music, and so on). Still natural and sparing, one or two per
-  post, never stacked or spammed — the change is about accuracy/fit, not volume.
+- **Emoji: every emoji is available, no approved list, no restrictions (confirmed by Micah
+  2026-07-28).** Pick whichever one actually matches the thing being described and the feeling
+  it should carry (🎤 karaoke, 🎱 pool, 🏓 pickleball, 🃏 poker, 🌭/🍕/🌮 the actual food, 🐕 the
+  leashed-pup line, 🎸/🎶 live music, and anything else that fits). They make the page read as a
+  person rather than a brand account, which is the point. **The only limit is volume: one or two
+  per post.** Stacked or spammed emoji is the single most obvious AI tell there is, and it undoes
+  the personability they were added for.
 - Never post anything implying hours outside the real open hours (see the hours conflict note
   in the parent skill — confirm before publishing Sunday hours specifically).
+
+## Money language: win big yes, gambling no
+
+**Never describe LRC, poker, or anything else here as gambling.** Meta restricts gambling promotion across Facebook and Instagram, and a flagged
+post can cost reach or the page itself. That is a far bigger loss than any single night's
+attendance. Applies to captions, graphics, Google Business Profile posts, and comment
+replies alike.
+
+**LRC is a separate dice game played after Bingo Night finishes.** Not a round of bingo, not
+a bingo prize. Getting that wrong is both factually wrong and, worded badly, a compliance
+problem.
+
+**The line is prize framing versus gambling framing (Micah's rule, 2026-07-28).** Promoting
+that there is big money to win is fine. Promoting that people gamble here is not. Same night,
+same game, and the wording decides which one Meta sees.
+
+**Fine to say. Use these, they are the draw:**
+- Big money on the line, a real chance to win big
+- What can actually be won, amounts included
+- "Winner takes it," "somebody's walking out with it"
+- **"Free to play with a beer purchase."** The strongest line available. No buy-in means it
+  reads as a contest rather than gambling, so lead with it whenever it is true
+
+**Never say, on any platform:**
+- "Gamble," "gambling," "bet," "betting," "wager," "casino"
+- "Buy-in," "ante," "odds," "stakes," "house"
+- Anything describing customers as gambling, or the bar as a place people gamble
+- Anything implying money is paid in for a chance at money
+
+Someone **wins a prize**. Nobody **places a bet**. Write every line so it lands on the first
+side of that.
+
+**Wednesday poker is the higher-risk one**, since poker reads as gambling by default. Lead
+with "free to play with a beer purchase" every single time, and treat it as a club night and
+a tournament rather than a card game people bet on.
+
+## Give real information, not just hype
+
+A caption optimized purely for engagement that leaves out the start time has failed. Someone
+who sees it and genuinely wants to come has to be able to act without asking a question
+first.
+
+**Every event post carries, without exception:** what it is, what day, what time it starts,
+and what it costs (usually "free with a beer purchase").
+
+Beyond that, include the details that actually decide whether someone shows up: the 6:40pm
+pickleball cutoff, kids welcome with a soda, dogs on leash, no discs needed, kitchen open
+from 4. Those lines convert a maybe.
+
+Hooks, FOMO, and share mechanisms sit **on top of** the facts, never instead of them. When
+trimming for length, cut the flourish and keep the time.
 
 ## Facebook vs Instagram must be genuinely different posts, not repurposed copies
 
