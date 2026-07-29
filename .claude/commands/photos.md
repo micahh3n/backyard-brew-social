@@ -139,6 +139,21 @@ Group by type so it scans quickly.
 
 **Wait for approval before renaming.** He may want to change some.
 
+## Check posts.csv before renaming anything
+
+Some photos have already been used in a post. `posts.csv` records the filename
+that ran, and the photo picker reads that history to avoid repeating a photo
+too soon. **Renaming a photo that appears there wipes its usage history, so it
+can get picked again immediately.**
+
+```bash
+grep -c "IMG_0551.heic" posts.csv
+```
+
+If the count is not zero, rename the file **and** update every reference in
+`posts.csv` in the same step, so the history keeps pointing at it. Say in the
+plan which photos this applies to.
+
 ## Then rename
 
 Use `git mv` rather than plain `mv`, so the change is tracked and can be
