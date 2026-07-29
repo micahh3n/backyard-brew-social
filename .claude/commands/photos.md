@@ -33,15 +33,60 @@ whether to continue. If he gave a number in the arguments, use that instead.
 Actually open each image with the Read tool. Do not guess from the filename,
 which is the whole point of this command.
 
-For the date, use the photo's own capture time rather than today:
+### HEIC photos need a preview first
+
+The Read tool cannot open `.heic` / `.heif`, which is what iPhones shoot, and
+full-size photos often exceed its size limit anyway. Generate small previews
+for the batch, look at those, and name the originals:
 
 ```bash
 cd scripts && python -c "
-import config, classify_photos as c, os
-p = os.path.join(config.PHOTOS_DIR, 'IMG_4471.HEIC')
-print(c.read_capture_time(p))
-"
+import config, os, sys
+from PIL import Image
+out = os.path.join(config.REPO_ROOT, '_previews')
+os.makedirs(out, exist_ok=True)
+for f in sys.argv[1:]:
+    im = Image.open(os.path.join(config.PHOTOS_DIR, f)).convert('RGB')
+    im.thumbnail((900, 900))
+    im.save(os.path.join(out, os.path.splitext(f)[0] + '.jpg'), quality=72)
+    print('ok', f)
+" IMG_0550.heic IMG_0551.heic
 ```
+
+`_previews/` is scratch. Delete it when the batch is done:
+
+```bash
+rm -rf _previews
+```
+
+If `Image.open` fails on a HEIC, `pillow_heif` is missing. Run
+`pip install -r requirements.txt` rather than skipping those photos.
+
+For the date, use the photo's own capture time rather than today. Pull them
+for the whole batch at once:
+
+```bash
+cd scripts && python -c "
+import config, classify_photos as c, os, sys
+for f in sys.argv[1:]:
+    print(f, c.read_exif_time(os.path.join(config.PHOTOS_DIR, f)))
+" IMG_4471.HEIC IMG_4472.HEIC
+```
+
+**Use `read_exif_time`, never `read_capture_time`.** The second one falls back
+to the file's modification time when a photo has no EXIF, which is fine for
+the caption code's internal sorting but wrong here. After a fresh `git clone`
+every file's mtime is the clone time, so a whole backlog would look like it
+was shot today and get stamped with a date it has nothing to do with.
+
+**`read_exif_time` returning `None` means the date is unknown.** Do not
+substitute today's date. Use the undated form and let the photo enter the
+rotation pool.
+
+**If every photo comes back `None`, stop and check `pillow_heif` is
+installed** (`pip install -r requirements.txt`). iPhone photos are HEIC, and
+without that library they cannot be read at all. That is a setup problem, not
+117 undateable photos.
 
 ## Decide the name
 
@@ -65,6 +110,14 @@ Food keywords: `hotdog`, `taco`, `nachos`, `quesadilla`, `pizza`.
 photo is clearly from, or clearly for, that day's event. When in doubt use the
 undated form, which puts it in the rotation pool for future weeks. The
 undated form is the safer default.
+
+**Sanity-check the date against the event before using it.** The recurring
+events run on fixed days and times, so a capture time that contradicts them
+means the date is not usable for naming. A vendor-market photo stamped Friday
+at 11am cannot be from Market & Brews, which runs Thursday from 4pm. Camera
+clocks drift, and photographers' exports sometimes carry the edit time. When
+the timestamp and the event disagree, trust what you can see in the photo and
+use the undated form.
 
 **Keep the file extension exactly as it was.** Do not convert HEIC to JPG here.
 

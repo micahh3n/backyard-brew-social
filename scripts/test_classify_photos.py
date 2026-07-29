@@ -51,3 +51,13 @@ def test_read_capture_time_falls_back_to_mtime(tmp_path):
     src.write_bytes(b"not a real image")
     # No EXIF (not even a real image) -- still returns the file's mtime, not None.
     assert classify_photos.read_capture_time(str(src)) is not None
+
+
+def test_read_exif_time_returns_none_without_exif(tmp_path):
+    """Must not fall back to mtime: a fresh clone would date the whole
+    backlog as 'today' and stamp wrong dates onto every filename."""
+    src = tmp_path / "no_exif.jpg"
+    src.write_bytes(b"not a real image")
+    assert classify_photos.read_exif_time(str(src)) is None
+    # the mtime-fallback variant still answers, which is why they differ
+    assert classify_photos.read_capture_time(str(src)) is not None

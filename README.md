@@ -16,15 +16,15 @@ this folder. Type `/` and the commands appear.
 The brand skill in `.claude/skills/` and the commands in `.claude/commands/`
 load automatically when this folder is open. Nothing to install for that.
 
-### Optional setup
+### Setup (run this)
 
 ```bash
 bash setup.sh
 ```
 
-Only needed for two extras: the PDF builder (`playbook/make-pdfs.py`) and the
-local flyer renderer. It also links the brand skill into `~/.claude/skills/`
-so it works outside this folder. Re-run it after a `git pull`.
+Strongly recommended. Installs pillow-heif (without it nothing can read the
+iPhone HEIC photos `/photos` has to look at), the PDF and Word builder, and
+the local flyer renderer. Re-run it after a `git pull`.
 
 You can also just ask Claude in the app: *"run bash setup.sh"*.
 
