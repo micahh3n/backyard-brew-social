@@ -102,9 +102,16 @@ post can cost reach or the page itself. That is a far bigger loss than any singl
 attendance. Applies to captions, graphics, Google Business Profile posts, and comment
 replies alike.
 
-**LRC is a separate dice game played after Bingo Night finishes.** Not a round of bingo, not
-a bingo prize. Getting that wrong is both factually wrong and, worded badly, a compliance
+**LRC is a separate game played after Bingo Night finishes.** Not a round of bingo, not a
+bingo prize. Getting that wrong is both factually wrong and, worded badly, a compliance
 problem.
+
+**UNVERIFIED, ask before writing about it in any detail.** What is confirmed: it is called
+LRC, it runs after bingo ends, and there is big money to win. Everything else is unknown,
+including what the game actually is, whether it costs anything to enter, what time it starts,
+whether it runs every Monday, and whether there is an age limit. Do not fill these in from
+general knowledge. Write around them ("LRC after bingo") and ask the owner rather than
+guessing, because a wrong detail here is either a false promise or a compliance problem.
 
 **The line is prize framing versus gambling framing (Micah's rule, 2026-07-28).** Promoting
 that there is big money to win is fine. Promoting that people gamble here is not. Same night,
@@ -114,8 +121,9 @@ same game, and the wording decides which one Meta sees.
 - Big money on the line, a real chance to win big
 - What can actually be won, amounts included
 - "Winner takes it," "somebody's walking out with it"
-- **"Free to play with a beer purchase."** The strongest line available. No buy-in means it
-  reads as a contest rather than gambling, so lead with it whenever it is true
+- **"Free to play with a beer purchase."** The strongest line available, because no entry
+  cost reads as a contest rather than gambling. **Confirmed true for poker and bingo. NOT
+  confirmed for LRC.** Never apply it to LRC until the owner says so
 
 **Never say, on any platform:**
 - "Gamble," "gambling," "bet," "betting," "wager," "casino"

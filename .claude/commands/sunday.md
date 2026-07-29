@@ -268,7 +268,8 @@ Instagram taking genuinely different angles rather than being reworded copies.
    the bar as somewhere people gamble is not, and a flagged post can cost
    the page reach or worse. Scan all 21 for "gamble," "bet," "wager,"
    "buy-in," "odds," "stakes," "casino." Full list in
-   `caption-voice-rules.md`. Lead poker and LRC with "free to play."
+   `caption-voice-rules.md`. Lead poker with "free to play." Do NOT say that
+   about LRC, which has never been confirmed as free to enter.
 2. **Every event post has the time.** A caption that hooks perfectly and omits
    the start time has failed at its actual job. Check each one carries what it
    is, what day, what time, and what it costs.
