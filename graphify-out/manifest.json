@@ -1728,5 +1728,20 @@
     "mtime": 1785086645.0,
     "ast_hash": "72f60faca80f031d1198fe8558b40a05",
     "semantic_hash": ""
+  },
+  ".claude/settings.local.json": {
+    "mtime": 1785361510.714899,
+    "ast_hash": "762c64e364d60d29ea8cb912848640c5",
+    "semantic_hash": ""
+  },
+  "photos/_generated/backyard-brew-facebook-banner.png": {
+    "mtime": 1785372378.1613438,
+    "ast_hash": "72a83fccdae995e1a9cb3de2654e19f8",
+    "semantic_hash": ""
+  },
+  "photos/facebook landscape.png": {
+    "mtime": 1785371811.4751577,
+    "ast_hash": "4b64dc4425454d6634ff9f429c75bc30",
+    "semantic_hash": ""
   }
 }
