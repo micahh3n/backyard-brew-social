@@ -50,9 +50,19 @@ A one-of-a-kind outdoor-activity bar in Ashwaubenon, WI (Green Bay area) combini
 - **Tagline:** "Craft Brews & Things To Do"
 - **Sub-tagline:** "Disc Golf, Hiking Trails, Craft Beer, All In Your Backyard"
 - **Social:** Instagram `@BackyardBrewGB` (primary, highest priority) · TikTok `@backyard.brewgb` · Facebook "Backyard Brew"
-- **Disc golf course:** 18 holes, "Easy" rated, ~1.6 miles, ~1 hour round, $5/day paid at the bar
-- **Course Membership — $150/yr:** unlimited disc golf, hiking & snowshoeing, free tap beer every month, free personal pitcher on your birthday
-- **Beer Club — $200/yr:** $2 off your first beer every day, $1 off all night at parties, personal pitcher on your birthday
+- **Disc golf course:** 18 holes, "Easy" rated, ~1.6 miles, ~1 hour round, USD 5/day paid at the bar
+- **Course Membership — USD 150/yr:** unlimited disc golf, hiking & snowshoeing, free tap beer every month, free personal pitcher on your birthday
+- **Beer Club — USD 200/yr:** USD 2 off your first beer every day, USD 1 off all night at parties, free tap beer every month, personal pitcher on your birthday (confirmed 2026-07-31)
+
+> **Why prices read "USD 5" here and nowhere else (do not "fix" this — 2026-08-01).**
+> The skill loader substitutes a dollar sign followed by a number with the
+> arguments this skill was invoked with. Written the normal way, the day pass and
+> both membership discounts silently turned into words from the invocation string
+> ("planning/day paid at the bar", "party off your first beer"). Every price in
+> this list is therefore written USD-first so it survives loading.
+> **In captions, graphics, and anything a customer sees, always render them with a
+> dollar sign: USD 5 is written as a dollar sign then 5.** The USD form is a
+> storage format for this file only, never customer-facing copy.
 
 **Hours (confirmed 2026-07-10 — the automation's version is correct):**
 - Mon-Thu: 4pm-9pm
@@ -62,6 +72,12 @@ A one-of-a-kind outdoor-activity bar in Ashwaubenon, WI (Green Bay area) combini
 
 **Breakfast service has been discontinued entirely (2026-07-26)** — never mention breakfast in
 any caption, graphic, or copy for this brand going forward.
+
+**Pizza (confirmed 2026-07-31):** the bar carries 12 inch pizzas from **two separate local pizza
+companies, Renard's and Jolly Bob's**. They are NOT hand-made or made in-house — never say
+"hand-made", "house-made", or "from scratch". Renard's is not a cheese supplier and Jolly Bob's
+is not a crust supplier; they are two pizza makers whose pizzas are carried. Say "pizzas from
+Renard's and Jolly Bob's".
 
 The live backyard-brew.com website currently says Sunday is closed — that's the site being
 stale, not the automation. Worth updating the website itself at some point, but content/captions
@@ -109,8 +125,8 @@ Hashtag cluster (mix niche + local + broad, rotate rather than repeating the sam
 
 | Day | Event | Angle |
 |---|---|---|
-| Monday | Bingo Night — 10 rounds themed bingo, 6:30pm, free w/ beer purchase, themed + beer + food prizes, kids welcome w/ soda, name-that-tune at halftime. **LRC (Left Right Center, dice, 21+) runs every Monday after bingo ends** — see the money-language rule in `references/caption-voice-rules.md` before writing about it | Prize-reveal — what are we playing for this week? |
-| Tuesday | Pickleball Open Play — free w/ beer purchase, 6:30pm, random doubles tournament, winner gets free beer, enter by 6:40pm or auto-placed in losers bracket | Challenge/competitive — think you can beat the regulars? |
+| Monday | Bingo Night — 10 rounds themed bingo, 6:30pm, free w/ beer purchase, themed + beer + food + cash prizes, kids welcome w/ soda, name-that-tune at halftime. **LRC (Left Right Center, dice, 21+) runs every Monday after bingo ends** — see the money-language rule in `references/caption-voice-rules.md` before writing about it | Prize-reveal — what are we playing for this week? |
+| Tuesday | Pickleball Open Play — free w/ beer purchase, 6:30pm, random doubles tournament, hot dogs served all night, winner gets free beer, enter by 6:40pm or auto-placed in losers bracket | Challenge/competitive — think you can beat the regulars? |
 | Wednesday | Tacos + Poker Club — beef tacos, quesadillas, loaded nachos all day; poker starts 6pm, free to play w/ beer purchase | Food first, then the game — tacos are the hook |
 | Thursday | Backyard Market & Brews (updated 2026-07-26) — weekly vendor market + live local music, 4pm-dusk, rain or shine, 30+ rotating local vendors + a different musician every week; Disc Golf League is separate, earlier in the afternoon | Extremely community/local-business-focused — a small-business showcase, not a party night. Full rules in `references/backyard-market-brews.md`, read it before writing this event's captions |
 | Friday | Karaoke Night — 8pm start, all skill levels, variety of genres | "Weekend starts NOW" energy |

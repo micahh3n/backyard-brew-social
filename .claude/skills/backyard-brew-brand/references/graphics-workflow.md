@@ -37,6 +37,14 @@ in one go, not a numbered list they have to reassemble.
 Always **4:5 vertical**. State it explicitly in the prompt. This is the
 non-negotiable aspect ratio for both Facebook and Instagram feed posts.
 
+**Say what orientation the source photo is, and how to reconcile it.** Most
+candids in `photos/` are horizontal, so this applies to nearly every prompt.
+When the attached photo is landscape, tell the generator to **extend the frame
+vertically — more sky above, more ground or paving below — and to keep the
+subject intact and unstretched.** Left unsaid, a "4:5 vertical" instruction
+over a wide subject invites the generator to crop the subject down to a
+fragment or to invent filler. Do not let it stretch to fit either.
+
 ### 2. Base the image on the real photo
 The attached photo is the source of truth for the space, not a mood
 reference. Say so: use the actual bar, the actual course, the actual people

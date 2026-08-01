@@ -162,6 +162,70 @@ No post exists to fill a slot. Before any caption ships, it must have:
 If a draft is missing any of the three, it is not finished. The ratios below
 sit on top of this, not instead of it.
 
+## Special events with a runway
+
+When a row in `posts.csv` has a `promote_from` date earlier than its event
+date, that event is a **campaign, not a day.** Every `/sunday` run that falls
+between those two dates owes it posts, and the row stays live until the event
+has passed.
+
+**Read that row's `key_details` in full before writing anything.** It carries
+the positioning, the exact wording that was approved, the things that must
+never be said, and the assets available to reveal.
+
+### Each week out has a different job
+
+| Weeks out | Job | Roughly |
+|---|---|---|
+| **3 or more** | Announce. Date, time, the headline draw, nothing else | 2-3 posts |
+| **2** | Build. Reveal one asset at a time, open any sign-ups | 4-5 posts |
+| **1** | Close. Countdown, a reveal a day, push the RSVP | most slots |
+| **Day of** | The event owns all three slots | 3 |
+
+The rules that keep it from going stale:
+
+- **Never repeat the announcement.** Each week reveals something the previous
+  week did not. A campaign that says the same thing four Sundays running
+  teaches people to scroll past it.
+- **Hold details back on purpose.** Undecided prizes, an unannounced set time,
+  a deal not yet named: these are not gaps, they are next week's posts. Ask
+  what can be withheld before writing week one.
+- **A campaign post still has to do its slot's job.** A 2:30pm campaign post is
+  still a highlight or food post that happens to close on the event.
+- **The recurring event that day does not vanish.** Fold them together when
+  they share a day, or say plainly which one the special event replaces.
+- Campaign posts count toward the weekly tally like any other post.
+
+### Details he has not decided yet
+
+`key_details` can mark something TBD with an **ASK BY** date. That is a
+deliberate deferral, not an oversight. He does not want to decide it that far
+out.
+
+- **Before that date, do not ask and do not invent one.** Use the placeholder
+  wording the row gives and write around it.
+- **On the first run on or after that date, ask for it at the top, before
+  writing anything.** One line, bundled with anything else outstanding, so he
+  answers everything at once instead of being interrupted twice.
+- If he still does not have it, write the week without it and carry the ask to
+  the next run. Never stall the batch waiting on one detail.
+
+### Off-feed actions belong in the delivery
+
+Captions alone do not fill a party. When a runway event is in range, end the
+delivery with a short **This week, off the feed** list covering whichever apply:
+
+- **Facebook Event** created, and every page follower invited. Do this in the
+  first week and never later. Meta then reminds everyone who tapped Interested
+  the day before and the morning of, which is follow-up nobody has to write
+- Which **local Facebook groups** to share it to, from a personal account, with
+  the human line to put above the share
+- **Who to ask to reshare:** vendors that week, the musician, any tagged
+  business. Name them
+- The **in-person ask** for that week, since staff talking to regulars converts
+  better than any post
+- The **Google Business Profile** post pointed at the event
+
 ## Picking photos
 
 For each slot, in order:

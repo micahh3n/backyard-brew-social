@@ -70,8 +70,17 @@ MEMBERSHIPS = (
     "Course Membership $150/yr: unlimited disc golf, hiking & snowshoeing, "
     "free tap beer every month, free personal pitcher on your birthday. "
     "Beer Club $200/yr: $2 off your first beer every day, $1 off all night at "
-    "parties, personal pitcher on your birthday."
+    "parties, free tap beer every month, personal pitcher on your birthday."
 )
+
+# Food facts captions must not get wrong (confirmed 2026-07-31).
+# The pizzas are CARRIED from two separate local pizza companies. They are not
+# hand-made, house-made, or from scratch, and Renard's/Jolly Bob's are not
+# ingredient suppliers - they are the pizza makers.
+PIZZA = "12 inch pizzas from Renard's and Jolly Bob's"
+
+# Breakfast service ended 2026-07-26. Never mention breakfast.
+BREAKFAST_SERVED = False
 
 # ---------------------------------------------------------------------------
 # Brand colors (retro outdoor badge / vintage national park aesthetic)

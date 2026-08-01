@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Backyard Market &amp; Brews — Vendor Map</title>
+<style>
+@font-face { font-family:'Anton'; src:url('../assets/fonts/Anton-Regular.ttf') format('truetype'); }
+@font-face { font-family:'Barlow Condensed'; font-weight:500; src:url('../assets/fonts/BarlowCondensed-Medium.ttf') format('truetype'); }
+@font-face { font-family:'Barlow Condensed'; font-weight:700; src:url('../assets/fonts/BarlowCondensed-Bold.ttf') format('truetype'); }
+
+:root{
+  --navy:#0B1C2D; --gold:#C8922A; --yellow:#F5C842; --cream:#F5EFD8; --blue:#4A90C4;
+  --lane:#9a958a;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+@page { size:letter landscape; margin:0.3in; }
+html,body{ width:10.4in; height:7.9in; }
+body{
+  font-family:'Barlow Condensed',sans-serif; font-weight:500;
+  color:var(--navy); background:#fff;
+  display:flex; flex-direction:column; gap:.12in;
+}
+
+header{
+  background:var(--navy); color:var(--cream); border-bottom:5px solid var(--gold);
+  padding:.1in .2in; display:flex; align-items:baseline; justify-content:space-between;
+}
+h1{ font-family:'Anton',sans-serif; font-size:28px; letter-spacing:.045em; line-height:1; }
+h1 span{ color:var(--gold); }
+.sub{ font-family:'Anton',sans-serif; font-size:18px; letter-spacing:.09em; color:var(--yellow); }
+
+/* ---------- plan wrapper ---------- */
+.plan{ flex:1; display:flex; flex-direction:column; gap:.1in; position:relative; min-height:0; }
+.field{ flex:1; display:flex; flex-direction:column; gap:.05in; min-height:0; }
+
+/* ---------- booths ---------- */
+.row{ display:grid; gap:6px; flex:1; }
+.pair{ display:flex; flex-direction:column; gap:3px; }
+.pair .booth{ flex:1; }
+.booth{
+  border:2px solid var(--navy); border-radius:4px; background:var(--cream);
+  font-family:'Anton',sans-serif; font-size:23px; line-height:1;
+  display:flex; align-items:center; justify-content:center; position:relative; z-index:2;
+}
+
+/* ---------- aisles between rows ---------- */
+.aisle{
+  height:.19in; display:flex; align-items:center; gap:8px;
+  font-size:11px; letter-spacing:.3em; text-transform:uppercase; color:var(--lane);
+}
+.aisle::before,.aisle::after{ content:''; flex:1; border-top:1.5px dashed var(--lane); }
+
+/* ---------- main walkway lane ---------- */
+.walk{
+  position:absolute; left:66.6%; width:7.4%; top:20.5%; bottom:0; z-index:1;
+  background:repeating-linear-gradient(45deg,var(--yellow) 0 9px,#fff 9px 18px);
+  border-left:2px solid var(--navy); border-right:2px solid var(--navy);
+  display:flex; align-items:center; justify-content:center;
+}
+.walk span{
+  writing-mode:vertical-rl; transform:rotate(180deg);
+  font-family:'Anton',sans-serif; font-size:16px; letter-spacing:.13em;
+  background:#fff; padding:9px 3px; border:2px solid var(--navy); border-radius:3px;
+}
+
+/* ---------- bar-side strip ---------- */
+.strip{
+  display:grid; gap:6px; height:1in; position:relative; z-index:2;
+  grid-template-columns:1fr 1.15fr 1.05fr 1fr .8fr .8fr .8fr .8fr .8fr 1.8fr;
+}
+.strip > *{
+  border-radius:4px; display:flex; align-items:center; justify-content:center;
+  font-family:'Anton',sans-serif; line-height:1;
+}
+.strip .booth{ font-size:23px; }
+.gap{ background:none; }
+.band{
+  background:var(--gold); color:var(--navy); border:2px solid var(--navy);
+  font-size:22px; letter-spacing:.08em;
+}
+.bld{ background:var(--navy); color:var(--cream); font-size:20px; letter-spacing:.06em; }
+.bld.patio{ background:#fff; color:var(--navy); border:2px solid var(--navy); }
+
+/* ---------- pond ---------- */
+.pond{
+  position:absolute; left:76.5%; right:.5%; top:47%; bottom:1.15in; z-index:2;
+  background:var(--blue); border:2px solid var(--navy);
+  border-radius:58% 42% 40% 60% / 46% 58% 42% 54%;
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Anton',sans-serif; font-size:21px; letter-spacing:.14em; color:#fff;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>BACKYARD <span>MARKET &amp; BREWS</span></h1>
+  <div class="sub">VENDOR MAP</div>
+</header>
+
+<div class="plan">
+
+  <div class="walk"><span>WALKWAY &mdash; KEEP CLEAR</span></div>
+  <div class="pond">POND</div>
+
+  <div class="field">
+
+    <div class="row" style="grid-template-columns:repeat(12,1fr)">
+      <div class="booth">5</div><div class="booth">6</div><div class="booth">7</div>
+      <div class="booth">8</div><div class="booth">9</div><div class="booth">10</div>
+      <div class="booth">11</div><div class="booth">12</div><div class="booth">13</div>
+      <div class="booth">14</div><div class="booth">15</div><div class="booth">16</div>
+    </div>
+
+    <div class="aisle">AISLE</div>
+
+    <div class="row" style="grid-template-columns:repeat(5,1fr); width:64%">
+      <div class="pair"><div class="booth">17</div><div class="booth">18</div></div>
+      <div class="pair"><div class="booth">19</div><div class="booth">20</div></div>
+      <div class="pair"><div class="booth">21</div><div class="booth">22</div></div>
+      <div class="pair"><div class="booth">23</div><div class="booth">24</div></div>
+      <div class="pair"><div class="booth">25</div><div class="booth">26</div></div>
+    </div>
+
+    <div class="aisle" style="width:64%">AISLE</div>
+
+    <div class="row" style="grid-template-columns:repeat(4,1fr); width:56%">
+      <div class="pair"><div class="booth">27</div><div class="booth">28</div></div>
+      <div class="pair"><div class="booth">29</div><div class="booth">30</div></div>
+      <div class="pair"><div class="booth">31</div><div class="booth">32</div></div>
+      <div class="pair"><div class="booth">33</div><div class="booth">34</div></div>
+    </div>
+
+    <div class="aisle" style="width:56%">AISLE</div>
+
+    <div class="row" style="grid-template-columns:repeat(3,1fr); width:43%">
+      <div class="pair"><div class="booth">35</div><div class="booth">38</div></div>
+      <div class="pair"><div class="booth">36</div><div class="booth">39</div></div>
+      <div class="pair"><div class="booth">37</div><div class="booth">40</div></div>
+    </div>
+
+    <div class="aisle" style="width:43%">AISLE</div>
+
+  </div>
+
+  <div class="strip">
+    <div class="bld">GARAGE</div>
+    <div class="bld">ENTRANCE</div>
+    <div class="bld">BAR</div>
+    <div class="bld patio">PATIO</div>
+    <div class="booth">1</div>
+    <div class="booth">2</div>
+    <div class="booth">3</div>
+    <div class="gap"></div>
+    <div class="booth">4</div>
+    <div class="band">BAND</div>
+  </div>
+
+</div>
+
+</body>
+</html>

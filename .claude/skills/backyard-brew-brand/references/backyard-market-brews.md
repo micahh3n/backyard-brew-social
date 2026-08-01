@@ -55,6 +55,12 @@ and listen to live music.
   see back.
 - **Standard CTAs:** vendor sign-up (email/DM), musician sign-up (email/DM), "bring cash, bring
   friends, bring the leashed pup."
+- **"Rain or shine" is a fact for the schedule, not a required line (Micah's call, 2026-07-29).**
+  Use it when weather is genuinely a question that week (the forecast is bad, or someone asked)
+  and leave it out otherwise. It got into nearly every draft of a multi-post batch purely because
+  it reads like a standard event detail, and the repetition went stale fast. The same caution
+  applies to the other always-true details here: "4pm-dusk" and "30+ vendors" are true every
+  single week, which makes them repetition risks across a batch rather than lines every post owes.
 - **Avoid:** "Thursdays are for the backyard," "See you in the backyard," overly polished/ad-like
   language, plugging disc golf/hiking/pickleball as part of THIS event's core pitch (those are
   separate draws — don't dilute the market/music FOMO angle with them).

@@ -48,7 +48,8 @@ work outside that automated pipeline too, so tone stays consistent.
   Every post fishing for a reply reads as try-hard and cheapens the ones that actually need it —
   spread the hook posts across different days and slots rather than stacking them.
 - **Membership plugs: about 1/3 of a week's posts (roughly 7 of 21), alternating which
-  membership.** Don't let Beer Club ($200/yr: $2 off daily, $1 off at parties, birthday pitcher)
+  membership.** Don't let Beer Club ($200/yr: $2 off daily, $1 off at parties, free monthly tap
+  beer, birthday pitcher)
   or Course Membership ($150/yr: unlimited disc golf/hiking, free monthly tap beer, birthday
   pitcher) dominate — alternate between the two across the week, and phrase the mention
   differently every time, like a person casually bringing it up mid-conversation. Teaser posts
