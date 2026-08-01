@@ -1,16 +1,16 @@
-# Graph Report - backyard-brew-social  (2026-08-01)
+# Graph Report - backyard-brew-social  (2026-07-28)
 
 ## Corpus Check
-- 81 files · ~27,045,552 words
+- 77 files · ~26,874,592 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 356 nodes · 354 edges · 31 communities (30 shown, 1 thin omitted)
+- 352 nodes · 350 edges · 31 communities (30 shown, 1 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `65877548`
+- Built from commit: `618c8d9d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -48,15 +48,15 @@
 
 ## God Nodes (most connected - your core abstractions)
 1. `Backyard Brew Brand Identity` - 10 edges
-2. `Writing the Gemini prompt` - 10 edges
-3. `Making a Graphic` - 10 edges
+2. `Making a Graphic` - 10 edges
+3. `Writing the Gemini prompt` - 10 edges
 4. `Making a Graphic` - 10 edges
-5. `Backyard Market & Brews (Thursday)` - 9 edges
-6. `Every Week` - 9 edges
-7. `Backyard Brew: Start Here` - 9 edges
-8. `Backyard Brew: Start Here` - 9 edges
+5. `Backyard Brew: Start Here` - 9 edges
+6. `Backyard Brew: Start Here` - 9 edges
+7. `Every Week` - 9 edges
+8. `Handoff Checklist` - 9 edges
 9. `Every Week` - 9 edges
-10. `Handoff Checklist` - 9 edges
+10. `Backyard Market & Brews (Thursday)` - 9 edges
 
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
@@ -123,8 +123,8 @@ Cohesion: 0.14
 Nodes (13): Backyard Brew: Start Here, Dropping in photos, First time on this Mac only, If something is not working, It already knows the bar, Opening it, Reading, printing, and editing these sheets, Sharing with Micah (+5 more)
 
 ### Community 14 - "test_find_food_photo_excludes_already_chosen_main_photo"
-Cohesion: 0.08
-Nodes (24): 11:00am: the day's main post, 11am the day of: turn it into a decision, 2:30pm: highlight, recap, or filler that ties in, 2:30pm the day of: last call before doors, 7:00pm: teaser for tomorrow, 7pm the night before: make them want it, Before delivering: run the tally, Before writing anything (+16 more)
+Cohesion: 0.10
+Nodes (20): 11:00am: the day's main post, 11am the day of: turn it into a decision, 2:30pm: highlight, recap, or filler that ties in, 2:30pm the day of: last call before doors, 7:00pm: teaser for tomorrow, 7pm the night before: make them want it, Before delivering: run the tally, Before writing anything (+12 more)
 
 ### Community 15 - "_selfcheck"
 Cohesion: 0.24
@@ -183,15 +183,15 @@ Cohesion: 0.20
 Nodes (9): All day: stories, Every Day, First hour after each post: reply to comments, How to do it right, Morning: share the 11am post to Facebook groups, The daily checklist, The line you write above it matters most, Which groups for which post (+1 more)
 
 ## Knowledge Gaps
-- **198 isolated node(s):** `Before writing anything`, `11:00am: the day's main post`, `2:30pm: highlight, recap, or filler that ties in`, `7:00pm: teaser for tomorrow`, `7pm the night before: make them want it` (+193 more)
+- **195 isolated node(s):** `Start here: which file answers your question`, `What this business is`, `Facts (verified — use these exact values)`, `Colors (extracted from the logo — use these exact hex values)`, `Fonts already established in this brand's content pipeline` (+190 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **What connects `Before writing anything`, `11:00am: the day's main post`, `2:30pm: highlight, recap, or filler that ties in` to the rest of the system?**
-  _227 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `Start here: which file answers your question`, `What this business is`, `Facts (verified — use these exact values)` to the rest of the system?**
+  _224 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `test_generate_captions.py` be split into smaller, more focused modules?**
   _Cohesion score 0.08695652173913043 - nodes in this community are weakly interconnected._
 - **Should `classify_photos.py` be split into smaller, more focused modules?**
