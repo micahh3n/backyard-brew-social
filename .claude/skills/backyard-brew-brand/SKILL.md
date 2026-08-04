@@ -125,7 +125,7 @@ Hashtag cluster (mix niche + local + broad, rotate rather than repeating the sam
 
 | Day | Event | Angle |
 |---|---|---|
-| Monday | Bingo Night — 10 rounds themed bingo, 6:30pm, free w/ beer purchase, themed + beer + food + cash prizes, kids welcome w/ soda, name-that-tune at halftime. **LRC (Left Right Center, dice, 21+) runs every Monday after bingo ends** — see the money-language rule in `references/caption-voice-rules.md` before writing about it | Prize-reveal — what are we playing for this week? |
+| Monday | Bingo Night — 9 rounds themed bingo, 6:30pm, free w/ beer purchase, themed + beer + food + cash prizes, kids welcome w/ soda, name-that-tune at halftime. **LRC (Left Right Center, dice, 21+) runs every Monday after bingo ends** — see the money-language rule in `references/caption-voice-rules.md` before writing about it | Prize-reveal — what are we playing for this week? |
 | Tuesday | Pickleball Open Play — free w/ beer purchase, 6:30pm, random doubles tournament, hot dogs served all night, winner gets free beer, enter by 6:40pm or auto-placed in losers bracket | Challenge/competitive — think you can beat the regulars? |
 | Wednesday | Tacos + Poker Club — beef tacos, quesadillas, loaded nachos all day; poker starts 6pm, free to play w/ beer purchase | Food first, then the game — tacos are the hook |
 | Thursday | Backyard Market & Brews (updated 2026-07-26) — weekly vendor market + live local music, 4pm-dusk, rain or shine, 30+ rotating local vendors + a different musician every week; Disc Golf League is separate, earlier in the afternoon | Extremely community/local-business-focused — a small-business showcase, not a party night. Full rules in `references/backyard-market-brews.md`, read it before writing this event's captions |
