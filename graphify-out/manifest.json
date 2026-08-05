@@ -1150,8 +1150,8 @@
     "semantic_hash": ""
   },
   ".claude/skills/backyard-brew-brand/SKILL.md": {
-    "mtime": 1785603290.5745447,
-    "ast_hash": "ad59abcb2be8a479e4c3fde4e2562d2f",
+    "mtime": 1785966063.6577652,
+    "ast_hash": "ff953620d41f0bd97ff041c2870f15ab",
     "semantic_hash": ""
   },
   ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md": {
@@ -1284,56 +1284,6 @@
     "ast_hash": "bced69bb03a0c719fceb5dbebb72cfa6",
     "semantic_hash": ""
   },
-  "photos/IMG_8905.JPG": {
-    "mtime": 1783988719.0,
-    "ast_hash": "f530ecf641bec76a9a56e34b185efe9f",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8908.JPG": {
-    "mtime": 1783988737.0,
-    "ast_hash": "17ab5f181d9ca9fb674828eb38a8f0b1",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8909.JPG": {
-    "mtime": 1783988738.0,
-    "ast_hash": "69c78387214255ceca399ec284423954",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8912.JPG": {
-    "mtime": 1783988755.0,
-    "ast_hash": "ede8c26ab244e78d7de99ed5afd9bc1a",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8914.JPG": {
-    "mtime": 1783988844.0,
-    "ast_hash": "5a73dfbb14c5469dca10831df5deabef",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8918.JPG": {
-    "mtime": 1783988875.0,
-    "ast_hash": "9f17b8da37be63c0dfdf1773da470209",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8919.JPG": {
-    "mtime": 1783988876.0,
-    "ast_hash": "71fc6cd29033e384f50349c23528168a",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8922.JPG": {
-    "mtime": 1783989673.0,
-    "ast_hash": "d2993b4648bf2ef4c66c6e4df47c59ce",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8924.JPG": {
-    "mtime": 1783990606.0,
-    "ast_hash": "371cf63ca4e77851d5fbd232f0f18617",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8927.JPG": {
-    "mtime": 1783990928.0,
-    "ast_hash": "1ad884569f55de59bbebb870097cde1c",
-    "semantic_hash": ""
-  },
   "photos/_generated/email-2year-anniversary-reminder.png": {
     "mtime": 1783972666.9386587,
     "ast_hash": "d297e7afb9ce47765a89a0b03d127659",
@@ -1357,11 +1307,6 @@
   "photos/_generated/ladies-night-line-dancing-poster.png": {
     "mtime": 1783904867.7971358,
     "ast_hash": "bd27d77a0f6c787359bec2cd7fd5040e",
-    "semantic_hash": ""
-  },
-  "photos/image-1386622273329522.png": {
-    "mtime": 1783998867.793228,
-    "ast_hash": "cd05f421b506916eaf8f368803bc2c30",
     "semantic_hash": ""
   },
   "photos/pool night.jpg": {
@@ -1737,11 +1682,6 @@
   "photos/_generated/backyard-brew-facebook-banner.png": {
     "mtime": 1785372378.1613438,
     "ast_hash": "72a83fccdae995e1a9cb3de2654e19f8",
-    "semantic_hash": ""
-  },
-  "photos/facebook landscape.png": {
-    "mtime": 1785371811.4751577,
-    "ast_hash": "4b64dc4425454d6634ff9f429c75bc30",
     "semantic_hash": ""
   },
   "order-slips.pdf": {
