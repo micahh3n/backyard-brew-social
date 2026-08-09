@@ -4,6 +4,466 @@
   "graph": {},
   "nodes": [
     {
+      "label": "sunday.md",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_commands_sunday",
+      "community": 14,
+      "norm_label": "sunday.md"
+    },
+    {
+      "label": "Before writing anything",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "claude_commands_sunday_before_writing_anything",
+      "community": 14,
+      "norm_label": "before writing anything"
+    },
+    {
+      "label": "The schedule: 3 posts a day, every day, all seven days",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "claude_commands_sunday_the_schedule_3_posts_a_day_every_day_all_seven_days",
+      "community": 14,
+      "norm_label": "the schedule: 3 posts a day, every day, all seven days"
+    },
+    {
+      "label": "11:00am: the day's main post",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "claude_commands_sunday_11_00am_the_day_s_main_post",
+      "community": 14,
+      "norm_label": "11:00am: the day's main post"
+    },
+    {
+      "label": "2:30pm: highlight, recap, or filler that ties in",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "claude_commands_sunday_2_30pm_highlight_recap_or_filler_that_ties_in",
+      "community": 14,
+      "norm_label": "2:30pm: highlight, recap, or filler that ties in"
+    },
+    {
+      "label": "7:00pm: teaser for tomorrow",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "claude_commands_sunday_7_00pm_teaser_for_tomorrow",
+      "community": 14,
+      "norm_label": "7:00pm: teaser for tomorrow"
+    },
+    {
+      "label": "The build: every event gets three touches",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "claude_commands_sunday_the_build_every_event_gets_three_touches",
+      "community": 14,
+      "norm_label": "the build: every event gets three touches"
+    },
+    {
+      "label": "7pm the night before: make them want it",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "claude_commands_sunday_7pm_the_night_before_make_them_want_it",
+      "community": 14,
+      "norm_label": "7pm the night before: make them want it"
+    },
+    {
+      "label": "11am the day of: turn it into a decision",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L95",
+      "_origin": "ast",
+      "id": "claude_commands_sunday_11am_the_day_of_turn_it_into_a_decision",
+      "community": 14,
+      "norm_label": "11am the day of: turn it into a decision"
+    },
+    {
+      "label": "2:30pm the day of: last call before doors",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L106",
+      "_origin": "ast",
+      "id": "claude_commands_sunday_2_30pm_the_day_of_last_call_before_doors",
+      "community": 14,
+      "norm_label": "2:30pm the day of: last call before doors"
+    },
+    {
+      "label": "The three must not repeat each other",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L136",
+      "_origin": "ast",
+      "id": "claude_commands_sunday_the_three_must_not_repeat_each_other",
+      "community": 14,
+      "norm_label": "the three must not repeat each other"
+    },
+    {
+      "label": "What every post has to earn",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L151",
+      "_origin": "ast",
+      "id": "claude_commands_sunday_what_every_post_has_to_earn",
+      "community": 14,
+      "norm_label": "what every post has to earn"
+    },
+    {
+      "label": "Special events with a runway",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L165",
+      "_origin": "ast",
+      "id": "claude_commands_sunday_special_events_with_a_runway",
+      "community": 14,
+      "norm_label": "special events with a runway"
+    },
+    {
+      "label": "Each week out has a different job",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L176",
+      "_origin": "ast",
+      "id": "claude_commands_sunday_each_week_out_has_a_different_job",
+      "community": 14,
+      "norm_label": "each week out has a different job"
+    },
+    {
+      "label": "Details he has not decided yet",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L199",
+      "_origin": "ast",
+      "id": "claude_commands_sunday_details_he_has_not_decided_yet",
+      "community": 14,
+      "norm_label": "details he has not decided yet"
+    },
+    {
+      "label": "Off-feed actions belong in the delivery",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L213",
+      "_origin": "ast",
+      "id": "claude_commands_sunday_off_feed_actions_belong_in_the_delivery",
+      "community": 14,
+      "norm_label": "off-feed actions belong in the delivery"
+    },
+    {
+      "label": "Picking photos",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L229",
+      "_origin": "ast",
+      "id": "claude_commands_sunday_picking_photos",
+      "community": 14,
+      "norm_label": "picking photos"
+    },
+    {
+      "label": "Reach: the part that grows the page",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L251",
+      "_origin": "ast",
+      "id": "claude_commands_sunday_reach_the_part_that_grows_the_page",
+      "community": 14,
+      "norm_label": "reach: the part that grows the page"
+    },
+    {
+      "label": "Write each day for its actual audience",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L257",
+      "_origin": "ast",
+      "id": "claude_commands_sunday_write_each_day_for_its_actual_audience",
+      "community": 14,
+      "norm_label": "write each day for its actual audience"
+    },
+    {
+      "label": "The Thursday 11am post is a Collab, every week",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L272",
+      "_origin": "ast",
+      "id": "claude_commands_sunday_the_thursday_11am_post_is_a_collab_every_week",
+      "community": 14,
+      "norm_label": "the thursday 11am post is a collab, every week"
+    },
+    {
+      "label": "Tag and geotag everything",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L292",
+      "_origin": "ast",
+      "id": "claude_commands_sunday_tag_and_geotag_everything",
+      "community": 14,
+      "norm_label": "tag and geotag everything"
+    },
+    {
+      "label": "Static posts only",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L301",
+      "_origin": "ast",
+      "id": "claude_commands_sunday_static_posts_only",
+      "community": 14,
+      "norm_label": "static posts only"
+    },
+    {
+      "label": "One Google Business Profile post",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L307",
+      "_origin": "ast",
+      "id": "claude_commands_sunday_one_google_business_profile_post",
+      "community": 14,
+      "norm_label": "one google business profile post"
+    },
+    {
+      "label": "Before delivering: run the tally",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L314",
+      "_origin": "ast",
+      "id": "claude_commands_sunday_before_delivering_run_the_tally",
+      "community": 14,
+      "norm_label": "before delivering: run the tally"
+    },
+    {
+      "label": "Deliver",
+      "file_type": "document",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L341",
+      "_origin": "ast",
+      "id": "claude_commands_sunday_deliver",
+      "community": 14,
+      "norm_label": "deliver"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_skill",
+      "community": 11,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Backyard Brew Brand Identity",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "community": 11,
+      "norm_label": "backyard brew brand identity"
+    },
+    {
+      "label": "Start here: which file answers your question",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_skill_start_here_which_file_answers_your_question",
+      "community": 11,
+      "norm_label": "start here: which file answers your question"
+    },
+    {
+      "label": "What this business is",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_skill_what_this_business_is",
+      "community": 11,
+      "norm_label": "what this business is"
+    },
+    {
+      "label": "Facts (verified \u2014 use these exact values)",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_skill_facts_verified_use_these_exact_values",
+      "community": 11,
+      "norm_label": "facts (verified \u2014 use these exact values)"
+    },
+    {
+      "label": "Colors (extracted from the logo \u2014 use these exact hex values)",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_skill_colors_extracted_from_the_logo_use_these_exact_hex_values",
+      "community": 11,
+      "norm_label": "colors (extracted from the logo \u2014 use these exact hex values)"
+    },
+    {
+      "label": "Fonts already established in this brand's content pipeline",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L96",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_skill_fonts_already_established_in_this_brand_s_content_pipeline",
+      "community": 11,
+      "norm_label": "fonts already established in this brand's content pipeline"
+    },
+    {
+      "label": "Voice",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L105",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_skill_voice",
+      "community": 11,
+      "norm_label": "voice"
+    },
+    {
+      "label": "Recurring weekly events (the heartbeat of the content calendar)",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L124",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_skill_recurring_weekly_events_the_heartbeat_of_the_content_calendar",
+      "community": 11,
+      "norm_label": "recurring weekly events (the heartbeat of the content calendar)"
+    },
+    {
+      "label": "Where this feeds into the actual automation",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L137",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_skill_where_this_feeds_into_the_actual_automation",
+      "community": 11,
+      "norm_label": "where this feeds into the actual automation"
+    },
+    {
+      "label": "Pre-flight for any Backyard Brew deliverable",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L141",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_skill_pre_flight_for_any_backyard_brew_deliverable",
+      "community": 11,
+      "norm_label": "pre-flight for any backyard brew deliverable"
+    },
+    {
+      "label": "backyard-market-brews.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews",
+      "community": 12,
+      "norm_label": "backyard-market-brews.md"
+    },
+    {
+      "label": "Backyard Market & Brews (Thursday)",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_thursday",
+      "community": 12,
+      "norm_label": "backyard market & brews (thursday)"
+    },
+    {
+      "label": "What it is",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_what_it_is",
+      "community": 12,
+      "norm_label": "what it is"
+    },
+    {
+      "label": "Schedule",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_schedule",
+      "community": 12,
+      "norm_label": "schedule"
+    },
+    {
+      "label": "What happens",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_what_happens",
+      "community": 12,
+      "norm_label": "what happens"
+    },
+    {
+      "label": "Vendor standards (screening criteria)",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_vendor_standards_screening_criteria",
+      "community": 12,
+      "norm_label": "vendor standards (screening criteria)"
+    },
+    {
+      "label": "Musician standards",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_musician_standards",
+      "community": 12,
+      "norm_label": "musician standards"
+    },
+    {
+      "label": "Messaging & tone guidelines",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_messaging_tone_guidelines",
+      "community": 12,
+      "norm_label": "messaging & tone guidelines"
+    },
+    {
+      "label": "Contact",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_contact",
+      "community": 12,
+      "norm_label": "contact"
+    },
+    {
+      "label": "Photo situation (open gap as of 2026-07-26)",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_photo_situation_open_gap_as_of_2026_07_26",
+      "community": 12,
+      "norm_label": "photo situation (open gap as of 2026-07-26)"
+    },
+    {
       "label": "caption-voice-rules.md",
       "file_type": "document",
       "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
@@ -24,20 +484,10 @@
       "norm_label": "caption voice rules"
     },
     {
-      "label": "Structure and warmth (Micah's call, 2026-08-09)",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
-      "source_location": "L120",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_references_caption_voice_rules_structure_and_warmth_micah_s_call_2026_08_09",
-      "community": 20,
-      "norm_label": "structure and warmth (micah's call, 2026-08-09)"
-    },
-    {
       "label": "Money language: win big yes, gambling no",
       "file_type": "document",
       "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
-      "source_location": "L161",
+      "source_location": "L99",
       "_origin": "ast",
       "id": "claude_skills_backyard_brew_brand_references_caption_voice_rules_money_language_win_big_yes_gambling_no",
       "community": 20,
@@ -47,7 +497,7 @@
       "label": "Give real information, not just hype",
       "file_type": "document",
       "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
-      "source_location": "L211",
+      "source_location": "L149",
       "_origin": "ast",
       "id": "claude_skills_backyard_brew_brand_references_caption_voice_rules_give_real_information_not_just_hype",
       "community": 20,
@@ -57,491 +507,11 @@
       "label": "Facebook vs Instagram must be genuinely different posts, not repurposed copies",
       "file_type": "document",
       "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
-      "source_location": "L227",
+      "source_location": "L165",
       "_origin": "ast",
       "id": "claude_skills_backyard_brew_brand_references_caption_voice_rules_facebook_vs_instagram_must_be_genuinely_different_posts_not_repurposed_copies",
       "community": 20,
       "norm_label": "facebook vs instagram must be genuinely different posts, not repurposed copies"
-    },
-    {
-      "label": "Rotate the tone, not just the opener (added 2026-08-09)",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
-      "source_location": "L248",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_references_caption_voice_rules_rotate_the_tone_not_just_the_opener_added_2026_08_09",
-      "community": 20,
-      "norm_label": "rotate the tone, not just the opener (added 2026-08-09)"
-    },
-    {
-      "label": "When Micah asks for a revision (added 2026-08-09)",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
-      "source_location": "L256",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_references_caption_voice_rules_when_micah_asks_for_a_revision_added_2026_08_09",
-      "community": 20,
-      "norm_label": "when micah asks for a revision (added 2026-08-09)"
-    },
-    {
-      "label": "sunday.md",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "sunday.md",
-      "id": "claude_commands_sunday"
-    },
-    {
-      "label": "Before writing anything",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L8",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "before writing anything",
-      "id": "claude_commands_sunday_before_writing_anything"
-    },
-    {
-      "label": "The schedule: 3 posts a day, every day, all seven days",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L23",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "the schedule: 3 posts a day, every day, all seven days",
-      "id": "claude_commands_sunday_the_schedule_3_posts_a_day_every_day_all_seven_days"
-    },
-    {
-      "label": "11:00am: the day's main post",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L28",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "11:00am: the day's main post",
-      "id": "claude_commands_sunday_11_00am_the_day_s_main_post"
-    },
-    {
-      "label": "2:30pm: highlight, recap, or filler that ties in",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L37",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "2:30pm: highlight, recap, or filler that ties in",
-      "id": "claude_commands_sunday_2_30pm_highlight_recap_or_filler_that_ties_in"
-    },
-    {
-      "label": "7:00pm: teaser for tomorrow",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L55",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "7:00pm: teaser for tomorrow",
-      "id": "claude_commands_sunday_7_00pm_teaser_for_tomorrow"
-    },
-    {
-      "label": "The build: every event gets three touches",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L64",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "the build: every event gets three touches",
-      "id": "claude_commands_sunday_the_build_every_event_gets_three_touches"
-    },
-    {
-      "label": "7pm the night before: make them want it",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L83",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "7pm the night before: make them want it",
-      "id": "claude_commands_sunday_7pm_the_night_before_make_them_want_it"
-    },
-    {
-      "label": "11am the day of: turn it into a decision",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L95",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "11am the day of: turn it into a decision",
-      "id": "claude_commands_sunday_11am_the_day_of_turn_it_into_a_decision"
-    },
-    {
-      "label": "2:30pm the day of: last call before doors",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L106",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "2:30pm the day of: last call before doors",
-      "id": "claude_commands_sunday_2_30pm_the_day_of_last_call_before_doors"
-    },
-    {
-      "label": "The three must not repeat each other",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L136",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "the three must not repeat each other",
-      "id": "claude_commands_sunday_the_three_must_not_repeat_each_other"
-    },
-    {
-      "label": "What every post has to earn",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L151",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "what every post has to earn",
-      "id": "claude_commands_sunday_what_every_post_has_to_earn"
-    },
-    {
-      "label": "Special events with a runway",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L165",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "special events with a runway",
-      "id": "claude_commands_sunday_special_events_with_a_runway"
-    },
-    {
-      "label": "Each week out has a different job",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L176",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "each week out has a different job",
-      "id": "claude_commands_sunday_each_week_out_has_a_different_job"
-    },
-    {
-      "label": "Details he has not decided yet",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L199",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "details he has not decided yet",
-      "id": "claude_commands_sunday_details_he_has_not_decided_yet"
-    },
-    {
-      "label": "Off-feed actions belong in the delivery",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L213",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "off-feed actions belong in the delivery",
-      "id": "claude_commands_sunday_off_feed_actions_belong_in_the_delivery"
-    },
-    {
-      "label": "Picking photos",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L229",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "picking photos",
-      "id": "claude_commands_sunday_picking_photos"
-    },
-    {
-      "label": "Reach: the part that grows the page",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L251",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "reach: the part that grows the page",
-      "id": "claude_commands_sunday_reach_the_part_that_grows_the_page"
-    },
-    {
-      "label": "Write each day for its actual audience",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L257",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "write each day for its actual audience",
-      "id": "claude_commands_sunday_write_each_day_for_its_actual_audience"
-    },
-    {
-      "label": "The Thursday 11am post is a Collab, every week",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L272",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "the thursday 11am post is a collab, every week",
-      "id": "claude_commands_sunday_the_thursday_11am_post_is_a_collab_every_week"
-    },
-    {
-      "label": "Tag and geotag everything",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L292",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "tag and geotag everything",
-      "id": "claude_commands_sunday_tag_and_geotag_everything"
-    },
-    {
-      "label": "Static posts only",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L301",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "static posts only",
-      "id": "claude_commands_sunday_static_posts_only"
-    },
-    {
-      "label": "One Google Business Profile post",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L307",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "one google business profile post",
-      "id": "claude_commands_sunday_one_google_business_profile_post"
-    },
-    {
-      "label": "Before delivering: run the tally",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L314",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "before delivering: run the tally",
-      "id": "claude_commands_sunday_before_delivering_run_the_tally"
-    },
-    {
-      "label": "Deliver",
-      "file_type": "document",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L341",
-      "_origin": "ast",
-      "community": 14,
-      "norm_label": "deliver",
-      "id": "claude_commands_sunday_deliver"
-    },
-    {
-      "label": "SKILL.md",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "skill.md",
-      "id": "claude_skills_backyard_brew_brand_skill"
-    },
-    {
-      "label": "Backyard Brew Brand Identity",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L6",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "backyard brew brand identity",
-      "id": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity"
-    },
-    {
-      "label": "Start here: which file answers your question",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L8",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "start here: which file answers your question",
-      "id": "claude_skills_backyard_brew_brand_skill_start_here_which_file_answers_your_question"
-    },
-    {
-      "label": "What this business is",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L39",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "what this business is",
-      "id": "claude_skills_backyard_brew_brand_skill_what_this_business_is"
-    },
-    {
-      "label": "Facts (verified \u2014 use these exact values)",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L45",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "facts (verified \u2014 use these exact values)",
-      "id": "claude_skills_backyard_brew_brand_skill_facts_verified_use_these_exact_values"
-    },
-    {
-      "label": "Colors (extracted from the logo \u2014 use these exact hex values)",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L86",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "colors (extracted from the logo \u2014 use these exact hex values)",
-      "id": "claude_skills_backyard_brew_brand_skill_colors_extracted_from_the_logo_use_these_exact_hex_values"
-    },
-    {
-      "label": "Fonts already established in this brand's content pipeline",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L96",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "fonts already established in this brand's content pipeline",
-      "id": "claude_skills_backyard_brew_brand_skill_fonts_already_established_in_this_brand_s_content_pipeline"
-    },
-    {
-      "label": "Voice",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L105",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "voice",
-      "id": "claude_skills_backyard_brew_brand_skill_voice"
-    },
-    {
-      "label": "Recurring weekly events (the heartbeat of the content calendar)",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L124",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "recurring weekly events (the heartbeat of the content calendar)",
-      "id": "claude_skills_backyard_brew_brand_skill_recurring_weekly_events_the_heartbeat_of_the_content_calendar"
-    },
-    {
-      "label": "Where this feeds into the actual automation",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L137",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "where this feeds into the actual automation",
-      "id": "claude_skills_backyard_brew_brand_skill_where_this_feeds_into_the_actual_automation"
-    },
-    {
-      "label": "Pre-flight for any Backyard Brew deliverable",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L141",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "pre-flight for any backyard brew deliverable",
-      "id": "claude_skills_backyard_brew_brand_skill_pre_flight_for_any_backyard_brew_deliverable"
-    },
-    {
-      "label": "backyard-market-brews.md",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 12,
-      "norm_label": "backyard-market-brews.md",
-      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews"
-    },
-    {
-      "label": "Backyard Market & Brews (Thursday)",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 12,
-      "norm_label": "backyard market & brews (thursday)",
-      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_thursday"
-    },
-    {
-      "label": "What it is",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L11",
-      "_origin": "ast",
-      "community": 12,
-      "norm_label": "what it is",
-      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_what_it_is"
-    },
-    {
-      "label": "Schedule",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L17",
-      "_origin": "ast",
-      "community": 12,
-      "norm_label": "schedule",
-      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_schedule"
-    },
-    {
-      "label": "What happens",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L24",
-      "_origin": "ast",
-      "community": 12,
-      "norm_label": "what happens",
-      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_what_happens"
-    },
-    {
-      "label": "Vendor standards (screening criteria)",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L32",
-      "_origin": "ast",
-      "community": 12,
-      "norm_label": "vendor standards (screening criteria)",
-      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_vendor_standards_screening_criteria"
-    },
-    {
-      "label": "Musician standards",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L39",
-      "_origin": "ast",
-      "community": 12,
-      "norm_label": "musician standards",
-      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_musician_standards"
-    },
-    {
-      "label": "Messaging & tone guidelines",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L44",
-      "_origin": "ast",
-      "community": 12,
-      "norm_label": "messaging & tone guidelines",
-      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_messaging_tone_guidelines"
-    },
-    {
-      "label": "Contact",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L83",
-      "_origin": "ast",
-      "community": 12,
-      "norm_label": "contact",
-      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_contact"
-    },
-    {
-      "label": "Photo situation (open gap as of 2026-07-26)",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L87",
-      "_origin": "ast",
-      "community": 12,
-      "norm_label": "photo situation (open gap as of 2026-07-26)",
-      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_photo_situation_open_gap_as_of_2026_07_26"
     },
     {
       "label": "graphics-workflow.md",
@@ -549,9 +519,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow",
       "community": 6,
-      "norm_label": "graphics-workflow.md",
-      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow"
+      "norm_label": "graphics-workflow.md"
     },
     {
       "label": "Graphics Workflow",
@@ -559,9 +529,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_graphics_workflow",
       "community": 6,
-      "norm_label": "graphics workflow",
-      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_graphics_workflow"
+      "norm_label": "graphics workflow"
     },
     {
       "label": "The pipeline",
@@ -569,9 +539,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L12",
       "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_the_pipeline",
       "community": 6,
-      "norm_label": "the pipeline",
-      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_the_pipeline"
+      "norm_label": "the pipeline"
     },
     {
       "label": "Writing the Gemini prompt",
@@ -579,9 +549,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L30",
       "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_writing_the_gemini_prompt",
       "community": 6,
-      "norm_label": "writing the gemini prompt",
-      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_writing_the_gemini_prompt"
+      "norm_label": "writing the gemini prompt"
     },
     {
       "label": "1. Format",
@@ -589,9 +559,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L36",
       "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_1_format",
       "community": 6,
-      "norm_label": "1. format",
-      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_1_format"
+      "norm_label": "1. format"
     },
     {
       "label": "2. Base the image on the real photo",
@@ -599,9 +569,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L48",
       "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_2_base_the_image_on_the_real_photo",
       "community": 6,
-      "norm_label": "2. base the image on the real photo",
-      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_2_base_the_image_on_the_real_photo"
+      "norm_label": "2. base the image on the real photo"
     },
     {
       "label": "3. Style",
@@ -609,9 +579,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L57",
       "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_3_style",
       "community": 6,
-      "norm_label": "3. style",
-      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_3_style"
+      "norm_label": "3. style"
     },
     {
       "label": "4. Exact colors",
@@ -619,9 +589,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L61",
       "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_4_exact_colors",
       "community": 6,
-      "norm_label": "4. exact colors",
-      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_4_exact_colors"
+      "norm_label": "4. exact colors"
     },
     {
       "label": "5. Typography",
@@ -629,9 +599,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L69",
       "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_5_typography",
       "community": 6,
-      "norm_label": "5. typography",
-      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_5_typography"
+      "norm_label": "5. typography"
     },
     {
       "label": "6. Text, spelled out exactly and kept short",
@@ -639,9 +609,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L75",
       "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_6_text_spelled_out_exactly_and_kept_short",
       "community": 6,
-      "norm_label": "6. text, spelled out exactly and kept short",
-      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_6_text_spelled_out_exactly_and_kept_short"
+      "norm_label": "6. text, spelled out exactly and kept short"
     },
     {
       "label": "7. Reserve a circle for the logo",
@@ -649,9 +619,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L86",
       "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_7_reserve_a_circle_for_the_logo",
       "community": 6,
-      "norm_label": "7. reserve a circle for the logo",
-      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_7_reserve_a_circle_for_the_logo"
+      "norm_label": "7. reserve a circle for the logo"
     },
     {
       "label": "8. Anti-slop negatives",
@@ -659,9 +629,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L95",
       "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_8_anti_slop_negatives",
       "community": 6,
-      "norm_label": "8. anti-slop negatives",
-      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_8_anti_slop_negatives"
+      "norm_label": "8. anti-slop negatives"
     },
     {
       "label": "9. Realism anchors",
@@ -669,9 +639,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L105",
       "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_9_realism_anchors",
       "community": 6,
-      "norm_label": "9. realism anchors",
-      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_9_realism_anchors"
+      "norm_label": "9. realism anchors"
     },
     {
       "label": "Rules that override the template",
@@ -679,9 +649,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L112",
       "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_rules_that_override_the_template",
       "community": 6,
-      "norm_label": "rules that override the template",
-      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_rules_that_override_the_template"
+      "norm_label": "rules that override the template"
     },
     {
       "label": "The backup path, when Gemini will not cooperate",
@@ -689,9 +659,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L127",
       "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_the_backup_path_when_gemini_will_not_cooperate",
       "community": 6,
-      "norm_label": "the backup path, when gemini will not cooperate",
-      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_the_backup_path_when_gemini_will_not_cooperate"
+      "norm_label": "the backup path, when gemini will not cooperate"
     },
     {
       "label": "After the image is done",
@@ -699,9 +669,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L146",
       "_origin": "ast",
+      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_after_the_image_is_done",
       "community": 6,
-      "norm_label": "after the image is done",
-      "id": "claude_skills_backyard_brew_brand_references_graphics_workflow_after_the_image_is_done"
+      "norm_label": "after the image is done"
     },
     {
       "label": "4-EVERY-WEEK.md",
@@ -709,9 +679,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "playbook_4_every_week",
       "community": 4,
-      "norm_label": "4-every-week.md",
-      "id": "playbook_4_every_week"
+      "norm_label": "4-every-week.md"
     },
     {
       "label": "Every Week",
@@ -719,9 +689,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "playbook_4_every_week_every_week",
       "community": 4,
-      "norm_label": "every week",
-      "id": "playbook_4_every_week_every_week"
+      "norm_label": "every week"
     },
     {
       "label": "1. Drop in this week's photos (5 min)",
@@ -729,9 +699,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L7",
       "_origin": "ast",
+      "id": "playbook_4_every_week_1_drop_in_this_week_s_photos_5_min",
       "community": 4,
-      "norm_label": "1. drop in this week's photos (5 min)",
-      "id": "playbook_4_every_week_1_drop_in_this_week_s_photos_5_min"
+      "norm_label": "1. drop in this week's photos (5 min)"
     },
     {
       "label": "2. Write the week's posts (10 min)",
@@ -739,9 +709,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L20",
       "_origin": "ast",
+      "id": "playbook_4_every_week_2_write_the_week_s_posts_10_min",
       "community": 4,
-      "norm_label": "2. write the week's posts (10 min)",
-      "id": "playbook_4_every_week_2_write_the_week_s_posts_10_min"
+      "norm_label": "2. write the week's posts (10 min)"
     },
     {
       "label": "3. Schedule everything in Meta Business Suite (30 min)",
@@ -749,9 +719,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L71",
       "_origin": "ast",
+      "id": "playbook_4_every_week_3_schedule_everything_in_meta_business_suite_30_min",
       "community": 4,
-      "norm_label": "3. schedule everything in meta business suite (30 min)",
-      "id": "playbook_4_every_week_3_schedule_everything_in_meta_business_suite_30_min"
+      "norm_label": "3. schedule everything in meta business suite (30 min)"
     },
     {
       "label": "4. Google Business Profile (10 min)",
@@ -759,9 +729,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L117",
       "_origin": "ast",
+      "id": "playbook_4_every_week_4_google_business_profile_10_min",
       "community": 4,
-      "norm_label": "4. google business profile (10 min)",
-      "id": "playbook_4_every_week_4_google_business_profile_10_min"
+      "norm_label": "4. google business profile (10 min)"
     },
     {
       "label": "5. Reviews (5 min)",
@@ -769,9 +739,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L141",
       "_origin": "ast",
+      "id": "playbook_4_every_week_5_reviews_5_min",
       "community": 4,
-      "norm_label": "5. reviews (5 min)",
-      "id": "playbook_4_every_week_5_reviews_5_min"
+      "norm_label": "5. reviews (5 min)"
     },
     {
       "label": "6. Ask what to work on (5 min, optional)",
@@ -779,9 +749,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L161",
       "_origin": "ast",
+      "id": "playbook_4_every_week_6_ask_what_to_work_on_5_min_optional",
       "community": 4,
-      "norm_label": "6. ask what to work on (5 min, optional)",
-      "id": "playbook_4_every_week_6_ask_what_to_work_on_5_min_optional"
+      "norm_label": "6. ask what to work on (5 min, optional)"
     },
     {
       "label": "7. Send it to Micah (1 min)",
@@ -789,9 +759,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L180",
       "_origin": "ast",
+      "id": "playbook_4_every_week_7_send_it_to_micah_1_min",
       "community": 4,
-      "norm_label": "7. send it to micah (1 min)",
-      "id": "playbook_4_every_week_7_send_it_to_micah_1_min"
+      "norm_label": "7. send it to micah (1 min)"
     },
     {
       "label": "The Sunday checklist",
@@ -799,9 +769,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L187",
       "_origin": "ast",
+      "id": "playbook_4_every_week_the_sunday_checklist",
       "community": 4,
-      "norm_label": "the sunday checklist",
-      "id": "playbook_4_every_week_the_sunday_checklist"
+      "norm_label": "the sunday checklist"
     },
     {
       "label": "config.py",
@@ -809,9 +779,9 @@
       "source_file": "scripts/config.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "scripts_config",
       "community": 2,
-      "norm_label": "config.py",
-      "id": "scripts_config"
+      "norm_label": "config.py"
     },
     {
       "label": "config.py - Single source of truth for Backyard Brew's brand, timing, and rules.",
@@ -819,9 +789,9 @@
       "source_file": "scripts/config.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "scripts_config_rationale_1",
       "community": 2,
-      "norm_label": "config.py - single source of truth for backyard brew's brand, timing, and rules.",
-      "id": "scripts_config_rationale_1"
+      "norm_label": "config.py - single source of truth for backyard brew's brand, timing, and rules."
     },
     {
       "label": "photos.md",
@@ -1509,7 +1479,7 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 2,
+      "community": 27,
       "norm_label": "test_classify_photos.py",
       "id": "scripts_test_classify_photos"
     },
@@ -1519,7 +1489,7 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L4",
       "_origin": "ast",
-      "community": 2,
+      "community": 27,
       "norm_label": "test_needs_classification_skips_known_suffixes()",
       "id": "scripts_test_classify_photos_test_needs_classification_skips_known_suffixes"
     },
@@ -1529,7 +1499,7 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 2,
+      "community": 27,
       "norm_label": "test_needs_classification_allows_plain_photos()",
       "id": "scripts_test_classify_photos_test_needs_classification_allows_plain_photos"
     },
@@ -1539,7 +1509,7 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 2,
+      "community": 27,
       "norm_label": "test_needs_classification_skips_video_files()",
       "id": "scripts_test_classify_photos_test_needs_classification_skips_video_files"
     },
@@ -1549,7 +1519,7 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 2,
+      "community": 27,
       "norm_label": "test_manual_kind_reads_vibe_and_spotlight_suffixes()",
       "id": "scripts_test_classify_photos_test_manual_kind_reads_vibe_and_spotlight_suffixes"
     },
@@ -1559,7 +1529,7 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 2,
+      "community": 27,
       "norm_label": "test_pool_claimed_matches_event_keyword()",
       "id": "scripts_test_classify_photos_test_pool_claimed_matches_event_keyword"
     },
@@ -1569,7 +1539,7 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L37",
       "_origin": "ast",
-      "community": 2,
+      "community": 27,
       "norm_label": "test_pool_claimed_matches_food_keyword()",
       "id": "scripts_test_classify_photos_test_pool_claimed_matches_food_keyword"
     },
@@ -1579,7 +1549,7 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L42",
       "_origin": "ast",
-      "community": 2,
+      "community": 27,
       "norm_label": "test_pool_claimed_recognizes_an_events_own_default_art_filename()",
       "id": "scripts_test_classify_photos_test_pool_claimed_recognizes_an_events_own_default_art_filename"
     },
@@ -1589,7 +1559,7 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L49",
       "_origin": "ast",
-      "community": 2,
+      "community": 27,
       "norm_label": "test_read_capture_time_falls_back_to_mtime()",
       "id": "scripts_test_classify_photos_test_read_capture_time_falls_back_to_mtime"
     },
@@ -1599,7 +1569,7 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L56",
       "_origin": "ast",
-      "community": 2,
+      "community": 27,
       "norm_label": "test_read_exif_time_returns_none_without_exif()",
       "id": "scripts_test_classify_photos_test_read_exif_time_returns_none_without_exif"
     },
@@ -1609,7 +1579,7 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 2,
+      "community": 27,
       "norm_label": "video files (iphones drop these alongside camera-roll photos) are     never a st",
       "id": "scripts_test_classify_photos_rationale_17"
     },
@@ -1619,7 +1589,7 @@
       "source_file": "scripts/test_classify_photos.py",
       "source_location": "L57",
       "_origin": "ast",
-      "community": 2,
+      "community": 27,
       "norm_label": "must not fall back to mtime: a fresh clone would date the whole     backlog as '",
       "id": "scripts_test_classify_photos_rationale_57"
     },
@@ -3606,6 +3576,436 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L314",
+      "weight": 1.0,
+      "source": "claude_commands_sunday",
+      "target": "claude_commands_sunday_before_delivering_run_the_tally",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "claude_commands_sunday",
+      "target": "claude_commands_sunday_before_writing_anything",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L341",
+      "weight": 1.0,
+      "source": "claude_commands_sunday",
+      "target": "claude_commands_sunday_deliver",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L229",
+      "weight": 1.0,
+      "source": "claude_commands_sunday",
+      "target": "claude_commands_sunday_picking_photos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L251",
+      "weight": 1.0,
+      "source": "claude_commands_sunday",
+      "target": "claude_commands_sunday_reach_the_part_that_grows_the_page",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L165",
+      "weight": 1.0,
+      "source": "claude_commands_sunday",
+      "target": "claude_commands_sunday_special_events_with_a_runway",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "claude_commands_sunday",
+      "target": "claude_commands_sunday_the_build_every_event_gets_three_touches",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "claude_commands_sunday",
+      "target": "claude_commands_sunday_the_schedule_3_posts_a_day_every_day_all_seven_days",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "claude_commands_sunday_the_schedule_3_posts_a_day_every_day_all_seven_days",
+      "target": "claude_commands_sunday_11_00am_the_day_s_main_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "claude_commands_sunday_the_schedule_3_posts_a_day_every_day_all_seven_days",
+      "target": "claude_commands_sunday_2_30pm_highlight_recap_or_filler_that_ties_in",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "claude_commands_sunday_the_schedule_3_posts_a_day_every_day_all_seven_days",
+      "target": "claude_commands_sunday_7_00pm_teaser_for_tomorrow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L95",
+      "weight": 1.0,
+      "source": "claude_commands_sunday_the_build_every_event_gets_three_touches",
+      "target": "claude_commands_sunday_11am_the_day_of_turn_it_into_a_decision",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "claude_commands_sunday_the_build_every_event_gets_three_touches",
+      "target": "claude_commands_sunday_2_30pm_the_day_of_last_call_before_doors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "claude_commands_sunday_the_build_every_event_gets_three_touches",
+      "target": "claude_commands_sunday_7pm_the_night_before_make_them_want_it",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L136",
+      "weight": 1.0,
+      "source": "claude_commands_sunday_the_build_every_event_gets_three_touches",
+      "target": "claude_commands_sunday_the_three_must_not_repeat_each_other",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L151",
+      "weight": 1.0,
+      "source": "claude_commands_sunday_the_build_every_event_gets_three_touches",
+      "target": "claude_commands_sunday_what_every_post_has_to_earn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L199",
+      "weight": 1.0,
+      "source": "claude_commands_sunday_special_events_with_a_runway",
+      "target": "claude_commands_sunday_details_he_has_not_decided_yet",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L176",
+      "weight": 1.0,
+      "source": "claude_commands_sunday_special_events_with_a_runway",
+      "target": "claude_commands_sunday_each_week_out_has_a_different_job",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L213",
+      "weight": 1.0,
+      "source": "claude_commands_sunday_special_events_with_a_runway",
+      "target": "claude_commands_sunday_off_feed_actions_belong_in_the_delivery",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L307",
+      "weight": 1.0,
+      "source": "claude_commands_sunday_reach_the_part_that_grows_the_page",
+      "target": "claude_commands_sunday_one_google_business_profile_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L301",
+      "weight": 1.0,
+      "source": "claude_commands_sunday_reach_the_part_that_grows_the_page",
+      "target": "claude_commands_sunday_static_posts_only",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L292",
+      "weight": 1.0,
+      "source": "claude_commands_sunday_reach_the_part_that_grows_the_page",
+      "target": "claude_commands_sunday_tag_and_geotag_everything",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L272",
+      "weight": 1.0,
+      "source": "claude_commands_sunday_reach_the_part_that_grows_the_page",
+      "target": "claude_commands_sunday_the_thursday_11am_post_is_a_collab_every_week",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/commands/sunday.md",
+      "source_location": "L257",
+      "weight": 1.0,
+      "source": "claude_commands_sunday_reach_the_part_that_grows_the_page",
+      "target": "claude_commands_sunday_write_each_day_for_its_actual_audience",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_skill",
+      "target": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "target": "claude_skills_backyard_brew_brand_skill_colors_extracted_from_the_logo_use_these_exact_hex_values",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "target": "claude_skills_backyard_brew_brand_skill_facts_verified_use_these_exact_values",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "target": "claude_skills_backyard_brew_brand_skill_fonts_already_established_in_this_brand_s_content_pipeline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L141",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "target": "claude_skills_backyard_brew_brand_skill_pre_flight_for_any_backyard_brew_deliverable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "target": "claude_skills_backyard_brew_brand_skill_recurring_weekly_events_the_heartbeat_of_the_content_calendar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "target": "claude_skills_backyard_brew_brand_skill_start_here_which_file_answers_your_question",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "target": "claude_skills_backyard_brew_brand_skill_voice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "target": "claude_skills_backyard_brew_brand_skill_what_this_business_is",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "target": "claude_skills_backyard_brew_brand_skill_where_this_feeds_into_the_actual_automation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews",
+      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_thursday",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_thursday",
+      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_contact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_thursday",
+      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_messaging_tone_guidelines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_thursday",
+      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_musician_standards",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_thursday",
+      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_photo_situation_open_gap_as_of_2026_07_26",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_thursday",
+      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_schedule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_thursday",
+      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_vendor_standards_screening_criteria",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_thursday",
+      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_what_happens",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_thursday",
+      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_what_it_is",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -3617,7 +4017,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
-      "source_location": "L227",
+      "source_location": "L165",
       "weight": 1.0,
       "source": "claude_skills_backyard_brew_brand_references_caption_voice_rules_caption_voice_rules",
       "target": "claude_skills_backyard_brew_brand_references_caption_voice_rules_facebook_vs_instagram_must_be_genuinely_different_posts_not_repurposed_copies",
@@ -3627,7 +4027,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
-      "source_location": "L211",
+      "source_location": "L149",
       "weight": 1.0,
       "source": "claude_skills_backyard_brew_brand_references_caption_voice_rules_caption_voice_rules",
       "target": "claude_skills_backyard_brew_brand_references_caption_voice_rules_give_real_information_not_just_hype",
@@ -3637,7 +4037,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
-      "source_location": "L161",
+      "source_location": "L99",
       "weight": 1.0,
       "source": "claude_skills_backyard_brew_brand_references_caption_voice_rules_caption_voice_rules",
       "target": "claude_skills_backyard_brew_brand_references_caption_voice_rules_money_language_win_big_yes_gambling_no",
@@ -3646,472 +4046,12 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
-      "source_location": "L248",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_caption_voice_rules_caption_voice_rules",
-      "target": "claude_skills_backyard_brew_brand_references_caption_voice_rules_rotate_the_tone_not_just_the_opener_added_2026_08_09",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
-      "source_location": "L120",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_caption_voice_rules_caption_voice_rules",
-      "target": "claude_skills_backyard_brew_brand_references_caption_voice_rules_structure_and_warmth_micah_s_call_2026_08_09",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md",
-      "source_location": "L256",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_caption_voice_rules_caption_voice_rules",
-      "target": "claude_skills_backyard_brew_brand_references_caption_voice_rules_when_micah_asks_for_a_revision_added_2026_08_09",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L314",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday",
-      "target": "claude_commands_sunday_before_delivering_run_the_tally"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday",
-      "target": "claude_commands_sunday_before_writing_anything"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L341",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday",
-      "target": "claude_commands_sunday_deliver"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L229",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday",
-      "target": "claude_commands_sunday_picking_photos"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L251",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday",
-      "target": "claude_commands_sunday_reach_the_part_that_grows_the_page"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L165",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday",
-      "target": "claude_commands_sunday_special_events_with_a_runway"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L64",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday",
-      "target": "claude_commands_sunday_the_build_every_event_gets_three_touches"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L23",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday",
-      "target": "claude_commands_sunday_the_schedule_3_posts_a_day_every_day_all_seven_days"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L28",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_the_schedule_3_posts_a_day_every_day_all_seven_days",
-      "target": "claude_commands_sunday_11_00am_the_day_s_main_post"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L37",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_the_schedule_3_posts_a_day_every_day_all_seven_days",
-      "target": "claude_commands_sunday_2_30pm_highlight_recap_or_filler_that_ties_in"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L55",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_the_schedule_3_posts_a_day_every_day_all_seven_days",
-      "target": "claude_commands_sunday_7_00pm_teaser_for_tomorrow"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L95",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_the_build_every_event_gets_three_touches",
-      "target": "claude_commands_sunday_11am_the_day_of_turn_it_into_a_decision"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L106",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_the_build_every_event_gets_three_touches",
-      "target": "claude_commands_sunday_2_30pm_the_day_of_last_call_before_doors"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L83",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_the_build_every_event_gets_three_touches",
-      "target": "claude_commands_sunday_7pm_the_night_before_make_them_want_it"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L136",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_the_build_every_event_gets_three_touches",
-      "target": "claude_commands_sunday_the_three_must_not_repeat_each_other"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L151",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_the_build_every_event_gets_three_touches",
-      "target": "claude_commands_sunday_what_every_post_has_to_earn"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L199",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_special_events_with_a_runway",
-      "target": "claude_commands_sunday_details_he_has_not_decided_yet"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L176",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_special_events_with_a_runway",
-      "target": "claude_commands_sunday_each_week_out_has_a_different_job"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L213",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_special_events_with_a_runway",
-      "target": "claude_commands_sunday_off_feed_actions_belong_in_the_delivery"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L307",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_reach_the_part_that_grows_the_page",
-      "target": "claude_commands_sunday_one_google_business_profile_post"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L301",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_reach_the_part_that_grows_the_page",
-      "target": "claude_commands_sunday_static_posts_only"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L292",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_reach_the_part_that_grows_the_page",
-      "target": "claude_commands_sunday_tag_and_geotag_everything"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L272",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_reach_the_part_that_grows_the_page",
-      "target": "claude_commands_sunday_the_thursday_11am_post_is_a_collab_every_week"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/commands/sunday.md",
-      "source_location": "L257",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_commands_sunday_reach_the_part_that_grows_the_page",
-      "target": "claude_commands_sunday_write_each_day_for_its_actual_audience"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill",
-      "target": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L86",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "target": "claude_skills_backyard_brew_brand_skill_colors_extracted_from_the_logo_use_these_exact_hex_values"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L45",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "target": "claude_skills_backyard_brew_brand_skill_facts_verified_use_these_exact_values"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L96",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "target": "claude_skills_backyard_brew_brand_skill_fonts_already_established_in_this_brand_s_content_pipeline"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L141",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "target": "claude_skills_backyard_brew_brand_skill_pre_flight_for_any_backyard_brew_deliverable"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L124",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "target": "claude_skills_backyard_brew_brand_skill_recurring_weekly_events_the_heartbeat_of_the_content_calendar"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "target": "claude_skills_backyard_brew_brand_skill_start_here_which_file_answers_your_question"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L105",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "target": "claude_skills_backyard_brew_brand_skill_voice"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L39",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "target": "claude_skills_backyard_brew_brand_skill_what_this_business_is"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L137",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "target": "claude_skills_backyard_brew_brand_skill_where_this_feeds_into_the_actual_automation"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews",
-      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_thursday"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L83",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_thursday",
-      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_contact"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L44",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_thursday",
-      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_messaging_tone_guidelines"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L39",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_thursday",
-      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_musician_standards"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L87",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_thursday",
-      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_photo_situation_open_gap_as_of_2026_07_26"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_thursday",
-      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_schedule"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L32",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_thursday",
-      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_vendor_standards_screening_criteria"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L24",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_thursday",
-      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_what_happens"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_thursday",
-      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_what_it_is"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_brand_references_graphics_workflow",
-      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_graphics_workflow"
+      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_graphics_workflow",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4119,9 +4059,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L146",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_brand_references_graphics_workflow_graphics_workflow",
-      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_after_the_image_is_done"
+      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_after_the_image_is_done",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4129,9 +4069,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L112",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_brand_references_graphics_workflow_graphics_workflow",
-      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_rules_that_override_the_template"
+      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_rules_that_override_the_template",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4139,9 +4079,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L127",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_brand_references_graphics_workflow_graphics_workflow",
-      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_the_backup_path_when_gemini_will_not_cooperate"
+      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_the_backup_path_when_gemini_will_not_cooperate",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4149,9 +4089,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L12",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_brand_references_graphics_workflow_graphics_workflow",
-      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_the_pipeline"
+      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_the_pipeline",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4159,9 +4099,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L30",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_brand_references_graphics_workflow_graphics_workflow",
-      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_writing_the_gemini_prompt"
+      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_writing_the_gemini_prompt",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4169,9 +4109,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L36",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_brand_references_graphics_workflow_writing_the_gemini_prompt",
-      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_1_format"
+      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_1_format",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4179,9 +4119,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L48",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_brand_references_graphics_workflow_writing_the_gemini_prompt",
-      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_2_base_the_image_on_the_real_photo"
+      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_2_base_the_image_on_the_real_photo",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4189,9 +4129,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L57",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_brand_references_graphics_workflow_writing_the_gemini_prompt",
-      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_3_style"
+      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_3_style",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4199,9 +4139,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L61",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_brand_references_graphics_workflow_writing_the_gemini_prompt",
-      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_4_exact_colors"
+      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_4_exact_colors",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4209,9 +4149,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L69",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_brand_references_graphics_workflow_writing_the_gemini_prompt",
-      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_5_typography"
+      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_5_typography",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4219,9 +4159,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L75",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_brand_references_graphics_workflow_writing_the_gemini_prompt",
-      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_6_text_spelled_out_exactly_and_kept_short"
+      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_6_text_spelled_out_exactly_and_kept_short",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4229,9 +4169,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L86",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_brand_references_graphics_workflow_writing_the_gemini_prompt",
-      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_7_reserve_a_circle_for_the_logo"
+      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_7_reserve_a_circle_for_the_logo",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4239,9 +4179,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L95",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_brand_references_graphics_workflow_writing_the_gemini_prompt",
-      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_8_anti_slop_negatives"
+      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_8_anti_slop_negatives",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4249,9 +4189,9 @@
       "source_file": ".claude/skills/backyard-brew-brand/references/graphics-workflow.md",
       "source_location": "L105",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_brand_references_graphics_workflow_writing_the_gemini_prompt",
-      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_9_realism_anchors"
+      "target": "claude_skills_backyard_brew_brand_references_graphics_workflow_9_realism_anchors",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4259,9 +4199,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "playbook_4_every_week",
-      "target": "playbook_4_every_week_every_week"
+      "target": "playbook_4_every_week_every_week",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4269,9 +4209,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L7",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "playbook_4_every_week_every_week",
-      "target": "playbook_4_every_week_1_drop_in_this_week_s_photos_5_min"
+      "target": "playbook_4_every_week_1_drop_in_this_week_s_photos_5_min",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4279,9 +4219,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L20",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "playbook_4_every_week_every_week",
-      "target": "playbook_4_every_week_2_write_the_week_s_posts_10_min"
+      "target": "playbook_4_every_week_2_write_the_week_s_posts_10_min",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4289,9 +4229,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L71",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "playbook_4_every_week_every_week",
-      "target": "playbook_4_every_week_3_schedule_everything_in_meta_business_suite_30_min"
+      "target": "playbook_4_every_week_3_schedule_everything_in_meta_business_suite_30_min",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4299,9 +4239,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L117",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "playbook_4_every_week_every_week",
-      "target": "playbook_4_every_week_4_google_business_profile_10_min"
+      "target": "playbook_4_every_week_4_google_business_profile_10_min",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4309,9 +4249,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L141",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "playbook_4_every_week_every_week",
-      "target": "playbook_4_every_week_5_reviews_5_min"
+      "target": "playbook_4_every_week_5_reviews_5_min",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4319,9 +4259,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L161",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "playbook_4_every_week_every_week",
-      "target": "playbook_4_every_week_6_ask_what_to_work_on_5_min_optional"
+      "target": "playbook_4_every_week_6_ask_what_to_work_on_5_min_optional",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4329,9 +4269,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L180",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "playbook_4_every_week_every_week",
-      "target": "playbook_4_every_week_7_send_it_to_micah_1_min"
+      "target": "playbook_4_every_week_7_send_it_to_micah_1_min",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4339,9 +4279,9 @@
       "source_file": "playbook/4-EVERY-WEEK.md",
       "source_location": "L187",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "playbook_4_every_week_every_week",
-      "target": "playbook_4_every_week_the_sunday_checklist"
+      "target": "playbook_4_every_week_the_sunday_checklist",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -4360,9 +4300,9 @@
       "source_file": "scripts/config.py",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "scripts_config_rationale_1",
-      "target": "scripts_config"
+      "target": "scripts_config",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -7206,5 +7146,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "e6251aa72955ae3cfd78027f4429fcd72deb755d"
+  "built_at_commit": "658775487d2b90817f36e6fecdb0924ec9fb9965"
 }

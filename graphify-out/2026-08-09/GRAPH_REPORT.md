@@ -1,16 +1,16 @@
-# Graph Report - backyard-brew-social  (2026-08-09)
+# Graph Report - backyard-brew-social  (2026-08-01)
 
 ## Corpus Check
-- 82 files · ~37,312,918 words
+- 81 files · ~27,045,552 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 359 nodes · 357 edges · 30 communities (29 shown, 1 thin omitted)
+- 356 nodes · 354 edges · 31 communities (30 shown, 1 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e6251aa7`
+- Built from commit: `65877548`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -42,6 +42,7 @@
 - Making a Graphic
 - Every Day
 - Every Week
+- Backyard Brew — Social Media & Online Presence
 - Vendor_Communication_Templates_63fdc6dc.md
 - Every Day
 
@@ -63,7 +64,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (30 total, 1 thin omitted)
+## Communities (31 total, 1 thin omitted)
 
 ### Community 0 - "CLAUDE.md"
 Cohesion: 0.22
@@ -74,8 +75,8 @@ Cohesion: 0.09
 Nodes (6): One-off/special-event callers don't pass event/posts_history -- must     behave, pizza is served every day, so it must not attach on every event's     'today' po, A filename that contains BOTH an event keyword and a food keyword     (e.g. poke, test_find_food_photo_excludes_already_chosen_main_photo(), test_find_food_photo_gates_occasional_keyword_to_one_day_per_week(), test_find_photo_without_event_keeps_old_behavior()
 
 ### Community 2 - "classify_photos.py"
-Cohesion: 0.08
-Nodes (16): manual_kind(), needs_classification(), pool_claimed(), classify_photos.py - Filename-convention helpers for photo handling.  No vision, vibe'/'spotlight' if the filename carries that override suffix, else None., True if this filename's stem contains a keyword from     config.EVENT_PHOTO_KEYW, False if the filename already carries an explicit override signal,     or isn't, The photo's real capture time, or None. Never falls back to mtime.      Use this (+8 more)
+Cohesion: 0.14
+Nodes (12): manual_kind(), needs_classification(), pool_claimed(), classify_photos.py - Filename-convention helpers for photo handling.  No vision, vibe'/'spotlight' if the filename carries that override suffix, else None., True if this filename's stem contains a keyword from     config.EVENT_PHOTO_KEYW, False if the filename already carries an explicit override signal,     or isn't, The photo's real capture time, or None. Never falls back to mtime.      Use this (+4 more)
 
 ### Community 3 - "Backyard Brew — Weekly Social Content Workflow"
 Cohesion: 0.18
@@ -146,8 +147,8 @@ Cohesion: 0.50
 Nodes (3): Deliver, in this order, Do this, If Gemini keeps failing
 
 ### Community 20 - "Caption Voice Rules"
-Cohesion: 0.25
-Nodes (7): Caption Voice Rules, Facebook vs Instagram must be genuinely different posts, not repurposed copies, Give real information, not just hype, Money language: win big yes, gambling no, Rotate the tone, not just the opener (added 2026-08-09), Structure and warmth (Micah's call, 2026-08-09), When Micah asks for a revision (added 2026-08-09)
+Cohesion: 0.40
+Nodes (4): Caption Voice Rules, Facebook vs Instagram must be genuinely different posts, not repurposed copies, Give real information, not just hype, Money language: win big yes, gambling no
 
 ### Community 22 - "photos.md"
 Cohesion: 0.20
@@ -169,6 +170,10 @@ Nodes (9): All day: stories, Every Day, First hour after each post: reply to com
 Cohesion: 0.20
 Nodes (9): 1. Drop in this week's photos (5 min), 2. Write the week's posts (10 min), 3. Schedule everything in Meta Business Suite (30 min), 4. Google Business Profile (10 min), 5. Reviews (5 min), 6. Ask what to work on (5 min, optional), 7. Send it to Micah (1 min), Every Week (+1 more)
 
+### Community 27 - "Backyard Brew — Social Media & Online Presence"
+Cohesion: 0.17
+Nodes (4): Video files (iPhones drop these alongside camera-roll photos) are     never a st, Must not fall back to mtime: a fresh clone would date the whole     backlog as ', test_needs_classification_skips_video_files(), test_read_exif_time_returns_none_without_exif()
+
 ### Community 28 - "Vendor_Communication_Templates_63fdc6dc.md"
 Cohesion: 0.40
 Nodes (4): 1. The Rundown — send when someone asks for more info or to be in the market, 2. Polite Decline — similar vendor already booked for this event, 3. Vendor Spots Full — waitlist reply, 4. Confirmed Vendor Info Sheet — send a few days before the event
@@ -178,19 +183,19 @@ Cohesion: 0.20
 Nodes (9): All day: stories, Every Day, First hour after each post: reply to comments, How to do it right, Morning: share the 11am post to Facebook groups, The daily checklist, The line you write above it matters most, Which groups for which post (+1 more)
 
 ## Knowledge Gaps
-- **201 isolated node(s):** `Structure and warmth (Micah's call, 2026-08-09)`, `Money language: win big yes, gambling no`, `Give real information, not just hype`, `Facebook vs Instagram must be genuinely different posts, not repurposed copies`, `Rotate the tone, not just the opener (added 2026-08-09)` (+196 more)
+- **198 isolated node(s):** `Before writing anything`, `11:00am: the day's main post`, `2:30pm: highlight, recap, or filler that ties in`, `7:00pm: teaser for tomorrow`, `7pm the night before: make them want it` (+193 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **What connects `Structure and warmth (Micah's call, 2026-08-09)`, `Money language: win big yes, gambling no`, `Give real information, not just hype` to the rest of the system?**
-  _230 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `Before writing anything`, `11:00am: the day's main post`, `2:30pm: highlight, recap, or filler that ties in` to the rest of the system?**
+  _227 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `test_generate_captions.py` be split into smaller, more focused modules?**
   _Cohesion score 0.08695652173913043 - nodes in this community are weakly interconnected._
 - **Should `classify_photos.py` be split into smaller, more focused modules?**
-  _Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.14285714285714285 - nodes in this community are weakly interconnected._
 - **Should `generate_captions.py` be split into smaller, more focused modules?**
   _Cohesion score 0.10317460317460317 - nodes in this community are weakly interconnected._
 - **Should `_pick_pool_photo` be split into smaller, more focused modules?**
