@@ -219,51 +219,6 @@
     "ast_hash": "c6a739dcc4f1ae44c8e2bf2f8ee05a53",
     "semantic_hash": ""
   },
-  "docs/superpowers/plans/2026-07-06-content-variety-expansion.md": {
-    "mtime": 1783367430.1871104,
-    "ast_hash": "2a25d71e0a2c78415a71db233e9891d6",
-    "semantic_hash": ""
-  },
-  "docs/superpowers/plans/2026-07-09-manual-posting-and-authentic-captions.md": {
-    "mtime": 1783651483.6669252,
-    "ast_hash": "cc88cd96b504918a0fe3230649becd09",
-    "semantic_hash": ""
-  },
-  "docs/superpowers/plans/2026-07-10-event-photo-pool.md": {
-    "mtime": 1783730388.3680918,
-    "ast_hash": "0153eb31837303ab80ad97a5ef2c4d11",
-    "semantic_hash": ""
-  },
-  "docs/superpowers/plans/2026-07-10-premium-flyer-renderer.md": {
-    "mtime": 1783665791.6007564,
-    "ast_hash": "f62ab7bae458b886d5edad71a6966396",
-    "semantic_hash": ""
-  },
-  "docs/superpowers/specs/2026-07-06-content-variety-expansion-design.md": {
-    "mtime": 1783366935.100757,
-    "ast_hash": "62ee7d3fa66ab8b8b0f77b19a6bcb1f3",
-    "semantic_hash": ""
-  },
-  "docs/superpowers/specs/2026-07-09-manual-posting-and-authentic-captions-design.md": {
-    "mtime": 1783650838.1339736,
-    "ast_hash": "fd660dc5741abea1cb1ac09d6f6fa4d4",
-    "semantic_hash": ""
-  },
-  "docs/superpowers/specs/2026-07-10-event-photo-pool-design.md": {
-    "mtime": 1783707953.9064546,
-    "ast_hash": "3c7121ffdbb8afd6031cf83b70174118",
-    "semantic_hash": ""
-  },
-  "docs/superpowers/specs/2026-07-10-flyer-format-and-decoration-design.md": {
-    "mtime": 1783700077.8939457,
-    "ast_hash": "80f0deeac20964deb169fb4c3618c698",
-    "semantic_hash": ""
-  },
-  "docs/superpowers/specs/2026-07-10-premium-flyer-renderer-design.md": {
-    "mtime": 1783665453.620054,
-    "ast_hash": "b6832b8c0c3d964f903db89791bd94c0",
-    "semantic_hash": ""
-  },
   "photos/README.txt": {
     "mtime": 1783352041.6205971,
     "ast_hash": "e17f956075ae563177c3983e1d216526",
@@ -499,21 +454,6 @@
     "ast_hash": "f99521a5243cead2f6a101c861884044",
     "semantic_hash": ""
   },
-  "photos/IMG_7608.JPG": {
-    "mtime": 1767740451.0,
-    "ast_hash": "e9b94ee61461cf252beff74999f7e8a0",
-    "semantic_hash": ""
-  },
-  "photos/IMG_7610.JPG": {
-    "mtime": 1767740463.0,
-    "ast_hash": "65f024f3651b7dbe5e9835e7de8a0e9d",
-    "semantic_hash": ""
-  },
-  "photos/IMG_7611.JPG": {
-    "mtime": 1767740471.0,
-    "ast_hash": "01fa2db87f64b658b49c2d6f673d1169",
-    "semantic_hash": ""
-  },
   "photos/IMG_7625_vibe.JPG": {
     "mtime": 1768065249.0,
     "ast_hash": "d1e7ec085507b938660708a0e8febd54",
@@ -659,11 +599,6 @@
     "ast_hash": "5349992068f4769608152e9d19fe37dc",
     "semantic_hash": ""
   },
-  "photos/IMG_8306.JPG": {
-    "mtime": 1781053844.0,
-    "ast_hash": "62add54b5cbb6b3938afee629cfc7bfa",
-    "semantic_hash": ""
-  },
   "photos/IMG_8323_vibe.JPG": {
     "mtime": 1781353829.0,
     "ast_hash": "e19513a15b6e26713f149402cc510d05",
@@ -677,11 +612,6 @@
   "photos/IMG_8332_vibe.JPG": {
     "mtime": 1781562505.0,
     "ast_hash": "ebaa22a2425806e51df02afcc8fc37b5",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8489.JPG": {
-    "mtime": 1782261928.0,
-    "ast_hash": "d6bdc1049a0f8e893bb176447e29a33b",
     "semantic_hash": ""
   },
   "photos/IMG_8506_vibe.JPG": {
@@ -882,36 +812,6 @@
   "photos/IMG_8782_vibe.JPG": {
     "mtime": 1783539333.0,
     "ast_hash": "0ddae5be30c5615e6370f6934d9e3dbe",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8805.JPG": {
-    "mtime": 1783473487.0,
-    "ast_hash": "a87e6d6223ab650363cb5d21f1b7f8f1",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8809.JPG": {
-    "mtime": 1783539333.329783,
-    "ast_hash": "0a5deb15ca8d2accb1b71a31dc33c43d",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8810.JPG": {
-    "mtime": 1783473491.0,
-    "ast_hash": "fc3301bfadb031bb4ca7659da227cc34",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8814.JPG": {
-    "mtime": 1783473516.0,
-    "ast_hash": "603642bd72fcdf28229561e32e9d00e2",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8815.JPG": {
-    "mtime": 1783473516.0,
-    "ast_hash": "b20cfb4bbc0f331b0c7be51c87b55373",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8817.JPG": {
-    "mtime": 1783473533.0,
-    "ast_hash": "e1011615b9e369f76e44bd0a0e60b351",
     "semantic_hash": ""
   },
   "photos/IMG_8824_vibe.JPG": {
@@ -1195,8 +1095,8 @@
     "semantic_hash": ""
   },
   "playbook/3-EVERY-DAY.md": {
-    "mtime": 1785275478.1022935,
-    "ast_hash": "8b14aeec0bc666034ffa6425a758b9b0",
+    "mtime": 1785966064.2681184,
+    "ast_hash": "38112a7a308431dd7d494f886d19e10f",
     "semantic_hash": ""
   },
   "playbook/4-EVERY-WEEK.md": {
@@ -1205,83 +1105,33 @@
     "semantic_hash": ""
   },
   "playbook/pdf/1-START-HERE.pdf": {
-    "mtime": 1785286036.0891416,
-    "ast_hash": "9ca3e7cac3db0be31695f5b041c4b923",
+    "mtime": 1785966064.2726998,
+    "ast_hash": "5d58e8d6f0c23c1ab556bce185712f13",
     "semantic_hash": ""
   },
   "playbook/pdf/2-MAKE-A-GRAPHIC.pdf": {
-    "mtime": 1785286036.3255305,
-    "ast_hash": "d77c952339e6e6af099567b9a6a6041f",
+    "mtime": 1785966064.2755513,
+    "ast_hash": "b66f8ab301a7266633b800467a6a5132",
     "semantic_hash": ""
   },
   "playbook/pdf/3-EVERY-DAY.pdf": {
-    "mtime": 1785286036.46188,
-    "ast_hash": "b9e2111abfbdb39b2cb5dede5a19d473",
+    "mtime": 1785966064.27766,
+    "ast_hash": "2d3ccab7194de51fc61b10a62f4ecb12",
     "semantic_hash": ""
   },
   "playbook/pdf/4-EVERY-WEEK.pdf": {
-    "mtime": 1785286036.523077,
-    "ast_hash": "6d91eef0ebb3e4f83b53ed000a58834e",
+    "mtime": 1785966064.27942,
+    "ast_hash": "6294e98cd36f47b3b6659d35f63ab8fb",
     "semantic_hash": ""
   },
   "vendor-market/vendor_sign_in_sheet.pdf": {
-    "mtime": 1785430752.2595272,
-    "ast_hash": "07ba337a6271c2cd97cc65568681bca1",
+    "mtime": 1786028793.2941954,
+    "ast_hash": "a3206ebcdb37c0db5d1162c8fa954e12",
     "semantic_hash": ""
   },
   "assets/logo/logo_icon_transparent.png": {
     "mtime": 1784001473.003295,
     "ast_hash": "1bf45a0b909d2192655fd9b5756514b2",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8860.JPG": {
-    "mtime": 1783734776.0,
-    "ast_hash": "5fea414c357991a9b46c416a0ffa6248",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8863.JPG": {
-    "mtime": 1783734858.0,
-    "ast_hash": "b69c4da9e0bcb6dbc2c1d766883ea8e6",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8864.JPG": {
-    "mtime": 1783734859.0,
-    "ast_hash": "a3780a94dc229eea79c1c13c91e33815",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8865.JPG": {
-    "mtime": 1783734859.0,
-    "ast_hash": "334b522b6ca320fa57c3cef7a6b476cc",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8866.JPG": {
-    "mtime": 1783734863.0,
-    "ast_hash": "a70f346223994484dca541ce3b9042df",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8867.JPG": {
-    "mtime": 1783734864.0,
-    "ast_hash": "a1fc2d37e1e397be65a4faed65f292bd",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8869.JPG": {
-    "mtime": 1783736488.0,
-    "ast_hash": "eaa5b4c603979755a90b8f3bf884e928",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8875.JPG": {
-    "mtime": 1783736511.0,
-    "ast_hash": "edd3c30fcbaf5cc2a310310f802a94c6",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8877.JPG": {
-    "mtime": 1783736523.0,
-    "ast_hash": "4a8b0e853f319c74ad31431daf21676d",
-    "semantic_hash": ""
-  },
-  "photos/IMG_8878.JPG": {
-    "mtime": 1783736523.0,
-    "ast_hash": "bced69bb03a0c719fceb5dbebb72cfa6",
     "semantic_hash": ""
   },
   "photos/_generated/email-2year-anniversary-reminder.png": {
@@ -1355,13 +1205,13 @@
     "semantic_hash": ""
   },
   "graphify-out/converted/3-EVERY-DAY_5e2281ba.md": {
-    "mtime": 1785275514.3561032,
-    "ast_hash": "b1f71f37daf680475724e6e0f7b93031",
+    "mtime": 1786300768.34454,
+    "ast_hash": "46980b949f0ad8e4735db2837a101ea6",
     "semantic_hash": ""
   },
   "graphify-out/converted/4-EVERY-WEEK_dacbef1b.md": {
-    "mtime": 1785275514.4244115,
-    "ast_hash": "948f6d6b0f004bb6c6bfe21a50474d3f",
+    "mtime": 1786300768.4985473,
+    "ast_hash": "c189a334f026d5bb189d5b5bd34b7d54",
     "semantic_hash": ""
   },
   "graphify-out/converted/Vendor_Communication_Templates_63fdc6dc.md": {
@@ -1370,8 +1220,8 @@
     "semantic_hash": ""
   },
   "graphify-out/converted/vendor_sign_in_sheet_7e46fbee.md": {
-    "mtime": 1785611153.2316432,
-    "ast_hash": "816da6d0f87ac0937e2260e00e320c13",
+    "mtime": 1786300770.3642337,
+    "ast_hash": "5d8f42a2197e8996e89a99e940f5f5c7",
     "semantic_hash": ""
   },
   "photos/_retired/2026-07-23_market_art.png": {
@@ -1727,6 +1577,656 @@
   "vendor-market/vendor_map.png": {
     "mtime": 1785432330.6233625,
     "ast_hash": "7a82e6a384bf57a01846a6272a3bf6cc",
+    "semantic_hash": ""
+  },
+  "docs/plans/2026-07-06-content-variety-expansion.md": {
+    "mtime": 1785966089.5959475,
+    "ast_hash": "a5a62ad5aed99c5a6c538676436ee53a",
+    "semantic_hash": ""
+  },
+  "docs/plans/2026-07-09-manual-posting-and-authentic-captions.md": {
+    "mtime": 1785966089.5990825,
+    "ast_hash": "1c6fd4adbb80bae0c747cfebfd3901d9",
+    "semantic_hash": ""
+  },
+  "docs/plans/2026-07-10-event-photo-pool.md": {
+    "mtime": 1785966089.5990825,
+    "ast_hash": "0153eb31837303ab80ad97a5ef2c4d11",
+    "semantic_hash": ""
+  },
+  "docs/plans/2026-07-10-premium-flyer-renderer.md": {
+    "mtime": 1785966089.6021795,
+    "ast_hash": "0eef5ac9b15245c45870d31dfe0719fc",
+    "semantic_hash": ""
+  },
+  "docs/specs/2026-07-06-content-variety-expansion-design.md": {
+    "mtime": 1785966089.6021795,
+    "ast_hash": "47c1e8c91139466ef5f7483329df0f62",
+    "semantic_hash": ""
+  },
+  "docs/specs/2026-07-09-manual-posting-and-authentic-captions-design.md": {
+    "mtime": 1785966089.6041849,
+    "ast_hash": "00aa4dc958f0836c96a088802a5e3901",
+    "semantic_hash": ""
+  },
+  "docs/specs/2026-07-10-event-photo-pool-design.md": {
+    "mtime": 1785966089.6048248,
+    "ast_hash": "48a1fc2a135822823dce70be3989e22d",
+    "semantic_hash": ""
+  },
+  "docs/specs/2026-07-10-flyer-format-and-decoration-design.md": {
+    "mtime": 1785966089.6048248,
+    "ast_hash": "f23b1d9f7c1a4f7a4813965f6cb47d12",
+    "semantic_hash": ""
+  },
+  "docs/specs/2026-07-10-premium-flyer-renderer-design.md": {
+    "mtime": 1785966089.6048248,
+    "ast_hash": "f552aeaa51be5496d369d4a49f34fdfa",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/vendor_sign_in_sheet_2026-07-30_893d8061.md": {
+    "mtime": 1786300770.2446969,
+    "ast_hash": "0209762e86eb6f3d8891e4ef6688e0f5",
+    "semantic_hash": ""
+  },
+  "vendor-market/_archive/vendor_sign_in_sheet_2026-07-30.pdf": {
+    "mtime": 1786028723.585309,
+    "ast_hash": "07ba337a6271c2cd97cc65568681bca1",
+    "semantic_hash": ""
+  },
+  "photos/2026-06-09_pickleball.jpg": {
+    "mtime": 1785966089.6312032,
+    "ast_hash": "62add54b5cbb6b3938afee629cfc7bfa",
+    "semantic_hash": ""
+  },
+  "photos/2026-06-23_pickleball.jpg": {
+    "mtime": 1785966089.6495938,
+    "ast_hash": "d6bdc1049a0f8e893bb176447e29a33b",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-07_pickleball.jpg": {
+    "mtime": 1785966089.6697414,
+    "ast_hash": "a87e6d6223ab650363cb5d21f1b7f8f1",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-07_pickleball_action.jpg": {
+    "mtime": 1785966089.6875012,
+    "ast_hash": "fc3301bfadb031bb4ca7659da227cc34",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-07_pickleball_action_2.jpg": {
+    "mtime": 1785966089.7080243,
+    "ast_hash": "0a5deb15ca8d2accb1b71a31dc33c43d",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-07_pickleball_patio_vibe.jpg": {
+    "mtime": 1785966089.7213497,
+    "ast_hash": "e1011615b9e369f76e44bd0a0e60b351",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-07_pickleball_sunset.jpg": {
+    "mtime": 1785966089.7357621,
+    "ast_hash": "603642bd72fcdf28229561e32e9d00e2",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-07_pickleball_sunset_2.jpg": {
+    "mtime": 1785966089.7445934,
+    "ast_hash": "b20cfb4bbc0f331b0c7be51c87b55373",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-10_karaoke_bar_wide.jpg": {
+    "mtime": 1785966089.761474,
+    "ast_hash": "eaa5b4c603979755a90b8f3bf884e928",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-10_karaoke_birthday_spotlight.jpg": {
+    "mtime": 1785966089.7720194,
+    "ast_hash": "4a8b0e853f319c74ad31431daf21676d",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-10_karaoke_birthday_spotlight_2.jpg": {
+    "mtime": 1785966089.7810175,
+    "ast_hash": "bced69bb03a0c719fceb5dbebb72cfa6",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-10_karaoke_crowd.jpg": {
+    "mtime": 1785966089.791595,
+    "ast_hash": "a3780a94dc229eea79c1c13c91e33815",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-10_karaoke_crowd_2.jpg": {
+    "mtime": 1785966089.8017268,
+    "ast_hash": "334b522b6ca320fa57c3cef7a6b476cc",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-10_karaoke_crowd_3.jpg": {
+    "mtime": 1785966089.8108754,
+    "ast_hash": "a70f346223994484dca541ce3b9042df",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-10_karaoke_crowd_4.jpg": {
+    "mtime": 1785966089.817469,
+    "ast_hash": "a1fc2d37e1e397be65a4faed65f292bd",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-10_karaoke_singer.jpg": {
+    "mtime": 1785966089.8256915,
+    "ast_hash": "5fea414c357991a9b46c416a0ffa6248",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-10_karaoke_singer_2.jpg": {
+    "mtime": 1785966089.8350334,
+    "ast_hash": "b69c4da9e0bcb6dbc2c1d766883ea8e6",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-10_karaoke_singer_pink.jpg": {
+    "mtime": 1785966089.8440232,
+    "ast_hash": "edd3c30fcbaf5cc2a310310f802a94c6",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-13_bingo_cards_vibe.jpg": {
+    "mtime": 1785966089.8596704,
+    "ast_hash": "ede8c26ab244e78d7de99ed5afd9bc1a",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-13_bingo_crowd.jpg": {
+    "mtime": 1785966089.874478,
+    "ast_hash": "f530ecf641bec76a9a56e34b185efe9f",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-13_bingo_crowd_wide.jpg": {
+    "mtime": 1785966089.886117,
+    "ast_hash": "17ab5f181d9ca9fb674828eb38a8f0b1",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-13_bingo_crowd_wide_2.jpg": {
+    "mtime": 1785966089.8974314,
+    "ast_hash": "5a73dfbb14c5469dca10831df5deabef",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-13_bingo_host_spotlight.jpg": {
+    "mtime": 1785966089.913946,
+    "ast_hash": "69c78387214255ceca399ec284423954",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-27_bingo_bar_wide.jpg": {
+    "mtime": 1785966089.9274566,
+    "ast_hash": "ecb9e025ebc5dccd3d605b41af409598",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-27_bingo_bar_wide_2.jpg": {
+    "mtime": 1785966089.9406476,
+    "ast_hash": "ed996492d6f94e2630c97c45e6719a1b",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-27_bingo_bar_wide_3.jpg": {
+    "mtime": 1785966089.956751,
+    "ast_hash": "f2097fdff6590332018ce94c0d383c65",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-27_bingo_bar_wide_4.jpg": {
+    "mtime": 1785966089.970556,
+    "ast_hash": "d3269ad55db0e90264f01ee0eba8fb20",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-27_bingo_bar_wide_5.jpg": {
+    "mtime": 1785966089.985229,
+    "ast_hash": "c0df925867f6a0b976788267cc1264bc",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-27_bingo_bar_wide_6.jpg": {
+    "mtime": 1785966090.0152783,
+    "ast_hash": "4f09a173ca9df031ab75197d6c894b37",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-27_bingo_bar_wide_7.jpg": {
+    "mtime": 1785966090.0301695,
+    "ast_hash": "247d5706c9be8abfcd6ab366bb263eff",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-27_bingo_bar_wide_8.jpg": {
+    "mtime": 1785966090.0435789,
+    "ast_hash": "5528e4f0ec931aca5c8f4392a67328c4",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-27_bingo_bar_wide_9.jpg": {
+    "mtime": 1785966090.0540185,
+    "ast_hash": "b07e13ed5e21d07ea0bfa0e72ef421a8",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-27_bingo_crowd.jpg": {
+    "mtime": 1785966090.067669,
+    "ast_hash": "e0b9c6ad434f50f51e2d535aec209995",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-27_bingo_crowd_2.jpg": {
+    "mtime": 1785966090.0853114,
+    "ast_hash": "ff6f7f9207125de5c1f5dfd8a5e4e34c",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-27_bingo_crowd_3.jpg": {
+    "mtime": 1785966090.0968568,
+    "ast_hash": "07d9202bae8be892a2cafeaf016a4578",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-27_bingo_prizes_vibe.jpg": {
+    "mtime": 1785966090.1312165,
+    "ast_hash": "abd864cf36e7940a1818a5df917c63c8",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-27_bingo_table.jpg": {
+    "mtime": 1785966090.1462076,
+    "ast_hash": "842401146c6b67c968a7fd4c0f715a83",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-27_bingo_table_2.jpg": {
+    "mtime": 1785966090.1718984,
+    "ast_hash": "2ab6b25fa880b1f50b29ec981553b688",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-27_bingo_winner_prize.jpg": {
+    "mtime": 1785966090.1924484,
+    "ast_hash": "4390cfd6dbbe89c22ba8a489b92565bd",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-27_bingo_winner_spotlight.jpg": {
+    "mtime": 1785966090.2055671,
+    "ast_hash": "ebc7b7287086ce5b13765bda6d2f04ec",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-28_pickleball.jpg": {
+    "mtime": 1785966090.2255485,
+    "ast_hash": "e8818f58e3cf6103bb0099abdba3e28f",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-28_pickleball_2.jpg": {
+    "mtime": 1785966090.2426634,
+    "ast_hash": "b9a4421f71e2f73d0f7d1b5357a0ec1d",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-28_pickleball_3.jpg": {
+    "mtime": 1785966090.2538989,
+    "ast_hash": "aeb0025373c7aef6906f5376033bcb06",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-28_pickleball_4.jpg": {
+    "mtime": 1785966090.2784026,
+    "ast_hash": "82be7b56a1f911c2cc840c22195ffecf",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-28_pickleball_5.jpg": {
+    "mtime": 1785966090.3036294,
+    "ast_hash": "80245d9aee7f173c6db036aa24e8b2d2",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-30_jewelry_vendor_spotlight.jpg": {
+    "mtime": 1785966090.3249233,
+    "ast_hash": "e9281b674a2c55ccdfbd34c1b9783697",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-30_koozie_vendor_spotlight.jpg": {
+    "mtime": 1785966090.3446622,
+    "ast_hash": "7e8ff06b669fe7e9d96dd0a68c65c4e7",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-30_koozie_vendor_spotlight_2.jpg": {
+    "mtime": 1785966090.3638082,
+    "ast_hash": "ec6bb8098fe7c98032982f6159cbf738",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-30_koozie_vendor_spotlight_3.jpg": {
+    "mtime": 1785966090.3817694,
+    "ast_hash": "97685b8ab0d9a0229fc01c74a22de7b1",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-30_market_bar_crowd.jpg": {
+    "mtime": 1785966090.396019,
+    "ast_hash": "f0626b98a4993cdbea22a425eaacc435",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-30_market_bar_crowd_2.jpg": {
+    "mtime": 1785966090.4160254,
+    "ast_hash": "14ff0f6b1b18e1cec5bbb80380d2d6c0",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-30_market_field_vibe.jpg": {
+    "mtime": 1785966090.4387782,
+    "ast_hash": "6a7aa146ac6afd0f3ec2bdec941517d8",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-30_market_field_vibe_2.jpg": {
+    "mtime": 1785966090.4530509,
+    "ast_hash": "09b3275974d5c1fc713a762724e50c03",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-30_market_field_vibe_3.jpg": {
+    "mtime": 1785966090.467595,
+    "ast_hash": "f618426c8d9ff612f3c280276be1a1c7",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-30_market_field_vibe_4.jpg": {
+    "mtime": 1785966090.4876573,
+    "ast_hash": "abf5415c5cabac84d56fdbd248a38f06",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-30_market_field_vibe_5.jpg": {
+    "mtime": 1785966090.5051847,
+    "ast_hash": "9ee4bd789690d301fff368cf0fffc812",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-30_market_flowers_vibe.jpg": {
+    "mtime": 1785966090.5293036,
+    "ast_hash": "3815f2ef514ce1b8846823471841af17",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-30_market_setup_vibe.jpg": {
+    "mtime": 1785966090.5447285,
+    "ast_hash": "0aa959c101db4ab3f9288e8aefb0c408",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-30_market_setup_vibe_2.jpg": {
+    "mtime": 1785966090.56475,
+    "ast_hash": "36547d0a861360ae34f51846a404ce06",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-30_market_setup_vibe_3.jpg": {
+    "mtime": 1785966090.5800288,
+    "ast_hash": "43a368c2efd5f5c7816fab33b3db1869",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-30_market_vendor.jpg": {
+    "mtime": 1785966090.5974088,
+    "ast_hash": "a5ed6f4096f1b5a4415b074f8e02986a",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-30_market_vendor_2.jpg": {
+    "mtime": 1785966090.6133435,
+    "ast_hash": "839c674a8674aa47fd11817d9e81b8f6",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-30_permanentjewelry_vendor_spotlight.jpg": {
+    "mtime": 1785966090.6287897,
+    "ast_hash": "e1a9afdff855297d0c1a50eb916fe557",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-30_seasoning_vendor_spotlight.jpg": {
+    "mtime": 1785966090.6527026,
+    "ast_hash": "2f5436dc4e8bf6d66c5fdfe0ed71f8f0",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-30_seasoning_vendor_spotlight_2.jpg": {
+    "mtime": 1785966090.6673732,
+    "ast_hash": "5eab2ba2e5214b700d7672d56a491f3a",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-30_vendor_spotlight.jpg": {
+    "mtime": 1785966090.677879,
+    "ast_hash": "50f4dc0a19a5a2783225f5ac5f4877b7",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-30_vendor_spotlight_2.jpg": {
+    "mtime": 1785966090.702849,
+    "ast_hash": "dd056e8e9c5772824d4b236ce150d88a",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-30_vendor_spotlight_3.jpg": {
+    "mtime": 1785966090.7182503,
+    "ast_hash": "19c6a2aef7b0eee15ed976e1b774837f",
+    "semantic_hash": ""
+  },
+  "photos/2026-07-30_vendor_spotlight_pair.jpg": {
+    "mtime": 1785966090.732654,
+    "ast_hash": "a1963831d60e21c56cdae908e66b4a27",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9264.JPG": {
+    "mtime": 1785802883.0,
+    "ast_hash": "9804c27c0f673dc3c5256f54f1b0f361",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9266.JPG": {
+    "mtime": 1785802889.0,
+    "ast_hash": "3d6750a71341f96a6b925c36d73c0bc2",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9267.JPG": {
+    "mtime": 1785802899.0,
+    "ast_hash": "ac83b5342a36bcf76ba8a1353c770d31",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9268.JPG": {
+    "mtime": 1785802915.0,
+    "ast_hash": "664f9141ea4abca1093f2eb1d856e0d6",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9269.JPG": {
+    "mtime": 1785802916.0,
+    "ast_hash": "4d326fe6da47218d2f64ba29f8823137",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9271.JPG": {
+    "mtime": 1785802937.0,
+    "ast_hash": "903f7a977b14307d87c7fd871da45642",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9274.JPG": {
+    "mtime": 1785806179.0,
+    "ast_hash": "16f4c682e8567fe2797f2fa21b86d52b",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9278.JPG": {
+    "mtime": 1785806204.0,
+    "ast_hash": "fc91822996a1860c5f8068c2304d3462",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9285.JPG": {
+    "mtime": 1785894082.0,
+    "ast_hash": "74c27f9626c363b914efcfb5e1568557",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9286.JPG": {
+    "mtime": 1785894082.0,
+    "ast_hash": "8c0cb9e0e1a774c7fb935b59e39595f7",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9287.JPG": {
+    "mtime": 1785894092.0,
+    "ast_hash": "8c2a422399d851140cffbe78523514b2",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9288.JPG": {
+    "mtime": 1785894105.0,
+    "ast_hash": "9ccbcb70a7c8b2c8faa0bc443521f827",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9291.JPG": {
+    "mtime": 1785972669.0,
+    "ast_hash": "269df49bc1e9ae81666d979637fd7831",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9292.JPG": {
+    "mtime": 1785972670.0,
+    "ast_hash": "b90040f4ac19a44645f5257c88ddfd19",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9293.JPG": {
+    "mtime": 1785972678.0,
+    "ast_hash": "7d41401ca12a72ae23eeadd705c136a0",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9294.JPG": {
+    "mtime": 1785972680.0,
+    "ast_hash": "4ee9044103dd9331dbddc77ee9a6c3cb",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9297.JPG": {
+    "mtime": 1786049049.0,
+    "ast_hash": "938e82c0ae1d90e837ba4412c1ad1aec",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9298.JPG": {
+    "mtime": 1786049050.0,
+    "ast_hash": "fccb086171092b7301bed1bad0af8edf",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9301.JPG": {
+    "mtime": 1786049079.0,
+    "ast_hash": "bedd02fc504b730a4424d1ce2c019a15",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9302.JPG": {
+    "mtime": 1786049084.0,
+    "ast_hash": "d6fba6ac6a5d0dc97bbbf94af2de1789",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9313.JPG": {
+    "mtime": 1786059269.0,
+    "ast_hash": "3d008643c599747637a56bc6023ef384",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9314.JPG": {
+    "mtime": 1786059294.0,
+    "ast_hash": "505787160c63c16c5b2f9f68b12d889f",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9315.JPG": {
+    "mtime": 1786059294.0,
+    "ast_hash": "9a0bf00a74c5abe067cd3c728ade6238",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9317.JPG": {
+    "mtime": 1786059298.0,
+    "ast_hash": "d4fd042c4e08284dcbb568f4810dc81f",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9318.JPG": {
+    "mtime": 1786059302.0,
+    "ast_hash": "81a320db225f51e8aa3aef12b2aa9a66",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9320.JPG": {
+    "mtime": 1786059304.0,
+    "ast_hash": "2d72b3349dcf5eb3359539d25d1e9afb",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9321.JPG": {
+    "mtime": 1786059304.0,
+    "ast_hash": "f7ffdc82b1ffc4918eb9c1aeae652217",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9322.JPG": {
+    "mtime": 1786059307.0,
+    "ast_hash": "446891995ef4d07edbd3c312a60558ac",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9323.JPG": {
+    "mtime": 1786059312.0,
+    "ast_hash": "fae31ba73a77d87e6fcecbda7931acdf",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9324.JPG": {
+    "mtime": 1786059325.0,
+    "ast_hash": "17b95f3176f64a700e3461e99084418e",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9327.JPG": {
+    "mtime": 1786059330.0,
+    "ast_hash": "c0d52573db966b9c6c1237822a77135b",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9331.JPG": {
+    "mtime": 1786062197.0,
+    "ast_hash": "51c9feee5f20baef65c0ac30d3500291",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9332.JPG": {
+    "mtime": 1786062197.0,
+    "ast_hash": "e1dcd3a2ce53deeea37c98f8bed53b51",
+    "semantic_hash": ""
+  },
+  "photos/_generated/vendors-wanted-poster.png": {
+    "mtime": 1786136412.3549423,
+    "ast_hash": "bb3f3323e0074f31c9b3e846618d6444",
+    "semantic_hash": ""
+  },
+  "photos/flagbackdrop_group_vibe.jpg": {
+    "mtime": 1785966090.8966248,
+    "ast_hash": "1ad884569f55de59bbebb870097cde1c",
+    "semantic_hash": ""
+  },
+  "photos/flagbackdrop_vibe.jpg": {
+    "mtime": 1785966090.9065073,
+    "ast_hash": "9f17b8da37be63c0dfdf1773da470209",
+    "semantic_hash": ""
+  },
+  "photos/flagbackdrop_vibe_2.jpg": {
+    "mtime": 1785966090.9173794,
+    "ast_hash": "71fc6cd29033e384f50349c23528168a",
+    "semantic_hash": ""
+  },
+  "photos/flagbackdrop_vibe_3.jpg": {
+    "mtime": 1785966090.9305792,
+    "ast_hash": "d2993b4648bf2ef4c66c6e4df47c59ce",
+    "semantic_hash": ""
+  },
+  "photos/joshberton_logo_alt_art.png": {
+    "mtime": 1785966090.93766,
+    "ast_hash": "cd05f421b506916eaf8f368803bc2c30",
+    "semantic_hash": ""
+  },
+  "photos/staff_spotlight.jpg": {
+    "mtime": 1785966090.9781978,
+    "ast_hash": "371cf63ca4e77851d5fbd232f0f18617",
+    "semantic_hash": ""
+  },
+  "photos/tacos_fresh.jpg": {
+    "mtime": 1785966090.9876733,
+    "ast_hash": "e9b94ee61461cf252beff74999f7e8a0",
+    "semantic_hash": ""
+  },
+  "photos/tacos_fresh_2.jpg": {
+    "mtime": 1785966090.9945943,
+    "ast_hash": "65f024f3651b7dbe5e9835e7de8a0e9d",
+    "semantic_hash": ""
+  },
+  "photos/tacos_fresh_3.jpg": {
+    "mtime": 1785966091.0003192,
+    "ast_hash": "01fa2db87f64b658b49c2d6f673d1169",
+    "semantic_hash": ""
+  },
+  "photos/taproom_crowd_vibe.png": {
+    "mtime": 1785966091.0044098,
+    "ast_hash": "4b64dc4425454d6634ff9f429c75bc30",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9195.MOV": {
+    "mtime": 1785966090.8201609,
+    "ast_hash": "7ad42fee03951bbd87d92fe0c421007e",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9196.MOV": {
+    "mtime": 1785966090.879718,
+    "ast_hash": "33e6971584cb2492192f2401d1a18360",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9272.MOV": {
+    "mtime": 1785804027.0,
+    "ast_hash": "39ee657d77504b116a54fff51a8f749b",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9300.MOV": {
+    "mtime": 1786049064.0,
+    "ast_hash": "3547e4964aa7f836080a3be79d3215be",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9329.MOV": {
+    "mtime": 1786059334.0,
+    "ast_hash": "2da769c2f31ffabbcc9a665258485cdb",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9333.MOV": {
+    "mtime": 1786062231.0,
+    "ast_hash": "5a90aec4bf1822addffb9d025a004793",
     "semantic_hash": ""
   }
 }

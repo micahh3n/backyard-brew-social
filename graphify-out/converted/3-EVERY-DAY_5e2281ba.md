@@ -21,7 +21,7 @@ Good:
 Pickleball tournament out at Backyard Brew tonight if anyone's looking for
 something to do. Free to play.
 
-They do 10 rounds of bingo Mondays out on Sand Acres. Kids can play too.
+They do 9 rounds of bingo Mondays out on Sand Acres. Kids can play too.
 Bad:
 Join us tonight at Backyard Brew for an unforgettable evening! 🍻🎉
 ### Which groups for which post

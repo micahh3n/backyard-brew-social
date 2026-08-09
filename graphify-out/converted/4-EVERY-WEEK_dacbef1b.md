@@ -16,6 +16,10 @@ the time, the photo, and anyone to tag
 Every event gets hit three times before it starts, and the three posts are written together as one build:
 
 Reels are not part of this. We film those ourselves.
+Got a big event coming up? Tell Claude once and it handles the whole build-up. Something like:
+Our 2 year anniversary party is Saturday August 22. Start promoting it now.
+From then on, every Sunday until the event, the posts ramp automatically. Three weeks out it just announces the date. Two weeks out it starts revealing things one at a time. The last week it counts down. You do not have to remember where in the build-up you are.
+It will also hand you a short off the feed list at the end each week: make the Facebook Event, which groups to share it in, who to ask to reshare it. Do those. They are usually worth more than the posts.
 Read them before scheduling. Change anything that does not sound like us. It is faster to fix a line now than to notice it live on Wednesday.
 Want something different? Just say so:
 Make Tuesday's posts push the pickleball tournament harder.
