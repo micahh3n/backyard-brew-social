@@ -12,7 +12,10 @@ work outside that automated pipeline too, so tone stays consistent.
   included — that's the one thing that never varies.
 - **Vary the opening move.** Don't default to a rhetorical question every time — mix in a flat
   statement, a fragment, an aside, an exclamation. Don't repeat the same opening style two posts
-  in a row.
+  in a row. Never open with a generic hype line: "Get ready for an amazing night," "Join us for
+  an unforgettable experience," "We're excited to announce," "Don't miss out on this incredible
+  event," "Come on down and have some fun." These read as AI-generated on sight (confirmed
+  2026-08-09, cross-checked against a rewording rulebook Micah had ChatGPT write).
 - **Short-form failure mode (caught 2026-07-12):** cutting captions down to the 30-70 word FB
   length makes it easy to collapse every post into the same "[Time]: [Event]. [Details]." skeleton
   — the brevity itself becomes the template. Before finalizing a batch, read the openers of every
@@ -34,7 +37,10 @@ work outside that automated pipeline too, so tone stays consistent.
   mechanism instead of reusing "tag your ___" every time — mix across: tag-a-friend, a
   comment-bait question, a save-worthy specific detail, a genuinely quotable line, a "share this
   if" line. Pick whichever fits this specific post best, and pick a different one than recent
-  posts used for this same event.
+  posts used for this same event. **Vary the literal wording too, not just which mechanism type
+  gets used** — two posts can both be "tag a friend" mechanically and still feel repetitive if
+  they're both phrased "tag whoever...". Never end two captions in the same batch with "comment
+  below," "let us know," or "tag your friends" verbatim.
 - **Every post, hook or not, needs a concrete same-day reason to physically show up, plus real
   urgency/scarcity wording — not just brand-awareness filler (Micah's call, 2026-07-26).** A
   deal, a deadline, a prize, something that expires today, "fills up fast," "today only" — every
@@ -82,19 +88,75 @@ work outside that automated pipeline too, so tone stays consistent.
     rephrased.
   - **No pull-quote-sounding closer lines** — if a sentence reads like it was written to be
     screenshotted rather than said by a person, rewrite it plainer.
+  - **Soft-avoid list, not a hard ban (2026-08-09):** don't reach for these as the lazy default —
+    "unforgettable experience," "something for everyone," "you won't want to miss this," "good
+    times guaranteed," "bring your friends and make memories," "we're thrilled to," "mark your
+    calendar(s)," "it's going to be a night to remember," "the perfect way to," "come join us
+    for," "don't miss out," "good vibes," "an incredible evening," "fun for the whole family."
+    These are fine when they land naturally and aren't the easy reach-for-it choice — Micah's own
+    anniversary caption used "unforgettable" and "mark your calendar" and it was the best caption
+    of the batch. The bar is: did this phrase get chosen because it's genuinely the right words,
+    or because it's the generic thing every business caption says. Only the second case is wrong.
 - No filler. Every word earns its place. Fragmented sentences over full paragraphs.
 - Casual and warm, but keep spelling and grammar standard. No dropped word endings or slang
   contractions ("ya" for "you", "gonna", "y'all", etc.) — friendly doesn't mean informal
   spelling. Write like a real person texting, not a caricature of one.
 - **Emoji: every emoji is available, no approved list, no restrictions (confirmed by Micah
-  2026-07-28).** Pick whichever one actually matches the thing being described and the feeling
-  it should carry (🎤 karaoke, 🎱 pool, 🏓 pickleball, 🃏 poker, 🌭/🍕/🌮 the actual food, 🐕 the
-  leashed-pup line, 🎸/🎶 live music, and anything else that fits). They make the page read as a
-  person rather than a brand account, which is the point. **The only limit is volume: one or two
-  per post.** Stacked or spammed emoji is the single most obvious AI tell there is, and it undoes
-  the personability they were added for.
+  2026-07-28; volume increased 2026-08-09).** Pick whichever one actually matches the thing
+  being described and the feeling it should carry. Use more than the old one-or-two cap —
+  2-4 per post is normal now, more on a longer IG caption — spread across the caption's actual
+  beats (the hook, a mid-paragraph tone moment, the closer) rather than one lonely emoji stuck at
+  the top and nothing else. **Draw from the whole range, not a repeating handful.** Mix literal/
+  thematic emoji (🎤 karaoke, 🎱 pool, 🏓 pickleball, 🃏 poker, 🌭/🍕/🌮 the actual food, 🐕 the
+  leashed-pup line, 🎸/🎶 live music) with tone and reaction emoji that carry feeling rather than
+  naming an object (😂 🔥 👀 🙌 😅 😮‍💨 🥲, and whatever else genuinely fits the moment). If the same
+  4-5 emoji are showing up across most of a week's batch, that's the failure mode to catch, same
+  as a repeated phrase. **Still avoid stacking 3+ emoji back to back in a row** — that reads as
+  spam and is still the single most obvious AI tell there is — but running out of variety across
+  a batch is now the more common mistake to watch for, not overusing emoji in general.
 - Never post anything implying hours outside the real open hours (see the hours conflict note
   in the parent skill — confirm before publishing Sunday hours specifically).
+
+## Structure and warmth (Micah's call, 2026-08-09)
+
+Caught on a real batch: a caption can hit the 30-70 word Facebook target and
+still fail if it's written as one dense run-on paragraph. The word count and
+the "jumbled paragraph" problem are two separate failures — fixing one does
+not fix the other. Micah rewrote a caption himself and it's the bar to hit:
+
+- **Actual line breaks between beats, every time, on every post.** Not just
+  short overall, structured: a paragraph for the scene or hook, a paragraph
+  for the specific details, a paragraph for the CTA/share line. Never one
+  block of sentences run together with periods.
+- **At least one specific, textured, ownable detail per caption, not just an
+  accurate fact.** "35 acres of disc golf" is a fact. "Pulled more than a few
+  discs out of the pond on hole whatever" is a detail only this bar could
+  say. Reach for the second kind. Mine real specifics: the disc golf course's
+  pond hazard, the bingo prize table's actual texture, a regular's running
+  joke, the sound of the tap wall, whatever is true and specific rather than
+  generic bar-copy filler.
+- **Genuine warmth in the punctuation, scoped by post type (refined 2026-08-09).** Routine
+  recurring-event posts stay restrained: one exclamation point is usually enough, don't stack
+  them. Milestone and campaign posts can run hotter, several exclamation points across the
+  caption, the way Micah's own anniversary post did — that energy is earned by the occasion, not
+  the default everywhere. Emoji can cap the end of a paragraph/beat as an emotional punctuation
+  mark, not just decorate the opening hook line.
+- **A human closer, not just a CTA.** "We wouldn't be here without you"
+  lands differently than "send this to someone." Where it fits, end on
+  something that sounds like a person feeling something, with the
+  share/tag mechanism riding inside that same warmth rather than tacked on
+  as a separate instruction.
+- **Scope: this is a craft fix for every post, not a length license for every
+  post.** The specific example that prompted this (a 2-year-anniversary
+  post, ~140 words, full narrative arc) was deliberately written with
+  built-in emotion for a milestone/campaign moment — that length and that
+  much story is earned by the occasion, not the default. Routine recurring-
+  event posts (Bingo, Pickleball, Poker, etc.) still stay short and scannable
+  for a scrolling reader, still driving foot traffic and interaction as the
+  first priority — they just also need real line breaks and one genuine
+  specific detail instead of reading like a flat list of facts. Milestone and
+  campaign posts get more room to build an arc; everyday posts get the same
+  craft in less space.
 
 ## Money language: win big yes, gambling no
 
@@ -182,3 +244,33 @@ trimming for length, cut the flourish and keep the time.
   (this is a stylistic/cleanliness choice, not an algorithmic one — Meta has confirmed hashtag
   placement doesn't affect reach), rotating through the hashtag pool in the parent skill so the
   same set never repeats week to week.
+
+## Rotate the tone, not just the opener (added 2026-08-09)
+
+Beyond varying the first sentence, rotate which of these a caption leans on so the batch doesn't
+settle into one register: funny, curious, direct, playful, slightly competitive, conversational,
+teasing, community-focused, deal-focused. If the last couple posts used a question to open, don't
+reach for another question. If the last one leaned on urgency, let the next one lean on humor or
+specificity instead.
+
+## When Micah asks for a revision (added 2026-08-09)
+
+These are the ground rules for follow-up requests on a caption already delivered, not for the
+first draft:
+
+- **"Reword this"** — preserve the original meaning and facts exactly, improve flow and
+  naturalness, don't add information he didn't provide, don't reinvent it wholesale unless asked,
+  keep roughly the same length. If the original is already strong, make subtle improvements
+  rather than rewriting the whole thing.
+- **"Give me another one"** — a genuinely different version: different hook, different sentence
+  structure, different angle, different wording. Not the same caption with a few synonyms
+  swapped. Same underlying facts.
+- **"Shorter"** — actually cut length. Remove filler, repeated information, unnecessary
+  adjectives, generic hype. Keep the strongest hook and the facts that matter.
+- **"More interactive"** — make the reader actually do something: choose between two things,
+  guess, tag someone specific, take a side. Don't just tack "what do you think?" onto the end.
+- **"More hype"** — raise energy through shorter sentences, a stronger hook, competitive
+  language, real urgency and specific stakes. Do not turn it into stacked emoji and all-caps.
+- **"Give me options"** — 3 genuinely different versions, not 3 synonym-swapped copies of the
+  same one. Different hooks, different structures, different angles, different energy levels.
+  Lead with the strongest as option one.
