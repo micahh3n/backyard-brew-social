@@ -33,12 +33,20 @@ Settings → Collaborators before you go, and watch a real `/sync` succeed.
 - [ ] **Pick the Saturday and Sunday events.** Ranked options are in
       `references/growth-playbook.md`. Choose before you leave so he is
       executing a decision instead of making one
-- [ ] **Verify the website's Sunday hours.** The skill records it showing
-      Sunday as closed while the bar is open 11am to 7pm
+- [x] **Website's Sunday hours — resolved 2026-08-10.** The website itself
+      was fixed back in the 2026-08-04 theme update and has stayed correct
+      through later updates. The real open item now: **Yelp, Restaurantji,
+      and UDisc still show Sunday as closed**, and UDisc also has a stale
+      6:30am breakfast window and an "under construction" course flag. All
+      three need dad's own login — see `references/growth-playbook.md`
+      section 1 for the full list, plus a real 2026-08-04 Google Business
+      Profile audit (star rating, review count, wrong attributes, the
+      disc-golf-category strategy) that's now folded into that same file.
 - [ ] **Name the fourth employee** in `references/operations-reality.md`, or
       delete the placeholder line
-- [ ] **Run `/photos` on the backlog.** There are around 119 unnamed photos
-      sitting in `photos/`. Clear them before you go so he starts clean
+- [ ] **Run `/photos` on the backlog.** As of 2026-08-10 there are still
+      about 94 unnamed photos sitting in `photos/`. Clear them so he starts
+      clean
 
 ---
 

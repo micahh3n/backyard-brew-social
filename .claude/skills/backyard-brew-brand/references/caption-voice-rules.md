@@ -22,11 +22,13 @@ work outside that automated pipeline too, so tone stays consistent.
   post in a row. If more than two lead with a time-stamp/colon construction, or a teaser and its
   day-of post share sentence structure, rewrite. This applies doubly to teaser/day-of pairs for
   the same event, which sit one day apart and get compared directly.
-- Wisconsin identity is a real asset — every beer, wine, seltzer is 100% Wisconsin-made, zero
-  outside brands — but don't recite it as a fixed line every post. Work it in naturally, and
-  skip it entirely sometimes, the way a real person would.
-- **Wisconsin-only is non-negotiable.** Never name-drop or reference any non-Wisconsin brand,
-  chain, or product. Packers/Brewers/Green Bay references are welcome where natural.
+- Wisconsin identity is a real asset — the tap list is overwhelmingly Wisconsin-made — but don't
+  recite "100% Wisconsin, zero outside brands" as a literal fixed line every post (there's a
+  small documented Domestics exception, see the parent skill). Work the Wisconsin pride in
+  naturally, and skip it entirely sometimes, the way a real person would.
+- **Wisconsin-only is non-negotiable, except the two Domestics beers (Miller Lite, Corona
+  Extra).** Never name-drop or reference any other non-Wisconsin brand, chain, or product.
+  Packers/Brewers/Green Bay references are welcome where natural.
 - Promote the uniqueness: bar + disc golf + hiking, unlike anywhere else.
 - Events need FOMO, not generic "join us" energy — something you'd regret missing.
 - Membership plugs (Course $150/yr, Beer Club $200/yr) should show up often — but phrase them

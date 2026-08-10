@@ -114,6 +114,10 @@ EVENT_ANGLES = {
         "the backyard' / 'See you in the backyard' and overly polished ad language.",
     "Karaoke Night": "'Weekend starts NOW' energy.",
     "Pool Night": "Tournament angle -- beat the bartender, win a flight.",
+    "Packers Sundays": "SEASONAL (Sept-Jan only). Backyard-tailgate angle, not sports-bar angle -- a round on "
+        "the course before kickoff, the game outside, Wisconsin taps, tailgate food. Packers references welcome. "
+        "Kickoff time is NEVER fixed -- confirm that week's real time with the owner before naming one in a post; "
+        "if unconfirmed, write around 'gameday'/'kickoff' with no specific time rather than guessing.",
     "Wisconsin Spotlight": "Feature the specific drink named in key_details -- pure appreciation, no CTA pressure.",
     "Course & Trail Feature": "Feature the specific trail/course detail named in key_details -- outdoorsy pride angle.",
     "Weather Vibes": "Tie the specific weather named in key_details to disc golf/hiking/patio appeal.",
@@ -207,6 +211,10 @@ EVENT_PHOTO_KEYWORDS = {
     "Backyard Market & Brews": ["market", "vendor", "marketbrews"],
     "Karaoke Night": ["karaoke"],
     "Pool Night": ["pool"],
+    # Seasonal (Sept-Jan) -- see EVENT_ANGLES and recurring_events.csv for
+    # the kickoff-time-is-never-fixed rule. Any candid tagged with one of
+    # these keywords enters rotation the same as the other events.
+    "Packers Sundays": ["packers", "football", "tailgate", "gameday"],
 }
 
 # Food photos attach as a SECOND photo on the mapped event's "today" post
@@ -214,7 +222,9 @@ EVENT_PHOTO_KEYWORDS = {
 # served every day at the bar, so unlike the others it maps to every event
 # but only actually attaches on one rotating day per week -- see
 # OCCASIONAL_FOOD_KEYWORDS and generate_captions.find_food_photo().
-RECURRING_DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+# Sunday included for Packers Sundays (seasonal, Sept-Jan) -- tailgate food
+# fits the same pizza rotation the other six days already use.
+RECURRING_DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
 FOOD_PHOTO_KEYWORDS = {
     "hotdog": ["Bingo Night", "Pickleball Open Play"],

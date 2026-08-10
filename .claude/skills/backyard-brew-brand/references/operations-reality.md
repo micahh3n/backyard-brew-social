@@ -25,7 +25,7 @@ the marketing picture.
 | Thursday | Backyard Market & Brews | Performs. The community/vendor showcase |
 | Friday | Karaoke Night | Performs |
 | Saturday | Pool Night (evening) | Evening performs. **Morning through early afternoon is slow** unless something is scheduled |
-| Sunday | Nothing scheduled | **Chill day, no draw.** Wants to grow, has no event to grow around |
+| Sunday | Nothing weekly Feb-Aug; Packers Sundays Sept-Jan | **Chill day, no draw** outside football season. **Packers Sundays (seasonal, Sept-Jan) decided and built 2026-08-10** — live in `recurring_events.csv`. Kickoff time is deliberately never pre-set; confirm each week's real time before it goes in a post |
 
 ### The Tuesday/Wednesday diagnosis
 
@@ -44,7 +44,10 @@ nearby courts. See `growth-playbook.md`.
 
 1. **Saturday 11am to roughly 4pm.** The doors are open and the property is
    the best version of itself in daylight, and almost nobody is there.
-2. **Sunday, 11am to 7pm.** No event exists. No reason to drive out.
+2. **Sunday, 11am to 7pm.** No event exists Feb-Aug. Packers Sundays
+   (seasonal, Sept-Jan) fills this window and is live in
+   `recurring_events.csv` — kickoff time gets confirmed weekly, never
+   guessed.
 
 These are the two slots where inventing something new is the right answer
 rather than promoting harder. When someone asks for event ideas, assume they
@@ -62,14 +65,14 @@ Small crew. Plan around it.
   all social media posting, all graphics, and all review and comment
   responses. This entire playbook exists to replace him.
 - **The owner's wife (mom)**: helps sometimes, not every shift.
-- **Four other employees**, as of this snapshot:
+- **At least three other employees**, as of this snapshot (headcount may have
+  grown since — more hiring was planned):
   - One is brand new and still training.
   - One is excellent, well liked, and genuinely good with social media. The
     most realistic person to help with content.
   - One is a part-timer who is good at her job and pleasant, and who **does
     not want to be involved in the bar's social media.** Respect this. Never
     build a plan that depends on her being on camera or posting.
-  - (A fourth, no details recorded.)
 - **The owner's younger daughter**: occasional help. **Cooking and cleaning
   only. Not permitted to bartend.** Never suggest otherwise.
 - **More hiring is planned** after the son leaves.
@@ -137,8 +140,10 @@ say so rather than shipping it.
 
 ## Constraints to respect in any recommendation
 
-- **Wisconsin-only beverages, always.** No exceptions, no outside brands.
-  See the parent skill.
+- **Wisconsin-only beverages, with one documented exception:** the small
+  Domestics category (Miller Lite, Corona Extra). See the parent skill's
+  Facts section for exactly how to talk about it. Everything else stays
+  strictly Wisconsin.
 - **Hours cap what is possible.** Sunday closes around 7pm, so a Sunday
   concept has to work in daylight. Monday through Thursday the doors do not
   open until 4pm.

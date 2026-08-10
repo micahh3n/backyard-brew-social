@@ -111,9 +111,12 @@ designed over a real photograph, not an illustration of a bar.
 
 ## Rules that override the template
 
-- **Wisconsin only.** No non-Wisconsin brand may appear or be implied. If a
-  can or tap handle would be legible, specify that it is a Wisconsin product
-  or that labels are not readable.
+- **Wisconsin only, with one exception.** No non-Wisconsin brand may appear
+  or be implied, except Miller Lite or Corona Extra (the small, real
+  Domestics category — see the parent skill). Don't feature either as the
+  subject of a graphic. If a can or tap handle would be legible, specify
+  that it is a Wisconsin product (or one of those two) or that labels are
+  not readable.
 - **Never mention breakfast.** Discontinued 2026-07-26.
 - **Facts before flourish.** Times, prices, and details come from
   `recurring_events.csv` and the parent skill. Never guess a time to make a

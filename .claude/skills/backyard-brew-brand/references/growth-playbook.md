@@ -37,16 +37,57 @@ For a destination business in a suburb, the map pack beats everything else.
 Someone searching "things to do in Green Bay," "disc golf near me," or "bars
 with outdoor space Green Bay" decides from the map result, not the website.
 
-**Punch list, in order:**
+### Baseline, from a real audit (2026-08-04 — re-check periodically, don't assume it's still current forever)
 
-- [ ] **Hours are correct**, including Sunday. Verify against the parent
-      skill's hours, not the website.
+**4.7 stars, 79 reviews.** Primary category is **Bar and nothing else**.
+Hours are correct all 7 days on Google itself (Sunday 11am-7pm is right
+here — the problem is everywhere else, see below). Price range $10-20.
+Only 3 attributes on (wheelchair entrance, dine-in, takeout). **"Delivery"
+shows as enabled, which is wrong — the bar doesn't deliver.** **"Backyard
+Breakfast" is still sitting in the Menu highlights**, left over from before
+breakfast was discontinued (2026-07-26) — this is the one a customer could
+actually see and be wrong about. Google's own review keyword chips: disc
+golf mentioned 15 times, bingo 11, local beer 8, pinball 2.
+
+**Category order, locked (owner's call, 2026-08-10): Bar stays primary,
+permanently. The bar is where the money is made.** Disc golf course goes in
+as the top-priority secondary category, not a candidate to ever replace
+Bar as primary — don't suggest flipping primary to Disc golf course, no
+matter how secondary placement performs. This overrides the earlier idea of
+revisiting primary after 30 days; that's off the table.
+
+The disc-golf angle is still real and worth chasing as a secondary: ranked
+as a Bar, competing against Badger State (610 reviews), Bark & Brew (342),
+Oakley's (248) is close to unwinnable. Ranked as a disc golf course, the
+field is Pinecrest (59 reviews) and Baird Creek (45) — 79 reviews at 4.7
+stars would win that bracket outright as a secondary placement, which is
+exactly why it's worth having even though Bar stays primary.
+
+**Category setup: Bar (primary) → Disc golf course (top secondary) → Beer
+garden → Hiking area → Live music bar → Event venue** (the last four in
+whatever order GBP allows, disc golf specifically first among the
+secondaries since it's the one with a real bracket-winning case behind it).
+
+**Punch list, in order — items marked (2026-08-04) are the specific,
+already-found fixes from that audit, not hypothetical checks:**
+
+- [ ] **Hours are correct**, including Sunday. Already true on Google itself
+      (2026-08-04) — the fix needed is on the OTHER listings, not here. See
+      the directory list below.
+- [ ] **Delete "Backyard Breakfast" from Menu highlights** (2026-08-04) —
+      breakfast was discontinued 2026-07-26 and this is the one place it's
+      still visibly wrong to a customer.
+- [ ] **Check whether "Delivery" is genuinely enabled and turn it off**
+      (2026-08-04) — the bar doesn't deliver; a customer expecting delivery
+      is a bad experience, not just a metadata error.
 - [ ] **Special hours** set for holidays before they arrive.
-- [ ] **Categories.** Primary category matters most. "Bar" is probably right,
-      with secondary categories for the disc golf course, the trails, and
-      anything else that fits. Check what competitors rank under.
-- [ ] **Attributes** filled: outdoor seating, dog friendly, family friendly,
-      parking, restroom, accessibility. These feed filtered searches.
+- [ ] **Categories: Bar stays primary, permanently.** Add Disc golf course as
+      the top secondary, then Beer garden, Hiking area, Live music bar, Event
+      venue. See the category order note above — this is locked, not a
+      trial.
+- [ ] **Attributes** — only 3 are on today (2026-08-04). Add outdoor seating,
+      dog friendly, family friendly, parking, restroom, accessibility. These
+      feed filtered searches.
 - [ ] **Photos, weekly.** Profiles that get fresh photos outrank profiles that
       do not. Geotagged when possible. Cover the course, the trails, the tap
       wall, food, and events.
@@ -57,8 +98,19 @@ with outdoor space Green Bay" decides from the map result, not the website.
       is it kid friendly, how long does the course take, is the trail free.
 - [ ] **Products or services** listing memberships ($150/yr course, $200/yr
       beer club) and the $5 day pass.
-- [ ] **Every review answered.** Including the five-star ones. See
-      `reply-rules.md`.
+- [ ] **Every review answered.** Including the five-star ones (79 as of
+      2026-08-04, target ~15/month of new ones). See `reply-rules.md`.
+
+**Other listings still telling Google and customers the wrong thing
+(2026-08-04, needs dad's own login to each):**
+- **Yelp and Restaurantji both say Sunday Closed.** Same wrong-hours problem
+  as the old website, just on a different platform now.
+- **UDisc** (the disc golfer's first stop, 159 ratings at 3.8 — worth fixing
+  given the disc-golf-bracket strategy above) still lists a **6:30am
+  breakfast window** and flags the course as **"Under construction."** Both
+  wrong.
+- **Bing's** business description is still the old "Fitness, Food, & Fun!"
+  tagline from before the current brand voice.
 
 **Cadence after cleanup:** a few photos and one Google Post per week. It fits
 inside the Sunday session.
@@ -132,9 +184,13 @@ Rules and the group-matching table live in the printed daily sheet,
 
 ## 5. Website and AI search
 
-`backyard-brew.com` is current as of 2026-07-27. Historically the site showed
-Sunday as closed while the bar was open 11am to 7pm. **Verify this before
-assuming it is fixed.** A wrong Sunday listing costs an entire day of walk-ins.
+`backyard-brew.com` runs on a custom WordPress theme, actively maintained
+(v6.9.6 as of 2026-08-09). **The old Sunday-closed bug on the website itself
+is fixed** (shipped in v6.3, 2026-08-04, and confirmed still correct through
+several later updates) — don't send anyone chasing that on the site anymore.
+**The Sunday-hours problem now lives on the third-party listings instead**
+(Yelp, Restaurantji, UDisc) — see the Google Business Profile section above
+for the specific ones and what's wrong on each.
 
 **Traditional SEO priorities:**
 - LocalBusiness schema with the exact NAP (name, address, phone), hours, and
@@ -150,9 +206,15 @@ assuming it is fixed.** A wrong Sunday listing costs an entire day of walk-ins.
 Perplexity for "unique things to do in Green Bay." These systems quote
 specific, factual, self-contained sentences. Write pages that state facts
 plainly: what it is, where, hours, cost, how long the course takes, what makes
-it different. Vague marketing prose does not get cited. The "100% Wisconsin
-made, zero outside brands" fact is exactly the kind of specific, quotable
-claim these systems pick up.
+it different. Vague marketing prose does not get cited. A specific, quotable
+claim like "an almost entirely Wisconsin-made tap list" is exactly the kind of
+sentence these systems pick up — **but don't publish the literal "100%
+Wisconsin, zero outside brands" version as a fact-checkable statement.**
+There's a small, real Domestics exception (Miller Lite, Corona Extra — see
+the parent skill), and an AI system or a customer taking that claim at face
+value against the actual tap list is exactly the failure mode GEO content
+is supposed to avoid. Scope the claim ("nearly every beer on tap is
+Wisconsin-made") instead of overstating it.
 
 For an actual audit rather than a plan, the `claude-seo` skills are installed
 and can run a real technical and local audit against the live site.
@@ -198,7 +260,15 @@ can teach, so it costs more than the others.
 
 ### Sunday, 11am to 7pm
 
-**1. Packers Sundays (seasonal, September to January)**
+**DECIDED and BUILT 2026-08-10: Packers Sundays.** Owner's call. This is the
+concept — the options below are kept for context on why, not as still-open
+alternatives. Live in `recurring_events.csv` (a seasonal Sunday row,
+Sept-Jan only) and the `/sunday` command. **Kickoff time is deliberately
+left open** — it changes weekly with the NFL schedule, so the owner
+confirms the real time each week before it goes in a post rather than
+Claude guessing or reusing last week's.
+
+**1. Packers Sundays (seasonal, September to January) — chosen**
 In Green Bay this is not optional, it is the whole day. Frame it as a backyard
 tailgate rather than a sports bar: a round on the course before kickoff, the
 game outside, Wisconsin taps, tailgate food. It fills the exact window that is

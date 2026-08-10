@@ -67,6 +67,15 @@ and schedule logic. No CLI, no API calls, nothing auto-runs.
 is the fallback when Gemini cannot render text correctly. Setup:
 `pip install -r requirements.txt && playwright install chromium`.
 
+## Other skills worth reaching for
+
+Beyond `backyard-brew-brand`, these live in `.claude/skills/` in this repo — they sync with everything else (git or however this folder gets shared), so they're available on any machine with this repo, no separate plugin install needed. Don't limit yourself to just this list, but these are the easy-to-miss ones:
+
+- `google-fonts` — if a flyer or graphic ever needs a font pairing decision, use this instead of guessing.
+- `power-design` — if a one-off deck or full page (not a social graphic) is ever needed for the bar, this extracts brand DNA and applies real design principles instead of a generic template.
+- `algorithmic-art` — generative textures/backgrounds, if a graphic ever wants something beyond a photo (e.g. an abstract disc-golf-themed pattern).
+- `self-healing` — if the same correction keeps coming up across sessions, this is how to turn it into a permanent fix instead of relearning it each time.
+
 ## Nothing posts automatically
 
 Claude writes, a person posts. There is no Meta API, no scheduled job, and no

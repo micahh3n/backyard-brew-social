@@ -11,8 +11,15 @@ copy into Meta Business Suite.
    `references/caption-voice-rules.md`. Every voice rule, the weekly hook and
    membership ratios, the anti-slop pass, and the Facebook vs Instagram
    difference all live there. Follow them exactly.
-2. Read `recurring_events.csv` for the six recurring events, Monday through
-   Saturday.
+2. Read `recurring_events.csv` for the six fixed weekly events, Monday
+   through Saturday, plus the seasonal Packers Sundays row (Sept-Jan only —
+   if the current date falls outside that window, ignore the row entirely
+   and treat Sunday as no-event, same as before). **If Packers Sundays
+   applies this week: never guess or reuse a kickoff time.** Ask the owner
+   for that week's real kickoff time before writing anything that names one.
+   If he hasn't given it yet, write the post around "gameday"/"kickoff" with
+   no specific time and flag that the time still needs confirming, rather
+   than stalling the batch or inventing a time.
 3. Read `posts.csv` for any one-off or special events, and to see what was
    said recently so nothing repeats.
 4. Look in `photos/` for anything new dropped in since last time.
@@ -26,8 +33,9 @@ Monday through Sunday.
 including days with no recurring event.
 
 ### 11:00am: the day's main post
-The recurring event if there is one. Sunday has none, so use a vibe,
-spotlight, or feature post.
+The recurring event if there is one. Sunday has none outside football season
+— use a vibe, spotlight, or feature post. Sept-Jan, Sunday's event is Packers
+Sundays (see above for the kickoff-time rule).
 
 **Write in anticipation, never as if the event is already happening.** 11am is
 hours before anything starts. Bingo is at 6:30pm. Market & Brews starts at

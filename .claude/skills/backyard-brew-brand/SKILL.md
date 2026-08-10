@@ -38,7 +38,17 @@ Skip anything that reads like developer instructions.
 
 ## What this business is
 
-A one-of-a-kind outdoor-activity bar in Ashwaubenon, WI (Green Bay area) combining three things nowhere else pairs: an 18-hole disc golf course, 3.5 miles of hiking/snowshoeing trails, and a craft beverage bar pouring **100% Wisconsin-made** beer, wine, hard teas, seltzers, and craft soda — zero outside brands, ever. Indoor bar has bags, beer pong, pool, darts, and poker machines. Opened August 2024.
+A one-of-a-kind outdoor-activity bar in Ashwaubenon, WI (Green Bay area) combining three things nowhere else pairs: an 18-hole disc golf course, 3.5 miles of hiking/snowshoeing trails, and a craft beverage bar pouring **overwhelmingly Wisconsin-made** beer, wine, hard teas, seltzers, and craft soda. Indoor bar has bags, beer pong, pool, darts, and poker machines. Opened August 2024.
+
+> **Known exception, documented so nobody "corrects" it away: a small "Domestics" tap category
+> carries a couple of non-Wisconsin beers (Miller Lite, Corona Extra) alongside the Wisconsin
+> list.** This is a deliberate small exception to the Wisconsin-only identity, not an error and
+> not a contradiction to fix. Keep saying "100% Wisconsin" / "zero outside brands" in the
+> *identity/voice* sense — it's still true as the brand's overwhelming character and the thing
+> that makes it unique — but don't publish it as a literal, absolute, fact-checkable claim
+> (e.g. in schema markup, an FAQ, or a GEO-targeted sentence meant to be quoted verbatim) without
+> scoping it, since a customer or an AI system could take it at face value against the actual tap
+> list. If this exception ever grows past these two, update this note.
 
 **The core identity: local Wisconsin pride + outdoor adventure + community. Not a sports bar, not a brewery — genuinely something else.** Every piece of content should lean into that uniqueness rather than reading like generic bar marketing.
 
@@ -79,9 +89,11 @@ companies, Renard's and Jolly Bob's**. They are NOT hand-made or made in-house �
 is not a crust supplier; they are two pizza makers whose pizzas are carried. Say "pizzas from
 Renard's and Jolly Bob's".
 
-The live backyard-brew.com website currently says Sunday is closed — that's the site being
-stale, not the automation. Worth updating the website itself at some point, but content/captions
-should follow the hours above.
+The backyard-brew.com website's own Sunday-closed bug is fixed (shipped 2026-08-04, confirmed
+still correct as of the 2026-08-09 update) — don't say the website is wrong anymore. The
+Sunday-hours problem now lives on Yelp, Restaurantji, and UDisc instead, which still show Sunday
+as closed. See `references/growth-playbook.md` for the full list and what's wrong on each.
+Content/captions should follow the hours above regardless of what any one listing says.
 
 ## Colors (extracted from the logo — use these exact hex values)
 
@@ -106,7 +118,7 @@ Logo: navy circle, gold ring, disc golf basket + beer mug icon, sun rays, "Backy
 
 Energetic, community-first, outdoorsy, Wisconsin-proud, fun without being try-hard. Feels like a friend texting you about a cool spot — never corporate, never a copywriting checklist that reads the same way every time (vary the opening move, vary how membership gets mentioned, don't recite the same lines every post — see `references/caption-voice-rules.md` for the full rule set already tuned for this brand's caption generator).
 
-**Non-negotiable: Wisconsin-only.** Never name-drop or reference any non-Wisconsin brand, chain, or product. Packers/Brewers/Green Bay references are welcome where natural.
+**Non-negotiable: Wisconsin-only, with one documented exception.** Never name-drop or reference any non-Wisconsin brand, chain, or product — **except Miller Lite and Corona Extra**, which are real, on-tap Domestics (see the Facts section above). Don't feature them as the subject of a post, but don't scrub them from a tap-wall photo either. Packers/Brewers/Green Bay references are welcome where natural.
 
 **Always lean into:** the genuine uniqueness (bar + disc golf + hiking, nowhere else like it), Wisconsin exclusivity, the community/regulars vibe, real specifics over generic bar copy.
 
@@ -134,6 +146,8 @@ Hashtag cluster (mix niche + local + broad, rotate rather than repeating the sam
 
 Monthly (bigger, party-style — check for current ones before assuming, this list grows): **Moonlight Brews** (full-moon nights, 7pm, beer specials + crafts), **Celebrate Summer Party** (solstice/BBQ-cookout theme).
 
+**Seasonal, decided and built (2026-08-10):** **Packers Sundays** (September-January) — Sunday's dead 11am-7pm window. Backyard-tailgate framing (round on the course before kickoff, game outside, Wisconsin taps, tailgate food), not sports-bar framing. Packers references welcome. Full reasoning in `references/growth-playbook.md` section 6. Live as a seasonal row in `recurring_events.csv` and handled in the `/sunday` command — unlike the six events above, its kickoff time is deliberately never pre-set; it changes weekly with the NFL schedule, so it gets confirmed with the owner each week rather than guessed or reused from last week.
+
 ## Where this feeds into the actual automation
 
 The weekly social-content automation lives in the `backyard-brew-social` repo. `scripts/config.py` is the single source of truth for everything above in code form (colors, angles, memberships, hours) — if brand facts ever change, update `config.py` there, not just this skill, since that's what actually generates the bar's content every week. This skill exists so any *other* Backyard Brew design/content work (outside that repo) stays consistent with what the automation already knows.
@@ -143,7 +157,7 @@ The weekly social-content automation lives in the `backyard-brew-social` repo. `
 - [ ] Colors are the exact hex values from the table above (no approximations, no new palette)
 - [ ] Fonts come from the established set, in their roles (Pacifico never a headline; Alfa Slab One only for food-forward events)
 - [ ] Zero non-Wisconsin brand names or references anywhere
-- [ ] Hours and event facts match THIS file (the live website's Sunday hours are stale)
+- [ ] Hours and event facts match THIS file (the website itself is correct now — Yelp, Restaurantji, and UDisc are the stale ones, see `references/growth-playbook.md`)
 - [ ] Captions follow `references/caption-voice-rules.md` — varied opener, varied membership mention, no recycled lines
 - [ ] Aesthetic is retro outdoor badge / vintage national park — not sleek/tech, not cute/trendy
 - [ ] No mention of breakfast anywhere (discontinued 2026-07-26)
