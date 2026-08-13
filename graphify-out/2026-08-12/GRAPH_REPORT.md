@@ -1,7 +1,7 @@
-# Graph Report - backyard-brew-social  (2026-08-12)
+# Graph Report - backyard-brew-social  (2026-08-10)
 
 ## Corpus Check
-- 105 files · ~37,408,579 words
+- 104 files · ~37,348,739 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `2e29c5fe`
+- Built from commit: `c1c1bafc`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -96,7 +96,7 @@
 7. `Power Design` - 10 edges
 8. `Making a Graphic` - 10 edges
 9. `Making a Graphic` - 10 edges
-10. `Backyard Market & Brews (Sunday)` - 9 edges
+10. `Growth Playbook` - 9 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `main()` --calls--> `compute_sizes()`  [INFERRED]
@@ -157,7 +157,7 @@ Nodes (21): Backyard Brew: Start Here, Dropping in photos, First time on this Ma
 
 ### Community 10 - "find_deal_photo"
 Cohesion: 0.18
-Nodes (10): Constraints to respect in any recommendation, Customers and complaints, Goals, How to handle staffing in recommendations, Operations Reality, Staff (as of 2026-07-27, actively changing), The real gaps, The Tuesday/Wednesday diagnosis (+2 more)
+Nodes (10): Constraints to respect in any recommendation, Customers and complaints, Goals, How to handle staffing in recommendations, Operations Reality, Staff (as of 2026-07-27, actively changing), The Tuesday/Wednesday diagnosis, The two real gaps (+2 more)
 
 ### Community 11 - "slug_from_default"
 Cohesion: 0.18
@@ -165,7 +165,7 @@ Nodes (10): Backyard Brew Brand Identity, Colors (extracted from the logo — us
 
 ### Community 12 - "test_find_photo_without_event_keeps_old_behavior"
 Cohesion: 0.20
-Nodes (9): Backyard Market & Brews (Sunday), Contact, Messaging & tone guidelines, Musician standards, Photo situation (open gap as of 2026-07-26), Schedule, Vendor standards (screening criteria), What happens (+1 more)
+Nodes (9): Backyard Market & Brews (Thursday), Contact, Messaging & tone guidelines, Musician standards, Photo situation (open gap as of 2026-07-26), Schedule, Vendor standards (screening criteria), What happens (+1 more)
 
 ### Community 13 - "test_find_food_photo_gates_occasional_keyword_to_one_day_per_week"
 Cohesion: 0.14

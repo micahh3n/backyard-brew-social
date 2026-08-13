@@ -38,9 +38,9 @@ purpose.** Do not paste the same text into both
 - Set the date and time
 - Schedule
 Instagram hashtags go in the first comment, not the caption. Meta Business Suite has a first comment field. Paste them there.
-Thursday's 11am post is the important one. Claude names a vendor or that week's musician as a Collab partner. A Collab post shows up on their page too, in front of all of their followers. It is the cheapest new reach we have.
+Sunday's 11am post is the important one. Claude names a vendor or that week's musician as a Collab partner. A Collab post shows up on their page too, in front of all of their followers. It is the cheapest new reach we have.
 When creating that post, look for Tags and collaborator (you may have to click "Show more"), and invite the account Claude named.
-If Business Suite will not let you add a collaborator to a scheduled post, skip scheduling that one and post it from the Instagram app on Thursday morning instead. One manual post a week is worth it. Two things to know: the partner has to accept the invite before it appears on their page, and their account has to allow tags from people they do not follow.
+If Business Suite will not let you add a collaborator to a scheduled post, skip scheduling that one and post it from the Instagram app on Sunday morning instead. One manual post a week is worth it. Two things to know: the partner has to accept the invite before it appears on their page, and their account has to allow tags from people they do not follow.
 Tag the location on every post. Instagram and Facebook both have an Add Location field. This is how people nearby find us. Do it every time, even when it feels repetitive.
 Once it is all scheduled, the week is done.
 ## 4. Google Business Profile (10 min)
@@ -79,7 +79,7 @@ Type /sync. That sends this week's photos and any changes up, and pulls down any
 - ☐  All 21 scheduled in Meta Business Suite
 - ☐  Instagram hashtags in first comments
 - ☐  Location tagged on every post
-- ☐  Thursday 11am has a Collab partner invited
+- ☐  Sunday 11am has a Collab partner invited
 - ☐  Google Business Profile: photos added, one Post added
 - ☐  Every new review answered
 - ☐  Ran /sync
