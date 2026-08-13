@@ -292,6 +292,15 @@ The trails support snowshoeing and almost nothing else in the area does.
 Rentals or bring-your-own, warm drinks after. Turns the slowest season into a
 differentiator instead of a dead zone.
 
+**UPDATE 2026-08-12:** Backyard Market & Brews moved from Thursday to Sunday
+(noon-4pm), because Thursday's 4pm-dusk window stopped working as days got
+dark too early. Packers Sundays did not stay a separate event — it became
+this window's seasonal (Sept-Jan) framing, folded into the market itself
+rather than run alongside it. The tailgate reasoning above still holds, it
+now applies inside the market's own Sunday row in `recurring_events.csv`
+instead of a standalone one. See `references/backyard-market-brews.md` for
+the current Sunday schedule and messaging rules.
+
 ### Before recommending any of these
 
 Ask what the crew can realistically staff, and check whether it has been tried

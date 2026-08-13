@@ -11,15 +11,18 @@ copy into Meta Business Suite.
    `references/caption-voice-rules.md`. Every voice rule, the weekly hook and
    membership ratios, the anti-slop pass, and the Facebook vs Instagram
    difference all live there. Follow them exactly.
-2. Read `recurring_events.csv` for the six fixed weekly events, Monday
-   through Saturday, plus the seasonal Packers Sundays row (Sept-Jan only —
-   if the current date falls outside that window, ignore the row entirely
-   and treat Sunday as no-event, same as before). **If Packers Sundays
-   applies this week: never guess or reuse a kickoff time.** Ask the owner
-   for that week's real kickoff time before writing anything that names one.
-   If he hasn't given it yet, write the post around "gameday"/"kickoff" with
-   no specific time and flag that the time still needs confirming, rather
-   than stalling the batch or inventing a time.
+2. Read `recurring_events.csv` for the five fixed weekly events, Monday
+   through Wednesday plus Friday and Saturday (Thursday currently has no
+   recurring event), plus Sunday's Backyard Market & Brews (noon-4pm,
+   year-round). Sept-Jan only, that Sunday row also carries seasonal
+   football framing — if the current date falls outside that window, ignore
+   the football framing entirely and treat the row as market-only, same as
+   before. **If the football framing applies this week: never guess or
+   reuse a kickoff time.** Ask the owner for that week's real kickoff time
+   before writing anything that names one. If he hasn't given it yet, write
+   the post around "gameday"/"kickoff" with no specific time and flag that
+   the time still needs confirming, rather than stalling the batch or
+   inventing a time.
 3. Read `posts.csv` for any one-off or special events, and to see what was
    said recently so nothing repeats.
 4. Look in `photos/` for anything new dropped in since last time.
@@ -33,13 +36,14 @@ Monday through Sunday.
 including days with no recurring event.
 
 ### 11:00am: the day's main post
-The recurring event if there is one. Sunday has none outside football season
-— use a vibe, spotlight, or feature post. Sept-Jan, Sunday's event is Packers
-Sundays (see above for the kickoff-time rule).
+The recurring event if there is one. Thursday has none — use a vibe,
+spotlight, or feature post. Sunday's event is Backyard Market & Brews,
+noon-4pm, year-round; Sept-Jan it's also game day (see above for the
+kickoff-time rule).
 
 **Write in anticipation, never as if the event is already happening.** 11am is
 hours before anything starts. Bingo is at 6:30pm. Market & Brews starts at
-4pm. "Tonight," "this afternoon," and "starting at 6:30" are correct. "The
+noon. "Tonight," "this afternoon," and "starting at 6:30" are correct. "The
 tents are up" and "the music is playing" are wrong.
 
 ### 2:30pm: highlight, recap, or filler that ties in
@@ -277,14 +281,14 @@ those two days for the audience being recruited, not for existing regulars:
 These are the two days that get shared into outside groups, so they must
 stand on their own to someone who has never been to the bar.
 
-### The Thursday 11am post is a Collab, every week
+### The Sunday 11am post is a Collab, every week
 
-Thursday brings 30+ rotating vendors and a different musician each week, each
+Sunday brings 30+ rotating vendors and a different musician each week, each
 with their own following of local people. An Instagram Collab post appears on
 both accounts and reaches both audiences. It is the largest free reach
 multiplier the bar has.
 
-**Thursday's 11am post is the Collab slot.** Pick one vendor or that week's
+**Sunday's 11am post is the Collab slot.** Pick one vendor or that week's
 musician, name them in the output, and write the caption so it earns its place
 on their feed too, not just ours. Feature them as the subject, not as a
 footnote to our event. A vendor reshares a post that is about them.
@@ -292,9 +296,9 @@ footnote to our event. A vendor reshares a post that is about them.
 Rotate who gets picked week to week so it spreads across the vendor list
 rather than landing on the same person every time.
 
-**Wednesday's 7pm teaser sets it up.** Name and tag the same vendor or
+**Saturday's 7pm teaser sets it up.** Name and tag the same vendor or
 musician there, without making it a formal Collab. Tagging notifies them, so
-by the time Thursday's Collab invite arrives they are already engaged, and the
+by the time Sunday's Collab invite arrives they are already engaged, and the
 two posts read as one build-up rather than two disconnected announcements.
 
 ### Tag and geotag everything
@@ -355,7 +359,7 @@ Give all 21 posts in chat, grouped by day, each with:
 - The Facebook caption
 - The Instagram caption
 - The Instagram hashtags, marked as a first comment
-- Any accounts to tag, and the Collab partner on Thursday
+- Any accounts to tag, and the Collab partner on Sunday
 
 Then, after the 21:
 

@@ -22,10 +22,10 @@ the marketing picture.
 | Monday | Bingo Night | Performs |
 | Tuesday | Pickleball Open Play | **Underperforming.** Has a crowd, could be much bigger |
 | Wednesday | Tacos + Poker Club | **Underperforming.** Has a crowd, could be much bigger |
-| Thursday | Backyard Market & Brews | Performs. The community/vendor showcase |
+| Thursday | No weekly event (as of 2026-08-30) | **Backyard Market & Brews moved to Sunday** — evening market stopped working as days got dark too early. A future indoor winter version is on the backburner, not decided; don't invent details |
 | Friday | Karaoke Night | Performs |
 | Saturday | Pool Night (evening) | Evening performs. **Morning through early afternoon is slow** unless something is scheduled |
-| Sunday | Nothing weekly Feb-Aug; Packers Sundays Sept-Jan | **Chill day, no draw** outside football season. **Packers Sundays (seasonal, Sept-Jan) decided and built 2026-08-10** — live in `recurring_events.csv`. Kickoff time is deliberately never pre-set; confirm each week's real time before it goes in a post |
+| Sunday | Backyard Market & Brews (moved from Thursday 2026-08-30) | The community/vendor showcase, now noon-4pm on Sundays. **Seasonal Sept-Jan: also Sunday football**, folded into the market rather than a separate event (originally built as standalone "Packers Sundays" 2026-08-10, merged 2026-08-12). Kickoff time is deliberately never pre-set; confirm each week's real time before it goes in a post |
 
 ### The Tuesday/Wednesday diagnosis
 
@@ -40,18 +40,20 @@ and poker players specifically: local pickleball groups and clubs, poker
 communities, the Facebook groups where those people already talk, players at
 nearby courts. See `growth-playbook.md`.
 
-### The two real gaps
+### The real gaps
 
 1. **Saturday 11am to roughly 4pm.** The doors are open and the property is
-   the best version of itself in daylight, and almost nobody is there.
-2. **Sunday, 11am to 7pm.** No event exists Feb-Aug. Packers Sundays
-   (seasonal, Sept-Jan) fills this window and is live in
-   `recurring_events.csv` — kickoff time gets confirmed weekly, never
-   guessed.
+   the best version of itself in daylight, and almost nobody is there. Still
+   fully open.
+2. **Sunday, 11am-noon and 4pm-7pm.** Backyard Market & Brews now fills
+   noon-4pm year-round (moved from Thursday 2026-08-30), and Sept-Jan the
+   market also carries the Sunday football crowd. The edges of the day —
+   before the market opens and after it closes — are what's left open, a
+   much smaller gap than before.
 
-These are the two slots where inventing something new is the right answer
-rather than promoting harder. When someone asks for event ideas, assume they
-mean these two windows unless they say otherwise.
+Saturday is where inventing something new is the strongest answer. When
+someone asks for event ideas, assume they mean Saturday daytime unless they
+say otherwise, or the Sunday edges specifically.
 
 ---
 

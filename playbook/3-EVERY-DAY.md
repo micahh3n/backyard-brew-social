@@ -59,9 +59,9 @@ Fill in your groups in the right column as you find them.
 | **Bingo** (Mon) | Green Bay community, things to do, family activities, game and trivia night groups | |
 | **Pickleball** (Tue) | Pickleball groups and clubs, rec sports, Green Bay community | |
 | **Tacos + Poker** (Wed) | Poker and card game groups, Green Bay food groups, community | |
-| **Market & Brews** (Thu) | Local vendor and maker groups, small business, craft fair and farmers market, community events | |
 | **Karaoke** (Fri) | Nightlife, live music, weekend plans, Green Bay community | |
 | **Pool Night** (Sat) | Billiards and bar sports, nightlife, community | |
+| **Market & Brews** (Sun) | Local vendor and maker groups, small business, craft fair and farmers market, community events | |
 | **Disc golf** (any day) | Disc golf groups, Wisconsin disc golf, statewide disc golf. **These are big. Post here often** | |
 | **Trails and hiking** | Hiking, outdoors, dog owners, Wisconsin trails | |
 | **Food** | Green Bay food and restaurant groups, foodie pages | |
@@ -83,7 +83,7 @@ planned. Stories are real.
 
 **Never fewer than 2 a day. Past that, more is always better.** There is no
 upper limit and no such thing as too many. On a big event night, a packed
-Thursday market, live music, a tournament, shoot everything and post it all.
+Sunday market, live music, a tournament, shoot everything and post it all.
 Those are the nights that pull new people in.
 
 Do not watch the clock. Post at these moments instead, because they happen on

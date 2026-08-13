@@ -110,14 +110,14 @@ EVENT_ANGLES = {
         "lineup -- 'you never know who'll be out,' never 'gone forever' (vendors do repeat). Never plug disc "
         "golf/hiking/pickleball as part of THIS event's core pitch -- those are separate draws. Don't tie in "
         "taco night (not reconfirmed as running alongside). CTAs: vendor/musician signup (DM or "
-        "crew@backyard-brew.com), 'bring cash, bring friends, bring the leashed pup.' Avoid 'Thursdays are for "
-        "the backyard' / 'See you in the backyard' and overly polished ad language.",
+        "crew@backyard-brew.com), 'bring cash, bring friends, bring the leashed pup.' Avoid 'Sundays are for "
+        "the backyard' / 'See you in the backyard' and overly polished ad language. SEASONAL (Sept-Jan): also "
+        "fold in a backyard-tailgate angle, not sports-bar -- the game plays during the market, Wisconsin taps, "
+        "tailgate food, Packers references welcome. Kickoff time is NEVER fixed -- confirm that week's real time "
+        "with the owner before naming one in a post; if unconfirmed, write around 'gameday'/'kickoff' with no "
+        "specific time rather than guessing.",
     "Karaoke Night": "'Weekend starts NOW' energy.",
     "Pool Night": "Tournament angle -- beat the bartender, win a flight.",
-    "Packers Sundays": "SEASONAL (Sept-Jan only). Backyard-tailgate angle, not sports-bar angle -- a round on "
-        "the course before kickoff, the game outside, Wisconsin taps, tailgate food. Packers references welcome. "
-        "Kickoff time is NEVER fixed -- confirm that week's real time with the owner before naming one in a post; "
-        "if unconfirmed, write around 'gameday'/'kickoff' with no specific time rather than guessing.",
     "Wisconsin Spotlight": "Feature the specific drink named in key_details -- pure appreciation, no CTA pressure.",
     "Course & Trail Feature": "Feature the specific trail/course detail named in key_details -- outdoorsy pride angle.",
     "Weather Vibes": "Tie the specific weather named in key_details to disc golf/hiking/patio appeal.",
@@ -136,7 +136,7 @@ DEFAULT_TIMES = {
     ("Thursday", "today"): "11:00",
     ("Friday", "today"): "11:00",
     ("Saturday", "today"): "11:00",
-    ("Sunday", "today"): "11:00",   # only used if a Sunday one-off exists
+    ("Sunday", "today"): "11:00",   # Backyard Market & Brews' day-of post
     # Teaser / reminder evening slot:
     ("Monday", "teaser"): "19:00",
     ("Tuesday", "teaser"): "19:00",
@@ -208,13 +208,13 @@ EVENT_PHOTO_KEYWORDS = {
     "Bingo Night": ["bingo"],
     "Pickleball Open Play": ["pickleball"],
     "Tacos + Poker Club": ["poker"],
-    "Backyard Market & Brews": ["market", "vendor", "marketbrews"],
+    # "packers"/"football"/"tailgate"/"gameday" fold in the seasonal
+    # (Sept-Jan) football framing -- see EVENT_ANGLES and recurring_events.csv
+    # for the kickoff-time-is-never-fixed rule. Any candid tagged with one of
+    # these keywords enters rotation the same as the market's own keywords.
+    "Backyard Market & Brews": ["market", "vendor", "marketbrews", "packers", "football", "tailgate", "gameday"],
     "Karaoke Night": ["karaoke"],
     "Pool Night": ["pool"],
-    # Seasonal (Sept-Jan) -- see EVENT_ANGLES and recurring_events.csv for
-    # the kickoff-time-is-never-fixed rule. Any candid tagged with one of
-    # these keywords enters rotation the same as the other events.
-    "Packers Sundays": ["packers", "football", "tailgate", "gameday"],
 }
 
 # Food photos attach as a SECOND photo on the mapped event's "today" post
@@ -222,8 +222,9 @@ EVENT_PHOTO_KEYWORDS = {
 # served every day at the bar, so unlike the others it maps to every event
 # but only actually attaches on one rotating day per week -- see
 # OCCASIONAL_FOOD_KEYWORDS and generate_captions.find_food_photo().
-# Sunday included for Packers Sundays (seasonal, Sept-Jan) -- tailgate food
-# fits the same pizza rotation the other six days already use.
+# Sunday is included for Backyard Market & Brews -- and, seasonally
+# (Sept-Jan), the tailgate food that comes with the market's football framing
+# fits the same pizza rotation the other days already use.
 RECURRING_DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
 FOOD_PHOTO_KEYWORDS = {

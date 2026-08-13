@@ -17,7 +17,7 @@ before writing anything.
 | Replying to a review, comment, or DM | `references/reply-rules.md` |
 | Growth, SEO, marketing, new event ideas | `references/growth-playbook.md` |
 | What the bar should DO, staffing, slow days, money | `references/operations-reality.md` |
-| Thursday's vendor market | `references/backyard-market-brews.md` |
+| Sunday's vendor market | `references/backyard-market-brews.md` |
 
 **Any question about the business beyond brand facts starts with
 `operations-reality.md`.** It records which days underperform, who works
@@ -140,13 +140,14 @@ Hashtag cluster (mix niche + local + broad, rotate rather than repeating the sam
 | Monday | Bingo Night — 9 rounds themed bingo, 6:30pm, free w/ beer purchase, themed + beer + food + cash prizes, kids welcome w/ soda, name-that-tune at halftime. **LRC (Left Right Center, dice, 21+) runs every Monday after bingo ends** — see the money-language rule in `references/caption-voice-rules.md` before writing about it | Prize-reveal — what are we playing for this week? |
 | Tuesday | Pickleball Open Play — free w/ beer purchase, 6:30pm, random doubles tournament, hot dogs served all night, winner gets free beer, enter by 6:40pm or auto-placed in losers bracket | Challenge/competitive — think you can beat the regulars? |
 | Wednesday | Tacos + Poker Club — beef tacos, quesadillas, loaded nachos all day; poker starts 6pm, free to play w/ beer purchase | Food first, then the game — tacos are the hook |
-| Thursday | Backyard Market & Brews (updated 2026-07-26) — weekly vendor market + live local music, 4pm-dusk, rain or shine, 30+ rotating local vendors + a different musician every week; Disc Golf League is separate, earlier in the afternoon | Extremely community/local-business-focused — a small-business showcase, not a party night. Full rules in `references/backyard-market-brews.md`, read it before writing this event's captions |
+| Thursday | No weekly event (as of 2026-08-30) — Backyard Market & Brews moved to Sunday, days were getting dark too early for a 4pm-dusk market. A possible future indoor winter version is on the backburner, not decided | — |
 | Friday | Karaoke Night — 8pm start, all skill levels, variety of genres | "Weekend starts NOW" energy |
 | Saturday | Pool Night — open pool tournament, winner plays the bartender for a flight | Tournament angle — beat the bartender, win a flight |
+| Sunday | Backyard Market & Brews (moved from Thursday 2026-08-30) — weekly vendor market + live local music, noon-4pm, setup 9am-11:45am, rain or shine, 30+ rotating local vendors + a different musician every week | Extremely community/local-business-focused — a small-business showcase, not a party. Full rules in `references/backyard-market-brews.md`, read it before writing this event's captions |
 
-Monthly (bigger, party-style — check for current ones before assuming, this list grows): **Moonlight Brews** (full-moon nights, 7pm, beer specials + crafts), **Celebrate Summer Party** (solstice/BBQ-cookout theme).
+Monthly (bigger, party-style — check for current ones before assuming, this list grows): **Celebrate Summer Party** (solstice/BBQ-cookout theme).
 
-**Seasonal, decided and built (2026-08-10):** **Packers Sundays** (September-January) — Sunday's dead 11am-7pm window. Backyard-tailgate framing (round on the course before kickoff, game outside, Wisconsin taps, tailgate food), not sports-bar framing. Packers references welcome. Full reasoning in `references/growth-playbook.md` section 6. Live as a seasonal row in `recurring_events.csv` and handled in the `/sunday` command — unlike the six events above, its kickoff time is deliberately never pre-set; it changes weekly with the NFL schedule, so it gets confirmed with the owner each week rather than guessed or reused from last week.
+**Seasonal (Sept-Jan): Sunday football folds into Backyard Market & Brews.** Decided and built 2026-08-10 as a standalone "Packers Sundays" event, then merged into the Sunday market 2026-08-12 rather than kept as a second Sunday event — backyard-tailgate framing (round on the course before kickoff, game outside, Wisconsin taps, tailgate food), not sports-bar framing. Packers references welcome. Full original reasoning in `references/growth-playbook.md` section 6. Live inside the Sunday row in `recurring_events.csv` and handled in the `/sunday` command — its kickoff time is deliberately never pre-set; it changes weekly with the NFL schedule, so it gets confirmed with the owner each week rather than guessed or reused from last week.
 
 ## Where this feeds into the actual automation
 

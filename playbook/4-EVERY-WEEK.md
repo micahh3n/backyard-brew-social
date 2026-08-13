@@ -93,7 +93,7 @@ For each one:
 **Instagram hashtags go in the first comment**, not the caption. Meta Business
 Suite has a first comment field. Paste them there.
 
-**Thursday's 11am post is the important one.** Claude names a vendor or that
+**Sunday's 11am post is the important one.** Claude names a vendor or that
 week's musician as a Collab partner. A Collab post shows up on their page too,
 in front of all of their followers. It is the cheapest new reach we have.
 
@@ -101,7 +101,7 @@ When creating that post, look for **Tags and collaborator** (you may have to
 click "Show more"), and invite the account Claude named.
 
 If Business Suite will not let you add a collaborator to a scheduled post,
-skip scheduling that one and **post it from the Instagram app on Thursday
+skip scheduling that one and **post it from the Instagram app on Sunday
 morning instead.** One manual post a week is worth it. Two things to know: the
 partner has to accept the invite before it appears on their page, and their
 account has to allow tags from people they do not follow.
@@ -191,7 +191,7 @@ anything he changed on his end.
 - [ ] All 21 scheduled in Meta Business Suite
 - [ ] Instagram hashtags in first comments
 - [ ] Location tagged on every post
-- [ ] Thursday 11am has a Collab partner invited
+- [ ] Sunday 11am has a Collab partner invited
 - [ ] Google Business Profile: photos added, one Post added
 - [ ] Every new review answered
 - [ ] Ran `/sync`

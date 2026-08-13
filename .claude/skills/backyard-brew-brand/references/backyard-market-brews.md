@@ -1,25 +1,42 @@
-# Backyard Market & Brews (Thursday)
+# Backyard Market & Brews (Sunday)
 
-Thursday's headline event. Read this before writing any Backyard Market & Brews caption — it has
+Sunday's headline event. Read this before writing any Backyard Market & Brews caption — it has
 its own messaging guardrails that don't apply to the rest of the weekly calendar.
 
 **Extremely community and local-business focused, above everything else (Micah's call,
-2026-07-26).** This is a small-business showcase night, not a party night — the vendors and the
-musician are the whole point. Center real local people and their businesses, not "stuff to look
-at" or generic bar-event energy.
+2026-07-26).** This is a small-business showcase, not a party — the vendors and the musician are
+the whole point. Center real local people and their businesses, not "stuff to look at" or generic
+bar-event energy.
+
+**Moved from Thursday to Sunday starting 2026-08-30 (Micah's call, 2026-08-12)** — Thursday's
+4pm-dusk window stopped working as days got dark too early for an evening market. The last
+Thursday occurrence, 2026-08-27, ran as a one-off themed special, "Moonlight Market" (full moon,
+vendors bring lights, hiking trails open to all attendees that night) — see `posts.csv` for that
+post. It's the same market on a themed night, not a new or separate recurring event; don't confuse
+it with a monthly thing. Thursday currently has no weekly event. There's a possible future move
+back to Thursday, indoors, once it gets too cold to run the market outside — **not decided, no
+details yet, backburner only.** Don't invent specifics for it.
 
 ## What it is
 
-A weekly vendor market held every Thursday at Backyard Brew, 3640 Sand Acres Dr, Ashwaubenon, WI.
+A weekly vendor market held every Sunday at Backyard Brew, 3640 Sand Acres Dr, Ashwaubenon, WI.
 Local makers, artisans, and small businesses set up booths in the yard while guests shop, drink,
 and listen to live music.
 
 ## Schedule
 
-- Recurring every Thursday, rain or shine
-- **Market runs 4pm-dusk.** Live music plays within that window, a different local musician/act
-  each week.
-- Disc Golf League runs separately, Thursday afternoons — don't fold it into this event's pitch.
+- Recurring every Sunday, rain or shine
+- **Market runs noon-4pm.** Live music plays within that window, a different local musician/act
+  each week. Vendor/staff setup is 9am-11:45am.
+- **Seasonal (Sept-Jan): also Sunday football.** The game plays during the market — backyard
+  tailgate framing, not sports-bar framing (a round on the course before kickoff, the game
+  outside, Wisconsin taps, tailgate food; Packers references welcome). Kickoff time is NEVER
+  fixed — it changes weekly with the NFL schedule. Never guess it or reuse last week's; confirm
+  that week's real time with the owner before naming one in a post. If unconfirmed, write around
+  "gameday"/"kickoff" with no specific time rather than inventing one. Outside Sept-Jan, none of
+  this football framing applies — it's market-only.
+- Disc Golf League runs separately, Thursday afternoons — unrelated to this event now that they
+  no longer share a day.
 
 ## What happens
 
@@ -47,7 +64,7 @@ and listen to live music.
   real neighbors running real small businesses — that's the hook, not "cool stuff to buy" or
   generic market/party energy.
 - **FOMO-driven:** emphasize that the lineup (both vendors and music) changes weekly, so missing
-  a Thursday means missing something you won't see again this exact way.
+  a Sunday means missing something you won't see again this exact way.
 - Casual, community-first, never corporate.
 - **Do NOT imply vendors never repeat** — frame it as "you never know who'll be out," never
   "gone forever" in a way that contradicts the fact that vendors do come back.
@@ -59,15 +76,15 @@ and listen to live music.
   Use it when weather is genuinely a question that week (the forecast is bad, or someone asked)
   and leave it out otherwise. It got into nearly every draft of a multi-post batch purely because
   it reads like a standard event detail, and the repetition went stale fast. The same caution
-  applies to the other always-true details here: "4pm-dusk" and "30+ vendors" are true every
+  applies to the other always-true details here: "noon-4pm" and "30+ vendors" are true every
   single week, which makes them repetition risks across a batch rather than lines every post owes.
-- **Avoid:** "Thursdays are for the backyard," "See you in the backyard," overly polished/ad-like
+- **Avoid:** "Sundays are for the backyard," "See you in the backyard," overly polished/ad-like
   language, plugging disc golf/hiking/pickleball as part of THIS event's core pitch (those are
   separate draws — don't dilute the market/music FOMO angle with them).
 - **Do NOT mention taco night** as tied to this event unless separately reconfirmed — it hasn't
   been reconfirmed as still running alongside the market.
 - **Never mention breakfast** — breakfast service was discontinued entirely (2026-07-26), across
-  every day of the week, not just Thursday.
+  every day of the week, not just Sunday.
 - **Don't default to "the yard" as the go-to word for the market space** (Micah's call,
   2026-07-26) — it reads flat and repeats fast across three posts in one week. Vary it: tents,
   booths, vendor tables, "every booth," the specific sensory detail, or just skip naming the
@@ -93,7 +110,7 @@ promos, not reusable defaults**:
 - `Backyard Market & Brews PROMO.png` — hardcodes both "Thursday, July 23" AND that week's
   musician's name ("Live Music by Josh Berton").
 
-`recurring_events.csv`'s Thursday row points `default_photos` at `marketbrews_default_art.jpg`,
+`recurring_events.csv`'s Sunday row points `default_photos` at `marketbrews_default_art.jpg`,
 which **does not exist yet**. Because the vendor lineup and musician change weekly, a single
 static default may never really fit this event the way it does for Bingo/Pickleball/etc. Two
 options for Micah to choose between later:
