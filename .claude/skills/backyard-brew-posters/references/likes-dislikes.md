@@ -87,3 +87,27 @@ pattern behind them:
 Generalize: shorter CTAs, warmer and more active positioning lines, no
 instructions that read as rules, and craft beer earns a mention in the
 customer-facing line.
+
+## Sticker overlays (added 2026-08-19)
+
+He likes a **sticker** as a way to bolt a secondary message onto a poster
+without touching the layout: "maybe even with a graphic ... as like a sticker
+almost." Build them as a tilted die-cut vinyl sticker, absolutely positioned
+over the clear photo band so nothing reflows when it is deleted:
+
+- `transform: rotate(-7deg)`, navy fill, **thick cream border**
+  (`9px solid #F5EFD8` on the poster, `6px` on social) — the cream edge is
+  what makes it read as a sticker instead of a badge
+- `border-radius: 34px` / `24px`, heavy shadow `0 20px 48px rgba(4,12,21,0.68)`
+- Emoji on top, two short display-font lines, one tiny Barlow caption
+- Put the whole thing in one commented block so removing it is one delete
+
+**Trademarks.** Never put a sports team's logo, wordmark, or "G" on a poster —
+those are protected marks and this is advertising for a business. Naming the
+team in text ("PACKERS SUNDAYS") to say which game is on is normal and fine;
+the logo is the line. Same rule for any brand that is not Backyard Brew's own.
+
+**Seasonal elements get a comment and a note to Micah.** Football is Sept-Jan
+only, and the brand skill forbids stating a kickoff time without confirming it
+that week — so a football sticker carries no time, and the canvas annotation
+tells him to delete it outside the season.

@@ -1,16 +1,16 @@
-# Graph Report - backyard-brew-social  (2026-08-19)
+# Graph Report - backyard-brew-social  (2026-08-12)
 
 ## Corpus Check
-- 112 files · ~41,923,562 words
+- 105 files · ~37,408,579 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 806 nodes · 851 edges · 77 communities (76 shown, 1 thin omitted)
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 14 edges (avg confidence: 0.74)
+- 756 nodes · 796 edges · 72 communities (71 shown, 1 thin omitted)
+- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 11 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `aa3c79ab`
+- Built from commit: `2e29c5fe`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -85,23 +85,18 @@
 - Section 11: Accessibility (WCAG 2.2, operational)
 - Section 10: Performance (Core Web Vitals as a Design Constraint)
 - Section 12: Semantic HTML, SEO & Social
-- Poster anatomy
-- Backyard Brew Posters
-- Installing this skill
-- Choosing the display font
-- What Micah likes and does not like
 
 ## God Nodes (most connected - your core abstractions)
 1. `Design Principles for Codified Slide Generation` - 17 edges
 2. `Design Principles for Codified Website Generation` - 17 edges
 3. `main()` - 14 edges
-4. `Backyard Market & Brews (Sunday)` - 11 edges
-5. `Backyard Brew Brand Identity` - 10 edges
-6. `Writing the Gemini prompt` - 10 edges
-7. `Auto Google Font` - 10 edges
-8. `Power Design` - 10 edges
+4. `Backyard Brew Brand Identity` - 10 edges
+5. `Writing the Gemini prompt` - 10 edges
+6. `Auto Google Font` - 10 edges
+7. `Power Design` - 10 edges
+8. `Making a Graphic` - 10 edges
 9. `Making a Graphic` - 10 edges
-10. `Making a Graphic` - 10 edges
+10. `Backyard Market & Brews (Sunday)` - 9 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `main()` --calls--> `compute_sizes()`  [INFERRED]
@@ -118,7 +113,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (77 total, 1 thin omitted)
+## Communities (72 total, 1 thin omitted)
 
 ### Community 0 - "CLAUDE.md"
 Cohesion: 0.20
@@ -169,8 +164,8 @@ Cohesion: 0.18
 Nodes (10): Backyard Brew Brand Identity, Colors (extracted from the logo — use these exact hex values), Facts (verified — use these exact values), Fonts already established in this brand's content pipeline, Pre-flight for any Backyard Brew deliverable, Recurring weekly events (the heartbeat of the content calendar), Start here: which file answers your question, Voice (+2 more)
 
 ### Community 12 - "test_find_photo_without_event_keeps_old_behavior"
-Cohesion: 0.17
-Nodes (11): Backyard Market & Brews (Sunday), Contact, Messaging & tone guidelines, Musician standards, Photo situation (open gap as of 2026-07-26), Schedule, Vendor outreach DM (approved template, 2026-08-19), Vendor standards (screening criteria) (+3 more)
+Cohesion: 0.20
+Nodes (9): Backyard Market & Brews (Sunday), Contact, Messaging & tone guidelines, Musician standards, Photo situation (open gap as of 2026-07-26), Schedule, Vendor standards (screening criteria), What happens (+1 more)
 
 ### Community 13 - "test_find_food_photo_gates_occasional_keyword_to_one_day_per_week"
 Cohesion: 0.14
@@ -365,8 +360,8 @@ Cohesion: 0.40
 Nodes (5): Principle: Edge Safe-Zone, Principle: Optical vs Mathematical Alignment, Principle: Strict Grid Alignment, Principle: Vertical Rhythm / Baseline Grid, Section 7: Alignment & Rhythm
 
 ### Community 63 - "Design Principles for Codified Website Generation"
-Cohesion: 0.22
-Nodes (9): Appendix A: Numbers Cheat Sheet, Appendix B: Sources, Design Principles for Codified Website Generation, Principle: Asset Budgets, Principle: Critical Rendering Path, Principle: The Three Core Web Vitals, Section 10: Performance (Core Web Vitals as a Design Constraint), Section 13: Resolved Contradictions (+1 more)
+Cohesion: 0.40
+Nodes (5): Appendix A: Numbers Cheat Sheet, Appendix B: Sources, Design Principles for Codified Website Generation, Section 13: Resolved Contradictions, TL;DR — The 20 Rules That Matter Most for Websites
 
 ### Community 64 - "Section 5: Spatial Systems & Grid"
 Cohesion: 0.40
@@ -389,47 +384,27 @@ Cohesion: 0.40
 Nodes (5): Principle: Live Regions & Dynamic Content, Principle: Names, Roles, Values (ARIA only when needed), Principle: Reduced Motion, Contrast, Zoom, Reflow, Principle: Semantic Structure & Landmarks, Section 11: Accessibility (WCAG 2.2, operational)
 
 ### Community 69 - "Section 10: Performance (Core Web Vitals as a Design Constraint)"
-Cohesion: 0.33
-Nodes (11): artboard_size(), b64(), chrome(), cmd_build(), cmd_crop(), cmd_specimen(), font_css(), main() (+3 more)
+Cohesion: 0.50
+Nodes (4): Principle: Asset Budgets, Principle: Critical Rendering Path, Principle: The Three Core Web Vitals, Section 10: Performance (Core Web Vitals as a Design Constraint)
 
 ### Community 70 - "Section 12: Semantic HTML, SEO & Social"
 Cohesion: 0.50
 Nodes (4): Principle: Crawlable, Indexable, Shareable, Principle: Structured Data, Principle: The Document Head Contract, Section 12: Semantic HTML, SEO & Social
 
-### Community 72 - "Poster anatomy"
-Cohesion: 0.25
-Nodes (7): Bottom block, in order, Brand palette (exact), Canvas, Poster anatomy, Rules the numbers encode, Scrims, Top block, in order
-
-### Community 73 - "Backyard Brew Posters"
-Cohesion: 0.25
-Nodes (7): Backyard Brew Posters, Files, Keeping the copies in sync, Non-negotiables, Pre-flight, Process, What you deliver, every time
-
-### Community 74 - "Installing this skill"
-Cohesion: 0.29
-Nodes (6): Already have the repo?, Installing this skill, Keeping it current, To use it everywhere, not just in that folder, Using it, What it needs on your machine
-
-### Community 75 - "Choosing the display font"
-Cohesion: 0.29
-Nodes (6): Adding a face, Choosing the display font, Fallback stacks, Fixed: everything that isn't the display font, The one-shot check, The shortlist
-
-### Community 76 - "What Micah likes and does not like"
-Cohesion: 0.33
-Nodes (5): Copy edits he has made by hand (2026-08-19), Dislikes — never do these, Judgement calls he has already made, Likes — do these by default, What Micah likes and does not like
-
 ## Knowledge Gaps
-- **465 isolated node(s):** `Start here: which file answers your question`, `What this business is`, `Facts (verified — use these exact values)`, `Colors (extracted from the logo — use these exact hex values)`, `Fonts already established in this brand's content pipeline` (+460 more)
+- **437 isolated node(s):** `Before writing anything`, `11:00am: the day's main post`, `2:30pm: highlight, recap, or filler that ties in`, `7:00pm: teaser for tomorrow`, `7pm the night before: make them want it` (+432 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Design Principles for Codified Website Generation` connect `Design Principles for Codified Website Generation` to `Section 5: Spatial Systems & Grid`, `Section 3: Typography on Screen`, `Section 9: Navigation & Information Architecture`, `Section 8: Forms`, `Section 11: Accessibility (WCAG 2.2, operational)`, `Section 12: Semantic HTML, SEO & Social`, `Power Design`, `Section 4: Color, Contrast & Theming`, `Section 7: Conversion & Landing-Page Structure`, `Section 1: Responsive & Fluid Layout`, `Section 2: Visual Hierarchy & Scanning on Screen`, `Section 6: Interaction, State & Feedback`?**
-  _High betweenness centrality (0.009) - this node is a cross-community bridge._
+- **Why does `Design Principles for Codified Website Generation` connect `Design Principles for Codified Website Generation` to `Section 5: Spatial Systems & Grid`, `Section 3: Typography on Screen`, `Section 9: Navigation & Information Architecture`, `Section 8: Forms`, `Section 11: Accessibility (WCAG 2.2, operational)`, `Section 10: Performance (Core Web Vitals as a Design Constraint)`, `Section 12: Semantic HTML, SEO & Social`, `Power Design`, `Section 4: Color, Contrast & Theming`, `Section 7: Conversion & Landing-Page Structure`, `Section 1: Responsive & Fluid Layout`, `Section 2: Visual Hierarchy & Scanning on Screen`, `Section 6: Interaction, State & Feedback`?**
+  _High betweenness centrality (0.010) - this node is a cross-community bridge._
 - **Why does `Design Principles for Codified Slide Generation` connect `Design Principles for Codified Slide Generation` to `Section 4: Typography`, `Section 5: Color & Contrast`, `Section 6: Spatial Systems`, `Section 3: Gestalt Principles`, `Section 1: Cognitive Load & Attention`, `Section 11: Information Density & Charts`, `Section 2: Visual Hierarchy`, `Section 10: Image, Visual & Iconography Treatment`, `Section 8: Slide-Specific Rules`, `Section 9: Accessibility`, `Section 7: Alignment & Rhythm`?**
-  _High betweenness centrality (0.008) - this node is a cross-community bridge._
-- **What connects `Start here: which file answers your question`, `What this business is`, `Facts (verified — use these exact values)` to the rest of the system?**
-  _509 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.009) - this node is a cross-community bridge._
+- **What connects `Before writing anything`, `11:00am: the day's main post`, `2:30pm: highlight, recap, or filler that ties in` to the rest of the system?**
+  _479 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `test_generate_captions.py` be split into smaller, more focused modules?**
   _Cohesion score 0.05555555555555555 - nodes in this community are weakly interconnected._
 - **Should `generate_captions.py` be split into smaller, more focused modules?**
