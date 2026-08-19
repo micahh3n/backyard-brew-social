@@ -1,0 +1,34 @@
+{
+  "artboards": [
+    {
+      "file": "Main.dc.html",
+      "title": "Poster 18x24",
+      "x": 0,
+      "y": 0,
+      "w": 1620,
+      "h": 2160,
+      "print": "fixed"
+    },
+    {
+      "file": "Social.dc.html",
+      "title": "Social 4:5",
+      "x": 1780,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "print": "fixed"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "two-in-one",
+      "x": 1780,
+      "y": 1440,
+      "w": 440,
+      "text": "Two-in-one: the top half sells the event to customers (makers, live music, Wisconsin craft beer), the gold block recruits vendors.\n\nVendor contact is DM only. Day-change details, address and socials stay in the caption."
+    }
+  ],
+  "launch": {
+    "view": "canvas"
+  }
+}

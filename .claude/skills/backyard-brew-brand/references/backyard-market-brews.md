@@ -8,7 +8,14 @@ its own messaging guardrails that don't apply to the rest of the weekly calendar
 the whole point. Center real local people and their businesses, not "stuff to look at" or generic
 bar-event energy.
 
-**Moved from Thursday to Sunday starting 2026-08-30 (Micah's call, 2026-08-12)** — Thursday's
+**Moved from Thursday to Sunday starting 2026-09-13 (Micah's call, 2026-08-12; start date pushed from 2026-08-30 to 2026-09-13, confirmed 2026-08-19)**
+
+> **There is a two-week gap with no market at all: Aug 28 through Sep 12 (confirmed
+> 2026-08-19).** Thursday Aug 27's Moonlight Market really is the last Thursday one — Thursdays
+> Sep 3 and Sep 10 do NOT run — and Sundays don't begin until Sep 13. Anything announcing the
+> move should be explicit that the market returns Sunday Sep 13, or regulars and vendors will
+> turn up on Aug 30 and Sep 6 to an empty property.
+ — Thursday's
 4pm-dusk window stopped working as days got dark too early for an evening market. The last
 Thursday occurrence, 2026-08-27, ran as a one-off themed special, "Moonlight Market" (full moon,
 vendors bring lights, hiking trails open to all attendees that night) — see `posts.csv` for that
@@ -51,7 +58,92 @@ and listen to live music.
 - Vendors must have an established online presence (Facebook, Instagram, Etsy, etc.) with an
   existing following
 - Not open to private sellers or word-of-mouth-only vendors
+- **"Established business" is the bar, not just "has a page"** — spots are deliberately kept
+  for real operating businesses rather than hobby or first-time sellers, so the market builds
+  repeat partnerships instead of a different set of strangers every week.
 - Vendor inquiries: DM the bar's social accounts or email crew@backyard-brew.com
+- **Spots are first come, first served.**
+
+## Vendor terms (confirmed 2026-08-19 — this is what Micah sends every vendor)
+
+The standing rundown Micah sends to anyone who asks about vending. Use these facts in any
+vendor-facing DM, post, or reply rather than restating them loosely.
+
+**What the vendor brings:** their own tent, table, and setup.
+
+**Cost:** no fee, no commission, vendors keep 100% of their sales.
+
+**What the bar asks in return** (not optional extras — this is the trade for a free spot):
+- A post promoting the event from the vendor's own business page
+- Buy something from the bar while setting up. The framing that makes this land is the honest
+  one: Backyard Brew is a small business too, and it's what makes hosting the market possible
+- Vendors handle their own trash, so the course and property stay clean
+
+**Setup cutoff:** vendors must be set up and ready before the event starts — **no setup after
+the cutoff.** On Thursdays this was 3:45pm against a 4pm start. **On Sundays (from 2026-09-13)
+the market opens at noon, so the cutoff is 11:45am**, matching the 9am-11:45am setup window
+above. Any vendor rundown sent for a Sunday date needs these numbers swapped — the original
+text is written for the Thursday schedule.
+
+**Food vendors:** require a **Village of Ashwaubenon Food Vendor License** to serve at the
+market. This is on the vendor to obtain, not something the bar provides.
+
+**Intake questions** asked before confirming any vendor:
+1. Name of the business
+2. What they sell
+3. Link to the business page (Instagram, Facebook, or website)
+4. How long they've been selling, and any other markets or events they've done
+
+## Vendor outreach DM (approved template, 2026-08-19)
+
+What Micah actually sends to vendors already on the waiting list — approved and used, so start
+from this rather than writing a new one. Swap the name, the dates, and the setup cutoffs.
+
+```
+Hi [Name], you're on our vendor list for Backyard Market & Brews and
+we've got some dates open.
+
+[DATE BLOCK — one short block per open date. Day, date, event hours,
+setup cutoff, then one or two lines on anything that makes that date
+different.]
+
+Here's the rundown:
+
+You bring: Your own tent, table, and setup. There's no fee, no
+commission, and you keep 100% of your sales.
+
+We ask: Promote the event on your end — a post from your business's page
+and grab something from the bar while you're setting up. We're a small
+business too, and it helps us keep hosting stuff like this. We also ask
+that all vendors handle their own trash so the course and property stay
+clean.
+
+Spots are first come, first served, and we don't allow setup after the
+cutoff, so please be ready to go before the event starts.
+
+Food vendors: You'll need a Village of Ashwaubenon Food Vendor License
+to serve at our market.
+
+Which dates work for you?
+
+— Micah, Backyard Brew
+```
+
+**What Micah cut from the drafted version, and why it matters for the next one:**
+- **No enumerated list of open dates** at the end. The date blocks already say what's open;
+  repeating them as a list reads like a form.
+- **No "including one that's very short notice"** in the opener. He names the short notice
+  inside the date block itself ("Way too late to be asking, I know") where it's attached to
+  the actual date, not flagged up front.
+- Keep it one message. He does not send the terms separately from the dates, even to vendors
+  who already know them.
+
+**Not included, deliberately:** the four intake questions and the "established businesses, not
+hobby sellers" line. Those are for vendors who have not been screened yet — sending them to
+someone already on the list reads as a warning to a person you've already accepted.
+
+Question 4 is the screening one — it's how "established business, not hobby seller" actually
+gets checked.
 
 ## Musician standards
 
@@ -76,7 +168,7 @@ and listen to live music.
   Use it when weather is genuinely a question that week (the forecast is bad, or someone asked)
   and leave it out otherwise. It got into nearly every draft of a multi-post batch purely because
   it reads like a standard event detail, and the repetition went stale fast. The same caution
-  applies to the other always-true details here: "noon-4pm" and "30+ vendors" are true every
+  applies to the other always-true details here: "noon-4pm" and the vendor lineup are true every
   single week, which makes them repetition risks across a batch rather than lines every post owes.
 - **Avoid:** "Sundays are for the backyard," "See you in the backyard," overly polished/ad-like
   language, plugging disc golf/hiking/pickleball as part of THIS event's core pitch (those are

@@ -22,10 +22,10 @@ the marketing picture.
 | Monday | Bingo Night | Performs |
 | Tuesday | Pickleball Open Play | **Underperforming.** Has a crowd, could be much bigger |
 | Wednesday | Tacos + Poker Club | **Underperforming.** Has a crowd, could be much bigger |
-| Thursday | No weekly event (as of 2026-08-30) | **Backyard Market & Brews moved to Sunday** — evening market stopped working as days got dark too early. A future indoor winter version is on the backburner, not decided; don't invent details |
+| Thursday | No weekly event (as of 2026-09-13) | **Backyard Market & Brews moved to Sunday** — evening market stopped working as days got dark too early. A future indoor winter version is on the backburner, not decided; don't invent details |
 | Friday | Karaoke Night | Performs |
 | Saturday | Pool Night (evening) | Evening performs. **Morning through early afternoon is slow** unless something is scheduled |
-| Sunday | Backyard Market & Brews (moved from Thursday 2026-08-30) | The community/vendor showcase, now noon-4pm on Sundays. **Seasonal Sept-Jan: also Sunday football**, folded into the market rather than a separate event (originally built as standalone "Packers Sundays" 2026-08-10, merged 2026-08-12). Kickoff time is deliberately never pre-set; confirm each week's real time before it goes in a post |
+| Sunday | Backyard Market & Brews (moved from Thursday 2026-09-13) | The community/vendor showcase, now noon-4pm on Sundays. **Seasonal Sept-Jan: also Sunday football**, folded into the market rather than a separate event (originally built as standalone "Packers Sundays" 2026-08-10, merged 2026-08-12). Kickoff time is deliberately never pre-set; confirm each week's real time before it goes in a post |
 
 ### The Tuesday/Wednesday diagnosis
 
@@ -46,7 +46,7 @@ nearby courts. See `growth-playbook.md`.
    the best version of itself in daylight, and almost nobody is there. Still
    fully open.
 2. **Sunday, 11am-noon and 4pm-7pm.** Backyard Market & Brews now fills
-   noon-4pm year-round (moved from Thursday 2026-08-30), and Sept-Jan the
+   noon-4pm year-round (moved from Thursday 2026-09-13), and Sept-Jan the
    market also carries the Sunday football crowd. The edges of the day —
    before the market opens and after it closes — are what's left open, a
    much smaller gap than before.

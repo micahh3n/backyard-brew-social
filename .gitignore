@@ -32,3 +32,5 @@ _previews/
 
 # Dispute/incident evidence -- private, not part of the public content pipeline
 incident-records/
+design/**/sunday-market-and-brews-poster.html
+design/**/_preview_*.html
