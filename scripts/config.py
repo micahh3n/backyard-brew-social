@@ -56,14 +56,16 @@ BUSINESS = {
     "facebook": "Backyard Brew",
 }
 
+# Sunday hours can extend for Packers games -- confirm that week's actual
+# closing time with the owner before stating one in a caption.
 HOURS = {
     "Monday": "4pm-9pm",
     "Tuesday": "4pm-9pm",
     "Wednesday": "4pm-9pm",
     "Thursday": "4pm-9pm",
     "Friday": "4pm-12am",
-    "Saturday": "11am-12am",
-    "Sunday": "11am-7pm-ish",
+    "Saturday": "2pm-12am",
+    "Sunday": "12pm-9pm (later on Packers game days)",
 }
 
 MEMBERSHIPS = (

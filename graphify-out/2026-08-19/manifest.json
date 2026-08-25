@@ -1050,13 +1050,13 @@
     "semantic_hash": ""
   },
   ".claude/skills/backyard-brew-brand/SKILL.md": {
-    "mtime": 1786577845.2455504,
-    "ast_hash": "bc2e75f21e8af0ec71ce942da10a2eb3",
+    "mtime": 1787160345.4285328,
+    "ast_hash": "0849887cdf131d443a923af52e81ace3",
     "semantic_hash": ""
   },
   ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md": {
-    "mtime": 1786577822.5547404,
-    "ast_hash": "051c282188c59c2165ea93d482adca75",
+    "mtime": 1787160363.883432,
+    "ast_hash": "5772228a08a47b1d3a7d9fe447c7f741",
     "semantic_hash": ""
   },
   ".claude/skills/backyard-brew-brand/references/caption-voice-rules.md": {
@@ -1075,8 +1075,8 @@
     "semantic_hash": ""
   },
   ".claude/skills/backyard-brew-brand/references/operations-reality.md": {
-    "mtime": 1786577869.554943,
-    "ast_hash": "7fae9dee0892aa90144abb7d811dab95",
+    "mtime": 1787160293.8064954,
+    "ast_hash": "93952c6d5b0cd34013deb5ea4fdd277e",
     "semantic_hash": ""
   },
   ".claude/skills/backyard-brew-brand/references/reply-rules.md": {
@@ -2362,6 +2362,246 @@
   "photos/_generated/moonlight_market_poster.png": {
     "mtime": 1786581534.2888699,
     "ast_hash": "b1c5e8e919f5363ee5fa40ef51a6dc48",
+    "semantic_hash": ""
+  },
+  ".claude/skills/backyard-brew-posters/scripts/build.py": {
+    "mtime": 1787176620.361759,
+    "ast_hash": "be93439440f98bf7129d7f6c91945cdc",
+    "semantic_hash": ""
+  },
+  "design/sunday-market-poster/canvas.json": {
+    "mtime": 1787172413.9943526,
+    "ast_hash": "21370b94025859ee005ab3ad6d022938",
+    "semantic_hash": ""
+  },
+  ".claude/skills/backyard-brew-posters/INSTALL.md": {
+    "mtime": 1787176747.186145,
+    "ast_hash": "ad0862a964eddc6bd6598ac8c50603bf",
+    "semantic_hash": ""
+  },
+  ".claude/skills/backyard-brew-posters/SKILL.md": {
+    "mtime": 1787176469.923199,
+    "ast_hash": "146445ab4c6c3172a04379d7f7ed18c5",
+    "semantic_hash": ""
+  },
+  ".claude/skills/backyard-brew-posters/references/anatomy.md": {
+    "mtime": 1787176531.986884,
+    "ast_hash": "e13b91d4bc3476a2ff5aeba7fa23dd1b",
+    "semantic_hash": ""
+  },
+  ".claude/skills/backyard-brew-posters/references/fonts.md": {
+    "mtime": 1787176559.8978608,
+    "ast_hash": "603e4fb3377e54bd2d05bef3cf7c8eb5",
+    "semantic_hash": ""
+  },
+  ".claude/skills/backyard-brew-posters/references/likes-dislikes.md": {
+    "mtime": 1787177077.0049465,
+    "ast_hash": "ce0ac78f8fc492f62ea2571e96c15500",
+    "semantic_hash": ""
+  },
+  ".claude/skills/backyard-brew-posters/templates/poster.dc.html": {
+    "mtime": 1787176657.832394,
+    "ast_hash": "46e0d20e5a26a794192a5519fceb988e",
+    "semantic_hash": ""
+  },
+  ".claude/skills/backyard-brew-posters/templates/social.dc.html": {
+    "mtime": 1787176687.979045,
+    "ast_hash": "d64a8754794df0e0f7804b2199d56688",
+    "semantic_hash": ""
+  },
+  "design/sunday-market-poster/Main.dc.html": {
+    "mtime": 1787176962.3026721,
+    "ast_hash": "fe546e3b96fb4d2b9f8b3450b172082a",
+    "semantic_hash": ""
+  },
+  "design/sunday-market-poster/Social.dc.html": {
+    "mtime": 1787177000.2439146,
+    "ast_hash": "054279fae3e8da552e7a8ec65994f52b",
+    "semantic_hash": ""
+  },
+  "design/sunday-market-poster/bb-logo.png": {
+    "mtime": 1787170164.292814,
+    "ast_hash": "35ad27893cb535f4753ed8adb8bdf30e",
+    "semantic_hash": ""
+  },
+  "design/sunday-market-poster/main.png": {
+    "mtime": 1787177001.7131102,
+    "ast_hash": "7496a3f0b0630dc41d6057a4a45b3da7",
+    "semantic_hash": ""
+  },
+  "design/sunday-market-poster/market-hero.jpg": {
+    "mtime": 1787170750.0977154,
+    "ast_hash": "6ebed7357b438a50205adb4d035b5301",
+    "semantic_hash": ""
+  },
+  "design/sunday-market-poster/social.png": {
+    "mtime": 1787177002.7980623,
+    "ast_hash": "b8cdd3f9316942d17dd9f9a91d5434d1",
+    "semantic_hash": ""
+  },
+  "design/sunday-market-poster/sunday-market-poster_18x24.png": {
+    "mtime": 1787177026.4664996,
+    "ast_hash": "7496a3f0b0630dc41d6057a4a45b3da7",
+    "semantic_hash": ""
+  },
+  "design/sunday-market-poster/sunday-market-social_4x5.png": {
+    "mtime": 1787177026.538586,
+    "ast_hash": "b8cdd3f9316942d17dd9f9a91d5434d1",
+    "semantic_hash": ""
+  },
+  "photos/IMG_8976.jpeg": {
+    "mtime": 1786730833.74322,
+    "ast_hash": "845f18fb0660a1714a3f2296009d4deb",
+    "semantic_hash": ""
+  },
+  "photos/IMG_8977.jpeg": {
+    "mtime": 1786730833.7593682,
+    "ast_hash": "8111578c7d18012b92ecbc36bc8e76a5",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9279.JPG": {
+    "mtime": 1785806205.0,
+    "ast_hash": "1630fc1c6fba2903547e4bf1bf942d83",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9379.JPG": {
+    "mtime": 1786301543.0,
+    "ast_hash": "23fbae8996413e0a0b80a7319af46a62",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9379.jpeg": {
+    "mtime": 1786730833.7993057,
+    "ast_hash": "23fbae8996413e0a0b80a7319af46a62",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9381.JPG": {
+    "mtime": 1786410910.0,
+    "ast_hash": "74af8c0a2606f623006972e581c8279f",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9383.JPG": {
+    "mtime": 1786410915.0,
+    "ast_hash": "72dcedf71d07a0d8310415c7cbf4c860",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9384.JPG": {
+    "mtime": 1786493438.0,
+    "ast_hash": "a5fbfc609825ef15edbd85a899bd9e55",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9386.JPG": {
+    "mtime": 1786493453.0,
+    "ast_hash": "7f55e62302518a2b6bc7c138e5573ebe",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9388.JPG": {
+    "mtime": 1786493455.0,
+    "ast_hash": "8a4b90994d283430c75b4a21ba3d3282",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9389.JPG": {
+    "mtime": 1786493588.0,
+    "ast_hash": "c56b4c9b6e6cf49e718bb71639c79bfc",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9392.JPG": {
+    "mtime": 1786496191.0,
+    "ast_hash": "2c33ebb4507e032eb9481fc0b5e0772b",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9394.JPG": {
+    "mtime": 1786496193.0,
+    "ast_hash": "0a9de8709d0422d426c447515dc84042",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9395.JPG": {
+    "mtime": 1786496205.0,
+    "ast_hash": "b2e53188bb0dda9e6806de4dc75b891c",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9396.JPG": {
+    "mtime": 1786496206.0,
+    "ast_hash": "8bd8a01f527b5d33f99631c8b95f3fc2",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9397.JPG": {
+    "mtime": 1786496207.0,
+    "ast_hash": "8e3d621c5bfc634912e49ad4ff63a758",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9398.JPG": {
+    "mtime": 1786496212.0,
+    "ast_hash": "9dd86ef7e72a2702ed5f65e948d9f2bd",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9399.JPG": {
+    "mtime": 1786496217.0,
+    "ast_hash": "835c17a55129bf4383e9df3ddbfe5813",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9400.JPG": {
+    "mtime": 1786496219.0,
+    "ast_hash": "872d0504a43a92616b292b0121eed64b",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9402.JPG": {
+    "mtime": 1786658755.0,
+    "ast_hash": "3c93284afe358a0eb9e8337b2ff731d8",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9404.JPG": {
+    "mtime": 1786658767.0,
+    "ast_hash": "fc1e85cdb6622108791eae1410cff504",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9405.JPG": {
+    "mtime": 1786658788.0,
+    "ast_hash": "98be8ecb473f26da8e798549bf9663ce",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9406.JPG": {
+    "mtime": 1786658789.0,
+    "ast_hash": "589fd6336d3569560e3ee825f144370d",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9408.JPG": {
+    "mtime": 1786668446.0,
+    "ast_hash": "42ea8adf848c4c4edbf95afb55346646",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9409.JPG": {
+    "mtime": 1786668446.0,
+    "ast_hash": "029a270a8a83f7cd8e122399652665e4",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9410.JPG": {
+    "mtime": 1786668449.0,
+    "ast_hash": "fe02e9a5cd077c4de0f44f457084b56c",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9411.JPG": {
+    "mtime": 1786668450.0,
+    "ast_hash": "1823ec1a0f698d663a5ee1e0c2d99f10",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9412.JPG": {
+    "mtime": 1786668477.0,
+    "ast_hash": "b3f8758ffb9ea75811aa4426fdd827da",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9413.JPG": {
+    "mtime": 1786668477.0,
+    "ast_hash": "f566cdc66f5146ca692aa5d4c7f39516",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9414.JPG": {
+    "mtime": 1786668896.0,
+    "ast_hash": "710c045128fd16be9a225b81908eaae5",
+    "semantic_hash": ""
+  },
+  "photos/IMG_9415.JPG": {
+    "mtime": 1786668897.0,
+    "ast_hash": "afcc4454d779ff59aebe0d91a6d6aa97",
     "semantic_hash": ""
   }
 }

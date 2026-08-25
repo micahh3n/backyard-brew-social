@@ -1,4 +1,11 @@
-# Poster anatomy
+# Poster anatomy: the MARKET recipe
+
+> **This is one composition, not the house template.** It is the Sunday
+> Market & Brews layout and the numbers below are what survived review *for
+> that poster*. Every night gets its own structure — see "The reskin
+> correction" in `likes-dislikes.md` for the rule and for what has already
+> been built. Reuse the palette, the frame, the logo weight and the type
+> scale here as reference values; do not reuse the stack.
 
 Exact values. Use them rather than re-deriving — the numbers below are what
 survived review.

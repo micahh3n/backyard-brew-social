@@ -12,7 +12,7 @@ before writing anything.
 
 | Doing this | Read |
 |---|---|
-| Writing a caption or post | `references/caption-voice-rules.md` |
+| Writing a caption or post | `references/caption-voice-rules.md` **and** `references/caption-likes-dislikes.md` (real examples + the corrections ledger — read both, always). Also invoke the `the-ghostwriter` and `stop-slop` skills. |
 | Writing a Gemini prompt or making a graphic | `references/graphics-workflow.md` |
 | Replying to a review, comment, or DM | `references/reply-rules.md` |
 | Growth, SEO, marketing, new event ideas | `references/growth-playbook.md` |
@@ -89,6 +89,24 @@ companies, Renard's and Jolly Bob's**. They are NOT hand-made or made in-house �
 is not a crust supplier; they are two pizza makers whose pizzas are carried. Say "pizzas from
 Renard's and Jolly Bob's".
 
+**Tap system (confirmed 2026-08-23, corrected same day):** tap beers fill from
+the bottom of the cup upward, not poured from the top like a normal tap.
+**Backyard Brew is the only bar in the area with this system** — a real,
+statable claim, not just a nice detail (don't over-promote it as the headline
+of every post, but it's genuinely worth naming). It also pours a better beer.
+It's the source of a real running joke: "don't poke your hole," "you'll get
+soaked" (about the cup's bottom seal during the pour) — comedic bar humor
+with an obvious double meaning, and that's the point, don't sanitize it.
+
+**The bigger thing this system enables: collectible magnets.** Each cup has a
+magnet on the bottom. Customers collect them after finishing their drink,
+building toward a full set for a prize. **Bingo Night has its own themed set**
+— spell out B-I-N-G-O with the magnets and it's a free beer. This is a
+genuine, ownable, gamified hook specific to that night, not just a nice-to-know
+fact — it belongs in Bingo Night captions as a real headline detail, not a
+footnote. Ask Micah whether other nights have their own magnet sets before
+assuming; only Bingo is confirmed as of 2026-08-23.
+
 The backyard-brew.com website's own Sunday-closed bug is fixed (shipped 2026-08-04, confirmed
 still correct as of the 2026-08-09 update) — don't say the website is wrong anymore. The
 Sunday-hours problem now lives on Yelp, Restaurantji, and UDisc instead, which still show Sunday
@@ -116,7 +134,7 @@ Logo: navy circle, gold ring, disc golf basket + beer mug icon, sun rays, "Backy
 
 ## Voice
 
-Energetic, community-first, outdoorsy, Wisconsin-proud, fun without being try-hard. Feels like a friend texting you about a cool spot — never corporate, never a copywriting checklist that reads the same way every time (vary the opening move, vary how membership gets mentioned, don't recite the same lines every post — see `references/caption-voice-rules.md` for the full rule set already tuned for this brand's caption generator).
+Energetic, community-first, outdoorsy, Wisconsin-proud, fun without being try-hard. Feels like a friend texting you about a cool spot — never corporate, never a copywriting checklist that reads the same way every time (vary the opening move, vary how membership gets mentioned, don't recite the same lines every post — see `references/caption-voice-rules.md` for the mechanical rules, and `references/caption-likes-dislikes.md` for what the voice actually sounds like in his real posts plus the running corrections ledger).
 
 **Non-negotiable: Wisconsin-only, with one documented exception.** Never name-drop or reference any non-Wisconsin brand, chain, or product — **except Miller Lite and Corona Extra**, which are real, on-tap Domestics (see the Facts section above). Don't feature them as the subject of a post, but don't scrub them from a tap-wall photo either. Packers/Brewers/Green Bay references are welcome where natural.
 
@@ -159,7 +177,7 @@ The weekly social-content automation lives in the `backyard-brew-social` repo. `
 - [ ] Fonts come from the established set, in their roles (Pacifico never a headline; Alfa Slab One only for food-forward events)
 - [ ] Zero non-Wisconsin brand names or references anywhere
 - [ ] Hours and event facts match THIS file (the website itself is correct now — Yelp, Restaurantji, and UDisc are the stale ones, see `references/growth-playbook.md`)
-- [ ] Captions follow `references/caption-voice-rules.md` — varied opener, varied membership mention, no recycled lines
+- [ ] Captions follow `references/caption-voice-rules.md` and `references/caption-likes-dislikes.md` — varied opener, varied membership mention, no recycled lines, checked against the rolling log and real examples
 - [ ] Aesthetic is retro outdoor badge / vintage national park — not sleek/tech, not cute/trendy
 - [ ] No mention of breakfast anywhere (discontinued 2026-07-26)
 - [ ] If it recommends an action, event, or priority: `references/operations-reality.md` was read, and the idea does not duplicate something already running or require staff that does not exist

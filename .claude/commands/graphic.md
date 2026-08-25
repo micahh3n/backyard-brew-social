@@ -33,8 +33,13 @@ cover all nine blocks from `graphics-workflow.md`:
 **2. What to attach.** Which photo file, plus the logo from `assets/logo/`.
 
 **3. The captions.** Facebook and Instagram, following
-`references/caption-voice-rules.md`. Genuinely different angles, not one
-shortened. Hashtags listed separately for the first comment.
+`references/caption-voice-rules.md` and `references/caption-likes-dislikes.md`
+(real examples, voice pattern, and the rolling "recently used" log — check it
+so this doesn't clash with whatever `/sunday` already said this week).
+Genuinely different angles, not one shortened. Hashtags listed separately for
+the first comment. After writing, append the caption's opener/hook/specific
+phrase to that same rolling log, and log any correction Micah makes into the
+ledger's corrections table.
 
 **4. The proofread reminder.** One line: check spelling in the image, check
 for AI distortion, check it sounds like Backyard Brew.

@@ -4,646 +4,6 @@
   "graph": {},
   "nodes": [
     {
-      "label": "SKILL.md",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_skill",
-      "community": 11,
-      "norm_label": "skill.md"
-    },
-    {
-      "label": "Backyard Brew Brand Identity",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L6",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "community": 11,
-      "norm_label": "backyard brew brand identity"
-    },
-    {
-      "label": "Start here: which file answers your question",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L8",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_skill_start_here_which_file_answers_your_question",
-      "community": 11,
-      "norm_label": "start here: which file answers your question"
-    },
-    {
-      "label": "What this business is",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L39",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_skill_what_this_business_is",
-      "community": 11,
-      "norm_label": "what this business is"
-    },
-    {
-      "label": "Facts (verified \u2014 use these exact values)",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L55",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_skill_facts_verified_use_these_exact_values",
-      "community": 11,
-      "norm_label": "facts (verified \u2014 use these exact values)"
-    },
-    {
-      "label": "Colors (extracted from the logo \u2014 use these exact hex values)",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L98",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_skill_colors_extracted_from_the_logo_use_these_exact_hex_values",
-      "community": 11,
-      "norm_label": "colors (extracted from the logo \u2014 use these exact hex values)"
-    },
-    {
-      "label": "Fonts already established in this brand's content pipeline",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L108",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_skill_fonts_already_established_in_this_brand_s_content_pipeline",
-      "community": 11,
-      "norm_label": "fonts already established in this brand's content pipeline"
-    },
-    {
-      "label": "Voice",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L117",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_skill_voice",
-      "community": 11,
-      "norm_label": "voice"
-    },
-    {
-      "label": "Recurring weekly events (the heartbeat of the content calendar)",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L136",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_skill_recurring_weekly_events_the_heartbeat_of_the_content_calendar",
-      "community": 11,
-      "norm_label": "recurring weekly events (the heartbeat of the content calendar)"
-    },
-    {
-      "label": "Where this feeds into the actual automation",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L152",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_skill_where_this_feeds_into_the_actual_automation",
-      "community": 11,
-      "norm_label": "where this feeds into the actual automation"
-    },
-    {
-      "label": "Pre-flight for any Backyard Brew deliverable",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L156",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_skill_pre_flight_for_any_backyard_brew_deliverable",
-      "community": 11,
-      "norm_label": "pre-flight for any backyard brew deliverable"
-    },
-    {
-      "label": "backyard-market-brews.md",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews",
-      "community": 12,
-      "norm_label": "backyard-market-brews.md"
-    },
-    {
-      "label": "Backyard Market & Brews (Sunday)",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_sunday",
-      "community": 12,
-      "norm_label": "backyard market & brews (sunday)"
-    },
-    {
-      "label": "What it is",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L27",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_what_it_is",
-      "community": 12,
-      "norm_label": "what it is"
-    },
-    {
-      "label": "Schedule",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L33",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_schedule",
-      "community": 12,
-      "norm_label": "schedule"
-    },
-    {
-      "label": "What happens",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L48",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_what_happens",
-      "community": 12,
-      "norm_label": "what happens"
-    },
-    {
-      "label": "Vendor standards (screening criteria)",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L56",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_vendor_standards_screening_criteria",
-      "community": 12,
-      "norm_label": "vendor standards (screening criteria)"
-    },
-    {
-      "label": "Vendor terms (confirmed 2026-08-19 \u2014 this is what Micah sends every vendor)",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L67",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_vendor_terms_confirmed_2026_08_19_this_is_what_micah_sends_every_vendor",
-      "community": 12,
-      "norm_label": "vendor terms (confirmed 2026-08-19 \u2014 this is what micah sends every vendor)"
-    },
-    {
-      "label": "Vendor outreach DM (approved template, 2026-08-19)",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L97",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_vendor_outreach_dm_approved_template_2026_08_19",
-      "community": 12,
-      "norm_label": "vendor outreach dm (approved template, 2026-08-19)"
-    },
-    {
-      "label": "Musician standards",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L148",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_musician_standards",
-      "community": 12,
-      "norm_label": "musician standards"
-    },
-    {
-      "label": "Messaging & tone guidelines",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L153",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_messaging_tone_guidelines",
-      "community": 12,
-      "norm_label": "messaging & tone guidelines"
-    },
-    {
-      "label": "Contact",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L192",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_contact",
-      "community": 12,
-      "norm_label": "contact"
-    },
-    {
-      "label": "Photo situation (open gap as of 2026-07-26)",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L196",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_photo_situation_open_gap_as_of_2026_07_26",
-      "community": 12,
-      "norm_label": "photo situation (open gap as of 2026-07-26)"
-    },
-    {
-      "label": "operations-reality.md",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_references_operations_reality",
-      "community": 10,
-      "norm_label": "operations-reality.md"
-    },
-    {
-      "label": "Operations Reality",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_references_operations_reality_operations_reality",
-      "community": 10,
-      "norm_label": "operations reality"
-    },
-    {
-      "label": "The week, honestly",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
-      "source_location": "L15",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_references_operations_reality_the_week_honestly",
-      "community": 10,
-      "norm_label": "the week, honestly"
-    },
-    {
-      "label": "The Tuesday/Wednesday diagnosis",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
-      "source_location": "L30",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_references_operations_reality_the_tuesday_wednesday_diagnosis",
-      "community": 10,
-      "norm_label": "the tuesday/wednesday diagnosis"
-    },
-    {
-      "label": "The real gaps",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
-      "source_location": "L43",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_references_operations_reality_the_real_gaps",
-      "community": 10,
-      "norm_label": "the real gaps"
-    },
-    {
-      "label": "Staff (as of 2026-07-27, actively changing)",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
-      "source_location": "L60",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_references_operations_reality_staff_as_of_2026_07_27_actively_changing",
-      "community": 10,
-      "norm_label": "staff (as of 2026-07-27, actively changing)"
-    },
-    {
-      "label": "How to handle staffing in recommendations",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
-      "source_location": "L82",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_references_operations_reality_how_to_handle_staffing_in_recommendations",
-      "community": 10,
-      "norm_label": "how to handle staffing in recommendations"
-    },
-    {
-      "label": "Goals",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
-      "source_location": "L95",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_references_operations_reality_goals",
-      "community": 10,
-      "norm_label": "goals"
-    },
-    {
-      "label": "Customers and complaints",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
-      "source_location": "L112",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_references_operations_reality_customers_and_complaints",
-      "community": 10,
-      "norm_label": "customers and complaints"
-    },
-    {
-      "label": "What made the son's work good",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
-      "source_location": "L128",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_references_operations_reality_what_made_the_son_s_work_good",
-      "community": 10,
-      "norm_label": "what made the son's work good"
-    },
-    {
-      "label": "Constraints to respect in any recommendation",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
-      "source_location": "L143",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_brand_references_operations_reality_constraints_to_respect_in_any_recommendation",
-      "community": 10,
-      "norm_label": "constraints to respect in any recommendation"
-    },
-    {
-      "label": "INSTALL.md",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/INSTALL.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_install",
-      "community": 74,
-      "norm_label": "install.md"
-    },
-    {
-      "label": "Installing this skill",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/INSTALL.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_install_installing_this_skill",
-      "community": 74,
-      "norm_label": "installing this skill"
-    },
-    {
-      "label": "Already have the repo?",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/INSTALL.md",
-      "source_location": "L6",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_install_already_have_the_repo",
-      "community": 74,
-      "norm_label": "already have the repo?"
-    },
-    {
-      "label": "To use it everywhere, not just in that folder",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/INSTALL.md",
-      "source_location": "L12",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_install_to_use_it_everywhere_not_just_in_that_folder",
-      "community": 74,
-      "norm_label": "to use it everywhere, not just in that folder"
-    },
-    {
-      "label": "What it needs on your machine",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/INSTALL.md",
-      "source_location": "L30",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_install_what_it_needs_on_your_machine",
-      "community": 74,
-      "norm_label": "what it needs on your machine"
-    },
-    {
-      "label": "Using it",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/INSTALL.md",
-      "source_location": "L40",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_install_using_it",
-      "community": 74,
-      "norm_label": "using it"
-    },
-    {
-      "label": "Keeping it current",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/INSTALL.md",
-      "source_location": "L55",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_install_keeping_it_current",
-      "community": 74,
-      "norm_label": "keeping it current"
-    },
-    {
-      "label": "SKILL.md",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_skill",
-      "community": 73,
-      "norm_label": "skill.md"
-    },
-    {
-      "label": "Backyard Brew Posters",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
-      "source_location": "L6",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_skill_backyard_brew_posters",
-      "community": 73,
-      "norm_label": "backyard brew posters"
-    },
-    {
-      "label": "Non-negotiables",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
-      "source_location": "L18",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_skill_non_negotiables",
-      "community": 73,
-      "norm_label": "non-negotiables"
-    },
-    {
-      "label": "What you deliver, every time",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
-      "source_location": "L38",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_skill_what_you_deliver_every_time",
-      "community": 73,
-      "norm_label": "what you deliver, every time"
-    },
-    {
-      "label": "Process",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
-      "source_location": "L48",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_skill_process",
-      "community": 73,
-      "norm_label": "process"
-    },
-    {
-      "label": "Pre-flight",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
-      "source_location": "L69",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_skill_pre_flight",
-      "community": 73,
-      "norm_label": "pre-flight"
-    },
-    {
-      "label": "Files",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
-      "source_location": "L87",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_skill_files",
-      "community": 73,
-      "norm_label": "files"
-    },
-    {
-      "label": "Keeping the copies in sync",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
-      "source_location": "L99",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_skill_keeping_the_copies_in_sync",
-      "community": 73,
-      "norm_label": "keeping the copies in sync"
-    },
-    {
-      "label": "anatomy.md",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_references_anatomy",
-      "community": 72,
-      "norm_label": "anatomy.md"
-    },
-    {
-      "label": "Poster anatomy",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_references_anatomy_poster_anatomy",
-      "community": 72,
-      "norm_label": "poster anatomy"
-    },
-    {
-      "label": "Canvas",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
-      "source_location": "L6",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_references_anatomy_canvas",
-      "community": 72,
-      "norm_label": "canvas"
-    },
-    {
-      "label": "Scrims",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
-      "source_location": "L26",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_references_anatomy_scrims",
-      "community": 72,
-      "norm_label": "scrims"
-    },
-    {
-      "label": "Top block, in order",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
-      "source_location": "L47",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_references_anatomy_top_block_in_order",
-      "community": 72,
-      "norm_label": "top block, in order"
-    },
-    {
-      "label": "Bottom block, in order",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
-      "source_location": "L68",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_references_anatomy_bottom_block_in_order",
-      "community": 72,
-      "norm_label": "bottom block, in order"
-    },
-    {
-      "label": "Rules the numbers encode",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
-      "source_location": "L94",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_references_anatomy_rules_the_numbers_encode",
-      "community": 72,
-      "norm_label": "rules the numbers encode"
-    },
-    {
-      "label": "Brand palette (exact)",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
-      "source_location": "L107",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_references_anatomy_brand_palette_exact",
-      "community": 72,
-      "norm_label": "brand palette (exact)"
-    },
-    {
-      "label": "fonts.md",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/references/fonts.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_references_fonts",
-      "community": 75,
-      "norm_label": "fonts.md"
-    },
-    {
-      "label": "Choosing the display font",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/references/fonts.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_references_fonts_choosing_the_display_font",
-      "community": 75,
-      "norm_label": "choosing the display font"
-    },
-    {
-      "label": "Fixed: everything that isn't the display font",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/references/fonts.md",
-      "source_location": "L7",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_references_fonts_fixed_everything_that_isn_t_the_display_font",
-      "community": 75,
-      "norm_label": "fixed: everything that isn't the display font"
-    },
-    {
-      "label": "The shortlist",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/references/fonts.md",
-      "source_location": "L16",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_references_fonts_the_shortlist",
-      "community": 75,
-      "norm_label": "the shortlist"
-    },
-    {
-      "label": "The one-shot check",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/references/fonts.md",
-      "source_location": "L31",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_references_fonts_the_one_shot_check",
-      "community": 75,
-      "norm_label": "the one-shot check"
-    },
-    {
-      "label": "Fallback stacks",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/references/fonts.md",
-      "source_location": "L46",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_references_fonts_fallback_stacks",
-      "community": 75,
-      "norm_label": "fallback stacks"
-    },
-    {
-      "label": "Adding a face",
-      "file_type": "document",
-      "source_file": ".claude/skills/backyard-brew-posters/references/fonts.md",
-      "source_location": "L56",
-      "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_references_fonts_adding_a_face",
-      "community": 75,
-      "norm_label": "adding a face"
-    },
-    {
       "label": "likes-dislikes.md",
       "file_type": "document",
       "source_file": ".claude/skills/backyard-brew-posters/references/likes-dislikes.md",
@@ -704,14 +64,664 @@
       "norm_label": "copy edits he has made by hand (2026-08-19)"
     },
     {
+      "label": "Sticker overlays (added 2026-08-19)",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/references/likes-dislikes.md",
+      "source_location": "L91",
+      "_origin": "ast",
+      "id": "claude_skills_backyard_brew_posters_references_likes_dislikes_sticker_overlays_added_2026_08_19",
+      "community": 76,
+      "norm_label": "sticker overlays (added 2026-08-19)"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 11,
+      "norm_label": "skill.md",
+      "id": "claude_skills_backyard_brew_brand_skill"
+    },
+    {
+      "label": "Backyard Brew Brand Identity",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "community": 11,
+      "norm_label": "backyard brew brand identity",
+      "id": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity"
+    },
+    {
+      "label": "Start here: which file answers your question",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "community": 11,
+      "norm_label": "start here: which file answers your question",
+      "id": "claude_skills_backyard_brew_brand_skill_start_here_which_file_answers_your_question"
+    },
+    {
+      "label": "What this business is",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L39",
+      "_origin": "ast",
+      "community": 11,
+      "norm_label": "what this business is",
+      "id": "claude_skills_backyard_brew_brand_skill_what_this_business_is"
+    },
+    {
+      "label": "Facts (verified \u2014 use these exact values)",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L55",
+      "_origin": "ast",
+      "community": 11,
+      "norm_label": "facts (verified \u2014 use these exact values)",
+      "id": "claude_skills_backyard_brew_brand_skill_facts_verified_use_these_exact_values"
+    },
+    {
+      "label": "Colors (extracted from the logo \u2014 use these exact hex values)",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L98",
+      "_origin": "ast",
+      "community": 11,
+      "norm_label": "colors (extracted from the logo \u2014 use these exact hex values)",
+      "id": "claude_skills_backyard_brew_brand_skill_colors_extracted_from_the_logo_use_these_exact_hex_values"
+    },
+    {
+      "label": "Fonts already established in this brand's content pipeline",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L108",
+      "_origin": "ast",
+      "community": 11,
+      "norm_label": "fonts already established in this brand's content pipeline",
+      "id": "claude_skills_backyard_brew_brand_skill_fonts_already_established_in_this_brand_s_content_pipeline"
+    },
+    {
+      "label": "Voice",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L117",
+      "_origin": "ast",
+      "community": 11,
+      "norm_label": "voice",
+      "id": "claude_skills_backyard_brew_brand_skill_voice"
+    },
+    {
+      "label": "Recurring weekly events (the heartbeat of the content calendar)",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L136",
+      "_origin": "ast",
+      "community": 11,
+      "norm_label": "recurring weekly events (the heartbeat of the content calendar)",
+      "id": "claude_skills_backyard_brew_brand_skill_recurring_weekly_events_the_heartbeat_of_the_content_calendar"
+    },
+    {
+      "label": "Where this feeds into the actual automation",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L152",
+      "_origin": "ast",
+      "community": 11,
+      "norm_label": "where this feeds into the actual automation",
+      "id": "claude_skills_backyard_brew_brand_skill_where_this_feeds_into_the_actual_automation"
+    },
+    {
+      "label": "Pre-flight for any Backyard Brew deliverable",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L156",
+      "_origin": "ast",
+      "community": 11,
+      "norm_label": "pre-flight for any backyard brew deliverable",
+      "id": "claude_skills_backyard_brew_brand_skill_pre_flight_for_any_backyard_brew_deliverable"
+    },
+    {
+      "label": "backyard-market-brews.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 12,
+      "norm_label": "backyard-market-brews.md",
+      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews"
+    },
+    {
+      "label": "Backyard Market & Brews (Sunday)",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 12,
+      "norm_label": "backyard market & brews (sunday)",
+      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_sunday"
+    },
+    {
+      "label": "What it is",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "community": 12,
+      "norm_label": "what it is",
+      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_what_it_is"
+    },
+    {
+      "label": "Schedule",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "community": 12,
+      "norm_label": "schedule",
+      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_schedule"
+    },
+    {
+      "label": "What happens",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L48",
+      "_origin": "ast",
+      "community": 12,
+      "norm_label": "what happens",
+      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_what_happens"
+    },
+    {
+      "label": "Vendor standards (screening criteria)",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L56",
+      "_origin": "ast",
+      "community": 12,
+      "norm_label": "vendor standards (screening criteria)",
+      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_vendor_standards_screening_criteria"
+    },
+    {
+      "label": "Vendor terms (confirmed 2026-08-19 \u2014 this is what Micah sends every vendor)",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L67",
+      "_origin": "ast",
+      "community": 12,
+      "norm_label": "vendor terms (confirmed 2026-08-19 \u2014 this is what micah sends every vendor)",
+      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_vendor_terms_confirmed_2026_08_19_this_is_what_micah_sends_every_vendor"
+    },
+    {
+      "label": "Vendor outreach DM (approved template, 2026-08-19)",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L97",
+      "_origin": "ast",
+      "community": 12,
+      "norm_label": "vendor outreach dm (approved template, 2026-08-19)",
+      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_vendor_outreach_dm_approved_template_2026_08_19"
+    },
+    {
+      "label": "Musician standards",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L148",
+      "_origin": "ast",
+      "community": 12,
+      "norm_label": "musician standards",
+      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_musician_standards"
+    },
+    {
+      "label": "Messaging & tone guidelines",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L153",
+      "_origin": "ast",
+      "community": 12,
+      "norm_label": "messaging & tone guidelines",
+      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_messaging_tone_guidelines"
+    },
+    {
+      "label": "Contact",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L192",
+      "_origin": "ast",
+      "community": 12,
+      "norm_label": "contact",
+      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_contact"
+    },
+    {
+      "label": "Photo situation (open gap as of 2026-07-26)",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L196",
+      "_origin": "ast",
+      "community": 12,
+      "norm_label": "photo situation (open gap as of 2026-07-26)",
+      "id": "claude_skills_backyard_brew_brand_references_backyard_market_brews_photo_situation_open_gap_as_of_2026_07_26"
+    },
+    {
+      "label": "operations-reality.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 10,
+      "norm_label": "operations-reality.md",
+      "id": "claude_skills_backyard_brew_brand_references_operations_reality"
+    },
+    {
+      "label": "Operations Reality",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 10,
+      "norm_label": "operations reality",
+      "id": "claude_skills_backyard_brew_brand_references_operations_reality_operations_reality"
+    },
+    {
+      "label": "The week, honestly",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "community": 10,
+      "norm_label": "the week, honestly",
+      "id": "claude_skills_backyard_brew_brand_references_operations_reality_the_week_honestly"
+    },
+    {
+      "label": "The Tuesday/Wednesday diagnosis",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "community": 10,
+      "norm_label": "the tuesday/wednesday diagnosis",
+      "id": "claude_skills_backyard_brew_brand_references_operations_reality_the_tuesday_wednesday_diagnosis"
+    },
+    {
+      "label": "The real gaps",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
+      "source_location": "L43",
+      "_origin": "ast",
+      "community": 10,
+      "norm_label": "the real gaps",
+      "id": "claude_skills_backyard_brew_brand_references_operations_reality_the_real_gaps"
+    },
+    {
+      "label": "Staff (as of 2026-07-27, actively changing)",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
+      "source_location": "L60",
+      "_origin": "ast",
+      "community": 10,
+      "norm_label": "staff (as of 2026-07-27, actively changing)",
+      "id": "claude_skills_backyard_brew_brand_references_operations_reality_staff_as_of_2026_07_27_actively_changing"
+    },
+    {
+      "label": "How to handle staffing in recommendations",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
+      "source_location": "L82",
+      "_origin": "ast",
+      "community": 10,
+      "norm_label": "how to handle staffing in recommendations",
+      "id": "claude_skills_backyard_brew_brand_references_operations_reality_how_to_handle_staffing_in_recommendations"
+    },
+    {
+      "label": "Goals",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
+      "source_location": "L95",
+      "_origin": "ast",
+      "community": 10,
+      "norm_label": "goals",
+      "id": "claude_skills_backyard_brew_brand_references_operations_reality_goals"
+    },
+    {
+      "label": "Customers and complaints",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
+      "source_location": "L112",
+      "_origin": "ast",
+      "community": 10,
+      "norm_label": "customers and complaints",
+      "id": "claude_skills_backyard_brew_brand_references_operations_reality_customers_and_complaints"
+    },
+    {
+      "label": "What made the son's work good",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
+      "source_location": "L128",
+      "_origin": "ast",
+      "community": 10,
+      "norm_label": "what made the son's work good",
+      "id": "claude_skills_backyard_brew_brand_references_operations_reality_what_made_the_son_s_work_good"
+    },
+    {
+      "label": "Constraints to respect in any recommendation",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
+      "source_location": "L143",
+      "_origin": "ast",
+      "community": 10,
+      "norm_label": "constraints to respect in any recommendation",
+      "id": "claude_skills_backyard_brew_brand_references_operations_reality_constraints_to_respect_in_any_recommendation"
+    },
+    {
+      "label": "INSTALL.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/INSTALL.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 74,
+      "norm_label": "install.md",
+      "id": "claude_skills_backyard_brew_posters_install"
+    },
+    {
+      "label": "Installing this skill",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/INSTALL.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 74,
+      "norm_label": "installing this skill",
+      "id": "claude_skills_backyard_brew_posters_install_installing_this_skill"
+    },
+    {
+      "label": "Already have the repo?",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/INSTALL.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "community": 74,
+      "norm_label": "already have the repo?",
+      "id": "claude_skills_backyard_brew_posters_install_already_have_the_repo"
+    },
+    {
+      "label": "To use it everywhere, not just in that folder",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/INSTALL.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "community": 74,
+      "norm_label": "to use it everywhere, not just in that folder",
+      "id": "claude_skills_backyard_brew_posters_install_to_use_it_everywhere_not_just_in_that_folder"
+    },
+    {
+      "label": "What it needs on your machine",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/INSTALL.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "community": 74,
+      "norm_label": "what it needs on your machine",
+      "id": "claude_skills_backyard_brew_posters_install_what_it_needs_on_your_machine"
+    },
+    {
+      "label": "Using it",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/INSTALL.md",
+      "source_location": "L40",
+      "_origin": "ast",
+      "community": 74,
+      "norm_label": "using it",
+      "id": "claude_skills_backyard_brew_posters_install_using_it"
+    },
+    {
+      "label": "Keeping it current",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/INSTALL.md",
+      "source_location": "L55",
+      "_origin": "ast",
+      "community": 74,
+      "norm_label": "keeping it current",
+      "id": "claude_skills_backyard_brew_posters_install_keeping_it_current"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 73,
+      "norm_label": "skill.md",
+      "id": "claude_skills_backyard_brew_posters_skill"
+    },
+    {
+      "label": "Backyard Brew Posters",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "community": 73,
+      "norm_label": "backyard brew posters",
+      "id": "claude_skills_backyard_brew_posters_skill_backyard_brew_posters"
+    },
+    {
+      "label": "Non-negotiables",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
+      "source_location": "L18",
+      "_origin": "ast",
+      "community": 73,
+      "norm_label": "non-negotiables",
+      "id": "claude_skills_backyard_brew_posters_skill_non_negotiables"
+    },
+    {
+      "label": "What you deliver, every time",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
+      "source_location": "L38",
+      "_origin": "ast",
+      "community": 73,
+      "norm_label": "what you deliver, every time",
+      "id": "claude_skills_backyard_brew_posters_skill_what_you_deliver_every_time"
+    },
+    {
+      "label": "Process",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
+      "source_location": "L48",
+      "_origin": "ast",
+      "community": 73,
+      "norm_label": "process",
+      "id": "claude_skills_backyard_brew_posters_skill_process"
+    },
+    {
+      "label": "Pre-flight",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
+      "source_location": "L69",
+      "_origin": "ast",
+      "community": 73,
+      "norm_label": "pre-flight",
+      "id": "claude_skills_backyard_brew_posters_skill_pre_flight"
+    },
+    {
+      "label": "Files",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
+      "source_location": "L87",
+      "_origin": "ast",
+      "community": 73,
+      "norm_label": "files",
+      "id": "claude_skills_backyard_brew_posters_skill_files"
+    },
+    {
+      "label": "Keeping the copies in sync",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
+      "source_location": "L99",
+      "_origin": "ast",
+      "community": 73,
+      "norm_label": "keeping the copies in sync",
+      "id": "claude_skills_backyard_brew_posters_skill_keeping_the_copies_in_sync"
+    },
+    {
+      "label": "anatomy.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 72,
+      "norm_label": "anatomy.md",
+      "id": "claude_skills_backyard_brew_posters_references_anatomy"
+    },
+    {
+      "label": "Poster anatomy",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 72,
+      "norm_label": "poster anatomy",
+      "id": "claude_skills_backyard_brew_posters_references_anatomy_poster_anatomy"
+    },
+    {
+      "label": "Canvas",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "community": 72,
+      "norm_label": "canvas",
+      "id": "claude_skills_backyard_brew_posters_references_anatomy_canvas"
+    },
+    {
+      "label": "Scrims",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "community": 72,
+      "norm_label": "scrims",
+      "id": "claude_skills_backyard_brew_posters_references_anatomy_scrims"
+    },
+    {
+      "label": "Top block, in order",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
+      "source_location": "L47",
+      "_origin": "ast",
+      "community": 72,
+      "norm_label": "top block, in order",
+      "id": "claude_skills_backyard_brew_posters_references_anatomy_top_block_in_order"
+    },
+    {
+      "label": "Bottom block, in order",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
+      "source_location": "L68",
+      "_origin": "ast",
+      "community": 72,
+      "norm_label": "bottom block, in order",
+      "id": "claude_skills_backyard_brew_posters_references_anatomy_bottom_block_in_order"
+    },
+    {
+      "label": "Rules the numbers encode",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
+      "source_location": "L94",
+      "_origin": "ast",
+      "community": 72,
+      "norm_label": "rules the numbers encode",
+      "id": "claude_skills_backyard_brew_posters_references_anatomy_rules_the_numbers_encode"
+    },
+    {
+      "label": "Brand palette (exact)",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
+      "source_location": "L107",
+      "_origin": "ast",
+      "community": 72,
+      "norm_label": "brand palette (exact)",
+      "id": "claude_skills_backyard_brew_posters_references_anatomy_brand_palette_exact"
+    },
+    {
+      "label": "fonts.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/references/fonts.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 75,
+      "norm_label": "fonts.md",
+      "id": "claude_skills_backyard_brew_posters_references_fonts"
+    },
+    {
+      "label": "Choosing the display font",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/references/fonts.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 75,
+      "norm_label": "choosing the display font",
+      "id": "claude_skills_backyard_brew_posters_references_fonts_choosing_the_display_font"
+    },
+    {
+      "label": "Fixed: everything that isn't the display font",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/references/fonts.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "community": 75,
+      "norm_label": "fixed: everything that isn't the display font",
+      "id": "claude_skills_backyard_brew_posters_references_fonts_fixed_everything_that_isn_t_the_display_font"
+    },
+    {
+      "label": "The shortlist",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/references/fonts.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "community": 75,
+      "norm_label": "the shortlist",
+      "id": "claude_skills_backyard_brew_posters_references_fonts_the_shortlist"
+    },
+    {
+      "label": "The one-shot check",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/references/fonts.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "community": 75,
+      "norm_label": "the one-shot check",
+      "id": "claude_skills_backyard_brew_posters_references_fonts_the_one_shot_check"
+    },
+    {
+      "label": "Fallback stacks",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/references/fonts.md",
+      "source_location": "L46",
+      "_origin": "ast",
+      "community": 75,
+      "norm_label": "fallback stacks",
+      "id": "claude_skills_backyard_brew_posters_references_fonts_fallback_stacks"
+    },
+    {
+      "label": "Adding a face",
+      "file_type": "document",
+      "source_file": ".claude/skills/backyard-brew-posters/references/fonts.md",
+      "source_location": "L56",
+      "_origin": "ast",
+      "community": 75,
+      "norm_label": "adding a face",
+      "id": "claude_skills_backyard_brew_posters_references_fonts_adding_a_face"
+    },
+    {
       "label": "build.py",
       "file_type": "code",
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_scripts_build",
       "community": 69,
-      "norm_label": "build.py"
+      "norm_label": "build.py",
+      "id": "claude_skills_backyard_brew_posters_scripts_build"
     },
     {
       "label": "chrome()",
@@ -719,9 +729,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L34",
       "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_scripts_build_chrome",
       "community": 69,
-      "norm_label": "chrome()"
+      "norm_label": "chrome()",
+      "id": "claude_skills_backyard_brew_posters_scripts_build_chrome"
     },
     {
       "label": "shot()",
@@ -729,9 +739,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L47",
       "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_scripts_build_shot",
       "community": 69,
-      "norm_label": "shot()"
+      "norm_label": "shot()",
+      "id": "claude_skills_backyard_brew_posters_scripts_build_shot"
     },
     {
       "label": "b64()",
@@ -739,9 +749,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L60",
       "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_scripts_build_b64",
       "community": 69,
-      "norm_label": "b64()"
+      "norm_label": "b64()",
+      "id": "claude_skills_backyard_brew_posters_scripts_build_b64"
     },
     {
       "label": "font_css()",
@@ -749,9 +759,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L75",
       "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_scripts_build_font_css",
       "community": 69,
-      "norm_label": "font_css()"
+      "norm_label": "font_css()",
+      "id": "claude_skills_backyard_brew_posters_scripts_build_font_css"
     },
     {
       "label": "artboard_size()",
@@ -759,9 +769,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L97",
       "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_scripts_build_artboard_size",
       "community": 69,
-      "norm_label": "artboard_size()"
+      "norm_label": "artboard_size()",
+      "id": "claude_skills_backyard_brew_posters_scripts_build_artboard_size"
     },
     {
       "label": "cmd_crop()",
@@ -769,9 +779,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L112",
       "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_scripts_build_cmd_crop",
       "community": 69,
-      "norm_label": "cmd_crop()"
+      "norm_label": "cmd_crop()",
+      "id": "claude_skills_backyard_brew_posters_scripts_build_cmd_crop"
     },
     {
       "label": "cmd_specimen()",
@@ -779,9 +789,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L123",
       "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_scripts_build_cmd_specimen",
       "community": 69,
-      "norm_label": "cmd_specimen()"
+      "norm_label": "cmd_specimen()",
+      "id": "claude_skills_backyard_brew_posters_scripts_build_cmd_specimen"
     },
     {
       "label": "cmd_build()",
@@ -789,9 +799,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L149",
       "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_scripts_build_cmd_build",
       "community": 69,
-      "norm_label": "cmd_build()"
+      "norm_label": "cmd_build()",
+      "id": "claude_skills_backyard_brew_posters_scripts_build_cmd_build"
     },
     {
       "label": "main()",
@@ -799,9 +809,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L182",
       "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_scripts_build_main",
       "community": 69,
-      "norm_label": "main()"
+      "norm_label": "main()",
+      "id": "claude_skills_backyard_brew_posters_scripts_build_main"
     },
     {
       "label": "Headless screenshot. --screenshot needs an absolute path or it fails     with '",
@@ -809,9 +819,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L48",
       "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_scripts_build_rationale_48",
       "community": 69,
-      "norm_label": "headless screenshot. --screenshot needs an absolute path or it fails     with '"
+      "norm_label": "headless screenshot. --screenshot needs an absolute path or it fails     with '",
+      "id": "claude_skills_backyard_brew_posters_scripts_build_rationale_48"
     },
     {
       "label": "Display face + both Barlow weights, as data URIs. Linked webfonts do     not su",
@@ -819,9 +829,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L76",
       "_origin": "ast",
-      "id": "claude_skills_backyard_brew_posters_scripts_build_rationale_76",
       "community": 69,
-      "norm_label": "display face + both barlow weights, as data uris. linked webfonts do     not su"
+      "norm_label": "display face + both barlow weights, as data uris. linked webfonts do     not su",
+      "id": "claude_skills_backyard_brew_posters_scripts_build_rationale_76"
     },
     {
       "label": "sunday.md",
@@ -4879,7 +4889,7 @@
       "source_file": ".claude/skills/power-design/principles/web-principles.md",
       "source_location": "L309",
       "_origin": "ast",
-      "community": 63,
+      "community": 77,
       "norm_label": "section 10: performance (core web vitals as a design constraint)",
       "id": "claude_skills_power_design_principles_web_principles_section_10_performance_core_web_vitals_as_a_design_constraint"
     },
@@ -4889,7 +4899,7 @@
       "source_file": ".claude/skills/power-design/principles/web-principles.md",
       "source_location": "L311",
       "_origin": "ast",
-      "community": 63,
+      "community": 77,
       "norm_label": "principle: the three core web vitals",
       "id": "claude_skills_power_design_principles_web_principles_principle_the_three_core_web_vitals"
     },
@@ -4899,7 +4909,7 @@
       "source_file": ".claude/skills/power-design/principles/web-principles.md",
       "source_location": "L321",
       "_origin": "ast",
-      "community": 63,
+      "community": 77,
       "norm_label": "principle: asset budgets",
       "id": "claude_skills_power_design_principles_web_principles_principle_asset_budgets"
     },
@@ -4909,7 +4919,7 @@
       "source_file": ".claude/skills/power-design/principles/web-principles.md",
       "source_location": "L330",
       "_origin": "ast",
-      "community": 63,
+      "community": 77,
       "norm_label": "principle: critical rendering path",
       "id": "claude_skills_power_design_principles_web_principles_principle_critical_rendering_path"
     },
@@ -8076,576 +8086,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L6",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill",
-      "target": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L98",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "target": "claude_skills_backyard_brew_brand_skill_colors_extracted_from_the_logo_use_these_exact_hex_values",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L55",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "target": "claude_skills_backyard_brew_brand_skill_facts_verified_use_these_exact_values",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L108",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "target": "claude_skills_backyard_brew_brand_skill_fonts_already_established_in_this_brand_s_content_pipeline",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L156",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "target": "claude_skills_backyard_brew_brand_skill_pre_flight_for_any_backyard_brew_deliverable",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L136",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "target": "claude_skills_backyard_brew_brand_skill_recurring_weekly_events_the_heartbeat_of_the_content_calendar",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L8",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "target": "claude_skills_backyard_brew_brand_skill_start_here_which_file_answers_your_question",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L117",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "target": "claude_skills_backyard_brew_brand_skill_voice",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L39",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "target": "claude_skills_backyard_brew_brand_skill_what_this_business_is",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
-      "source_location": "L152",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
-      "target": "claude_skills_backyard_brew_brand_skill_where_this_feeds_into_the_actual_automation",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews",
-      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_sunday",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L192",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_sunday",
-      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_contact",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L153",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_sunday",
-      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_messaging_tone_guidelines",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L148",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_sunday",
-      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_musician_standards",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L196",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_sunday",
-      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_photo_situation_open_gap_as_of_2026_07_26",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L33",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_sunday",
-      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_schedule",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L97",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_sunday",
-      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_vendor_outreach_dm_approved_template_2026_08_19",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L56",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_sunday",
-      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_vendor_standards_screening_criteria",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L67",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_sunday",
-      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_vendor_terms_confirmed_2026_08_19_this_is_what_micah_sends_every_vendor",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L48",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_sunday",
-      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_what_happens",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
-      "source_location": "L27",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_sunday",
-      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_what_it_is",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_operations_reality",
-      "target": "claude_skills_backyard_brew_brand_references_operations_reality_operations_reality",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
-      "source_location": "L143",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_operations_reality_operations_reality",
-      "target": "claude_skills_backyard_brew_brand_references_operations_reality_constraints_to_respect_in_any_recommendation",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
-      "source_location": "L112",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_operations_reality_operations_reality",
-      "target": "claude_skills_backyard_brew_brand_references_operations_reality_customers_and_complaints",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
-      "source_location": "L95",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_operations_reality_operations_reality",
-      "target": "claude_skills_backyard_brew_brand_references_operations_reality_goals",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
-      "source_location": "L60",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_operations_reality_operations_reality",
-      "target": "claude_skills_backyard_brew_brand_references_operations_reality_staff_as_of_2026_07_27_actively_changing",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_operations_reality_operations_reality",
-      "target": "claude_skills_backyard_brew_brand_references_operations_reality_the_week_honestly",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
-      "source_location": "L128",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_operations_reality_operations_reality",
-      "target": "claude_skills_backyard_brew_brand_references_operations_reality_what_made_the_son_s_work_good",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
-      "source_location": "L43",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_operations_reality_the_week_honestly",
-      "target": "claude_skills_backyard_brew_brand_references_operations_reality_the_real_gaps",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
-      "source_location": "L30",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_operations_reality_the_week_honestly",
-      "target": "claude_skills_backyard_brew_brand_references_operations_reality_the_tuesday_wednesday_diagnosis",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
-      "source_location": "L82",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_brand_references_operations_reality_staff_as_of_2026_07_27_actively_changing",
-      "target": "claude_skills_backyard_brew_brand_references_operations_reality_how_to_handle_staffing_in_recommendations",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-posters/INSTALL.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_posters_install",
-      "target": "claude_skills_backyard_brew_posters_install_installing_this_skill",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-posters/INSTALL.md",
-      "source_location": "L6",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_posters_install_installing_this_skill",
-      "target": "claude_skills_backyard_brew_posters_install_already_have_the_repo",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-posters/INSTALL.md",
-      "source_location": "L55",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_posters_install_installing_this_skill",
-      "target": "claude_skills_backyard_brew_posters_install_keeping_it_current",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-posters/INSTALL.md",
-      "source_location": "L12",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_posters_install_installing_this_skill",
-      "target": "claude_skills_backyard_brew_posters_install_to_use_it_everywhere_not_just_in_that_folder",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-posters/INSTALL.md",
-      "source_location": "L40",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_posters_install_installing_this_skill",
-      "target": "claude_skills_backyard_brew_posters_install_using_it",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-posters/INSTALL.md",
-      "source_location": "L30",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_posters_install_installing_this_skill",
-      "target": "claude_skills_backyard_brew_posters_install_what_it_needs_on_your_machine",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
-      "source_location": "L6",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_posters_skill",
-      "target": "claude_skills_backyard_brew_posters_skill_backyard_brew_posters",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
-      "source_location": "L87",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_posters_skill_backyard_brew_posters",
-      "target": "claude_skills_backyard_brew_posters_skill_files",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
-      "source_location": "L99",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_posters_skill_backyard_brew_posters",
-      "target": "claude_skills_backyard_brew_posters_skill_keeping_the_copies_in_sync",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
-      "source_location": "L18",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_posters_skill_backyard_brew_posters",
-      "target": "claude_skills_backyard_brew_posters_skill_non_negotiables",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
-      "source_location": "L69",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_posters_skill_backyard_brew_posters",
-      "target": "claude_skills_backyard_brew_posters_skill_pre_flight",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
-      "source_location": "L48",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_posters_skill_backyard_brew_posters",
-      "target": "claude_skills_backyard_brew_posters_skill_process",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
-      "source_location": "L38",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_posters_skill_backyard_brew_posters",
-      "target": "claude_skills_backyard_brew_posters_skill_what_you_deliver_every_time",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_posters_references_anatomy",
-      "target": "claude_skills_backyard_brew_posters_references_anatomy_poster_anatomy",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
-      "source_location": "L68",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_posters_references_anatomy_poster_anatomy",
-      "target": "claude_skills_backyard_brew_posters_references_anatomy_bottom_block_in_order",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
-      "source_location": "L107",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_posters_references_anatomy_poster_anatomy",
-      "target": "claude_skills_backyard_brew_posters_references_anatomy_brand_palette_exact",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
-      "source_location": "L6",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_posters_references_anatomy_poster_anatomy",
-      "target": "claude_skills_backyard_brew_posters_references_anatomy_canvas",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
-      "source_location": "L94",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_posters_references_anatomy_poster_anatomy",
-      "target": "claude_skills_backyard_brew_posters_references_anatomy_rules_the_numbers_encode",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
-      "source_location": "L26",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_posters_references_anatomy_poster_anatomy",
-      "target": "claude_skills_backyard_brew_posters_references_anatomy_scrims",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
-      "source_location": "L47",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_posters_references_anatomy_poster_anatomy",
-      "target": "claude_skills_backyard_brew_posters_references_anatomy_top_block_in_order",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-posters/references/fonts.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_posters_references_fonts",
-      "target": "claude_skills_backyard_brew_posters_references_fonts_choosing_the_display_font",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-posters/references/fonts.md",
-      "source_location": "L56",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_posters_references_fonts_choosing_the_display_font",
-      "target": "claude_skills_backyard_brew_posters_references_fonts_adding_a_face",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-posters/references/fonts.md",
-      "source_location": "L46",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_posters_references_fonts_choosing_the_display_font",
-      "target": "claude_skills_backyard_brew_posters_references_fonts_fallback_stacks",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-posters/references/fonts.md",
-      "source_location": "L7",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_posters_references_fonts_choosing_the_display_font",
-      "target": "claude_skills_backyard_brew_posters_references_fonts_fixed_everything_that_isn_t_the_display_font",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-posters/references/fonts.md",
-      "source_location": "L31",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_posters_references_fonts_choosing_the_display_font",
-      "target": "claude_skills_backyard_brew_posters_references_fonts_the_one_shot_check",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/skills/backyard-brew-posters/references/fonts.md",
-      "source_location": "L16",
-      "weight": 1.0,
-      "source": "claude_skills_backyard_brew_posters_references_fonts_choosing_the_display_font",
-      "target": "claude_skills_backyard_brew_posters_references_fonts_the_shortlist",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": ".claude/skills/backyard-brew-posters/references/likes-dislikes.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -8696,12 +8136,592 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-posters/references/likes-dislikes.md",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "claude_skills_backyard_brew_posters_references_likes_dislikes_what_micah_likes_and_does_not_like",
+      "target": "claude_skills_backyard_brew_posters_references_likes_dislikes_sticker_overlays_added_2026_08_19",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_skill",
+      "target": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L98",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "target": "claude_skills_backyard_brew_brand_skill_colors_extracted_from_the_logo_use_these_exact_hex_values"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "target": "claude_skills_backyard_brew_brand_skill_facts_verified_use_these_exact_values"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L108",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "target": "claude_skills_backyard_brew_brand_skill_fonts_already_established_in_this_brand_s_content_pipeline"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L156",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "target": "claude_skills_backyard_brew_brand_skill_pre_flight_for_any_backyard_brew_deliverable"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L136",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "target": "claude_skills_backyard_brew_brand_skill_recurring_weekly_events_the_heartbeat_of_the_content_calendar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "target": "claude_skills_backyard_brew_brand_skill_start_here_which_file_answers_your_question"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L117",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "target": "claude_skills_backyard_brew_brand_skill_voice"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "target": "claude_skills_backyard_brew_brand_skill_what_this_business_is"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/SKILL.md",
+      "source_location": "L152",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_skill_backyard_brew_brand_identity",
+      "target": "claude_skills_backyard_brew_brand_skill_where_this_feeds_into_the_actual_automation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews",
+      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_sunday"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L192",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_sunday",
+      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_contact"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L153",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_sunday",
+      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_messaging_tone_guidelines"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L148",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_sunday",
+      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_musician_standards"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L196",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_sunday",
+      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_photo_situation_open_gap_as_of_2026_07_26"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_sunday",
+      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_schedule"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L97",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_sunday",
+      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_vendor_outreach_dm_approved_template_2026_08_19"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_sunday",
+      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_vendor_standards_screening_criteria"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_sunday",
+      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_vendor_terms_confirmed_2026_08_19_this_is_what_micah_sends_every_vendor"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_sunday",
+      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_what_happens"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/backyard-market-brews.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_backyard_market_brews_backyard_market_brews_sunday",
+      "target": "claude_skills_backyard_brew_brand_references_backyard_market_brews_what_it_is"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_operations_reality",
+      "target": "claude_skills_backyard_brew_brand_references_operations_reality_operations_reality"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
+      "source_location": "L143",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_operations_reality_operations_reality",
+      "target": "claude_skills_backyard_brew_brand_references_operations_reality_constraints_to_respect_in_any_recommendation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
+      "source_location": "L112",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_operations_reality_operations_reality",
+      "target": "claude_skills_backyard_brew_brand_references_operations_reality_customers_and_complaints"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
+      "source_location": "L95",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_operations_reality_operations_reality",
+      "target": "claude_skills_backyard_brew_brand_references_operations_reality_goals"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_operations_reality_operations_reality",
+      "target": "claude_skills_backyard_brew_brand_references_operations_reality_staff_as_of_2026_07_27_actively_changing"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_operations_reality_operations_reality",
+      "target": "claude_skills_backyard_brew_brand_references_operations_reality_the_week_honestly"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
+      "source_location": "L128",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_operations_reality_operations_reality",
+      "target": "claude_skills_backyard_brew_brand_references_operations_reality_what_made_the_son_s_work_good"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_operations_reality_the_week_honestly",
+      "target": "claude_skills_backyard_brew_brand_references_operations_reality_the_real_gaps"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_operations_reality_the_week_honestly",
+      "target": "claude_skills_backyard_brew_brand_references_operations_reality_the_tuesday_wednesday_diagnosis"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-brand/references/operations-reality.md",
+      "source_location": "L82",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_brand_references_operations_reality_staff_as_of_2026_07_27_actively_changing",
+      "target": "claude_skills_backyard_brew_brand_references_operations_reality_how_to_handle_staffing_in_recommendations"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-posters/INSTALL.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_posters_install",
+      "target": "claude_skills_backyard_brew_posters_install_installing_this_skill"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-posters/INSTALL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_posters_install_installing_this_skill",
+      "target": "claude_skills_backyard_brew_posters_install_already_have_the_repo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-posters/INSTALL.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_posters_install_installing_this_skill",
+      "target": "claude_skills_backyard_brew_posters_install_keeping_it_current"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-posters/INSTALL.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_posters_install_installing_this_skill",
+      "target": "claude_skills_backyard_brew_posters_install_to_use_it_everywhere_not_just_in_that_folder"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-posters/INSTALL.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_posters_install_installing_this_skill",
+      "target": "claude_skills_backyard_brew_posters_install_using_it"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-posters/INSTALL.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_posters_install_installing_this_skill",
+      "target": "claude_skills_backyard_brew_posters_install_what_it_needs_on_your_machine"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_posters_skill",
+      "target": "claude_skills_backyard_brew_posters_skill_backyard_brew_posters"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
+      "source_location": "L87",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_posters_skill_backyard_brew_posters",
+      "target": "claude_skills_backyard_brew_posters_skill_files"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
+      "source_location": "L99",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_posters_skill_backyard_brew_posters",
+      "target": "claude_skills_backyard_brew_posters_skill_keeping_the_copies_in_sync"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_posters_skill_backyard_brew_posters",
+      "target": "claude_skills_backyard_brew_posters_skill_non_negotiables"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
+      "source_location": "L69",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_posters_skill_backyard_brew_posters",
+      "target": "claude_skills_backyard_brew_posters_skill_pre_flight"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_posters_skill_backyard_brew_posters",
+      "target": "claude_skills_backyard_brew_posters_skill_process"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-posters/SKILL.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_posters_skill_backyard_brew_posters",
+      "target": "claude_skills_backyard_brew_posters_skill_what_you_deliver_every_time"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_posters_references_anatomy",
+      "target": "claude_skills_backyard_brew_posters_references_anatomy_poster_anatomy"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
+      "source_location": "L68",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_posters_references_anatomy_poster_anatomy",
+      "target": "claude_skills_backyard_brew_posters_references_anatomy_bottom_block_in_order"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
+      "source_location": "L107",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_posters_references_anatomy_poster_anatomy",
+      "target": "claude_skills_backyard_brew_posters_references_anatomy_brand_palette_exact"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_posters_references_anatomy_poster_anatomy",
+      "target": "claude_skills_backyard_brew_posters_references_anatomy_canvas"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
+      "source_location": "L94",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_posters_references_anatomy_poster_anatomy",
+      "target": "claude_skills_backyard_brew_posters_references_anatomy_rules_the_numbers_encode"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_posters_references_anatomy_poster_anatomy",
+      "target": "claude_skills_backyard_brew_posters_references_anatomy_scrims"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-posters/references/anatomy.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_posters_references_anatomy_poster_anatomy",
+      "target": "claude_skills_backyard_brew_posters_references_anatomy_top_block_in_order"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-posters/references/fonts.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_posters_references_fonts",
+      "target": "claude_skills_backyard_brew_posters_references_fonts_choosing_the_display_font"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-posters/references/fonts.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_posters_references_fonts_choosing_the_display_font",
+      "target": "claude_skills_backyard_brew_posters_references_fonts_adding_a_face"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-posters/references/fonts.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_posters_references_fonts_choosing_the_display_font",
+      "target": "claude_skills_backyard_brew_posters_references_fonts_fallback_stacks"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-posters/references/fonts.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_posters_references_fonts_choosing_the_display_font",
+      "target": "claude_skills_backyard_brew_posters_references_fonts_fixed_everything_that_isn_t_the_display_font"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-posters/references/fonts.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_posters_references_fonts_choosing_the_display_font",
+      "target": "claude_skills_backyard_brew_posters_references_fonts_the_one_shot_check"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/backyard-brew-posters/references/fonts.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_skills_backyard_brew_posters_references_fonts_choosing_the_display_font",
+      "target": "claude_skills_backyard_brew_posters_references_fonts_the_shortlist"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L97",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_posters_scripts_build",
-      "target": "claude_skills_backyard_brew_posters_scripts_build_artboard_size",
-      "confidence_score": 1.0
+      "target": "claude_skills_backyard_brew_posters_scripts_build_artboard_size"
     },
     {
       "relation": "contains",
@@ -8709,9 +8729,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_posters_scripts_build",
-      "target": "claude_skills_backyard_brew_posters_scripts_build_b64",
-      "confidence_score": 1.0
+      "target": "claude_skills_backyard_brew_posters_scripts_build_b64"
     },
     {
       "relation": "contains",
@@ -8719,9 +8739,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_posters_scripts_build",
-      "target": "claude_skills_backyard_brew_posters_scripts_build_chrome",
-      "confidence_score": 1.0
+      "target": "claude_skills_backyard_brew_posters_scripts_build_chrome"
     },
     {
       "relation": "contains",
@@ -8729,9 +8749,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L149",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_posters_scripts_build",
-      "target": "claude_skills_backyard_brew_posters_scripts_build_cmd_build",
-      "confidence_score": 1.0
+      "target": "claude_skills_backyard_brew_posters_scripts_build_cmd_build"
     },
     {
       "relation": "contains",
@@ -8739,9 +8759,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L112",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_posters_scripts_build",
-      "target": "claude_skills_backyard_brew_posters_scripts_build_cmd_crop",
-      "confidence_score": 1.0
+      "target": "claude_skills_backyard_brew_posters_scripts_build_cmd_crop"
     },
     {
       "relation": "contains",
@@ -8749,9 +8769,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L123",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_posters_scripts_build",
-      "target": "claude_skills_backyard_brew_posters_scripts_build_cmd_specimen",
-      "confidence_score": 1.0
+      "target": "claude_skills_backyard_brew_posters_scripts_build_cmd_specimen"
     },
     {
       "relation": "contains",
@@ -8759,9 +8779,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_posters_scripts_build",
-      "target": "claude_skills_backyard_brew_posters_scripts_build_font_css",
-      "confidence_score": 1.0
+      "target": "claude_skills_backyard_brew_posters_scripts_build_font_css"
     },
     {
       "relation": "contains",
@@ -8769,9 +8789,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L182",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_posters_scripts_build",
-      "target": "claude_skills_backyard_brew_posters_scripts_build_main",
-      "confidence_score": 1.0
+      "target": "claude_skills_backyard_brew_posters_scripts_build_main"
     },
     {
       "relation": "contains",
@@ -8779,9 +8799,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_posters_scripts_build",
-      "target": "claude_skills_backyard_brew_posters_scripts_build_shot",
-      "confidence_score": 1.0
+      "target": "claude_skills_backyard_brew_posters_scripts_build_shot"
     },
     {
       "relation": "calls",
@@ -8790,9 +8810,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_posters_scripts_build_shot",
-      "target": "claude_skills_backyard_brew_posters_scripts_build_chrome",
-      "confidence_score": 1.0
+      "target": "claude_skills_backyard_brew_posters_scripts_build_chrome"
     },
     {
       "relation": "calls",
@@ -8801,9 +8821,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L175",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_posters_scripts_build_cmd_build",
-      "target": "claude_skills_backyard_brew_posters_scripts_build_shot",
-      "confidence_score": 1.0
+      "target": "claude_skills_backyard_brew_posters_scripts_build_shot"
     },
     {
       "relation": "calls",
@@ -8812,9 +8832,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L144",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_posters_scripts_build_cmd_specimen",
-      "target": "claude_skills_backyard_brew_posters_scripts_build_shot",
-      "confidence_score": 1.0
+      "target": "claude_skills_backyard_brew_posters_scripts_build_shot"
     },
     {
       "relation": "rationale_for",
@@ -8822,9 +8842,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_posters_scripts_build_rationale_48",
-      "target": "claude_skills_backyard_brew_posters_scripts_build_shot",
-      "confidence_score": 1.0
+      "target": "claude_skills_backyard_brew_posters_scripts_build_shot"
     },
     {
       "relation": "calls",
@@ -8833,9 +8853,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L166",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_posters_scripts_build_cmd_build",
-      "target": "claude_skills_backyard_brew_posters_scripts_build_b64",
-      "confidence_score": 1.0
+      "target": "claude_skills_backyard_brew_posters_scripts_build_b64"
     },
     {
       "relation": "calls",
@@ -8844,9 +8864,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L131",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_posters_scripts_build_cmd_specimen",
-      "target": "claude_skills_backyard_brew_posters_scripts_build_b64",
-      "confidence_score": 1.0
+      "target": "claude_skills_backyard_brew_posters_scripts_build_b64"
     },
     {
       "relation": "calls",
@@ -8855,9 +8875,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L92",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_posters_scripts_build_font_css",
-      "target": "claude_skills_backyard_brew_posters_scripts_build_b64",
-      "confidence_score": 1.0
+      "target": "claude_skills_backyard_brew_posters_scripts_build_b64"
     },
     {
       "relation": "calls",
@@ -8866,9 +8886,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L150",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_posters_scripts_build_cmd_build",
-      "target": "claude_skills_backyard_brew_posters_scripts_build_font_css",
-      "confidence_score": 1.0
+      "target": "claude_skills_backyard_brew_posters_scripts_build_font_css"
     },
     {
       "relation": "rationale_for",
@@ -8876,9 +8896,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L76",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_posters_scripts_build_rationale_76",
-      "target": "claude_skills_backyard_brew_posters_scripts_build_font_css",
-      "confidence_score": 1.0
+      "target": "claude_skills_backyard_brew_posters_scripts_build_font_css"
     },
     {
       "relation": "calls",
@@ -8887,9 +8907,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L167",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_skills_backyard_brew_posters_scripts_build_cmd_build",
-      "target": "claude_skills_backyard_brew_posters_scripts_build_artboard_size",
-      "confidence_score": 1.0
+      "target": "claude_skills_backyard_brew_posters_scripts_build_artboard_size"
     },
     {
       "relation": "indirect_call",
@@ -8898,9 +8918,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L194",
       "weight": 1.0,
+      "confidence_score": 0.5,
       "source": "claude_skills_backyard_brew_posters_scripts_build_main",
-      "target": "claude_skills_backyard_brew_posters_scripts_build_cmd_crop",
-      "confidence_score": 0.5
+      "target": "claude_skills_backyard_brew_posters_scripts_build_cmd_crop"
     },
     {
       "relation": "indirect_call",
@@ -8909,9 +8929,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L202",
       "weight": 1.0,
+      "confidence_score": 0.5,
       "source": "claude_skills_backyard_brew_posters_scripts_build_main",
-      "target": "claude_skills_backyard_brew_posters_scripts_build_cmd_specimen",
-      "confidence_score": 0.5
+      "target": "claude_skills_backyard_brew_posters_scripts_build_cmd_specimen"
     },
     {
       "relation": "indirect_call",
@@ -8920,9 +8940,9 @@
       "source_file": ".claude/skills/backyard-brew-posters/scripts/build.py",
       "source_location": "L207",
       "weight": 1.0,
+      "confidence_score": 0.5,
       "source": "claude_skills_backyard_brew_posters_scripts_build_main",
-      "target": "claude_skills_backyard_brew_posters_scripts_build_cmd_build",
-      "confidence_score": 0.5
+      "target": "claude_skills_backyard_brew_posters_scripts_build_cmd_build"
     },
     {
       "relation": "contains",
@@ -16690,5 +16710,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "aa3c79abe41b498c4654042b54e7623473255205"
+  "built_at_commit": "1d9cb4329b2d6c7b47b6389c49d705540b3d4b17"
 }

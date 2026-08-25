@@ -66,6 +66,12 @@ resolve it yourself:
 - `posts.csv` or `recurring_events.csv`: keep both sides' rows, drop exact
   duplicates, keep the row order sensible.
 - `status.log`: keep both sides, it is an append-only log.
+- `caption-likes-dislikes.md`: treat its two halves differently. The
+  "Recently used — rolling log" section merges like `status.log` — keep both
+  sides' entries, it's append-only. Everything else (the real examples, Voice
+  DNA, corrections ledger, hook-technique library) merges like a skill file
+  below — read both versions, merge the intent, keep both sides' new
+  corrections-table rows rather than picking one.
 - A playbook sheet or a skill file: read both versions and merge the intent.
   If both people genuinely changed the same sentence differently, keep the
   newer one and tell him what you overrode.

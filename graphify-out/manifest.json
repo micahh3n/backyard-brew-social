@@ -2370,8 +2370,8 @@
     "semantic_hash": ""
   },
   "design/sunday-market-poster/canvas.json": {
-    "mtime": 1787172413.9943526,
-    "ast_hash": "21370b94025859ee005ab3ad6d022938",
+    "mtime": 1787183738.7670884,
+    "ast_hash": "798934c5650a832ff046ad9930ac374c",
     "semantic_hash": ""
   },
   ".claude/skills/backyard-brew-posters/INSTALL.md": {
@@ -2395,8 +2395,8 @@
     "semantic_hash": ""
   },
   ".claude/skills/backyard-brew-posters/references/likes-dislikes.md": {
-    "mtime": 1787177077.0049465,
-    "ast_hash": "ce0ac78f8fc492f62ea2571e96c15500",
+    "mtime": 1787183779.4996827,
+    "ast_hash": "b668663b94f41b2eabc967962d7575d6",
     "semantic_hash": ""
   },
   ".claude/skills/backyard-brew-posters/templates/poster.dc.html": {
@@ -2410,13 +2410,13 @@
     "semantic_hash": ""
   },
   "design/sunday-market-poster/Main.dc.html": {
-    "mtime": 1787176962.3026721,
-    "ast_hash": "fe546e3b96fb4d2b9f8b3450b172082a",
+    "mtime": 1787183668.8365364,
+    "ast_hash": "866c339a299f9f86bcb41b0d27888c6d",
     "semantic_hash": ""
   },
   "design/sunday-market-poster/Social.dc.html": {
-    "mtime": 1787177000.2439146,
-    "ast_hash": "054279fae3e8da552e7a8ec65994f52b",
+    "mtime": 1787183711.3658822,
+    "ast_hash": "5a005cc562b147208769b9cb712462f6",
     "semantic_hash": ""
   },
   "design/sunday-market-poster/bb-logo.png": {
@@ -2425,8 +2425,8 @@
     "semantic_hash": ""
   },
   "design/sunday-market-poster/main.png": {
-    "mtime": 1787177001.7131102,
-    "ast_hash": "7496a3f0b0630dc41d6057a4a45b3da7",
+    "mtime": 1787183712.8107047,
+    "ast_hash": "b08d5ca05bb21a2af304622ef82df64b",
     "semantic_hash": ""
   },
   "design/sunday-market-poster/market-hero.jpg": {
@@ -2435,18 +2435,18 @@
     "semantic_hash": ""
   },
   "design/sunday-market-poster/social.png": {
-    "mtime": 1787177002.7980623,
-    "ast_hash": "b8cdd3f9316942d17dd9f9a91d5434d1",
+    "mtime": 1787183713.809422,
+    "ast_hash": "c423cbfa10fbbf2c01eaa70f067b6106",
     "semantic_hash": ""
   },
   "design/sunday-market-poster/sunday-market-poster_18x24.png": {
-    "mtime": 1787177026.4664996,
-    "ast_hash": "7496a3f0b0630dc41d6057a4a45b3da7",
+    "mtime": 1787183738.6087835,
+    "ast_hash": "b08d5ca05bb21a2af304622ef82df64b",
     "semantic_hash": ""
   },
   "design/sunday-market-poster/sunday-market-social_4x5.png": {
-    "mtime": 1787177026.538586,
-    "ast_hash": "b8cdd3f9316942d17dd9f9a91d5434d1",
+    "mtime": 1787183738.673285,
+    "ast_hash": "c423cbfa10fbbf2c01eaa70f067b6106",
     "semantic_hash": ""
   },
   "photos/IMG_8976.jpeg": {

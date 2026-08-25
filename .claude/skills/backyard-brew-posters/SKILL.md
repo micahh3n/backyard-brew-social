@@ -27,12 +27,15 @@ Break any of these and the poster comes back for rework:
    No other palette, no gradients as decoration.
 3. **No background patterns.** No sunbursts, rays, halftones, or textures
    behind the type. The photo is the texture.
-4. **No logistics on the art.** No street address, no website, no social
+4. **A composition of its own.** Never pour a new event into the last
+   poster's layout. Brand constants stay (navy/gold/cream, full-bleed photo,
+   gold frame, big logo); the structure changes every night.
+5. **No logistics on the art.** No street address, no website, no social
    handle, no expiring "starts Aug 30" ribbon. Those go in the caption.
    Event name, day + time, one hook, one CTA. That's the whole poster.
-5. **Every price renders with a real dollar sign** in anything a customer
+6. **Every price renders with a real dollar sign** in anything a customer
    sees.
-6. **Nothing invented.** No vendor counts, no commission claims, no
+7. **Nothing invented.** No vendor counts, no commission claims, no
    promises the brand skill doesn't confirm.
 
 ## What you deliver, every time
@@ -58,8 +61,11 @@ Break any of these and the poster comes back for rework:
    not so the photo gets squashed to fit.
 4. **Pick the display font** per `references/fonts.md`. Render the specimen
    strip yourself and choose — never ask Micah which font.
-5. **Build both artboards** from `templates/`. `references/anatomy.md` has
-   every measurement; follow it rather than re-deriving.
+5. **Design a composition for THIS night**, then build both artboards.
+   `references/anatomy.md` is the Sunday-market recipe, not the house template —
+   read the systems table in `likes-dislikes.md`, pick a structure none of the
+   recent posters used, and take only the palette, frame, logo weight and type
+   scale from `anatomy.md`. Same words in the same boxes reads as a reskin.
 6. **Render and look at it.** `scripts/build.py render` writes both PNGs.
    **Actually read the PNG before publishing.** Half the fixes in this
    skill's history came from looking at the render, not the markup.

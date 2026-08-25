@@ -8,9 +8,13 @@ copy into Meta Business Suite.
 ## Before writing anything
 
 1. Read the `backyard-brew-brand` skill, including
-   `references/caption-voice-rules.md`. Every voice rule, the weekly hook and
-   membership ratios, the anti-slop pass, and the Facebook vs Instagram
-   difference all live there. Follow them exactly.
+   `references/caption-voice-rules.md` (the mechanical rules: ratios, money
+   language, FB vs IG) **and `references/caption-likes-dislikes.md`** (real
+   captions pulled from the actual posts, the voice pattern underneath them,
+   the corrections ledger, the rolling "recently used" log, and the
+   hook-technique library). Also invoke the `the-ghostwriter` and `stop-slop`
+   skills before writing — they exist for exactly this and belong in every
+   caption pass, not just this one.
 2. Read `recurring_events.csv` for the five fixed weekly events, Monday
    through Wednesday plus Friday and Saturday (Thursday currently has no
    recurring event), plus Sunday's Backyard Market & Brews (noon-4pm,
@@ -72,6 +76,47 @@ Posted today, previewing the next calendar day. If tomorrow has no event
 on yet, so lean into scarcity and anticipation. Today and filler posts should
 instead push interaction and walking in the door: concrete hooks, not urgency
 for its own sake.
+
+## A 22nd post, every week: recruit vendors and musicians
+
+Standing requirement, added 2026-08-23. Separate from the 21 above and from
+the ratio math elsewhere in this file (it doesn't count toward the
+hook/membership tallies) — one dedicated post a week, every week, whose only
+job is growing the vendor and musician roster for Backyard Market & Brews.
+
+**Slot: Monday, ~9am, ahead of the day's regular content.** Gives a full
+week's runway before the next market (Sunday once the standing market is
+running post-Sept 13; whatever the nearest named market is before then).
+
+**The job: FOMO and urgency that makes a local business or musician want to
+DM today**, framed around supporting local and being part of something with
+real energy — good beer, a real crowd, a room that actually listens to a
+musician instead of talking over them. Not a dry logistics notice.
+
+- **Real event facts belong in this post**: dates, times, setup windows, the
+  theme if there is one, what makes that specific market worth being at.
+  This is the one caption type allowed to run past the normal FB length
+  cap — it's carrying real information for a niche audience, not a routine
+  scroll-past post.
+- **Application-process specifics stay out**, per the poster skill's
+  standing rule: no screening criteria, no bring-your-own list, no email
+  address in the copy. The ask stays simple — it's free, DM us — even when
+  the facts around it get richer.
+- **Name musicians explicitly, not just vendors.** They're a recruiting
+  target in their own right, not a footnote to the vendor pitch.
+- **Emoji can run for urgency here** (⏰ 🚨 📣 👀) more than a normal post
+  allows, since the job is urgency — but never stacked 3+ in a row, that's
+  still the fastest AI tell regardless of post type.
+- **Urgency has to be real.** "Spots are limited" is fine when it's true —
+  a specific market's vendor count really does cap out. Don't invent a
+  deadline that isn't there.
+- **This is the single highest-repetition-risk slot in the whole week**,
+  since it's the same ask every single week. Check `caption-likes-dislikes.md`'s
+  rolling log specifically for this post before writing it, and rotate what
+  actually leads: one week the urgency/scarcity angle, next week the
+  community-pride angle, next the "good beer and a real crowd" angle. Log
+  this post's opener into the rolling log the same as any other, since it's
+  the post most likely to go stale first if that step gets skipped.
 
 ## The build: every event gets three touches
 
@@ -135,6 +180,16 @@ than turning into a second event announcement. Rotate what it actually is:
 So it can open on anything: a photo of last Monday's bingo winner holding
 cash, a plate of nachos, the fire pit. It just has to land the event and its
 start time before it ends. **Lead with the angle, close on tonight.**
+
+**Hard check before finalizing (caught 2026-08-23, a real batch failed this):**
+read the 11am and 2:30 post for the same day side by side. If the 2:30 could
+be produced by deleting sentences from the 11am post, it's wrong — a shorter
+restatement of the same facts is not a different angle. It must lead with
+something the 11am post didn't say: a different photo's actual scene, a
+recap detail, a regular/staff moment, the food itself, the room before it
+fills up. Having this table exist doesn't fix it on its own — actually
+compare the two drafts before delivering, every day, not just when something
+feels off.
 
 Other rules for this slot:
 
@@ -334,9 +389,14 @@ post. Count them before delivering and adjust:
 - Food mentions: most days, not only Wednesday
 - Every post: a concrete same-day reason to physically show up
 
-Then run the anti-slop pass from that same file. No em dashes anywhere. No
-phrase reused across the batch, not just across adjacent posts. Facebook and
-Instagram taking genuinely different angles rather than being reworded copies.
+Then run the anti-slop pass: check the batch against `stop-slop`'s phrase and
+structure lists, and against `caption-likes-dislikes.md`'s permanently-retired
+phrases and rolling "recently used" log (last ~4 weeks) so nothing repeats
+week to week, not just within this batch. No em dashes anywhere. No phrase
+reused across the batch, not just across adjacent posts. Facebook and
+Instagram taking genuinely different angles rather than being reworded
+copies. Every draft should read like the real examples in the ledger, not
+like generic ad copy with a technique bolted on.
 
 **Two hard checks before anything ships:**
 
@@ -352,7 +412,8 @@ Instagram taking genuinely different angles rather than being reworded copies.
 
 ## Deliver
 
-Give all 21 posts in chat, grouped by day, each with:
+Give all 21 posts, plus the Monday vendor/musician recruitment post, in chat,
+grouped by day, each with:
 
 - Date, day, and time slot
 - The photo filename to attach
@@ -366,6 +427,13 @@ Then, after the 21:
 - **The Google Business Profile post**
 - **One line on what changed** from last week's approach and why, so the
   pattern does not silently ossify into the same 21 posts forever
+
+**After delivering, update `caption-likes-dislikes.md` without being asked:**
+append this batch's real openers, hooks, and specific phrases to the rolling
+"recently used" log, and prune anything older than ~4 weeks while there. If
+Micah reworks any caption in the conversation that follows, log the
+before/after and the generalized lesson into the corrections ledger table in
+that same file, the moment it happens — don't wait to be told to log it.
 
 No Reels, no video scripts. The bar handles video itself.
 
