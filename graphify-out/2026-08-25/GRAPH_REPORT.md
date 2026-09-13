@@ -1,16 +1,16 @@
-# Graph Report - backyard-brew-social  (2026-08-25)
+# Graph Report - backyard-brew-social  (2026-08-19)
 
 ## Corpus Check
-- 113 files · ~46,968,210 words
+- 112 files · ~41,911,952 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 820 nodes · 864 edges · 79 communities (78 shown, 1 thin omitted)
+- 807 nodes · 852 edges · 78 communities (77 shown, 1 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 14 edges (avg confidence: 0.74)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `0a36fe08`
+- Built from commit: `1d9cb432`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -91,7 +91,6 @@
 - Choosing the display font
 - What Micah likes and does not like
 - Section 10: Performance (Core Web Vitals as a Design Constraint)
-- Caption likes and dislikes
 
 ## God Nodes (most connected - your core abstractions)
 1. `Design Principles for Codified Slide Generation` - 17 edges
@@ -120,7 +119,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (79 total, 1 thin omitted)
+## Communities (78 total, 1 thin omitted)
 
 ### Community 0 - "CLAUDE.md"
 Cohesion: 0.20
@@ -180,7 +179,7 @@ Nodes (13): Backyard Brew: Start Here, Dropping in photos, First time on this Ma
 
 ### Community 14 - "test_find_food_photo_excludes_already_chosen_main_photo"
 Cohesion: 0.08
-Nodes (25): 11:00am: the day's main post, 11am the day of: turn it into a decision, 2:30pm: highlight, recap, or filler that ties in, 2:30pm the day of: last call before doors, 7:00pm: teaser for tomorrow, 7pm the night before: make them want it, A 22nd post, every week: recruit vendors and musicians, Before delivering: run the tally (+17 more)
+Nodes (24): 11:00am: the day's main post, 11am the day of: turn it into a decision, 2:30pm: highlight, recap, or filler that ties in, 2:30pm the day of: last call before doors, 7:00pm: teaser for tomorrow, 7pm the night before: make them want it, Before delivering: run the tally, Before writing anything (+16 more)
 
 ### Community 15 - "_selfcheck"
 Cohesion: 0.24
@@ -204,7 +203,7 @@ Nodes (3): Deliver, in this order, Do this, If Gemini keeps failing
 
 ### Community 20 - "Caption Voice Rules"
 Cohesion: 0.25
-Nodes (7): Caption Voice Rules, Facebook vs Instagram must be genuinely different posts, not repurposed copies, Give real information, not just hype, Money language: win big yes, gambling no, Rotate the tone, not just the opener, Structure, When Micah asks for a revision
+Nodes (7): Caption Voice Rules, Facebook vs Instagram must be genuinely different posts, not repurposed copies, Give real information, not just hype, Money language: win big yes, gambling no, Rotate the tone, not just the opener (added 2026-08-09), Structure and warmth (Micah's call, 2026-08-09), When Micah asks for a revision (added 2026-08-09)
 
 ### Community 22 - "photos.md"
 Cohesion: 0.20
@@ -400,7 +399,7 @@ Nodes (4): Principle: Crawlable, Indexable, Shareable, Principle: Structured Dat
 
 ### Community 72 - "Poster anatomy"
 Cohesion: 0.25
-Nodes (7): Bottom block, in order, Brand palette (exact), Canvas, Poster anatomy: the MARKET recipe, Rules the numbers encode, Scrims, Top block, in order
+Nodes (7): Bottom block, in order, Brand palette (exact), Canvas, Poster anatomy, Rules the numbers encode, Scrims, Top block, in order
 
 ### Community 73 - "Backyard Brew Posters"
 Cohesion: 0.25
@@ -415,19 +414,15 @@ Cohesion: 0.29
 Nodes (6): Adding a face, Choosing the display font, Fallback stacks, Fixed: everything that isn't the display font, The one-shot check, The shortlist
 
 ### Community 76 - "What Micah likes and does not like"
-Cohesion: 0.22
-Nodes (8): Copy edits he has made by hand (2026-08-19), Dislikes — never do these, Judgement calls he has already made, Likes — do these by default, Photo hunting (learned 2026-08-24), Sticker overlays (added 2026-08-19), The reskin correction (2026-08-24), What Micah likes and does not like
+Cohesion: 0.29
+Nodes (6): Copy edits he has made by hand (2026-08-19), Dislikes — never do these, Judgement calls he has already made, Likes — do these by default, Sticker overlays (added 2026-08-19), What Micah likes and does not like
 
 ### Community 77 - "Section 10: Performance (Core Web Vitals as a Design Constraint)"
 Cohesion: 0.50
 Nodes (4): Principle: Asset Budgets, Principle: Critical Rendering Path, Principle: The Three Core Web Vitals, Section 10: Performance (Core Web Vitals as a Design Constraint)
 
-### Community 78 - "Caption likes and dislikes"
-Cohesion: 0.20
-Nodes (9): Caption likes and dislikes, Corrections ledger (append every time he reworks a caption), Hook technique library — named technique, real Backyard Brew example, Permanently retired phrases (never reuse, not just this batch), Recently used — rolling log, Voice DNA — the pattern underneath all five, Weekly vendor/musician recruitment post (standing, added 2026-08-23), What his real voice actually sounds like (+1 more)
-
 ## Knowledge Gaps
-- **477 isolated node(s):** `Do this`, `Deliver, in this order`, `If Gemini keeps failing`, `Before writing anything`, `11:00am: the day's main post` (+472 more)
+- **466 isolated node(s):** `Likes — do these by default`, `Dislikes — never do these`, `Judgement calls he has already made`, `Copy edits he has made by hand (2026-08-19)`, `Sticker overlays (added 2026-08-19)` (+461 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -438,8 +433,8 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.009) - this node is a cross-community bridge._
 - **Why does `Design Principles for Codified Slide Generation` connect `Design Principles for Codified Slide Generation` to `Section 4: Typography`, `Section 5: Color & Contrast`, `Section 6: Spatial Systems`, `Section 3: Gestalt Principles`, `Section 1: Cognitive Load & Attention`, `Section 11: Information Density & Charts`, `Section 2: Visual Hierarchy`, `Section 10: Image, Visual & Iconography Treatment`, `Section 8: Slide-Specific Rules`, `Section 9: Accessibility`, `Section 7: Alignment & Rhythm`?**
   _High betweenness centrality (0.008) - this node is a cross-community bridge._
-- **What connects `Do this`, `Deliver, in this order`, `If Gemini keeps failing` to the rest of the system?**
-  _521 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `Likes — do these by default`, `Dislikes — never do these`, `Judgement calls he has already made` to the rest of the system?**
+  _510 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `test_generate_captions.py` be split into smaller, more focused modules?**
   _Cohesion score 0.05555555555555555 - nodes in this community are weakly interconnected._
 - **Should `generate_captions.py` be split into smaller, more focused modules?**

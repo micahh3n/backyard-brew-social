@@ -148,7 +148,7 @@ Fix distribution, not the events.
 - Public court bulletin boards in the Green Bay area.
 - Post results, not just announcements. "Last night's winners" gives the
   regulars something to share and shows newcomers the format is real.
-- The 6:40pm cutoff is a genuine urgency hook. Use it.
+- The 5:40pm cutoff (changed 2026-09-09, was 6:40pm) is a genuine urgency hook. Use it.
 
 **Wednesday, Tacos + Poker Club:**
 - Local poker and card-game groups.

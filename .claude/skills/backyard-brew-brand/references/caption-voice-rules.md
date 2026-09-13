@@ -159,8 +159,9 @@ without asking a question first.
 time it starts, and what it costs (usually "free with a beer purchase").
 
 Beyond that, include the details that actually decide whether someone shows
-up: the 6:40pm pickleball cutoff, kids welcome with a soda, dogs on leash, no
-discs needed, kitchen open from 4. Those lines convert a maybe.
+up: the 5:40pm pickleball cutoff (changed 2026-09-09, was 6:40pm), kids
+welcome with a soda, dogs on leash, no discs needed, kitchen open from 4.
+Those lines convert a maybe.
 
 Hooks, FOMO, and share mechanisms sit **on top of** the facts, never instead
 of them. When trimming for length, cut the flourish and keep the time.

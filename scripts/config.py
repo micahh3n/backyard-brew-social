@@ -106,20 +106,28 @@ EVENT_ANGLES = {
     "Bingo Night": "Prize-reveal angle -- what are we playing for this week?",
     "Pickleball Open Play": "Challenge/competitive angle -- think you can beat the regulars?",
     "Tacos + Poker Club": "Food first, then the game -- the tacos are the hook.",
+    "Board Games & Movie Night": "Chill/casual hangout angle -- no pressure, no tournament, just games and a "
+        "surprise movie playing while you play. The random weekly movie is the fun hook -- never reveal it in "
+        "advance since it's picked fresh each week.",
     "Backyard Market & Brews": "Community and local-business-first angle, above everything else -- this is a "
         "small-business showcase, not a party night. Center the vendors and musician as real people/local "
         "businesses worth supporting, not just 'stuff to look at.' FOMO on the weekly-rotating vendor + musician "
         "lineup -- 'you never know who'll be out,' never 'gone forever' (vendors do repeat). Never plug disc "
         "golf/hiking/pickleball as part of THIS event's core pitch -- those are separate draws. Don't tie in "
-        "taco night (not reconfirmed as running alongside). CTAs: vendor/musician signup (DM or "
+        "taco night (not reconfirmed as running alongside). This is the top weekly promotional priority -- "
+        "promote it heavily every week, not just once. CTAs: vendor/musician signup (DM or "
         "crew@backyard-brew.com), 'bring cash, bring friends, bring the leashed pup.' Avoid 'Sundays are for "
         "the backyard' / 'See you in the backyard' and overly polished ad language. SEASONAL (Sept-Jan): also "
         "fold in a backyard-tailgate angle, not sports-bar -- the game plays during the market, Wisconsin taps, "
-        "tailgate food, Packers references welcome. Kickoff time is NEVER fixed -- confirm that week's real time "
+        "tailgate food, Packers references welcome, and the game should be advertised alongside the market every "
+        "week, not treated as an afterthought. Kickoff time is NEVER fixed -- confirm that week's real time "
         "with the owner before naming one in a post; if unconfirmed, write around 'gameday'/'kickoff' with no "
         "specific time rather than guessing.",
     "Karaoke Night": "'Weekend starts NOW' energy.",
-    "Pool Night": "Tournament angle -- beat the bartender, win a flight.",
+    "Donk Toss": "Curiosity/tease angle ONLY -- new as of 2026-09-09, replaces Pool Night. Rules and full format "
+        "are not finalized, so build hype and curiosity ('what is Donk Toss?') without explaining how it's "
+        "played. Register/practice/game times are fine to share; do not invent or guess gameplay rules. 'More "
+        "details coming soon' is the honest CTA, not a full event promotion yet.",
     "Wisconsin Spotlight": "Feature the specific drink named in key_details -- pure appreciation, no CTA pressure.",
     "Course & Trail Feature": "Feature the specific trail/course detail named in key_details -- outdoorsy pride angle.",
     "Weather Vibes": "Tie the specific weather named in key_details to disc golf/hiking/patio appeal.",
@@ -215,8 +223,9 @@ EVENT_PHOTO_KEYWORDS = {
     # for the kickoff-time-is-never-fixed rule. Any candid tagged with one of
     # these keywords enters rotation the same as the market's own keywords.
     "Backyard Market & Brews": ["market", "vendor", "marketbrews", "packers", "football", "tailgate", "gameday"],
+    "Board Games & Movie Night": ["boardgame", "boardgames", "movienight"],
     "Karaoke Night": ["karaoke"],
-    "Pool Night": ["pool"],
+    "Donk Toss": ["donktoss", "donk"],
 }
 
 # Food photos attach as a SECOND photo on the mapped event's "today" post
@@ -232,7 +241,6 @@ RECURRING_DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Satur
 FOOD_PHOTO_KEYWORDS = {
     "hotdog": ["Bingo Night", "Pickleball Open Play"],
     "taco": ["Tacos + Poker Club"],
-    "nachos": ["Tacos + Poker Club"],
     "quesadilla": ["Tacos + Poker Club"],
     "pizza": list(EVENT_PHOTO_KEYWORDS.keys()),
 }

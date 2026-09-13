@@ -22,9 +22,9 @@ the marketing picture.
 | Monday | Bingo Night | Performs |
 | Tuesday | Pickleball Open Play | **Underperforming.** Has a crowd, could be much bigger |
 | Wednesday | Tacos + Poker Club | **Underperforming.** Has a crowd, could be much bigger |
-| Thursday | No weekly event (as of 2026-09-13) | **Backyard Market & Brews moved to Sunday** — evening market stopped working as days got dark too early. A future indoor winter version is on the backburner, not decided; don't invent details |
+| Thursday | Board Games & Movie Night (new 2026-09-09) | Replaces the old Thursday market slot — Backyard Market & Brews moved to Sunday, evening market stopped working as days got dark too early. Board games/movie is a new, unproven event; too early to call performance |
 | Friday | Karaoke Night | Performs |
-| Saturday | Pool Night (evening) | Evening performs. **Morning through early afternoon is slow** unless something is scheduled |
+| Saturday | Donk Toss (evening, new 2026-09-09, replaces Pool Night) | Too early to call performance — owner wants a tease-only rollout, full rules not finalized yet. **Morning through early afternoon is slow** unless something is scheduled |
 | Sunday | Backyard Market & Brews (moved from Thursday 2026-09-13) | The community/vendor showcase, now noon-4pm on Sundays. **Seasonal Sept-Jan: also Sunday football**, folded into the market rather than a separate event (originally built as standalone "Packers Sundays" 2026-08-10, merged 2026-08-12). Kickoff time is deliberately never pre-set; confirm each week's real time before it goes in a post |
 
 ### The Tuesday/Wednesday diagnosis
@@ -152,8 +152,9 @@ say so rather than shipping it.
 - **The property is the asset.** 35 acres, 18-hole disc golf course, 3.5
   miles of trails. Ideas that use the outdoors beat ideas that could run in
   any bar.
-- **Small kitchen, simple menu.** Tacos, quesadillas, nachos, hot dogs,
-  pizza. Do not propose anything requiring a real kitchen expansion without
+- **Small kitchen, simple menu.** Tacos, quesadillas, hot dogs, pizza.
+  **Loaded nachos removed from the menu 2026-09-09 — never mention them.**
+  Do not propose anything requiring a real kitchen expansion without
   flagging the cost.
 - **Breakfast is discontinued** (2026-07-26). Never propose a breakfast or
   brunch service.

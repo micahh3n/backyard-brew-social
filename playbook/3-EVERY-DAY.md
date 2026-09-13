@@ -59,8 +59,9 @@ Fill in your groups in the right column as you find them.
 | **Bingo** (Mon) | Green Bay community, things to do, family activities, game and trivia night groups | |
 | **Pickleball** (Tue) | Pickleball groups and clubs, rec sports, Green Bay community | |
 | **Tacos + Poker** (Wed) | Poker and card game groups, Green Bay food groups, community | |
+| **Board Games & Movie Night** (Thu) | Game night groups, family activities, movie/trivia groups, community | |
 | **Karaoke** (Fri) | Nightlife, live music, weekend plans, Green Bay community | |
-| **Pool Night** (Sat) | Billiards and bar sports, nightlife, community | |
+| **Donk Toss** (Sat) | Lawn/bar games, nightlife, community — tease only for now, don't explain the game | |
 | **Market & Brews** (Sun) | Local vendor and maker groups, small business, craft fair and farmers market, community events | |
 | **Disc golf** (any day) | Disc golf groups, Wisconsin disc golf, statewide disc golf. **These are big. Post here often** | |
 | **Trails and hiking** | Hiking, outdoors, dog owners, Wisconsin trails | |

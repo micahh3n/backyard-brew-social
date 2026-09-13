@@ -34,7 +34,10 @@ and listen to live music.
 
 - Recurring every Sunday, rain or shine
 - **Market runs noon-4pm.** Live music plays within that window, a different local musician/act
-  each week. Vendor/staff setup is 9am-11:45am.
+  each week. Vendor/staff setup is 10am-11:45am (start time changed 2026-09-09, was
+  9am-11:45am; cutoff corrected 2026-09-11 — earlier note that it moved to noon was wrong).
+- **This is the top weekly promotional priority — promote it heavily every single week**, not
+  just once per rotation.
 - **Seasonal (Sept-Jan): also Sunday football.** The game plays during the market — backyard
   tailgate framing, not sports-bar framing (a round on the course before kickoff, the game
   outside, Wisconsin taps, tailgate food; Packers references welcome). Kickoff time is NEVER
@@ -81,9 +84,10 @@ vendor-facing DM, post, or reply rather than restating them loosely.
 
 **Setup cutoff:** vendors must be set up and ready before the event starts — **no setup after
 the cutoff.** On Thursdays this was 3:45pm against a 4pm start. **On Sundays (from 2026-09-13)
-the market opens at noon, so the cutoff is 11:45am**, matching the 9am-11:45am setup window
-above. Any vendor rundown sent for a Sunday date needs these numbers swapped — the original
-text is written for the Thursday schedule.
+setup is 10am-11:45am, cutoff 11:45am** (start time moved 2026-09-09 from 9am to 10am; the
+11:45am cutoff itself never changed, confirmed 2026-09-11). Any vendor rundown sent for a
+Sunday date needs these numbers swapped — the original text is written for the Thursday
+schedule.
 
 **Food vendors:** require a **Village of Ashwaubenon Food Vendor License** to serve at the
 market. This is on the vendor to obtain, not something the bar provides.

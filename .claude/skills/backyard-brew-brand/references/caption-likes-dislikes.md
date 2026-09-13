@@ -215,9 +215,10 @@ opener gets logged there every time, same as any event post).
 **Rotate the lead angle week to week**, since it's the same ask every time:
 - Week 1 (2026-08-25 batch): urgency/scarcity — limited Moonlight Market
   spots plus "get in from week one" on the new Sunday slot.
-- Next real week: try the community-pride angle instead ("this is what
-  supporting local actually looks like") rather than urgency again.
-- The week after: try the "good beer, real crowd, room that listens" draw.
+- Week 2 (2026-09-07 batch): community-pride angle used ("our yard fills
+  with local makers and a different musician takes the stage" — every Sunday
+  is small businesses supporting each other).
+- Next real week: try the "good beer, real crowd, room that listens" draw.
 - Don't reach for urgency/scarcity two weeks running — it stops being FOMO
   and starts being noise if it's the only lever pulled.
 
@@ -227,6 +228,112 @@ Openers, hooks, and specific phrases from the last ~4 weeks, so nothing
 repeats week to week. **Auto-append after every `/sunday` delivery and every
 `/graphic` caption.** Prune anything older than 4 weeks each time this file is
 read, so it never bloats.
+
+**2026-09-10 to 2026-09-13 batch (delivered 2026-09-10 — the 2026-09-09
+15-post batch below this note was written but NEVER POSTED and is now
+SUPERSEDED: the owner corrected two things the same day it was drafted.
+Board Games & Movie Night and Donk Toss are BOTH delayed with no launch date
+set yet ("too late to promote properly" for the week of 9/8), so neither
+runs this week — Thursday and Saturday both tease-only now, no "happening
+tonight" framing. And cadence dropped from 3 posts/day to 1 post/day for the
+rest of this week since the owner was already behind. Only the four lines
+below actually shipped; ignore every opener logged under the 09-09 batch
+below, none of it went out):**
+- "Something new is coming to Thursdays." (Thu 9/10, Board Games tease with
+  no date promised, explicitly says "not launching tonight" to avoid a false
+  claim)
+- "Karaoke tonight, 8pm start, all skill levels, all genres, zero judgment."
+  (Fri 9/11, the week's only real live event, so it carries full details)
+- "Tomorrow's the one we've been building toward." (Sat 9/12, market teaser
+  for the Sunday relaunch, folded a light vendor/musician recruitment ask
+  into this post instead of a separate dedicated post since cadence was cut)
+- "Bret Paulch is playing Backyard Market & Brews today, noon to 4pm." (Sun
+  9/13, Collab post, first time a specific musician's name led a post)
+- Donk Toss got NO tease this round (Board Games already used the "something
+  new is coming" slot Thursday, and 1 post/day didn't leave room to double
+  up) — give Donk Toss its own tease next time before reusing this framing
+- Vendor/musician recruitment: folded into Saturday's market post this round
+  rather than a standalone post, "we've still got room, DM us" angle. Next
+  standalone recruitment post should try an angle not yet used (setup-window
+  logistics, or a vendor-perspective testimonial style)
+
+**2026-09-09 to 2026-09-13 batch (drafted 2026-09-09, SUPERSEDED before
+posting — see note above, none of these lines actually shipped, they are
+listed only so nobody assumes they're safe to reuse blind; treat as
+still-fresh material since it never went out publicly):**
+- "Tacos and quesadillas today, poker at 6." / "Quesadillas are underrated."
+  / "Tonight's the night." (Board Games) / "No tournament tonight. No
+  bracket, no clock." / "Friday's the loud one." / "Mic's live at 8
+  tonight." / "This crew's on tonight." / "Something new is happening on the
+  blacktop tomorrow, and we're not explaining it yet." (Donk Toss) /
+  "Donk Toss is today." / "A couple hours out from Donk Toss registration,
+  and we're still not saying what it is." / "Tomorrow, Backyard Market &
+  Brews moves to its permanent Sunday slot." / "Market's in full swing right
+  now." / "Tomorrow, bingo's back."
+
+**2026-09-07 to 2026-09-13 batch (delivered 2026-09-01, then redone 2026-09-08
+after the owner fell a day behind — Monday's 4 posts and Tuesday's 11am/2:30
+were never actually posted, so their openers are NOT logged as used. Only
+what actually shipped, Tue 7pm onward, is recorded below. "Bingo's back
+tonight" and "Tonight's the night to find out if you can hang" /
+"Last week's pickleball crowd, mid-rally" are free to reuse next time
+they're relevant, since they never went out this round.):**
+- "Tomorrow, the mic goes hot." / "Tomorrow, the pool tables get serious."
+  (the "Tomorrow, [X]" teaser-opener pattern, used 2x this batch — fine, but
+  don't add a third)
+- "Tacos and cards, today." / "Fresh off the line, right now." (Wed)
+- "This regular's basically got a reserved seat at this point." + "appreciate
+  ya" as a real callout tied to an actual regular (Thu 2:30)
+- "No event tonight, so the course gets to be the whole story." (Thu 11am,
+  no-recurring-event day)
+- "These two turned into an unplanned duet last week" (Fri 2:30)
+- "Racked, waiting, and just a few hours from getting loud." (Sat 2:30)
+- "Tomorrow's the first Sunday market. Ever." / "Today's the day. Sunday is
+  officially home for Backyard Market & Brews." (milestone: market's first
+  Sunday edition, 2026-09-13 — retire this exact "first Sunday" framing after
+  this week, it's a one-time fact)
+- "A Green Bay brewery makes a beer called Tailgater. Today is exactly why."
+  (Sun 2:30 — a real, specific tap detail, Stillmank Brewing's "Tailgater,"
+  tied to the football/tailgate framing. Reusable if that tap is still
+  pouring, but don't force it if it's off the list later)
+- "Spell B-I-N-G-O with your tap magnets and that round's free" (the magnet
+  mechanic's headline phrasing — only shipped once this round, in the Sun
+  7pm teaser for the following Monday's bingo, since Monday's own bingo
+  posts were dropped)
+- "The pot only grows from there" (LRC growing-pot phrasing)
+- Vendor/musician recruitment post used the **community-pride angle** this
+  week ("Every Sunday, our yard fills with local makers and a different
+  musician takes the stage") — per the ledger's rotation note below, use the
+  "good beer, real crowd, room that listens" angle next, not urgency again
+
+**Same week, redone again 2026-09-08 (this is the batch that actually shipped
+in chat — owner was still a day behind, asked to start at Wed 9/9 and skip
+Mon/Tue entirely, "a lot of emphasis" on the 9/13 market). The lines above
+this note were never delivered this round; only what's below actually went
+out:**
+- "First official Sunday. For real this time." (Sun 11am, the market's
+  milestone opener — replaces the retired "Today's the day..." framing)
+- "Tomorrow's the one we've been building toward." (Sat 7pm market teaser)
+- Vendor/musician recruitment post used the **"good beer, real crowd, room
+  that listens" angle** this time, per the rotation note below — next time
+  try a new angle, don't repeat urgency or community-pride back to back
+- "No event on tonight's calendar, so the property gets to carry the whole
+  night" (Thu 11am, no-recurring-event day)
+- "Firepit's ready for tonight" + "What's your go-to order when there's no
+  event to build the night around?" (Thu 2:30 comment hook)
+- "Tomorrow the mic goes back on" (Thu 7pm karaoke teaser — close to last
+  round's "Tomorrow, the mic goes hot," don't reuse either phrasing a third
+  time)
+- "This crew's working karaoke tonight" (Fri 2:30 staff shoutout)
+- "Who's actually beating the bartender tonight?" (Sat 11am pool hook)
+- "Bar's open, sun's still up, and the pool tournament doesn't get loud for a
+  few more hours yet" (Sat 2:30)
+- Football framing used "football's back on too" / "football plays right
+  through it" without ever naming a kickoff time — kickoff still needs
+  confirming from Micah, not yet answered as of this batch
+- Did NOT reuse the Stillmank "Tailgater" tap detail or the B-I-N-G-O magnet
+  line this round even though both were logged as reusable — saving them for
+  a week that needs a fresh specific
 
 Seeded 2026-08-23 from the real posts above, so the very next run doesn't
 double up on them:

@@ -15,10 +15,11 @@ copy into Meta Business Suite.
    hook-technique library). Also invoke the `the-ghostwriter` and `stop-slop`
    skills before writing — they exist for exactly this and belong in every
    caption pass, not just this one.
-2. Read `recurring_events.csv` for the five fixed weekly events, Monday
-   through Wednesday plus Friday and Saturday (Thursday currently has no
-   recurring event), plus Sunday's Backyard Market & Brews (noon-4pm,
-   year-round). Sept-Jan only, that Sunday row also carries seasonal
+2. Read `recurring_events.csv` for the six fixed weekly events, Monday
+   through Saturday, plus Sunday's Backyard Market & Brews (noon-4pm,
+   year-round). Note Saturday's Donk Toss is tease-only for now (see its
+   `key_details` — don't explain the game, just build curiosity). Sept-Jan
+   only, that Sunday row also carries seasonal
    football framing — if the current date falls outside that window, ignore
    the football framing entirely and treat the row as market-only, same as
    before. **If the football framing applies this week: never guess or
@@ -40,8 +41,8 @@ Monday through Sunday.
 including days with no recurring event.
 
 ### 11:00am: the day's main post
-The recurring event if there is one. Thursday has none — use a vibe,
-spotlight, or feature post. Sunday's event is Backyard Market & Brews,
+The recurring event if there is one — every day now has one, including
+Thursday's Board Games & Movie Night. Sunday's event is Backyard Market & Brews,
 noon-4pm, year-round; Sept-Jan it's also game day (see above for the
 kickoff-time rule).
 
@@ -328,7 +329,7 @@ because the wrong people see them, not because the events are weak. So write
 those two days for the audience being recruited, not for existing regulars:
 
 - **Tuesday** speaks to pickleball players. Name the format, the doubles
-  draw, the 6:40pm cutoff. Language a player recognizes as a real open play.
+  draw, the 5:40pm cutoff. Language a player recognizes as a real open play.
 - **Wednesday** speaks to poker players and to taco people separately. The
   Facebook and Instagram versions can split that: one leads with the game,
   one leads with the food.
@@ -338,7 +339,8 @@ stand on their own to someone who has never been to the bar.
 
 ### The Sunday 11am post is a Collab, every week
 
-Sunday brings 30+ rotating vendors and a different musician each week, each
+Sunday brings a rotating lineup of local vendors (count varies week to week,
+never state a fixed number) and a different musician each week, each
 with their own following of local people. An Instagram Collab post appears on
 both accounts and reaches both audiences. It is the largest free reach
 multiplier the bar has.
