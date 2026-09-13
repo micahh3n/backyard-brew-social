@@ -2,7 +2,7 @@
 
 How to produce a promotional graphic for Backyard Brew that looks designed
 rather than generated. This is the Claude-facing half. The human half, the
-click-by-click steps at the computer, is `playbook/2-MAKE-A-GRAPHIC.md`.
+click-by-click steps at the computer, is `Claude Files - Do Not Touch/playbook/2-MAKE-A-GRAPHIC.md`.
 
 The process was developed by the owner's son and produced the graphics the
 business is known for. Follow it rather than improvising a new one.
@@ -38,7 +38,7 @@ Always **4:5 vertical**. State it explicitly in the prompt. This is the
 non-negotiable aspect ratio for both Facebook and Instagram feed posts.
 
 **Say what orientation the source photo is, and how to reconcile it.** Most
-candids in `photos/` are horizontal, so this applies to nearly every prompt.
+candids in `3 Photos/` are horizontal, so this applies to nearly every prompt.
 When the attached photo is landscape, tell the generator to **extend the frame
 vertically — more sky above, more ground or paving below — and to keep the
 subject intact and unstretched.** Left unsaid, a "4:5 vertical" instruction
@@ -119,7 +119,7 @@ designed over a real photograph, not an illustration of a bar.
   not readable.
 - **Never mention breakfast.** Discontinued 2026-07-26.
 - **Facts before flourish.** Times, prices, and details come from
-  `recurring_events.csv` and the parent skill. Never guess a time to make a
+  `Claude Files - Do Not Touch/recurring_events.csv` and the parent skill. Never guess a time to make a
   layout work.
 - **Match the event's angle.** Each recurring event has one, listed in the
   parent skill. A Bingo graphic leads with the prize. A Pickleball graphic
@@ -130,9 +130,9 @@ designed over a real photograph, not an illustration of a bar.
 ## The backup path, when Gemini will not cooperate
 
 The repo already renders brand-exact flyers locally with no AI involved:
-`scripts/flyer_render.py` builds HTML/CSS templates and renders them through
-Playwright, using the real fonts in `assets/fonts/` and the real logo in
-`assets/logo/`.
+`Claude Files - Do Not Touch/scripts/flyer_render.py` builds HTML/CSS templates and renders them through
+Playwright, using the real fonts in `Claude Files - Do Not Touch/fonts/` and the real logo in
+`4 Logo/`.
 
 Use it when:
 - Gemini keeps misspelling the text
@@ -141,7 +141,7 @@ Use it when:
 - Nobody has Gemini access that day
 
 Text rendered this way is always correctly spelled and always the exact brand
-color, because a browser drew it. Setup is `pip install -r requirements.txt`
+color, because a browser drew it. Setup is `pip install -r "Claude Files - Do Not Touch/requirements.txt"`
 followed by `playwright install chromium`.
 
 ---

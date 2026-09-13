@@ -53,7 +53,7 @@ Break any of these and the poster comes back for rework:
 1. **Read the event.** Get the facts from `backyard-brew-brand` —
    `references/backyard-market-brews.md` for the Sunday market, the weekly
    table for everything else. Confirm day and time before drawing.
-2. **Pick the photo yourself.** Search `photos/` in the backyard-brew-social
+2. **Pick the photo yourself.** Search `3 Photos/` in the backyard-brew-social
    repo. Prefer the professional shots (people in frame, warm light) over
    phone snaps. Do not ask Micah to choose — pick, build, and show him.
 3. **Crop it portrait.** `scripts/build.py crop` handles this. The poster is
@@ -71,6 +71,12 @@ Break any of these and the poster comes back for rework:
    skill's history came from looking at the render, not the markup.
 7. **Publish the canvas** via the `design` skill (it owns the seeding helper
    and the publish contract), then send both PNGs with `SendUserFile`.
+8. **File it where Dad can find it.** Working files (`.dc.html`, hero crop,
+   logo, `main.png`/`social.png`, `canvas.json`) go in
+   `Claude Files - Do Not Touch/poster-work/<slug>/`. Copy only the two
+   finished PNGs to `2 Posters and Flyers/<Event Name>/` as
+   `<Event Name> - Print 18x24.png` and `<Event Name> - Social 4x5.png`.
+   Nothing else goes in that folder.
 
 ## Pre-flight
 

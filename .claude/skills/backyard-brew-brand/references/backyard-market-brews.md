@@ -18,7 +18,7 @@ bar-event energy.
  — Thursday's
 4pm-dusk window stopped working as days got dark too early for an evening market. The last
 Thursday occurrence, 2026-08-27, ran as a one-off themed special, "Moonlight Market" (full moon,
-vendors bring lights, hiking trails open to all attendees that night) — see `posts.csv` for that
+vendors bring lights, hiking trails open to all attendees that night) — see `Claude Files - Do Not Touch/posts.csv` for that
 post. It's the same market on a themed night, not a new or separate recurring event; don't confuse
 it with a monthly thing. Thursday currently has no weekly event. There's a possible future move
 back to Thursday, indoors, once it gets too cold to run the market outside — **not decided, no
@@ -199,14 +199,14 @@ Vendor and musician inquiries both go to **crew@backyard-brew.com** (or DM the b
 
 ## Photo situation (open gap as of 2026-07-26)
 
-Two existing files in `photos/` are Market & Brews graphics, but **both are stale, one-off dated
+Two existing files in `3 Photos/` are Market & Brews graphics, but **both are stale, one-off dated
 promos, not reusable defaults**:
 - `market&brews_art.PNG` — generic "Shop Local. Eat Local. Drink Local." poster, but hardcodes
   "Thursday, July 23" in the design.
 - `Backyard Market & Brews PROMO.png` — hardcodes both "Thursday, July 23" AND that week's
   musician's name ("Live Music by Josh Berton").
 
-`recurring_events.csv`'s Sunday row points `default_photos` at `marketbrews_default_art.jpg`,
+`Claude Files - Do Not Touch/recurring_events.csv`'s Sunday row points `default_photos` at `marketbrews_default_art.jpg`,
 which **does not exist yet**. Because the vendor lineup and musician change weekly, a single
 static default may never really fit this event the way it does for Bingo/Pickleball/etc. Two
 options for Micah to choose between later:

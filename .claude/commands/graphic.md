@@ -10,7 +10,7 @@ Produce a promotional graphic prompt for Backyard Brew: $ARGUMENTS
 1. Read the `backyard-brew-brand` skill and
    `references/graphics-workflow.md`. The nine-block prompt structure is
    there. Follow it.
-2. Get the facts right from `recurring_events.csv` or `posts.csv`. Never
+2. Get the facts right from `Claude Files - Do Not Touch/recurring_events.csv` or `Claude Files - Do Not Touch/posts.csv`. Never
    invent a time or a price to make a layout work.
 3. Ask which photo he is using, if it is not clear. The prompt has to describe
    what is actually in that photo, otherwise Gemini invents a different venue.
@@ -30,7 +30,7 @@ cover all nine blocks from `graphics-workflow.md`:
 - The anti-slop negatives
 - The realism anchors
 
-**2. What to attach.** Which photo file, plus the logo from `assets/logo/`.
+**2. What to attach.** Which photo file, plus the logo from `4 Logo/`.
 
 **3. The captions.** Facebook and Instagram, following
 `references/caption-voice-rules.md` and `references/caption-likes-dislikes.md`
@@ -47,7 +47,7 @@ for AI distortion, check it sounds like Backyard Brew.
 ## If Gemini keeps failing
 
 After two or three bad attempts, stop and offer the local renderer instead.
-`scripts/flyer_render.py` builds the flyer in HTML and CSS and renders it
+`Claude Files - Do Not Touch/scripts/flyer_render.py` builds the flyer in HTML and CSS and renders it
 through Playwright with the real fonts and the real logo. Text comes out
 correctly spelled and exactly on-brand because a browser drew it rather than a
 model. Best choice for anything text-heavy.

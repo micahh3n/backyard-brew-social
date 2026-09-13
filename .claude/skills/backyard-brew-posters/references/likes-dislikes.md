@@ -155,7 +155,7 @@ layout has room for it, not out of habit.
 
 - **Search the unclassified backlog before concluding a photo does not exist.**
   There was no file with `poker` in its name that was usable — `Poker_default_art.jpg`
-  is old flyer art and `_retired/DO-NOT-POST_cash_on_poker_table.JPG` is actually
+  is old flyer art and `Claude Files - Do Not Touch/retired-photos/DO-NOT-POST_cash_on_poker_table.JPG` is actually
   LRC on a pool table with cash out. The real poker photos were sitting unnamed
   in the `IMG_9xxx.JPG` backlog (9291-9294, 9479-9483). Contact-sheet the backlog
   rather than trusting filenames.

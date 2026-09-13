@@ -3,7 +3,7 @@ description: Look at the new photos and name them correctly, so nobody has to do
 argument-hint: [optional: how many to do, e.g. "20"]
 ---
 
-Name the unnamed photos in `photos/` by actually looking at them. $ARGUMENTS
+Name the unnamed photos in `3 Photos/` by actually looking at them. $ARGUMENTS
 
 Nobody should have to label photos by hand. He drops them in straight off his
 phone with names like `IMG_4471.HEIC`, and this turns them into names the rest
@@ -12,7 +12,7 @@ of the system understands.
 ## Find what needs naming
 
 ```bash
-cd scripts && python -c "
+cd "Claude Files - Do Not Touch/scripts" && python -c "
 import os, config, classify_photos as c
 files = sorted(f for f in os.listdir(config.PHOTOS_DIR)
                if not f.startswith('_') and c.needs_classification(f))
@@ -40,10 +40,10 @@ full-size photos often exceed its size limit anyway. Generate small previews
 for the batch, look at those, and name the originals:
 
 ```bash
-cd scripts && python -c "
+cd "Claude Files - Do Not Touch/scripts" && python -c "
 import config, os, sys
 from PIL import Image
-out = os.path.join(config.REPO_ROOT, '_previews')
+out = os.path.join(config.SYSTEM_DIR, '_previews')
 os.makedirs(out, exist_ok=True)
 for f in sys.argv[1:]:
     im = Image.open(os.path.join(config.PHOTOS_DIR, f)).convert('RGB')
@@ -56,17 +56,17 @@ for f in sys.argv[1:]:
 `_previews/` is scratch. Delete it when the batch is done:
 
 ```bash
-rm -rf _previews
+rm -rf "Claude Files - Do Not Touch/_previews"
 ```
 
 If `Image.open` fails on a HEIC, `pillow_heif` is missing. Run
-`pip install -r requirements.txt` rather than skipping those photos.
+`pip install -r "Claude Files - Do Not Touch/requirements.txt"` rather than skipping those photos.
 
 For the date, use the photo's own capture time rather than today. Pull them
 for the whole batch at once:
 
 ```bash
-cd scripts && python -c "
+cd "Claude Files - Do Not Touch/scripts" && python -c "
 import config, classify_photos as c, os, sys
 for f in sys.argv[1:]:
     print(f, c.read_exif_time(os.path.join(config.PHOTOS_DIR, f)))
@@ -84,7 +84,7 @@ substitute today's date. Use the undated form and let the photo enter the
 rotation pool.
 
 **If every photo comes back `None`, stop and check `pillow_heif` is
-installed** (`pip install -r requirements.txt`). iPhone photos are HEIC, and
+installed** (`pip install -r "Claude Files - Do Not Touch/requirements.txt"`). iPhone photos are HEIC, and
 without that library they cannot be read at all. That is a setup problem, not
 117 undateable photos.
 
@@ -141,17 +141,17 @@ Group by type so it scans quickly.
 
 ## Check posts.csv before renaming anything
 
-Some photos have already been used in a post. `posts.csv` records the filename
+Some photos have already been used in a post. `Claude Files - Do Not Touch/posts.csv` records the filename
 that ran, and the photo picker reads that history to avoid repeating a photo
 too soon. **Renaming a photo that appears there wipes its usage history, so it
 can get picked again immediately.**
 
 ```bash
-grep -c "IMG_0551.heic" posts.csv
+grep -c "IMG_0551.heic" "Claude Files - Do Not Touch/posts.csv"
 ```
 
 If the count is not zero, rename the file **and** update every reference in
-`posts.csv` in the same step, so the history keeps pointing at it. Say in the
+`Claude Files - Do Not Touch/posts.csv` in the same step, so the history keeps pointing at it. Say in the
 plan which photos this applies to.
 
 ## Then rename
@@ -160,7 +160,7 @@ Use `git mv` rather than plain `mv`, so the change is tracked and can be
 undone:
 
 ```bash
-git mv "photos/IMG_4471.HEIC" "photos/2026-09-14_bingo.HEIC"
+git mv "3 Photos/IMG_4471.HEIC" "3 Photos/2026-09-14_bingo.HEIC"
 ```
 
 Never overwrite an existing file. If the target name is taken, add a short

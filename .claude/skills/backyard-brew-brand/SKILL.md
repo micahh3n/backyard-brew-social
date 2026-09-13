@@ -30,7 +30,7 @@ graphics, and the replies himself. His son built all of this and then left for
 college. Assume the person asking wants the finished thing rather than a
 tutorial, and that he is doing this between everything else involved in
 running a bar. Keep answers short and usable. The printed sheets in
-`playbook/` are the human-facing versions of these same processes.
+`Claude Files - Do Not Touch/playbook/` are the human-facing versions of these same processes.
 
 **He works in the Claude desktop app on a Mac, not a terminal.** Never tell
 him to open Terminal or run a command. Run it yourself and say what happened.
@@ -165,11 +165,11 @@ Hashtag cluster (mix niche + local + broad, rotate rather than repeating the sam
 
 Monthly (bigger, party-style — check for current ones before assuming, this list grows): **Celebrate Summer Party** (solstice/BBQ-cookout theme).
 
-**Seasonal (Sept-Jan): Sunday football folds into Backyard Market & Brews.** Decided and built 2026-08-10 as a standalone "Packers Sundays" event, then merged into the Sunday market 2026-08-12 rather than kept as a second Sunday event — backyard-tailgate framing (round on the course before kickoff, game outside, Wisconsin taps, tailgate food), not sports-bar framing. Packers references welcome. Full original reasoning in `references/growth-playbook.md` section 6. Live inside the Sunday row in `recurring_events.csv` and handled in the `/sunday` command — its kickoff time is deliberately never pre-set; it changes weekly with the NFL schedule, so it gets confirmed with the owner each week rather than guessed or reused from last week.
+**Seasonal (Sept-Jan): Sunday football folds into Backyard Market & Brews.** Decided and built 2026-08-10 as a standalone "Packers Sundays" event, then merged into the Sunday market 2026-08-12 rather than kept as a second Sunday event — backyard-tailgate framing (round on the course before kickoff, game outside, Wisconsin taps, tailgate food), not sports-bar framing. Packers references welcome. Full original reasoning in `references/growth-playbook.md` section 6. Live inside the Sunday row in `Claude Files - Do Not Touch/recurring_events.csv` and handled in the `/sunday` command — its kickoff time is deliberately never pre-set; it changes weekly with the NFL schedule, so it gets confirmed with the owner each week rather than guessed or reused from last week.
 
 ## Where this feeds into the actual automation
 
-The weekly social-content automation lives in the `backyard-brew-social` repo. `scripts/config.py` is the single source of truth for everything above in code form (colors, angles, memberships, hours) — if brand facts ever change, update `config.py` there, not just this skill, since that's what actually generates the bar's content every week. This skill exists so any *other* Backyard Brew design/content work (outside that repo) stays consistent with what the automation already knows.
+The weekly social-content automation lives in the `backyard-brew-social` repo. `Claude Files - Do Not Touch/scripts/config.py` is the single source of truth for everything above in code form (colors, angles, memberships, hours) — if brand facts ever change, update `config.py` there, not just this skill, since that's what actually generates the bar's content every week. This skill exists so any *other* Backyard Brew design/content work (outside that repo) stays consistent with what the automation already knows.
 
 ## Pre-flight for any Backyard Brew deliverable
 

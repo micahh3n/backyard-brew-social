@@ -32,7 +32,7 @@ Restart Claude Code and it's live.
 - **Google Chrome** — used headlessly to render the finished PNGs. Nothing
   opens on screen.
 - **Python with Pillow** — `pip install Pillow`. Only used for cropping photos.
-- **The photo library** — `photos/` in the `backyard-brew-social` repo. Without
+- **The photo library** — `3 Photos/` in the `backyard-brew-social` repo. Without
   it Claude has nothing real to build on and will ask you for a picture.
 
 Fonts are bundled in `assets/fonts/` — nothing to install.

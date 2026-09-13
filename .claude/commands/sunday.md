@@ -15,7 +15,7 @@ copy into Meta Business Suite.
    hook-technique library). Also invoke the `the-ghostwriter` and `stop-slop`
    skills before writing — they exist for exactly this and belong in every
    caption pass, not just this one.
-2. Read `recurring_events.csv` for the six fixed weekly events, Monday
+2. Read `Claude Files - Do Not Touch/recurring_events.csv` for the six fixed weekly events, Monday
    through Saturday, plus Sunday's Backyard Market & Brews (noon-4pm,
    year-round). Note Saturday's Donk Toss is tease-only for now (see its
    `key_details` — don't explain the game, just build curiosity). Sept-Jan
@@ -28,9 +28,9 @@ copy into Meta Business Suite.
    the post around "gameday"/"kickoff" with no specific time and flag that
    the time still needs confirming, rather than stalling the batch or
    inventing a time.
-3. Read `posts.csv` for any one-off or special events, and to see what was
+3. Read `Claude Files - Do Not Touch/posts.csv` for any one-off or special events, and to see what was
    said recently so nothing repeats.
-4. Look in `photos/` for anything new dropped in since last time.
+4. Look in `3 Photos/` for anything new dropped in since last time.
 
 Ask which week this is for if it is not obvious. Default to the upcoming
 Monday through Sunday.
@@ -232,7 +232,7 @@ sit on top of this, not instead of it.
 
 ## Special events with a runway
 
-When a row in `posts.csv` has a `promote_from` date earlier than its event
+When a row in `Claude Files - Do Not Touch/posts.csv` has a `promote_from` date earlier than its event
 date, that event is a **campaign, not a day.** Every `/sunday` run that falls
 between those two dates owes it posts, and the row stays live until the event
 has passed.
@@ -298,10 +298,10 @@ delivery with a short **This week, off the feed** list covering whichever apply:
 
 For each slot, in order:
 1. An exact `{date}_{keyword}` dated match
-2. `scripts/generate_captions.py`'s `find_photo()` / `find_food_photo()` for
+2. `Claude Files - Do Not Touch/scripts/generate_captions.py`'s `find_photo()` / `find_food_photo()` for
    the undated rotation pool. Call these with a quick `python -c` from
-   `scripts/` rather than eyeballing the rotation
-3. The recurring event's default photo from `recurring_events.csv`
+   `Claude Files - Do Not Touch/scripts/` rather than eyeballing the rotation
+3. The recurring event's default photo from `Claude Files - Do Not Touch/recurring_events.csv`
 
 For the 2:30pm slot also check for unused `_vibe` and `_spotlight` photos via
 `_pick_pool_photo`. **Open and actually look at any `_spotlight` photo before
@@ -439,7 +439,7 @@ that same file, the moment it happens — don't wait to be told to log it.
 
 No Reels, no video scripts. The bar handles video itself.
 
-**The chat answer is the deliverable. Do not write to `posts.csv` and do not
+**The chat answer is the deliverable. Do not write to `Claude Files - Do Not Touch/posts.csv` and do not
 offer to.** He copies straight from chat into Meta Business Suite.
 
 Keep it scannable. He is copying and pasting 21 times, so put the captions

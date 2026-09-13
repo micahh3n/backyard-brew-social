@@ -170,7 +170,7 @@ accounts as a person sharing something local rather than a business
 advertising.
 
 Rules and the group-matching table live in the printed daily sheet,
-`playbook/3-EVERY-DAY.md`. The short version:
+`Claude Files - Do Not Touch/playbook/3-EVERY-DAY.md`. The short version:
 
 - Personal accounts, not the business page.
 - Match the post to the group. A poker post goes to card and game groups, not
@@ -262,7 +262,7 @@ can teach, so it costs more than the others.
 
 **DECIDED and BUILT 2026-08-10: Packers Sundays.** Owner's call. This is the
 concept — the options below are kept for context on why, not as still-open
-alternatives. Live in `recurring_events.csv` (a seasonal Sunday row,
+alternatives. Live in `Claude Files - Do Not Touch/recurring_events.csv` (a seasonal Sunday row,
 Sept-Jan only) and the `/sunday` command. **Kickoff time is deliberately
 left open** — it changes weekly with the NFL schedule, so the owner
 confirms the real time each week before it goes in a post rather than
@@ -297,7 +297,7 @@ differentiator instead of a dead zone.
 dark too early. Packers Sundays did not stay a separate event — it became
 this window's seasonal (Sept-Jan) framing, folded into the market itself
 rather than run alongside it. The tailgate reasoning above still holds, it
-now applies inside the market's own Sunday row in `recurring_events.csv`
+now applies inside the market's own Sunday row in `Claude Files - Do Not Touch/recurring_events.csv`
 instead of a standalone one. See `references/backyard-market-brews.md` for
 the current Sunday schedule and messaging rules.
 
